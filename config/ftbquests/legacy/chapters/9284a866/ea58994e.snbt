@@ -1,0 +1,14 @@
+{
+	icon: "minecraft:nether_star",
+	x: -8.0d,
+	y: -1.0d,
+	dependencies: [
+		"8c14f877"
+	],
+	tasks: [{
+		uid: "bd4e4f10",
+		type: "kill",
+		entity: "minecraft:wither",
+		value: 1L
+	}]
+}

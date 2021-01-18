@@ -1,0 +1,14 @@
+{
+	x: -8.0d,
+	y: 0.0d,
+	dependencies: [
+		"8c14f877"
+	],
+	tasks: [{
+		uid: "311e1de1",
+		type: "item",
+		items: [{
+			item: "randomthings:imbuingstation"
+		}]
+	}]
+}

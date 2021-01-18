@@ -1,0 +1,224 @@
+{
+    "buttons": {
+        "title": {
+            "text": " ",
+            "pressSound": "",
+            "posX": -117,
+            "posY": -120,
+            "width": 235,
+            "height": 52,
+            "alignment": "center",
+            "texture": "zerblands:mainmenu/modpack.png",
+            "imageWidth": 2520,
+            "imageHeight": 564
+        },
+        "singleplayer": {
+            "text": "menu.singleplayer",
+            "pressSound": "minecraft:block.portal.ambient",
+            "hoverTextColor": 11534512,
+            "posX": -117,
+            "posY": -70,
+            "width": 117,
+            "height": 35,
+            "imageWidth": 200,
+            "imageHeight": 50,
+            "alignment": "center",
+            "texture": "zerblands:mainmenu/button.png",
+            "hoverText": "Forever alone.",
+            "action": {
+                "type": "openGui",
+                "gui": "singleplayer"
+            }
+        },
+        "multiplayer": {
+            "text": "menu.multiplayer",
+            "pressSound": "minecraft:block.portal.ambient",
+            "hoverTextColor": 11534512,
+            "posX": 1,
+            "posY": -70,
+            "width": 117,
+            "height": 35,
+            "imageWidth": 200,
+            "imageHeight": 50,
+            "alignment": "center",
+            "texture": "zerblands:mainmenu/button.png",
+            "hoverText": "Find a friend!",
+            "action": {
+                "type": "openGui",
+                "gui": "multiplayer"
+            }
+        },
+        "mods": {
+            "text": "Mods (#modsloaded#/#modsactive#)",
+            "pressSound": "minecraft:block.portal.ambient",
+            "hoverTextColor": 11534512,
+            "posX": 1,
+            "posY": -34,
+            "width": 117,
+            "height": 35,
+            "imageWidth": 200,
+            "imageHeight": 50,
+            "alignment": "center",
+            "texture": "zerblands:mainmenu/button.png",
+            "action": {
+                "type": "openGui",
+                "gui": "mods"
+            }
+        },
+        "options": {
+            "text": "menu.options",
+            "pressSound": "minecraft:block.portal.ambient",
+            "hoverTextColor": 11534512,
+            "posX": -117,
+            "posY": -34,
+            "width": 117,
+            "height": 35,
+            "imageWidth": 200,
+            "imageHeight": 50,
+            "alignment": "center",
+            "texture": "zerblands:mainmenu/button.png",
+            "action": {
+                "type": "openGui",
+                "gui": "options"
+            }
+        },
+        "support": {
+            "text": "Support the Dev",
+            "pressSound": "minecraft:block.portal.ambient",
+            "hoverTextColor": 14483456,
+            "posX": -117,
+            "posY": 2,
+            "width": 117,
+            "height": 35,
+            "imageWidth": 200,
+            "imageHeight": 50,
+            "alignment": "center",
+            "texture": "zerblands:mainmenu/button.png",
+            "hoverText": "<3 <3 <3 <3 <3",
+            "action": {
+                "type": "openLink",
+                "link": "https://www.buymeacoffee.com/masterenderman"
+            }
+        },
+        "quit": {
+            "text": "menu.quit",
+            "pressSound": "minecraft:block.portal.ambient",
+            "hoverTextColor": 14483456,
+            "posX": 1,
+            "posY": 2,
+            "width": 117,
+            "height": 35,
+            "imageWidth": 200,
+            "imageHeight": 50,
+            "alignment": "center",
+            "texture": "zerblands:mainmenu/button.png",
+            "hoverText": "Goodbye!",
+            "action": {
+                "type": "quit"
+            }
+        },
+        "youtube": {
+            "text": " ",
+            "pressSound": "minecraft:block.portal.ambient",
+            "posX": -60,
+            "posY": -55,
+            "width": 35,
+            "height": 35,
+            "imageWidth": 356,
+            "imageHeight": 355,
+            "alignment": "bottom_right",
+            "texture": "zerblands:mainmenu/youtube.png",
+            "action": {
+                "type": "openLink",
+                "link": "https://www.youtube.com/user/zerberus1979"
+            }
+        },
+        "discord": {
+            "text": " ",
+            "pressSound": "minecraft:block.portal.ambient",
+            "posX": -105,
+            "posY": -55,
+            "width": 35,
+            "height": 35,
+            "imageWidth": 356,
+            "imageHeight": 355,
+            "alignment": "bottom_right",
+            "texture": "zerblands:mainmenu/discord.png",
+            "action": {
+                "type": "openLink",
+                "link": "https://discord.gg/GnwGf4p"
+            }
+        },
+        "github": {
+            "text": " ",
+            "pressSound": "minecraft:block.portal.ambient",
+            "posX": -150,
+            "posY": -55,
+            "width": 35,
+            "height": 35,
+            "imageWidth": 356,
+            "imageHeight": 355,
+            "alignment": "bottom_right",
+            "texture": "zerblands:mainmenu/github.png",
+            "action": {
+                "type": "openLink",
+                "link": "https://github.com/MasterEnderman/Zerblands-Remastered/issues"
+            }
+        },
+        "refresh": {
+            "text": " ",
+            "pressSound": "minecraft:block.portal.ambient",
+            "posX": -20,
+            "posY": 0,
+            "width": 20,
+            "height": 20,
+            "alignment": "top_right",
+            "texture": "zerblands:mainmenu/refresh.png",
+            "action": {
+                "type": "refresh"
+            }
+        }
+    },
+    
+    "other":
+    {        
+        "background": {
+            "image": "",
+            "slideshow": {
+                "images": [
+                    "zerblands:mainmenu/bg/frame_00.png",
+                    "zerblands:mainmenu/bg/frame_01.png",
+                    "zerblands:mainmenu/bg/frame_02.png",
+                    "zerblands:mainmenu/bg/frame_03.png",
+                    "zerblands:mainmenu/bg/frame_04.png",
+                    "zerblands:mainmenu/bg/frame_05.png",
+                    "zerblands:mainmenu/bg/frame_06.png",
+                    "zerblands:mainmenu/bg/frame_07.png",
+                    "zerblands:mainmenu/bg/frame_08.png",
+                    "zerblands:mainmenu/bg/frame_09.png",
+                    "zerblands:mainmenu/bg/frame_10.png",
+                    "zerblands:mainmenu/bg/frame_11.png",
+                    "zerblands:mainmenu/bg/frame_12.png",
+                    "zerblands:mainmenu/bg/frame_13.png",
+                    "zerblands:mainmenu/bg/frame_14.png",
+                    "zerblands:mainmenu/bg/frame_15.png",
+                    "zerblands:mainmenu/bg/frame_16.png",
+                    "zerblands:mainmenu/bg/frame_17.png",
+                    "zerblands:mainmenu/bg/frame_18.png",
+                    "zerblands:mainmenu/bg/frame_19.png",
+                    "zerblands:mainmenu/bg/frame_20.png",
+                    "zerblands:mainmenu/bg/frame_21.png",
+                    "zerblands:mainmenu/bg/frame_22.png",
+                    "zerblands:mainmenu/bg/frame_23.png",
+                    "zerblands:mainmenu/bg/frame_24.png",
+                    "zerblands:mainmenu/bg/frame_25.png",
+                    "zerblands:mainmenu/bg/frame_26.png",
+                    "zerblands:mainmenu/bg/frame_27.png",
+                    "zerblands:mainmenu/bg/frame_28.png"
+                ],
+                "displayDuration": 1,
+                "fadeDuration": 1
+            }
+        }
+    }
+}

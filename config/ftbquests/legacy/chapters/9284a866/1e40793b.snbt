@@ -1,0 +1,14 @@
+{
+	x: 0.0d,
+	y: -1.0d,
+	dependencies: [
+		"e946e194"
+	],
+	tasks: [{
+		uid: "5a70c9c2",
+		type: "item",
+		items: [{
+			item: "avaritia:extreme_crafting_table"
+		}]
+	}]
+}

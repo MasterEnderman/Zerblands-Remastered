@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: 1.0d,
+	dependencies: [
+		"6e7db30d",
+		"c7a216e2",
+		"bbb16d62",
+		"a629d5ba",
+		"78a796ae",
+		"1e40793b",
+		"5e3442f8",
+		"d4d0e3fe",
+		"fcafb831",
+		"fe8c5972"
+	],
+	tasks: [{
+		uid: "91b09410",
+		type: "checkmark",
+		title: "Basically finished the modpack.",
+		icon: "botania_tweaks:compressed_tiny_potato_4"
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	x: 3.0d,
+	y: 1.0d,
+	dependencies: [
+		"c1a374d2",
+		"3508f75d",
+		"80c42c5c",
+		"8cd29c9b",
+		"05cb0672",
+		"c3d9e5f3",
+		"5dfe9012",
+		"5e1d6073",
+		"d02f77c1",
+		"4dab6cf5"
+	],
+	tasks: [{
+		uid: "05af3284",
+		type: "checkmark",
+		title: "Going ALL the way to the end.",
+		icon: "botania_tweaks:compressed_tiny_potato_5"
+	}]
+}

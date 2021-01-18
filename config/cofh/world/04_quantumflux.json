@@ -1,0 +1,26 @@
+{
+    "dependencies":"quantumflux",
+    "populate": {
+        "graphiteore": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "quantumflux:graphiteore"
+				},
+				"cluster-size": 8
+			},
+			"cluster-count": 1,
+			"min-height": 0,
+			"max-height": 16,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "populate": {
+        "blockmarble": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "astralsorcery:blockmarble"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "limestone": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "chisel:limestone2",
+                    "metadata": 7
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "block_slate": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "earthworks:block_slate"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "block_slate_green": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "earthworks:block_slate_green"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "block_slate_purple": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "earthworks:block_slate_purple"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+        "block_chalk": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "earthworks:block_chalk"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 60,
+			"max-height": 120,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+    }
+}

@@ -1,0 +1,23 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"54da34a8"
+	],
+	tasks: [{
+		uid: "18269c39",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:flighttiara",
+			tag: {
+				flying: 0b,
+				playerHashcode: 4
+			},
+			Damage: 9s
+		}],
+		ignore_nbt: 1b
+	}]
+}

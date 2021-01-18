@@ -1,0 +1,21 @@
+{
+	x: -12.0d,
+	y: 1.0d,
+	dependencies: [
+		"c341a0f1",
+		"845d83fc",
+		"3793dee1",
+		"ff5d65cf",
+		"b1252421",
+		"0a08ae7c",
+		"e80f3b5a",
+		"f73b1090",
+		"98c81c33"
+	],
+	tasks: [{
+		uid: "b7df96a7",
+		type: "checkmark",
+		title: "What a start.",
+		icon: "botania:tinypotato"
+	}]
+}

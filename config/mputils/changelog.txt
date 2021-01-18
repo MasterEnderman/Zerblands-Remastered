@@ -1,0 +1,62 @@
+# Zerblands-Remastered
+
+## v2.0.0 - release
+
+- initial release of the remastered version
+
+## v1.7.0 - Ore Generation
+
+- unified ore generation utilizing cofh world
+
+- added earthworks stones to ore gen
+- added chisel limestone to ore gen
+- added astral sorcery marble to ore gen
+- added forestry apatite to ore gen
+- added extreme reactors yellorite to ore gen
+- added actually additions black quartz to ore gen
+- added tiCo ardite and cobalt to ore gen
+- added ic2c uranium to ore gen
+- added quantumflux graphite ore to ore gen
+
+## v1.6.0 - Ingame Guide
+
+- added an ingame guide for ore generation
+
+## v1.5.0 - EMC
+
+- added back all the custom EMC values
+- cleaned up JEI
+
+## v1.4.1 - many more quests
+
+- added 4 more chapters of quests
+
+## v1.4.0 - Quests
+
+- added some end game quests
+- added some easter egg quests
+
+## v1.3.1 - recipe tweaks
+
+- added back some recipes I missed before
+- fixed the gear recipes
+- fixed tiny progression recipes
+
+## v1.3.0 - RECIPES!
+
+- ported all the recipes
+- added missing items with contenttweaker
+- added missing localization
+
+## v1.2.1 - More Config Work
+
+- removed botanic void miner
+- removed draconic ore from void miner
+
+## v1.2.0 - Where it started
+
+- refactored almost all configs to match with the original
+
+## v1.1.0 - Modlist
+
+- rebuild the modpack from scratch for 1.12.2 instead of 1.10.2

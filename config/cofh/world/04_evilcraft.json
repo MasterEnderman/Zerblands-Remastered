@@ -1,0 +1,27 @@
+{
+    "dependencies":"evilcraft",
+    "populate": {
+        "darkgem": {
+			"distribution": "gaussian",
+			"generator": {
+				"block": {
+					"name": "evilcraft:dark_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 3,
+			"center-height": 32,
+			"spread": 16,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+    }
+}

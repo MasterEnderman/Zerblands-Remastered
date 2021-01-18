@@ -1,0 +1,14 @@
+{
+	icon: "minecraft:dragon_egg",
+	x: -7.0d,
+	y: 0.0d,
+	dependencies: [
+		"9aab709f"
+	],
+	tasks: [{
+		uid: "d9e5f718",
+		type: "kill",
+		entity: "minecraft:ender_dragon",
+		value: 1L
+	}]
+}

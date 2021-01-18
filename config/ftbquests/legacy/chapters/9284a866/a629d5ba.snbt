@@ -1,0 +1,14 @@
+{
+	x: 1.0d,
+	y: 0.0d,
+	dependencies: [
+		"e946e194"
+	],
+	tasks: [{
+		uid: "8da47474",
+		type: "item",
+		items: [{
+			item: "ic2:blockelectric 1 4"
+		}]
+	}]
+}

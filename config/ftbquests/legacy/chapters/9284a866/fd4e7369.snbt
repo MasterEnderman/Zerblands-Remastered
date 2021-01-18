@@ -1,0 +1,22 @@
+{
+	x: -6.0d,
+	y: 1.0d,
+	dependencies: [
+		"3ec958f8",
+		"e5e8b41b",
+		"27239bb7",
+		"2d9618c2",
+		"f99c270b",
+		"0a600c8a",
+		"c9795d62",
+		"68e07adc",
+		"d6496bb4",
+		"9fb677a8"
+	],
+	tasks: [{
+		uid: "0f799233",
+		type: "checkmark",
+		title: "Starting all the mods.",
+		icon: "botania_tweaks:compressed_tiny_potato_2"
+	}]
+}

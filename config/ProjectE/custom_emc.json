@@ -1,0 +1,436 @@
+{
+  "entries": [
+    {
+      "item": "actuallyadditions:item_crystal|0",
+      "emc": 64
+    },
+    {
+      "item": "actuallyadditions:item_crystal|1",
+      "emc": 864
+    },
+    {
+      "item": "actuallyadditions:item_crystal|2",
+      "emc": 8192
+    },
+    {
+      "item": "actuallyadditions:item_crystal|3",
+      "emc": 128
+    },
+    {
+      "item": "actuallyadditions:item_crystal|4",
+      "emc": 16384
+    },
+    {
+      "item": "actuallyadditions:item_crystal|5",
+      "emc": 256
+    },
+    {
+      "item": "projecte:item.pe_fuel|0",
+      "emc": 512
+    },
+    {
+      "item": "projecte:item.pe_fuel|1",
+      "emc": 2048
+    },
+    {
+      "item": "projecte:item.pe_fuel|2",
+      "emc": 8192
+    },
+    {
+      "item": "appliedenergistics2:material|6",
+      "emc": 256
+    },
+    {
+      "item": "appliedenergistics2:material|47",
+      "emc": 256000
+    },
+    {
+      "item": "appliedenergistics2:quartz_glass|0",
+      "emc": 41
+    },
+    {
+      "item": "appliedenergistics2:fluix_block|0",
+      "emc": 1024
+    },
+    {
+      "item": "appliedenergistics2:material|22",
+      "emc": 2144
+    },
+    {
+      "item": "appliedenergistics2:material|24",
+      "emc": 8288
+    },
+    {
+      "item": "appliedenergistics2:material|23",
+      "emc": 128
+    },
+    {
+      "item": "draconicevolution:draconium_dust|0",
+      "emc": 4096
+    },
+    {
+      "item": "draconicevolution:draconium_ingot|0",
+      "emc": 4096
+    },
+    {
+      "item": "botania:manaresource|5",
+      "emc": 139264
+    },
+    {
+      "item": "psi:material|0",
+      "emc": 64
+    },
+    {
+      "item": "psi:material|1",
+      "emc": 2048
+    },
+    {
+      "item": "psi:material|2",
+      "emc": 8192
+    },
+    {
+      "item": "psi:material|5",
+      "emc": 128
+    },
+    {
+      "item": "psi:material|6",
+      "emc": 256
+    },
+    {
+      "item": "bigreactors:ingotyellorium|0",
+      "emc": 1024
+    },
+    {
+      "item": "bigreactors:dustyellorium|0",
+      "emc": 1024
+    },
+    {
+      "item": "bigreactors:dustcyanite|0",
+      "emc": 1024
+    },
+    {
+      "item": "bigreactors:dustblutonium|0",
+      "emc": 8192
+    },
+    {
+      "item": "bigreactors:dustludicrite|0",
+      "emc": 52110
+    },
+    {
+      "item": "bigreactors:ingotgraphite|0",
+      "emc": 128
+    },
+    {
+      "item": "bigreactors:dustgraphite|0",
+      "emc": 128
+    },
+    {
+      "item": "acintegration:dust|0",
+      "emc": 3072
+    },
+    {
+      "item": "acintegration:dust|1",
+      "emc": 4096
+    },
+    {
+      "item": "acintegration:dust|2",
+      "emc": 5120
+    },
+    {
+      "item": "botania:manaresource|8",
+      "emc": 1024
+    },
+    {
+      "item": "botania:manaresource|1",
+      "emc": 1024
+    },
+    {
+      "item": "botania:manaresource|2",
+      "emc": 8192
+    },
+    {
+      "item": "botania:manaresource|9",
+      "emc": 8192
+    },
+    {
+      "item": "botania:manaresource|0",
+      "emc": 256
+    },
+    {
+      "item": "botania:manaresource|7",
+      "emc": 512
+    },
+    {
+      "item": "botania:manaresource|4",
+      "emc": 9472
+    },
+    {
+      "item": "bloodarsenal:base_item|2",
+      "emc": 384
+    },
+    {
+      "item": "extrautils2:ingredients|3",
+      "emc": 864
+    },
+    {
+      "item": "evilcraft:dark_gem_crushed|0",
+      "emc": 64
+    },
+    {
+      "item": "evilcraft:dark_gem|0",
+      "emc": 64
+    },
+    {
+      "item": "extrautils2:ingredients|4",
+      "emc": 128
+    },
+    {
+      "item": "minecraft:elytra|0",
+      "emc": 65536
+    },
+    {
+      "item": "evilcraft:vengeance_essence|0",
+      "emc": 16384
+    },
+    {
+      "item": "evilcraft:garmonbozia|0",
+      "emc": 16896
+    },
+    {
+      "item": "quantumflux:craftingpiece|1",
+      "emc": 5008
+    },
+    {
+      "item": "draconicevolution:wyvern_core|0",
+      "emc": 2033472
+    },
+    {
+      "item": "draconicevolution:dragon_heart|0",
+      "emc": 50000000
+    },
+    {
+      "item": "draconicevolution:draconic_block|0",
+      "emc": 15587072
+    },
+    {
+      "item": "draconicevolution:awakened_core|0",
+      "emc": 74688384
+    },
+    {
+      "item": "extrautils2:ingredients|11",
+      "emc": 2048
+    },
+    {
+      "item": "actuallyadditions:item_misc|5",
+      "emc": 256
+    },
+    {
+      "item": "enderio:item_material|20",
+      "emc": 256
+    },
+    {
+      "item": "draconicevolution:draconic_energy_core|0",
+      "emc": 82075328
+    },
+    {
+      "item": "draconicevolution:infused_obsidian|0",
+      "emc": 42560
+    },
+    {
+      "item": "calculator:enrichedgoldingot|0",
+      "emc": 528
+    },
+    {
+      "item": "calculator:weakeneddiamond|0",
+      "emc": 2048
+    },
+    {
+      "item": "calculator:flawlessdiamond|0",
+      "emc": 16454
+    },
+    {
+      "item": "calculator:firediamond|0",
+      "emc": 17920
+    },
+    {
+      "item": "calculator:electricdiamond|0",
+      "emc": 17920
+    },
+    {
+      "item": "calculator:enddiamond|0",
+      "emc": 17985
+    },
+    {
+      "item": "draconicevolution:chaos_shard|3",
+      "emc": 379024
+    },
+    {
+      "item": "draconicevolution:chaotic_core|0",
+      "emc": 1773818448
+    },
+    {
+      "item": "abyssalcraft:oblivionshard|0",
+      "emc": 5184
+    },
+    {
+      "item": "abyssalcraft:oc|0",
+      "emc": 22784
+    },
+    {
+      "item": "extrautils2:suncrystal|0",
+      "emc": 9728
+    },
+    {
+      "item": "extrautils2:decorativesolid|3",
+      "emc": 1
+    },
+    {
+      "item": "xreliquary:mob_ingredient|12",
+      "emc": 96
+    },
+    {
+      "item": "xreliquary:mob_ingredient|0",
+      "emc": 720
+    },
+    {
+      "item": "xreliquary:mob_ingredient|2",
+      "emc": 72
+    },
+    {
+      "item": "xreliquary:mob_ingredient|3",
+      "emc": 1152
+    },
+    {
+      "item": "xreliquary:mob_ingredient|4",
+      "emc": 192
+    },
+    {
+      "item": "xreliquary:mob_ingredient|5",
+      "emc": 1024
+    },
+    {
+      "item": "xreliquary:mob_ingredient|6",
+      "emc": 192
+    },
+    {
+      "item": "xreliquary:mob_ingredient|7",
+      "emc": 2400
+    },
+    {
+      "item": "xreliquary:mob_ingredient|1",
+      "emc": 720
+    },
+    {
+      "item": "xreliquary:mob_ingredient|8",
+      "emc": 1920
+    },
+    {
+      "item": "xreliquary:mob_ingredient|10",
+      "emc": 5
+    },
+    {
+      "item": "xreliquary:mob_ingredient|11",
+      "emc": 1280
+    },
+    {
+      "item": "xreliquary:witch_hat|0",
+      "emc": 512
+    },
+    {
+      "item": "appliedenergistics2:material|35",
+      "emc": 2656
+    },
+    {
+      "item": "botania:livingwood|0",
+      "emc": 32
+    },
+    {
+      "item": "botania:livingrock|0",
+      "emc": 1
+    },
+    {
+      "item": "actuallyadditions:block_testifi_bucks_green_wall|0",
+      "emc": 1024
+    },
+    {
+      "item": "actuallyadditions:block_testifi_bucks_white_wall|0",
+      "emc": 1024
+    },
+    {
+      "item": "calculator:redstoneingot|0",
+      "emc": 320
+    },
+    {
+      "item": "calculator:enrichedcoal|0",
+      "emc": 192
+    },
+    {
+      "item": "calculator:purifiedcoal|0",
+      "emc": 720
+    },
+    {
+      "item": "calculator:energymodule|0",
+      "emc": 736
+    },
+    {
+      "item": "draconicevolution:energy_crystal|0",
+      "emc": 21491904
+    },
+    {
+      "item": "botania:manaresource|15",
+      "emc": 1
+    },
+    {
+      "item": "botania:dreamwood|0",
+      "emc": 32
+    },
+    {
+      "item": "bloodarsenal:base_item|0",
+      "emc": 1
+    },
+    {
+      "item": "randomthings:ingredient|2",
+      "emc": 8192
+    },
+    {
+      "item": "contenttweaker:ender_token|0",
+      "emc": 69
+    },
+    {
+      "item": "evilcraft:hardened_blood|0",
+      "emc": 1000
+    },
+    {
+      "item": "fluxnetworks:flux|0",
+      "emc": 53582
+    },
+    {
+      "item": "astralsorcery:itemcraftingcomponent|1",
+      "emc": 256
+    },
+    {
+      "item": "astralsorcery:itemcraftingcomponent|2",
+      "emc": 256
+    },
+    {
+      "item": "minecraft:experience_bottle|0",
+      "emc": 2048
+    },
+    {
+      "item": "contenttweaker:bedrockium_nugget|0",
+      "emc": 3486784401
+    },
+    {
+      "item": "contenttweaker:bedrockium_ingot|0",
+      "emc": 282429536481
+    },
+    {
+      "item": "contenttweaker:bedrockium_block|0",
+      "emc": 22876792454961
+    },
+    {
+      "item": "minecraft:bedrock|0",
+      "emc": 1853020188851841
+    }
+  ]
+}

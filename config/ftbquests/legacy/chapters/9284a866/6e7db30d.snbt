@@ -1,0 +1,32 @@
+{
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "avaritia:infinity_sword"
+	},
+	x: -1.0d,
+	y: -2.0d,
+	dependencies: [
+		"e946e194"
+	],
+	tasks: [{
+		uid: "b261ca37",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "avaritia:infinity_sword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d8165188",
+		type: "item",
+		items: [{
+			item: "avaritiatweaks:enhancement_crystal"
+		}]
+	}]
+}

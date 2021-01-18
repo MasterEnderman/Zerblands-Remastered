@@ -1,0 +1,14 @@
+{
+	x: -11.0d,
+	y: 0.0d,
+	dependencies: [
+		"bde5d612"
+	],
+	tasks: [{
+		uid: "c396d385",
+		type: "item",
+		items: [{
+			item: "psi:cad_assembler"
+		}]
+	}]
+}

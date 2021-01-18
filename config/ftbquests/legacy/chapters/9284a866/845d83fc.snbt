@@ -1,0 +1,40 @@
+{
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "immersiveengineering:tool"
+	},
+	x: -13.0d,
+	y: -2.0d,
+	dependencies: [
+		"bde5d612"
+	],
+	tasks: [{
+		uid: "bbf1d80f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:tool"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6e142154",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration"
+		}],
+		count: 27L
+	},
+	{
+		uid: "149dafc3",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 1"
+		}],
+		count: 27L
+	}]
+}

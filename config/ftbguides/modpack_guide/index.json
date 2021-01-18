@@ -1,0 +1,17 @@
+[
+    {
+        "id": "ore_gen",
+        "title": "Ore Generation",
+        "icon": "item:minecraft:redstone_ore"
+    },
+    {
+        "id": "hints",
+        "title": "Tips'n'Tricks",
+        "icon": "item:ftbquests:book"
+    },
+    {
+        "id": "social_media",
+        "title": "Social Media",
+        "icon": "item:extrautils2:snowglobe"
+    }
+]

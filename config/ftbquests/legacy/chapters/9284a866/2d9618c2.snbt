@@ -1,0 +1,22 @@
+{
+	x: -9.0d,
+	y: 1.0d,
+	dependencies: [
+		"3a85a027",
+		"3d6ca59f",
+		"8d4510f1",
+		"ea58994e",
+		"baa8810f",
+		"0dd5514d",
+		"40a0404b",
+		"a35a0b56",
+		"a60ebf73",
+		"7102d1ad"
+	],
+	tasks: [{
+		uid: "faf5bd95",
+		type: "checkmark",
+		title: "Settling down.",
+		icon: "botania_tweaks:compressed_tiny_potato_1"
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: -12.0d,
+	y: -3.0d,
+	dependencies: [
+		"306ff504"
+	],
+	tasks: [{
+		uid: "c92e679c",
+		type: "checkmark",
+		title: "Getting started!",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "contenttweaker:ender_token"
+		}
+	}]
+}

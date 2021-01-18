@@ -1,0 +1,14 @@
+{
+	icon: "draconicevolution:chaos_shard",
+	x: -2.0d,
+	y: -2.0d,
+	dependencies: [
+		"270617ed"
+	],
+	tasks: [{
+		uid: "6b955208",
+		type: "kill",
+		entity: "draconicevolution:chaosguardian",
+		value: 1L
+	}]
+}

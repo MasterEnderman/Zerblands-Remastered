@@ -1,0 +1,10 @@
+{
+    "loadOnLogin": false,
+    "mustRead": false,
+    "pages": [
+      {
+        "title": "Welcome to the Zerblands!",
+        "file": "page1"
+      }
+    ]
+  }

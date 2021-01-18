@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	dependencies: [
+		"54da34a8"
+	],
+	tasks: [{
+		uid: "720ed134",
+		type: "item",
+		items: [{
+			item: "contenttweaker:orb_armok"
+		}]
+	}]
+}
