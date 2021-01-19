@@ -10,5 +10,10 @@
 		items: [{
 			item: "draconicevolution:fusion_crafting_core"
 		}]
+	}],
+	rewards: [{
+		uid: "57a12b42",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "avaritiatweaks:infinitato"
 		}]
+	}],
+	rewards: [{
+		uid: "3adf93ab",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

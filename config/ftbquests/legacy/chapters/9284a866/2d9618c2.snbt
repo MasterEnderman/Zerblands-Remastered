@@ -18,5 +18,10 @@
 		type: "checkmark",
 		title: "Settling down.",
 		icon: "botania_tweaks:compressed_tiny_potato_1"
+	}],
+	rewards: [{
+		uid: "3a72ef04",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

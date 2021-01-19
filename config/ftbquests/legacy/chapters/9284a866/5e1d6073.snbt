@@ -10,5 +10,10 @@
 		items: [{
 			item: "minecraft:bedrock"
 		}]
+	}],
+	rewards: [{
+		uid: "b1cfbad3",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

@@ -19,5 +19,10 @@
 			Damage: 9s
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "88495526",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

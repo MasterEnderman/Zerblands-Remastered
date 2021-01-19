@@ -10,5 +10,10 @@
 		items: [{
 			item: "botania:terraplate"
 		}]
+	}],
+	rewards: [{
+		uid: "7467f027",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

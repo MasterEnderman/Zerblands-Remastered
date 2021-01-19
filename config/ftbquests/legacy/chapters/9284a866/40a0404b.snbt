@@ -17,5 +17,10 @@
 		type: "checkmark",
 		title: "What a start.",
 		icon: "botania:tinypotato"
+	}],
+	rewards: [{
+		uid: "f68c86ad",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

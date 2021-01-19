@@ -10,5 +10,10 @@
 		type: "kill",
 		entity: "botania:doppleganger",
 		value: 1L
+	}],
+	rewards: [{
+		uid: "6b8c7144",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

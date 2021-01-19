@@ -10,5 +10,10 @@
 		items: [{
 			item: "botania:pool 1 1"
 		}]
+	}],
+	rewards: [{
+		uid: "9177e4f5",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

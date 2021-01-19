@@ -27,3 +27,10 @@ recipes.addShaped(<tconstruct:materials:50>, [
     [demonic_plate,<randomthings:obsidianskull>,demonic_plate],
     [demonic_plate,demonic_plate,demonic_plate]
 ]);
+
+recipes.remove(<tconstruct:throwball:1>);
+recipes.addShaped(<tconstruct:throwball:1>, [
+    [<ic2:blockexplosive>,<ic2:blockexplosive>,<ic2:blockexplosive>],
+    [<ic2:blockexplosive>,<minecraft:magma_cream>,<ic2:blockexplosive>],
+    [<ic2:blockexplosive>,<ic2:blockexplosive>,<ic2:blockexplosive>]
+]);

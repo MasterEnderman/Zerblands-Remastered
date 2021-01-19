@@ -14,5 +14,10 @@
 			},
 			id: "contenttweaker:ender_token"
 		}
+	}],
+	rewards: [{
+		uid: "85967001",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

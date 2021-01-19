@@ -16,5 +16,10 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a14da1d6",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

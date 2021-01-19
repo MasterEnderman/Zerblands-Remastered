@@ -10,5 +10,10 @@
 		items: [{
 			item: "abyssalcraft:psdl"
 		}]
+	}],
+	rewards: [{
+		uid: "c4423693",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

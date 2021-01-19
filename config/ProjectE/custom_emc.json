@@ -431,6 +431,22 @@
     {
       "item": "minecraft:bedrock|0",
       "emc": 1853020188851841
+    },
+    {
+      "item": "quantumflux:craftingpiece|6",
+      "emc": 8192
+    },
+    {
+      "item": "extrautils2:decorativesolid|7",
+      "emc": 1024
+    },
+    {
+      "item": "extrautils2:endershard|0",
+      "emc": 128
+    },
+    {
+      "item": "enderio:item_material|1",
+      "emc": 2000
     }
   ]
 }

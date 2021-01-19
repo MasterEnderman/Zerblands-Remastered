@@ -14,5 +14,10 @@
 			id: "extrautils2:angelring"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8e5ceb3d",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

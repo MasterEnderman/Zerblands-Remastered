@@ -10,5 +10,10 @@
 		items: [{
 			item: "appliedenergistics2:controller"
 		}]
+	}],
+	rewards: [{
+		uid: "39c8f831",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

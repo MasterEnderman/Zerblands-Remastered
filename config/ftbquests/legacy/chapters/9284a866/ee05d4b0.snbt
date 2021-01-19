@@ -10,5 +10,10 @@
 		items: [{
 			item: "ic2:blockmachinehv 1 5"
 		}]
+	}],
+	rewards: [{
+		uid: "a533bd2a",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

@@ -39,5 +39,10 @@
 			id: "botania:cosmetic",
 			Damage: 30s
 		}
+	},
+	{
+		uid: "f278340c",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

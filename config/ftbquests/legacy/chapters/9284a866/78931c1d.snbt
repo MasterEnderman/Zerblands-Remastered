@@ -9,5 +9,10 @@
 		type: "kill",
 		entity: "abyssalcraft:jzahar",
 		value: 1L
+	}],
+	rewards: [{
+		uid: "f4872478",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

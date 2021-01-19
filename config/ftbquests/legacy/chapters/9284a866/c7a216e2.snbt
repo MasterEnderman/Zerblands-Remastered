@@ -18,5 +18,10 @@
 		type: "checkmark",
 		title: "Finishing most of the mods.",
 		icon: "botania_tweaks:compressed_tiny_potato_3"
+	}],
+	rewards: [{
+		uid: "9d9ebcb7",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "extrautils2:teleporter 1 1"
 		}]
+	}],
+	rewards: [{
+		uid: "a470cbbb",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

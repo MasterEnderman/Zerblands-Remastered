@@ -10,5 +10,10 @@
 		items: [{
 			item: "contenttweaker:orb_armok"
 		}]
+	}],
+	rewards: [{
+		uid: "f7f4c44e",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

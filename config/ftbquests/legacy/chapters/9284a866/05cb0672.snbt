@@ -10,5 +10,10 @@
 		items: [{
 			item: "draconicevolution:chaos_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "727fde66",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

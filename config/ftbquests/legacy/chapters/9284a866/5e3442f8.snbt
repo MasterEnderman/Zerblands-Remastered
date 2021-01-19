@@ -10,5 +10,10 @@
 		items: [{
 			item: "calculator:atomicmultiplier"
 		}]
+	}],
+	rewards: [{
+		uid: "e479b5aa",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

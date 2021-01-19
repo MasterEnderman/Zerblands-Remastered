@@ -10,5 +10,10 @@
 		items: [{
 			item: "exponentialpower:endergenerator"
 		}]
+	}],
+	rewards: [{
+		uid: "0d078da7",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

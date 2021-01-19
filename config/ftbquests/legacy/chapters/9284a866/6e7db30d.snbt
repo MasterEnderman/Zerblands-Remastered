@@ -28,5 +28,10 @@
 		items: [{
 			item: "avaritiatweaks:enhancement_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "17cf03c5",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

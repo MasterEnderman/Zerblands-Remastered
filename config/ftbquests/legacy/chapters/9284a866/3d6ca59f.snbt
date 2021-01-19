@@ -10,5 +10,10 @@
 		items: [{
 			item: "environmentaltech:solar_cont_1"
 		}]
+	}],
+	rewards: [{
+		uid: "697f30ad",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

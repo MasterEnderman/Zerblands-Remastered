@@ -1,4 +1,11 @@
 {
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "calculator:calculator",
+		tag: {}
+	},
 	x: -13.0d,
 	y: -1.0d,
 	dependencies: [
@@ -16,5 +23,30 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	},
+	{
+		uid: "482f7f95",
+		type: "item",
+		items: [{
+			item: "calculator:powercube"
+		}]
+	},
+	{
+		uid: "750e34e7",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "calculator:scientificcalculator",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "fb0333aa",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

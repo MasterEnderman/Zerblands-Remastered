@@ -13,5 +13,10 @@
 				type: "asgardandelion"
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "8a7ff123",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

@@ -36,5 +36,10 @@
 			item: "immersiveengineering:stone_decoration 1 1"
 		}],
 		count: 27L
+	}],
+	rewards: [{
+		uid: "a1f867a5",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "abyssalcraft:crystallizer"
 		}]
+	}],
+	rewards: [{
+		uid: "cb2531d9",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

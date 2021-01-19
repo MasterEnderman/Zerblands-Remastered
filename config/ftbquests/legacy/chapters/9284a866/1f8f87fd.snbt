@@ -17,5 +17,10 @@
 		type: "checkmark",
 		title: "Still not satified?",
 		icon: "contenttweaker:infinite"
+	}],
+	rewards: [{
+		uid: "29782939",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

@@ -341,7 +341,9 @@
   "ingotRecycling_ingot_dark_soularium": true,
   "ingotRecycling_ingotMagnesium": true,
   "ingotRecycling_ingotCalcium": true,
-  "ingotRecycling_ingotGelidEnderium": true
+  "ingotRecycling_ingotGelidEnderium": true,
+  "ingotRecycling_ingotFluixSteel": true,
+  "ingotRecycling_ingotEnrichedGold": true
  },
  "sawmill": {
   "tile.wood.oak_-867074482": true,

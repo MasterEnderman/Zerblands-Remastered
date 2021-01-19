@@ -10,5 +10,10 @@
 		items: [{
 			item: "avaritia:extreme_crafting_table"
 		}]
+	}],
+	rewards: [{
+		uid: "9c799ccc",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

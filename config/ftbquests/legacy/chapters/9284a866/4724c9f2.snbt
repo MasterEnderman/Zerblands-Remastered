@@ -18,5 +18,10 @@
 		type: "checkmark",
 		title: "Going ALL the way to the end.",
 		icon: "botania_tweaks:compressed_tiny_potato_5"
+	}],
+	rewards: [{
+		uid: "d5462970",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

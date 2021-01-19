@@ -10,5 +10,10 @@
 		items: [{
 			item: "botania:gaiahead"
 		}]
+	}],
+	rewards: [{
+		uid: "0eb3055f",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

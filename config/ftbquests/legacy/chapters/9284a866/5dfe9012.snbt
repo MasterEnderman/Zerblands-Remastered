@@ -18,5 +18,10 @@
 		type: "checkmark",
 		title: "Basically finished the modpack.",
 		icon: "botania_tweaks:compressed_tiny_potato_4"
+	}],
+	rewards: [{
+		uid: "65d8610e",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

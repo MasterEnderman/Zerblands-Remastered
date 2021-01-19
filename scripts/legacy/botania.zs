@@ -20,6 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.bloodmagic.BloodAltar;
 import mods.botania.PureDaisy;
 
 recipes.addShaped(<botania:pool:1>, [
@@ -39,3 +40,5 @@ mods.botania.PureDaisy.addRecipe(<immersiveengineering:treated_wood>, <botania:l
 
 mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
 mods.botania.PureDaisy.addRecipe(<sonarcore:reinforcedstoneblock>, <botania:livingrock>, 100);
+
+BloodAltar.addRecipe(<botania:blacklotus>, <actuallyadditions:block_black_lotus>, 1, 2000, 20, 20);

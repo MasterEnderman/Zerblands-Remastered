@@ -10,5 +10,10 @@
 		items: [{
 			item: "environmentaltech:void_ore_miner_cont_1"
 		}]
+	}],
+	rewards: [{
+		uid: "8210714b",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

@@ -23,8 +23,9 @@ import scripts.functions.findFirstItemFromMod;
 import mods.avaritia.ExtremeCrafting;
 import mods.jei.JEI;
 
-JEI.removeAndHide(<extrautils2:miner>);
+JEI.removeAndHide(<extrautils2:bagofholding>);
 JEI.removeAndHide(<extrautils2:itembuilderswand>);
+JEI.removeAndHide(<extrautils2:miner>);
 
 recipes.remove(<extrautils2:lawsword>);
 recipes.addShaped(<extrautils2:lawsword>, [
@@ -73,6 +74,22 @@ recipes.addShaped(<extrautils2:spike_wood>, [
     [null,<extrautils2:sickle_wood>,null],
     [<extrautils2:sickle_wood>,<ore:plankWood>,<extrautils2:sickle_wood>],
     [<ore:plankWood>,<ore:logWood>,<ore:plankWood>]
+]);
+
+recipes.addShaped(<extrautils2:decorativebedrock> * 4, [
+    [<minecraft:bedrock>,<minecraft:bedrock>],
+    [<minecraft:bedrock>,<minecraft:bedrock>]
+]);
+
+recipes.addShaped(<extrautils2:decorativebedrock:1> * 4, [
+    [<extrautils2:decorativebedrock>,<extrautils2:decorativebedrock>],
+    [<extrautils2:decorativebedrock>,<extrautils2:decorativebedrock>]
+]);
+
+recipes.addShaped(<extrautils2:decorativebedrock:2> * 4, [
+    [<minecraft:cobblestone>,<minecraft:bedrock>,<minecraft:cobblestone>],
+    [<minecraft:bedrock>,<minecraft:cobblestone>,<minecraft:bedrock>],
+    [<minecraft:cobblestone>,<minecraft:bedrock>,<minecraft:cobblestone>]
 ]);
 
 recipes.removeShaped(<extrautils2:angelring>);

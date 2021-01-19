@@ -10,5 +10,10 @@
 		items: [{
 			item: "projecte:transmutation_table"
 		}]
+	}],
+	rewards: [{
+		uid: "4ede86cb",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

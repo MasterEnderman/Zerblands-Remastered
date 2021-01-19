@@ -10,5 +10,10 @@
 		items: [{
 			item: "randomthings:imbuingstation"
 		}]
+	}],
+	rewards: [{
+		uid: "c21f0ee1",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

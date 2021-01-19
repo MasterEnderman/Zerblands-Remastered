@@ -10,5 +10,10 @@
 		items: [{
 			item: "extrautils2:quarry"
 		}]
+	}],
+	rewards: [{
+		uid: "b2d8aa24",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

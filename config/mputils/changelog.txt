@@ -1,5 +1,13 @@
 # Zerblands-Remastered
 
+## v2.0.1 - day one patch
+
+- added alternative way to obtain processors
+- removed xu2 bag of holding (buggy)
+- improved quests
+- fixed et energy costs
+- fixed villages generation
+
 ## v2.0.0 - release
 
 - initial release of the remastered version

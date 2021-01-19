@@ -10,5 +10,10 @@
 		items: [{
 			item: "tconstruct:smeltery_controller"
 		}]
+	}],
+	rewards: [{
+		uid: "d235392c",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

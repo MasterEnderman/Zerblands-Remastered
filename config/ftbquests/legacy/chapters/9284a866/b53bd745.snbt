@@ -10,5 +10,10 @@
 		items: [{
 			item: "fluxnetworks:fluxcontroller"
 		}]
+	}],
+	rewards: [{
+		uid: "c74eac3c",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "enderio:block_alloy_smelter"
 		}]
+	}],
+	rewards: [{
+		uid: "dbd4284e",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "embers:alchemy_tablet"
 		}]
+	}],
+	rewards: [{
+		uid: "de2e79cd",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }

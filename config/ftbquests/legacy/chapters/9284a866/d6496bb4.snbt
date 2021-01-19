@@ -10,5 +10,10 @@
 		items: [{
 			item: "bloodmagic:altar"
 		}]
+	}],
+	rewards: [{
+		uid: "50d4d038",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
 	}]
 }
