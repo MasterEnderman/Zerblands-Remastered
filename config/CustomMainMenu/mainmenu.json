@@ -130,7 +130,7 @@
             "texture": "zerblands:mainmenu/youtube.png",
             "action": {
                 "type": "openLink",
-                "link": "https://www.youtube.com/user/zerberus1979"
+                "link": "https://www.youtube.com/user/xxmasterendermanxx"
             }
         },
         "discord": {
@@ -146,7 +146,7 @@
             "texture": "zerblands:mainmenu/discord.png",
             "action": {
                 "type": "openLink",
-                "link": "https://discord.gg/GnwGf4p"
+                "link": "https://discord.gg/JF7x2vG"
             }
         },
         "github": {

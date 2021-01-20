@@ -31,3 +31,8 @@ wax.add(<harvestcraft:beeswaxitem>);
 
 recipes.remove(<harvestcraft:hardenedleatheritem>);
 recipes.addShapeless(<harvestcraft:hardenedleatheritem>, [<minecraft:leather>,<ore:customWax>]);
+
+recipes.remove(<harvestcraft:freshwateritem>);
+recipes.addShaped(<harvestcraft:freshwateritem> * 8, [
+    [getBucketDefault("water")]
+]);

@@ -1,5 +1,13 @@
 # Zerblands-Remastered
 
+## v2.0.2 - tweaks
+
+- added Loot Capacitor Tooltips
+- reduced Abyssalcraft biom weights
+- reduced Astral Sorcery Structure spawn
+- fixed dupe bug with harvestcraft
+- fixed main menu links
+
 ## v2.0.1 - day one patch
 
 - added alternative way to obtain processors
