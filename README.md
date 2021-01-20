@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/github/license/MasterEnderman/Zerblands-Remastered.svg)](LICENSE) ![Versions](https://cf.way2muchnoise.eu/versions/minecraft_zerblands-remastered_all.svg) [![Downloads](https://cf.way2muchnoise.eu/zerblands-remastered.svg)](https://www.curseforge.com/minecraft/modpacks/zerblands-remastered)
 
-*An old Classic remade in a newer Version* • [CurseForge](https://www.curseforge.com/minecraft/modpacks/zerblands-remastered) • [Bugtracker](https://github.com/MasterEnderman/Zerblands-Remastered/issues)
+*An old Classic remade in a newer Version* • [CurseForge](https://www.curseforge.com/minecraft/modpacks/zerblands-remastered) • [Changelog](config/mputils/changelog.txt) • [Bugtracker](https://github.com/MasterEnderman/Zerblands-Remastered/issues)
 
 <p>&nbsp;</p>
 
