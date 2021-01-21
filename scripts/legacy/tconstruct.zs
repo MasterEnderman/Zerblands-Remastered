@@ -33,6 +33,11 @@ recipes.addShaped(<tconstruct:materials:50>, [
     [demonic_plate,demonic_plate,demonic_plate]
 ]);
 
+recipes.addShaped(<tconstruct:seared:3> * 6, [
+    [<ore:ingotConstructionAlloy>,<ore:ingotConstructionAlloy>],
+    [<ore:ingotConstructionAlloy>,<ore:ingotConstructionAlloy>]
+]);
+
 recipes.remove(<tconstruct:throwball:1>);
 recipes.addShaped(<tconstruct:throwball:1>, [
     [<ic2:blockexplosive>,<ic2:blockexplosive>,<ic2:blockexplosive>],

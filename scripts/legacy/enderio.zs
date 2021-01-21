@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.enderio.SagMill;
+import mods.enderio.AlloySmelter;
 import mods.inworldcrafting.FluidToItem;
 
 recipes.addShaped(<enderio:item_broken_spawner>, [
@@ -32,5 +33,7 @@ recipes.addShaped(<enderio:item_broken_spawner>, [
 SagMill.removeRecipe(<enderio:block_infinity>);
 SagMill.removeRecipe(<enderio:block_infinity:1>);
 SagMill.removeRecipe(<enderio:block_infinity:2>);
+
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:9> * 4, [<ore:ingotIron>,<minecraft:clay>,<tconstruct:materials>], 5000);
 
 FluidToItem.transform(<enderio:item_material:20>, <liquid:astralsorcery.liquidstarlight>, [<ore:dustQuartzBlack>], false);
