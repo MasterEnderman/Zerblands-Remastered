@@ -1,5 +1,22 @@
 # Zerblands-Remastered
 
+- add secret kikoku recipe
+
+## v2.0.3 - better guide
+
+- added Client Tweaks
+- added Overloaded Armor Bar
+- added Superior Shields
+
+- updated Construct's Armory
+- updated Flux Networks
+
+- removed No Default Auto-Jump
+
+- improved ingame guide
+
+- show all tc tables in jei
+
 ## v2.0.2 - tweaks
 
 - added Loot Capacitor Tooltips

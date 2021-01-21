@@ -1,0 +1,42 @@
+[
+    {
+        "id": "etech",
+        "title": "Environmental Tech",
+        "icon": "item:valkyrielib:guide"
+    },
+    {
+        "id": "eio",
+        "title": "EnderIO",
+        "icon": "item:enderio:item_material 1 20"
+    },
+    {
+        "id": "tc",
+        "title": "Tinkers' Construct",
+        "icon": "item:tconstruct:book"
+    },
+    {
+        "id": "rftools",
+        "title": "RFTools",
+        "icon": "item:rftools:rftools_manual"
+    },
+    {
+        "id": "ic2",
+        "title": "IndustrialCraft 2 Classic",
+        "icon": "item:ic2:itemmemorystick"
+    },
+    {
+        "id": "cfb",
+        "title": "Cooking for Blockheads",
+        "icon": "item:cookingforblockheads:recipe_book 1 1"
+    },
+    {
+        "id": "fluxnet",
+        "title": "Flux Networks",
+        "icon": "item:fluxnetworks:fluxcore"
+    },
+    {
+        "id": "draco",
+        "title": "Draconic Evolution",
+        "icon": "item:draconicevolution:info_tablet"
+    }
+]

@@ -20,6 +20,11 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.tconstruct.Melting;
+
+Melting.removeEntityMelting(<entity:minecraft:villager>);
+Melting.removeEntityMelting(<entity:minecraft:horse>);
+
 var demonic_plate as IItemStack = <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"});
 
 recipes.addShaped(<tconstruct:materials:50>, [
