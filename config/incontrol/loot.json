@@ -1,0 +1,8 @@
+[
+    {
+        "mob": "botania:doppleganger",
+        "player": true,
+        "helditem": "contenttweaker:ender_token",
+        "item": "botania:gaiahead"
+    }
+]

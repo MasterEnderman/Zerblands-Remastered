@@ -1,0 +1,24 @@
+{
+	x: -6.0d,
+	y: -3.0d,
+	dependencies: [
+		"8c14f877",
+		"306ff504"
+	],
+	tasks: [{
+		uid: "f6c0fb62",
+		type: "checkmark",
+		title: "Branching out...",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "contenttweaker:ender_token"
+		}
+	}],
+	rewards: [{
+		uid: "043c11d6",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

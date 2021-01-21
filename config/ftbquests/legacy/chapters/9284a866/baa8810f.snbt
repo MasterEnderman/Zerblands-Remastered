@@ -1,0 +1,19 @@
+{
+	x: -10.0d,
+	y: -2.0d,
+	dependencies: [
+		"8c14f877"
+	],
+	tasks: [{
+		uid: "941b465e",
+		type: "item",
+		items: [{
+			item: "extrautils2:teleporter 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "a470cbbb",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

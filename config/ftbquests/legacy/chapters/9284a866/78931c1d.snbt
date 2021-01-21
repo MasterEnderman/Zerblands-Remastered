@@ -1,0 +1,18 @@
+{
+	x: -4.0d,
+	y: 0.0d,
+	dependencies: [
+		"270617ed"
+	],
+	tasks: [{
+		uid: "43da95c4",
+		type: "kill",
+		entity: "abyssalcraft:jzahar",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "f4872478",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

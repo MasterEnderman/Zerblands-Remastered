@@ -1,0 +1,57 @@
+[
+    {
+     "id": "minecraft",
+     "title": "Minecraft",
+     "icon": "item:minecraft:iron_ore"
+    },
+    {
+     "id": "thermalfoundation",
+     "title": "Thermal Foundation",
+     "icon": "item:thermalfoundation:ore"
+    },
+    {
+     "id": "ic2c",
+     "title": "IndustrialCraft 2 Classic",
+     "icon": "item:ic2:blockmetal 1 2"
+    },
+    {
+     "id": "extremereactors",
+     "title": "Extreme Reactors",
+     "icon": "item:bigreactors:oreyellorite"
+    },
+    {
+     "id": "forestry",
+     "title": "Forestry",
+     "icon": "item:forestry:resources"
+    },
+    {
+     "id": "quantumflux",
+     "title": "Quantumflux",
+     "icon": "item:quantumflux:graphiteore"
+    },
+    {
+     "id": "actuallyadditions",
+     "title": "Actually Additions",
+     "icon": "item:actuallyadditions:block_misc 1 3"
+    },
+    {
+     "id": "evilcraft",
+     "title": "Evilcraft",
+     "icon": "item:evilcraft:dark_ore"
+    },
+    {
+     "id": "tconstruct",
+     "title": "Tinker's Construct",
+     "icon": "item:tconstruct:ore"
+    },
+    {
+     "id": "appliedenergistics",
+     "title": "Applied Energistics 2",
+     "icon": "item:appliedenergistics2:quartz_ore"
+    },
+    {
+     "id": "stones",
+     "title": "Stones and Minerals",
+     "icon": "item:earthworks:block_slate_purple"
+    }
+]

@@ -1,0 +1,93 @@
+{
+    "block_pools": [
+        {
+            "name": "ender_token",
+            "type": {
+                "type": "block_list",
+                "blocks": [
+                    {
+                        "name": "tp:ender_ore"
+                    }
+                ]
+            },
+            "clicktype": "right",
+            "properties": [
+                {
+                    "type": "require_player",
+                    "disableJEI": true
+                },
+                {
+                    "type": "require_item",
+                    "name": "contenttweaker:glass_bell",
+                    "meta": 0,
+                    "amount": 1
+                },
+                {
+                    "type": "consume_item",
+                    "amount": 1
+                },
+                {
+                    "type": "drop_items",
+                    "disableJEI": true,
+                    "doDrop": false
+                },
+                {
+                    "type": "swing_hand",
+                    "disableJEI": true
+                },
+                {
+                    "type": "consume_block",
+                    "name": "tp:ender_ore",
+                    "meta": 0
+                },
+                {
+                    "type": "require_dimension",
+                    "dimensions": [
+                        {
+                            "dim": 0,
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "type": "spawn_explosion",
+                    "disableJEI": true,
+                    "power": 4.2
+                },
+                {
+                    "type": "require_entity",
+                    "name": "minecraft:enderman"
+                },
+                {
+                    "type": "play_sound",
+                    "name": "minecraft:entity.enderman.death",
+                    "volume": 0.8,
+                    "pitch": 0.5,
+                    "disableJEI": true
+                }
+            ],
+            "drops": [
+                {
+                    "name": "contenttweaker:ender_token",
+                    "properties": [
+                        {
+                            "type": "add_enchantment",
+                            "name": "enderio:shimmer",
+                            "level": 1
+                        }
+                    ]
+                }
+            ],
+            "messages": [
+                {
+                    "id": "require_entity",
+                    "message": "No Enderman nearby."
+                },
+                {
+                    "id": "require_dimension",
+                    "message": "Only works in the Overworld."
+                }
+            ]
+        }
+    ]
+}

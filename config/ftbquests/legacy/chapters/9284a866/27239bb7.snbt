@@ -1,0 +1,19 @@
+{
+	x: -6.0d,
+	y: -2.0d,
+	dependencies: [
+		"9aab709f"
+	],
+	tasks: [{
+		uid: "63e78379",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:controller"
+		}]
+	}],
+	rewards: [{
+		uid: "39c8f831",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

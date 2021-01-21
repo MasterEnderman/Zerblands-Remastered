@@ -1,0 +1,19 @@
+{
+	x: -3.0d,
+	y: -2.0d,
+	dependencies: [
+		"270617ed"
+	],
+	tasks: [{
+		uid: "ecf64779",
+		type: "item",
+		items: [{
+			item: "draconicevolution:fusion_crafting_core"
+		}]
+	}],
+	rewards: [{
+		uid: "57a12b42",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

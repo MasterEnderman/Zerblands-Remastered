@@ -1,0 +1,17 @@
+[
+    {
+        "id": "changes",
+        "title": "Changes",
+        "icon": "item:minecraft:paper"
+    },
+    {
+        "id": "ore_gen",
+        "title": "Ore Generation",
+        "icon": "item:minecraft:redstone_ore"
+    },
+    {
+        "id": "social_media",
+        "title": "Social Media",
+        "icon": "item:extrautils2:snowglobe"
+    }
+]

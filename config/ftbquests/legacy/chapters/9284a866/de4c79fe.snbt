@@ -1,0 +1,19 @@
+{
+	icon: "draconicevolution:chaos_shard",
+	x: -2.0d,
+	y: -2.0d,
+	dependencies: [
+		"270617ed"
+	],
+	tasks: [{
+		uid: "6b955208",
+		type: "kill",
+		entity: "draconicevolution:chaosguardian",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "28ad57f7",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

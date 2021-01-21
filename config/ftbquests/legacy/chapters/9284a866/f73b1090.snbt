@@ -1,0 +1,29 @@
+{
+	x: -11.0d,
+	y: -2.0d,
+	text: [
+		"The second mechanical core is used as interface for the ember bore. Input coal and extract ember shards from the mechanical core placed on top of the ember bore."
+	],
+	dependencies: [
+		"bde5d612"
+	],
+	tasks: [{
+		uid: "02982a79",
+		type: "item",
+		items: [{
+			item: "embers:ember_bore"
+		}]
+	},
+	{
+		uid: "4643267a",
+		type: "item",
+		items: [{
+			item: "embers:mech_core"
+		}]
+	}],
+	rewards: [{
+		uid: "43691844",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

@@ -1,0 +1,36 @@
+{
+	x: -2.0d,
+	y: -1.0d,
+	dependencies: [
+		"270617ed"
+	],
+	tasks: [{
+		uid: "ae44246a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "calculator:flawlesscalculator",
+			tag: {
+				0: {},
+				slot4: "Energy Module",
+				1: {},
+				slot3: "Storage",
+				2: {},
+				slot2: "Crafting",
+				3: {},
+				slot1: "Dynamic",
+				4: {},
+				slot0: "Flawless"
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "268b1560",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

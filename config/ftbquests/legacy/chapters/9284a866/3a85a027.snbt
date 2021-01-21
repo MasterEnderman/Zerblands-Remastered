@@ -1,0 +1,19 @@
+{
+	x: -9.0d,
+	y: -2.0d,
+	dependencies: [
+		"8c14f877"
+	],
+	tasks: [{
+		uid: "0f83b8f1",
+		type: "item",
+		items: [{
+			item: "embers:alchemy_tablet"
+		}]
+	}],
+	rewards: [{
+		uid: "de2e79cd",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

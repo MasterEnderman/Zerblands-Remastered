@@ -1,0 +1,52 @@
+{
+    "block_pools": [
+        {
+            "name": "tiara",
+            "type": {
+                "type": "block_list",
+                "blocks": [
+                    {
+                        "name": "avaritiatweaks:gaia_block"
+                    }
+                ]
+            },
+            "disableJEI": true,
+            "clicktype": "left",
+            "properties": [
+                {
+                    "type": "require_player"
+                },
+                {
+                    "type": "require_item",
+                    "name": "botania:flighttiara",
+                    "meta": 0,
+                    "amount": 1
+                },
+                {
+                    "type": "consume_item",
+                    "amount": 1
+                },
+                {
+                    "type": "drop_items",
+                    "doDrop": false
+                },
+                {
+                    "type": "swing_hand"
+                }
+            ],
+            "drops": [
+                {
+                    "name": "botania:flighttiara",
+                    "meta": 9,
+                    "properties": [
+                        {
+                            "type": "add_enchantment",
+                            "name": "enderio:shimmer",
+                            "level": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

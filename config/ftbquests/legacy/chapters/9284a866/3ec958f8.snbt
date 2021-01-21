@@ -1,0 +1,19 @@
+{
+	x: -5.0d,
+	y: -1.0d,
+	dependencies: [
+		"9aab709f"
+	],
+	tasks: [{
+		uid: "42b37276",
+		type: "item",
+		items: [{
+			item: "extrautils2:quarry"
+		}]
+	}],
+	rewards: [{
+		uid: "b2d8aa24",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: -7.0d,
+	y: -2.0d,
+	dependencies: [
+		"9aab709f"
+	],
+	tasks: [{
+		uid: "0185e683",
+		type: "item",
+		items: [{
+			item: "botania:terraplate"
+		}]
+	}],
+	rewards: [{
+		uid: "7467f027",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

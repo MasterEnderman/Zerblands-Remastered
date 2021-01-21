@@ -1,0 +1,27 @@
+{
+	x: 0.0d,
+	y: -3.0d,
+	text: [
+		"Some goals you have to work for."
+	],
+	dependencies: [
+		"270617ed",
+		"306ff504"
+	],
+	tasks: [{
+		uid: "d821b4f5",
+		type: "checkmark",
+		title: "The End of Zerblands?",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "contenttweaker:ender_token"
+		}
+	}],
+	rewards: [{
+		uid: "4c23a905",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	x: -1.0d,
+	y: -1.0d,
+	dependencies: [
+		"e946e194"
+	],
+	tasks: [{
+		uid: "b5fa9145",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "projecte:item.pe_philosophers_stone",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9ccb7e1a",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

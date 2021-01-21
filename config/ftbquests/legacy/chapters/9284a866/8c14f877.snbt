@@ -1,0 +1,24 @@
+{
+	x: -9.0d,
+	y: -3.0d,
+	dependencies: [
+		"bde5d612",
+		"306ff504"
+	],
+	tasks: [{
+		uid: "2a9f8301",
+		type: "checkmark",
+		title: "A long way lays ahead...",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "contenttweaker:ender_token"
+		}
+	}],
+	rewards: [{
+		uid: "427e059c",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

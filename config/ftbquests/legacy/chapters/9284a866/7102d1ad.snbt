@@ -1,0 +1,19 @@
+{
+	x: -8.0d,
+	y: -2.0d,
+	dependencies: [
+		"8c14f877"
+	],
+	tasks: [{
+		uid: "ea5907d6",
+		type: "item",
+		items: [{
+			item: "abyssalcraft:psdl"
+		}]
+	}],
+	rewards: [{
+		uid: "c4423693",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

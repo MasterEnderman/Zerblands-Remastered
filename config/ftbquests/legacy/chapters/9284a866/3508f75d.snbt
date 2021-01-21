@@ -1,0 +1,22 @@
+{
+	x: 3.0d,
+	y: -2.0d,
+	dependencies: [
+		"54da34a8"
+	],
+	tasks: [{
+		uid: "865870e0",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "asgardandelion"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "8a7ff123",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

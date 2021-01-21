@@ -1,0 +1,9 @@
+[
+    {    
+        "mob": [
+            "minecraft:silverfish",
+            "tconstruct:blueslime"
+        ],
+        "result": "deny"
+    }
+]

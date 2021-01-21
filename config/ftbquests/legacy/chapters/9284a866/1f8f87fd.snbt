@@ -1,0 +1,26 @@
+{
+	x: -4.5d,
+	y: 2.0d,
+	text: [
+		"Maybe you want to try another packmode?"
+	],
+	dependencies: [
+		"c7a216e2",
+		"40a0404b",
+		"2d9618c2",
+		"5dfe9012",
+		"4724c9f2",
+		"fd4e7369"
+	],
+	tasks: [{
+		uid: "8b88c65a",
+		type: "checkmark",
+		title: "Still not satified?",
+		icon: "contenttweaker:infinite"
+	}],
+	rewards: [{
+		uid: "29782939",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

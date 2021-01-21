@@ -1,0 +1,24 @@
+{
+	x: -3.0d,
+	y: -3.0d,
+	dependencies: [
+		"9aab709f",
+		"306ff504"
+	],
+	tasks: [{
+		uid: "bb1f0d9a",
+		type: "checkmark",
+		title: "We're almost there...",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "contenttweaker:ender_token"
+		}
+	}],
+	rewards: [{
+		uid: "7f1bcb2f",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

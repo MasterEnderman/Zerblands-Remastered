@@ -1,0 +1,19 @@
+{
+	x: -9.0d,
+	y: -1.0d,
+	dependencies: [
+		"8c14f877"
+	],
+	tasks: [{
+		uid: "20e2714c",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_empowerer"
+		}]
+	}],
+	rewards: [{
+		uid: "c539cf8d",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

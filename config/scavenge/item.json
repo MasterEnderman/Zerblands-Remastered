@@ -1,0 +1,72 @@
+{
+    "block_pools": [
+        {
+            "name": "tiara",
+            "type": {
+                "type": "block_list",
+                "blocks": [
+                    {
+                        "name": "minecraft:crafting_table"
+                    }
+                ]
+            },
+            "disableJEI": true,
+            "clicktype": "left",
+            "properties": [
+                {
+                    "type": "require_player"
+                },
+                {
+                    "type": "require_sneak"
+                },
+                {
+                    "type": "is_burning"
+                },
+                {
+                    "type": "require_item",
+                    "name": "minecraft:stick",
+                    "meta": 0,
+                    "amount": 1
+                },
+                {
+                    "type": "require_item",
+                    "name": "contenttweaker:ender_token",
+                    "meta": 0,
+                    "offhand": true,
+                    "amount": 1
+                },
+                {
+                    "type": "consume_item",
+                    "amount": 1
+                },
+                {
+                    "type": "consume_item",
+                    "offhand": true,
+                    "amount": 1
+                },
+                {
+                    "type": "drop_items",
+                    "doDrop": false
+                },
+                {
+                    "type": "swing_hand"
+                }
+            ],
+            "drops": [
+                {
+                    "name": "extrautils2:lawsword",
+                    "properties": [
+                        {
+                            "type": "set_nbtData",
+                            "name": "ench"
+                        },
+                        {
+                            "type": "set_name",
+                            "name": "§5Saijo O Wazamono Grade Black Sword Yuro (黒刀)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

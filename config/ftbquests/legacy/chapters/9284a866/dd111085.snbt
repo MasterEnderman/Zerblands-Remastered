@@ -1,0 +1,24 @@
+{
+	x: -4.0d,
+	y: -1.0d,
+	dependencies: [
+		"270617ed"
+	],
+	tasks: [{
+		uid: "9fc13cc2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:blockaltar",
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "76546bab",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

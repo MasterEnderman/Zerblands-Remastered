@@ -1,0 +1,24 @@
+{
+	x: 3.0d,
+	y: -3.0d,
+	dependencies: [
+		"e946e194",
+		"306ff504"
+	],
+	tasks: [{
+		uid: "5153bb79",
+		type: "checkmark",
+		title: "Easter Eggs",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "contenttweaker:ender_token"
+		}
+	}],
+	rewards: [{
+		uid: "64ca07df",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

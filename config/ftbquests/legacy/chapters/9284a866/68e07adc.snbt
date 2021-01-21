@@ -1,0 +1,19 @@
+{
+	icon: "botania:manaresource 1 5",
+	x: -5.0d,
+	y: -2.0d,
+	dependencies: [
+		"9aab709f"
+	],
+	tasks: [{
+		uid: "8853eeab",
+		type: "kill",
+		entity: "botania:doppleganger",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "6b8c7144",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

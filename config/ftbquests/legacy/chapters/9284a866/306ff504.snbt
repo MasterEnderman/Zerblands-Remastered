@@ -1,0 +1,48 @@
+{
+	x: -4.5d,
+	y: -4.0d,
+	text: [
+		"Hello, hello, hello,",
+		"",
+		"my name ist _MasterEnderman_ aka Endermanwhosearchthebeast and welcome to my modpack - Zerblands-Remastered.",
+		"",
+		"But why is it 'remastered'? Well it is an adaptation to a modpack I made back in 1.10.2 called 'Zerblands'. It took me some effort, but now you're able to play the modpack I originally created over 3 years ago. The are some altered recipes to give the player a new progression through the different mods.",
+		"",
+		"I hope you enjoy your journey through the Zerblands. :)",
+		"",
+		"Thank you for checking out my work!",
+		"",
+		"Sincerly.",
+		"Ender"
+	],
+	tasks: [{
+		uid: "f60f8aa0",
+		type: "checkmark",
+		title: "Welcome to the Zerblands!",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "abyssalcraft:abyssalnomicon",
+			tag: {
+				PotEnergy: 100000.0f
+			}
+		}
+	}],
+	rewards: [{
+		uid: "f0e48171",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:cosmetic",
+			Damage: 30s
+		}
+	},
+	{
+		uid: "f278340c",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

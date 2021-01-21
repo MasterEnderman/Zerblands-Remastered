@@ -1,0 +1,19 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	dependencies: [
+		"270617ed"
+	],
+	tasks: [{
+		uid: "ad72595c",
+		type: "item",
+		items: [{
+			item: "exponentialpower:endergenerator"
+		}]
+	}],
+	rewards: [{
+		uid: "0d078da7",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

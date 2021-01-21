@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	dependencies: [
+		"e946e194"
+	],
+	tasks: [{
+		uid: "d7319209",
+		type: "item",
+		items: [{
+			item: "calculator:atomicmultiplier"
+		}]
+	}],
+	rewards: [{
+		uid: "e479b5aa",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

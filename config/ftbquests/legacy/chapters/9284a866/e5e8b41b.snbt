@@ -1,0 +1,19 @@
+{
+	x: -6.0d,
+	y: -1.0d,
+	dependencies: [
+		"9aab709f"
+	],
+	tasks: [{
+		uid: "39f97779",
+		type: "item",
+		items: [{
+			item: "woot:controller"
+		}]
+	}],
+	rewards: [{
+		uid: "fd835806",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

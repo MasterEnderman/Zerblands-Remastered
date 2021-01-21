@@ -1,0 +1,19 @@
+{
+	x: -3.0d,
+	y: -1.0d,
+	dependencies: [
+		"270617ed"
+	],
+	tasks: [{
+		uid: "88d53770",
+		type: "item",
+		items: [{
+			item: "fluxnetworks:fluxcontroller"
+		}]
+	}],
+	rewards: [{
+		uid: "c74eac3c",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

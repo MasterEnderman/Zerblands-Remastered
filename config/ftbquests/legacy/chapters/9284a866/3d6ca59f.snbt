@@ -1,0 +1,19 @@
+{
+	x: -10.0d,
+	y: 0.0d,
+	dependencies: [
+		"8c14f877"
+	],
+	tasks: [{
+		uid: "ba690e24",
+		type: "item",
+		items: [{
+			item: "environmentaltech:solar_cont_1"
+		}]
+	}],
+	rewards: [{
+		uid: "697f30ad",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

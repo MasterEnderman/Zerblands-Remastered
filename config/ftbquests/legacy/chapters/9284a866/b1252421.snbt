@@ -1,0 +1,19 @@
+{
+	x: -12.0d,
+	y: -2.0d,
+	dependencies: [
+		"bde5d612"
+	],
+	tasks: [{
+		uid: "7734de21",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "d235392c",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}
