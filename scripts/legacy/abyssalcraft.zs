@@ -31,3 +31,12 @@ recipes.addShaped(<abyssalcraft:statue>, [
 // inputStack, inputFluid, tier, outputStack, duration, xp
 BloodInfuser.addRecipe(<abyssalcraft:stone>, <liquid:evilcraftblood> * 3000, 3, <abyssalcraft:stone:7>, 100, 0);
 BloodInfuser.addRecipe(<quantumflux:darkstone>, <liquid:evilcraftblood> * 3000, 3, <abyssalcraft:stone:7>, 100, 0);
+
+<abyssalcraft:crystalbag_small>.addTooltip(format.green("*Only use for AbyssalCraft Crystals.*"));
+<abyssalcraft:crystalbag_small>.addTooltip(format.green("*Can't store normal items.*"));
+<abyssalcraft:crystalbag_medium>.addTooltip(format.green("*Only use for AbyssalCraft Crystals.*"));
+<abyssalcraft:crystalbag_medium>.addTooltip(format.green("*Can't store normal items.*"));
+<abyssalcraft:crystalbag_large>.addTooltip(format.green("*Only use for AbyssalCraft Crystals.*"));
+<abyssalcraft:crystalbag_large>.addTooltip(format.green("*Can't store normal items.*"));
+<abyssalcraft:crystalbag_huge>.addTooltip(format.green("*Only use for AbyssalCraft Crystals.*"));
+<abyssalcraft:crystalbag_huge>.addTooltip(format.green("*Can't store normal items.*"));
