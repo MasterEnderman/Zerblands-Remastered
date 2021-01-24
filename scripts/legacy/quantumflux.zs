@@ -20,9 +20,17 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.enderio.SagMill;
+import mods.inworldcrafting.ExplosionCrafting;
 import mods.jei.JEI;
 
 JEI.removeAndHide(<quantumflux:magnet>);
+
+ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <quantumflux:graphitedust>);
+ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <bigreactors:dustgraphite>);
+ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <immersiveengineering:material:18>);
+
+SagMill.addRecipe([<quantumflux:graphitedust>, [100], <quantumflux:craftingpiece:6>, "NONE", 5000]);
 
 recipes.remove(<quantumflux:craftingpiece:1>);
 recipes.addShaped(<quantumflux:craftingpiece:1> * 4, [

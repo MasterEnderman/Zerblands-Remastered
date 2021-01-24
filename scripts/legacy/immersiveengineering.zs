@@ -13,7 +13,10 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.ic2.Compressor;
 import mods.immersiveengineering.Mixer;
+
+Compressor.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:17> * 8);
 
 recipes.addShaped(<immersiveengineering:treated_wood> * 8, [
     [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],
