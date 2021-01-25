@@ -33,6 +33,8 @@ JEI.removeAndHide(<extrautils2:chunkloader>);
 Resonator.remove(<extrautils2:ingredients:4>);
 Resonator.add(<extrautils2:ingredients:4>, <evilcraft:blood_waxed_coal>, 1600, true);
 
+recipes.remove(<extrautils2:ingredients:1>);
+
 recipes.remove(<extrautils2:pipe>);
 recipes.addShaped(<extrautils2:pipe> * 6, [
     [<ore:ingotAluminum>,<ore:ingotInvar>,<ore:ingotAluminum>],

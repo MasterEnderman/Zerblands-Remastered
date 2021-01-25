@@ -16,6 +16,7 @@
 - disabled accelaration wand for fake players
 - disabled grave stone inventory list
 
+- added EnderIO Alloys to IE Kiln
 - added more EMC values
 - added graphite ore to ore miner
 - fixed rftools tablet

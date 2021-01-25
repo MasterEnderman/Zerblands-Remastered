@@ -451,6 +451,10 @@
     {
       "item": "enderio:item_alloy_ingot|9",
       "emc": 34
+    },
+    {
+      "item": "extrautils2:ingredients|1",
+      "emc": 1536
     }
   ]
 }

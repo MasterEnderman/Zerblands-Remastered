@@ -22,7 +22,12 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.enderio.SagMill;
 import mods.enderio.AlloySmelter;
+import mods.immersiveengineering.AlloySmelter as Kiln;
 import mods.inworldcrafting.FluidToItem;
+
+Kiln.addRecipe(<enderio:item_alloy_ingot:3>, <ore:itemSilicon>, <ore:dustRedstone>, 200);
+Kiln.addRecipe(<enderio:item_alloy_ingot:5>, <ore:ingotIron>, <minecraft:ender_pearl>, 200);
+Kiln.addRecipe(<enderio:item_alloy_ingot:4>, <ore:ingotIron>, <ore:dustRedstone>, 200);
 
 recipes.addShaped(<enderio:item_broken_spawner>, [
     [null,<actuallyadditions:item_misc:20>,null],
