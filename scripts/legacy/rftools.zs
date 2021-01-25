@@ -23,8 +23,6 @@ import scripts.functions.findFirstItemFromMod;
 import mods.jei.JEI;
 
 JEI.removeAndHide(<rftools:coalgenerator>);
-JEI.removeAndHide(<rftools:remote_storage>);
-JEI.removeAndHide(<rftools:storage_module_tablet>);
 JEI.removeAndHide(<rftools:shape_card:2>);
 JEI.removeAndHide(<rftools:shape_card:3>);
 JEI.removeAndHide(<rftools:shape_card:4>);
@@ -32,6 +30,8 @@ JEI.removeAndHide(<rftools:shape_card:5>);
 JEI.removeAndHide(<rftools:shape_card:6>);
 JEI.removeAndHide(<rftools:shape_card:7>);
 JEI.removeAndHide(<rftools:shape_card:8>);
+
+recipes.removeByRecipeName("rftools:tablet_with_storage_module_s");
 
 recipes.remove(<rftools:dimensional_shard>);
 
