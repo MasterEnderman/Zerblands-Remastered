@@ -45,6 +45,12 @@ recipes.addShaped(<contenttweaker:creative> * 9, [
     [<contenttweaker:creative_block>]
 ]);
 
+recipes.addShaped(<contenttweaker:red_core>, [
+    [<extrautils2:ingredients:4>,<abyssalcraft:charcoal>,<extrautils2:ingredients:4>],
+    [<abyssalcraft:charcoal>,<extrautils2:ingredients:2>,<abyssalcraft:charcoal>],
+    [<extrautils2:ingredients:4>,<abyssalcraft:charcoal>,<extrautils2:ingredients:4>]
+]);
+
 ExtremeCrafting.addShaped("creativeingot",<contenttweaker:creative>,[
     [<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>],
     [<ore:ingotInfinity>,<ore:ingotCosmicNeutronium>,<contenttweaker:creativecore>,<contenttweaker:creativecore>,<ore:ingotCosmicNeutronium>,<contenttweaker:creativecore>,<contenttweaker:creativecore>,<ore:ingotCosmicNeutronium>,<ore:ingotInfinity>],

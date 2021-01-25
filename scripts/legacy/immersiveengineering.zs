@@ -50,5 +50,5 @@ recipes.addShaped(<immersiveengineering:stone_decoration:1>, [
 recipes.remove(<immersiveengineering:material:14>);
 recipes.addShaped(<immersiveengineering:material:14>,[[null,null,<ore:ingotSteel>],[null,<ore:ingotSteel>,null],[<ore:ingotSteel>,null,null]]);
 
-Mixer.addRecipe(<liquid:crystaloil>*1000,<liquid:oil>*1000,[<actuallyadditions:item_misc:23>], 1000);
+Mixer.addRecipe(<liquid:crystaloil>*1000,<liquid:canolaoil>*1000,[<actuallyadditions:item_misc:23>], 1000);
 Mixer.addRecipe(<liquid:empoweredoil>*1000,<liquid:crystaloil>*1000,[<actuallyadditions:item_misc:24>], 1000);

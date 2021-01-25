@@ -23,10 +23,10 @@ import scripts.functions.findFirstItemFromMod;
 import mods.enderio.AlloySmelter;
 
 recipes.remove(<valkyrielib:modifier_component>);
-recipes.addShaped(<valkyrielib:modifier_component> * 2, [
-    [<enderio:item_material:2>,<ore:ingotRedstoneAlloy>,<enderio:item_material:2>],
+recipes.addShaped(<valkyrielib:modifier_component> * 4, [
+    [<enderio:item_material:2>,<calculator:redstoneingot>,<enderio:item_material:2>],
     [<calculator:redstoneingot>,<extrautils2:decorativesolid:7>,<calculator:redstoneingot>],
-    [<enderio:item_material:2>,<ore:ingotRedstoneAlloy>,<enderio:item_material:2>]
+    [<enderio:item_material:2>,<calculator:redstoneingot>,<enderio:item_material:2>]
 ]);
 
 recipes.remove(<valkyrielib:modifier_speed>);
@@ -38,9 +38,9 @@ recipes.addShaped(<valkyrielib:modifier_speed>, [
 
 recipes.remove(<environmentaltech:connector>);
 recipes.addShaped(<environmentaltech:connector> * 4, [
-    [<ore:gemRedstone>,<ore:ingotDarkSteel>,<ore:gemRedstone>],
-    [<ore:ingotDarkSteel>,<extrautils2:decorativesolid:7>,<ore:ingotDarkSteel>],
-    [<ore:gemRedstone>,<ore:ingotDarkSteel>,<ore:gemRedstone>]
+    [<ore:gemRedstone>,<ore:blockConstructionAlloy>,<ore:gemRedstone>],
+    [<ore:blockConstructionAlloy>,<extrautils2:decorativesolid:7>,<ore:blockConstructionAlloy>],
+    [<ore:gemRedstone>,<ore:blockConstructionAlloy>,<ore:gemRedstone>]
 ]);
 
 recipes.remove(<environmentaltech:interconnect>);
@@ -51,14 +51,10 @@ recipes.addShaped(<environmentaltech:interconnect>, [
 ]);
 
 recipes.remove(<environmentaltech:photovoltaic_cell>);
-recipes.addShaped(<environmentaltech:photovoltaic_cell>, [
-    [null,<enderio:item_material:3>,null],
-    [<enderio:item_material:3>,<ore:gemRedstone>,<enderio:item_material:3>],
-    [null,<enderio:item_material:3>,null]
-]);
+AlloySmelter.addRecipe(<environmentaltech:photovoltaic_cell>, [<enderio:item_material:3>,<extrautils2:ingredients:3>,<ore:nuggetCobalt>], 5000);
 
 recipes.remove(<environmentaltech:diode>);
-AlloySmelter.addRecipe(<environmentaltech:diode>, [<enderio:item_material:56>,<quantumflux:craftingpiece:5>,<astralsorcery:itemusabledust:1>*16], 5000);
+AlloySmelter.addRecipe(<environmentaltech:diode>, [<enderio:item_material:56>,<quantumflux:craftingpiece:5>,<astralsorcery:itemusabledust:1> * 16], 5000);
 
 recipes.remove(<environmentaltech:litherite_crystal>);
 recipes.addShaped(<environmentaltech:litherite_crystal> * 9, [

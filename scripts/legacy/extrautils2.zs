@@ -21,11 +21,24 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.avaritia.ExtremeCrafting;
+import mods.extrautils2.Resonator;
 import mods.jei.JEI;
 
 JEI.removeAndHide(<extrautils2:bagofholding>);
 JEI.removeAndHide(<extrautils2:itembuilderswand>);
 JEI.removeAndHide(<extrautils2:miner>);
+JEI.removeAndHide(<extrautils2:indexerremote>);
+JEI.removeAndHide(<extrautils2:chunkloader>);
+
+Resonator.remove(<extrautils2:ingredients:4>);
+Resonator.add(<extrautils2:ingredients:4>, <evilcraft:blood_waxed_coal>, 1600, true);
+
+recipes.remove(<extrautils2:pipe>);
+recipes.addShaped(<extrautils2:pipe> * 6, [
+    [<ore:ingotAluminum>,<ore:ingotInvar>,<ore:ingotAluminum>],
+    [<ore:dustRedstone>,<ore:blockGlassHardened>,<ore:dustRedstone>],
+    [<ore:ingotAluminum>,<ore:ingotInvar>,<ore:ingotAluminum>]
+]);
 
 recipes.remove(<extrautils2:lawsword>);
 recipes.addShaped(<extrautils2:lawsword>, [

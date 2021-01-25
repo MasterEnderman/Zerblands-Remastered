@@ -34,6 +34,32 @@ SagMill.removeRecipe(<enderio:block_infinity>);
 SagMill.removeRecipe(<enderio:block_infinity:1>);
 SagMill.removeRecipe(<enderio:block_infinity:2>);
 
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:9> * 4, [<ore:ingotIron>,<minecraft:clay>,<tconstruct:materials>], 5000);
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:9> * 8, [<ore:ingotIron>,<embers:blend_caminite>,<tconstruct:materials>], 5000);
 
 FluidToItem.transform(<enderio:item_material:20>, <liquid:astralsorcery.liquidstarlight>, [<ore:dustQuartzBlack>], false);
+
+recipes.remove(<enderio:item_material:51>);
+recipes.addShaped(<enderio:item_material:51> * 4, [
+    [<ore:dustDiamond>,<ore:dustQuartz>,<ore:dustEmerald>],
+    [<ore:dustQuartz>,<psi:material>,<ore:dustQuartz>],
+    [<ore:dustEmerald>,<ore:dustQuartz>,<ore:dustDiamond>]
+]);
+recipes.addShaped(<enderio:item_material:51> * 4, [
+    [<ore:dustDiamond>,<ore:dustQuartzBlack>,<ore:dustEmerald>],
+    [<ore:dustQuartzBlack>,<psi:material>,<ore:dustQuartzBlack>],
+    [<ore:dustEmerald>,<ore:dustQuartzBlack>,<ore:dustDiamond>]
+]);
+
+recipes.remove(<enderio:item_material:52>);
+recipes.addShaped(<enderio:item_material:52> * 4, [
+    [<enderio:item_material:74>,<enderio:item_material:51>,<enderio:item_material:74>],
+    [<enderio:item_material:51>,<astralsorcery:itemcraftingcomponent:2>,<enderio:item_material:51>],
+    [<enderio:item_material:74>,<enderio:item_material:51>,<enderio:item_material:74>]
+]);
+
+recipes.remove(<enderio:item_material:67>);
+recipes.addShaped(<enderio:item_material:67> * 4, [
+    [<enderio:item_material:36>,<enderio:item_material:52>,<enderio:item_material:36>],
+    [<enderio:item_material:52>,<draconicevolution:draconium_dust>,<enderio:item_material:52>],
+    [<enderio:item_material:36>,<enderio:item_material:52>,<enderio:item_material:36>]
+]);

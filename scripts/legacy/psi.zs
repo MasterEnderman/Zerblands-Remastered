@@ -20,4 +20,6 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-recipes.replaceAllOccurences(<notenoughwands:wandcore>, <notenoughwands:advanced_wandcore>);
+import mods.botania.ManaInfusion;
+
+ManaInfusion.addInfusion(<psi:material>, <thermalfoundation:material:72>, 10000);

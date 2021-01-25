@@ -173,7 +173,9 @@
   "item.itemObsidianBlade_1989136096": true,
   "item.itemPartAlloy_1988898264": true,
   "item.itemPartPellet_7915127": true,
-  "item.potion_1880685907": true
+  "item.potion_1880685907": true,
+  "ic2exprecipe_HOP Graphite Dust_": true,
+  "item.potion_441693419": true
  },
  "massfabricatorAmplifier": {
   "ScrapAmplifier": true,

@@ -38,5 +38,10 @@
         "id": "draco",
         "title": "Draconic Evolution",
         "icon": "item:draconicevolution:info_tablet"
+    },
+    {
+        "id": "ac",
+        "title": "AbyssalCraft",
+        "icon": "item:abyssalcraft:dghead"
     }
 ]

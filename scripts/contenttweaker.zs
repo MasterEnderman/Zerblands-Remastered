@@ -88,6 +88,10 @@ var bedrockium_ingot as Item = VanillaFactory.createItem("bedrockium_ingot");
 bedrockium_ingot.setLocalizedNameSupplier(function(itemStack) {return "Bedrockium Ingot";});
 bedrockium_ingot.register();
 
+var red_core as Item = VanillaFactory.createItem("red_core");
+red_core.setLocalizedNameSupplier(function(itemStack) {return "Red Core";});
+red_core.register();
+
 var creative_block = VanillaFactory.createBlock("creative_block", <blockmaterial:iron>);
 creative_block.setBlockHardness(5.0);
 creative_block.setBlockResistance(30.0);

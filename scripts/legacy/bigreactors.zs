@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
+import mods.enderio.AlloySmelter;
 import mods.jei.JEI;
 
 JEI.removeAndHide(<bigreactors:turbinepowertaptesla>);
@@ -30,8 +31,8 @@ JEI.removeAndHide(<bigreactors:orebenitoite>);
 
 mods.actuallyadditions.Empowerer.addRecipe(<bigreactors:ingotcyanite>,<bigreactors:ingotyellorium>,<bigreactors:ingotgraphite>,<bigreactors:ingotgraphite>,<bigreactors:ingotgraphite>,<bigreactors:ingotgraphite>, 1000, 100);
 
-furnace.addRecipe(<bigreactors:ingotgraphite>,<quantumflux:graphitedust>);
-furnace.addRecipe(<bigreactors:ingotgraphite>,<immersiveengineering:material:19>);
+AlloySmelter.addRecipe(<bigreactors:ingotgraphite> * 2, [<ore:dustHOPGraphite>, <appliedenergistics2:material:45>, <ic2:itemmisc:8>], 5000);
+AlloySmelter.addRecipe(<bigreactors:ingotgraphite> * 2, [<quantumflux:graphitedust>, <appliedenergistics2:material:45>, <ic2:itemmisc:8>], 5000);
 
 recipes.remove(<bigreactors:reactorcasingcores>);
 recipes.addShaped(<bigreactors:reactorcasingcores>, [

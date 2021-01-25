@@ -499,6 +499,11 @@
       "target": "green",
       "weight": 200,
       "id": "OD:oreEnderEssence"
+    },
+    {
+      "target": "black",
+      "weight": 100,
+      "id": "quantumflux:graphiteore"
     }
   ]
 }

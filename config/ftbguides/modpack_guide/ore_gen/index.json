@@ -50,6 +50,16 @@
      "icon": "item:appliedenergistics2:quartz_ore"
     },
     {
+     "id": "tp",
+     "title": "Tiny Progressions",
+     "icon": "item:tp:ender_ore"
+    },
+    {
+     "id": "astral",
+     "title": "Astral Sorcery",
+     "icon": "item:astralsorcery:blockcustomore"
+    },
+    {
      "id": "stones",
      "title": "Stones and Minerals",
      "icon": "item:earthworks:block_slate_purple"

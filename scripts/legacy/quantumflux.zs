@@ -30,12 +30,12 @@ ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <quantumflux:
 ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <bigreactors:dustgraphite>);
 ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <immersiveengineering:material:18>);
 
-SagMill.addRecipe([<quantumflux:graphitedust>, [100], <quantumflux:craftingpiece:6>, "NONE", 5000]);
+SagMill.addRecipe([<quantumflux:graphitedust>], [100], <quantumflux:craftingpiece:6>, "NONE", 5000);
 
 recipes.remove(<quantumflux:craftingpiece:1>);
 recipes.addShaped(<quantumflux:craftingpiece:1> * 4, [
     [<ore:ingotSteel>,<ore:crystalGold>,<ore:ingotSteel>],
-    [<ore:crystalGold>,<ore:blockRedstone>,<ore:crystalGold>],
+    [<ore:crystalGold>,<contenttweaker:red_core>,<ore:crystalGold>],
     [<ore:ingotSteel>,<ore:crystalGold>,<ore:ingotSteel>]
 ]);
 

@@ -22,6 +22,8 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.evilcraft.BloodInfuser;
 
+furnace.remove(<abyssalcraft:charcoal>);
+
 recipes.addShaped(<abyssalcraft:statue>, [
     [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}).noReturn(),<calculator:enddiamond>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}).noReturn()],
     [<calculator:enddiamond>,<ore:blockDiamond>,<calculator:enddiamond>],

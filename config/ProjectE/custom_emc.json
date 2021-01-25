@@ -447,6 +447,10 @@
     {
       "item": "enderio:item_material|1",
       "emc": 2000
+    },
+    {
+      "item": "enderio:item_alloy_ingot|9",
+      "emc": 34
     }
   ]
 }

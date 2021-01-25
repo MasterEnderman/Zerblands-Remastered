@@ -26,6 +26,8 @@ import mods.jei.JEI;
 
 JEI.removeAndHide(<forestry:still>);
 
+furnace.addRecipe(<forestry:ash>, <ore:logWood>);
+
 recipes.remove(<forestry:sturdy_machine>);
 recipes.addShaped(<forestry:sturdy_machine>, [
     [<ore:ingotInvar>,<ore:plateBronze>,<ore:ingotInvar>],

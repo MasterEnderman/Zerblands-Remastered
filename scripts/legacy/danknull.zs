@@ -69,3 +69,9 @@ for dank, data in mapDank {
         [panel,panel,panel]
     ]);
 }
+
+<danknull:dank_null_0>.addTooltip(format.red("*Items are voided when upgraded to the next tier.*"));
+<danknull:dank_null_1>.addTooltip(format.red("*Items are voided when upgraded to the next tier.*"));
+<danknull:dank_null_2>.addTooltip(format.red("*Items are voided when upgraded to the next tier.*"));
+<danknull:dank_null_3>.addTooltip(format.red("*Items are voided when upgraded to the next tier.*"));
+<danknull:dank_null_4>.addTooltip(format.red("*Items are voided when upgraded to the next tier.*"));

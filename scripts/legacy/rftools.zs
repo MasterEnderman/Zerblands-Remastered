@@ -47,3 +47,10 @@ recipes.addShaped(<rftools:machine_base>, [
     [<ore:gemLapis>,<ore:gearAluminum>,<ore:gemLapis>],
     [<ore:plateSteel>,<ore:plateSteel>,<ore:plateSteel>]
 ]);
+
+recipes.remove(<rftools:environmental_controller>);
+recipes.addShaped(<rftools:environmental_controller>, [
+    [<randomthings:stableenderpearl>,<minecraft:beacon>,<randomthings:stableenderpearl>],
+    [<rftools:infused_enderpearl>,<rftools:machine_frame>,<rftools:infused_enderpearl>],
+    [<randomthings:stableenderpearl>,<actuallyadditions:block_crystal_empowered:4>,<randomthings:stableenderpearl>]
+]);

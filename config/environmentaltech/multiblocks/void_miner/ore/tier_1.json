@@ -489,6 +489,11 @@
       "target": "black",
       "weight": 4,
       "id": "environmentaltech:lonsdaleite_crystal"
+    },
+    {
+      "target": "black",
+      "weight": 100,
+      "id": "quantumflux:graphiteore"
     }
   ]
 }

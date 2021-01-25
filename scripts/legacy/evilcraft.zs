@@ -20,4 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-recipes.replaceAllOccurences(<notenoughwands:wandcore>, <notenoughwands:advanced_wandcore>);
+import mods.evilcraft.BloodInfuser;
+
+BloodInfuser.removeRecipesWithOutput(<evilcraft:blood_waxed_coal>);
+BloodInfuser.addRecipe(<calculator:purifiedcoal>, <liquid:evilcraftblood> * 375, 1, <evilcraft:blood_waxed_coal>, 100, 2);

@@ -62,6 +62,12 @@ recipes.addShaped(<actuallyadditions:block_misc:8>, [
     [<actuallyadditions:item_crystal_empowered:2>,<ore:gearEnderium>,<actuallyadditions:item_crystal_empowered:2>]
 ]);
 
+recipes.remove(<actuallyadditions:block_furnace_solar>);
+recipes.addShaped(<actuallyadditions:block_furnace_solar> * 3, [
+    [<enderio:item_material:3>,<enderio:item_material:3>,<enderio:item_material:3>],
+    [<ore:dustRedstone>,<actuallyadditions:block_misc:9>,<ore:dustRedstone>]
+]);
+
 // IItemStack output, IItemStack input, int energyUsed
 
 var t as int = 40;

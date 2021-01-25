@@ -5,6 +5,11 @@
         "icon": "item:minecraft:paper"
     },
     {
+        "id": "documentation",
+        "title": "Documentation",
+        "icon": "item:minecraft:book"
+    },
+    {
         "id": "ore_gen",
         "title": "Ore Generation",
         "icon": "item:minecraft:redstone_ore"
