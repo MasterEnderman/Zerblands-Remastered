@@ -1,0 +1,21 @@
+# Windy Garden
+
+- Amaranth
+- Artichoke
+- Barley
+- Bellpepper
+- Carrot
+- Chilipepper
+- Corn
+- Cucumber
+- Elderberry
+- Flax
+- Lettuce
+- Mustardseeds
+- Onion
+- Parsnip
+- Peanut
+- Potato
+- Strawberry
+- Wheat
+- Wintersquash
