@@ -20,4 +20,6 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-recipes.replaceAllOccurences(<notenoughwands:wandcore>, <notenoughwands:advanced_wandcore>);
+recipes.replaceAllOccurences(<notenoughwands:wandcore>, <notenoughwands:advanced_wandcore>, <*>.only(function(item) {
+    return !isNull(item) & !<notenoughwands:potion_wand>.matches(item);
+}));
