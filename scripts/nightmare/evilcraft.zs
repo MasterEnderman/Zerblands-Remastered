@@ -1,4 +1,4 @@
-#packmode legacy
+#packmode nightmare
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -20,10 +20,6 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.evilcraft.BloodInfuser;
 import mods.tconstruct.Casting;
-
-BloodInfuser.removeRecipesWithOutput(<evilcraft:blood_waxed_coal>);
-BloodInfuser.addRecipe(<calculator:purifiedcoal>, <liquid:evilcraftblood> * 375, 1, <evilcraft:blood_waxed_coal>, 100, 2);
 
 Casting.addTableRecipe(<evilcraft:blood_infusion_core>, <evilcraft:dark_gem>, <liquid:evilcraftblood>, 5000, true, 20);
