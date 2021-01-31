@@ -1,5 +1,9 @@
 # Tinkers' Construct
 
+## Slime Islands
+
+They do still generate, but no slimes will spawn on them.
+
 ## Smeltery
 
 - Obsidian can't be alloyed my mixing water and lava
