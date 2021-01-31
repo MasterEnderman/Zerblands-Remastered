@@ -12,7 +12,9 @@
 
 Zerblands is a Modpack containing some well known mods, but most of the recipes got edited so that there is a new progression line the player has to follow to play through this modpack.
 
-This Modpack also contains a questbook, which guides the player through the different stages of the pack. Furthermore there is an ingame guide, that shows the player usefull information, like ore generation values and usefull tips on how to play through the modpack
+This Modpack also contains a questbook, which guides the player through the different stages of the pack. Furthermore there is an ingame guide, that shows the player usefull information, like ore generation values and usefull tips on how to play through the modpack.
+
+Currently I'm working on a second Pack Mode, which has even more difficult recipes.
 
 ## Pack-Developer
 
