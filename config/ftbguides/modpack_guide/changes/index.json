@@ -48,5 +48,10 @@
         "id": "ae2",
         "title": "Applied Energistics 2",
         "icon": "item:appliedenergistics2:sky_compass"
+    },
+    {
+        "id": "it",
+        "title": "Immersive Technology",
+        "icon": "item:immersivetech:connectors"
     }
 ]
