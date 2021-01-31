@@ -1,5 +1,9 @@
 # AbyssalCraft
 
+## Ethaxium Ingot
+
+They no longer drop from the Gatekeeper Minions. But there also is a new alternative reicpe for them.
+
 ## Hardmode
 
 In this Modpack the Hardmode of AbyssalCraft is enabled.

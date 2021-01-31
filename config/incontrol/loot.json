@@ -4,5 +4,9 @@
         "player": true,
         "helditem": "contenttweaker:ender_token",
         "item": "botania:gaiahead"
+    },
+    {
+        "mob": "abyssalcraft:jzaharminion",
+        "remove": "abyssalcraft:ethaxiumingot"
     }
 ]

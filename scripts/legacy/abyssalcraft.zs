@@ -22,6 +22,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.abyssalcraft.Rituals;
 import mods.abyssalcraft.Transmutator;
+import mods.actuallyadditions.Empowerer;
 import mods.evilcraft.BloodInfuser;
 import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Refinery;
@@ -39,6 +40,8 @@ furnace.remove(<abyssalcraft:charcoal>);
 
 Mixer.addRecipe(<fluid:colour_out_of_space>*1000, <liquid:astralsorcery.liquidstarlight>*1000, [<ore:dustAstralStarmetal>*2,<ore:dustEnder>*2], 8192);
 Refinery.addRecipe(<liquid:liquidantimatter>*10, <liquid:colour_out_of_space>*5, <liquid:liquidcoralium>*5, 512);
+
+Empowerer.addRecipe(<abyssalcraft:ethaxiumingot>, <extrautils2:ingredients:2>, <abyssalcraft:ethbrick>, <abyssalcraft:ethbrick>, <abyssalcraft:ethbrick>, <abyssalcraft:ethbrick>, 50000, 100);
 
 recipes.addShaped(<abyssalcraft:statue>, [
     [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}).noReturn(),<calculator:enddiamond>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}).noReturn()],
