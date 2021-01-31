@@ -116,11 +116,6 @@
       "id": "OD:oreCertusQuartz"
     },
     {
-      "target": "light_blue",
-      "weight": 109,
-      "id": "OD:oreChargedCertusQuartz"
-    },
-    {
       "target": "brown",
       "weight": 190,
       "id": "OD:oreCinnabar"
