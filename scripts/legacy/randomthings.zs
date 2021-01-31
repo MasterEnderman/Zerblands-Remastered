@@ -37,3 +37,24 @@ recipes.addShaped(<randomthings:timeinabottle>, [
     [<ore:gemDiamond>,<projecte:item.pe_time_watch>,<ore:gemDiamond>],
     [<ore:gemLapis>,<minecraft:glass_bottle>,<ore:gemLapis>]
 ]);
+
+recipes.remove(<randomthings:spectrecharger:0>);
+recipes.remove(<randomthings:spectrecharger:0>, [
+    [<randomthings:ingredient:12>,<fluxnetworks:fluxcore>,<randomthings:ingredient:12>],
+    [<fluxnetworks:fluxcore>,<randomthings:ingredient:3>,<fluxnetworks:fluxcore>],
+    [<randomthings:ingredient:12>,<fluxnetworks:fluxcore>,<randomthings:ingredient:12>]
+]);
+
+recipes.remove(<randomthings:spectrecoil_normal>);
+recipes.addShaped(<randomthings:spectrecoil_normal>, [
+    [<contenttweaker:reinforced_obsidian_ingot>,<fluxnetworks:fluxcore>,<contenttweaker:reinforced_obsidian_ingot>],
+    [<fluxnetworks:fluxcore>,<randomthings:ingredient:3>,<fluxnetworks:fluxcore>],
+    [<contenttweaker:reinforced_obsidian_ingot>,<fluxnetworks:fluxcore>,<contenttweaker:reinforced_obsidian_ingot>]
+]);
+
+recipes.remove(<randomthings:spectreenergyinjector>);
+recipes.addShaped(<randomthings:spectreenergyinjector>, [
+    [<randomthings:ingredient:3>,<fluxnetworks:fluxcore>,<randomthings:ingredient:3>],
+    [<fluxnetworks:fluxcore>,<minecraft:beacon>,<fluxnetworks:fluxcore>],
+    [<randomthings:ingredient:3>,<fluxnetworks:fluxcore>,<randomthings:ingredient:3>]
+]);
