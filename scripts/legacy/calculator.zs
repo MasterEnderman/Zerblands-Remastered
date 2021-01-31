@@ -25,6 +25,7 @@ import mods.calculator.atomic;
 import mods.calculator.basic;
 import mods.calculator.conductorMast;
 import mods.jei.JEI;
+import mods.thermalexpansion.InductionSmelter;
 
 var list as IItemStack[] = [
     <calculator:electricaxe>,
@@ -85,6 +86,7 @@ for item in list {
 }
 
 furnace.remove(<calculator:enrichedgoldingot>);
+InductionSmelter.addRecipe(<calculator:enrichedgoldingot>, <calculator:enrichedgold>, <minecraft:sand>, 1500);
 
 conductorMast.removeRecipe(<calculator:scientificcalculator>);
 conductorMast.removeRecipe(<calculator:electricdiamond>);
