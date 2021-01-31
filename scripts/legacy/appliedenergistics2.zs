@@ -23,7 +23,9 @@ import scripts.functions.findFirstItemFromMod;
 import mods.actuallyadditions.Empowerer;
 import mods.avaritia.ExtremeCrafting;
 import mods.botania.ElvenTrade;
+import mods.botania.ManaInfusion;
 import mods.botaniatweaks.Agglomeration;
+import mods.inworldcrafting.FluidToItem;
 import mods.jei.JEI;
 import mods.thermalexpansion.InductionSmelter;
 
@@ -32,6 +34,18 @@ JEI.removeAndHide(<appliedenergistics2:grindstone>);
 JEI.removeAndHide(<appliedenergistics2:sky_compass>);
 
 ElvenTrade.addRecipe([<appliedenergistics2:sky_stone_block>],[<minecraft:end_stone>,<minecraft:end_stone>]);
+
+FluidToItem.transform(<appliedenergistics2:material:7>, <liquid:water>, [<appliedenergistics2:material:1>, <ore:dustRedstone>, <minecraft:quartz>], false);
+
+var mapSeed as IitemStack[IItemStack] = {
+	<appliedenergistics2:crystal_seed:1200> : <appliedenergistics2:material:12>,
+	<appliedenergistics2:crystal_seed> : <appliedenergistics2:material:10>,
+	<appliedenergistics2:crystal_seed:600> : <appliedenergistics2:material:11>
+};
+
+for seed, crystal in mapSeed {
+	ManaInfusion.addInfusion(crystal, seed, 2000);
+}
 
 var mapProcessor as IIngredient[IItemStack] = {
     <appliedenergistics2:material:22>: <appliedenergistics2:material:18>,
