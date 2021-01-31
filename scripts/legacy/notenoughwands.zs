@@ -21,5 +21,8 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 recipes.replaceAllOccurences(<notenoughwands:wandcore>, <notenoughwands:advanced_wandcore>, <*>.only(function(item) {
-    return !isNull(item) & !<notenoughwands:potion_wand>.matches(item);
+    return !isNull(item) & !<notenoughwands:advanced_wandcore>.matches(item);
 }));
+
+<notenoughwands:potion_wand>.addTooltip(format.red("*Currently useless.*"));
+<notenoughwands:potion_wand>.addTooltip(format.red("*Check Guide for more info.*"));

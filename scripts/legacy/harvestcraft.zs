@@ -23,6 +23,7 @@ import scripts.functions.findFirstItemFromMod;
 import mods.jei.JEI;
 
 mods.jei.JEI.removeAndHide(<harvestcraft:market>);
+mods.jei.JEI.removeAndHide(<harvestcraft:shippingbin>);
 
 var wax = <ore:customWax>;
 wax.add(<forestry:beeswax>);

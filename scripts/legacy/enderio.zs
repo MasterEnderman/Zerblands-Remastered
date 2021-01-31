@@ -54,6 +54,11 @@ recipes.addShaped(<enderio:item_material:51> * 4, [
     [<ore:dustQuartzBlack>,<psi:material>,<ore:dustQuartzBlack>],
     [<ore:dustEmerald>,<ore:dustQuartzBlack>,<ore:dustDiamond>]
 ]);
+recipes.addShaped(<enderio:item_material:51> * 4, [
+    [<ore:dustDiamond>,<ore:dustCertusQuartz>,<ore:dustEmerald>],
+    [<ore:dustCertusQuartz>,<psi:material>,<ore:dustCertusQuartz>],
+    [<ore:dustEmerald>,<ore:dustCertusQuartz>,<ore:dustDiamond>]
+]);
 
 recipes.remove(<enderio:item_material:52>);
 recipes.addShaped(<enderio:item_material:52> * 4, [

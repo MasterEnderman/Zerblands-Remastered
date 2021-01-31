@@ -25,3 +25,24 @@ recipes.addShaped(<chisel:basalt2:7> * 64, [
     [<ore:cobblestone>, <minecraft:coal>, <ore:cobblestone>],
     [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]
 ]);
+
+var recipeMapShaped as IIngredient[][][IItemStack] = {
+        <chisel:chisel_iron> : [
+    	[null,<ore:plateIron>],
+    	[<ore:stickTreatedWood>,null]
+    ],
+    <chisel:chisel_diamond>	: [
+    	[null,<ore:gemDiamond>],
+    	[<chisel:chisel_iron>,null]
+    ],
+    <chisel:auto_chisel> : [
+    	[null,<ore:blockGlassHardened>,null],
+    	[<minecraft:piston>,<thermalexpansion:frame>,<minecraft:piston>],
+    	[<ore:gearAluminum>,<thermalfoundation:material:513>,<ore:gearAluminum>]
+    ],
+};
+
+for key, value in recipeMapShaped {
+	recipes.remove(key);
+    recipes.addShaped("ct_"+toString(key), key, value);
+}

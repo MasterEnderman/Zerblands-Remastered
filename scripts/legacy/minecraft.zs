@@ -53,9 +53,9 @@ recipes.addShaped(<minecraft:experience_bottle>, [
 ]);
 
 recipes.addShaped(<minecraft:golden_apple:1>, [
-    [<ore:blocktGold>,<ore:blocktGold>,<ore:blocktGold>],
-    [<ore:blocktGold>,<minecraft:apple>,<ore:blocktGold>],
-    [<ore:blocktGold>,<ore:blocktGold>,<ore:blocktGold>]
+    [<ore:blockGold>,<ore:blockGold>,<ore:blockGold>],
+    [<ore:blockGold>,<minecraft:apple>,<ore:blockGold>],
+    [<ore:blockGold>,<ore:blockGold>,<ore:blockGold>]
 ]);
 
 recipes.addShaped(<minecraft:glowstone_dust>, [

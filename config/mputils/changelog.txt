@@ -1,5 +1,24 @@
 # Zerblands-Remastered
 
+## v2.0.5 - more bug fixes
+
+- updated CraftTweaker
+
+- added Tool Progression
+
+- tweaked bloodmagic recipes
+- tweaked botania recipes
+- tweaked ae2 recipe to respect fluid crafting
+
+- added ae2 info to guide
+- disabled teleporter turret
+- increase AS max perk lvl
+- fixed enderium t5 jetplate values
+- fixed missing gear cast recipes
+- fixed electrum flux melting
+- removed lame soulbound enchantment
+- added nightmare packmode [WIP]
+
 ## v2.0.4 - bug fixes
 
 - added IC2 Classic Tweaker

@@ -21,6 +21,9 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
+import mods.botania.ManaInfusion;
+
+ManaInfusion.addConjuration(<embers:archaic_brick> * 2, <embers:archaic_brick>, 5000);
 
 recipes.addShaped(<embers:golems_eye>, [
     [null,<embers:archaic_brick>,null],
@@ -29,7 +32,7 @@ recipes.addShaped(<embers:golems_eye>, [
 ]);
 
 recipes.remove(<embers:shard_ember>);
-recipes.addShapeless(<embers:shard_ember> *6, [<embers:tinker_hammer>,<embers:crystal_ember>]);
+recipes.addShapeless(<embers:shard_ember> * 6, [<embers:tinker_hammer>,<embers:crystal_ember>]);
 
 recipes.remove(<embers:crystal_ember>);
 Empowerer.addRecipe(<embers:crystal_ember>, <embers:shard_ember>, <embers:shard_ember>, <embers:shard_ember>, <embers:shard_ember>, <embers:shard_ember>, 500, 100);

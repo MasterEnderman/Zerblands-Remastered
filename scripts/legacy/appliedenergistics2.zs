@@ -25,9 +25,11 @@ import mods.avaritia.ExtremeCrafting;
 import mods.botania.ElvenTrade;
 import mods.botaniatweaks.Agglomeration;
 import mods.jei.JEI;
+import mods.thermalexpansion.InductionSmelter;
 
 JEI.removeAndHide(<appliedenergistics2:crank>);
 JEI.removeAndHide(<appliedenergistics2:grindstone>);
+JEI.removeAndHide(<appliedenergistics2:sky_compass>);
 
 ElvenTrade.addRecipe([<appliedenergistics2:sky_stone_block>],[<minecraft:end_stone>,<minecraft:end_stone>]);
 
@@ -55,46 +57,11 @@ recipes.addShaped(<appliedenergistics2:charger>, [
     [<ore:blockElectricalSteel>,<enderio:block_wireless_charger>,<ore:blockElectricalSteel>]
 ]);
 
-recipes.remove(<appliedenergistics2:material:35>);
-recipes.addShaped(<appliedenergistics2:material:35>, [
-    [<ore:dustRedstone>,<appliedenergistics2:material:10>,<ore:dustRedstone>],
-    [<appliedenergistics2:material:10>,<appliedenergistics2:material:22>,<appliedenergistics2:material:10>],
-    [<ore:dustRedstone>,<appliedenergistics2:material:10>,<ore:dustRedstone>]
-]);
-
-recipes.remove(<appliedenergistics2:material:36>);
-recipes.addShaped(<appliedenergistics2:material:36>, [
-    [<ore:dustGlowstone>,<appliedenergistics2:material:35>,<ore:dustGlowstone>],
-    [<appliedenergistics2:material:35>,<appliedenergistics2:material:23>,<appliedenergistics2:material:35>],
-    [<ore:dustGlowstone>,<appliedenergistics2:material:35>,<ore:dustGlowstone>]
-]);
-
-recipes.remove(<appliedenergistics2:material:37>);
-recipes.addShaped(<appliedenergistics2:material:37>, [
-    [<redstonearsenal:material>,<appliedenergistics2:material:36>,<redstonearsenal:material>],
-    [<appliedenergistics2:material:36>,<appliedenergistics2:material:24>,<appliedenergistics2:material:36>],
-    [<redstonearsenal:material>,<appliedenergistics2:material:36>,<redstonearsenal:material>]
-]);
-
-recipes.remove(<appliedenergistics2:material:38>);
-recipes.addShaped(<appliedenergistics2:material:38>, [
-    [<thermalfoundation:material:103>,<appliedenergistics2:material:37>,<thermalfoundation:material:103>],
-    [<appliedenergistics2:material:37>,<appliedenergistics2:material:24>,<appliedenergistics2:material:37>],
-    [<thermalfoundation:material:103>,<appliedenergistics2:material:37>,<thermalfoundation:material:103>]
-]);
-
 recipes.remove(<appliedenergistics2:crafting_unit>);
 recipes.addShaped(<appliedenergistics2:crafting_unit>, [
     [<ore:blockElectricalSteel>,<appliedenergistics2:material:23>,<ore:blockElectricalSteel>],
     [<ore:circuitAdvanced>,<opencomputers:component:2>,<ore:circuitAdvanced>],
     [<ore:blockElectricalSteel>,<appliedenergistics2:material:23>,<ore:blockElectricalSteel>]
-]);
-
-recipes.remove(<appliedenergistics2:quartz_glass>);
-recipes.addShaped(<appliedenergistics2:quartz_glass>*4, [
-    [<ore:dustQuartz>,<ore:blockGlassHardened>,<ore:dustQuartz>],
-    [<ore:blockGlassHardened>,<ore:dustQuartz>,<ore:blockGlassHardened>],
-    [<ore:dustQuartz>,<ore:blockGlassHardened>,<ore:dustQuartz>]
 ]);
 
 recipes.remove(<appliedenergistics2:molecular_assembler>);
@@ -104,12 +71,92 @@ recipes.addShaped(<appliedenergistics2:molecular_assembler>, [
     [<ore:blockElectricalSteel>,<appliedenergistics2:quartz_glass>,<ore:blockElectricalSteel>]
 ]);
 
+recipes.remove(<appliedenergistics2:quartz_glass>);
+InductionSmelter.addRecipe(<appliedenergistics2:quartz_glass> * 4, <thermalfoundation:glass:3> * 4, <actuallyadditions:item_dust:7> * 5, 8192);
+
+recipes.remove(<appliedenergistics2:quartz_vibrant_glass>);
+InductionSmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>*2, <appliedenergistics2:quartz_glass>*2, <thermalfoundation:material:102>, 8192);
+
+// componentItem
+recipes.remove(<appliedenergistics2:material:35>);
+recipes.addShaped(<appliedenergistics2:material:35>, [
+	[<ore:dustSignalum>,<appliedenergistics2:material:10>,<ore:dustSignalum>],
+	[<appliedenergistics2:material:10>,<appliedenergistics2:material:23>,<appliedenergistics2:material:10>],
+	[<ore:dustSignalum>,<appliedenergistics2:material:10>,<ore:dustSignalum>]
+]);
+recipes.remove(<appliedenergistics2:material:36>);
+recipes.addShaped(<appliedenergistics2:material:36>, [
+	[<ore:dustLumium>,<appliedenergistics2:material:35>,<ore:dustLumium>],
+	[<appliedenergistics2:material:35>,<appliedenergistics2:material:22>,<appliedenergistics2:material:35>],
+	[<ore:dustLumium>,<appliedenergistics2:material:35>,<ore:dustLumium>]
+]);
+recipes.remove(<appliedenergistics2:material:37>);
+recipes.addShaped(<appliedenergistics2:material:37>, [
+	[<ore:dustElectrumFlux>,<appliedenergistics2:material:36>,<ore:dustElectrumFlux>],
+	[<appliedenergistics2:material:36>,<appliedenergistics2:material:24>,<appliedenergistics2:material:36>],
+	[<ore:dustElectrumFlux>,<appliedenergistics2:material:36>,<ore:dustElectrumFlux>]
+]);
+recipes.remove(<appliedenergistics2:material:38>);
+recipes.addShaped(<appliedenergistics2:material:38>, [
+	[<ore:dustEnderium>,<appliedenergistics2:material:37>,<ore:dustEnderium>],
+	[<appliedenergistics2:material:37>,<threng:material:6>,<appliedenergistics2:material:37>],
+	[<ore:dustEnderium>,<appliedenergistics2:material:37>,<ore:dustEnderium>]
+]);
+
+// componentFluid
+recipes.remove(<appliedenergistics2:material:54>);
+recipes.addShaped(<appliedenergistics2:material:54>, [
+	[<ore:dustSignalum>,<ic2:itemcellempty>,<ore:dustSignalum>],
+	[<ic2:itemcellempty>,<appliedenergistics2:material:23>,<ic2:itemcellempty>],
+	[<ore:dustSignalum>,<ic2:itemcellempty>,<ore:dustSignalum>]
+]);
+recipes.remove(<appliedenergistics2:material:55>);
+recipes.addShaped(<appliedenergistics2:material:55>, [
+	[<ore:dustLumium>,<appliedenergistics2:material:54>,<ore:dustLumium>],
+	[<appliedenergistics2:material:54>,<appliedenergistics2:material:22>,<appliedenergistics2:material:54>],
+	[<ore:dustLumium>,<appliedenergistics2:material:54>,<ore:dustLumium>]
+]);
+recipes.remove(<appliedenergistics2:material:56>);
+recipes.addShaped(<appliedenergistics2:material:56>, [
+	[<ore:dustElectrumFlux>,<appliedenergistics2:material:55>,<ore:dustElectrumFlux>],
+	[<appliedenergistics2:material:55>,<appliedenergistics2:material:24>,<appliedenergistics2:material:55>],
+	[<ore:dustElectrumFlux>,<appliedenergistics2:material:55>,<ore:dustElectrumFlux>]
+]);
+recipes.remove(<appliedenergistics2:material:57>);
+recipes.addShaped(<appliedenergistics2:material:57>, [
+	[<ore:dustEnderium>,<appliedenergistics2:material:56>,<ore:dustEnderium>],
+	[<appliedenergistics2:material:56>,<threng:material:6>,<appliedenergistics2:material:56>],
+	[<ore:dustEnderium>,<appliedenergistics2:material:56>,<ore:dustEnderium>]
+]);
+
+// componentSpace
+recipes.remove(<appliedenergistics2:material:32>);
+recipes.addShaped(<appliedenergistics2:material:32>, [
+	[<ore:dustLumium>,<appliedenergistics2:material:9>,<ore:dustLumium>],
+	[<appliedenergistics2:material:9>,<appliedenergistics2:material:22>,<appliedenergistics2:material:9>],
+	[<ore:dustLumium>,<appliedenergistics2:material:9>,<ore:dustLumium>]
+]);
+recipes.remove(<appliedenergistics2:material:33>);
+recipes.addShaped(<appliedenergistics2:material:33>, [
+	[<ore:dustElectrumFlux>,<appliedenergistics2:material:32>,<ore:dustElectrumFlux>],
+	[<appliedenergistics2:material:32>,<appliedenergistics2:material:24>,<appliedenergistics2:material:32>],
+	[<ore:dustElectrumFlux>,<appliedenergistics2:material:32>,<ore:dustElectrumFlux>]
+]);
+recipes.remove(<appliedenergistics2:material:34>);
+recipes.addShaped(<appliedenergistics2:material:34>, [
+	[<ore:dustEnderium>,<appliedenergistics2:material:33>,<ore:dustEnderium>],
+	[<appliedenergistics2:material:33>,<threng:material:6>,<appliedenergistics2:material:33>],
+	[<ore:dustEnderium>,<appliedenergistics2:material:33>,<ore:dustEnderium>]
+]);
+
+var plateIridium as IItemStack = findFirstItemFromMod("thermalfoundation","plate","iridium");
+
 // IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time
-Empowerer.addRecipe(<appliedenergistics2:material:13>, <embers:plate_dawnstone>, <appliedenergistics2:material:10>, <appliedenergistics2:material:10>, <appliedenergistics2:material:10>, <appliedenergistics2:material:10>, 5000, 20);
-Empowerer.addRecipe(<appliedenergistics2:material:14>, <embers:plate_dawnstone>, <minecraft:diamond>, <minecraft:diamond>, <minecraft:diamond>, <minecraft:diamond>, 5000, 20);
-Empowerer.addRecipe(<appliedenergistics2:material:15>, <embers:plate_dawnstone>, <minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>, 5000, 20);
-Empowerer.addRecipe(<appliedenergistics2:material:19>, <embers:plate_dawnstone>, <appliedenergistics2:material:5>, <appliedenergistics2:material:5>, <appliedenergistics2:material:5>, <appliedenergistics2:material:5>, 5000, 20);
-Empowerer.addRecipe(<appliedenergistics2:material:21>, <embers:plate_dawnstone>, <minecraft:name_tag>, <minecraft:name_tag>, <minecraft:name_tag>, <minecraft:name_tag>, 5000, 20);
+Empowerer.addRecipe(<appliedenergistics2:material:13>, <embers:plate_dawnstone>, <appliedenergistics2:material:10>, plateIridium, plateIridium, plateIridium, 5000, 20);
+Empowerer.addRecipe(<appliedenergistics2:material:14>, <embers:plate_dawnstone>, <minecraft:diamond>, plateIridium, plateIridium, plateIridium, 5000, 20);
+Empowerer.addRecipe(<appliedenergistics2:material:15>, <embers:plate_dawnstone>, <minecraft:gold_ingot>, plateIridium, plateIridium, plateIridium, 5000, 20);
+Empowerer.addRecipe(<appliedenergistics2:material:19>, <embers:plate_dawnstone>, <appliedenergistics2:material:5>, plateIridium, plateIridium, plateIridium, 5000, 20);
+Empowerer.addRecipe(<appliedenergistics2:material:21>, <embers:plate_dawnstone>, <minecraft:name_tag>, plateIridium, plateIridium, plateIridium, 5000, 20);
 
 //Creative ME Storage Cell
 ExtremeCrafting.addShaped("creative_me_storage_cell",<appliedenergistics2:creative_storage_cell>,[

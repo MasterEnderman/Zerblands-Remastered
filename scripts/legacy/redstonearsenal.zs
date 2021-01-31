@@ -20,8 +20,14 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.tconstruct.Melting;
+
 recipes.remove(<redstonearsenal:material>);
 recipes.remove(<redstonearsenal:material:96>);
+recipes.remove(<redstonearsenal:material:160>);
+
+Melting.addRecipe(<liquid:electrumflux> * 144,<redstonearsenal:material:32>, 500);
+Melting.addRecipe(<liquid:electrumflux> * 576,<redstonearsenal:material:96>, 500);
 
 recipes.remove(<redstonearsenal:material:192>);
 recipes.addShaped(<redstonearsenal:material:192>, [

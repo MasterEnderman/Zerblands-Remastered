@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.bloodmagic.BloodAltar;
+import mods.bloodmagic.TartaricForge;
 import mods.botania.RuneAltar;
 import mods.jei.JEI;
 
@@ -77,7 +78,31 @@ recipes.addShaped(<bloodmagic:soul_forge>, [
 BloodAltar.removeRecipe(<minecraft:diamond>);
 BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <evilcraft:promise:2>, 0, 2000, 2, 2);
 
+BloodAltar.removeRecipe(<minecraft:redstone_block>);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), <evilcraft:piercing_vengeance_focus>, 1, 5000,5,5);
+
+BloodAltar.removeRecipe(<minecraft:gold_block>);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), <abyssalcraft:eoa>, 2, 25000,20,20);
+
+BloodAltar.removeRecipe(<minecraft:nether_star>);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <avaritiatweaks:gaia_block>, 4, 80000,100,50);
+
 BloodAltar.removeRecipe(<minecraft:stone>);
 BloodAltar.addRecipe(<bloodmagic:slate>, <abyssalcraft:stone:7>, 0, 1000, 2, 2);
+
+TartaricForge.removeRecipe([<minecraft:gunpowder>,<minecraft:redstone>,<minecraft:dye:15>,<minecraft:coal>]);
+TartaricForge.addRecipe(<bloodmagic:arcane_ashes>,[
+	<forestry:ash>,<embers:dust_ash>,<thermalfoundation:material:1028>,<scalinghealth:heartdust>
+], 16, 8);
+
+TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:dye:4>,<minecraft:gold_ingot>,<minecraft:glass>]);
+TartaricForge.addRecipe(<bloodmagic:soul_gem>,[
+	<thermalfoundation:material:1028>,<abyssalcraft:lifecrystal>,<botanicadds:gaiasteel_ingot>,<appliedenergistics2:quartz_vibrant_glass>
+], 16, 8);
+
+TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);
+TartaricForge.addRecipe(<bloodmagic:component:8>,[
+	<botania:spellcloth>,<woot:soulsanddust>,<embers:ember_cluster>,<bloodmagic:slate:1>
+], 400, 50);
 
 <bloodmagic:blood_shard>.addTooltip(format.green("Kill a Mob with a Bound Blade!"));

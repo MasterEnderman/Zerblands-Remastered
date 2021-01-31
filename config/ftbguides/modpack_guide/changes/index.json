@@ -43,5 +43,10 @@
         "id": "ac",
         "title": "AbyssalCraft",
         "icon": "item:abyssalcraft:dghead"
+    },
+    {
+        "id": "ae2",
+        "title": "Applied Energistics 2",
+        "icon": "item:appliedenergistics2:sky_compass"
     }
 ]

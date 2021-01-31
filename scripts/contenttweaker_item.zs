@@ -1,10 +1,13 @@
 #loader contenttweaker
 
 import mods.contenttweaker.Block;
+import mods.contenttweaker.Fluid;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.LocalizedNameSupplier;
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.VanillaFactory;
+
+// legacy
 
 var ender_token as Item = VanillaFactory.createItem("ender_token");
 ender_token.setLocalizedNameSupplier(function(itemStack) {return "§5Ender Token§r";});
@@ -92,58 +95,24 @@ var red_core as Item = VanillaFactory.createItem("red_core");
 red_core.setLocalizedNameSupplier(function(itemStack) {return "Red Core";});
 red_core.register();
 
-var creative_block = VanillaFactory.createBlock("creative_block", <blockmaterial:iron>);
-creative_block.setBlockHardness(5.0);
-creative_block.setBlockResistance(30.0);
-creative_block.setToolClass("pickaxe");
-creative_block.setToolLevel(0);
-creative_block.setBlockSoundType(<soundtype:metal>);
-creative_block.register();
+// nightmare
 
-var bedrockium_block = VanillaFactory.createBlock("bedrockium_block", <blockmaterial:iron>);
-bedrockium_block.setBlockHardness(5.0);
-bedrockium_block.setBlockResistance(30.0);
-bedrockium_block.setToolClass("pickaxe");
-bedrockium_block.setToolLevel(0);
-bedrockium_block.setBlockSoundType(<soundtype:metal>);
-bedrockium_block.register();
+var cast_wire = VanillaFactory.createItem("cast_wire");
+cast_wire.setLocalizedNameSupplier(function(itemStack) {return "Wire Cast";});
+cast_wire.register();
 
-var slate_blank = VanillaFactory.createBlock("slate_blank", <blockmaterial:iron>);
-slate_blank.setBlockHardness(5.0);
-slate_blank.setBlockResistance(30.0);
-slate_blank.setToolClass("pickaxe");
-slate_blank.setToolLevel(0);
-slate_blank.setBlockSoundType(<soundtype:stone>);
-slate_blank.register();
+var cast_stick = VanillaFactory.createItem("cast_stick");
+cast_stick.setLocalizedNameSupplier(function(itemStack) {return "Stick Cast";});
+cast_stick.register();
 
-var slate_demonic = VanillaFactory.createBlock("slate_demonic", <blockmaterial:iron>);
-slate_demonic.setBlockHardness(5.0);
-slate_demonic.setBlockResistance(30.0);
-slate_demonic.setToolClass("pickaxe");
-slate_demonic.setToolLevel(0);
-slate_demonic.setBlockSoundType(<soundtype:stone>);
-slate_demonic.register();
+var ender_ingot = VanillaFactory.createItem("ender_ingot");
+ender_ingot.setLocalizedNameSupplier(function(itemStack) {return "Ender Ingot";});
+ender_ingot.register();
 
-var slate_ethereal = VanillaFactory.createBlock("slate_ethereal", <blockmaterial:iron>);
-slate_ethereal.setBlockHardness(5.0);
-slate_ethereal.setBlockResistance(30.0);
-slate_ethereal.setToolClass("pickaxe");
-slate_ethereal.setToolLevel(0);
-slate_ethereal.setBlockSoundType(<soundtype:stone>);
-slate_ethereal.register();
+var enhanced_ender_ingot = VanillaFactory.createItem("enhanced_ender_ingot");
+enhanced_ender_ingot.setLocalizedNameSupplier(function(itemStack) {return "Enhanced Ender Ingot";});
+enhanced_ender_ingot.register();
 
-var slate_imbued = VanillaFactory.createBlock("slate_imbued", <blockmaterial:iron>);
-slate_imbued.setBlockHardness(5.0);
-slate_imbued.setBlockResistance(30.0);
-slate_imbued.setToolClass("pickaxe");
-slate_imbued.setToolLevel(0);
-slate_imbued.setBlockSoundType(<soundtype:stone>);
-slate_imbued.register();
-
-var slate_reinforced = VanillaFactory.createBlock("slate_reinforced", <blockmaterial:iron>);
-slate_reinforced.setBlockHardness(5.0);
-slate_reinforced.setBlockResistance(30.0);
-slate_reinforced.setToolClass("pickaxe");
-slate_reinforced.setToolLevel(0);
-slate_reinforced.setBlockSoundType(<soundtype:stone>);
-slate_reinforced.register();
+var ender_star = VanillaFactory.createItem("ender_star");
+ender_star.setLocalizedNameSupplier(function(itemStack) {return "Ender Star";});
+ender_star.register();
