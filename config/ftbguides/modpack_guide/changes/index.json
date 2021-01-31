@@ -53,5 +53,10 @@
         "id": "it",
         "title": "Immersive Technology",
         "icon": "item:immersivetech:connectors"
+    },
+    {
+        "id": "br",
+        "title": "Extreme Reactors",
+        "icon": "item:bigreactors:reactorcontroller"
     }
 ]
