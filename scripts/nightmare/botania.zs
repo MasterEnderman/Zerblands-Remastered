@@ -23,7 +23,7 @@ import scripts.functions.findFirstItemFromMod;
 import mods.botania.Apothecary;
 import mods.botania.ElvenTrade;
 import mods.botania.ManaInfusion;
-import mods.thermalexpansion.Sawmill;
+import mods.botania.PureDaisy;
 
 var recipeRemove as IItemStack[] = [
     <botania:livingwood>,
@@ -105,3 +105,9 @@ recipes.addShaped(<botania_tweaks:dire_crafty_crate>, [
     [<botania:opencrate:1>,<avaritia:extreme_crafting_table>,<botania:opencrate:1>],
     [<botania:opencrate:1>,<botania:opencrate:1>,<botania:opencrate:1>]
 ]);
+
+PureDaisy.removeRecipe(<botania:livingwood>);
+PureDaisy.addRecipe(<astralsorcery:blockinfusedwood>, <botania:livingwood>, 100);
+
+PureDaisy.removeRecipe(<botania:livingrock>);
+PureDaisy.addRecipe(<contenttweaker:blood_infused_stone>, <botania:livingrock>, 100);

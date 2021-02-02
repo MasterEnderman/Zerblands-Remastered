@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.enderio.AlloySmelter;
+import mods.evilcraft.BloodInfuser;
 import mods.immersiveengineering.AlloySmelter as Kiln;
 import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Refinery;
@@ -45,3 +46,6 @@ Casting.addTableRecipe(<contenttweaker:plastic>, <tconstruct:cast_custom:3>, <li
 Kiln.addRecipe(<contenttweaker:black_iron>, <ore:ingotIron>, <ore:dustQuartzBlack>, 200);
 AlloySmelter.addRecipe(<contenttweaker:black_iron>, [<ore:ingotIron>, <ore:dustQuartzBlack>], 5000);
 InductionSmelter.addRecipe(<contenttweaker:black_iron>, <ore:ingotIron>, <ore:dustQuartzBlack>, 5000);
+
+// inputStack, inputFluid, tier, outputStack, duration, xp
+BloodInfuser.addRecipe(<contenttweaker:blood_infused_stone>, <liquid:evilcraftblood> * 5000, 1, <sonarcore:reinforcedstoneblock>, 100, 10);

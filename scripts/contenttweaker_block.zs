@@ -64,3 +64,11 @@ slate_reinforced.setToolClass("pickaxe");
 slate_reinforced.setToolLevel(0);
 slate_reinforced.setBlockSoundType(<soundtype:stone>);
 slate_reinforced.register();
+
+var blood_infused_stone = VanillaFactory.createBlock("blood_infused_stone", <blockmaterial:iron>);
+blood_infused_stone.setBlockHardness(5.0);
+blood_infused_stone.setBlockResistance(30.0);
+blood_infused_stone.setToolClass("pickaxe");
+blood_infused_stone.setToolLevel(0);
+blood_infused_stone.setBlockSoundType(<soundtype:stone>);
+blood_infused_stone.register();
