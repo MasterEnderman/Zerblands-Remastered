@@ -3,8 +3,6 @@ logs/
 
 backups/
 
-local/
-
 journeymap/
 
 TombManyGraves/
@@ -70,3 +68,5 @@ background\.png
 config\.json
 
 manifest\.json
+
+backups\.json
