@@ -51,7 +51,7 @@ recipes.addShaped(<environmentaltech:interconnect>, [
 ]);
 
 recipes.remove(<environmentaltech:photovoltaic_cell>);
-AlloySmelter.addRecipe(<environmentaltech:photovoltaic_cell>, [<enderio:item_material:3>,<extrautils2:ingredients:3>,<ore:nuggetCobalt>], 5000);
+AlloySmelter.addRecipe(<environmentaltech:photovoltaic_cell>, [<enderio:item_material:3>,<extrautils2:ingredients:3>,<ore:nuggetCobalt> * 3], 5000);
 
 recipes.remove(<environmentaltech:diode>);
 AlloySmelter.addRecipe(<environmentaltech:diode>, [<enderio:item_material:56>,<quantumflux:craftingpiece:5>,<astralsorcery:itemusabledust:1> * 16], 5000);

@@ -1,5 +1,18 @@
 # Zerblands-Remastered
 
+## v2.0.6 - expanded nightmare packmode
+
+- downgraded Dragon Murder
+
+- changed ae2 inworld crafting
+- removed Ethaxium Drop
+- removed Bedrock Fog
+- fixed electrum flux recycling
+- fixed enderium jetplate
+- added better Ethaxium recipe
+- improved guide
+- added more content to nightmare mode [WIP]
+
 ## v2.0.5 - more bug fixes
 
 - updated CraftTweaker

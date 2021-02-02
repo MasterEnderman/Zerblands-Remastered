@@ -5,3 +5,10 @@ tile.contenttweaker.creative_block.name=Creative Block
 tile.contenttweaker.slate_blank.name=Blank Slate Block
 tile.contenttweaker.slate_imbued.name=Imbued Slate Block
 tile.contenttweaker.bedrockium_block.name=Bedrockium Block
+tile.contenttweaker.blood_infused_stone.name=Blood Infused Stone
+
+fluid.colour_out_of_space=Color out of Space
+fluid.sulfuric_acid=Sulfuric Acid
+fluid.hydrogen_chlorid=Hydrogen Chloride
+fluid.ethylene=Ethylene
+fluid.plastic=plastic

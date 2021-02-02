@@ -73,3 +73,9 @@ recipes.addShaped(<enderio:item_material:67> * 4, [
     [<enderio:item_material:52>,<draconicevolution:draconium_dust>,<enderio:item_material:52>],
     [<enderio:item_material:36>,<enderio:item_material:52>,<enderio:item_material:36>]
 ]);
+recipes.remove(<enderio:item_liquid_conduit>);
+recipes.addShaped(<enderio:item_liquid_conduit> * 2,[
+    [<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],
+    [<minecraft:glass>,<minecraft:glass>,<minecraft:glass>],
+    [<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]
+]);

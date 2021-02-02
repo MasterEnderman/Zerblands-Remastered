@@ -39,7 +39,7 @@ recipes.addShaped(<randomthings:timeinabottle>, [
 ]);
 
 recipes.remove(<randomthings:spectrecharger:0>);
-recipes.remove(<randomthings:spectrecharger:0>, [
+recipes.addShaped(<randomthings:spectrecharger:0>, [
     [<randomthings:ingredient:12>,<fluxnetworks:fluxcore>,<randomthings:ingredient:12>],
     [<fluxnetworks:fluxcore>,<randomthings:ingredient:3>,<fluxnetworks:fluxcore>],
     [<randomthings:ingredient:12>,<fluxnetworks:fluxcore>,<randomthings:ingredient:12>]

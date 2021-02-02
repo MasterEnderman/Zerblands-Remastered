@@ -37,7 +37,7 @@ ElvenTrade.addRecipe([<appliedenergistics2:sky_stone_block>],[<minecraft:end_sto
 
 FluidToItem.transform(<appliedenergistics2:material:7>, <liquid:water>, [<appliedenergistics2:material:1>, <ore:dustRedstone>, <minecraft:quartz>], false);
 
-var mapSeed as IitemStack[IItemStack] = {
+var mapSeed as IItemStack[IItemStack] = {
 	<appliedenergistics2:crystal_seed:1200> : <appliedenergistics2:material:12>,
 	<appliedenergistics2:crystal_seed> : <appliedenergistics2:material:10>,
 	<appliedenergistics2:crystal_seed:600> : <appliedenergistics2:material:11>
