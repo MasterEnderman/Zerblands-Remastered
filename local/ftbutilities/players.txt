@@ -1,0 +1,16 @@
+// For more info visit https://faq.ftb.world/books/ftb-utilities/page/ranks
+
+// FakeForgePlayer
+[069be1413c1b45c3b3b160d3f9fcd236]
+parent: vip
+example.permission_with_value: 150
+
+// PackDev
+[90003ef04d504aa5a32aeb2d7f74dac3]
+parent: vip
+ftbutilities.chat.name_format: <&5[Modpack-Developer] {name}&r>
+
+// Zerb
+[b5734c113c394cc3a22a4c473883952e]
+parent: admin
+ftbutilities.chat.name_format: <&4{name}&r>
