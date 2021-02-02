@@ -134,3 +134,11 @@ AtomicReconstructor.addRecipe(<actuallyadditions:item_damage_lens>, <actuallyadd
 
 Crusher.removeRecipe(<thermalfoundation:material:1>*6);
 Crusher.removeRecipe(<actuallyadditions:item_dust:2>*6);
+
+var t as int = 40;
+
+AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal>);
+AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal>, <enderio:item_alloy_ingot:3>, t);
+
+AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:1>);
+AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:1>, <calculator:largetanzanite>, t);
