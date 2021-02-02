@@ -116,3 +116,11 @@ enhanced_ender_ingot.register();
 var ender_star = VanillaFactory.createItem("ender_star");
 ender_star.setLocalizedNameSupplier(function(itemStack) {return "Ender Star";});
 ender_star.register();
+
+var plastic = VanillaFactory.createItem("plastic");
+plastic.setLocalizedNameSupplier(function(itemStack) {return "Plastic Sheet";});
+plastic.register();
+
+var black_iron = VanillaFactory.createItem("black_iron");
+black_iron.setLocalizedNameSupplier(function(itemStack) {return "Black Iron Ingot";});
+black_iron.register();
