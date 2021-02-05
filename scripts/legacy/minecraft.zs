@@ -87,3 +87,16 @@ Empowerer.addRecipe(<minecraft:mob_spawner>, <enderio:item_broken_spawner>, <min
 
 // IItemStack output, IIngredient input, int time
 Drying.addRecipe(<minecraft:clay_ball>, <earthworks:item_mud>, 50);
+
+var listVine as IItemStack[] = [
+    <tconstruct:slime_vine_blue_end>,
+    <tconstruct:slime_vine_blue_mid>,
+    <tconstruct:slime_vine_blue>,
+    <tconstruct:slime_vine_purple_end>,
+    <tconstruct:slime_vine_purple_mid>,
+    <tconstruct:slime_vine_purple>
+];
+
+for item in listVine {
+    recipes.addShapeless(<minecraft:mossy_cobblestone>, [<minecraft:cobblestone>,item]);
+}
