@@ -22,8 +22,10 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.jei.JEI;
 import mods.embers.Stamper;
+import mods.immersiveengineering.Crusher;
 import mods.immersiveengineering.MetalPress;
 import mods.tconstruct.Casting;
+import mods.thermalexpansion.Pulverizer;
 
 JEI.removeAndHide(<appliedenergistics2:material:40>);
 JEI.removeAndHide(<enderio:item_material:9>);
@@ -110,4 +112,14 @@ for i, item in wires {
 	Casting.addTableRecipe(wires[i], <contenttweaker:cast_wire>, wirefluids[i], 72, false, 100);
 	MetalPress.removeRecipe(wires[i]);
 	MetalPress.addRecipe(wires[i]*4, wireplates[i], <immersiveengineering:mold:4>, 1024);
+}
+
+var tconOre as IItemStack[IItemStack] = {
+    <enderio:item_material:31> : <tconstruct:ore>,
+    <enderio:item_material:30> : <tconstruct:ore:1>,
+};
+
+for dust, ore in tconOre {
+    Crusher.addRecipe(dust * 2, ore, 2048);
+    Pulverizer.addRecipe(dust * 2, ore, 4000);
 }
