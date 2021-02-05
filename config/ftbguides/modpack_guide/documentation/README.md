@@ -29,3 +29,8 @@ This issue is already known since december 2018.
 
 Tutorial on how to make crossbow bolts.
 [-> Wiki](https://tinkers-construct.fandom.com/wiki/Bolt)
+
+## Woot
+
+Woot is able to generate **BloodMagic Life Essence** or **Evilcraft Blood**. Use some Woot Mob Farms to improve the performance of your world.
+Furthermore you're able to improve **Demon Will Crystal Growth**.
