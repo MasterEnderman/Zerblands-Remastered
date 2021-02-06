@@ -1,7 +1,7 @@
 {
     "block_pools": [
         {
-            "name": "tiara",
+            "name": "item",
             "type": {
                 "type": "block_list",
                 "blocks": [

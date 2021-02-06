@@ -71,3 +71,5 @@ Sawmill.addRecipe(<botania:dreamwood:1>*4, <botania:dreamwood>, 400);
 Sawmill.addRecipe(<botania:manaresource:13>*2, <botania:dreamwood:1>, 400);
 Sawmill.addRecipe(<botania:livingwood:1>*4, <botania:livingwood>, 400);
 Sawmill.addRecipe(<botania:manaresource:3>*2, <botania:livingwood:1>, 400);
+
+<botanicadds:gaiasteel_ingot>.addTooltip(format.green("Look up the recipe in the Lexica Botania"));

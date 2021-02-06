@@ -1,5 +1,21 @@
 # Zerblands-Remastered
 
+## v2.0.7 - bug fixes again
+
+- added Hardcore Darkness
+- added Hungering Darkness
+
+- added enderio glass back to jei
+- added better moss stone recipe
+- added back old deep dark features
+- added missing mining level names
+- added basic documentation to PI
+- fixed bloodmagic recipes
+- unified ardite and cobalt processing
+- removed slime island from non overworld dimensions
+- improved guide
+- more recipes for nightmare mode [WIP]
+
 ## v2.0.6 - expanded nightmare packmode
 
 - downgraded Dragon Murder

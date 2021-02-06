@@ -86,7 +86,8 @@ recipes.addShaped(<appliedenergistics2:molecular_assembler>, [
 ]);
 
 recipes.remove(<appliedenergistics2:quartz_glass>);
-InductionSmelter.addRecipe(<appliedenergistics2:quartz_glass> * 4, <thermalfoundation:glass:3> * 4, <actuallyadditions:item_dust:7> * 5, 8192);
+InductionSmelter.addRecipe(<appliedenergistics2:quartz_glass> * 4, <thermalfoundation:glass:3> * 4, <botania:quartz:5> * 5, 8192);
+InductionSmelter.addRecipe(<appliedenergistics2:quartz_glass> * 4, <enderio:block_fused_quartz> * 4, <botania:quartz:5> * 5, 8192);
 
 recipes.remove(<appliedenergistics2:quartz_vibrant_glass>);
 InductionSmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>*2, <appliedenergistics2:quartz_glass>*2, <thermalfoundation:material:102>, 8192);
@@ -147,19 +148,19 @@ recipes.addShaped(<appliedenergistics2:material:57>, [
 recipes.remove(<appliedenergistics2:material:32>);
 recipes.addShaped(<appliedenergistics2:material:32>, [
 	[<ore:dustLumium>,<appliedenergistics2:material:9>,<ore:dustLumium>],
-	[<appliedenergistics2:material:9>,<appliedenergistics2:material:22>,<appliedenergistics2:material:9>],
+	[<appliedenergistics2:material:9>,<appliedenergistics2:material:24>,<appliedenergistics2:material:9>],
 	[<ore:dustLumium>,<appliedenergistics2:material:9>,<ore:dustLumium>]
 ]);
 recipes.remove(<appliedenergistics2:material:33>);
 recipes.addShaped(<appliedenergistics2:material:33>, [
 	[<ore:dustElectrumFlux>,<appliedenergistics2:material:32>,<ore:dustElectrumFlux>],
-	[<appliedenergistics2:material:32>,<appliedenergistics2:material:24>,<appliedenergistics2:material:32>],
+	[<appliedenergistics2:material:32>,<threng:material:6>,<appliedenergistics2:material:32>],
 	[<ore:dustElectrumFlux>,<appliedenergistics2:material:32>,<ore:dustElectrumFlux>]
 ]);
 recipes.remove(<appliedenergistics2:material:34>);
 recipes.addShaped(<appliedenergistics2:material:34>, [
 	[<ore:dustEnderium>,<appliedenergistics2:material:33>,<ore:dustEnderium>],
-	[<appliedenergistics2:material:33>,<threng:material:6>,<appliedenergistics2:material:33>],
+	[<appliedenergistics2:material:33>,<threng:material:14>,<appliedenergistics2:material:33>],
 	[<ore:dustEnderium>,<appliedenergistics2:material:33>,<ore:dustEnderium>]
 ]);
 

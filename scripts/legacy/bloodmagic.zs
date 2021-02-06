@@ -29,12 +29,23 @@ JEI.addItem(<bloodmagic:decorative_brick:2>);
 JEI.addItem(<bloodmagic:decorative_brick:3>);
 
 RuneAltar.addRecipe(<bloodmagic:blood_shard:1>, [
-    <bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,
-    <botania:rune:4>,<botania:rune:5>,<botania:rune:6>,
-    <botania:rune:7>,<botania:rune:8>,<botania:rune:9>,
-    <botania:rune:10>,<botania:rune:11>,<botania:rune:12>,
-    <botania:rune:13>,<botania:rune:14>,<botania:rune:15>,
-    <bloodmagic:soul_gem:4>], 1000000);
+    <botanicadds:rune_energy>,
+    <botanicadds:rune_tp>,
+    <botania:rune:15>,
+    <botania:rune:14>,
+    <botania:rune:13>,
+    <botania:rune:12>,
+    <botania:rune:11>,
+    <botania:rune:10>,
+    <botania:rune:9>,
+    <bloodarsenal:gem>,
+    <bloodarsenal:gem:1>,
+    <bloodarsenal:gem:2>,
+    <bloodmagic:blood_shard>,
+    <bloodmagic:blood_shard>,
+    <bloodmagic:blood_shard>,
+    <bloodmagic:blood_shard>
+], 1000000);
 
 recipes.addShaped(<bloodmagic:decorative_brick:2>, [
     [<bloodmagic:demon_crystal:1>,<actuallyadditions:block_crystal_empowered:1>,<bloodmagic:demon_crystal:3>],
@@ -79,25 +90,28 @@ BloodAltar.removeRecipe(<minecraft:diamond>);
 BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <evilcraft:promise:2>, 0, 2000, 2, 2);
 
 BloodAltar.removeRecipe(<minecraft:redstone_block>);
-BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), <evilcraft:piercing_vengeance_focus>, 1, 5000,5,5);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), <evilcraft:piercing_vengeance_focus>, 1, 5000, 5, 5);
 
 BloodAltar.removeRecipe(<minecraft:gold_block>);
-BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), <abyssalcraft:eoa>, 2, 25000,20,20);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), <abyssalcraft:eoa>, 2, 25000, 20, 20);
+
+BloodAltar.removeRecipe(<bloodmagic:blood_shard>);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}), <bloodmagic:blood_shard:1>, 3, 40000, 30, 50);
 
 BloodAltar.removeRecipe(<minecraft:nether_star>);
-BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <avaritiatweaks:gaia_block>, 4, 80000,100,50);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <avaritiatweaks:gaia_block>, 4, 80000, 100, 50);
 
 BloodAltar.removeRecipe(<minecraft:stone>);
 BloodAltar.addRecipe(<bloodmagic:slate>, <abyssalcraft:stone:7>, 0, 1000, 2, 2);
 
 TartaricForge.removeRecipe([<minecraft:gunpowder>,<minecraft:redstone>,<minecraft:dye:15>,<minecraft:coal>]);
 TartaricForge.addRecipe(<bloodmagic:arcane_ashes>,[
-	<forestry:ash>,<embers:dust_ash>,<thermalfoundation:material:1028>,<scalinghealth:heartdust>
+	<enderzoo:witheringdust>,<embers:dust_ash>,<embers:dust_metallurgic>,<scalinghealth:heartdust>
 ], 16, 8);
 
 TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:dye:4>,<minecraft:gold_ingot>,<minecraft:glass>]);
 TartaricForge.addRecipe(<bloodmagic:soul_gem>,[
-	<thermalfoundation:material:1028>,<abyssalcraft:lifecrystal>,<botanicadds:gaiasteel_ingot>,<appliedenergistics2:quartz_vibrant_glass>
+	<embers:dust_metallurgic>,<abyssalcraft:lifecrystal>,<botanicadds:gaiasteel_ingot>,<appliedenergistics2:quartz_vibrant_glass>
 ], 16, 8);
 
 TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);

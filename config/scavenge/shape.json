@@ -1,0 +1,56 @@
+{
+    "block_pools": [
+        {
+            "name": "shape",
+            "type": {
+                "type": "block_list",
+                "blocks": [
+                    {
+                        "name": "minecraft:crafting_table"
+                    }
+                ]
+            },
+            "disableJEI": true,
+            "clicktype": "left",
+            "properties": [
+                {
+                    "type": "require_player"
+                },
+                {
+                    "type": "require_sneak"
+                },
+                {
+                    "type": "is_burning"
+                },
+                {
+                    "type": "require_item",
+                    "name": "rftools:shape_card",
+                    "meta": 0,
+                    "amount": 1
+                },
+                {
+                    "type": "consume_item",
+                    "amount": 1
+                },
+                {
+                    "type": "drop_items",
+                    "doDrop": false
+                },
+                {
+                    "type": "swing_hand"
+                }
+            ],
+            "drops": [
+                {
+                    "name": "rftools:shape_card",
+                    "properties": [
+                        {
+                            "type": "set_nbtData",
+                            "name": "builder"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
