@@ -20,6 +20,13 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.astralsorcery.Altar;
 import mods.tconstruct.Casting;
 
 Casting.addTableRecipe(<evilcraft:blood_infusion_core>, <evilcraft:dark_gem>, <liquid:evilcraftblood>, 5000, true, 20);
+
+Altar.addDiscoveryAltarRecipe("blood_infuser", <evilcraft:blood_infuser>, 200, 200, [
+    <sonarcore:stablestone_normal>, <sonarcore:stablestone_normal>, <sonarcore:stablestone_normal>,
+    <sonarcore:stablestone_normal>, <evilcraft:blood_infusion_core>, <sonarcore:stablestone_normal>,
+    <sonarcore:stablestone_normal>, <sonarcore:stablestone_normal>, <sonarcore:stablestone_normal>
+]);
