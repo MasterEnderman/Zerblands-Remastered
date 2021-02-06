@@ -20,3 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.tconstruct.Casting;
+
+recipes.removeByRecipeName("extrautils2:machine_base");
+Casting.addBasinRecipe(<extrautils2:machine>, <calculator:calculator>, <liquid:iron>, 144 * 4, true, 2000);
