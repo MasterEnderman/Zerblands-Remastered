@@ -32,6 +32,12 @@ Transposer.addFillRecipe(<astralsorcery:blockcustomore>, <appliedenergistics2:sk
 FluidToItem.transform(<astralsorcery:blockinfusedwood>, <liquid:astralsorcery.liquidstarlight>, [<ore:logWood>], false);
 FluidToItem.transform(<astralsorcery:blockinfusedwood:1>, <liquid:astralsorcery.liquidstarlight>, [<ore:plankWood>], false);
 
+recipes.addShaped(<astralsorcery:blockmarble> * 64, [
+    [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
+    [<ore:cobblestone>, <minecraft:quartz>, <ore:cobblestone>],
+    [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]
+]);
+
 recipes.addShaped(<astralsorcery:itemconstellationpaper>, [
     [<evilcraft:dark_stick>,<astralsorcery:itemcraftingcomponent:5>,<evilcraft:dark_stick>],
     [null,<astralsorcery:itemcraftingcomponent:5>,null],
