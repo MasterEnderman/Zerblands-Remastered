@@ -509,6 +509,11 @@
       "target": "black",
       "weight": 100,
       "id": "quantumflux:graphiteore"
+    },
+    {
+      "target": "black",
+      "weight": 110,
+      "id": "evilcraft:dark_ore"
     }
   ]
 }
