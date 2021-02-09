@@ -106,3 +106,13 @@ for first, a in mapFirst {
         }
     }
 }
+
+<enderio:block_inventory_chest_tiny>.addTooltip(format.green("Holds 162 Stacks"));
+<enderio:block_inventory_chest_small>.addTooltip(format.green("Holds 216 Stacks"));
+<enderio:block_inventory_chest_medium>.addTooltip(format.green("Holds 270 Stacks"));
+<enderio:block_inventory_chest_big>.addTooltip(format.green("Holds 324 Stacks"));
+<enderio:block_inventory_chest_large>.addTooltip(format.green("Holds 432 Stacks"));
+<enderio:block_inventory_chest_huge>.addTooltip(format.green("Holds 540 Stacks"));
+<enderio:block_inventory_chest_enormous>.addTooltip(format.green("Holds 702 Stacks"));
+<enderio:block_inventory_chest_warehouse>.addTooltip(format.green("Holds 864 Stacks"));
+<enderio:block_inventory_chest_warehouse13>.addTooltip(format.green("Holds 1080 Stacks"));
