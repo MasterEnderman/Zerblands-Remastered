@@ -39,8 +39,6 @@ SagMill.removeRecipe(<enderio:block_infinity>);
 SagMill.removeRecipe(<enderio:block_infinity:1>);
 SagMill.removeRecipe(<enderio:block_infinity:2>);
 
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:9> * 8, [<ore:ingotIron>,<embers:blend_caminite>,<tconstruct:materials>], 5000);
-
 FluidToItem.transform(<enderio:item_material:20>, <liquid:astralsorcery.liquidstarlight>, [<ore:dustQuartzBlack>], false);
 
 recipes.remove(<enderio:item_material:51>);
@@ -79,3 +77,32 @@ recipes.addShaped(<enderio:item_liquid_conduit> * 2,[
     [<minecraft:glass>,<minecraft:glass>,<minecraft:glass>],
     [<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]
 ]);
+
+var mapFirst as int[IIngredient] = {
+    <ore:ingotEndSteel> : 16,
+    <ore:ingotDarkSteel> : 8,
+    <ore:ingotSteel> : 4,
+    <ore:ingotIron> : 2,
+    <ore:ingotCrudeSteel> : 1
+};
+
+var mapSecond as int[IIngredient] = {
+    <immersiveengineering:stone_decoration:4> : 2,
+    <embers:blend_caminite> : 1,
+    <earthworks:item_mud> : 1,
+};
+
+var mapThird as int[IIngredient] = {
+    <tconstruct:materials> : 2,
+    <tconstruct:soil> : 1,
+    <tconstruct:dried_clay> : 1
+};
+
+for first, a in mapFirst {
+    for second, b in mapSecond {
+        for third, c in mapThird {
+            var amount as int = a * b * c;
+            AlloySmelter.addRecipe(<enderio:item_alloy_ingot:9> * amount, [first,second,third], 5000);
+        }
+    }
+}
