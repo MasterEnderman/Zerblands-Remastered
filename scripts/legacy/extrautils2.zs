@@ -22,6 +22,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.avaritia.ExtremeCrafting;
 import mods.extrautils2.Resonator;
+import mods.thermalexpansion.Transposer;
 import mods.jei.JEI;
 
 JEI.removeAndHide(<extrautils2:bagofholding>);
@@ -32,6 +33,8 @@ JEI.removeAndHide(<extrautils2:chunkloader>);
 
 Resonator.remove(<extrautils2:ingredients:4>);
 Resonator.add(<extrautils2:ingredients:4>, <evilcraft:blood_waxed_coal>, 1600, true);
+
+Transposer.addFillRecipe(<extrautils2:ingredients:11>, <minecraft:gold_ingot>, <liquid:lava>*250, 66666);
 
 recipes.remove(<extrautils2:ingredients:1>);
 
