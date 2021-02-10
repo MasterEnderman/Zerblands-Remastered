@@ -1,5 +1,25 @@
 # Zerblands-Remastered
 
+## v2.0.8 - last bug fixes for now
+
+- added Just Enough Petroleum
+- added RFTools Power
+- added RFTools Power / OC Integration
+
+- updated CraftTweaker
+- updated Draconic Additions
+- updated Dragon Murder
+- updated Extreme Reactors
+- updated ZeroCore 2
+
+- added recipe for demon ingots
+- added recipe for marble
+- added dark ore to void ore miner
+- added more cruide steel recipes
+- added astral marble to void resource miner
+- added tooltips to enderio storage blocks
+- improved guide
+
 ## v2.0.7 - bug fixes again
 
 - added Hardcore Darkness

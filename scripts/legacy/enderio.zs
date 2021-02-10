@@ -88,14 +88,21 @@ var mapFirst as int[IIngredient] = {
 
 var mapSecond as int[IIngredient] = {
     <immersiveengineering:stone_decoration:4> : 2,
+    <earthworks:block_concrete> : 2,
+    <immersivepetroleum:stone_decoration> : 2,
+    <immersiveengineering:stone_decoration:5> : 2,
     <embers:blend_caminite> : 1,
-    <earthworks:item_mud> : 1,
+    <earthworks:item_mud> : 1
 };
 
 var mapThird as int[IIngredient] = {
     <tconstruct:materials> : 2,
+    <ore:ingotBrickNetherGlazed> : 2,
+    <embers:archaic_brick> : 2,
     <tconstruct:soil> : 1,
-    <tconstruct:dried_clay> : 1
+    <tconstruct:materials:1> : 1,
+    <tconstruct:materials:2> : 1,
+    <earthworks:item_adobe> : 1
 };
 
 for first, a in mapFirst {
@@ -107,12 +114,12 @@ for first, a in mapFirst {
     }
 }
 
-<enderio:block_inventory_chest_tiny>.addTooltip(format.green("Holds 162 Stacks"));
-<enderio:block_inventory_chest_small>.addTooltip(format.green("Holds 216 Stacks"));
-<enderio:block_inventory_chest_medium>.addTooltip(format.green("Holds 270 Stacks"));
-<enderio:block_inventory_chest_big>.addTooltip(format.green("Holds 324 Stacks"));
-<enderio:block_inventory_chest_large>.addTooltip(format.green("Holds 432 Stacks"));
-<enderio:block_inventory_chest_huge>.addTooltip(format.green("Holds 540 Stacks"));
-<enderio:block_inventory_chest_enormous>.addTooltip(format.green("Holds 702 Stacks"));
-<enderio:block_inventory_chest_warehouse>.addTooltip(format.green("Holds 864 Stacks"));
-<enderio:block_inventory_chest_warehouse13>.addTooltip(format.green("Holds 1080 Stacks"));
+<enderio:block_inventory_chest_tiny>.addTooltip(format.green("Holds 81 Stacks"));
+<enderio:block_inventory_chest_small>.addTooltip(format.green("Holds 108 Stacks"));
+<enderio:block_inventory_chest_medium>.addTooltip(format.green("Holds 135 Stacks"));
+<enderio:block_inventory_chest_big>.addTooltip(format.green("Holds 162 Stacks"));
+<enderio:block_inventory_chest_large>.addTooltip(format.green("Holds 216 Stacks"));
+<enderio:block_inventory_chest_huge>.addTooltip(format.green("Holds 270 Stacks"));
+<enderio:block_inventory_chest_enormous>.addTooltip(format.green("Holds 351 Stacks"));
+<enderio:block_inventory_chest_warehouse>.addTooltip(format.green("Holds 432 Stacks"));
+<enderio:block_inventory_chest_warehouse13>.addTooltip(format.green("Holds 540 Stacks"));

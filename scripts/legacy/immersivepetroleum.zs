@@ -23,3 +23,4 @@ import scripts.functions.findFirstItemFromMod;
 import mods.immersivepetroleum.Distillation;
 
 Distillation.addRecipe([<liquid:lubricant> * 9, <liquid:diesel> * 27, <liquid:gasoline> * 39], [<immersivepetroleum:material>], <liquid:oil> * 75, 2048, 1, [0.07]);
+Distillation.addRecipe([<liquid:lubricant> * 9, <liquid:diesel> * 27, <liquid:gasoline> * 39], [<immersivepetroleum:material>], <liquid:crude_oil> * 75, 2048, 1, [0.07]);
