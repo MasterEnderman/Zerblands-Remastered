@@ -32,7 +32,11 @@ Drying.addRecipe(<tconstruct:materials:1>, <earthworks:item_mud>, 2400);
 Melting.removeRecipe(<liquid:stone>);
 Melting.addRecipe(<liquid:stone>*144, <tconstruct:soil>, 250);
 
+Melting.addRecipe(<liquid:dirt>*36, <earthworks:item_mud>, 250);
+Melting.addRecipe(<liquid:dirt>*144, <earthworks:block_mud>, 250);
+
 Melting.removeEntityMelting(<entity:minecraft:villager>);
+Melting.removeEntityMelting(<entity:minecraft:horse>);
 
 Empowerer.addRecipe(<tconstruct:slime_sapling:0>, <minecraft:deadbush>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:1>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:1>, 4000, 1200, [0.7, 0.6, 0.1]);
 Empowerer.addRecipe(<tconstruct:slime_sapling:1>, <minecraft:deadbush>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:2>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:2>, 4000, 1200, [0.8, 0.2, 0.8]);
