@@ -1,4 +1,5 @@
-#packmode nightmare
+#packmode legacy
+#priority -1
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -20,10 +21,4 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.astralsorcery.Altar;
-import mods.botania.PureDaisy;
-import mods.immersiveengineering.Mixer;
-import mods.thermalexpansion.Transposer;
-
-recipes.remove(<astralsorcery:blockblackmarble>);
-PureDaisy.addRecipe(<astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>);
+recipes.replaceAllOccurences(<ore:blockGlassHardened>, <enderio:block_fused_quartz>);

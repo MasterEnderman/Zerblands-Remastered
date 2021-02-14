@@ -35,6 +35,13 @@ recipes.addShaped(<forestry:sturdy_machine>, [
     [<ore:ingotInvar>,<ore:plateBronze>,<ore:ingotInvar>]
 ]);
 
+recipes.remove(<forestry:ash_stairs>);
+recipes.addShaped(<forestry:ash_stairs> * 4, [
+    [<forestry:ash_brick>,null,null],
+    [<forestry:ash_brick>,<forestry:ash_brick>,null],
+    [<forestry:ash_brick>,<forestry:ash_brick>,<forestry:ash_brick>]
+]);
+
 var droneSteadfast as IItemStack = <forestry:bee_drone_ge>.withTag(
     {MaxH: 40, Mate: {Chromosomes: [{UID1: "forestry.speciesSteadfast", UID0: "forestry.speciesSteadfast", Slot: 0 as byte},
     {UID1: "forestry.speedSlower", UID0: "forestry.speedSlower", Slot: 1 as byte}, {UID1: "forestry.lifespanNormal", UID0: "forestry.lifespanNormal", Slot: 2 as byte},

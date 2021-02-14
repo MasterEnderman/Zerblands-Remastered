@@ -124,3 +124,7 @@ plastic.register();
 var black_iron = VanillaFactory.createItem("black_iron");
 black_iron.setLocalizedNameSupplier(function(itemStack) {return "Black Iron Ingot";});
 black_iron.register();
+
+var crystal_prism = VanillaFactory.createItem("crystal_prism");
+crystal_prism.setLocalizedNameSupplier(function(itemStack) {return "Crystal Prism";});
+crystal_prism.register();

@@ -40,9 +40,9 @@ for item in recipeRemove {
 
 var recipeMapShaped as IIngredient[][][IItemStack] = {
     <botania:altar>	: [
-    	[<tconstruct:materials>,<botania:petal:*>,<tconstruct:materials>],
-    	[null,<ore:blockSeared>,null],
-    	[<ore:blockSeared>,<ore:blockSeared>,<ore:blockSeared>]
+    	[<earthworks:itemslab_dry_stone>,<botania:petal:*>,<earthworks:itemslab_dry_stone>],
+    	[null,<earthworks:block_dry_stone>,null],
+    	[<chisel:brownstone>,<earthworks:block_dry_stone>,<chisel:brownstone>]
     ],
     <botania:pool:2> : [
     	[<botania:livingrock>,null,<botania:livingrock>],

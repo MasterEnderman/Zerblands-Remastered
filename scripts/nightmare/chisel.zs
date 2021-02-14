@@ -20,10 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.astralsorcery.Altar;
-import mods.botania.PureDaisy;
-import mods.immersiveengineering.Mixer;
-import mods.thermalexpansion.Transposer;
+import mods.tconstruct.Casting;
 
-recipes.remove(<astralsorcery:blockblackmarble>);
-PureDaisy.addRecipe(<astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>);
+recipes.remove(<chisel:brownstone>);
+Casting.addBasinRecipe(<chisel:brownstone>, <minecraft:sandstone>, <liquid:clay>, 576, true, 200);

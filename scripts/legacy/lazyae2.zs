@@ -44,9 +44,9 @@ var mapSpeculation as IIngredient[][IItemStack] = {
 for output, data in mapSpeculation {
     recipes.remove(output);
     recipes.addShaped(output, [
-        [data[1],data[1],data[1]],
         [data[1],data[0],data[1]],
-        [data[1],data[1],data[1]]
+        [data[0],data[1],data[0]],
+        [data[1],data[0],data[1]]
     ]); 
 }
 

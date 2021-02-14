@@ -25,11 +25,15 @@ import mods.embers.Stamper;
 import mods.immersiveengineering.Crusher;
 import mods.immersiveengineering.MetalPress;
 import mods.tconstruct.Casting;
+import mods.thermalexpansion.Compactor;
+import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Pulverizer;
 
 JEI.removeAndHide(<appliedenergistics2:material:40>);
 JEI.removeAndHide(<enderio:item_material:9>);
 JEI.removeAndHide(<enderio:item_material:10>);
+
+Compactor.removeGearRecipe(<evilcraft:dark_gem>);
 
 Casting.removeTableRecipe(<thermalfoundation:material:23>);
 Casting.addTableRecipe(<thermalfoundation:material:23>,<thermalfoundation:material:22>,<liquid:stone>,288,true,100);
@@ -84,6 +88,10 @@ for i, item in rods {
 	Casting.addTableRecipe(rods[i], <contenttweaker:cast_stick>, rodfluids[i], 144, false, 100);
 }
 
+Casting.addTableRecipe(<contenttweaker:cast_stick>, <ore:stickTreatedWood>, <liquid:gold>, 288, true, 100);
+Casting.addTableRecipe(<contenttweaker:cast_stick>, <ore:stickTreatedWood>, <liquid:brass>, 144, true, 100);
+Casting.addTableRecipe(<contenttweaker:cast_stick>, <ore:stickTreatedWood>, <liquid:alubrass>, 144, true, 100);
+
 var wires as IItemStack[] = [
     <immersiveengineering:material:20>,
     <immersiveengineering:material:21>,
@@ -122,4 +130,44 @@ var tconOre as IItemStack[IItemStack] = {
 for dust, ore in tconOre {
     Crusher.addRecipe(dust * 2, ore, 2048);
     Pulverizer.addRecipe(dust * 2, ore, 4000);
+}
+
+var thermalGlass as IItemStack[string] = {
+    "copper" : <thermalfoundation:glass:0>,
+    "tin" : <thermalfoundation:glass:1>,
+    "silver" : <thermalfoundation:glass:2>,
+    "lead" : <thermalfoundation:glass:3>,
+    "aluminum" : <thermalfoundation:glass:4>,
+    "nickel" : <thermalfoundation:glass:5>,
+    "platinum" : <thermalfoundation:glass:6>,
+    "iridium" : <thermalfoundation:glass:7>,
+    "mithril" : <thermalfoundation:glass:8>,
+    "steel" : <thermalfoundation:glass_alloy:0>,
+    "electrum" : <thermalfoundation:glass_alloy:1>,
+    "invar" : <thermalfoundation:glass_alloy:2>,
+    "bronze" : <thermalfoundation:glass_alloy:3>,
+    "constantan" : <thermalfoundation:glass_alloy:4>,
+    "signalum" : <thermalfoundation:glass_alloy:5>,
+    "lumium" : <thermalfoundation:glass_alloy:6>,
+    "enderium" : <thermalfoundation:glass_alloy:7>,
+};
+
+for metal, item in thermalGlass {
+    var ingot as IItemStack = findFirstItemFromMod("thermalfoundation","ingot",metal);
+    var dust as IItemStack = findFirstItemFromMod("thermalfoundation","dust",metal);
+    var glass as IItemStack = thermalGlass[metal];
+
+    <ore:blockGlassHardened>.remove(item);
+
+    if (metal == "lead") {
+        InductionSmelter.removeRecipe(dust, <thermalfoundation:material:770>);
+        InductionSmelter.removeRecipe(<thermalfoundation:glass>, dust);
+    } else {
+        if (metal != "mithril") {
+            InductionSmelter.removeRecipe(thermalGlass["lead"], dust);
+        }
+    }
+
+    InductionSmelter.addRecipe(glass, <enderio:block_fused_quartz>, ingot * 2, 2500);
+    InductionSmelter.addRecipe(glass, <enderio:block_fused_quartz>, dust * 2, 2500);
 }

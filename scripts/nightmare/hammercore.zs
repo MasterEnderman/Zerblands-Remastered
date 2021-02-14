@@ -20,10 +20,16 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.astralsorcery.Altar;
-import mods.botania.PureDaisy;
-import mods.immersiveengineering.Mixer;
-import mods.thermalexpansion.Transposer;
+import mods.calculator.scientific;
 
-recipes.remove(<astralsorcery:blockblackmarble>);
-PureDaisy.addRecipe(<astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>);
+var mapCobble as IItemStack[IItemStack] = {
+    <hammercore:iron_bordered_cobblestone> : <minecraft:iron_ingot>,
+    <hammercore:gold_bordered_cobblestone> : <minecraft:gold_ingot>,
+    <hammercore:diamond_bordered_cobblestone> : <minecraft:diamond>,
+    <hammercore:emerald_bordered_cobblestone> : <minecraft:emerald>,
+    <hammercore:quartz_bordered_cobblestone> : <minecraft:quartz>,
+};
+
+for block, item in mapCobble {
+    scientific.addRecipe(<minecraft:cobblestone>,item,block);
+}

@@ -20,10 +20,14 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.astralsorcery.Altar;
-import mods.botania.PureDaisy;
-import mods.immersiveengineering.Mixer;
-import mods.thermalexpansion.Transposer;
+recipes.remove(<bibliocraft:framingsheet>);
+recipes.addShaped(<bibliocraft:framingsheet> * 4, [
+    [<earthworks:tool_saw>.transformDamage(3)],
+    [<ore:plankWood>]
+]);
 
-recipes.remove(<astralsorcery:blockblackmarble>);
-PureDaisy.addRecipe(<astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>);
+recipes.remove(<bibliocraft:framingboard>);
+recipes.addShaped(<bibliocraft:framingboard> * 2, [
+    [<earthworks:tool_saw>.transformDamage(3)],
+    [<ore:plankWood>]
+]);

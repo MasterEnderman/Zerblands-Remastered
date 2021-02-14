@@ -26,7 +26,7 @@ for item in loadedMods["danknull"].items {
     recipes.remove(item);
 }
 
-JEI.hide(<danknull:danknull_dock>);
+JEI.removeAndHide(<danknull:danknull_dock>);
 
 var mapPanel as IIngredient[][IItemStack] = {
     <danknull:dank_null_panel_0> : [<minecraft:stained_glass_pane:14>,<ore:blockRedstone>],

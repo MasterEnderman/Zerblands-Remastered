@@ -86,7 +86,6 @@ recipes.addShaped(<appliedenergistics2:molecular_assembler>, [
 ]);
 
 recipes.remove(<appliedenergistics2:quartz_glass>);
-InductionSmelter.addRecipe(<appliedenergistics2:quartz_glass> * 4, <thermalfoundation:glass:3> * 4, <botania:quartz:5> * 5, 8192);
 InductionSmelter.addRecipe(<appliedenergistics2:quartz_glass> * 4, <enderio:block_fused_quartz> * 4, <botania:quartz:5> * 5, 8192);
 
 recipes.remove(<appliedenergistics2:quartz_vibrant_glass>);

@@ -20,7 +20,11 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.enderio.AlloySmelter;
 import mods.jei.JEI;
+import mods.immersiveengineering.AlloySmelter as Kiln;
+import mods.thermalexpansion.Compactor;
+import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Sawmill;
 
 <ore:materialFlesh>.add(<evilcraft:werewolf_flesh:1>);
@@ -32,6 +36,22 @@ recipes.addShaped("gear_wood", findFirstItemFromMod("thermalfoundation","gear","
     [<ore:stickTreatedWood>,<ore:plankTreatedWood>,<ore:stickTreatedWood>],
     [<ore:stickTreatedWood>,<ore:stickTreatedWood>,<ore:stickTreatedWood>]
 ]);
+
+Compactor.removeGearRecipe(<evilcraft:dark_gem>);
+
+var mapSimpleAlloy as IItemStack[][IItemStack] = {
+    <earthworks:item_adobe> : [<embers:blend_caminite>,<earthworks:item_mud>],
+};
+
+for item, recipe in mapSimpleAlloy {
+    var input1 as IItemStack = recipe[0];
+    var input2 as IItemStack = recipe[1];
+
+    recipes.remove(item);
+    Kiln.addRecipe(item, input1, input2, 200);
+    AlloySmelter.addRecipe(item, recipe, 5000);
+    InductionSmelter.addRecipe(item, input1, input2, 2500);
+}
 
 var mapWood as IItemStack[IItemStack] = {
     // minecraft
@@ -131,4 +151,59 @@ for log, plank in mapWood {
     recipes.remove(plank);
     recipes.addShapedless(plank * 2, [log]);
     Sawmill.addRecipe(<minecraft:stick>*4, plank, 400, <thermalfoundation:material:800>, 10);
+}
+
+var rods as IItemStack[] = [
+    <immersiveengineering:material:1>,
+    <immersiveengineering:material:2>,
+    <immersiveengineering:material:3>,
+    <tconstruct:stone_stick>
+];
+
+var rodfluids as ILiquidStack[] = [
+    <liquid:iron>,
+    <liquid:steel>,
+    <liquid:aluminum>,
+    <liquid:stone>
+];
+
+for i, item in rods {
+	Casting.addTableRecipe(<contenttweaker:cast_stick>, rods[i], <liquid:gold>, 288, true, 100);
+	Casting.addTableRecipe(<contenttweaker:cast_stick>, rods[i], <liquid:brass>, 144, true, 100);
+	Casting.addTableRecipe(<contenttweaker:cast_stick>, rods[i], <liquid:alubrass>, 144, true, 100);
+	Casting.addTableRecipe(rods[i], <contenttweaker:cast_stick>, rodfluids[i], 144, false, 100);
+}
+
+Casting.addTableRecipe(<contenttweaker:cast_stick>, <ore:stickTreatedWood>, <liquid:gold>, 288, true, 100);
+Casting.addTableRecipe(<contenttweaker:cast_stick>, <ore:stickTreatedWood>, <liquid:brass>, 144, true, 100);
+Casting.addTableRecipe(<contenttweaker:cast_stick>, <ore:stickTreatedWood>, <liquid:alubrass>, 144, true, 100);
+
+var wires as IItemStack[] = [
+    <immersiveengineering:material:20>,
+    <immersiveengineering:material:21>,
+    <immersiveengineering:material:22>,
+    <immersiveengineering:material:23>
+];
+
+var wireplates as IIngredient[] = [
+    <ore:plateCopper>,
+    <ore:plateElectrum>,
+    <ore:plateAluminum>,
+    <ore:plateSteel>
+];
+
+var wirefluids as ILiquidStack[] = [
+    <liquid:copper>,
+    <liquid:electrum>,
+    <liquid:aluminum>,
+    <liquid:steel>
+];
+
+for i, item in wires {
+	Casting.addTableRecipe(<contenttweaker:cast_wire>, wires[i], <liquid:gold>, 288, true, 100);
+	Casting.addTableRecipe(<contenttweaker:cast_wire>, wires[i], <liquid:brass>, 144, true, 100);
+	Casting.addTableRecipe(<contenttweaker:cast_wire>, wires[i], <liquid:alubrass>, 144, true, 100);
+	Casting.addTableRecipe(wires[i], <contenttweaker:cast_wire>, wirefluids[i], 72, false, 100);
+	MetalPress.removeRecipe(wires[i]);
+	MetalPress.addRecipe(wires[i]*4, wireplates[i], <immersiveengineering:mold:4>, 1024);
 }

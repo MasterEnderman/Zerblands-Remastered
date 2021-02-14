@@ -36,6 +36,11 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     	[<actuallyadditions:item_crystal>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal>],
     	[<ore:ingotElectrum>,<actuallyadditions:item_crystal>,null]	
     ],
+	<thermalfoundation:material:23> : [
+		[null,<tconstruct:materials>,null],
+		[<tconstruct:materials>,<thermalfoundation:material:22>,<tconstruct:materials>],
+		[null,<tconstruct:materials>,null]
+	]
 };
 
 for key, value in recipeMapShaped {

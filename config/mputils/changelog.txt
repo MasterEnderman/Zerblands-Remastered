@@ -1,5 +1,26 @@
 # Zerblands-Remastered
 
+## v2.0.9 - another bug fix update
+
+- removed Actually Addons
+- removed Dragon Murder
+- removed Hardcore Darkness
+- removed World Stripper
+
+- updated CraftTweaker
+- updated RandomTweaks
+- updated UniDict
+
+- added Crafting Tweaks
+- added Tiered Magnets
+
+- fixed powercells output
+- fixed hardened glass recipes
+- improved guide
+- increased thermal upgrade slots
+- removed Rock Crystal Ore from Void Ore Miner (too OP)
+- more recipes for nightmare mode [WIP]
+
 ## v2.0.8 - last bug fixes for now
 
 - added Just Enough Petroleum

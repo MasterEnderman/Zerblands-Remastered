@@ -5,10 +5,20 @@
 parent: vip
 example.permission_with_value: 150
 
+// Delta
+[57212b344c214e7bbf221945aca15b07]
+parent: admin
+ftbutilities.chat.name_format: <&4DeltaDerJedenCodeZerstückelt&r>
+
 // PackDev
 [90003ef04d504aa5a32aeb2d7f74dac3]
 parent: vip
 ftbutilities.chat.name_format: <&5[Modpack-Developer] {name}&r>
+
+// Moo
+[c0ac91fe542c43d8a4a62ffcabe1516f]
+parent: admin
+ftbutilities.chat.name_format: <&6Unsterblicher Gottkönig Morgoth Istari&r>
 
 // Zerb
 [b5734c113c394cc3a22a4c473883952e]

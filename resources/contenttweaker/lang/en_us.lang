@@ -12,3 +12,12 @@ fluid.sulfuric_acid=Sulfuric Acid
 fluid.hydrogen_chlorid=Hydrogen Chloride
 fluid.ethylene=Ethylene
 fluid.plastic=Plastic
+fluid.briny_water=Briny Water
+fluid.saline_water=Saline Water
+fluid.brackish_water=Brackish Water
+
+# Fixes
+
+tile.earthworks.block_gabion_falling_dirt.name=Dirt Gabion
+tile.earthworks.block_gabion_falling_sand.name=Sand Gabion
+tile.earthworks.block_gabion_falling_gravel.name=Gravel Gabion

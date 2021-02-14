@@ -20,10 +20,8 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.astralsorcery.Altar;
-import mods.botania.PureDaisy;
-import mods.immersiveengineering.Mixer;
-import mods.thermalexpansion.Transposer;
+import mods.calculator.basic;
 
-recipes.remove(<astralsorcery:blockblackmarble>);
-PureDaisy.addRecipe(<astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>);
+basic.removeRecipe(<sonarcore:reinforcedstoneblock>);
+basic.addRecipe(<earthworks:block_dry_stone>,<immersiveengineering:treated_wood>,<sonarcore:reinforcedstoneblock>);
+basic.addRecipe(<earthworks:block_dry_stone>,<botania:livingwood>,<sonarcore:reinforcedstoneblock> * 4);

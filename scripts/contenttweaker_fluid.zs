@@ -22,5 +22,14 @@ ethylene.register();
 var plastic = VanillaFactory.createFluid("plastic", 9868950);
 plastic.register();
 
-var colourOutOfSpace = VanillaFactory.createFluid("colour_out_of_space", 14474460);
-colourOutOfSpace.register();
+var colour_out_of_space = VanillaFactory.createFluid("colour_out_of_space", 14474460);
+colour_out_of_space.register();
+
+var briny_water = VanillaFactory.createFluid("briny_water", 15254434);
+briny_water.register();
+
+var saline_water = VanillaFactory.createFluid("saline_water", 12169397);
+saline_water.register();
+
+var brackish_water = VanillaFactory.createFluid("brackish_water", 9150151);
+brackish_water.register();

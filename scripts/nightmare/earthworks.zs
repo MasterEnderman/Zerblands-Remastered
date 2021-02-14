@@ -20,10 +20,17 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.astralsorcery.Altar;
-import mods.botania.PureDaisy;
-import mods.immersiveengineering.Mixer;
-import mods.thermalexpansion.Transposer;
+import mods.inworldcrafting.FluidToItem;
 
-recipes.remove(<astralsorcery:blockblackmarble>);
-PureDaisy.addRecipe(<astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>);
+recipes.removeShapeless(<earthworks:block_mud>);
+recipes.removeShapeless(<earthworks:block_cob>);
+
+recipes.removeByRecipeName("earthworks:block_dry_stone");
+furnace.addRecipe(<earthworks:block_dry_stone>, <minecraft:stone>);
+
+recipes.remove(<earthworks:item_mud>);
+FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<earthworks:item_dirt>], false);
+FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<calculator:soil>], false);
+
+recipes.remove(<earthworks:item_slaked_lime>);
+FluidToItem.transform(<earthworks:item_slaked_lime>, <liquid:water>, [<earthworks:item_quicklime>], false);
