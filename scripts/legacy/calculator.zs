@@ -101,10 +101,18 @@ JEI.removeAndHide(<calculator:weatherstation>);
 JEI.removeAndHide(<calculator:transmitter>);
 
 basic.removeRecipe(<calculator:wrench>);
-basic.addRecipe(<chiselsandbits:wrench_wood>,<sonarcore:reinforcedstoneblock>,<calculator:wrench>);
+recipes.addShaped(<calculator:wrench>, [
+    [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>],
+    [<sonarcore:reinforcedstoneblock>,<chiselsandbits:wrench_wood>,<sonarcore:reinforcedstoneblock>],
+    [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>]
+]);
 
 basic.removeRecipe(<calculator:sickle>);
-basic.addRecipe(<extrautils2:sickle_wood>,<sonarcore:reinforcedstoneblock>,<calculator:sickle>);
+recipes.addShaped(<calculator:sickle>, [
+    [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>],
+    [<sonarcore:reinforcedstoneblock>,<extrautils2:sickle_wood>,<sonarcore:reinforcedstoneblock>],
+    [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>]
+]);
 
 recipes.remove(<calculator:atomicmultiplier>);
 recipes.addShaped(<calculator:atomicmultiplier>, [
