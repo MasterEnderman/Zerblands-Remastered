@@ -6,12 +6,14 @@
 
 ## Solar Array
 
-- Litherite Solar Ccell Production = 24 RF / Cell [Default: 48]
-- Erodium Solar Ccell Production = 32 RF / Cell [Default: 64]
-- Kyronite Solar Ccell Production = 48 RF / Cell [Default: 96]
-- Pladium Solar Ccell Production = 64 RF / Cell [Default: 128]
-- Ionite Solar Ccell Production = 96 RF / Cell [Default: 192]
-- Aethium Solar Ccell Production = 128 RF / Cell [Default: 256]
+- Litherite Solar Cell Production = 24 RF / Cell [Default: 48]
+- Erodium Solar Cell Production = 32 RF / Cell [Default: 64]
+- Kyronite Solar Cell Production = 48 RF / Cell [Default: 96]
+- Pladium Solar Cell Production = 64 RF / Cell [Default: 128]
+- Ionite Solar Cell Production = 96 RF / Cell [Default: 192]
+- Aethium Solar Cell Production = 128 RF / Cell [Default: 256]
+
+![Energy Production Values](solar.png)
 
 ## Ore Miner
 
