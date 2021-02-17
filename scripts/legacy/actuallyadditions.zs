@@ -23,6 +23,7 @@ import scripts.functions.findFirstItemFromMod;
 import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Empowerer;
 import mods.avaritia.ExtremeCrafting;
+import mods.enderio.SagMill;
 import mods.jei.JEI;
 
 JEI.removeAndHide(<actuallyadditions:block_giant_chest_medium>);
@@ -34,6 +35,8 @@ JEI.removeAndHide(<actuallyadditions:item_medium_to_large_crate_upgrade>);
 
 recipes.remove(<actuallyadditions:block_giant_chest>);
 Empowerer.addRecipe(<actuallyadditions:block_giant_chest>, <actuallyadditions:block_misc:4>, <minecraft:chest>, <minecraft:chest>, <minecraft:chest>, <minecraft:chest>, 5000, 20);
+
+SagMill.addRecipe([<actuallyadditions:item_dust:7>], [100], <actuallyadditions:item_misc:5>, "NONE", 5000);
 
 recipes.addShaped(<actuallyadditions:item_misc:20>, [
     [<actuallyadditions:item_crystal:1>,<actuallyadditions:item_crystal:5>,<actuallyadditions:item_crystal:1>],
