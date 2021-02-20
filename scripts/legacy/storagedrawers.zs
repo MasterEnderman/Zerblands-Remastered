@@ -47,3 +47,11 @@ recipes.addShaped(<storagedrawers:upgrade_void>, [
     [<actuallyadditions:item_crystal:3>,<extrautils2:minichest>,<actuallyadditions:item_crystal:3>],
     [<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]
 ]);
+
+recipes.addShaped(<storagedrawers:upgrade_creative>, [
+    [<environmentaltech:aethium>,<appliedenergistics2:material:38>,<environmentaltech:aethium>],
+    [<appliedenergistics2:material:38>,<storagedrawers:upgrade_template>,<appliedenergistics2:material:38>],
+    [<environmentaltech:aethium>,<appliedenergistics2:material:38>,<environmentaltech:aethium>]
+]);
+
+<storagedrawers:upgrade_creative>.displayName = "Deep Storage Upgrade";

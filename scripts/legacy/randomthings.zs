@@ -22,20 +22,16 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.bloodmagic.BloodAltar;
 
-BloodAltar.addRecipe(<randomthings:rezstone>,<extrautils2:compressedcobblestone:7>,5,1000000,2000,2000);
+BloodAltar.addRecipe(<randomthings:rezstone>,<extrautils2:compressedcobblestone:7>,5,1000000000,2000,2000);
+
+recipes.remove(<randomthings:timeinabottle>);
+BloodAltar.addRecipe(<randomthings:timeinabottle>,<botania:brewflask>.withTag({brewKey: "emptiness"}),4,250000000,2000,2000);
 
 recipes.remove(<randomthings:imbuingstation>);
 recipes.addShaped(<randomthings:imbuingstation>, [
     [null,<botania:rune>,null],
     [<botania:overgrowthseed>,<botania:avatar>,<botania:overgrowthseed>],
     [<botania:livingrock>,<embers:ancient_motive_core>,<botania:livingrock>]
-]);
-
-recipes.remove(<randomthings:timeinabottle>);
-recipes.addShaped(<randomthings:timeinabottle>, [
-    [<ore:ingotGold>,<ore:ingotGold>,<ore:ingotGold>],
-    [<ore:gemDiamond>,<projecte:item.pe_time_watch>,<ore:gemDiamond>],
-    [<ore:gemLapis>,<minecraft:glass_bottle>,<ore:gemLapis>]
 ]);
 
 recipes.remove(<randomthings:spectrecharger:0>);

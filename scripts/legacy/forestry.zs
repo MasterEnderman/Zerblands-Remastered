@@ -61,6 +61,13 @@ var droneSteadfast as IItemStack = <forestry:bee_drone_ge>.withTag(
 
 Empowerer.addRecipe(droneSteadfast, <harvestcraft:grubitem>, <forestry:royal_jelly>, <forestry:pollen:1>, <forestry:pollen>, <forestry:propolis:3>, 50000, 1000);
 
+Carpenter.removeRecipe(<forestry:impregnated_casing>);
+Carpenter.addRecipe(<forestry:impregnated_casing>, [
+    [<ore:logWood>,<ore:logWood>,<ore:logWood>],
+    [<ore:logWood>,null,<ore:logWood>],
+    [<ore:logWood>,<ore:logWood>,<ore:logWood>]
+], 200, <liquid:seed.oil>*250);
+
 var x as IItemStack = <morebees:grainmetallic>;
 
 // IItemStack output, IIngredient[][] ingredients, int packagingTime, @Optional ILiquidStack fluidInput, @Optional IItemStack box

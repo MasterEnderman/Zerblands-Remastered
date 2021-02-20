@@ -1,5 +1,21 @@
 # Zerblands-Remastered
 
+## v2.0.11 - ...
+
+- removed enderio tablets
+
+## v2.0.10 - deco update
+
+- added Cathedral
+
+- updated RandomTweaks
+
+- added old Abyssalcraft building blocks
+- added recipe for drawer "deep storage" upgrade
+- fixed calculator recipes
+- fixed extreme reactos energy output
+- improved guide
+
 ## v2.0.9 - another bug fix update
 
 - removed Actually Addons

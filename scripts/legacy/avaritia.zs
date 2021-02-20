@@ -22,6 +22,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.astralsorcery.Altar;
 import mods.avaritia.ExtremeCrafting;
+import mods.enderio.SagMill;
 import mods.jei.JEI;
 
 ExtremeCrafting.remove(<avaritia:neutronium_compressor>);
@@ -48,6 +49,9 @@ recipes.addShaped(<avaritia:resource:1>, [
 ]);
 
 ExtremeCrafting.remove(<avaritia:resource:5>);
+
+SagMill.removeRecipe(<minecraft:bedrock>);
+SagMill.addRecipe([<minecraft:bedrock>,<avaritia:resource:2>], [100,100], <minecraft:bedrock>, "NONE", 1000);
 
 recipes.remove(<avaritia:extreme_crafting_table>);
 Altar.addConstellationAltarRecipe("dire_table",<avaritia:extreme_crafting_table>, 2000, 1000, [

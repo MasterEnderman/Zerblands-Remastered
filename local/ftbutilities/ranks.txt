@@ -6,7 +6,7 @@ power: 1
 ftbutilities.claims.max_chunks: 500
 ftbutilities.chunkloader.max_chunks: 50
 ftbutilities.homes.max: 1
-ftbutilities.chunkloader.load_offline: false
+ftbutilities.chunkloader.load_offline: true
 ftbutilities.homes.cooldown: 0s
 ftbutilities.homes.warmup: 0s
 ftbutilities.back.cooldown: 0s
@@ -22,7 +22,7 @@ ftbutilities.chat.name_format: <&bVIP {name}&r>
 ftbutilities.claims.max_chunks: 666
 ftbutilities.chunkloader.max_chunks: 69
 ftbutilities.homes.max: 1
-ftbutilities.chunkloader.load_offline: false
+ftbutilities.chunkloader.load_offline: true
 ftbutilities.homes.cooldown: 0s
 ftbutilities.homes.warmup: 0s
 ftbutilities.back.cooldown: 0s
@@ -39,7 +39,7 @@ ftbutilities.chat.name_format: <&2{name}&r>
 ftbutilities.claims.max_chunks: 1000
 ftbutilities.chunkloader.max_chunks: 100
 ftbutilities.homes.max: 1
-ftbutilities.chunkloader.load_offline: false
+ftbutilities.chunkloader.load_offline: true
 ftbutilities.homes.cooldown: 0s
 ftbutilities.homes.warmup: 0s
 ftbutilities.back.cooldown: 0s

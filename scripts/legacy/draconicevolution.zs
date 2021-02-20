@@ -64,9 +64,9 @@ recipes.addShaped(<draconicevolution:fusion_crafting_core>, [
 
 recipes.remove(<draconicevolution:wyvern_energy_core>);
 recipes.addShaped(<draconicevolution:wyvern_energy_core>, [
-    [<ore:blockDraconium>,<enderio:block_cap_bank:3>,<ore:blockDraconium>],
-    [<enderio:block_cap_bank:3>,<draconicevolution:draconic_core>,<enderio:block_cap_bank:3>],
-    [<ore:blockDraconium>,<enderio:block_cap_bank:3>,<ore:blockDraconium>]
+    [<ore:blockDraconium>,<rftoolspower:cell3>,<ore:blockDraconium>],
+    [<rftoolspower:cell3>,<draconicevolution:draconic_core>,<rftoolspower:cell3>],
+    [<ore:blockDraconium>,<rftoolspower:cell3>,<ore:blockDraconium>]
 ]);
 
 recipes.remove(<draconicevolution:wyvern_sword>);

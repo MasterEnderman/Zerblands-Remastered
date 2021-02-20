@@ -1,3 +1,5 @@
+# blocks
+
 tile.contenttweaker.slate_reinforced.name=Reinforced Slate Block
 tile.contenttweaker.slate_demonic.name=Demonic Slate Block
 tile.contenttweaker.slate_ethereal.name=Ethereal Slate Block
@@ -6,6 +8,48 @@ tile.contenttweaker.slate_blank.name=Blank Slate Block
 tile.contenttweaker.slate_imbued.name=Imbued Slate Block
 tile.contenttweaker.bedrockium_block.name=Bedrockium Block
 tile.contenttweaker.blood_infused_stone.name=Blood Infused Stone
+
+# ac legacy
+
+tile.contenttweaker.asb.name=Abyssal Stone Bricks
+tile.contenttweaker.asbc.name=Chiseled Abyssal Stone Bricks
+tile.contenttweaker.asbcr.name=Cracked Abyssal Stone Bricks
+tile.contenttweaker.asbf.name=Fancy Abyssal Stone Bricks
+tile.contenttweaker.asc.name=Abyssal Stone
+tile.contenttweaker.boa.name=Block of Abyssalnite
+tile.contenttweaker.boc.name=Block of Refined Coralium
+tile.contenttweaker.bod.name=Block of Dreadium
+tile.contenttweaker.boe.name=Block of Ethaxium
+tile.contenttweaker.coraliumcobblestone.name=Coralium Cobblestone
+tile.contenttweaker.cstone.name=Coralium Stone
+tile.contenttweaker.cstonebrick.name=Coralium Stone Bricks
+tile.contenttweaker.cstonebrickc.name=Chiseled Coralium Stone Bricks
+tile.contenttweaker.cstonebrickcr.name=Cracked Coralium Stone Bricks
+tile.contenttweaker.deb.name=Dark Ethaxium Bricks
+tile.contenttweaker.debc.name=Chiseled Dark Ethaxium Bricks
+tile.contenttweaker.debcr.name=Cracked Dark Ethaxium Bricks
+tile.contenttweaker.debp.name=Dark Ethaxium Bricks Pillar
+tile.contenttweaker.debp_top.name=Dark Ethaxium Bricks Pillar Top
+tile.contenttweaker.drs.name=Dreadstone
+tile.contenttweaker.drsb.name=Dreadstone Bricks
+tile.contenttweaker.drsbc.name=Chiseled Dreadstone Bricks
+tile.contenttweaker.drsbcr.name=Cracked Chiseled Dreadstone Bricks
+tile.contenttweaker.ds.name=Darkstone
+tile.contenttweaker.dsb.name=Darkstone Bricks
+tile.contenttweaker.dsbc.name=Chiseled Darkstone Bricks
+tile.contenttweaker.dsbcr.name=Cracked Darkstone Bricks
+tile.contenttweaker.dsbf.name=Fancy Darkstone Bricks
+tile.contenttweaker.dsc.name=Darkstone Cobblestone
+tile.contenttweaker.dsglow.name=Glowing Darkstone Bricks
+tile.contenttweaker.dsssides.name=Darkstone Slabs Sides
+tile.contenttweaker.dsstop.name=Darkstone Slabs Top
+tile.contenttweaker.eb.name=Ethaxium Bricks
+tile.contenttweaker.ebc.name=Chiseled Ethaxium Bricks
+tile.contenttweaker.ebcr.name=Cracked Ethaxium Bricks
+tile.contenttweaker.ebp.name=Ethaxium Bricks Pillar
+tile.contenttweaker.ebp_top.name=Ethaxium Bricks Pillar Top
+
+# fluids
 
 fluid.colour_out_of_space=Color out of Space
 fluid.sulfuric_acid=Sulfuric Acid
@@ -16,7 +60,7 @@ fluid.briny_water=Briny Water
 fluid.saline_water=Saline Water
 fluid.brackish_water=Brackish Water
 
-# Fixes
+# fixes
 
 tile.earthworks.block_gabion_falling_dirt.name=Dirt Gabion
 tile.earthworks.block_gabion_falling_sand.name=Sand Gabion
