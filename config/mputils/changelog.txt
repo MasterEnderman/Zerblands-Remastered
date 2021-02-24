@@ -1,5 +1,13 @@
 # Zerblands-Remastered
 
+## v2.0.12 - critical bug fix
+
+- updated Simply Jetpacks 2
+
+- fixed EMC value file format
+- fixed script formatting
+- fixed script importing
+
 ## v2.0.11 - 250
 
 - updated Chunk-Pregenerator

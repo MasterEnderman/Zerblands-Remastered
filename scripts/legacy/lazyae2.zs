@@ -46,10 +46,10 @@ for output, data in mapSpeculation {
 }
 
 Agglomeration.addRecipe(<threng:material:6>, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:5>] as IIngredient[], 500000);
-GaiaPlate.add(processor, 500000, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:5>]);
+GaiaPlate.add(<threng:material:6>, 500000, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:5>]);
 
 Agglomeration.addRecipe(<threng:material:14>, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:13>] as IIngredient[], 1000000);
-GaiaPlate.add(processor, 1000000, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:13>]);
+GaiaPlate.add(<threng:material:14>, 1000000, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:13>]);
 
 recipes.remove(<threng:machine:2>);
 RuneAltar.addRecipe(<threng:machine:2>, [

@@ -116,7 +116,8 @@
   "item.redstonearsenal.material.dustElectrumFlux_2070103775": true,
   "item.redstonerepository.material.dustGelidEnderium_544355950": true,
   "item.appliedenergistics2.material.ender_dust_1893555465": true,
-  "ic2exprecipe_Certus Quartz Dust_": true
+  "ic2exprecipe_Certus Quartz Dust_": true,
+  "ic2exprecipe_Coke Dust_": true
  },
  "extractor": {
   "item.coal_764578481": true,

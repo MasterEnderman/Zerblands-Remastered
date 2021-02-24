@@ -48,7 +48,7 @@ for seed, crystal in mapSeed {
 	ManaInfusion.addInfusion(crystal, seed, 2000);
 }
 
-var mapProcessor as IIngredient[IItemStack] = {
+var mapProcessor as IItemStack[IItemStack] = {
     <appliedenergistics2:material:22>: <appliedenergistics2:material:18>,
     <appliedenergistics2:material:23>: <appliedenergistics2:material:16>,
     <appliedenergistics2:material:24>: <appliedenergistics2:material:17>

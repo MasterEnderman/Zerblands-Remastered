@@ -60,5 +60,5 @@ var mapBlood as int[IItemStack] = {
 Melting.removeRecipe(<liquid:blood>);
 
 for item, amount in mapBlood {
-    Melting.addRecipe(<liquid:blood> * amonut, item, 500);
+    Melting.addRecipe(<liquid:blood> * amount, item, 500);
 }

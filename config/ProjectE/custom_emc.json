@@ -609,7 +609,7 @@
       "emc": 16
     },
     {
-      "item": "fluxnetworks:flux",
+      "item": "fluxnetworks:flux|0",
       "emc": 53582
     }
   ]
