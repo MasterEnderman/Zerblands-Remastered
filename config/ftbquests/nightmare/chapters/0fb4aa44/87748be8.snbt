@@ -1,0 +1,35 @@
+{
+	x: 7.0d,
+	y: -5.5d,
+	dependencies: [
+		"508a9727"
+	],
+	tasks: [{
+		uid: "5fffcd40",
+		type: "item",
+		items: [{
+			item: "embers:mixer"
+		}]
+	},
+	{
+		uid: "17d5fee5",
+		type: "item",
+		items: [{
+			item: "embers:ember_activator"
+		}]
+	},
+	{
+		uid: "61ae3a15",
+		type: "item",
+		items: [{
+			item: "embers:ember_emitter"
+		}]
+	},
+	{
+		uid: "ed3ed258",
+		type: "item",
+		items: [{
+			item: "embers:ember_receiver"
+		}]
+	}]
+}

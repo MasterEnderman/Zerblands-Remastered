@@ -27,3 +27,9 @@ import mods.thermalexpansion.Transposer;
 
 recipes.remove(<astralsorcery:blockblackmarble>);
 PureDaisy.addRecipe(<astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>);
+
+Altar.addDiscoveryAltarRecipe("internal/altar/grindstone", <astralsorcery:blockmachine:1>, 200, 200, [
+    null, null, null,
+    null, <contenttweaker:grind_wheel>, <ore:plankWood>,
+    <ore:stickWood>,  <ore:stickWood>, <ore:plankWood>
+]);

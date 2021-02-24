@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: -4.5d,
+	dependencies: [
+		"0629c4d0",
+		"3fe13350"
+	],
+	tasks: [{
+		uid: "91e6d77b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "evilcraft:blood_infuser",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

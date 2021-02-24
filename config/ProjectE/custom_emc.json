@@ -455,6 +455,162 @@
     {
       "item": "extrautils2:ingredients|1",
       "emc": 1536
+    },
+    {
+      "item": "rftools:machine_frame|0",
+      "emc": 4992
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|0",
+      "emc": 64
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|1",
+      "emc": 864
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|2",
+      "emc": 8192
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|3",
+      "emc": 128
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|4",
+      "emc": 16384
+    },
+    {
+      "item": "actuallyadditions:item_crystal_empowered|5",
+      "emc": 256
+    },
+    {
+      "item": "enderio:item_alloy_ingot|0",
+      "emc": 352
+    },
+    {
+      "item": "enderio:item_alloy_ingot|6",
+      "emc": 384
+    },
+    {
+      "item": "enderio:item_alloy_ingot|8",
+      "emc": 449
+    },
+    {
+      "item": "enderio:item_alloy_endergy_ingot|2",
+      "emc": 641
+    },
+    {
+      "item": "enderio:item_alloy_endergy_ingot|3",
+      "emc": 69985
+    },
+    {
+      "item": "enderio:item_material|36",
+      "emc": 9328
+    },
+    {
+      "item": "enderio:item_alloy_endergy_ingot|1",
+      "emc": 11376
+    },
+    {
+      "item": "enderio:item_alloy_endergy_ingot|5",
+      "emc": 960
+    },
+    {
+      "item": "enderio:item_alloy_endergy_ingot|6",
+      "emc": 1984
+    },
+    {
+      "item": "enderio:item_alloy_endergy_ingot|0",
+      "emc": 21
+    },
+    {
+      "item": "thermalfoundation:material|2048",
+      "emc": 1536
+    },
+    {
+      "item": "thermalfoundation:material|2050",
+      "emc": 1536
+    },
+    {
+      "item": "thermalfoundation:material|2052",
+      "emc": 1536
+    },
+    {
+      "item": "thermalfoundation:material|2053",
+      "emc": 384
+    },
+    {
+      "item": "thermalfoundation:material|2051",
+      "emc": 384
+    },
+    {
+      "item": "thermalfoundation:material|2049",
+      "emc": 384
+    },
+    {
+      "item": "minecraft:blaze_powder|0",
+      "emc": 384
+    },
+    {
+      "item": "thermalfoundation:material|167",
+      "emc": 1280
+    },
+    {
+      "item": "thermalfoundation:material|164",
+      "emc": 576
+    },
+    {
+      "item": "thermalfoundation:material|135",
+      "emc": 4096
+    },
+    {
+      "item": "thermalfoundation:material|136",
+      "emc": 4096
+    },
+    {
+      "item": "thermalfoundation:material|160",
+      "emc": 256
+    },
+    {
+      "item": "appliedenergistics2:sky_stone_block|0",
+      "emc": 2
+    },
+    {
+      "item": "appliedenergistics2:material|45",
+      "emc": 2
+    },
+    {
+      "item": "threng:material|2",
+      "emc": 674
+    },
+    {
+      "item": "threng:material|7",
+      "emc": 674
+    },
+    {
+      "item": "threng:material|5",
+      "emc": 8194
+    },
+    {
+      "item": "threng:material|6",
+      "emc": 8290
+    },
+    {
+      "item": "threng:material|14",
+      "emc": 67060686
+    },
+    {
+      "item": "astralsorcery:itemcraftingcomponent|0",
+      "emc": 128
+    },
+    {
+      "item": "forestry:apatite|0",
+      "emc": 16
+    },
+    {
+      "item": "fluxnetworks:flux",
+      "emc": 53582
     }
   ]
 }

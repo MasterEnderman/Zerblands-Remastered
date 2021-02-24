@@ -21,7 +21,9 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.astralsorcery.Altar;
+import mods.calculator.algorithmSeparator;
 import mods.calculator.basic;
+import mods.calculator.stoneSeparator;
 import mods.tconstruct.Casting;
 
 recipes.remove(<calculator:powercube>);
@@ -36,6 +38,9 @@ basic.addRecipe(<chiselsandbits:wrench_wood>,<sonarcore:reinforcedstoneblock>,<c
 basic.removeRecipe(<calculator:sickle>);
 basic.addRecipe(<extrautils2:sickle_wood>,<sonarcore:reinforcedstoneblock>,<calculator:sickle>);
 
+basic.removeRecipe(<calculator:redstoneingot>);
+basic.addRecipe(<calculator:reinforcedironingot>,<minecraft:redstone>,<calculator:redstoneingot>);
+
 recipes.remove(<calculator:calculator>);
 Altar.addDiscoveryAltarRecipe("basic_calculator", <calculator:calculator>, 200, 200, [
     <contenttweaker:black_iron>, <calculator:calculatorscreen>, <contenttweaker:black_iron>,
@@ -43,12 +48,41 @@ Altar.addDiscoveryAltarRecipe("basic_calculator", <calculator:calculator>, 200, 
     <contenttweaker:black_iron>, <calculator:calculatorassembly>, <contenttweaker:black_iron>
 ]);
 
+algorithmSeparator.removeRecipe(<calculator:smalltanzanite>, <calculator:shardtanzanite>);
+algorithmSeparator.addRecipe(<forestry:apatite>, <calculator:smalltanzanite>, <calculator:shardtanzanite>);
+
+algorithmSeparator.removeRecipe(<calculator:largetanzanite>, <calculator:shardtanzanite>);
+algorithmSeparator.addRecipe(<forestry:resource_storage>, <calculator:largetanzanite>, <calculator:shardtanzanite>);
+
+stoneSeparator.removeRecipe(<calculator:enrichedgoldingot>, <calculator:smallstone>);
+stoneSeparator.removeRecipe(<calculator:reinforcedironingot>, <calculator:smallstone>);
+
+stoneSeparator.removeRecipe(<calculator:largeamethyst>, <calculator:shardamethyst>);
+stoneSeparator.addRecipe(<extrautils2:ingredients:5>, <calculator:largeamethyst>, <calculator:shardamethyst>);
+
+stoneSeparator.removeRecipe(<calculator:smallamethyst>, <calculator:shardamethyst>);
+stoneSeparator.addRecipe(<extrautils2:ingredients:3>, <calculator:smallamethyst>, <calculator:shardamethyst>);
+
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <calculator:calculatorassembly> : [
         [
             [<opencomputers:material:16>,<opencomputers:material:16>,<opencomputers:material:16>],
             [<opencomputers:material:16>,<opencomputers:material:16>,<opencomputers:material:16>],
             [<opencomputers:material:16>,<opencomputers:material:16>,<opencomputers:material:16>]
+        ]
+    ],
+    <calculator:advancedassembly> : [
+        [
+            [<calculator:enrichedgoldingot>,<calculator:calculatorassembly>,<calculator:enrichedgoldingot>],
+            [<calculator:calculatorassembly>,<calculator:reinforcedironingot>,<calculator:calculatorassembly>],
+            [<calculator:enrichedgoldingot>,<calculator:calculatorassembly>,<calculator:enrichedgoldingot>]
+        ]
+    ],
+    <calculator:scientificcalculator> : [
+        [
+            [<calculator:enrichedgoldingot>,<calculator:calculatorscreen>,<calculator:enrichedgoldingot>],
+            [<calculator:largeamethyst>,<calculator:advancedassembly>,<calculator:largeamethyst>],
+            [<calculator:enrichedgoldingot>,<calculator:advancedassembly>,<calculator:enrichedgoldingot>]
         ]
     ]
 };

@@ -125,3 +125,32 @@ Carpenter.addRecipe(<thermalfoundation:material:197>, [
     [x,x,x]
 ], 120, <liquid:water>*500);
 
+var y as IItemStack = <morebees:graincrystal>;
+
+Carpenter.addRecipe(<thermalfoundation:material:16>, [
+    [y,y,y],
+    [y,y,y],
+    [y,y,y]
+], 120, <liquid:water>*1000);
+
+Carpenter.addRecipe(<astralsorcery:itemcraftingcomponent>, [
+    [null,y,null],
+    [y,y,y],
+    [null,y,null]
+], 120, <liquid:water>*1000);
+
+var rockcrystal as IItemStack = <astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}});
+
+Carpenter.addRecipe(rockcrystal, [
+    [y,<astralsorcery:itemcraftingcomponent:4>,y],
+    [y,<astralsorcery:itemrockcrystalsimple>,y],
+    [y,<astralsorcery:itemcraftingcomponent:4>,y]
+], 120, <liquid:astralsorcery.liquidstarlight>*10000);
+
+var celestialcrystal as IItemStack = <astralsorcery:itemcelestialcrystal>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}});
+
+Carpenter.addRecipe(celestialcrystal, [
+    [y,<astralsorcery:itemcraftingcomponent:4>,y],
+    [y,<astralsorcery:itemcelestialcrystal>,y],
+    [y,<astralsorcery:itemcraftingcomponent:4>,y]
+], 120, <liquid:astralsorcery.liquidstarlight>*10000);

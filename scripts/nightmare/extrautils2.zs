@@ -22,7 +22,15 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.astralsorcery.Altar;
 import mods.calculator.basic;
+import mods.extrautils2.Resonator;
+import mods.inworldcrafting.ExplosionCrafting;
+import mods.jei.JEI;
 import mods.tconstruct.Casting;
+
+var survival_generator as IItemStack = <extrautils2:machine>.withTag({Type: "extrautils2:generator_survival"});
+var furnace_generator as IItemStack = <extrautils2:machine>.withTag({Type: "extrautils2:generator"});
+
+JEI.removeAndHide(<extrautils2:glasscutter>);
 
 recipes.removeByRecipeName("extrautils2:machine_base");
 Casting.addBasinRecipe(<extrautils2:machine>, <calculator:calculator>, <liquid:iron>, 144 * 4, true, 2000);
@@ -37,6 +45,22 @@ Altar.addDiscoveryAltarRecipe("resonator", <extrautils2:resonator>, 200, 200, [
 recipes.remove(<extrautils2:drum:1>);
 basic.addRecipe(<extrautils2:drum>, <calculator:material:3>, <extrautils2:drum:1>);
 
+Resonator.remove(<extrautils2:ingredients:9>);
+Resonator.add(<extrautils2:ingredients:9>, <calculator:material:2>, 800, false);
+
+Resonator.remove(<extrautils2:ingredients:13>);
+Resonator.add(<extrautils2:ingredients:13>, <embers:superheater>, 1600, true);
+
+recipes.remove(<extrautils2:endershard>);
+ExplosionCrafting.explodeItemRecipe(<extrautils2:endershard> * 8, <minecraft:ender_pearl>);
+
+recipes.remove(survival_generator);
+recipes.addShaped(survival_generator, [
+    [<minecraft:cobblestone>,<minecraft:cobblestone>,<minecraft:cobblestone>],
+    [<minecraft:cobblestone>,<minecraft:coal>,<minecraft:cobblestone>],
+    [<ore:dustRedstone>,furnace_generator,<ore:dustRedstone>]
+]);
+
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <extrautils2:ingredients> : [
         [
@@ -44,7 +68,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<extrautils2:endershard>,<ore:gemAquamarine>,<extrautils2:endershard>],
             [<ore:dustRedstone>,<extrautils2:endershard>,<ore:dustRedstone>]
         ]
-    ]
+    ],
 };
 
 for key, value in recipeMapShaped {

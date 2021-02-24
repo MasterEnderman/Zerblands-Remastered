@@ -1,7 +1,26 @@
 # Zerblands-Remastered
 
-## v2.0.11 - ...
+## v2.0.11 - 250
 
+- updated Chunk-Pregenerator
+- updated CraftTweaker
+
+- added Charset Lib
+- added Clay Bucket
+- added Just Enough Reactors
+- added SimpleLogic Gates
+- added SimpleLogic Wires
+
+- added more EMC values
+- added ore processing of dark ore
+- added ore processing of industrial graphite ore
+- added recipes for lazy AE2 multiblock crafting
+- fixed chisels & bits mining level issues
+- fixed emerald sag mill duplication
+- fixed woot spawn amounts
+- fixed wyvern energy core EMC value
+- improved guide
+- more recipes for nightmare mode [WIP]
 - removed enderio tablets
 
 ## v2.0.10 - deco update

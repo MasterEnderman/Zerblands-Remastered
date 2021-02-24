@@ -112,7 +112,7 @@ TartaricForge.addRecipe(<bloodmagic:arcane_ashes>,[
 TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:dye:4>,<minecraft:gold_ingot>,<minecraft:glass>]);
 TartaricForge.addRecipe(<bloodmagic:soul_gem>,[
 	<embers:dust_metallurgic>,<abyssalcraft:lifecrystal>,<botanicadds:gaiasteel_ingot>,<appliedenergistics2:quartz_vibrant_glass>
-], 16, 8);
+], 8, 8);
 
 TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);
 TartaricForge.addRecipe(<bloodmagic:component:8>,[

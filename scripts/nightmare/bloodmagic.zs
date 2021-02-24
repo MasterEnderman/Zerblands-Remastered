@@ -66,7 +66,7 @@ Altar.addAttunmentAltarRecipe("bloodmagic_altar", <bloodmagic:altar>, 1000, 800,
 ]);
 
 BloodAltar.removeRecipe(<minecraft:stone>);
-BloodAltar.addRecipe(<bloodmagic:slate>, <contenttweaker:carbon_plate>, 0, 1000,5,5);
+BloodAltar.addRecipe(<bloodmagic:slate>, <ic2:itemmisc:256>, 0, 1000,5,5);
 
 BloodAltar.removeRecipe(<minecraft:diamond>);
 
@@ -188,6 +188,6 @@ var willRaw as IItemStack[] = [
 
 for i, item in willBlock {
 	TartaricForge.addRecipe(willBlock[i],
-		[blockMithril, willRaw[i], willRaw[i], willRaw[i]
+		[<ore:blockMithril>, willRaw[i], willRaw[i], willRaw[i]
 	], 8192, 50);
 }

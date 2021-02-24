@@ -44,4 +44,4 @@ recipes.addShaped(<embers:codex>, [
     [<embers:archaic_brick>]
 ]);
 
-<embers:archaic_brick>.addTooltip(format.green("Drop from Ancient Golem"));
+<embers:archaic_brick>.addTooltip(format.green("Drops from Ancient Golem."));

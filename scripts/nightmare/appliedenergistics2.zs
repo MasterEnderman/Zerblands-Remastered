@@ -21,7 +21,13 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
+import mods.ic2.Macerator;
+import mods.jei.JEI;
+import mods.tconstruct.Casting;
 import mods.thermalexpansion.InductionSmelter;
+
+JEI.removeAndHide(<appliedenergistics2:grindstone>);
+JEI.removeAndHide(<appliedenergistics2:crank>);
 
 recipes.remove(<appliedenergistics2:storage_cell_1k>);
 recipes.remove(<appliedenergistics2:storage_cell_4k>);
@@ -34,6 +40,11 @@ recipes.addShapeless(<appliedenergistics2:network_tool>, [
     <appliedenergistics2:part:180>,<appliedenergistics2:material:23>,
     <enderio:item_yeta_wrench>,<minecraft:chest>
 ]);
+
+Macerator.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material>);
+
+recipes.remove(<appliedenergistics2:light_detector>);
+Casting.addTableRecipe(<appliedenergistics2:light_detector>, <ore:dustCertusQuartz>, <liquid:glass>, 1000, true, 200);
 
 var recipeMapShaped as IIngredient[][][IItemStack] = {
     <appliedenergistics2:crafting_unit>	: [
@@ -73,7 +84,7 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     ],
     <appliedenergistics2:cell_workbench> :[
     	[<ore:blockRockwool>,<appliedenergistics2:material:23>,<ore:blockRockwool>],
-    	[<ore:plateSteel>,<rftoolscontrol:workbench>,<ore:plateSteel>],
+    	[<ore:plateSteel>,<ic2:blockmachinelv2:6>,<ore:plateSteel>],
     	[<ore:plateSteel>,<ore:plateSteel>,<ore:plateSteel>]
     ],
     <appliedenergistics2:io_port> : [

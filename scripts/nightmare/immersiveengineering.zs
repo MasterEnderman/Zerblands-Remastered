@@ -23,6 +23,7 @@ import scripts.functions.findFirstItemFromMod;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.Fermenter;
 import mods.immersiveengineering.MetalPress;
+import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Refinery;
 import mods.tconstruct.Casting;
 
@@ -44,6 +45,9 @@ Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:seed.
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:seed_oil>*4, 256);
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:hootch>*4, 256);
 
+Mixer.addRecipe(<liquid:crystaloil>*1000,<liquid:canolaoil>*1000,[<actuallyadditions:item_misc:23>], 1000);
+Mixer.addRecipe(<liquid:empoweredoil>*1000,<liquid:crystaloil>*1000,[<actuallyadditions:item_misc:24>], 1000);
+
 MetalPress.removeRecipe(<immersiveengineering:graphite_electrode>);
 
 recipes.removeByRecipeName("immersiveengineering:treated_wood/treated_wood");
@@ -56,6 +60,19 @@ Blueprint.addRecipe("components", <immersiveengineering:material:8>, [
     <ore:plateCopper> * 2,
     <ore:gearLead> * 1
 ]);
+
+Blueprint.removeRecipe(<immersiveengineering:material:27>);
+Blueprint.addRecipe("components", <immersiveengineering:material:27>, [
+    <immersiveengineering:stone_decoration:8> * 1,
+    <ore:plateAluminum> * 1,
+    <appliedenergistics2:light_detector> * 1,
+    <immersiveengineering:material:26> * 1,
+    <embers:shard_ember> * 1,
+    <ic2:itemcable> * 4
+]);
+
+recipes.remove(<immersiveengineering:stone_decoration:8>);
+Casting.addBasinRecipe(<immersiveengineering:stone_decoration:8>, <ore:blockGlassGreen>, <liquid:iron>, 288, true, 100);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <immersiveengineering:stone_decoration:10> : [

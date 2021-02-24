@@ -114,7 +114,9 @@
   "item.bigreactors:dustludicrite_743406431": true,
   "item.psi:psidust_1749272317": true,
   "item.redstonearsenal.material.dustElectrumFlux_2070103775": true,
-  "item.redstonerepository.material.dustGelidEnderium_544355950": true
+  "item.redstonerepository.material.dustGelidEnderium_544355950": true,
+  "item.appliedenergistics2.material.ender_dust_1893555465": true,
+  "ic2exprecipe_Certus Quartz Dust_": true
  },
  "extractor": {
   "item.coal_764578481": true,
@@ -345,7 +347,8 @@
   "ingotRecycling_ingotCalcium": true,
   "ingotRecycling_ingotGelidEnderium": true,
   "ingotRecycling_ingotFluixSteel": true,
-  "ingotRecycling_ingotEnrichedGold": true
+  "ingotRecycling_ingotEnrichedGold": true,
+  "ingotRecycling_ingotEnder": true
  },
  "sawmill": {
   "tile.wood.oak_-867074482": true,
@@ -513,6 +516,8 @@
   "tile.PearPlanks_To_Sticks_-1364851889": true,
   "tile.DiamondPlanks_To_Sticks_-257364319": true,
   "tile.log.jungle_-1814706450": true,
-  "item.minecraft:melon_-1083706285": true
+  "item.minecraft:melon_-1083706285": true,
+  "tile.for.planks.fireproof.0_-847188445": true,
+  "tile.for.planks.fireproof.0_To_Sticks_2000286775": true
  }
 }

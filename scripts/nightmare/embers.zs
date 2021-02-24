@@ -20,9 +20,11 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-<embers:archaic_brick>.addTooltip(format.green("Drop from Ancient Golem"));
+import mods.embers.Mixer;
 
-recipes.remvoe(<embers:blend_caminite>);
+<embers:archaic_brick>.addTooltip(format.green("Drops from Ancient Golem."));
+
+recipes.remove(<embers:blend_caminite>);
 recipes.addShapeless("blend_caminite", <embers:blend_caminite> * 4, [
     <minecraft:clay_ball>,
     <ore:dustAsh>,
@@ -51,6 +53,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<tconstruct:smeltery_io>,<extrautils2:drum:1>,<tconstruct:smeltery_io>],
             [<embers:block_caminite_brick>,<embers:mech_core>,<embers:block_caminite_brick>]
         ]
+    ],
+    <embers:ember_activator> : [
+        [
+            [<ore:ingotCopper>,<ore:ingotCopper>,<ore:ingotCopper>],
+            [<calculator:reinforcedironingot>,<embers:mech_core>,<calculator:reinforcedironingot>],
+            [<embers:block_caminite_brick>,<tconstruct:seared_furnace_controller>,<embers:block_caminite_brick>]
+        ]
     ]
 };
 
@@ -64,3 +73,10 @@ for key, value in recipeMapShaped {
         index += 1;
     }
 }
+
+Mixer.remove(<liquid:dawnstone> * 8);
+Mixer.add(<liquid:dawnstone> * 12, [
+    <liquid:bronze> * 4,
+    <liquid:constantan> * 4,
+    <liquid:alubrass> * 4
+]);

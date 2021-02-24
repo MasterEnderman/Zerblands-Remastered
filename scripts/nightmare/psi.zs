@@ -59,7 +59,7 @@ Altar.addAttunmentAltarRecipe("psi_cad_assembler", <psi:cad_assembler>, 500, 800
 	<thermalfoundation:material:160>
 ]);
 
-var mapShaped as IIngredient[][IItemStack] = {
+var mapShaped as IIngredient[][][IItemStack] = {
     <psi:cad_assembly> : [
     	[<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>],
     	[null,null,<ore:ingotSteel>]

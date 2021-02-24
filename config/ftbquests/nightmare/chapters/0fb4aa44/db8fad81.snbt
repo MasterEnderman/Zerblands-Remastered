@@ -1,0 +1,21 @@
+{
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "abyssalcraft:abyssalnomicon",
+		tag: {
+			PotEnergy: 0.0f
+		}
+	},
+	x: 0.0d,
+	y: -5.5d,
+	text: [
+		"Harder Recipes, harder progression, harder everything!"
+	],
+	tasks: [{
+		uid: "6845fe40",
+		type: "checkmark",
+		title: "Welcome to the Nightmare Mode!"
+	}]
+}

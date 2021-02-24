@@ -5,6 +5,11 @@
 parent: vip
 example.permission_with_value: 150
 
+// chriiss24
+[3893486972d9453c89384f43d07bbbf8]
+parent: player
+ftbutilities.chat.name_format: <&3[Captain Lost]&r {name}>
+
 // Delta
 [57212b344c214e7bbf221945aca15b07]
 parent: admin
@@ -13,7 +18,7 @@ ftbutilities.chat.name_format: <&4DeltaDerJedenCodeZerstückelt&r>
 // PackDev
 [90003ef04d504aa5a32aeb2d7f74dac3]
 parent: vip
-ftbutilities.chat.name_format: <&5[Modpack-Developer] {name}&r>
+ftbutilities.chat.name_format: <&5[Modpack-Developer]&r {name}>
 
 // Moo
 [c0ac91fe542c43d8a4a62ffcabe1516f]

@@ -25,6 +25,7 @@ import mods.avaritia.ExtremeCrafting;
 import mods.botania.ElvenTrade;
 import mods.botania.ManaInfusion;
 import mods.botaniatweaks.Agglomeration;
+import mods.botanicadds.GaiaPlate;
 import mods.inworldcrafting.FluidToItem;
 import mods.jei.JEI;
 import mods.thermalexpansion.InductionSmelter;
@@ -55,6 +56,7 @@ var mapProcessor as IIngredient[IItemStack] = {
 
 for processor, printed in mapProcessor {
     Agglomeration.addRecipe(processor, [<appliedenergistics2:material:20>,<ore:dustRedstone>,printed] as IIngredient[], 1000);
+	GaiaPlate.add(processor, 1000, [<appliedenergistics2:material:20>,<minecraft:redstone>,printed]);
 }
 
 recipes.remove(<appliedenergistics2:inscriber>);

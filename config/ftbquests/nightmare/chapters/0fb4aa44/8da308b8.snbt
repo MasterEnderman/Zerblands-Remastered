@@ -1,0 +1,14 @@
+{
+	x: 8.0d,
+	y: -5.5d,
+	dependencies: [
+		"87748be8"
+	],
+	tasks: [{
+		uid: "bea90e9d",
+		type: "item",
+		items: [{
+			item: "embers:aspectus_dawnstone"
+		}]
+	}]
+}

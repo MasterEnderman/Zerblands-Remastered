@@ -1,0 +1,15 @@
+{
+	title: "Zerblands - Nightmare Mode",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "contenttweaker:ender_token"
+	},
+	description: [
+		"Like Zerblands - Remastered but way harder."
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

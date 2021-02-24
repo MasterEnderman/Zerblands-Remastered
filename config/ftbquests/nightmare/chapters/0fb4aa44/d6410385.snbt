@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: -5.5d,
+	dependencies: [
+		"f544d38f"
+	],
+	tasks: [{
+		uid: "7d94e779",
+		type: "item",
+		items: [{
+			item: "contenttweaker:crystal_prism"
+		}]
+	}],
+	rewards: [{
+		uid: "8d98daf7",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

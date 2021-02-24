@@ -24,6 +24,10 @@ import mods.botania.Apothecary;
 import mods.botania.ElvenTrade;
 import mods.botania.ManaInfusion;
 import mods.botania.PureDaisy;
+import mods.jei.JEI;
+import mods.thermalexpansion.Transposer;
+
+JEI.addItem(<botania:manaresource:20>);
 
 var recipeRemove as IItemStack[] = [
     <botania:livingwood>,
@@ -111,3 +115,11 @@ PureDaisy.addRecipe(<astralsorcery:blockinfusedwood>, <botania:livingwood>, 100)
 
 PureDaisy.removeRecipe(<botania:livingrock>);
 PureDaisy.addRecipe(<contenttweaker:blood_infused_stone>, <botania:livingrock>, 100);
+
+PureDaisy.addRecipe(<randomthings:fertilizeddirt>, <botania:root>, 100);
+
+recipes.remove(<botania:manaresource:6>);
+Transposer.addFillRecipe(<botania:manaresource:6>, <contenttweaker:root_dried>, <liquid:redstone>*100, 4096);
+
+<botania:manaresource:20>.addTooltip(format.green("Drops from Block of Living Root."));
+<botania:root>.displayName = "Block of Living Root";

@@ -23,6 +23,14 @@ import scripts.functions.findFirstItemFromMod;
 furnace.remove(<minecraft:coal:1>);
 furnace.addRecipe(<forestry:ash>, <ore:logWood>);
 
+furnace.remove(<minecraft:brick>);
+furnace.addRecipe(<minecraft:brick>, <contenttweaker:pressed_clay>);
+
+recipes.remove(<minecraft:book>);
+recipes.addShapeless(<minecraft:book>, [
+    <minecraft:paper>,<minecraft:paper>,<minecraft:paper>,<harvestcraft:hardenedleatheritem>,<minecraft:string>
+]);
+
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <minecraft:chest> : [
         [
@@ -46,6 +54,20 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>],
             [<sonarcore:reinforcedstoneblock>,<minecraft:coal>|<minecraft:coal:1>,<sonarcore:reinforcedstoneblock>],
             [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>]
+        ]
+    ],
+    <minecraft:piston> : [
+        [
+            [<ore:plankTreatedWood>,<ore:plankTreatedWood>,<ore:plankTreatedWood>],
+            [<tconstruct:materials>,<actuallyadditions:item_misc:7>,<tconstruct:materials>],
+            [<tconstruct:materials>,<immersiveengineering:wirecoil:5>,<tconstruct:materials>]
+        ]
+    ],
+    <minecraft:hopper> : [
+        [
+            [<ore:ingotIron>,<ore:gearStone>,<ore:ingotIron>],
+            [<ore:stickIron>,<tconstruct:wooden_hopper>,<ore:stickIron>],
+            [null,<ore:ingotIron>,null]
         ]
     ]
 };

@@ -164,3 +164,5 @@ recipes.addShaped(<calculator:calculatorlocator>, [
 ]);
 
 Empowerer.addRecipe(<calculator:electricdiamond>,<calculator:firediamond>,<redstonearsenal:material:64>,<redstonearsenal:material:64>,<redstonearsenal:material:64>,<redstonearsenal:material:64>, 500, 100);
+
+<calculator:atomiccalculator>.addTooltip(format.green("Can be placed on a Docking Station."));

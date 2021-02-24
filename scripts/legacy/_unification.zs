@@ -125,12 +125,17 @@ for i, item in wires {
 var tconOre as IItemStack[IItemStack] = {
     <enderio:item_material:31> : <tconstruct:ore>,
     <enderio:item_material:30> : <tconstruct:ore:1>,
+    <evilcraft:dark_ore> : <evilcraft:dark_gem>,
+    <quantumflux:graphiteore> : <quantumflux:graphitedust>
 };
 
 for dust, ore in tconOre {
     Crusher.addRecipe(dust * 2, ore, 2048);
     Pulverizer.addRecipe(dust * 2, ore, 4000);
 }
+
+SagMill.addRecipe([<evilcraft:dark_gem> * 2,<evilcraft:dark_gem_crushed>], [100,30], <evilcraft:dark_ore>, "NONE", 5000);
+SagMill.addRecipe([<quantumflux:graphitedust> * 2], [100],  <quantumflux:graphiteore>, "NONE", 5000);
 
 var thermalGlass as IItemStack[string] = {
     "copper" : <thermalfoundation:glass:0>,

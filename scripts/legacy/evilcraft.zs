@@ -26,4 +26,4 @@ import mods.tconstruct.Casting;
 BloodInfuser.removeRecipesWithOutput(<evilcraft:blood_waxed_coal>);
 BloodInfuser.addRecipe(<calculator:purifiedcoal>, <liquid:evilcraftblood> * 375, 1, <evilcraft:blood_waxed_coal>, 100, 2);
 
-Casting.addTableRecipe(<evilcraft:blood_infusion_core>, <evilcraft:dark_gem>, <liquid:evilcraftblood>, 5000, true, 20);
+Casting.addTableRecipe(<evilcraft:dark_power_gem>, <evilcraft:dark_gem>, <liquid:evilcraftblood>, 5000, true, 20);

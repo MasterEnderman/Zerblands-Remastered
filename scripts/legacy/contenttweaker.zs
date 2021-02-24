@@ -22,6 +22,10 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.avaritia.ExtremeCrafting;
 import mods.bloodmagic.BloodAltar;
+import mods.botania.PureDaisy;
+import mods.enderio.AlloySmelter;
+
+PureDaisy.addRecipe(<botanicadds:dreamrock>, <contenttweaker:runestone>, 100);
 
 recipes.addShaped(<contenttweaker:supermassiv>, [
     [<extrautils2:compressedcobblestone:7>,<extrautils2:compressedcobblestone:7>,<extrautils2:compressedcobblestone:7>],
@@ -50,6 +54,23 @@ recipes.addShaped(<contenttweaker:red_core>, [
     [<abyssalcraft:charcoal>,<extrautils2:ingredients:2>,<abyssalcraft:charcoal>],
     [<extrautils2:ingredients:4>,<abyssalcraft:charcoal>,<extrautils2:ingredients:4>]
 ]);
+
+recipes.addShaped(<contenttweaker:wither_clean> * 16, [
+    [<enderzoo:witheringdust>,<enderzoo:witheringdust>],
+    [<enderzoo:witheringdust>,<enderzoo:witheringdust>]
+]);
+recipes.addShaped(<contenttweaker:wither_clean> * 16, [
+    [<xreliquary:mob_ingredient:1>,<xreliquary:mob_ingredient:1>],
+    [<xreliquary:mob_ingredient:1>,<xreliquary:mob_ingredient:1>]
+]);
+recipes.addShaped(<contenttweaker:wither_clean> * 8, [
+    [<minecraft:stone>,<minecraft:stone>,<minecraft:stone>],
+    [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>],
+    [<minecraft:stone>,<minecraft:stone>,<minecraft:stone>]
+]);
+
+AlloySmelter.addRecipe(<contenttweaker:ender_ingot>, [<threng:material>, <enderio:item_alloy_endergy_ingot:3>, <extrautils2:ingredients:17>], 50000);
+AlloySmelter.addRecipe(<contenttweaker:enhanced_ender_ingot>, [<immersiveengineering:material:19>, <ic2:itemmisc:60>, <contenttweaker:ender_ingot>], 50000);
 
 ExtremeCrafting.addShaped("creativeingot",<contenttweaker:creative>,[
     [<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>],

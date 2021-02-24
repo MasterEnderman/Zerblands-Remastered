@@ -42,7 +42,7 @@ recipes.addShaped(<tp:watering_can_upgrade>, [
     [null,<contenttweaker:reinforced_obsidian_ingot>,null]
 ]);
 
-var potion_speed_long = <minecraft:potion>.withTag({Potion: "minecraft:long_swiftness"});
+var potion_speed_long as IItemStack = <minecraft:potion>.withTag({Potion: "minecraft:long_swiftness"});
 
 recipes.remove(<tp:growth_upgrade>);
 recipes.addShaped(<tp:growth_upgrade>, [

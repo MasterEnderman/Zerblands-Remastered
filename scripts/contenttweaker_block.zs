@@ -73,6 +73,35 @@ blood_infused_stone.setToolLevel(0);
 blood_infused_stone.setBlockSoundType(<soundtype:stone>);
 blood_infused_stone.register();
 
+// Roots Legacy
+
+var runestone = VanillaFactory.createBlock("runestone", <blockmaterial:iron>);
+runestone.textureLocation = ResourceLocation.create("contenttweaker:blocks/roots/runestone");
+runestone.setBlockHardness(5.0);
+runestone.setBlockResistance(30.0);
+runestone.setToolClass("pickaxe");
+runestone.setToolLevel(0);
+runestone.setBlockSoundType(<soundtype:stone>);
+runestone.register();
+
+var runestone_brick = VanillaFactory.createBlock("runestone_brick", <blockmaterial:iron>);
+runestone_brick.textureLocation = ResourceLocation.create("contenttweaker:blocks/roots/runestone_brick");
+runestone_brick.setBlockHardness(5.0);
+runestone_brick.setBlockResistance(30.0);
+runestone_brick.setToolClass("pickaxe");
+runestone_brick.setToolLevel(0);
+runestone_brick.setBlockSoundType(<soundtype:stone>);
+runestone_brick.register();
+
+var runestone_chiseled = VanillaFactory.createBlock("runestone_chiseled", <blockmaterial:iron>);
+runestone_chiseled.textureLocation = ResourceLocation.create("contenttweaker:blocks/roots/runestone_chiseled");
+runestone_chiseled.setBlockHardness(5.0);
+runestone_chiseled.setBlockResistance(30.0);
+runestone_chiseled.setToolClass("pickaxe");
+runestone_chiseled.setToolLevel(0);
+runestone_chiseled.setBlockSoundType(<soundtype:stone>);
+runestone_chiseled.register();
+
 // AbyssalCraft Legacy
 
 var asb = VanillaFactory.createBlock("asb", <blockmaterial:iron>);
@@ -407,3 +436,68 @@ ebp_top.setToolClass("pickaxe");
 ebp_top.setToolLevel(0);
 ebp_top.setBlockSoundType(<soundtype:stone>);
 ebp_top.register();
+
+// Dark Utilities
+
+var wither_bricked = VanillaFactory.createBlock("wither_bricked", <blockmaterial:iron>);
+wither_bricked.textureLocation = ResourceLocation.create("contenttweaker:blocks/du/wither_bricked");
+wither_bricked.setBlockHardness(5.0);
+wither_bricked.setBlockResistance(30.0);
+wither_bricked.setToolClass("pickaxe");
+wither_bricked.setToolLevel(0);
+wither_bricked.setBlockSoundType(<soundtype:stone>);
+wither_bricked.register();
+
+var wither_carved = VanillaFactory.createBlock("wither_carved", <blockmaterial:iron>);
+wither_carved.textureLocation = ResourceLocation.create("contenttweaker:blocks/du/wither_carved");
+wither_carved.setBlockHardness(5.0);
+wither_carved.setBlockResistance(30.0);
+wither_carved.setToolClass("pickaxe");
+wither_carved.setToolLevel(0);
+wither_carved.setBlockSoundType(<soundtype:stone>);
+wither_carved.register();
+
+var wither_chiseled = VanillaFactory.createBlock("wither_chiseled", <blockmaterial:iron>);
+wither_chiseled.textureLocation = ResourceLocation.create("contenttweaker:blocks/du/wither_chiseled");
+wither_chiseled.setBlockHardness(5.0);
+wither_chiseled.setBlockResistance(30.0);
+wither_chiseled.setToolClass("pickaxe");
+wither_chiseled.setToolLevel(0);
+wither_chiseled.setBlockSoundType(<soundtype:stone>);
+wither_chiseled.register();
+
+var wither_magma = VanillaFactory.createBlock("wither_magma", <blockmaterial:iron>);
+wither_magma.textureLocation = ResourceLocation.create("contenttweaker:blocks/du/wither_magma");
+wither_magma.setBlockHardness(5.0);
+wither_magma.setBlockResistance(30.0);
+wither_magma.setToolClass("pickaxe");
+wither_magma.setToolLevel(0);
+wither_magma.setBlockSoundType(<soundtype:stone>);
+wither_magma.register();
+
+var wither_tiled = VanillaFactory.createBlock("wither_tiled", <blockmaterial:iron>);
+wither_tiled.textureLocation = ResourceLocation.create("contenttweaker:blocks/du/wither_tiled");
+wither_tiled.setBlockHardness(5.0);
+wither_tiled.setBlockResistance(30.0);
+wither_tiled.setToolClass("pickaxe");
+wither_tiled.setToolLevel(0);
+wither_tiled.setBlockSoundType(<soundtype:stone>);
+wither_tiled.register();
+
+var wither_clean = VanillaFactory.createBlock("wither_clean", <blockmaterial:iron>);
+wither_clean.textureLocation = ResourceLocation.create("contenttweaker:blocks/du/wither_clean");
+wither_clean.setBlockHardness(5.0);
+wither_clean.setBlockResistance(30.0);
+wither_clean.setToolClass("pickaxe");
+wither_clean.setToolLevel(0);
+wither_clean.setBlockSoundType(<soundtype:stone>);
+wither_clean.register();
+
+var withersand = VanillaFactory.createBlock("withersand", <blockmaterial:iron>);
+withersand.textureLocation = ResourceLocation.create("contenttweaker:blocks/du/withersand");
+withersand.setBlockHardness(5.0);
+withersand.setBlockResistance(30.0);
+withersand.setToolClass("pickaxe");
+withersand.setToolLevel(0);
+withersand.setBlockSoundType(<soundtype:stone>);
+withersand.register();

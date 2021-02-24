@@ -23,7 +23,7 @@ import scripts.functions.findFirstItemFromMod;
 import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Crusher;
 import mods.actuallyadditions.Empowerer;
-import mods.immersiveengineering.Crusher;
+import mods.immersiveengineering.Crusher as IECrusher;
 import mods.immersiveengineering.Mixer;
 import mods.thermalexpansion.Pulverizer;
 
@@ -32,7 +32,7 @@ import mods.thermalexpansion.Pulverizer;
 recipes.remove(<actuallyadditions:block_greenhouse_glass>);
 recipes.addShaped(<actuallyadditions:block_greenhouse_glass> * 4, [
     [<ore:blockGlassHardened>,<forestry:crafting_material:7>,<ore:blockGlassHardened>],
-    [<forestry:greenhouse>,<actuallyadditions:item_crystal_empowered:1>,<forestry:greenhouse>],
+    [<forestry:crafting_material:7>,<actuallyadditions:item_crystal_empowered:1>,<forestry:crafting_material:7>],
     [<ore:blockGlassHardened>,<forestry:crafting_material:7>,<ore:blockGlassHardened>]
 ]);
 
@@ -53,7 +53,7 @@ recipes.addShaped(<actuallyadditions:item_misc:12> * 4, [
 var recipeMapShaped as IIngredient[][][IItemStack] = {
     <actuallyadditions:item_misc:7>	: [
     	[null,<immersiveengineering:wirecoil:5>,<ore:plankTreatedWood>],
-    	[<immersiveengineering:wirecoil:5>,<ore:gemQuartzBlack>,<immersiveengineering:wirecoil:5>],
+    	[<immersiveengineering:wirecoil:5>,<contenttweaker:copper_coil>,<immersiveengineering:wirecoil:5>],
     	[<ore:plankTreatedWood>,<immersiveengineering:wirecoil:5>,null]
     ],
     <actuallyadditions:item_misc:8>	: [
@@ -64,8 +64,20 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
 	<actuallyadditions:block_misc:9> : [
 		[<contenttweaker:black_iron>,<forestry:chipsets>,<contenttweaker:black_iron>],
 		[<ore:stickAluminum>,<calculator:powercube>,<ore:stickAluminum>],
-		[<contenttweaker:black_iron>,<ore:gearBronze>,<contenttweaker:black_iron>]
+		[<contenttweaker:black_iron>,<embers:aspectus_dawnstone>,<contenttweaker:black_iron>]
 	],
+    <actuallyadditions:item_misc:2> : [
+        [<immersiveengineering:material:4>,<minecraft:flint>],
+        [<minecraft:flint>,<immersiveengineering:material:4>]
+    ],
+    <actuallyadditions:item_misc:3> : [
+        [<immersiveengineering:material:4>,<ore:stickWood>],
+        [<ore:stickWood>,<immersiveengineering:material:4>]
+    ],
+    <actuallyadditions:item_knife> : [
+        [<immersiveengineering:material:4>,<actuallyadditions:item_misc:2>],
+        [<actuallyadditions:item_misc:3>,<immersiveengineering:material:4>]
+    ],
 };
 
 for key, value in recipeMapShaped {
@@ -93,7 +105,7 @@ for key, value in recipeMapShapeless {
 Mixer.addRecipe(<liquid:crystaloil>*1000, <liquid:refinedcanolaoil>*1000, [<actuallyadditions:item_misc:23>], 512);
 Mixer.addRecipe(<liquid:empoweredoil>*1000, <liquid:crystaloil>*1000, [<actuallyadditions:item_misc:24>], 512);
 
-Crusher.addRecipe(<actuallyadditions:item_misc:5>*4, <actuallyadditions:block_misc:2>, 800, null, 0);
+IECrusher.addRecipe(<actuallyadditions:item_misc:5>*4, <actuallyadditions:block_misc:2>, 800, null, 0);
 Pulverizer.addRecipe(<actuallyadditions:item_misc:5>*4, <actuallyadditions:block_misc:2>, 3000, null, 0);
 
 var listCrystal as IItemStack[] = [

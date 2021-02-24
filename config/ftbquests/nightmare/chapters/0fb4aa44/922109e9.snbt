@@ -1,0 +1,17 @@
+{
+	x: 6.0d,
+	y: -5.5d,
+	text: [
+		"The Melter is able to double your ores."
+	],
+	dependencies: [
+		"508a9727"
+	],
+	tasks: [{
+		uid: "dd2bf440",
+		type: "item",
+		items: [{
+			item: "embers:block_furnace"
+		}]
+	}]
+}

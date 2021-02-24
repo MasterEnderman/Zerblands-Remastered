@@ -8,6 +8,16 @@ tile.contenttweaker.slate_blank.name=Blank Slate Block
 tile.contenttweaker.slate_imbued.name=Imbued Slate Block
 tile.contenttweaker.bedrockium_block.name=Bedrockium Block
 tile.contenttweaker.blood_infused_stone.name=Blood Infused Stone
+tile.contenttweaker.runestone.name=Runestone
+tile.contenttweaker.runestone_brick.name=Runestone Bricks
+tile.contenttweaker.runestone_chiseled.name=Chiseled Runestone
+tile.contenttweaker.wither_bricked.name=Wither Bricks
+tile.contenttweaker.wither_carved.name=Carved Wither Bricks
+tile.contenttweaker.wither_chiseled.name=Chiseled Wither Bricks
+tile.contenttweaker.wither_magma.name=Wither Magma
+tile.contenttweaker.wither_tiled.name=Tiled Wither Bricks
+tile.contenttweaker.withersand.name=Wither Block
+tile.contenttweaker.wither_clean.name=Clean Wither Block
 
 # ac legacy
 
@@ -65,3 +75,5 @@ fluid.brackish_water=Brackish Water
 tile.earthworks.block_gabion_falling_dirt.name=Dirt Gabion
 tile.earthworks.block_gabion_falling_sand.name=Sand Gabion
 tile.earthworks.block_gabion_falling_gravel.name=Gravel Gabion
+tile.glow.name=Ember Light
+tile.conjured.name=Conjured Light

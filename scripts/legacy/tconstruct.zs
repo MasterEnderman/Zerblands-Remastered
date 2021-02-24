@@ -44,3 +44,21 @@ recipes.addShaped(<tconstruct:throwball:1>, [
     [<ic2:blockexplosive>,<minecraft:magma_cream>,<ic2:blockexplosive>],
     [<ic2:blockexplosive>,<ic2:blockexplosive>,<ic2:blockexplosive>]
 ]);
+
+var mapBlood as int[IItemStack] = {
+    <minecraft:porkchop> : 200,
+    <minecraft:beef> : 200,
+    <minecraft:chicken> : 200,
+    <minecraft:rabbit> : 200,
+    <minecraft:mutton> : 200,
+    <harvestcraft:turkeyrawitem> : 200,
+    <harvestcraft:venisonrawitem> : 200,
+    <harvestcraft:duckrawitem> : 200,
+    <minecraft:rotten_flesh> : 250,
+};
+
+Melting.removeRecipe(<liquid:blood>);
+
+for item, amount in mapBlood {
+    Melting.addRecipe(<liquid:blood> * amonut, item, 500);
+}

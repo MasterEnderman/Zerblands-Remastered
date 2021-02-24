@@ -1,3 +1,10 @@
+#packmode legacy
+
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.liquid.ILiquidDefinition;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
 import scripts.functions.toString;
@@ -14,9 +21,11 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.ic2.Compressor;
+import mods.ic2.Macerator;
 import mods.immersiveengineering.Mixer;
 
 Compressor.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:17> * 8);
+Macerator.addRecipe(<immersiveengineering:material:17>, <thermalfoundation:material:802>);
 
 recipes.addShaped(<immersiveengineering:treated_wood> * 8, [
     [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>],

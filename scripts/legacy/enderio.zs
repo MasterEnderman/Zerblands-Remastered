@@ -24,6 +24,11 @@ import mods.enderio.SagMill;
 import mods.enderio.AlloySmelter;
 import mods.immersiveengineering.AlloySmelter as Kiln;
 import mods.inworldcrafting.FluidToItem;
+import mods.jei.JEI;
+
+JEI.removeAndHide(<enderio:item_inventory_remote>);
+JEI.removeAndHide(<enderio:item_inventory_remote:1>);
+JEI.removeAndHide(<enderio:item_inventory_remote:2>);
 
 Kiln.addRecipe(<enderio:item_alloy_ingot:3>, <ore:itemSilicon>, <ore:dustRedstone>, 200);
 Kiln.addRecipe(<enderio:item_alloy_ingot:5>, <ore:ingotIron>, <minecraft:ender_pearl>, 200);

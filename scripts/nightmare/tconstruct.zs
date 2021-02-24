@@ -27,13 +27,13 @@ import mods.tconstruct.Casting;
 import mods.tconstruct.Drying;
 import mods.tconstruct.Melting;
 
-Drying.addRecipe(<tconstruct:materials:1>, <earthworks:item_mud>, 2400);
+Drying.addRecipe(<tconstruct:materials:1>, <contenttweaker:pressed_mud>, 600);
 
 Melting.removeRecipe(<liquid:stone>);
-Melting.addRecipe(<liquid:stone>*144, <tconstruct:soil>, 250);
+Melting.addRecipe(<liquid:stone>*144, <tconstruct:soil>, 500);
 
-Melting.addRecipe(<liquid:dirt>*36, <earthworks:item_mud>, 250);
-Melting.addRecipe(<liquid:dirt>*144, <earthworks:block_mud>, 250);
+Melting.addRecipe(<liquid:dirt>*36, <earthworks:item_mud>, 500);
+Melting.addRecipe(<liquid:dirt>*144, <earthworks:block_mud>, 500);
 
 Melting.removeEntityMelting(<entity:minecraft:villager>);
 Melting.removeEntityMelting(<entity:minecraft:horse>);
@@ -99,6 +99,30 @@ recipes.addShaped(<tconstruct:smeltery_controller>, [
 	[<tconstruct:materials>,<immersiveengineering:stone_decoration>,<tconstruct:materials>]
 ]);
 
+recipes.remove(<tconstruct:soil:3>);
+recipes.addShaped(<tconstruct:soil:3>, [
+	[<minecraft:dye:15>,<minecraft:rotten_flesh>,<minecraft:dye:15>],
+	[<minecraft:rotten_flesh>,<extrautils2:compresseddirt>,<minecraft:rotten_flesh>],
+	[<minecraft:dye:15>,<minecraft:rotten_flesh>,<minecraft:dye:15>]
+]);
+recipes.addShaped(<tconstruct:soil:3>, [
+	[<minecraft:dye:15>,<minecraft:rotten_flesh>,<minecraft:dye:15>],
+	[<minecraft:rotten_flesh>,<earthworks:block_mud>,<minecraft:rotten_flesh>],
+	[<minecraft:dye:15>,<minecraft:rotten_flesh>,<minecraft:dye:15>]
+]);
+
+recipes.remove(<tconstruct:wooden_hopper>);
+recipes.addShaped(<tconstruct:wooden_hopper>, [
+	[<ore:plankWood>,<ore:gearWood>,<ore:plankWood>],
+	[<ore:stickTreatedWood>,<minecraft:chest>,<ore:stickTreatedWood>],
+	[null,<ore:plankWood>,null]
+]);
+recipes.addShaped(<tconstruct:wooden_hopper>, [
+	[<ore:plankWood>,<ore:gearWood>,<ore:plankWood>],
+	[<bibliocraft:framingboard>,<minecraft:chest>,<bibliocraft:framingboard>],
+	[null,<ore:plankWood>,null]
+]);
+
 val slimebo = [
 <tconstruct:slime_boots>,
 <tconstruct:slime_boots:1>,
@@ -135,4 +159,22 @@ for item in bricks {
 	Casting.addTableRecipe(<tconstruct:cast_custom:0>, item, <liquid:gold>, 288, true);
 	Casting.addTableRecipe(<tconstruct:cast_custom:0>, item, <liquid:brass>, 144, true);
 	Casting.addTableRecipe(<tconstruct:cast_custom:0>, item, <liquid:alubrass>, 144, true);
+}
+
+var mapBlood as int[IItemStack] = {
+    <minecraft:porkchop> : 200,
+    <minecraft:beef> : 200,
+    <minecraft:chicken> : 200,
+    <minecraft:rabbit> : 200,
+    <minecraft:mutton> : 200,
+    <harvestcraft:turkeyrawitem> : 200,
+    <harvestcraft:venisonrawitem> : 200,
+    <harvestcraft:duckrawitem> : 200,
+    <minecraft:rotten_flesh> : 250,
+};
+
+Melting.removeRecipe(<liquid:blood>);
+
+for item, amount in mapBlood {
+    Melting.addRecipe(<liquid:blood> * amount, item, 500);
 }

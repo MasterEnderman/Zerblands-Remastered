@@ -36,6 +36,9 @@ JEI.removeAndHide(<actuallyadditions:item_medium_to_large_crate_upgrade>);
 recipes.remove(<actuallyadditions:block_giant_chest>);
 Empowerer.addRecipe(<actuallyadditions:block_giant_chest>, <actuallyadditions:block_misc:4>, <minecraft:chest>, <minecraft:chest>, <minecraft:chest>, <minecraft:chest>, 5000, 20);
 
+SagMill.removeRecipe(<minecraft:emerald>);
+SagMill.addRecipe([<actuallyadditions:item_dust:3>], [100], <minecraft:emerald>, "NONE", 5000);
+
 SagMill.addRecipe([<actuallyadditions:item_dust:7>], [100], <actuallyadditions:item_misc:5>, "NONE", 5000);
 
 recipes.addShaped(<actuallyadditions:item_misc:20>, [

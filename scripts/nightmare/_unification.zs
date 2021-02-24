@@ -23,15 +23,39 @@ import scripts.functions.findFirstItemFromMod;
 import mods.enderio.AlloySmelter;
 import mods.jei.JEI;
 import mods.immersiveengineering.AlloySmelter as Kiln;
+import mods.immersiveengineering.MetalPress;
 import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Sawmill;
+import mods.tconstruct.Casting;
+
+JEI.removeAndHide(<appliedenergistics2:material:40>);
+JEI.removeAndHide(<enderio:item_material:9>);
+JEI.removeAndHide(<enderio:item_material:10>);
 
 <ore:materialFlesh>.add(<evilcraft:werewolf_flesh:1>);
 <ore:ingotEnder>.add(<contenttweaker:ender_ingot>);
 
 recipes.remove(<ore:gearWood>);
-recipes.addShaped("gear_wood", findFirstItemFromMod("thermalfoundation","gear","wood"), [
+recipes.remove(<ore:gearStone>);
+
+recipes.remove(<ore:plateIron>);
+recipes.remove(<ore:plateGold>);
+recipes.remove(<ore:plateCopper>);
+recipes.remove(<ore:plateDawnstone>);
+recipes.remove(<ore:plateGold>);
+recipes.remove(<ore:plateSilver>);
+recipes.remove(<ore:plateLead>);
+recipes.remove(<ore:plateAluminum>);
+recipes.remove(<ore:plateNickel>);
+recipes.remove(<ore:plateSteel>);
+recipes.remove(<ore:plateElectrum>);
+recipes.remove(<ore:plateConstantan>);
+
+Casting.removeTableRecipe(<thermalfoundation:material:23>);
+Casting.addTableRecipe(<thermalfoundation:material:23>,<thermalfoundation:material:22>,<liquid:stone>,288,true,100);
+
+recipes.addShaped("gear_wood", <thermalfoundation:material:22>, [
     [<ore:stickTreatedWood>,<ore:stickTreatedWood>,<ore:stickTreatedWood>],
     [<ore:stickTreatedWood>,<ore:plankTreatedWood>,<ore:stickTreatedWood>],
     [<ore:stickTreatedWood>,<ore:stickTreatedWood>,<ore:stickTreatedWood>]
@@ -41,7 +65,13 @@ Compactor.removeGearRecipe(<evilcraft:dark_gem>);
 
 var mapSimpleAlloy as IItemStack[][IItemStack] = {
     <earthworks:item_adobe> : [<embers:blend_caminite>,<earthworks:item_mud>],
+    <contenttweaker:black_iron> : [<minecraft:iron_ingot>,<actuallyadditions:item_dust:7>],
+    <contenttweaker:ender_ingot> : [<thermalfoundation:material:130>,<tp:ender_dust>],
+    <contenttweaker:basic_blade> : [<contenttweaker:bone_shard>,<contenttweaker:flint_shard>],
+    <enderio:item_alloy_endergy_ingot> : [<earthworks:item_adobe>,<tconstruct:materials>],
 };
+
+AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot>);
 
 for item, recipe in mapSimpleAlloy {
     var input1 as IItemStack = recipe[0];
@@ -149,9 +179,19 @@ var mapWood as IItemStack[IItemStack] = {
 
 for log, plank in mapWood {
     recipes.remove(plank);
-    recipes.addShapedless(plank * 2, [log]);
+    recipes.addShapeless(plank * 2, [log]);
     Sawmill.addRecipe(<minecraft:stick>*4, plank, 400, <thermalfoundation:material:800>, 10);
 }
+
+recipes.remove(<ore:stickWood>);
+recipes.addShaped(<minecraft:stick> * 4, [
+    [<ore:plankWood>],
+    [<ore:plankWood>]
+]);
+recipes.addShaped(<minecraft:stick> * 8, [
+    [<ore:logWood>],
+    [<ore:logWood>]
+]);
 
 var rods as IItemStack[] = [
     <immersiveengineering:material:1>,
@@ -168,6 +208,7 @@ var rodfluids as ILiquidStack[] = [
 ];
 
 for i, item in rods {
+    recipes.remove(rods[i]);
 	Casting.addTableRecipe(<contenttweaker:cast_stick>, rods[i], <liquid:gold>, 288, true, 100);
 	Casting.addTableRecipe(<contenttweaker:cast_stick>, rods[i], <liquid:brass>, 144, true, 100);
 	Casting.addTableRecipe(<contenttweaker:cast_stick>, rods[i], <liquid:alubrass>, 144, true, 100);
@@ -200,6 +241,7 @@ var wirefluids as ILiquidStack[] = [
 ];
 
 for i, item in wires {
+    recipes.remove(wires[i]);
 	Casting.addTableRecipe(<contenttweaker:cast_wire>, wires[i], <liquid:gold>, 288, true, 100);
 	Casting.addTableRecipe(<contenttweaker:cast_wire>, wires[i], <liquid:brass>, 144, true, 100);
 	Casting.addTableRecipe(<contenttweaker:cast_wire>, wires[i], <liquid:alubrass>, 144, true, 100);

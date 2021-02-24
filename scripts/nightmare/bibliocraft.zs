@@ -22,12 +22,12 @@ import scripts.functions.findFirstItemFromMod;
 
 recipes.remove(<bibliocraft:framingsheet>);
 recipes.addShaped(<bibliocraft:framingsheet> * 4, [
-    [<earthworks:tool_saw>.transformDamage(3)],
+    [<earthworks:tool_saw:*>.transformDamage(3)],
     [<ore:plankWood>]
 ]);
 
 recipes.remove(<bibliocraft:framingboard>);
 recipes.addShaped(<bibliocraft:framingboard> * 2, [
-    [<earthworks:tool_saw>.transformDamage(3)],
+    [<earthworks:tool_saw:*>.transformDamage(3)],
     [<ore:plankWood>]
 ]);

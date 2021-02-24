@@ -23,13 +23,8 @@ import scripts.functions.findFirstItemFromMod;
 import mods.jei.JEI;
 import mods.botania.RuneAltar;
 import mods.botaniatweaks.Agglomeration;
+import mods.botanicadds.GaiaPlate;
 
-JEI.removeAndHide(<threng:big_assembler>);
-JEI.removeAndHide(<threng:big_assembler:1>);
-JEI.removeAndHide(<threng:big_assembler:2>);
-JEI.removeAndHide(<threng:big_assembler:3>);
-JEI.removeAndHide(<threng:big_assembler:4>);
-JEI.removeAndHide(<threng:big_assembler:5>);
 JEI.removeAndHide(<threng:machine:3>);
 
 var mapSpeculation as IIngredient[][IItemStack] = {
@@ -50,8 +45,11 @@ for output, data in mapSpeculation {
     ]); 
 }
 
-Agglomeration.addRecipe(<threng:material:6>, [<appliedenergistics2:material:20>,<ore:dustRedstone>,<threng:material:5>] as IIngredient[], 500000);
-Agglomeration.addRecipe(<threng:material:14>, [<appliedenergistics2:material:20>,<ore:dustRedstone>,<threng:material:13>] as IIngredient[], 1000000);
+Agglomeration.addRecipe(<threng:material:6>, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:5>] as IIngredient[], 500000);
+GaiaPlate.add(processor, 500000, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:5>]);
+
+Agglomeration.addRecipe(<threng:material:14>, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:13>] as IIngredient[], 1000000);
+GaiaPlate.add(processor, 1000000, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:13>]);
 
 recipes.remove(<threng:machine:2>);
 RuneAltar.addRecipe(<threng:machine:2>, [
@@ -65,3 +63,17 @@ RuneAltar.addRecipe(<threng:machine:2>, [
     <calculator:flawlessassembly>,
     <botanicadds:rune_energy>
 ], 500000);
+
+recipes.remove(<threng:big_assembler>);
+recipes.addShaped(<threng:big_assembler> * 4, [
+    [<contenttweaker:enhanced_ender_ingot>,<appliedenergistics2:smooth_sky_stone_block>,<contenttweaker:enhanced_ender_ingot>],
+    [<appliedenergistics2:smooth_sky_stone_block>,<ic2:bigquantumaccumulator>,<appliedenergistics2:smooth_sky_stone_block>],
+    [<contenttweaker:enhanced_ender_ingot>,<appliedenergistics2:smooth_sky_stone_block>,<contenttweaker:enhanced_ender_ingot>]
+]);
+
+recipes.remove(<threng:big_assembler:1>);
+recipes.addShaped(<threng:big_assembler:1> * 4, [
+    [<threng:big_assembler>,<ic2:itemheatvent:3>,<threng:big_assembler>],
+    [<ic2:itemheatvent:3>,<gravisuit:coolingcore>,<ic2:itemheatvent:3>],
+    [<threng:big_assembler>,<ic2:itemheatvent:3>,<threng:big_assembler>]
+]);
