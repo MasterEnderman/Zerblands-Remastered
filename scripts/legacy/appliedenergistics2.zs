@@ -26,6 +26,7 @@ import mods.botania.ElvenTrade;
 import mods.botania.ManaInfusion;
 import mods.botaniatweaks.Agglomeration;
 import mods.botanicadds.GaiaPlate;
+import mods.ic2.Extractor;
 import mods.inworldcrafting.FluidToItem;
 import mods.jei.JEI;
 import mods.thermalexpansion.InductionSmelter;
@@ -37,6 +38,9 @@ JEI.removeAndHide(<appliedenergistics2:sky_compass>);
 ElvenTrade.addRecipe([<appliedenergistics2:sky_stone_block>],[<minecraft:end_stone>,<minecraft:end_stone>]);
 
 FluidToItem.transform(<appliedenergistics2:material:7>, <liquid:water>, [<appliedenergistics2:material:1>, <ore:dustRedstone>, <minecraft:quartz>], false);
+
+Extractor.addRecipe(<appliedenergistics2:material:5>,<minecraft:sand>);
+Extractor.addRecipe(<appliedenergistics2:material:5>,<minecraft:sand:1>);
 
 var mapSeed as IItemStack[IItemStack] = {
 	<appliedenergistics2:crystal_seed:1200> : <appliedenergistics2:material:12>,
@@ -83,7 +87,7 @@ recipes.addShaped(<appliedenergistics2:crafting_unit>, [
 recipes.remove(<appliedenergistics2:molecular_assembler>);
 recipes.addShaped(<appliedenergistics2:molecular_assembler>, [
     [<ore:blockElectricalSteel>,<appliedenergistics2:quartz_glass>,<ore:blockElectricalSteel>],
-    [<appliedenergistics2:material:44>,<calculator:flawlessassembly>,<appliedenergistics2:material:43>],
+    [<appliedenergistics2:material:44>,<contenttweaker:flawless_assembly>,<appliedenergistics2:material:43>],
     [<ore:blockElectricalSteel>,<appliedenergistics2:quartz_glass>,<ore:blockElectricalSteel>]
 ]);
 

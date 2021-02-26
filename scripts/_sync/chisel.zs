@@ -87,6 +87,11 @@ var chiselMap as IItemStack[][string] = {
         <contenttweaker:wither_magma>,
         <contenttweaker:wither_tiled>,
         <contenttweaker:withersand>,
+    ],
+    "ct_runestone" : [
+        <contenttweaker:runestone>,
+        <contenttweaker:runestone_brick>,
+        <contenttweaker:runestone_chiseled>,
     ]
 };
 

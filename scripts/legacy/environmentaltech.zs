@@ -24,9 +24,9 @@ import mods.enderio.AlloySmelter;
 
 recipes.remove(<valkyrielib:modifier_component>);
 recipes.addShaped(<valkyrielib:modifier_component> * 4, [
-    [<enderio:item_material:2>,<calculator:redstoneingot>,<enderio:item_material:2>],
-    [<calculator:redstoneingot>,<extrautils2:decorativesolid:7>,<calculator:redstoneingot>],
-    [<enderio:item_material:2>,<calculator:redstoneingot>,<enderio:item_material:2>]
+    [<enderio:item_material:2>,<contenttweaker:redstone_ingot>,<enderio:item_material:2>],
+    [<contenttweaker:redstone_ingot>,<extrautils2:decorativesolid:7>,<contenttweaker:redstone_ingot>],
+    [<enderio:item_material:2>,<contenttweaker:redstone_ingot>,<enderio:item_material:2>]
 ]);
 
 recipes.remove(<valkyrielib:modifier_speed>);

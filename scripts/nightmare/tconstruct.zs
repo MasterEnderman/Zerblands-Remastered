@@ -20,8 +20,9 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import scripts.functions.calc_basic;
+
 import mods.actuallyadditions.Empowerer;
-import mods.calculator.basic;
 import mods.immersiveengineering.MetalPress;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Drying;
@@ -62,7 +63,7 @@ recipes.remove(<tconstruct:brownstone:1>);
 basic.addRecipe(<chisel:brownstone>,<minecraft:redstone>,<tconstruct:brownstone:1>);
 
 recipes.remove(<tconstruct:firewood:1>);
-basic.addRecipe(<tconstruct:firewood>,<embers:dust_ember>,<tconstruct:firewood:1>);
+calc_basic(<tconstruct:firewood:1>,<tconstruct:firewood>,<embers:dust_ember>);
 
 recipes.remove(<tconstruct:pattern>);
 recipes.addShaped(<tconstruct:pattern> * 2,[

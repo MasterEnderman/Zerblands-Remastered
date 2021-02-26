@@ -1,5 +1,29 @@
 # Zerblands-Remastered
 
+## v2.1.0 - calculator overhaul
+
+- removed Calculator
+- removed Charset Lib
+- removed SimpleLogic Gates
+- removed SompleLogic Wires
+
+- updated CraftTweaker
+
+- added CD4017BE Library
+- added Energy Control
+- added Redstone Control
+
+- added all Calculator items by myself
+- added documentation for chaos stabilizer
+- added emc values to all calculator items
+- added emc values to Woot
+- added runestone chisel variants
+- fixed witherblock recipe
+- moved philo stone to last astral altar
+- removed Xu2 Crafter
+- updated guide
+- updated questbook
+
 ## v2.0.12 - critical bug fix
 
 - updated Simply Jetpacks 2

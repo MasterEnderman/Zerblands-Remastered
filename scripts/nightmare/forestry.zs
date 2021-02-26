@@ -36,7 +36,7 @@ recipes.addShaped(<forestry:ash_stairs> * 4, [
 recipes.remove(<forestry:sturdy_machine>);
 recipes.addShaped(<forestry:sturdy_machine>, [
     [<ore:plateBronze>,<immersiveengineering:material:27>,<ore:plateBronze>],
-    [<calculator:redstoneingot>,<extrautils2:machine>,<calculator:redstoneingot>],
+    [<contenttweaker:redstone_ingot>,<contenttweaker:module_energy>,<contenttweaker:redstone_ingot>],
     [<ore:plateBronze>,<actuallyadditions:item_misc:8>,<ore:plateBronze>]
 ]);
 
@@ -49,7 +49,7 @@ recipes.addShaped(<forestry:carpenter>, [
 
 recipes.remove(<forestry:fabricator>);
 recipes.addShaped(<forestry:fabricator>, [
-    [<ore:plateGold>,<calculator:craftingcalculator>,<ore:plateGold>],
-    [<calculator:advancedassembly>,<actuallyadditions:block_misc:9>,<calculator:advancedassembly>],
+    [<ore:plateGold>,<contenttweaker:calculator>,<ore:plateGold>],
+    [<contenttweaker:advanced_assembly>,<actuallyadditions:block_misc:9>,<contenttweaker:advanced_assembly>],
     [<contenttweaker:copper_coil>,<extrautils2:ingredients:13>,<contenttweaker:copper_coil>]
 ]);

@@ -129,3 +129,25 @@ function sum(numbers as int[]) as int {
     }
     return y;
 }
+
+// Calculator
+
+function calc_basic(output as IItemStack, a as IIngredient, b as IIngredient) {
+    var calculator = <contenttweaker:calculator>;
+    recipes.addShapeless(output, [calculator.reuse(),a,b]);
+}
+
+function calc_scientific(output as IItemStack, a as IIngredient, b as IIngredient) {
+    var calculator = <contenttweaker:scientificcalculator>;
+    recipes.addShapeless(output, [calculator.reuse(),a,b]);
+}
+
+function calc_atomic(output as IItemStack, a as IIngredient, b as IIngredient, c as IIngredient) {
+    var calculator = <contenttweaker:atomiccalculator>;
+    recipes.addShapeless(output, [calculator.reuse(),a,b,c]);
+}
+
+function calc_flawless(output as IItemStack, a as IIngredient, b as IIngredient, c as IIngredient, d as IIngredient) {
+    var calculator = <contenttweaker:flawlesscalculator>;
+    recipes.addShapeless(output, [calculator.reuse(),a,b,c,d]);
+}

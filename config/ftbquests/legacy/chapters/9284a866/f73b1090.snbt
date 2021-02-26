@@ -1,4 +1,5 @@
 {
+	icon: "embers:ember_bore",
 	x: -11.0d,
 	y: -2.0d,
 	text: [

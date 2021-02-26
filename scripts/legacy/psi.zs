@@ -23,3 +23,8 @@ import scripts.functions.findFirstItemFromMod;
 import mods.botania.ManaInfusion;
 
 ManaInfusion.addInfusion(<psi:material>, <thermalfoundation:material:72>, 10000);
+
+recipes.addShaped(<psi:cad_assembly:5>, [
+    [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>],
+    [<contenttweaker:creative>,null,null]
+]);

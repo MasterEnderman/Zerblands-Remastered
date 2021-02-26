@@ -86,7 +86,7 @@ recipes.addShaped(<actuallyadditions:block_furnace_solar> * 3, [
 var t as int = 40;
 
 AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal>);
-AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal>, <calculator:redstoneingot>, t);
+AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal>, <contenttweaker:redstone_ingot>, t);
 
 AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:1>);
 AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:1>, <tconstruct:ingots>, t);
@@ -104,7 +104,7 @@ AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:3>, <thermalfounda
 // AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:5>, , t);
 
 AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal>);
-AtomicReconstructor.addRecipe(<actuallyadditions:block_crystal>, <calculator:material:9>, t*10);
+AtomicReconstructor.addRecipe(<actuallyadditions:block_crystal>, <contenttweaker:redstone_ingot_block>, t*10);
 
 AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:1>);
 AtomicReconstructor.addRecipe(<actuallyadditions:block_crystal:1>, <tconstruct:metal>, t*10);

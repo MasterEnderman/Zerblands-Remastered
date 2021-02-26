@@ -20,7 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.calculator.scientific;
+import scripts.functions.calc_scientific;
 
 var mapCobble as IItemStack[IItemStack] = {
     <hammercore:iron_bordered_cobblestone> : <minecraft:iron_ingot>,
@@ -31,5 +31,5 @@ var mapCobble as IItemStack[IItemStack] = {
 };
 
 for block, item in mapCobble {
-    scientific.addRecipe(<minecraft:cobblestone>,item,block);
+    calc_scientific(block,<minecraft:cobblestone>,item);
 }

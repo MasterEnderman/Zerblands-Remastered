@@ -63,7 +63,7 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     ],
 	<actuallyadditions:block_misc:9> : [
 		[<contenttweaker:black_iron>,<forestry:chipsets>,<contenttweaker:black_iron>],
-		[<ore:stickAluminum>,<calculator:powercube>,<ore:stickAluminum>],
+		[<ore:stickAluminum>,<extrautils2:machine>,<ore:stickAluminum>],
 		[<contenttweaker:black_iron>,<embers:aspectus_dawnstone>,<contenttweaker:black_iron>]
 	],
     <actuallyadditions:item_misc:2> : [
@@ -153,4 +153,4 @@ AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal>);
 AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal>, <enderio:item_alloy_ingot:3>, t);
 
 AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:1>);
-AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:1>, <calculator:largetanzanite>, t);
+AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:1>, <contenttweaker:large_tanzanite>, t);

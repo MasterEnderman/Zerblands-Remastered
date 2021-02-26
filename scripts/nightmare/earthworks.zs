@@ -30,7 +30,7 @@ furnace.addRecipe(<earthworks:block_dry_stone>, <minecraft:stone>);
 
 recipes.remove(<earthworks:item_mud>);
 FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<earthworks:item_dirt>], false);
-FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<calculator:soil>], false);
+FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<contenttweaker:soil>], false);
 
 recipes.remove(<earthworks:item_slaked_lime>);
 FluidToItem.transform(<earthworks:item_slaked_lime>, <liquid:water>, [<earthworks:item_quicklime>], false);

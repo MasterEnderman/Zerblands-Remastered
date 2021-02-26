@@ -19,6 +19,21 @@ tile.contenttweaker.wither_tiled.name=Tiled Wither Bricks
 tile.contenttweaker.withersand.name=Wither Block
 tile.contenttweaker.wither_clean.name=Clean Wither Block
 
+# calculator
+
+tile.contenttweaker.amethyst_block.name=Amethyst Block
+tile.contenttweaker.electric_diamond_block.name=Electric Diamond Block
+tile.contenttweaker.end_diamond_block.name=End Diamond Block
+tile.contenttweaker.enriched_gold_block.name=Enriched Gold Block
+tile.contenttweaker.flawless_block.name=Flawless Diamond Block
+tile.contenttweaker.flawless_fire_block.name=Fire Diamond Block
+tile.contenttweaker.redstone_ingot_block.name=Redstone Iron Block
+tile.contenttweaker.reinforced_iron_block.name=Reinforced Iron Block
+tile.contenttweaker.tanzanite_block.name=Tanzanite Block
+tile.contenttweaker.weakened_diamond_block.name=Weakened Diamond Block
+tile.contenttweaker.purifiedobsidian.name=Purified Obsidian
+tile.contenttweaker.flawlessglass_main.name=Flawless Glass
+
 # ac legacy
 
 tile.contenttweaker.asb.name=Abyssal Stone Bricks

@@ -59,6 +59,8 @@ mods/
 
 *.dat
 
+*.py
+
 \.ReAuth\.cfg
 
 crafttweaker_dump/

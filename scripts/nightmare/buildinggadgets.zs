@@ -22,22 +22,22 @@ import scripts.functions.findFirstItemFromMod;
 
 recipes.remove(<buildinggadgets:buildingtool>);
 recipes.addShaped(<buildinggadgets:buildingtool>, [
-    [<ore:plateIridium>,<calculator:flawlessdiamond>,<ore:plateIridium>],
+    [<ore:plateIridium>,<contenttweaker:flawless_assembly>,<ore:plateIridium>],
     [<ore:gemDiamond>,<immersiveengineering:metal_device0:1>,<ore:gemDiamond>],
-    [<ore:plateIridium>,<calculator:flawlessdiamond>,<ore:plateIridium>]
+    [<ore:plateIridium>,<contenttweaker:flawless_assembly>,<ore:plateIridium>]
 ]);
 
 recipes.remove(<buildinggadgets:exchangertool>);
 recipes.addShaped(<buildinggadgets:exchangertool>, [
-    [<ore:plateIridium>,<calculator:flawlessdiamond>,<ore:plateIridium>],
+    [<ore:plateIridium>,<contenttweaker:flawless_assembly>,<ore:plateIridium>],
     [<ore:gemEmerald>,<immersiveengineering:metal_device0:1>,<ore:gemEmerald>],
-    [<ore:plateIridium>,<calculator:flawlessdiamond>,<ore:plateIridium>]
+    [<ore:plateIridium>,<contenttweaker:flawless_assembly>,<ore:plateIridium>]
 ]);
 
 recipes.remove(<buildinggadgets:copypastetool>);
 recipes.addShaped(<buildinggadgets:copypastetool>, [
     [<ore:plateIridium>,<ore:gearEnderium>,<ore:plateIridium>],
-    [<calculator:flawlessdiamond>,<immersiveengineering:metal_device0:1>,<calculator:flawlessdiamond>],
+    [<contenttweaker:flawless_assembly>,<immersiveengineering:metal_device0:1>,<contenttweaker:flawless_assembly>],
     [<ore:plateIridium>,<ore:gearEnderium>,<ore:plateIridium>]
 ]);
 

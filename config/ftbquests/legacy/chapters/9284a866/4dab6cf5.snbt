@@ -1,4 +1,10 @@
 {
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "contenttweaker:glass_bell"
+	},
 	x: 3.0d,
 	y: 0.0d,
 	dependencies: [
@@ -12,6 +18,18 @@
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
 			id: "contenttweaker:glass_bell"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2f5c930d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "contenttweaker:ender_token"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

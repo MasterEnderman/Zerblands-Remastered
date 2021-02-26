@@ -44,4 +44,10 @@ recipes.addShaped(<embers:codex>, [
     [<embers:archaic_brick>]
 ]);
 
+recipes.addShaped(<embers:creative_ember_source>, [
+    [<embers:block_dawnstone>,<embers:block_dawnstone>,<embers:block_dawnstone>],
+    [<embers:block_dawnstone>,<contenttweaker:infinite>,<embers:block_dawnstone>],
+    [<embers:block_dawnstone>,<embers:block_dawnstone>,<embers:block_dawnstone>]
+]);
+
 <embers:archaic_brick>.addTooltip(format.green("Drops from Ancient Golem."));

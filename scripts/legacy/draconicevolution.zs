@@ -23,12 +23,12 @@ import scripts.functions.findFirstItemFromMod;
 import mods.actuallyadditions.Empowerer;
 import mods.bloodmagic.BloodAltar;
 
-BloodAltar.addRecipe(<draconicevolution:draconium_ingot>,<tconstruct:ingots:2>,5,100000,1000,1000);
+BloodAltar.addRecipe(<draconicevolution:draconium_ingot>,<tconstruct:ingots:2>,4,100000,1000,1000);
 
 Empowerer.addRecipe(<draconicevolution:draconium_block>,<tconstruct:metal:2>,<minecraft:dragon_egg>,<abyssalcraft:abyingot>,<abyssalcraft:abyingot>,<abyssalcraft:abyingot>, 50000, 1000);
 
 <draconicevolution:chaos_crystal>.addTooltip(format.red("DON'T USE THIS. IT WILL END YOUR WORLD."));
-<draconicevolution:chaos_crystal>.addTooltip(format.red("YOU HAVE BEEN WARNED. I WON'T BE RESPONIBLE"));
+<draconicevolution:chaos_crystal>.addTooltip(format.red("YOU HAVE BEEN WARNED. I WON'T BE RESPONSIBLE"));
 <draconicevolution:chaos_crystal>.addTooltip(format.red("FOR ANY DAMAGE THIS CAUSES TO YOUR BASE!"));
 
 <draconicevolution:draconium_ore>.addTooltip(format.red("*UNOBTAINABLE*"));
@@ -44,7 +44,7 @@ recipes.addShaped(<draconicevolution:chaos_crystal>, [
 recipes.remove(<draconicevolution:crafting_injector>);
 recipes.addShaped(<draconicevolution:crafting_injector>, [
     [<ore:gaiaIngot>,<draconicevolution:draconic_core>,<ore:gaiaIngot>],
-    [<contenttweaker:slate_ethereal>,<calculator:calculatorlocator>,<contenttweaker:slate_ethereal>],
+    [<contenttweaker:slate_ethereal>,<contenttweaker:calculator_locator_on_2>,<contenttweaker:slate_ethereal>],
     [<ic2:itemmisc:258>,<quantumflux:quibitcluster:5>,<ic2:itemmisc:258>]
 ]);
 

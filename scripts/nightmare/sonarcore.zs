@@ -20,8 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.calculator.basic;
+import scripts.functions.calc_basic;
 
-basic.removeRecipe(<sonarcore:reinforcedstoneblock>);
-basic.addRecipe(<earthworks:block_dry_stone>,<immersiveengineering:treated_wood>,<sonarcore:reinforcedstoneblock>);
-basic.addRecipe(<earthworks:block_dry_stone>,<botania:livingwood>,<sonarcore:reinforcedstoneblock> * 4);
+calc_basic(<sonarcore:reinforcedstoneblock>,<earthworks:block_dry_stone>,<immersiveengineering:treated_wood>);
+calc_basic(<sonarcore:reinforcedstoneblock> * 4,<earthworks:block_dry_stone>,<botania:livingwood>);

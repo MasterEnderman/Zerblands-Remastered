@@ -63,7 +63,7 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     	[<opencomputers:material:8>,<ic2:itemmisc:452>,<opencomputers:material:8>]
     ],
     <appliedenergistics2:molecular_assembler> : [
-    	[<actuallyadditions:block_misc:8>,<calculator:flawlessassembly>,<actuallyadditions:block_misc:8>],
+    	[<actuallyadditions:block_misc:8>,<contenttweaker:flawless_assembly>,<actuallyadditions:block_misc:8>],
     	[<appliedenergistics2:quartz_glass>,<opencomputers:assembler>,<appliedenergistics2:quartz_glass>],
     	[<actuallyadditions:block_misc:8>,<rftools:crafter3>,<actuallyadditions:block_misc:8>]
     ],

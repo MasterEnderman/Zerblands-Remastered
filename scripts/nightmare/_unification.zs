@@ -102,11 +102,6 @@ var mapWood as IItemStack[IItemStack] = {
     <randomthings:spectrelog> : <randomthings:spectreplank>,
     // blood arsenal
     <bloodarsenal:blood_infused_wooden_log> : <bloodarsenal:blood_infused_wooden_planks>,
-    // calculator
-    <calculator:pearlog> : <calculator:pearplanks>,
-    <calculator:diamondlog> : <calculator:diamondplanks>,
-    <calculator:amethystlog> : <calculator:amethystplanks>,
-    <calculator:tanzanitelog> : <calculator:tanzaniteplanks>,
     // abyssalcraft
     <abyssalcraft:dreadlog> : <abyssalcraft:dreadplanks>,
     <abyssalcraft:dltlog> : <abyssalcraft:dltplank>,

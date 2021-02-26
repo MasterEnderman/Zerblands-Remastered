@@ -150,7 +150,10 @@
   "item.dyePowder.red_1192536567": true,
   "item.dyePowder.pink_1192537776": true,
   "item.dyePowder.red_-405206020": true,
-  "item.immersiveengineering.material.hemp_fiber_1576378212": true
+  "item.immersiveengineering.material.hemp_fiber_1576378212": true,
+  "ic2exprecipe_Dirty Circuit_": true,
+  "ic2exprecipe_Silicon_": true,
+  "ic2exprecipe_Silicon__1": true
  },
  "compressor": {
   "tile.sandStone.default_1494879518": true,
@@ -178,7 +181,8 @@
   "item.itemPartPellet_7915127": true,
   "item.potion_1880685907": true,
   "ic2exprecipe_HOP Graphite Dust_": true,
-  "item.potion_441693419": true
+  "item.potion_441693419": true,
+  "ic2exprecipe_Restored Circuit_": true
  },
  "massfabricatorAmplifier": {
   "ScrapAmplifier": true,

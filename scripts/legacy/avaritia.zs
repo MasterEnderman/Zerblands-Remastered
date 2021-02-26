@@ -36,9 +36,9 @@ JEI.removeAndHide(<avaritia:cosmic_meatballs>);
 
 recipes.remove(<avaritia:resource>);
 recipes.addShaped(<avaritia:resource>, [
-    [<calculator:material:8>,<ic2:itembatlamacrystal>,<calculator:material:8>],
+    [<contenttweaker:end_diamond_block>,<ic2:itembatlamacrystal>,<contenttweaker:end_diamond_block>],
     [<ic2:itembatlamacrystal>,<draconicevolution:chaotic_core>,<ic2:itembatlamacrystal>],
-    [<calculator:material:8>,<ic2:itembatlamacrystal>,<calculator:material:8>]
+    [<contenttweaker:end_diamond_block>,<ic2:itembatlamacrystal>,<contenttweaker:end_diamond_block>]
 ]);
 
 recipes.removeShaped(<avaritia:resource:1>);
@@ -62,4 +62,17 @@ Altar.addConstellationAltarRecipe("dire_table",<avaritia:extreme_crafting_table>
     <avaritia:block_resource:2>,<avaritia:block_resource:2>,<avaritia:block_resource:2>,
     <avaritia:block_resource:2>,<avaritia:block_resource:2>,<avaritia:block_resource:2>,
     <avaritia:block_resource:2>,<avaritia:block_resource:2>,<avaritia:block_resource:2>
+]);
+
+ExtremeCrafting.remove(<avaritia:infinity_pickaxe>);
+ExtremeCrafting.addShaped("infinity_pickaxe",<avaritia:infinity_pickaxe>, [
+    [null,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,null],
+    [<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,<minecraft:bedrock>,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>],
+    [<avaritia:resource:6>,<avaritia:resource:6>,null,null,<contenttweaker:bedrockium_ingot>,null,null,<avaritia:resource:6>,<avaritia:resource:6>],
+    [null,null,null,null,<contenttweaker:bedrockium_ingot>,null,null,null,null],
+    [null,null,null,null,<contenttweaker:bedrockium_ingot>,null,null,null,null],
+    [null,null,null,null,<contenttweaker:bedrockium_ingot>,null,null,null,null],
+    [null,null,null,null,<contenttweaker:bedrockium_ingot>,null,null,null,null],
+    [null,null,null,null,<contenttweaker:bedrockium_ingot>,null,null,null,null],
+    [null,null,null,null,<contenttweaker:bedrockium_ingot>,null,null,null,null]
 ]);

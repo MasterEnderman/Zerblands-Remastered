@@ -44,7 +44,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
         [
             [<embers:brick_caminite>,<embers:plate_caminite>,<embers:brick_caminite>],
             [<embers:brick_caminite>,<tconstruct:firewood:1>,<embers:brick_caminite>],
-            [<calculator:reinforcedironingot>,<tconstruct:smeltery_controller>,<calculator:reinforcedironingot>]
+            [<contenttweaker:reinforcediron_ingot>,<tconstruct:smeltery_controller>,<contenttweaker:reinforcediron_ingot>]
         ]
     ],
     <embers:mixer> : [
@@ -57,7 +57,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <embers:ember_activator> : [
         [
             [<ore:ingotCopper>,<ore:ingotCopper>,<ore:ingotCopper>],
-            [<calculator:reinforcedironingot>,<embers:mech_core>,<calculator:reinforcedironingot>],
+            [<contenttweaker:reinforcediron_ingot>,<embers:mech_core>,<contenttweaker:reinforcediron_ingot>],
             [<embers:block_caminite_brick>,<tconstruct:seared_furnace_controller>,<embers:block_caminite_brick>]
         ]
     ]

@@ -20,8 +20,9 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import scripts.functions.calc_basic;
+
 import mods.astralsorcery.Altar;
-import mods.calculator.basic;
 import mods.extrautils2.Resonator;
 import mods.inworldcrafting.ExplosionCrafting;
 import mods.jei.JEI;
@@ -33,7 +34,7 @@ var furnace_generator as IItemStack = <extrautils2:machine>.withTag({Type: "extr
 JEI.removeAndHide(<extrautils2:glasscutter>);
 
 recipes.removeByRecipeName("extrautils2:machine_base");
-Casting.addBasinRecipe(<extrautils2:machine>, <calculator:calculator>, <liquid:iron>, 144 * 4, true, 2000);
+Casting.addBasinRecipe(<extrautils2:machine>, <contenttweaker:calculator>, <liquid:iron>, 144 * 4, true, 2000);
 
 recipes.remove(<extrautils2:resonator>);
 Altar.addDiscoveryAltarRecipe("resonator", <extrautils2:resonator>, 200, 200, [
@@ -43,10 +44,10 @@ Altar.addDiscoveryAltarRecipe("resonator", <extrautils2:resonator>, 200, 200, [
 ]);
 
 recipes.remove(<extrautils2:drum:1>);
-basic.addRecipe(<extrautils2:drum>, <calculator:material:3>, <extrautils2:drum:1>);
+calc_basic(<extrautils2:drum:1>, <extrautils2:drum>, <contenttweaker:reinforced_iron_block>);
 
 Resonator.remove(<extrautils2:ingredients:9>);
-Resonator.add(<extrautils2:ingredients:9>, <calculator:material:2>, 800, false);
+Resonator.add(<extrautils2:ingredients:9>, <contenttweaker:enriched_gold_block>, 800, false);
 
 Resonator.remove(<extrautils2:ingredients:13>);
 Resonator.add(<extrautils2:ingredients:13>, <embers:superheater>, 1600, true);

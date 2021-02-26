@@ -20,6 +20,8 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import scripts.functions.calc_flawless;
+
 import mods.actuallyadditions.Empowerer;
 import mods.tconstruct.Drying;
 
@@ -64,15 +66,15 @@ recipes.addShaped(<minecraft:glowstone_dust>, [
 ]);
 
 recipes.addShaped(<minecraft:dirt>, [
-    [<calculator:soil>,<calculator:soil>,<calculator:soil>],
-    [<calculator:soil>,<calculator:soil>,<calculator:soil>],
-    [<calculator:soil>,<calculator:soil>,<calculator:soil>]
+    [<contenttweaker:soil>,<contenttweaker:soil>,<contenttweaker:soil>],
+    [<contenttweaker:soil>,<contenttweaker:soil>,<contenttweaker:soil>],
+    [<contenttweaker:soil>,<contenttweaker:soil>,<contenttweaker:soil>]
 ]);
 
 recipes.addShaped(<minecraft:cobblestone>, [
-    [<calculator:smallstone>,<calculator:smallstone>,<calculator:smallstone>],
-    [<calculator:smallstone>,<calculator:smallstone>,<calculator:smallstone>],
-    [<calculator:smallstone>,<calculator:smallstone>,<calculator:smallstone>]
+    [<contenttweaker:small_stone>,<contenttweaker:small_stone>,<contenttweaker:small_stone>],
+    [<contenttweaker:small_stone>,<contenttweaker:small_stone>,<contenttweaker:small_stone>],
+    [<contenttweaker:small_stone>,<contenttweaker:small_stone>,<contenttweaker:small_stone>]
 ]);
 
 recipes.remove(<minecraft:end_crystal>);
@@ -100,3 +102,10 @@ var listVine as IItemStack[] = [
 for item in listVine {
     recipes.addShapeless(<minecraft:mossy_cobblestone>, [<minecraft:cobblestone>,item]);
 }
+
+calc_flawless(<minecraft:diamond>,<ore:ingotGold>,<ore:ingotGold>,<ore:ingotGold>,<ore:ingotGold>);
+calc_flawless(<minecraft:emerald>,<ore:gemDiamond>,<ore:gemDiamond>,<ore:gemDiamond>,<ore:gemDiamond>);
+calc_flawless(<minecraft:ender_pearl>,<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>);
+calc_flawless(<minecraft:obsidian>,<ore:logWood>,<ore:logWood>,<ore:logWood>,<ore:logWood>);
+calc_flawless(<minecraft:blaze_rod>,<minecraft:blaze_powder>,<minecraft:blaze_powder>,<minecraft:blaze_powder>,<minecraft:blaze_powder>);
+calc_flawless(<minecraft:ghast_tear>,<minecraft:blaze_rod>,<minecraft:blaze_rod>,<minecraft:blaze_rod>,<minecraft:blaze_rod>);

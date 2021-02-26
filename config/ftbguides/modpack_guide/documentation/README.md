@@ -5,14 +5,14 @@
 Varoius aspects of Bloodmagic can be automated using a **Woot Mobfarm**. You can fill your altar by building a **Woot Mobfarm** with the corresponding ritual above or below your altar.
 The best mob to use for **Bloodmagic - Woot Combination** are **Villagers**. As they have a higher mass spawn count then all other mobs. That way they provide much more blood for all your needs.
 
-## Calculator
+## Draconic Additions
 
-Use a **Docking Station** to automate the calculator recipes.
+### Chaos Stabilizer
 
-You can only Export from the Top/Bottom of the block
-Normal Calculator and Scientific - First slot from Left Side, Second slot from Right Side
-Atomic Calculator - First slot from Left Side, second slot from back, third slot from Right Side
-Flawless Calculator - First slot from Left Side, second slot from back, third slot from the front, forth slot from Right Side
+To make your chaotic tool and armor useable they have to be stabilized first. This is done in the **Chaos Stabilizer**.
+The Awakened Draconium Blocks are consumed in the stabilization process. (Keep a healthy distance to the core while the machine is running.)
+You start the process by throwing your item towards the **Chaos Stabilizer Core**.
+![Chaos Stabilizer](chaotic.png)
 
 ## EnderIO
 

@@ -28,12 +28,12 @@ import mods.botanicadds.GaiaPlate;
 JEI.removeAndHide(<threng:machine:3>);
 
 var mapSpeculation as IIngredient[][IItemStack] = {
-    <threng:material:8> : [<calculator:weakeneddiamond>,<threng:material:7>],
+    <threng:material:8> : [<contenttweaker:weakeneddiamond>,<threng:material:7>],
     <threng:material:9> : [<minecraft:diamond>,<threng:material:8>],
-    <threng:material:10> : [<calculator:flawlessdiamond>,<threng:material:9>],
-    <threng:material:11> : [<calculator:firediamond>,<threng:material:10>],
-    <threng:material:12> : [<calculator:electricdiamond>,<threng:material:11>],
-    <threng:material:13> : [<calculator:enddiamond>,<threng:material:12>]
+    <threng:material:10> : [<contenttweaker:flawlessdiamond>,<threng:material:9>],
+    <threng:material:11> : [<contenttweaker:firediamond>,<threng:material:10>],
+    <threng:material:12> : [<contenttweaker:electricdiamondanimate>,<threng:material:11>],
+    <threng:material:13> : [<contenttweaker:enddiamond>,<threng:material:12>]
 };
 
 for output, data in mapSpeculation {
@@ -60,7 +60,7 @@ RuneAltar.addRecipe(<threng:machine:2>, [
     <appliedenergistics2:material:14>,
     <appliedenergistics2:material:15>,
     <appliedenergistics2:material:19>,
-    <calculator:flawlessassembly>,
+    <contenttweaker:flawless_assembly>,
     <botanicadds:rune_energy>
 ], 500000);
 

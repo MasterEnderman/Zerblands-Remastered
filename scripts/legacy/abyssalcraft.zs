@@ -47,8 +47,8 @@ Refinery.addRecipe(<liquid:liquidantimatter>*10, <liquid:colour_out_of_space>*5,
 Empowerer.addRecipe(<abyssalcraft:ethaxiumingot>, <extrautils2:ingredients:2>, <abyssalcraft:ethbrick>, <abyssalcraft:ethbrick>, <abyssalcraft:ethbrick>, <abyssalcraft:ethbrick>, 50000, 100);
 
 recipes.addShaped(<abyssalcraft:statue>, [
-    [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}).noReturn(),<calculator:enddiamond>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}).noReturn()],
-    [<calculator:enddiamond>,<ore:blockDiamond>,<calculator:enddiamond>],
+    [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}).noReturn(),<contenttweaker:enddiamond>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}).noReturn()],
+    [<contenttweaker:enddiamond>,<ore:blockDiamond>,<contenttweaker:enddiamond>],
     [<abyssalcraft:stone:7>,<abyssalcraft:stone:7>,<abyssalcraft:stone:7>]
 ]);
 

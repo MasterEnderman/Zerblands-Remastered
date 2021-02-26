@@ -3,8 +3,7 @@
 		ForgeCaps: {
 			"astralsorcery:cap_item_amulet_holder": {}
 		},
-		id: "calculator:calculator",
-		tag: {}
+		id: "contenttweaker:calculator"
 	},
 	x: -13.0d,
 	y: -1.0d,
@@ -18,18 +17,10 @@
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
-			id: "calculator:calculator",
-			tag: {}
+			id: "contenttweaker:calculator"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
-	},
-	{
-		uid: "482f7f95",
-		type: "item",
-		items: [{
-			item: "calculator:powercube"
-		}]
 	},
 	{
 		uid: "750e34e7",
@@ -38,8 +29,7 @@
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
-			id: "calculator:scientificcalculator",
-			tag: {}
+			id: "contenttweaker:scientificcalculator"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

@@ -38,7 +38,7 @@ for item, color in mapRock {
 }
 
 FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<earthworks:item_dirt>], false);
-FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<calculator:soil>], false);
+FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<contenttweaker:soil>], false);
 
 FluidToItem.transform(<earthworks:item_slaked_lime>, <liquid:water>, [<earthworks:item_quicklime>], false);
 

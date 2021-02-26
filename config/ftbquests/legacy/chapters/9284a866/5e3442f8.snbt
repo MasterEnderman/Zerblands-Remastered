@@ -8,7 +8,7 @@
 		uid: "d7319209",
 		type: "item",
 		items: [{
-			item: "calculator:atomicmultiplier"
+			item: "contenttweaker:creative"
 		}]
 	}],
 	rewards: [{

@@ -18,7 +18,20 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import scripts.functions.calc_basic;
+
 import mods.chisel.Carving;
+
+calc_basic(<sonarcore:reinforcedstonebrick>*2,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>);
+calc_basic(<sonarcore:stableglass>*2,<ore:blockGlass>,<ore:blockGlass>);
+calc_basic(<sonarcore:stablestone_normal>*2,<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>);
+calc_basic(<sonarcore:reinforceddirtbrick>*2,<sonarcore:reinforceddirtblock>,<sonarcore:reinforceddirtblock>);
+
+calc_basic(<sonarcore:reinforcedstoneblock>,<ore:cobblestone>,<ore:plankWood>);
+calc_basic(<sonarcore:reinforcedstoneblock>*4,<ore:cobblestone>,<ore:logWood>);
+
+calc_basic(<sonarcore:reinforceddirtblock>,<ore:dirt>,<ore:plankWood>);
+calc_basic(<sonarcore:reinforceddirtblock>*4,<ore:dirt>,<ore:logWood>);
 
 var listStableStone as IItemStack[] = [
     <sonarcore:stablestone_normal>,

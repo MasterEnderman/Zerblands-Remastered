@@ -611,6 +611,118 @@
     {
       "item": "fluxnetworks:flux|0",
       "emc": 53582
+    },
+    {
+      "item": "contenttweaker:enrichedgold_ingot|0",
+      "emc": 567
+    },
+    {
+      "item": "contenttweaker:large_tanzanite|0",
+      "emc": 7776
+    },
+    {
+      "item": "contenttweaker:large_amethyst|0",
+      "emc": 144
+    },
+    {
+      "item": "woot:soulsanddust|0",
+      "emc": 49
+    },
+    {
+      "item": "woot:stygianironingot|0",
+      "emc": 562
+    },
+    {
+      "item": "woot:stygianironplate|0",
+      "emc": 562
+    },
+    {
+      "item": "woot:factorycore|0",
+      "emc": 5748
+    },
+    {
+      "item": "extrautils2:decorativeglass|5",
+      "emc": 1
+    },
+    {
+      "item": "woot:factorycore|1",
+      "emc": 6859
+    },
+    {
+      "item": "woot:factorycore|3",
+      "emc": 19378
+    },
+    {
+      "item": "woot:factorycore|4",
+      "emc": 74546
+    },
+    {
+      "item": "woot:factorycore|5",
+      "emc": 1714
+    },
+    {
+      "item": "woot:factorycore|6",
+      "emc": 1138
+    },
+    {
+      "item": "woot:factorycore|2",
+      "emc": 2930
+    },
+    {
+      "item": "woot:shard|0",
+      "emc": 2730
+    },
+    {
+      "item": "woot:shard|1",
+      "emc": 5461
+    },
+    {
+      "item": "woot:shard|2",
+      "emc": 85
+    },
+    {
+      "item": "woot:shard|3",
+      "emc": 15473
+    },
+    {
+      "item": "woot:shard|4",
+      "emc": 1536
+    },
+    {
+      "item": "woot:shard|5",
+      "emc": 1024
+    },
+    {
+      "item": "woot:shard|6",
+      "emc": 15473
+    },
+    {
+      "item": "woot:xpshard|0",
+      "emc": 2048
+    },
+    {
+      "item": "actuallyadditions:block_misc|9",
+      "emc": 2688
+    },
+    {
+      "item": "contenttweaker:calculator|0",
+      "emc": 1
+    },
+    {
+      "item": "contenttweaker:scientificcalculator|0",
+      "emc": 1
+    },
+    {
+      "item": "contenttweaker:atomiccalculator|0",
+      "emc": 1
+    },
+    {
+      "item": "contenttweaker:flawlesscalculator|0",
+      "emc": 1
+    },
+    {
+      "item": "contenttweaker:electricdiamondanimate|0",
+      "emc": 20239
     }
   ]
 }

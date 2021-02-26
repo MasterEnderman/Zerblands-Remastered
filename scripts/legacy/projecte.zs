@@ -24,15 +24,20 @@ import mods.astralsorcery.Altar;
 import mods.jei.JEI;
 
 recipes.remove(<projecte:item.pe_philosophers_stone>);
-mods.astralsorcery.Altar.addConstellationAltarRecipe("philo_stone",<projecte:item.pe_philosophers_stone>, 2000, 12000, [
+Altar.addTraitAltarRecipe("philo_stone",<projecte:item.pe_philosophers_stone>, 4500, 12000, [
     <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}).noReturn(),<draconicevolution:chaotic_core>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}).noReturn(),
     <bloodmagic:teleposition_focus:3>,<randomthings:rezstone>,<bloodmagic:teleposition_focus:3>,
     <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}).noReturn(),<xreliquary:alkahestry_tome:*>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}).noReturn(),
     <exponentialpower:endercell>,<exponentialpower:endercell>,<exponentialpower:endercell>,
     <exponentialpower:endercell>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>,
     <abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>,
-    <abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>
-]);
+    <abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>,
+    <bloodarsenal:blood_diamond:3>,<botanicadds:gaiasteel_block>,<botanicadds:gaiasteel_block>,<bloodarsenal:blood_diamond:3>,
+    // Outer Items
+    <botania:rune>,<botania:rune:1>,<botania:rune:2>,<botania:rune:3>,<botania:rune:4>,<botania:rune:5>,<botania:rune:6>,
+    <botania:rune:7>,<botania:rune:8>,<botania:rune:9>,<botania:rune:10>,<botania:rune:11>,<botania:rune:12>,<botania:rune:13>,
+    <botania:rune:14>,<botania:rune:15>,<botanicadds:rune_tp>,<botanicadds:rune_energy>,
+], "astralsorcery.constellation.mineralis");
 
 recipes.addShapeless(<projecte:item.pe_manual>, [<minecraft:book>,<projecte:item.pe_covalence_dust>]);
 
@@ -83,8 +88,8 @@ recipes.addShaped(<projecte:item.pe_transmutation_tablet>, [
 recipes.remove(<projecte:condenser_mk1>);
 recipes.addShaped(<projecte:condenser_mk1>, [
     [<draconicevolution:infused_obsidian>,<draconicevolution:awakened_core>,<draconicevolution:infused_obsidian>],
-    [<calculator:material:8>,<projecte:alchemical_chest>,<calculator:material:8>],
-    [<draconicevolution:infused_obsidian>,<calculator:material:8>,<draconicevolution:infused_obsidian>]
+    [<contenttweaker:end_diamond_block>,<projecte:alchemical_chest>,<contenttweaker:end_diamond_block>],
+    [<draconicevolution:infused_obsidian>,<contenttweaker:end_diamond_block>,<draconicevolution:infused_obsidian>]
 ]);
 
 recipes.remove(<projecte:collector_mk1>);

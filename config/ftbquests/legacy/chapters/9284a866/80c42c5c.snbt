@@ -1,4 +1,5 @@
 {
+	icon: "avaritiatweaks:infinitato",
 	x: 4.0d,
 	y: 0.0d,
 	dependencies: [
@@ -9,6 +10,13 @@
 		type: "item",
 		items: [{
 			item: "avaritiatweaks:infinitato"
+		}]
+	},
+	{
+		uid: "5fe357a9",
+		type: "item",
+		items: [{
+			item: "extrautils2:decorativesolid 1 8"
 		}]
 	}],
 	rewards: [{

@@ -27,6 +27,8 @@ import mods.enderio.AlloySmelter;
 
 PureDaisy.addRecipe(<botanicadds:dreamrock>, <contenttweaker:runestone>, 100);
 
+furnace.addRecipe(<contenttweaker:blood_infused_stone>,<evilcraft:bloody_cobblestone>);
+
 recipes.addShaped(<contenttweaker:supermassiv>, [
     [<extrautils2:compressedcobblestone:7>,<extrautils2:compressedcobblestone:7>,<extrautils2:compressedcobblestone:7>],
     [<extrautils2:compressedcobblestone:7>,<appliedenergistics2:material:47>,<extrautils2:compressedcobblestone:7>],
@@ -63,10 +65,10 @@ recipes.addShaped(<contenttweaker:wither_clean> * 16, [
     [<xreliquary:mob_ingredient:1>,<xreliquary:mob_ingredient:1>],
     [<xreliquary:mob_ingredient:1>,<xreliquary:mob_ingredient:1>]
 ]);
-recipes.addShaped(<contenttweaker:wither_clean> * 8, [
-    [<minecraft:stone>,<minecraft:stone>,<minecraft:stone>],
+recipes.addShaped(<contenttweaker:wither_clean> * 64, [
     [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>],
-    [<minecraft:stone>,<minecraft:stone>,<minecraft:stone>]
+    [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>],
+    [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>]
 ]);
 
 AlloySmelter.addRecipe(<contenttweaker:ender_ingot>, [<threng:material>, <enderio:item_alloy_endergy_ingot:3>, <extrautils2:ingredients:17>], 50000);

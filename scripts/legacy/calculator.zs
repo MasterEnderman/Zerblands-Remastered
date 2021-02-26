@@ -20,149 +20,165 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import scripts.functions.calc_basic;
+import scripts.functions.calc_scientific;
+import scripts.functions.calc_atomic;
+import scripts.functions.calc_flawless;
+
 import mods.actuallyadditions.Empowerer;
-import mods.calculator.atomic;
-import mods.calculator.basic;
-import mods.calculator.conductorMast;
+import mods.ic2.Compressor;
+import mods.ic2.Extractor;
 import mods.jei.JEI;
+import mods.thermalexpansion.Centrifuge;
 import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Transposer;
 
-var list as IItemStack[] = [
-    <calculator:electricaxe>,
-    <calculator:electrichoe>,
-    <calculator:electricpickaxe>,
-    <calculator:electricshovel>,
-    <calculator:electricsword>,
-    <calculator:endforgedaxe>,
-    <calculator:endforgedhoe>,
-    <calculator:endforgedpickaxe>,
-    <calculator:endforgedshovel>,
-    <calculator:endforgedsword>,
-    <calculator:enrichedgoldaxe>,
-    <calculator:enrichedgoldhoe>,
-    <calculator:enrichedgoldpickaxe>,
-    <calculator:enrichedgoldshovel>,
-    <calculator:enrichedgoldsword>,
-    <calculator:firediamondaxe>,
-    <calculator:firediamondhoe>,
-    <calculator:firediamondpickaxe>,
-    <calculator:firediamondshovel>,
-    <calculator:firediamondsword>,
-    <calculator:flawlessdiamondaxe>,
-    <calculator:flawlessdiamondhoe>,
-    <calculator:flawlessdiamondpickaxe>,
-    <calculator:flawlessdiamondshovel>,
-    <calculator:flawlessdiamondsword>,
-    <calculator:redstoneaxe>,
-    <calculator:redstonehoe>,
-    <calculator:redstonepickaxe>,
-    <calculator:redstoneshovel>,
-    <calculator:redstonesword>,
-    <calculator:reinforcedaxe>,
-    <calculator:reinforcedhoe>,
-    <calculator:reinforcedironaxe>,
-    <calculator:reinforcedironhoe>,
-    <calculator:reinforcedironpickaxe>,
-    <calculator:reinforcedironshovel>,
-    <calculator:reinforcedironsword>,
-    <calculator:reinforcedpickaxe>,
-    <calculator:reinforcedshovel>,
-    <calculator:reinforcedsword>,
-    <calculator:weakeneddiamondaxe>,
-    <calculator:weakeneddiamondhoe>,
-    <calculator:weakeneddiamondpickaxe>,
-    <calculator:weakeneddiamondshovel>,
-    <calculator:weakeneddiamondsword>,
+InductionSmelter.addRecipe(<contenttweaker:enrichedgold_ingot>, <contenttweaker:enrichedgold>, <minecraft:sand>, 1500);
 
-    <calculator:reinforcedfurnace>,
-    <calculator:advancedpowercube>,
-    <calculator:handcrankedgenerator>,
-    <calculator:crankhandle>,
-    <calculator:weathercontroller>
-];
-
-for item in list {
-    JEI.removeAndHide(item);
-}
-
-furnace.remove(<calculator:enrichedgoldingot>);
-InductionSmelter.addRecipe(<calculator:enrichedgoldingot>, <calculator:enrichedgold>, <minecraft:sand>, 1500);
-
-conductorMast.removeRecipe(<calculator:scientificcalculator>);
-conductorMast.removeRecipe(<calculator:electricdiamond>);
-conductorMast.removeRecipe(<calculator:material:7>);
-
-atomic.removeRecipe(<calculator:conductormast>);
-atomic.removeRecipe(<calculator:weatherstation>*4);
-atomic.removeRecipe(<calculator:transmitter>);
-
-JEI.removeAndHide(<calculator:conductormast>);
-JEI.removeAndHide(<calculator:weatherstation>);
-JEI.removeAndHide(<calculator:transmitter>);
-
-basic.removeRecipe(<calculator:wrench>);
-recipes.addShaped(<calculator:wrench>, [
-    [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>],
-    [<sonarcore:reinforcedstoneblock>,<chiselsandbits:wrench_wood>,<sonarcore:reinforcedstoneblock>],
-    [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>]
+recipes.addShaped(<contenttweaker:calculator_plug_base_on>, [
+    [null,<contenttweaker:energy_module>,null],
+    [<contenttweaker:atomic_assembly>,<actuallyadditions:block_empowerer>,<contenttweaker:atomic_assembly>],
+    [<contenttweaker:redstone_ingot_block>,<contenttweaker:redstone_ingot_block>,<contenttweaker:redstone_ingot_block>]
 ]);
 
-basic.removeRecipe(<calculator:sickle>);
-recipes.addShaped(<calculator:sickle>, [
-    [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>],
-    [<sonarcore:reinforcedstoneblock>,<extrautils2:sickle_wood>,<sonarcore:reinforcedstoneblock>],
-    [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>]
+recipes.addShaped(<contenttweaker:calculator_screen>, [
+    [<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>],
+    [<ore:cobblestone>,<ore:dustRedstone>,],
+    [<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>]
 ]);
 
-recipes.remove(<calculator:atomicmultiplier>);
-recipes.addShaped(<calculator:atomicmultiplier>, [
-    [<draconicevolution:reactor_core>,<contenttweaker:infinite>,<draconicevolution:reactor_core>],
-    [<draconicevolution:crafting_injector:3>,<calculator:fabricationchamber>, <draconicevolution:crafting_injector:3>],
-    [<ic2:itemreactorrods:14>,<actuallyadditions:block_atomic_reconstructor>,<ic2:itemreactorrods:14>]
+recipes.addShaped(<contenttweaker:atomic_assembly>, [
+    [<contenttweaker:advanced_assembly>,<contenttweaker:atomic_module>,<contenttweaker:advanced_assembly>],
+    [<contenttweaker:atomic_module>,<ore:gemEmerald>,<contenttweaker:atomic_module>],
+    [<contenttweaker:advanced_assembly>,<contenttweaker:atomic_module>,<contenttweaker:advanced_assembly>]
 ]);
 
-recipes.remove(<calculator:calculatorplug>);
-recipes.addShaped(<calculator:calculatorplug>, [
-    [null,<calculator:energymodule>,null],
-    [<calculator:atomicassembly>,<actuallyadditions:block_empowerer>,<calculator:atomicassembly>],
-    [<calculator:material:9>,<calculator:material:9>,<calculator:material:9>]
-]);
-
-recipes.remove(<calculator:calculatorassembly>);
-recipes.addShaped(<calculator:calculatorassembly>, [
+recipes.addShaped(<contenttweaker:calculator_assembly>, [
     [<opencomputers:material:16>,<opencomputers:material:16>,<opencomputers:material:16>],
     [<opencomputers:material:16>,<opencomputers:material:16>,<opencomputers:material:16>],
     [<opencomputers:material:16>,<opencomputers:material:16>,<opencomputers:material:16>]
 ]);
 
-recipes.remove(<calculator:advancedassembly>);
-recipes.addShaped(<calculator:advancedassembly>, [
-    [<calculator:enrichedgoldingot>,<calculator:calculatorassembly>,<calculator:enrichedgoldingot>],
-    [<calculator:calculatorassembly>,<calculator:reinforcedironingot>,<calculator:calculatorassembly>],
-    [<calculator:enrichedgoldingot>,<calculator:calculatorassembly>,<calculator:enrichedgoldingot>]
+recipes.addShaped(<contenttweaker:advanced_assembly>, [
+    [<contenttweaker:enrichedgold_ingot>,<contenttweaker:calculator_assembly>,<contenttweaker:enrichedgold_ingot>],
+    [<contenttweaker:calculator_assembly>,<contenttweaker:reinforcediron_ingot>,<contenttweaker:calculator_assembly>],
+    [<contenttweaker:enrichedgold_ingot>,<contenttweaker:calculator_assembly>,<contenttweaker:enrichedgold_ingot>]
 ]);
 
-recipes.remove(<calculator:atomicmodule>);
-recipes.addShaped(<calculator:atomicmodule>, [
-    [<calculator:largetanzanite>,<calculator:advancedassembly>,<calculator:largetanzanite>],
-    [<calculator:advancedassembly>,<calculator:material:4>,<calculator:advancedassembly>],
-    [<calculator:largetanzanite>,<calculator:advancedassembly>,<calculator:largetanzanite>]
+recipes.addShaped(<contenttweaker:atomic_module>, [
+    [<contenttweaker:large_tanzanite>,<contenttweaker:advanced_assembly>,<contenttweaker:large_tanzanite>],
+    [<contenttweaker:advanced_assembly>,<contenttweaker:weakened_diamond_block>,<contenttweaker:advanced_assembly>],
+    [<contenttweaker:large_tanzanite>,<contenttweaker:advanced_assembly>,<contenttweaker:large_tanzanite>]
 ]);
 
-recipes.remove(<calculator:flawlessassembly>);
-recipes.addShaped(<calculator:flawlessassembly>, [
-    [<calculator:atomicassembly>,<calculator:atomicmodule>,<calculator:atomicassembly>],
-    [<calculator:atomicmodule>,<calculator:material:5>,<calculator:atomicmodule>],
-    [<calculator:atomicassembly>,<calculator:atomicmodule>,<calculator:atomicassembly>]
+recipes.addShaped(<contenttweaker:flawless_assembly>, [
+    [<contenttweaker:atomic_assembly>,<contenttweaker:atomic_module>,<contenttweaker:atomic_assembly>],
+    [<contenttweaker:atomic_module>,<contenttweaker:flawless_block>,<contenttweaker:atomic_module>],
+    [<contenttweaker:atomic_assembly>,<contenttweaker:atomic_module>,<contenttweaker:atomic_assembly>]
 ]);
 
-recipes.remove(<calculator:calculatorlocator>);
-recipes.addShaped(<calculator:calculatorlocator>, [
-    [null,<minecraft:beacon>,null],
-    [<calculator:flawlessassembly>,<calculator:calculatorplug>,<calculator:flawlessassembly>],
-    [<calculator:purifiedobsidian>,<calculator:purifiedobsidian>,<calculator:purifiedobsidian>]
+recipes.addShaped(<contenttweaker:calculator_locator_on_2>, [
+    [null,<environmentaltech:nano_cont_personal_6>,null],
+    [<contenttweaker:flawless_assembly>,<contenttweaker:calculator_plug_base_on>,<contenttweaker:flawless_assembly>],
+    [<contenttweaker:purifiedobsidian>,<contenttweaker:purifiedobsidian>,<contenttweaker:purifiedobsidian>]
 ]);
 
-Empowerer.addRecipe(<calculator:electricdiamond>,<calculator:firediamond>,<redstonearsenal:material:64>,<redstonearsenal:material:64>,<redstonearsenal:material:64>,<redstonearsenal:material:64>, 500, 100);
+recipes.addShaped(<contenttweaker:calculator>, [
+    [<ore:cobblestone>,<contenttweaker:calculator_screen>,<ore:cobblestone>],
+    [<minecraft:stone_button>,<contenttweaker:calculator_assembly>,<minecraft:stone_button>],
+    [<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>]
+]);
 
-<calculator:atomiccalculator>.addTooltip(format.green("Can be placed on a Docking Station."));
+recipes.addShaped(<contenttweaker:scientificcalculator>, [
+    [<contenttweaker:enrichedgold_ingot>,<contenttweaker:calculator_screen>,<contenttweaker:enrichedgold_ingot>],
+    [<sonarcore:reinforcedstoneblock>,<contenttweaker:calculator_assembly>,<sonarcore:reinforcedstoneblock>],
+    [<contenttweaker:enrichedgold_ingot>,<contenttweaker:calculator_assembly>,<contenttweaker:enrichedgold_ingot>]
+]);
+
+recipes.addShaped(<contenttweaker:atomiccalculator>, [
+    [<sonarcore:reinforcedstoneblock>,<contenttweaker:calculator_screen>,<sonarcore:reinforcedstoneblock>],
+    [<ore:gemDiamond>,<contenttweaker:atomic_assembly>,<ore:gemDiamond>],
+    [<sonarcore:reinforcedstoneblock>,<ore:gemDiamond>,<sonarcore:reinforcedstoneblock>]
+]);
+
+recipes.addShaped(<contenttweaker:flawlesscalculator>, [
+    [<contenttweaker:flawlessdiamond>,<contenttweaker:calculator_screen>,<contenttweaker:flawlessdiamond>],
+    [<ore:gemDiamond>,<contenttweaker:flawless_assembly>,<ore:gemDiamond>],
+    [<contenttweaker:flawlessdiamond>,<contenttweaker:enddiamond>,<contenttweaker:flawlessdiamond>]
+]);
+
+recipes.addShaped(<contenttweaker:atomicbinder> * 8, [
+    [null,<sonarcore:reinforcedstoneblock>,null],
+    [<sonarcore:reinforcedstoneblock>,<contenttweaker:enrichedgold>,<sonarcore:reinforcedstoneblock>],
+    [null,<sonarcore:reinforcedstoneblock>,null]
+]);
+
+Empowerer.addRecipe(<contenttweaker:electricdiamondanimate>,<contenttweaker:firediamond>,<redstonearsenal:material:64>,<redstonearsenal:material:64>,<redstonearsenal:material:64>,<redstonearsenal:material:64>, 500, 100);
+
+calc_basic(<contenttweaker:enrichedgold>*4,<ore:ingotGold>,<ore:dustRedstone>);
+calc_basic(<contenttweaker:reinforcediron_ingot>,<ore:ingotIron>,<sonarcore:reinforcedstoneblock>);
+calc_basic(<contenttweaker:enriched_coal>,<minecraft:coal>,<ore:dustRedstone>);
+calc_basic(<contenttweaker:enriched_coal>,<contenttweaker:coal_dust>,<contenttweaker:coal_dust>);
+
+calc_scientific(<contenttweaker:purified_coal>,<contenttweaker:enriched_coal>,<contenttweaker:enrichedgold_ingot>);
+calc_scientific(<contenttweaker:weakeneddiamond>*4,<ore:gemDiamond>,<contenttweaker:reinforcediron_ingot>);
+calc_scientific(<contenttweaker:firecoal>,<contenttweaker:enriched_coal>,<minecraft:lava_bucket>);
+calc_scientific(<contenttweaker:energy_module>,<minecraft:furnace>,<contenttweaker:purified_coal>);
+calc_scientific(<contenttweaker:redstone_ingot>,<ore:ingotIron>,<ore:dustRedstone>);
+
+calc_atomic(<contenttweaker:flawlessdiamond>,<ore:gemDiamond>,<contenttweaker:atomicbinder>,<ore:gemDiamond>);
+calc_atomic(<contenttweaker:firediamond>,<minecraft:blaze_rod>,<contenttweaker:flawlessdiamond>,<minecraft:blaze_rod>);
+calc_atomic(<contenttweaker:enddiamond>,<minecraft:end_stone>,<contenttweaker:electricdiamondanimate>,<minecraft:obsidian>);
+
+calc_flawless(<contenttweaker:purifiedobsidian>,<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>);
+calc_flawless(<contenttweaker:controlled_fuel>,<contenttweaker:circuit8>,<contenttweaker:enriched_coal>,<contenttweaker:enriched_coal>,<contenttweaker:circuit8>);
+
+recipes.addShapeless(<contenttweaker:coal_dust>*2, [<contenttweaker:enriched_coal>]);
+
+Centrifuge.addRecipe([(<contenttweaker:enrichedgold_ingot> * 4) % 100, (<contenttweaker:small_stone> * 2) % 100], <minecraft:gold_ore>, null, 2000);
+Centrifuge.addRecipe([(<contenttweaker:reinforcediron_ingot> * 4) % 100, (<contenttweaker:small_stone> * 2) % 100], <minecraft:iron_ore>, null, 2000);
+
+Centrifuge.addRecipe([<contenttweaker:large_amethyst> % 100, <contenttweaker:shard_amethyst> % 100], <forestry:resource_storage>, null, 2000);
+Centrifuge.addRecipe([<contenttweaker:small_amethyst> % 100, <contenttweaker:shard_amethyst> % 100], <forestry:apatite>, null, 2000);
+
+Centrifuge.addRecipe([<contenttweaker:large_tanzanite> % 100, <contenttweaker:shard_tanzanite> % 100], <minecraft:lapis_block>, null, 2000);
+Centrifuge.addRecipe([<contenttweaker:small_tanzanite> % 100, <contenttweaker:shard_tanzanite> % 100], <minecraft:dye:4>, null, 2000);
+
+Centrifuge.addRecipe([(<contenttweaker:weakeneddiamond> * 4) % 100, (<minecraft:dye:4> * 2) % 100], <minecraft:diamond>, null, 2000);
+Centrifuge.addRecipe([(<contenttweaker:redstone_ingot> * 2) % 100, (<contenttweaker:small_stone> * 2) % 100], <minecraft:redstone>, null, 2000);
+
+Extractor.addRecipe(<contenttweaker:circuit8_dirty>, <appliedenergistics2:material:5>);
+Transposer.addFillRecipe(<contenttweaker:circuit8_damaged>, <contenttweaker:circuit8_dirty>, <liquid:water>*100, 300);
+Compressor.addRecipe(<contenttweaker:circuit8>,<contenttweaker:circuit8_damaged>);
+
+var mapBlock as IItemStack[IItemStack] = {
+    <contenttweaker:electric_diamond_block> : <contenttweaker:electricdiamondanimate>,
+    <contenttweaker:enriched_gold_block> : <contenttweaker:enrichedgold_ingot>,
+    <contenttweaker:amethyst_block> : <contenttweaker:large_amethyst>,
+    <contenttweaker:end_diamond_block> : <contenttweaker:enddiamond>,
+    <contenttweaker:flawless_fire_block> : <contenttweaker:firediamond>,
+    <contenttweaker:tanzanite_block> : <contenttweaker:large_tanzanite>,
+    <contenttweaker:redstone_ingot_block> : <contenttweaker:redstone_ingot>,
+    <contenttweaker:weakened_diamond_block> : <contenttweaker:weakeneddiamond>,
+    <contenttweaker:flawless_block> : <contenttweaker:flawlessdiamond>,
+    <contenttweaker:reinforced_iron_block> : <contenttweaker:reinforcediron_ingot>,
+    <contenttweaker:large_tanzanite> : <contenttweaker:small_tanzanite>,
+    <contenttweaker:small_tanzanite> : <contenttweaker:shard_tanzanite>,
+    <contenttweaker:large_amethyst> : <contenttweaker:small_amethyst>,
+    <contenttweaker:small_amethyst> : <contenttweaker:shard_amethyst>,
+};
+
+for block, item in mapBlock {
+    recipes.addShapeless(item * 9, [block]);
+    recipes.addShaped(block, [
+        [item,item,item],
+        [item,item,item],
+        [item,item,item]
+    ]);
+}
+
+furnace.setFuel(<contenttweaker:controlled_fuel>,80000);
+furnace.setFuel(<contenttweaker:purified_coal>,10000);
+furnace.setFuel(<contenttweaker:firecoal>,25000);
+furnace.setFuel(<contenttweaker:enriched_coal>,5000);
+furnace.setFuel(<contenttweaker:coal_dust>,1000);
