@@ -23,6 +23,8 @@ import scripts.functions.findFirstItemFromMod;
 import mods.astralsorcery.Altar;
 import mods.jei.JEI;
 
+JEI.removeAndHide(<projecte:dm_pedestal>);
+
 recipes.remove(<projecte:item.pe_philosophers_stone>);
 Altar.addTraitAltarRecipe("philo_stone",<projecte:item.pe_philosophers_stone>, 4500, 12000, [
     <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}).noReturn(),<draconicevolution:chaotic_core>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}).noReturn(),

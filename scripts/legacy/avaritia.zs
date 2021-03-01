@@ -54,15 +54,26 @@ SagMill.removeRecipe(<minecraft:bedrock>);
 SagMill.addRecipe([<minecraft:bedrock>,<avaritia:resource:2>], [100,100], <minecraft:bedrock>, "NONE", 1000);
 
 recipes.remove(<avaritia:extreme_crafting_table>);
-Altar.addConstellationAltarRecipe("dire_table",<avaritia:extreme_crafting_table>, 2000, 1000, [
+Altar.addTraitAltarRecipe("dire_table",<avaritia:extreme_crafting_table>, 2000, 1000, [
     <draconicevolution:fusion_crafting_core>,<appliedenergistics2:material:34>,<draconicevolution:fusion_crafting_core>,
     <appliedenergistics2:material:34>,<avaritia:double_compressed_crafting_table>,<appliedenergistics2:material:34>,
     <draconicevolution:fusion_crafting_core>,<appliedenergistics2:material:34>,<draconicevolution:fusion_crafting_core>,
     <avaritia:block_resource:2>,<avaritia:block_resource:2>,<avaritia:block_resource:2>,
     <avaritia:block_resource:2>,<avaritia:block_resource:2>,<avaritia:block_resource:2>,
     <avaritia:block_resource:2>,<avaritia:block_resource:2>,<avaritia:block_resource:2>,
-    <avaritia:block_resource:2>,<avaritia:block_resource:2>,<avaritia:block_resource:2>
-]);
+    <avaritia:block_resource:2>,<avaritia:block_resource:2>,<avaritia:block_resource:2>,
+    <avaritia:block_resource:2>,<avaritia:block_resource:2>,<avaritia:block_resource:2>,
+    <avaritia:block_resource:2>,
+    // Outer Items
+    <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,
+    <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,
+    <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,
+    <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,
+    <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,
+    <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,
+    <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,
+    <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>
+], "astralsorcery.constellation.alcara");
 
 ExtremeCrafting.remove(<avaritia:infinity_pickaxe>);
 ExtremeCrafting.addShaped("infinity_pickaxe",<avaritia:infinity_pickaxe>, [

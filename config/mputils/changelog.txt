@@ -1,5 +1,19 @@
 # Zerblands-Remastered
 
+## v2.1.1 - clean up
+
+- updated CraftTweaker
+- updated Energy Control
+
+- changed extreme crafting table recipe
+- fixed calculator screen recipe
+- fixed chisels and bits mining level
+- fixed dark ore processing
+- fixed some emc values
+- fixed missing localizations
+- fixed missing quest reward
+- fixed villager blood amount in woot farms
+
 ## v2.1.0 - calculator overhaul
 
 - removed Calculator

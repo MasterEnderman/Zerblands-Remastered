@@ -43,7 +43,7 @@ recipes.addShaped(<contenttweaker:calculator_plug_base_on>, [
 
 recipes.addShaped(<contenttweaker:calculator_screen>, [
     [<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>],
-    [<ore:cobblestone>,<ore:dustRedstone>,],
+    [<ore:cobblestone>,<ore:dustRedstone>,<ore:cobblestone>],
     [<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>]
 ]);
 

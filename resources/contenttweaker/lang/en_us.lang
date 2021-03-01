@@ -92,3 +92,4 @@ tile.earthworks.block_gabion_falling_sand.name=Sand Gabion
 tile.earthworks.block_gabion_falling_gravel.name=Gravel Gabion
 tile.glow.name=Ember Light
 tile.conjured.name=Conjured Light
+tile.draconicevolution:placed_item.name=Placed Item

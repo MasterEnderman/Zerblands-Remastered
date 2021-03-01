@@ -78,6 +78,13 @@ recipes.addShaped(<ic2:itemcrop> * 2, [
     [<immersiveengineering:material>,<immersiveengineering:material>]
 ]);
 
+recipes.remove(<ic2:itemmisc:264>);
+recipes.addShaped(<ic2:itemmisc:264>,[
+    [<ic2:itemmisc:263>,<ic2:itemmisc:257>,<ic2:itemmisc:263>],
+    [<ic2:itemmisc:257>,<ic2:itemmisc:108>,<ic2:itemmisc:257>],
+    [<ic2:itemmisc:263>,<ic2:itemmisc:257>,<ic2:itemmisc:263>]
+]);
+
 var te_cell as IItemStack = <thermalexpansion:cell>.withTag({Recv: 25000, RSControl: 0 as byte, Facing: 4 as byte, Creative: 1 as byte, Energy: 50000000, Level: 4 as byte, SideCache: [2, 2, 2, 2, 2, 2] as byte[] as byte[], Send: 25000});
 
 Empowerer.addRecipe(<ic2:blockelectric:4>, <ic2:blockelectric:5>, te_cell, te_cell, te_cell, te_cell, 50000, 1000);
