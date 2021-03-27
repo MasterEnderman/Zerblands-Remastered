@@ -73,7 +73,7 @@ Altar.addTraitAltarRecipe("dire_table",<avaritia:extreme_crafting_table>, 2000, 
     <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,
     <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,
     <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>
-], "astralsorcery.constellation.alcara");
+], "astralsorcery.constellation.horologium");
 
 ExtremeCrafting.remove(<avaritia:infinity_pickaxe>);
 ExtremeCrafting.addShaped("infinity_pickaxe",<avaritia:infinity_pickaxe>, [

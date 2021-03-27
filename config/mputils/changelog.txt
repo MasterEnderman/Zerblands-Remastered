@@ -1,5 +1,17 @@
 # Zerblands-Remastered
 
+## v2.1.2 - bug fixes
+
+- updated CraftTweaker
+- updated Embers Rekindled
+- updated Energy Control
+- updated Immersive Technology
+- updated MysticalLib
+- updated UniDict
+
+- fixed astral constellation for extreme crafting table
+- fixed villager blood amount in woot farms
+
 ## v2.1.1 - clean up
 
 - updated CraftTweaker

@@ -1,0 +1,82 @@
+{
+	x: -4.5d,
+	y: 3.5d,
+	description: "The last riddle...",
+	text: [
+		"You crawl over the burning floor, catch fire yourself, rise the weakest sword with the holy symbol in your arms and knock against the wooden construct that can be found next to the mine."
+	],
+	dependencies: [
+		"1f8f87fd"
+	],
+	tasks: [{
+		uid: "691b1bc1",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "extrautils2:lawsword",
+			tag: {
+				ench: [{
+					lvl: 10,
+					id: 16
+				},
+				{
+					lvl: 10,
+					id: 21
+				},
+				{
+					lvl: 10,
+					id: 40
+				},
+				{
+					lvl: 10,
+					id: 63
+				},
+				{
+					lvl: 10,
+					id: 46
+				},
+				{
+					lvl: 1,
+					id: 27
+				}],
+				display: {
+					Lore: [
+						"You shouldn't be able to obtain this Sword.",
+						"Now you're cursed for eternity!"
+					],
+					Name: "§5Saijo O Wazamono Grade Black Sword Yuro (黒刀)"
+				},
+				AttributeModifiers: [{
+					UUIDMost: 74862,
+					UUIDLeast: 928711,
+					Amount: 2,
+					AttributeName: "generic.movementSpeed",
+					Operation: 2,
+					Name: "generic.movementSpeed"
+				}]
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e31c4b15",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem",
+		count: 64
+	},
+	{
+		uid: "8abbff4c",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem",
+		count: 64
+	},
+	{
+		uid: "53e662e6",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem",
+		count: 64
+	}]
+}
