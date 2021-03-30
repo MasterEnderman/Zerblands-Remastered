@@ -117,7 +117,7 @@
                 "type": "quit"
             }
         },
-        "youtube": {
+        "bisecthosting": {
             "text": " ",
             "pressSound": "minecraft:block.portal.ambient",
             "posX": -60,
@@ -127,10 +127,10 @@
             "imageWidth": 356,
             "imageHeight": 355,
             "alignment": "bottom_right",
-            "texture": "zerblands:mainmenu/youtube.png",
+            "texture": "zerblands:mainmenu/bisect.png",
             "action": {
                 "type": "openLink",
-                "link": "https://www.youtube.com/user/xxmasterendermanxx"
+                "link": "https://bisecthosting.com/masterenderman"
             }
         },
         "discord": {

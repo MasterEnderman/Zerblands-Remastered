@@ -1,5 +1,12 @@
 # Zerblands-Remastered
 
+## v2.1.3 - partnership
+
+- updated Energy Control
+- updated Lazy AE2
+
+- tweaked main menu
+
 ## v2.1.2 - bug fixes
 
 - updated CraftTweaker
