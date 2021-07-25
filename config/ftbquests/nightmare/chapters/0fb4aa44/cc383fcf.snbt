@@ -1,0 +1,16 @@
+{
+	x: -1.5d,
+	y: -3.5d,
+	dependencies: [
+		"612dc5c4",
+		"98d759cc",
+		"b064e2d7"
+	],
+	tasks: [{
+		uid: "e376a413",
+		type: "item",
+		items: [{
+			item: "forestry:phosphor"
+		}]
+	}]
+}

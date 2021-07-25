@@ -30,6 +30,8 @@ import mods.tconstruct.Casting;
 
 var survival_generator as IItemStack = <extrautils2:machine>.withTag({Type: "extrautils2:generator_survival"});
 var furnace_generator as IItemStack = <extrautils2:machine>.withTag({Type: "extrautils2:generator"});
+var furnace as IItemStack = <extrautils2:machine>.withTag({Type: "extrautils2:furnace"});
+var crusher as IItemStack = <extrautils2:machine>.withTag({Type: "extrautils2:crusher"});
 
 JEI.removeAndHide(<extrautils2:glasscutter>);
 
@@ -52,6 +54,12 @@ Resonator.add(<extrautils2:ingredients:9>, <contenttweaker:enriched_gold_block>,
 Resonator.remove(<extrautils2:ingredients:13>);
 Resonator.add(<extrautils2:ingredients:13>, <embers:superheater>, 1600, true);
 
+Resonator.remove(<extrautils2:decorativesolid:3>);
+Resonator.add(<extrautils2:decorativesolid:3>, <botania:pavement:1>, 800, false);
+
+recipes.remove(<extrautils2:passivegenerator:1>);
+Resonator.add(<extrautils2:passivegenerator:1>, <extrautils2:passivegenerator>, 1600, false);
+
 recipes.remove(<extrautils2:endershard>);
 ExplosionCrafting.explodeItemRecipe(<extrautils2:endershard> * 8, <minecraft:ender_pearl>);
 
@@ -62,6 +70,33 @@ recipes.addShaped(survival_generator, [
     [<ore:dustRedstone>,furnace_generator,<ore:dustRedstone>]
 ]);
 
+recipes.remove(furnace_generator);
+recipes.addShaped(furnace_generator, [
+    [<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>],
+    [<ore:ingotIron>,<minecraft:furnace>,<ore:ingotIron>],
+    [<ore:dustRedstone>,<rftools:machine_frame>,<ore:dustRedstone>]
+]);
+
+recipes.remove(furnace);
+recipes.addShaped(furnace, [
+    [<minecraft:brick>,<minecraft:brick>,<minecraft:brick>],
+    [<minecraft:brick>,<rftools:machine_frame>,<minecraft:brick>],
+    [<minecraft:brick>,<minecraft:brick>,<minecraft:brick>]
+]);
+
+recipes.remove(crusher);
+recipes.addShaped(crusher, [
+    [<ore:ingotIron>,<minecraft:piston>,<ore:ingotIron>],
+    [<ore:ingotIron>,<rftools:machine_frame>,<ore:ingotIron>],
+    [<ore:ingotIron>,<minecraft:piston>,<ore:ingotIron>]
+]);
+
+recipes.remove(<extrautils2:passivegenerator>);
+recipes.addShaped(<extrautils2:passivegenerator> * 8, [
+    [<forestry:thermionic_tubes:11>,<forestry:thermionic_tubes:11>,<forestry:thermionic_tubes:11>],
+    [<botania:pavement:1>,<immersiveengineering:material:27>,<botania:pavement:1>]
+]);
+
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <extrautils2:ingredients> : [
         [
@@ -70,6 +105,19 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:dustRedstone>,<extrautils2:endershard>,<ore:dustRedstone>]
         ]
     ],
+    <extrautils2:ingredients:1> : [
+        [
+            [null,<extrautils2:ingredients>,null],
+            [<extrautils2:ingredients>,<blood_dynamo:ingredient:2>,<extrautils2:ingredients>],
+            [null,<extrautils2:ingredients>,null]
+        ]
+    ],
+    <extrautils2:passivegenerator:7> : [
+        [
+            [null,<extrautils2:ingredients:1>,null],
+            [<botania:pavement:1>,<immersiveengineering:material:8>,<botania:pavement:1>]
+        ]
+    ]
 };
 
 for key, value in recipeMapShaped {

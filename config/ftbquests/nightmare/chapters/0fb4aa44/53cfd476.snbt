@@ -1,0 +1,22 @@
+{
+	x: 6.5d,
+	y: -6.5d,
+	dependencies: [
+		"ba70abe0",
+		"26791803"
+	],
+	tasks: [{
+		uid: "c5d2a19a",
+		type: "item",
+		items: [{
+			item: "harvestcraft:presser"
+		}]
+	},
+	{
+		uid: "076696e0",
+		type: "item",
+		items: [{
+			item: "harvestcraft:apiary"
+		}]
+	}]
+}

@@ -38,7 +38,7 @@ Empowerer.addRecipe(<draconicevolution:draconium_block>,<tconstruct:metal:2>,<mi
 recipes.addShaped(<draconicevolution:chaos_crystal>, [
     [<draconicevolution:chaotic_core>,<contenttweaker:ender_token>,<draconicevolution:chaotic_core>],
     [<abyssalcraft:odb>,<abyssalcraft:odb>,<abyssalcraft:odb>],
-    [<draconicevolution:crafting_injector:3>,<draconicevolution:crafting_injector:3>,<draconicevolution:crafting_injector:3>]
+    [<draconicevolution:crafting_injector:3>,<draconicadditions:chaos_crystal_stable>.withTag({isStable: 1 as byte}),<draconicevolution:crafting_injector:3>]
 ]);
 
 recipes.remove(<draconicevolution:crafting_injector>);

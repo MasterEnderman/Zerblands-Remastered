@@ -1,0 +1,15 @@
+{
+	x: 7.5d,
+	y: -5.5d,
+	dependencies: [
+		"52f89ce3",
+		"b345d802"
+	],
+	tasks: [{
+		uid: "c4bc8fb6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:enrichedgold_ingot"
+		}]
+	}]
+}

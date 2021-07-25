@@ -1,0 +1,14 @@
+{
+	x: -3.5d,
+	y: -2.5d,
+	dependencies: [
+		"97616504"
+	],
+	tasks: [{
+		uid: "a517aaef",
+		type: "item",
+		items: [{
+			item: "contenttweaker:electrotine_dust"
+		}]
+	}]
+}

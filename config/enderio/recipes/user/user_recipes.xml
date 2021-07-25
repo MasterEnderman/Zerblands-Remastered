@@ -1,4 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
 
+    <recipe name="Alloy: Nethercotta" disabled="true" />
+
+    <recipe name="Sagmill: Log" required="false">
+        <sagmilling energy="2400">
+            <input name="logWood" />
+            <output name="dustWood" />
+            <output name="dustWood" chance="0.9" />
+            <output name="dustWood" chance="0.5" />
+            <output name="dustWood" chance="0.1" />
+        </sagmilling>
+    </recipe>
+    <recipe name="Sagmill: Plank" required="false">
+        <sagmilling energy="1200">
+            <input name="plankWood" />
+            <output name="dustWood" chance="0.9" />
+        </sagmilling>
+    </recipe>
+    <recipe name="Sagmill: Stairs" required="false">
+        <sagmilling energy="1200">
+            <input name="stairsWood" />
+            <output name="dustWood" chance="0.8" />
+        </sagmilling>
+    </recipe>
+    <recipe name="Sagmill: Stair" required="false">
+        <sagmilling energy="1200">
+            <input name="stairWood" />
+            <output name="dustWood" chance="0.8" />
+        </sagmilling>
+    </recipe>
+    <recipe name="Sagmill: Slab" required="false">
+        <sagmilling energy="1200">
+            <input name="slabWood" />
+            <output name="dustWood" chance="0.7" />
+        </sagmilling>
+    </recipe>
+    <recipe name="Sagmill: Stick" required="false">
+        <sagmilling energy="800">
+            <input name="stickWood" />
+            <output name="dustWood" chance="0.15" />
+        </sagmilling>
+    </recipe>
+
+    <recipe name="Sagmill: ClayBlock" required="true" disabled="true">
+        <sagmilling energy="2400">
+            <input name="minecraft:clay" />
+            <output name="minecraft:clay_ball" amount="2" />
+            <output name="minecraft:clay_ball" chance="0.1" />
+            <output name="itemSilicon" amount="2" chance="0.8" />
+        </sagmilling>
+    </recipe>
+    <recipe name="Sagmill: oreRedstone Ore" required="true" disabled="true">
+        <sagmilling energy="3600">
+            <input name="oreRedstone" />
+            <output name="dustRedstone" amount="8" />
+            <output name="dustRedstone" chance="0.2" />
+            <output name="itemSilicon" chance="0.8" />
+            <output name="oredict:cobblestone" chance="0.15" />
+        </sagmilling>
+    </recipe>
+    <recipe name="Sagmill: Silicon" required="true" disabled="true">
+        <sagmilling energy="720">
+            <input name="oredict:sand" />
+            <output name="itemSilicon" chance="0.5" />
+        </sagmilling>
+    </recipe>
 </enderio:recipes>

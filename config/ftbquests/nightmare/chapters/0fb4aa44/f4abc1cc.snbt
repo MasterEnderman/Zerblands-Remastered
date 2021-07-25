@@ -1,0 +1,15 @@
+{
+	x: 6.5d,
+	y: -7.5d,
+	dependencies: [
+		"26791803",
+		"09a85efe"
+	],
+	tasks: [{
+		uid: "4072af7b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:reinforcediron_ingot"
+		}]
+	}]
+}

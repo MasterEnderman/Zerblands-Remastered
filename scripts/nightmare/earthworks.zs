@@ -26,7 +26,7 @@ recipes.removeShapeless(<earthworks:block_mud>);
 recipes.removeShapeless(<earthworks:block_cob>);
 
 recipes.removeByRecipeName("earthworks:block_dry_stone");
-furnace.addRecipe(<earthworks:block_dry_stone>, <minecraft:stone>);
+furnace.addRecipe(<earthworks:block_dry_stone>,<extrautils2:decorativesolid:2>);
 
 recipes.remove(<earthworks:item_mud>);
 FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<earthworks:item_dirt>], false);
@@ -34,3 +34,10 @@ FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<contenttweaker:so
 
 recipes.remove(<earthworks:item_slaked_lime>);
 FluidToItem.transform(<earthworks:item_slaked_lime>, <liquid:water>, [<earthworks:item_quicklime>], false);
+
+recipes.remove(<earthworks:item_timber>);
+recipes.addShaped(<earthworks:item_timber> * 4, [
+    [<ore:stickWood>,<bibliocraft:framingboard>,<ore:stickWood>],
+    [<ore:stickWood>,<bibliocraft:framingsheet>,<ore:stickWood>],
+    [<ore:stickWood>,<bibliocraft:framingboard>,<ore:stickWood>]
+]);

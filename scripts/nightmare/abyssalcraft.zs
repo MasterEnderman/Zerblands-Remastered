@@ -58,6 +58,23 @@ for key, value in recipeMapShaped {
     recipes.addShaped("ct_"+toString(key), key, value);
 }
 
+recipes.remove(<abyssalcraft:necronomicon>);
+Altar.addAttunementAltarRecipe("necronomicon", <abyssalcraft:necronomicon>, 500, 800, [
+	<evilcraft:dark_power_gem>,
+	<xreliquary:salamander_eye>,
+	<evilcraft:dark_power_gem>,
+	<xreliquary:salamander_eye>,
+	<minecraft:book>,
+	<xreliquary:salamander_eye>,
+	<evilcraft:dark_power_gem>,
+	<xreliquary:salamander_eye>,
+	<evilcraft:dark_power_gem>,
+	<xreliquary:mob_ingredient:6>,
+	<xreliquary:mob_ingredient:6>,
+	<xreliquary:mob_ingredient:6>,
+	<xreliquary:mob_ingredient:6>
+]);
+
 Transposer.addFillRecipe(<abyssalcraft:coralium>, <botania:manaresource:1>, <liquid:colour_out_of_space>*250, 2048);
 
 recipes.remove(<abyssalcraft:gatewaykey>);
@@ -68,26 +85,26 @@ AlchemyTable.addRecipe(<abyssalcraft:gatewaykey>, [
 
 game.setLocalization("asorahGatewayKey.desc","This Recipe was changed in this Packmode!");
 Rituals.modifyRitualOfferings("asorahGatewayKey", [
-	<abyssalcraft:eoa>,
-	<enderio:item_alloy_ingot:7>,
+	<abyssalcraft:psdl>,
+	<botania:manaresource:4>,
 	<abyssalcraft:ingotblock:1>,
-	<enderio:item_alloy_ingot:7>,
+	<botania:manaresource:4>,
 	<abyssalcraft:eoa>,
-	<enderio:item_alloy_ingot:7>,
+	<botania:manaresource:4>,
 	<abyssalcraft:ingotblock:1>,
-	<enderio:item_alloy_ingot:7>
+	<botania:manaresource:4>
 ]);
 
 game.setLocalization("summonAsorah.desc","This Recipe was changed in this Packmode!");
 Rituals.modifyRitualOfferings("summonAsorah", [
-	<scalinghealth:heartcontainer>,
-	<enderutilities:enderpart:12>,
+	<contenttweaker:malignant_heart>,
+	<xreliquary:salamander_eye>,
 	<abyssalcraft:skin>,
+	<xreliquary:infernal_claws>,
 	<abyssalcraft:skin>,
-	<evilcraft:corrupted_tear>,
-	<evilcraft:corrupted_tear>,
-	<abyssalcraft:platec>,
-	<abyssalcraft:platec>
+	<xreliquary:infernal_claws>,
+	<abyssalcraft:skin>,
+	<xreliquary:salamander_eye>
 ]);
 
 game.setLocalization("altarOfChagarothTop.desc","This Recipe was changed in this Packmode!");
@@ -103,7 +120,7 @@ Rituals.modifyRitualOfferings("altarOfChagarothTop", [
 ]);
 
 game.setLocalization("altarOfChagarothBottom.desc","This Recipe was changed in this Packmode!");
-mods.abyssalcraft.Rituals.modifyRitualOfferings("altarOfChagarothBottom", [
+Rituals.modifyRitualOfferings("altarOfChagarothBottom", [
 	<abyssalcraft:dreadshard>,
 	<abyssalcraft:ingotblock:2>,
 	<abyssalcraft:ingotblock>,

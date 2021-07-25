@@ -49,7 +49,7 @@ Altar.addDiscoveryAltarRecipe("alchemy_table", <bloodmagic:alchemy_table>, 200, 
 ]);
 
 recipes.remove(<bloodmagic:altar>);
-Altar.addAttunmentAltarRecipe("bloodmagic_altar", <bloodmagic:altar>, 1000, 800, [
+Altar.addAttunementAltarRecipe("bloodmagic_altar", <bloodmagic:altar>, 1000, 800, [
 	<abyssalcraft:dreadiumingot>,
 	<bloodmagic:monster_soul>,
 	<abyssalcraft:dreadiumingot>,
@@ -66,7 +66,7 @@ Altar.addAttunmentAltarRecipe("bloodmagic_altar", <bloodmagic:altar>, 1000, 800,
 ]);
 
 BloodAltar.removeRecipe(<minecraft:stone>);
-BloodAltar.addRecipe(<bloodmagic:slate>, <ic2:itemmisc:256>, 0, 1000,5,5);
+BloodAltar.addRecipe(<bloodmagic:slate>, <contenttweaker:rune_blank>, 0, 1000,5,5);
 
 BloodAltar.removeRecipe(<minecraft:diamond>);
 

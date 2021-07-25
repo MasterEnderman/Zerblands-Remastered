@@ -14,12 +14,6 @@ The Awakened Draconium Blocks are consumed in the stabilization process. (Keep a
 You start the process by throwing your item towards the **Chaos Stabilizer Core**.
 ![Chaos Stabilizer](chaotic.png)
 
-## EnderIO
-
-Currently the Experience Obelisk doesn't work on servers.
-The issue is already known since december 2020.
-[-> Github](https://github.com/SleepyTrousers/EnderIO/issues/5487)
-
 ## Not Enough Wands
 
 Currently the Potion Wand doesn't work.

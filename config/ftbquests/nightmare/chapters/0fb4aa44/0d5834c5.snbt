@@ -1,0 +1,19 @@
+{
+	x: -3.5d,
+	y: -1.5d,
+	dependencies: [
+		"bec66e2c"
+	],
+	tasks: [{
+		uid: "49781a78",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "abyssalcraft:transmutationgem"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

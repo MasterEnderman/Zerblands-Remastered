@@ -22,6 +22,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
 
+recipes.remove(<rftools:machine_frame>);
 Empowerer.addRecipe(<rftools:machine_frame>, <actuallyadditions:block_misc:9>,
     <actuallyadditions:item_crystal_empowered:1>, <immersiveengineering:material:27>,
     <actuallyadditions:item_crystal_empowered:1>, <thermalfoundation:material:288>,

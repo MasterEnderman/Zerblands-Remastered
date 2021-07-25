@@ -21,7 +21,11 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
+import mods.enderio.AlloySmelter;
+import mods.enderio.SagMill;
+import mods.ic2.Extractor;
 import mods.ic2.Macerator;
+import mods.immersiveengineering.MetalPress;
 import mods.jei.JEI;
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.InductionSmelter;
@@ -35,6 +39,9 @@ recipes.remove(<appliedenergistics2:storage_cell_16k>);
 recipes.remove(<appliedenergistics2:storage_cell_64k>);
 recipes.remove(<appliedenergistics2:view_cell>);
 
+recipes.remove(<appliedenergistics2:part:120>);
+Extractor.addRecipe(<appliedenergistics2:part:120>, findFirstItemFromMod("thermalfoundation","ingot","invar"));
+
 recipes.remove(<appliedenergistics2:network_tool>);
 recipes.addShapeless(<appliedenergistics2:network_tool>, [
     <appliedenergistics2:part:180>,<appliedenergistics2:material:23>,
@@ -45,6 +52,11 @@ Macerator.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:mater
 
 recipes.remove(<appliedenergistics2:light_detector>);
 Casting.addTableRecipe(<appliedenergistics2:light_detector>, <ore:dustCertusQuartz>, <liquid:glass>, 1000, true, 200);
+
+SagMill.removeRecipe(<minecraft:clay>);
+furnace.remove(<appliedenergistics2:material:5>);
+MetalPress.addRecipe(<appliedenergistics2:material:5> * 8, <contenttweaker:silicon_boule>, <immersiveengineering:mold:7>, 2048);
+Extractor.addRecipe(<appliedenergistics2:part:5> * 16, <contenttweaker:silicon_boule>);
 
 var recipeMapShaped as IIngredient[][][IItemStack] = {
     <appliedenergistics2:crafting_unit>	: [
@@ -162,7 +174,17 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     	[<ore:plateSteel>,<appliedenergistics2:chest>,<ore:plateSteel>],
     	[<appliedenergistics2:part:16>,<opencomputers:material:21>,<appliedenergistics2:part:16>],
     	[<ore:plateSteel>,<appliedenergistics2:material:24>,<ore:plateSteel>]
-    ]
+    ],
+	<appliedenergistics2:certus_quartz_cutting_knife> : [
+		[null,null,<ore:stickTreatedWood>],
+		[<contenttweaker:reinforcediron_ingot>,<ore:stickTreatedWood>,null],
+		[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,null]
+	],
+	<appliedenergistics2:nether_quartz_cutting_knife> : [
+		[null,null,<ore:stickTreatedWood>],
+		[<contenttweaker:reinforcediron_ingot>,<ore:stickTreatedWood>,null],
+		[<ore:gemQuartz>,<ore:gemQuartz>,null]
+	]
 };
 
 for key, value in recipeMapShaped {

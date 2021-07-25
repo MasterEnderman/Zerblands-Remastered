@@ -26,35 +26,35 @@ import mods.astralsorcery.Altar;
 <psi:cad_assembly:1>.displayName = "Lumium CAD Assembly";
 
 recipes.remove(<psi:programmer>);
-Altar.addAttunmentAltarRecipe("psi_programmer", <psi:programmer>, 500, 800, [
-	<actuallyadditions:block_crystal:3>,
-	<actuallyadditions:block_crystal:3>,
-	<actuallyadditions:block_crystal:3>,
+Altar.addAttunementAltarRecipe("psi_programmer", <psi:programmer>, 500, 800, [
+	<actuallyadditions:item_crystal:3>,
+	<avaritia:double_compressed_crafting_table>,
+	<actuallyadditions:item_crystal:3>,
 	<thermalfoundation:material:160>,
 	<botania:autocraftinghalo>,
 	<thermalfoundation:material:160>,
 	<thermalfoundation:material:160>,
 	<botania:craftinghalo>,
 	<thermalfoundation:material:160>,
-	<enderio:item_material:11>,
-	<enderio:item_material:11>,
+	<botania:managlass>,
+	<botania:managlass>,
 	<thermalfoundation:material:160>,
 	<thermalfoundation:material:160>
 ]);
 
 recipes.remove(<psi:cad_assembler>);
-Altar.addAttunmentAltarRecipe("psi_cad_assembler", <psi:cad_assembler>, 500, 800, [
-	<actuallyadditions:block_crystal:3>,
-	<actuallyadditions:block_crystal:3>,
-	<actuallyadditions:block_crystal:3>,
-	<opencomputers:material:4>,
+Altar.addAttunementAltarRecipe("psi_cad_assembler", <psi:cad_assembler>, 500, 800, [
+	<actuallyadditions:item_crystal:3>,
+	<avaritia:double_compressed_crafting_table>,
+	<actuallyadditions:item_crystal:3>,
+	<embers:archaic_circuit>,
 	<blood_dynamo:ingredient:2>,
-	<opencomputers:material:4>,
+	<embers:archaic_circuit>,
 	<thermalfoundation:material:160>,
 	<thermalfoundation:material:160>,
 	<thermalfoundation:material:160>,
-	<actuallyadditions:block_crystal:3>,
-	<actuallyadditions:block_crystal:3>,
+	<enderio:item_material:11>,
+	<enderio:item_material:11>,
 	<thermalfoundation:material:160>,
 	<thermalfoundation:material:160>
 ]);

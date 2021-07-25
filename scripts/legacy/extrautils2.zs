@@ -25,14 +25,6 @@ import mods.extrautils2.Resonator;
 import mods.thermalexpansion.Transposer;
 import mods.jei.JEI;
 
-JEI.removeAndHide(<extrautils2:bagofholding>);
-JEI.removeAndHide(<extrautils2:itembuilderswand>);
-JEI.removeAndHide(<extrautils2:miner>);
-JEI.removeAndHide(<extrautils2:indexerremote>);
-JEI.removeAndHide(<extrautils2:chunkloader>);
-JEI.removeAndHide(<extrautils2:crafter>);
-JEI.removeAndHide(<extrautils2:analogcrafter>);
-
 Resonator.remove(<extrautils2:ingredients:4>);
 Resonator.add(<extrautils2:ingredients:4>, <evilcraft:blood_waxed_coal>, 1600, true);
 

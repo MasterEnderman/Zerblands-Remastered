@@ -1,0 +1,14 @@
+{
+	x: 6.5d,
+	y: -5.5d,
+	dependencies: [
+		"f5d34d78"
+	],
+	tasks: [{
+		uid: "3c9c8b72",
+		type: "item",
+		items: [{
+			item: "sonarcore:reinforcedstoneblock"
+		}]
+	}]
+}

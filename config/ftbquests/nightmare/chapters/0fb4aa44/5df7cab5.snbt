@@ -1,0 +1,20 @@
+{
+	x: -1.5d,
+	y: -9.5d,
+	dependencies: [
+		"3fe13350"
+	],
+	tasks: [{
+		uid: "79cc68cf",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "evilcraft:blood_extractor",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

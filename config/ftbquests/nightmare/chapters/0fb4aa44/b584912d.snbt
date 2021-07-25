@@ -1,0 +1,14 @@
+{
+	x: -3.5d,
+	y: -7.5d,
+	dependencies: [
+		"846e17e8"
+	],
+	tasks: [{
+		uid: "883cb79c",
+		type: "item",
+		items: [{
+			item: "minecraft:bucket"
+		}]
+	}]
+}

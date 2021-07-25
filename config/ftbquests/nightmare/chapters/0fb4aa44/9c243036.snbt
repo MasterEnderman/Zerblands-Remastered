@@ -1,21 +1,15 @@
 {
-	x: 3.0d,
-	y: -2.5d,
+	x: 0.5d,
+	y: -5.5d,
 	dependencies: [
-		"ba70abe0"
+		"ba70abe0",
+		"508a9727"
 	],
 	tasks: [{
-		uid: "9659efb6",
+		uid: "ea38ee8c",
 		type: "item",
 		items: [{
-			item: "calculator:powercube"
-		}]
-	},
-	{
-		uid: "7549cb38",
-		type: "item",
-		items: [{
-			item: "calculator:wrench"
+			item: "extrautils2:machine"
 		}]
 	}]
 }

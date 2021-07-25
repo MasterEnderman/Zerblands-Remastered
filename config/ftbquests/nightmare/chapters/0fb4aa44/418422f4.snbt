@@ -1,20 +1,19 @@
 {
-	x: 7.0d,
-	y: -3.5d,
+	x: 3.5d,
+	y: -8.5d,
 	dependencies: [
 		"d2624452",
 		"508a9727",
 		"98d759cc"
 	],
 	tasks: [{
-		uid: "5e6b656b",
+		uid: "363e0a2a",
 		type: "item",
 		items: [{
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
-			id: "calculator:scientificcalculator",
-			tag: {}
+			id: "contenttweaker:scientificcalculator"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

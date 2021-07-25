@@ -1,0 +1,15 @@
+{
+	x: 1.5d,
+	y: -5.5d,
+	dependencies: [
+		"bec66e2c",
+		"d147ad28"
+	],
+	tasks: [{
+		uid: "cd44a2ff",
+		type: "item",
+		items: [{
+			item: "embers:ancient_motive_core"
+		}]
+	}]
+}

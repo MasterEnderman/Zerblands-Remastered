@@ -1,3 +1,30 @@
 {
-  "materialMappings": {}
+  "materialMappings": {
+    "battery_alloy_plate": 10,
+    "soldering_alloy_molten": 17,
+    "soldering_alloy_nugget": 19,
+    "antimony_block": 1,
+    "soldering_alloy_block": 18,
+    "battery_alloy_dust": 9,
+    "styrene_butadiene_rubber_molten": 22,
+    "battery_alloy_block": 6,
+    "red_alloy_wire": 16,
+    "battery_alloy_nugget": 7,
+    "red_alloy_block": 12,
+    "battery_alloy_molten": 5,
+    "red_alloy_nugget": 13,
+    "styrene_butadiene_rubber_plate": 23,
+    "red_alloy_molten": 11,
+    "soldering_alloy_ingot": 20,
+    "soldering_alloy_dust": 21,
+    "antimony_ingot": 3,
+    "battery_alloy_ingot": 8,
+    "antimony_dust": 4,
+    "red_alloy_plate": 24,
+    "red_alloy_dust": 15,
+    "antimony_nugget": 2,
+    "red_alloy_ingot": 14,
+    "antimony_molten": 0,
+    "apatite_dust": 25
+  }
 }

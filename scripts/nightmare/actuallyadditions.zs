@@ -23,9 +23,15 @@ import scripts.functions.findFirstItemFromMod;
 import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Crusher;
 import mods.actuallyadditions.Empowerer;
+import mods.astralsorcery.Altar;
 import mods.immersiveengineering.Crusher as IECrusher;
 import mods.immersiveengineering.Mixer;
+import mods.jei.JEI;
 import mods.thermalexpansion.Pulverizer;
+
+JEI.removeAndHide(<actuallyadditions:block_grinder>);
+JEI.removeAndHide(<actuallyadditions:block_grinder_double>);
+JEI.removeAndHide(<actuallyadditions:block_furnace_double>);
 
 <actuallyadditions:item_misc:19>.displayName = "Dragon Star";
 
@@ -78,6 +84,11 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
         [<immersiveengineering:material:4>,<actuallyadditions:item_misc:2>],
         [<actuallyadditions:item_misc:3>,<immersiveengineering:material:4>]
     ],
+    <actuallyadditions:block_misc:4> : [
+        [<tconstruct:pattern>,<openmodularturrets:intermediate_tiered:10>,<tconstruct:pattern>],
+        [<openmodularturrets:intermediate_tiered:10>,<ic2:itembarrel>,<openmodularturrets:intermediate_tiered:10>],
+        [<tconstruct:pattern>,<openmodularturrets:intermediate_tiered:10>,<tconstruct:pattern>]
+    ]
 };
 
 for key, value in recipeMapShaped {
@@ -147,10 +158,37 @@ AtomicReconstructor.addRecipe(<actuallyadditions:item_damage_lens>, <actuallyadd
 Crusher.removeRecipe(<thermalfoundation:material:1>*6);
 Crusher.removeRecipe(<actuallyadditions:item_dust:2>*6);
 
-var t as int = 40;
+var energy as int = 400;
 
 AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal>);
-AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal>, <enderio:item_alloy_ingot:3>, t);
+AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal>);
+AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal>, <enderio:item_alloy_ingot:3>, energy);
 
 AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:1>);
-AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:1>, <contenttweaker:large_tanzanite>, t);
+AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:1>);
+AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:1>, <contenttweaker:large_tanzanite>, energy);
+
+AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:3>);
+AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:3>);
+AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:3>, <randomthings:stableenderpearl>, energy);
+
+AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:5>);
+AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:5>);
+AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:5>, <contenttweaker:weakeneddiamond>, energy);
+
+recipes.remove(<actuallyadditions:block_atomic_reconstructor>);
+Altar.addAttunementAltarRecipe("block_atomic_reconstructor", <actuallyadditions:block_atomic_reconstructor>, 500, 800, [
+    <forestry:thermionic_tubes:13>,
+    <contenttweaker:crystal_prism>,
+    <forestry:thermionic_tubes:13>,
+    <actuallyadditions:item_misc:8>,
+    <actuallyadditions:block_misc:9>,
+    <actuallyadditions:item_misc:8>,
+    <enderio:item_material:11>,
+    <forestry:chipsets:1>,
+    <enderio:item_material:11>,
+    <rs_ctr:split_s>,
+    <rs_ctr:split_s>,
+    <rs_ctr:split_s>,
+    <rs_ctr:split_s>,
+]);

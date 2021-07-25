@@ -1,0 +1,16 @@
+{
+	x: 11.5d,
+	y: -6.5d,
+	dependencies: [
+		"66d64796",
+		"25eeaf9b",
+		"5ed858a5"
+	],
+	tasks: [{
+		uid: "54af1d3a",
+		type: "item",
+		items: [{
+			item: "psi:programmer"
+		}]
+	}]
+}

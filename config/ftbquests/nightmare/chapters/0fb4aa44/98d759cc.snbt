@@ -1,14 +1,15 @@
 {
-	x: 8.0d,
-	y: -3.5d,
+	x: 2.5d,
+	y: -9.5d,
 	dependencies: [
-		"508a9727"
+		"508a9727",
+		"54dc2fe1"
 	],
 	tasks: [{
-		uid: "a6a24589",
+		uid: "f90b6116",
 		type: "item",
 		items: [{
-			item: "calculator:stoneseparator"
+			item: "forestry:centrifuge"
 		}]
 	}]
 }

@@ -501,3 +501,60 @@ withersand.setToolClass("pickaxe");
 withersand.setToolLevel(0);
 withersand.setBlockSoundType(<soundtype:stone>);
 withersand.register();
+
+// ATM
+
+var infusion_block = VanillaFactory.createBlock("infusion_block", <blockmaterial:iron>);
+infusion_block.setBlockHardness(5.0);
+infusion_block.setBlockResistance(30.0);
+infusion_block.setToolClass("pickaxe");
+infusion_block.setToolLevel(0);
+infusion_block.setBlockSoundType(<soundtype:stone>);
+infusion_block.register();
+
+var magma_soaked_cobblestone = VanillaFactory.createBlock("magma_soaked_cobblestone", <blockmaterial:iron>);
+magma_soaked_cobblestone.setBlockHardness(5.0);
+magma_soaked_cobblestone.setBlockResistance(30.0);
+magma_soaked_cobblestone.setToolClass("pickaxe");
+magma_soaked_cobblestone.setToolLevel(0);
+magma_soaked_cobblestone.setBlockSoundType(<soundtype:stone>);
+magma_soaked_cobblestone.register();
+
+// engineer
+
+var blocksEngineer as string[] = [
+    "block1",
+    "block2",
+    "block3",
+    "block4",
+    "block5",
+    "block6",
+    "block7",
+    "block8",
+    "block9",
+    "block10",
+    "block11",
+    "block12",
+    "block13",
+    "block14",
+    "block15",
+    "block16",
+    "block17",
+    "block18",
+    "block19",
+    "block20",
+    "block21",
+    "block22",
+    "block23"
+];
+
+for item in blocksEngineer {
+    var newBlock as Block = VanillaFactory.createBlock(item, <blockmaterial:iron>);
+    newBlock.textureLocation = ResourceLocation.create("contenttweaker:blocks/engineer/"+item);
+    newBlock.setBlockHardness(5.0);
+    newBlock.setBlockResistance(30.0);
+    newBlock.setToolClass("pickaxe");
+    newBlock.setToolLevel(0);
+    newBlock.setBlockSoundType(<soundtype:metal>);
+    newBlock.register();
+}

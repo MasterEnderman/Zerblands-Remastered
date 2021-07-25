@@ -1,3 +1,7 @@
+# parts
+
+contenttweaker.part.wire=%s Wire
+
 # blocks
 
 tile.contenttweaker.slate_reinforced.name=Reinforced Slate Block
@@ -74,9 +78,41 @@ tile.contenttweaker.ebcr.name=Cracked Ethaxium Bricks
 tile.contenttweaker.ebp.name=Ethaxium Bricks Pillar
 tile.contenttweaker.ebp_top.name=Ethaxium Bricks Pillar Top
 
+# atm
+
+tile.contenttweaker.infusion_block.name=Infusion Block
+tile.contenttweaker.magma_soaked_cobblestone.name=Magma Soaked Cobblestone
+
+# engineer
+
+tile.contenttweaker.block1.name=Engineer's Metal Block 1
+tile.contenttweaker.block2.name=Engineer's Metal Block 2
+tile.contenttweaker.block3.name=Engineer's Metal Block 3
+tile.contenttweaker.block4.name=Engineer's Metal Block 4
+tile.contenttweaker.block5.name=Engineer's Metal Block 5
+tile.contenttweaker.block6.name=Engineer's Metal Block 6
+tile.contenttweaker.block7.name=Engineer's Metal Block 7
+tile.contenttweaker.block8.name=Engineer's Metal Block 8
+tile.contenttweaker.block9.name=Engineer's Metal Block 9
+tile.contenttweaker.block10.name=Engineer's Metal Block 10
+tile.contenttweaker.block11.name=Engineer's Metal Block 11
+tile.contenttweaker.block12.name=Engineer's Metal Block 12
+tile.contenttweaker.block13.name=Engineer's Metal Block 13
+tile.contenttweaker.block14.name=Engineer's Metal Block 14
+tile.contenttweaker.block15.name=Engineer's Metal Block 15
+tile.contenttweaker.block16.name=Engineer's Metal Block 16
+tile.contenttweaker.block17.name=Engineer's Metal Block 17
+tile.contenttweaker.block18.name=Engineer's Metal Block 18
+tile.contenttweaker.block19.name=Engineer's Metal Block 19
+tile.contenttweaker.block20.name=Engineer's Metal Block 20
+tile.contenttweaker.block21.name=Engineer's Metal Block 21
+tile.contenttweaker.block22.name=Engineer's Metal Block 22
+tile.contenttweaker.block23.name=Engineer's Metal Block 23
+
 # fluids
 
 fluid.colour_out_of_space=Color out of Space
+fluid.solder=Solder
 fluid.sulfuric_acid=Sulfuric Acid
 fluid.hydrogen_chlorid=Hydrogen Chloride
 fluid.ethylene=Ethylene
@@ -84,6 +120,12 @@ fluid.plastic=Plastic
 fluid.briny_water=Briny Water
 fluid.saline_water=Saline Water
 fluid.brackish_water=Brackish Water
+fluid.battery_solution=Lithium Hexafluorophosphate
+fluid.steamed_naphtha=Steam-Cracked Naphtha
+fluid.toluene=Toluene
+fluid.benzene=Benzene
+fluid.butadiene=Butadiene
+fluid.styrene=Styrene
 
 # fixes
 

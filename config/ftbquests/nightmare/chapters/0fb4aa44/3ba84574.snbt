@@ -1,0 +1,14 @@
+{
+	x: -0.5d,
+	y: -6.5d,
+	dependencies: [
+		"87748be8"
+	],
+	tasks: [{
+		uid: "a0ef4557",
+		type: "item",
+		items: [{
+			item: "embers:ingot_dawnstone"
+		}]
+	}]
+}

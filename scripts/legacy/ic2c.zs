@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
+import mods.ic2.Extractor;
 import mods.jei.JEI;
 import mods.tconstruct.Casting;
 
@@ -30,6 +31,8 @@ furnace.remove(<ic2:itemmisc:53>);
 JEI.removeAndHide(<ic2:itemmisc:53>);
 
 Casting.addTableRecipe(<ic2:itemharz>, <tconstruct:cast>.withTag({PartType: "tconstruct:pan_head"}), <liquid:resin>, 250, false, 20);
+
+Extractor.addRecipe(<ic2:itemmisc:450> * 3,<ic2:itemharz>);
 
 recipes.remove(<ic2:itemmisc:258>);
 recipes.addShaped(<ic2:itemmisc:258>, [

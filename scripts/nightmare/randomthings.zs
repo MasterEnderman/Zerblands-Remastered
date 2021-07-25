@@ -26,3 +26,10 @@ recipes.addShaped(<randomthings:fertilizeddirt> * 4, [
     [<evilcraft:blood_potash>,<sonarcore:reinforceddirtblock>,<evilcraft:blood_potash>],
     [<tconstruct:soil:4>,<evilcraft:blood_potash>,<tconstruct:soil:4>]
 ]);
+
+recipes.remove(<randomthings:ingredient:8>);
+recipes.addShaped(<randomthings:ingredient:8> * 8, [
+    [<ore:plateIron>,<minecraft:iron_bars>,<ore:plateIron>],
+    [<minecraft:iron_bars>,<minecraft:iron_bars>,<minecraft:iron_bars>],
+    [<ore:plateIron>,<minecraft:iron_bars>,<ore:plateIron>]
+]);

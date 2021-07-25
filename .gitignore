@@ -47,6 +47,12 @@ patchouli_data\.json
 
 minecraftinstance\.json
 
+ops\.json
+
+whitelist\.json
+
+server-icon\.png
+
 scripts/*.zsrc
 
 config/jei/**

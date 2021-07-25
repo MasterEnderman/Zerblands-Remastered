@@ -1,0 +1,28 @@
+{
+	x: 0.5d,
+	y: -9.5d,
+	dependencies: [
+		"dbbb22d4"
+	],
+	tasks: [{
+		uid: "1152459f",
+		type: "item",
+		items: [{
+			item: "embers:stamp_bar"
+		}]
+	},
+	{
+		uid: "b793d406",
+		type: "item",
+		items: [{
+			item: "embers:stamp_plate"
+		}]
+	},
+	{
+		uid: "062ed848",
+		type: "item",
+		items: [{
+			item: "embers:stamp_gear"
+		}]
+	}]
+}

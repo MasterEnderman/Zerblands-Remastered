@@ -1,0 +1,49 @@
+#priority 99999
+#loader contenttweaker
+
+import mods.contenttweaker.Material;
+import mods.contenttweaker.MaterialPartData;
+import mods.contenttweaker.MaterialSystem;
+
+import scripts.contenttweaker_ms_definition.addDefaultMoltenData;
+import scripts.contenttweaker_ms_definition.addDefaultOreData;
+import scripts.contenttweaker_ms_definition.materials;
+
+//antimony
+
+var antimonyFluidData as MaterialPartData = materials.antimony.registerPart("molten").getData();
+addDefaultMoltenData(antimonyFluidData);
+
+materials.antimony.registerParts(["block", "nugget", "ingot", "dust"] as string[]);
+
+//apatite
+
+materials.apatite.registerParts(["dust"] as string[]);
+
+//battery_alloy
+
+var battery_alloyFluidData as MaterialPartData = materials.battery_alloy.registerPart("molten").getData();
+addDefaultMoltenData(battery_alloyFluidData);
+
+materials.battery_alloy.registerParts(["block", "nugget", "ingot", "dust", "plate"] as string[]);
+
+//red_alloy
+
+var red_alloyFluidData as MaterialPartData = materials.red_alloy.registerPart("molten").getData();
+addDefaultMoltenData(red_alloyFluidData);
+
+materials.red_alloy.registerParts(["block", "nugget", "ingot", "dust", "plate", "wire"] as string[]);
+
+//soldering_alloy
+
+var soldering_alloyFluidData as MaterialPartData = materials.soldering_alloy.registerPart("molten").getData();
+addDefaultMoltenData(soldering_alloyFluidData);
+
+materials.soldering_alloy.registerParts(["block", "nugget", "ingot", "dust"] as string[]);
+
+//styrene_rubber
+
+var styrene_rubberFluidData as MaterialPartData = materials.styrene_rubber.registerPart("molten").getData();
+addDefaultMoltenData(styrene_rubberFluidData);
+
+materials.styrene_rubber.registerParts(["plate"] as string[]);

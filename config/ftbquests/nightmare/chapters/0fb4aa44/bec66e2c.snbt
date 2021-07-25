@@ -1,0 +1,29 @@
+{
+	x: 0.5d,
+	y: -7.5d,
+	dependencies: [
+		"3ba84574",
+		"8da308b8"
+	],
+	tasks: [{
+		uid: "8a4bc7e2",
+		type: "item",
+		items: [{
+			item: "embers:alchemy_tablet"
+		}]
+	},
+	{
+		uid: "39c63d14",
+		type: "item",
+		items: [{
+			item: "embers:alchemy_pedestal"
+		}]
+	},
+	{
+		uid: "9dbcb6bc",
+		type: "item",
+		items: [{
+			item: "embers:beam_cannon"
+		}]
+	}]
+}

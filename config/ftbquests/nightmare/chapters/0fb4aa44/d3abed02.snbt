@@ -1,0 +1,17 @@
+{
+	icon: "immersiveengineering:metal_multiblock 1 13",
+	x: 7.5d,
+	y: -7.5d,
+	dependencies: [
+		"5ed858a5",
+		"b345d802",
+		"9c99574a"
+	],
+	tasks: [{
+		uid: "70a34cfb",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:graphite_electrode"
+		}]
+	}]
+}

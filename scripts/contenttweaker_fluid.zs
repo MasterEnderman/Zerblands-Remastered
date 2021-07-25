@@ -25,6 +25,9 @@ plastic.register();
 var colour_out_of_space = VanillaFactory.createFluid("colour_out_of_space", 14474460);
 colour_out_of_space.register();
 
+var battery_solution = VanillaFactory.createFluid("battery_solution", 10858474);
+battery_solution.register();
+
 var briny_water = VanillaFactory.createFluid("briny_water", 15254434);
 briny_water.register();
 
@@ -33,3 +36,18 @@ saline_water.register();
 
 var brackish_water = VanillaFactory.createFluid("brackish_water", 9150151);
 brackish_water.register();
+
+var steamed_naphtha = VanillaFactory.createFluid("steamed_naphtha", 12563728);
+steamed_naphtha.register();
+
+var toluene = VanillaFactory.createFluid("toluene", 7946536);
+toluene.register();
+
+var benzene = VanillaFactory.createFluid("benzene", 1907997);
+benzene.register();
+
+var butadiene = VanillaFactory.createFluid("butadiene", 12016140);
+butadiene.register();
+
+var styrene = VanillaFactory.createFluid("styrene", 10656403);
+styrene.register();

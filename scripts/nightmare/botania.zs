@@ -20,14 +20,19 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.astralsorcery.Altar;
 import mods.botania.Apothecary;
 import mods.botania.ElvenTrade;
 import mods.botania.ManaInfusion;
 import mods.botania.PureDaisy;
+import mods.botania.RuneAltar;
+import mods.immersiveengineering.MetalPress;
+import mods.inworldcrafting.ExplosionCrafting;
 import mods.jei.JEI;
 import mods.thermalexpansion.Transposer;
 
 JEI.addItem(<botania:manaresource:20>);
+JEI.addItem(<botania:manaresource:21>);
 
 var recipeRemove as IItemStack[] = [
     <botania:livingwood>,
@@ -99,8 +104,11 @@ for key, value in recipeMapShaped {
     recipes.addShaped("ct_"+toString(key), key, value);
 }
 
+MetalPress.addRecipe(<botania:manaresource:3>, <botania:livingwood>, <immersiveengineering:mold:2>, 2048);
+MetalPress.addRecipe(<botania:manaresource:13>, <botania:dreamwood>, <immersiveengineering:mold:2>, 2048);
+
 Apothecary.removeRecipe("endoflame");
-<botania:specialflower>.withTag({type: "endoflame"}).addTooltip(format.red("Disabled, because I can."));
+<botania:specialflower>.withTag({type: "endoflame"}).addTooltip(format.red("Disabled, because I can. :^)"));
 <botania:specialflower>.withTag({type: "endoflame"}).addTooltip(format.red("~ Ender"));
 
 ElvenTrade.removeRecipe(<botania_tweaks:dire_crafty_crate>);
@@ -118,8 +126,187 @@ PureDaisy.addRecipe(<contenttweaker:blood_infused_stone>, <botania:livingrock>, 
 
 PureDaisy.addRecipe(<randomthings:fertilizeddirt>, <botania:root>, 100);
 
+recipes.remove(<botania:pool>);
+ManaInfusion.addInfusion(<botania:pool>, <botania:pool:2>, 10000);
+
+ManaInfusion.removeRecipe(<botania:managlass>);
+ManaInfusion.addInfusion(<botania:managlass>, <ore:fusedQuartz>, 100);
+
+ManaInfusion.removeRecipe(<botania:manaresource:23>);
+ManaInfusion.addInfusion(<botania:manaresource:23>, <psi:material>, 500);
+
+ManaInfusion.removeRecipe(<botania:manaresource>);
+ManaInfusion.addInfusion(<botania:manaresource>, <enderio:item_alloy_ingot:6>, 1000);
+
+ManaInfusion.removeRecipe(<botania:storage>);
+ManaInfusion.addInfusion(<botania:storage>, <enderio:block_alloy:6>, 9000);
+
 recipes.remove(<botania:manaresource:6>);
 Transposer.addFillRecipe(<botania:manaresource:6>, <contenttweaker:root_dried>, <liquid:redstone>*100, 4096);
 
 <botania:manaresource:20>.addTooltip(format.green("Drops from Block of Living Root."));
 <botania:root>.displayName = "Block of Living Root";
+
+ExplosionCrafting.explodeItemRecipe(<botania:manaresource:21> * 4, <minecraft:cobblestone>);
+ExplosionCrafting.explodeItemRecipe(<botania:manaresource:21> * 4, <minecraft:stone>);
+
+recipes.remove(<botania:runealtar>);
+Altar.addAttunementAltarRecipe("runealtar", <botania:runealtar>, 500, 800, [
+	null,
+	<botania:manaresource:1>,
+	null,
+	<botania:livingrock>,
+	<astralsorcery:blockaltar>,
+	<botania:livingrock>,
+	<blood_dynamo:ingredient:2>,
+	<botania:manaresource:2>,
+	<blood_dynamo:ingredient:2>,
+	<botania:spark>,
+	<botania:spark>,
+	<botanicadds:mana_lapis>,
+	<botanicadds:mana_lapis>
+]);
+
+var mapBotaniaRune as IItemStack[][IItemStack][int] = {
+	1000 : {
+		<botania:rune> : [
+			<contenttweaker:rune_common>,
+			<botania:manaresource:23>,
+			<minecraft:fish>,
+			<minecraft:reeds>,
+			<minecraft:prismarine_crystals>
+		],
+		<botania:rune:1> : [
+			<contenttweaker:rune_common>,
+			<botania:manaresource:23>,
+			<randomthings:obsidianskull>,
+			<minecraft:red_nether_brick>,
+			<minecraft:ghast_tear>
+		],
+		<botania:rune:2> : [
+			<contenttweaker:rune_common>,
+			<botania:manaresource:23>,
+			<contenttweaker:root_golden>,
+			<xreliquary:fertile_potion>,
+			<forestry:humus>
+		],
+		<botania:rune:3> : [
+			<contenttweaker:rune_common>,
+			<botania:manaresource:23>,
+			<minecraft:feather>,
+			<botania:spark>,
+			<immersiveengineering:material:12>
+		]
+	},
+	2000 : {
+		<botania:rune:4> : [
+			<contenttweaker:rune_uncommon>,
+			<botania:manaresource:23>,
+			<astralsorcery:itemcoloredlens:4>,
+			<minecraft:golden_carrot>,
+			<xreliquary:mob_ingredient:11>
+		],
+		<botania:rune:5> : [
+			<contenttweaker:rune_uncommon>,
+			<botania:manaresource:23>,
+			<astralsorcery:itemcoloredlens:2>,
+			<minecraft:speckled_melon>,
+			<xreliquary:mob_ingredient:7>
+		],
+		<botania:rune:6> : [
+			<contenttweaker:rune_uncommon>,
+			<botania:manaresource:23>,
+			<astralsorcery:itemcoloredlens>,
+			<minecraft:fermented_spider_eye>,
+			<xreliquary:mob_ingredient:8>
+		],
+		<botania:rune:7> : [
+			<contenttweaker:rune_uncommon>,
+			<botania:manaresource:23>,
+			<astralsorcery:itemcoloredlens:5>,
+			<minecraft:cake>,
+			<xreliquary:mob_ingredient:10>
+		]
+	},
+	4000 : {
+		<botania:rune:8> : [
+			<contenttweaker:rune_rare>,
+			<botania:manaresource:23>,
+			<psi:material:3>,
+			<psi:material:4>,
+			<botania:pylon>
+		],
+		<botanicadds:rune_tp> : [
+			<contenttweaker:rune_rare>,
+			<botania:manaresource:23>,
+			<enderutilities:enderpart:17>,
+			<rftools:infused_enderpearl>,
+			<enderutilities:linkcrystal>
+		],
+		<botanicadds:rune_energy> : [
+			<contenttweaker:rune_rare>,
+			<botania:manaresource:23>,
+			<immersiveengineering:metal_device1:8>,
+			<embers:wildfire_core>,
+			<evilcraft:lightning_bomb>
+		]
+	},
+	8000 : {
+		<botania:rune:9> : [
+			<contenttweaker:rune_legendary>,
+			<thermalfoundation:material:1028>,
+			<contenttweaker:corruptedstarmetal>,
+			<botania:rune:5>,
+			<botania:rune:3>
+		],
+		<botania:rune:10> : [
+			<contenttweaker:rune_legendary>,
+			<thermalfoundation:material:1028>,
+			<contenttweaker:corruptedstarmetal>,
+			<botania:rune:7>,
+			<botania:rune:1>
+		],
+		<botania:rune:11> : [
+			<contenttweaker:rune_legendary>,
+			<thermalfoundation:material:1028>,
+			<contenttweaker:corruptedstarmetal>,
+			<botania:rune:4>,
+			<botania:rune>
+		],
+		<botania:rune:12> : [
+			<contenttweaker:rune_legendary>,
+			<thermalfoundation:material:1028>,
+			<contenttweaker:corruptedstarmetal>,
+			<botania:rune:6>,
+			<botania:rune:3>
+		],
+		<botania:rune:13> : [
+			<contenttweaker:rune_legendary>,
+			<thermalfoundation:material:1028>,
+			<contenttweaker:corruptedstarmetal>,
+			<botania:rune:7>,
+			<botania:rune:2>
+		],
+		<botania:rune:14> : [
+			<contenttweaker:rune_legendary>,
+			<thermalfoundation:material:1028>,
+			<contenttweaker:corruptedstarmetal>,
+			<botania:rune:7>,
+			<botania:rune>
+		],
+		<botania:rune:15> : [
+			<contenttweaker:rune_legendary>,
+			<thermalfoundation:material:1028>,
+			<contenttweaker:corruptedstarmetal>,
+			<botania:rune:5>,
+			<botania:rune:1>
+		]
+	}
+};
+
+for mana, runes in mapBotaniaRune {
+	for rune, recipe in runes {
+		RuneAltar.removeRecipe(rune);
+		RuneAltar.addRecipe(rune,recipe, mana);
+	}
+}

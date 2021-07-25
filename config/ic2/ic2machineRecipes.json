@@ -117,16 +117,31 @@
   "item.redstonerepository.material.dustGelidEnderium_544355950": true,
   "item.appliedenergistics2.material.ender_dust_1893555465": true,
   "ic2exprecipe_Certus Quartz Dust_": true,
-  "ic2exprecipe_Coke Dust_": true
+  "ic2exprecipe_Coke Dust_": true,
+  "ic2exprecipe_Crushed Diamond_": true,
+  "ic2exprecipe_Crushed Nether Wart_": true,
+  "ic2exprecipe_Crushed Nether Wart__1": true,
+  "ic2exprecipe_Energium Dust_": true,
+  "ic2exprecipe_Brick Dust_": true,
+  "ic2exprecipe_Brick Dust__1": true,
+  "ic2exprecipe_Crushed Lapis_": true,
+  "ic2exprecipe_Stone Dust_": true,
+  "ic2exprecipe_Crushed Dark Gem_": true,
+  "item.contenttweaker.material_part_823769597": true,
+  "item.contenttweaker.material_part_-2100238351": true,
+  "item.contenttweaker.material_part_541195237": true,
+  "item.contenttweaker.material_part_566015675": true,
+  "ic2exprecipe_Conduit Binder Composite_": true,
+  "item.contenttweaker.material_part_397084348": true
  },
  "extractor": {
   "item.coal_764578481": true,
   "item.dyePowder.blue_749691996": true,
   "item.diamond_1399568853": true,
   "item.emerald_-1524801579": true,
-  "item.itemRubber_423644248": true,
-  "item.itemRubber_-140850560": true,
-  "item.itemRubber_443969768": true,
+  "item.itemRubber_423644248": false,
+  "item.itemRubber_-140850560": false,
+  "item.itemRubber_443969768": false,
   "item.netherquartz_1623712433": true,
   "item.flint_880385219": true,
   "item.itemDynamite_-1026852414": true,
@@ -153,7 +168,10 @@
   "item.immersiveengineering.material.hemp_fiber_1576378212": true,
   "ic2exprecipe_Dirty Circuit_": true,
   "ic2exprecipe_Silicon_": true,
-  "ic2exprecipe_Silicon__1": true
+  "ic2exprecipe_Silicon__1": true,
+  "ic2exprecipe_Cable Anchor_": true,
+  "ic2exprecipe_ME Glass Cable - Lime_": true,
+  "ic2exprecipe_Raw Rubber Pulp_": true
  },
  "compressor": {
   "tile.sandStone.default_1494879518": true,
@@ -182,7 +200,9 @@
   "item.potion_1880685907": true,
   "ic2exprecipe_HOP Graphite Dust_": true,
   "item.potion_441693419": true,
-  "ic2exprecipe_Restored Circuit_": true
+  "ic2exprecipe_Restored Circuit_": true,
+  "ic2exprecipe_Energy Crystal_": true,
+  "ic2exprecipe_Obsidian Dust_": true
  },
  "massfabricatorAmplifier": {
   "ScrapAmplifier": true,
@@ -353,7 +373,11 @@
   "ingotRecycling_ingotGelidEnderium": true,
   "ingotRecycling_ingotFluixSteel": true,
   "ingotRecycling_ingotEnrichedGold": true,
-  "ingotRecycling_ingotEnder": true
+  "ingotRecycling_ingotEnder": true,
+  "ingotRecycling_ingotBatteryAlloy": true,
+  "ingotRecycling_ingotAntimony": true,
+  "ingotRecycling_ingotSolderingAlloy": true,
+  "ingotRecycling_ingotRedAlloy": true
  },
  "sawmill": {
   "tile.wood.oak_-867074482": true,
@@ -523,6 +547,8 @@
   "tile.log.jungle_-1814706450": true,
   "item.minecraft:melon_-1083706285": true,
   "tile.for.planks.fireproof.0_-847188445": true,
-  "tile.for.planks.fireproof.0_To_Sticks_2000286775": true
+  "tile.for.planks.fireproof.0_To_Sticks_2000286775": true,
+  "item.FramingBoard_ct": true,
+  "item.FramingSheet_ct": true
  }
 }

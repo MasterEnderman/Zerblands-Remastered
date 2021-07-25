@@ -22,5 +22,10 @@ import scripts.functions.findFirstItemFromMod;
 
 import scripts.functions.calc_basic;
 
+recipes.remove(<sonarcore:reinforcedstoneblock>);
 calc_basic(<sonarcore:reinforcedstoneblock>,<earthworks:block_dry_stone>,<immersiveengineering:treated_wood>);
 calc_basic(<sonarcore:reinforcedstoneblock> * 4,<earthworks:block_dry_stone>,<botania:livingwood>);
+
+recipes.remove(<sonarcore:reinforceddirtblock>);
+calc_basic(<sonarcore:reinforceddirtblock>,<minecraft:dirt>,<immersiveengineering:treated_wood>);
+calc_basic(<sonarcore:reinforceddirtblock> * 4,<tconstruct:deco_ground>,<botania:livingwood>);

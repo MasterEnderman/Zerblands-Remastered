@@ -1,0 +1,62 @@
+{
+	icon: "immersiveengineering:metal_multiblock",
+	x: 8.5d,
+	y: -8.5d,
+	dependencies: [
+		"95b74b5c"
+	],
+	tasks: [{
+		uid: "11213b91",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mold_ingot"
+		}]
+	},
+	{
+		uid: "2c0a442a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:mold"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "efc75158",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:mold",
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f7bc48d1",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:mold",
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c6df8d45",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:mold",
+			Damage: 4s
+		}],
+		ignore_nbt: 1b
+	}]
+}

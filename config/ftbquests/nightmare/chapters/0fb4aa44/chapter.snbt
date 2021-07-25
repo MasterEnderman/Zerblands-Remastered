@@ -11,5 +11,16 @@
 	],
 	always_invisible: false,
 	group: 0,
-	default_quest_shape: ""
+	default_quest_shape: "",
+	images: [{
+		x: 3.0d,
+		y: -12.5d,
+		width: 16.0d,
+		height: 4.0d,
+		rotation: 0.0d,
+		image: "zerblands:mainmenu/modpack.png",
+		hover: [],
+		click: "",
+		dev: false
+	}]
 }

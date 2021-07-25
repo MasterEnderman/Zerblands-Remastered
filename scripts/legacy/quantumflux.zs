@@ -26,7 +26,6 @@ import mods.jei.JEI;
 
 JEI.removeAndHide(<quantumflux:magnet>);
 
-ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <quantumflux:graphitedust>);
 ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <bigreactors:dustgraphite>);
 ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <immersiveengineering:material:18>);
 

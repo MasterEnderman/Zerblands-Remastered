@@ -23,15 +23,21 @@ import scripts.functions.findFirstItemFromMod;
 import scripts.functions.calc_basic;
 
 import mods.actuallyadditions.Empowerer;
+import mods.immersiveengineering.CokeOven;
 import mods.immersiveengineering.MetalPress;
+import mods.jei.JEI;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Drying;
 import mods.tconstruct.Melting;
+
+JEI.removeAndHide(<tconstruct:throwball:1>);
 
 Drying.addRecipe(<tconstruct:materials:1>, <contenttweaker:pressed_mud>, 600);
 
 Melting.removeRecipe(<liquid:stone>);
 Melting.addRecipe(<liquid:stone>*144, <tconstruct:soil>, 500);
+furnace.remove(<tconstruct:materials>);
+CokeOven.addRecipe(<tconstruct:materials>, 0, <tconstruct:soil>, 200);
 
 Melting.addRecipe(<liquid:dirt>*36, <earthworks:item_mud>, 500);
 Melting.addRecipe(<liquid:dirt>*144, <earthworks:block_mud>, 500);
@@ -47,12 +53,11 @@ recipes.remove(<tconstruct:stone_stick>);
 MetalPress.addRecipe(<tconstruct:stone_stick>*2, <ore:cobblestone>, <immersiveengineering:mold:2>, 64);
 MetalPress.addRecipe(<tconstruct:stone_stick>*4, <ore:stone>, <immersiveengineering:mold:2>, 64);
 
-Melting.removeRecipe(<liquid:glowstone>);
-Melting.removeRecipe(<liquid:redstone>);
-
 Melting.removeRecipe(<liquid:dirt>, <earthworks:item_adobe>);
 
-Melting.removeRecipe(<liquid:ender>, <minecraft:ender_pearl>);
+Melting.removeRecipe(<liquid:glowstone>);
+Melting.removeRecipe(<liquid:redstone>);
+Melting.removeRecipe(<liquid:ender>);
 Casting.removeTableRecipe(<minecraft:ender_pearl>);
 
 recipes.remove(<tconstruct:seared_furnace_controller>);
@@ -60,7 +65,7 @@ recipes.remove(<tconstruct:tinker_tank_controller>);
 Casting.addBasinRecipe(<tconstruct:tinker_tank_controller>, <extrautils2:drum>, <liquid:stone>, 576, true, 100);
 
 recipes.remove(<tconstruct:brownstone:1>);
-basic.addRecipe(<chisel:brownstone>,<minecraft:redstone>,<tconstruct:brownstone:1>);
+calc_basic(<tconstruct:brownstone:1>,<minecraft:redstone>,<chisel:brownstone>);
 
 recipes.remove(<tconstruct:firewood:1>);
 calc_basic(<tconstruct:firewood:1>,<tconstruct:firewood>,<embers:dust_ember>);
@@ -85,12 +90,12 @@ recipes.addShaped(<tconstruct:pattern> * 4,[
 
 recipes.remove(<tconstruct:soil>);
 recipes.addShaped(<tconstruct:soil> * 2, [
-	[<embers:blend_caminite>,<minecraft:gravel>],
-	[<minecraft:gravel>,<embers:blend_caminite>]
+	[<embers:blend_caminite>,<contenttweaker:gravel_dust>],
+	[<contenttweaker:gravel_dust>,<embers:blend_caminite>]
 ]);
 recipes.addShaped(<tconstruct:soil> * 2, [
-	[<minecraft:gravel>,<embers:blend_caminite>],
-	[<embers:blend_caminite>,<minecraft:gravel>]
+	[<contenttweaker:gravel_dust>,<embers:blend_caminite>],
+	[<embers:blend_caminite>,<contenttweaker:gravel_dust>]
 ]);
 
 recipes.remove(<tconstruct:smeltery_controller>);
@@ -125,19 +130,19 @@ recipes.addShaped(<tconstruct:wooden_hopper>, [
 ]);
 
 val slimebo = [
-<tconstruct:slime_boots>,
-<tconstruct:slime_boots:1>,
-<tconstruct:slime_boots:2>,
-<tconstruct:slime_boots:3>,
-<tconstruct:slime_boots:4>
+	<tconstruct:slime_boots>,
+	<tconstruct:slime_boots:1>,
+	<tconstruct:slime_boots:2>,
+	<tconstruct:slime_boots:3>,
+	<tconstruct:slime_boots:4>
 ] as IItemStack[];
 
 val slimebl = [
-<tconstruct:slime>,
-<tconstruct:slime:1>,
-<tconstruct:slime:2>,
-<tconstruct:slime:3>,
-<tconstruct:slime:4>
+	<minecraft:slime>,
+	<tconstruct:slime:1>,
+	<tconstruct:slime:2>,
+	<tconstruct:slime:3>,
+	<tconstruct:slime:4>
 ] as IItemStack[];
 
 for i, item in slimebo {

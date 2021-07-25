@@ -1,5 +1,30 @@
 # Zerblands-Remastered
 
+## v2.1.4 - maintenance
+
+- updated Botania
+- updated ContentTweaker
+- updated CraftTweaker
+- updated Draconic Additions
+- updated EnderIO
+- updated EnderIO Endergy 
+- updated Ender Tweaker
+- updated Energy Control
+- updated FoamFix
+- updated Hammer (Lib) Core
+- updated Immersive Petroleum
+- updated ModTweaker
+- updated Mouse Tweaks
+- updated MTLib
+- updated Reborn Core
+- updated Simply Jetpacks 2
+- updated ThermalLogisitcs
+- updated Tool Progression
+- updated UniDict
+
+- fixed nightmare mode
+- more recipes for nightmare mode [WIP]
+
 ## v2.1.3 - partnership
 
 - updated Energy Control

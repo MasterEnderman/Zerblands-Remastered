@@ -60,6 +60,19 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:reinforcediron_ingot>,<embers:mech_core>,<contenttweaker:reinforcediron_ingot>],
             [<embers:block_caminite_brick>,<tconstruct:seared_furnace_controller>,<embers:block_caminite_brick>]
         ]
+    ],
+    <embers:stamper_base> : [
+        [
+            [<contenttweaker:reinforcediron_ingot>,null,<contenttweaker:reinforcediron_ingot>],
+            [<embers:block_caminite_brick>,<minecraft:cauldron>,<embers:block_caminite_brick>]
+        ]
+    ],
+    <embers:stamper> : [
+        [
+            [<immersiveengineering:material:8>,<ore:ingotCopper>,<immersiveengineering:material:8>],
+            [<embers:block_caminite_brick>,<contenttweaker:reinforced_iron_block>,<embers:block_caminite_brick>],
+            [<embers:block_caminite_brick>,null,<embers:block_caminite_brick>]
+        ]
     ]
 };
 

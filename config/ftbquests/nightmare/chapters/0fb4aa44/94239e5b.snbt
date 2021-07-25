@@ -1,14 +1,14 @@
 {
-	x: 8.0d,
+	x: 1.5d,
 	y: -4.5d,
 	dependencies: [
-		"508a9727"
+		"3c577d13"
 	],
 	tasks: [{
-		uid: "caa7459c",
+		uid: "c3ea61ee",
 		type: "item",
 		items: [{
-			item: "extrautils2:machine"
+			item: "forestry:squeezer"
 		}]
 	}]
 }

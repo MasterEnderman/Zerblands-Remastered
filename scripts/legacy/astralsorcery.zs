@@ -21,16 +21,12 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.botania.PureDaisy;
-import mods.inworldcrafting.FluidToItem;
 import mods.thermalexpansion.Transposer;
 
 PureDaisy.addRecipe(<astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>);
 
 Transposer.addFillRecipe(<astralsorcery:blockcustomore:1>, <minecraft:iron_ore>, <liquid:astralsorcery.liquidstarlight>*2000, 4096);
 Transposer.addFillRecipe(<astralsorcery:blockcustomore>, <appliedenergistics2:sky_stone_block>, <liquid:liquidantimatter>*4000, 8192);
-
-FluidToItem.transform(<astralsorcery:blockinfusedwood>, <liquid:astralsorcery.liquidstarlight>, [<ore:logWood>], false);
-FluidToItem.transform(<astralsorcery:blockinfusedwood:1>, <liquid:astralsorcery.liquidstarlight>, [<ore:plankWood>], false);
 
 recipes.addShaped(<astralsorcery:blockmarble> * 64, [
     [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
