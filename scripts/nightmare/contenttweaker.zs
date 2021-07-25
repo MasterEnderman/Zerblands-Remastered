@@ -65,6 +65,18 @@ Casting.addTableRecipe(<contenttweaker:lithium_dust>, null, <liquid:briny_water>
 Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","plate","StyreneButadieneRubber"), <tconstruct:cast_custom:3> ,<liquid:styrene_butadiene_rubber>, 200, false, 120);
 
 Mixer.addRecipe(<liquid:hydrogen_chlorid>*250, <liquid:sulfuric_acid>*250, [<ore:dustSalt>*4], 512);
+Mixer.addRecipe(<liquid:battery_solution>*250, <liquid:distwater>*250, [
+    <contenttweaker:lithium_dust>,
+    <contenttweaker:electrotine_dust>,
+    <ore:dustApatite>,
+    <forestry:phosphor>
+], 512);
+Mixer.addRecipe(<liquid:battery_solution>*250, <liquid:distwater>*250, [
+    <contenttweaker:lithium_dust>,
+    <contenttweaker:electrotine_dust>,
+    <ore:dustApatite>,
+    <abyssalcraft:crystal:7>
+], 512);
 
 Refinery.addRecipe(<liquid:ethylene>*8, <liquid:refined_oil>*8, <liquid:steam>*100, 512);
 Refinery.addRecipe(<liquid:plastic>*16, <liquid:ethylene>*8, <liquid:hydrogen_chlorid>*8, 512);
@@ -153,11 +165,6 @@ recipes.addShaped(<contenttweaker:energium_dust> * 9, [
 Grindstone.addRecipe(<minecraft:bone>, <contenttweaker:bone_shard>, 0.1f);
 Grindstone.addRecipe(<minecraft:flint>, <contenttweaker:flint_shard>, 0.1f);
 
-Macerator.addRecipe(<contenttweaker:brick_dust>, <minecraft:brick>);
-Macerator.addRecipe(<contenttweaker:brick_dust> * 4, <minecraft:brick_block>);
-Macerator.addRecipe(<contenttweaker:crushed_nether_wart>, <minecraft:nether_wart>);
-Macerator.addRecipe(<contenttweaker:crushed_nether_wart> * 9, <minecraft:nether_wart_block>);
-
 recipes.addShapeless(<contenttweaker:fireclay_dust> * 2, [
     <contenttweaker:brick_dust>,<ic2:itemmisc:11>,
     <ic2:itemmisc:8>,<ic2:itemmisc:9>
@@ -186,6 +193,7 @@ Blueprint.addRecipe("components", <contenttweaker:iron_rotor_blade>, [
 FluidToItem.transform(<contenttweaker:enrichedgold>, <liquid:astralsorcery.liquidstarlight>, [<ore:dustGold>, <ore:dustRedstone> * 2], false);
 
 Macerator.addRecipe(<contenttweaker:small_stone>,<botania:manaresource:21>);
+Macerator.addRecipe(findFirstItemFromMod("contenttweaker","dust","apatite"),<forestry:apatite>);
 
 recipes.addShaped(<contenttweaker:chest_lock> * 1, [
     [<minecraft:stone_button>],
@@ -279,6 +287,12 @@ TECentrifuge.addRecipe([(<contenttweaker:raw_rubber_pulp> * 4) % 100], <ic2:item
 Carpenter.addRecipe(<contenttweaker:tie_wood>, [
     [<ore:slabWood>,<ore:slabWood>,<ore:slabWood>]
 ], 40, <liquid:creosote> * 250);
+
+Carpenter.addRecipe(<contenttweaker:battery_hull>, [
+    [null,<ic2:itemcable:1>,null],
+    [<ore:plateBatteryAlloy>,<ic2:itemcellempty>,<ore:plateBatteryAlloy>],
+    [<ore:plateBatteryAlloy>,<ic2:itemcellempty>,<ore:plateBatteryAlloy>]
+], 80, <liquid:soldering_alloy> * 144);
 
 Blueprint.addRecipe("rails", <contenttweaker:rail_wood>, [
     <contenttweaker:tie_wood>,

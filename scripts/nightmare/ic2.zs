@@ -24,9 +24,10 @@ import mods.forestry.ThermionicFabricator;
 import mods.ic2.Compressor;
 import mods.ic2.Extractor;
 import mods.ic2.Macerator;
-import mods.immersivetechnology.Distiller;
+import mods.immersiveengineering.BottlingMachine;
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Transposer;
 
 var mapCableCasting as ILiquidStack[IItemStack] = {
     <ic2:itemcable> : <liquid:copper>,
@@ -146,3 +147,7 @@ for key, value in recipeMapShaped {
 furnace.remove(<ic2:itemmisc:450>);
 InductionSmelter.addRecipe(<ic2:itemmisc:450> * 9, <contenttweaker:raw_rubber_pulp> * 9, findFirstItemFromMod("thermalfoundation","dust","sulfur"), 2500);
 Casting.addTableRecipe(<ic2:itemharz>, null, <liquid:resin>, 250, false, 400);
+
+recipes.removeShaped(<ic2:itembatre>);
+BottlingMachine.addRecipe(<ic2:itembatre>, <contenttweaker:battery_hull>, <liquid:battery_solution> * 500);
+Transposer.addFillRecipe(<ic2:itembatre>, <contenttweaker:battery_hull>,  <liquid:battery_solution> * 500, 2000);
