@@ -109,6 +109,13 @@ tile.contenttweaker.block21.name=Engineer's Metal Block 21
 tile.contenttweaker.block22.name=Engineer's Metal Block 22
 tile.contenttweaker.block23.name=Engineer's Metal Block 23
 
+# nightmare
+
+tile.contenttweaker.starsteel_block.name=Block of Starsteel
+tile.contenttweaker.alfsteel_block.name=Block of Alfsteel
+tile.contenttweaker.block_machine_hv.name=Elite Machine Block
+tile.contenttweaker.omega_core.name=Omega Core
+
 # fluids
 
 fluid.colour_out_of_space=Color out of Space
@@ -126,6 +133,13 @@ fluid.toluene=Toluene
 fluid.benzene=Benzene
 fluid.butadiene=Butadiene
 fluid.styrene=Styrene
+fluid.hydrochloric_acid=Hydrochloric Acid
+fluid.oxygen=Oxygen
+fluid.hydrogen=Hydrogen
+fluid.iron_chloride=Iron(III)chloride
+fluid.sodium_hydroxide=Sodium Hydroxide
+fluid.sodium_persulfate=Sodium Persulfate
+fluid.ectoplasma=Ectoplasma
 
 # fixes
 
@@ -135,3 +149,17 @@ tile.earthworks.block_gabion_falling_gravel.name=Gravel Gabion
 tile.glow.name=Ember Light
 tile.conjured.name=Conjured Light
 tile.draconicevolution:placed_item.name=Placed Item
+
+# missing locals
+
+enchantment.extrautils2.xu.boomereaperang.desc=
+enchantment.enderio.soulbound.desc=
+enchantment.enderio.witherweapon.desc=
+enchantment.enderio.shimmer.desc=
+enchantment.enderio.repellent.desc=
+enchantment.enderio.witherarrow.desc=
+enchantment.bibliocraft.bibliocraft.deathcompassench.desc=
+enchantment.bibliocraft.bibliocraft.readingench.desc=
+enchantment.enderzoo.witherarrow.desc=
+enchantment.enderzoo.witherweapon.desc=
+enchantment.simplyjetpacks.fuel_efficiency.desc=

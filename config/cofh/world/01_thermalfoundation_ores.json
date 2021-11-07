@@ -223,14 +223,21 @@
 						"properties": {
 							"type": "iridium"
 						},
-						"weight": 40
+						"weight": 35
 					},
 					{
 						"name": "thermalfoundation:ore",
 						"properties": {
 							"type": "platinum"
 						},
-						"weight": 60
+						"weight": 50
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "mithril"
+						},
+						"weight": 15
 					}
 				],
 				"material": "minecraft:stone",

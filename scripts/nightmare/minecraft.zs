@@ -22,9 +22,15 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.CokeOven;
+import mods.jei.JEI;
+import mods.thermalexpansion.Compactor;
+import mods.thermalexpansion.Transposer;
 
-furnace.remove(<minecraft:coal:1>);
-furnace.addRecipe(<forestry:ash>, <ore:logWood>);
+import scripts.functions.calc_basic;
+import scripts.functions.calc_flawless;
+
+JEI.addItem(<minecraft:skull:3>);
+
 CokeOven.addRecipe(<minecraft:coal:1> * 4, 1600, <forestry:wood_pile>, 2000);
 CokeOven.addRecipe(<thermalfoundation:material:802>, 400, <minecraft:coal:1>, 250);
 CokeOven.addRecipe(<thermalfoundation:storage_resource:1>, 4000, <thermalfoundation:storage_resource>, 2500);
@@ -32,10 +38,24 @@ CokeOven.addRecipe(<thermalfoundation:storage_resource:1>, 4000, <thermalfoundat
 furnace.remove(<minecraft:brick>);
 furnace.addRecipe(<minecraft:brick>, <contenttweaker:pressed_clay>);
 
+Compactor.removeStorageRecipe(<minecraft:dye:4>);
+
+calc_basic(<minecraft:dragon_breath>,<botania:manaresource:15>, <botania:manaresource:9>);
+
+recipes.remove(<minecraft:ender_eye>);
+calc_basic(<minecraft:ender_eye>, <minecraft:ender_pearl>, <minecraft:blaze_powder>);
+
+recipes.remove(<minecraft:end_crystal>);
+calc_flawless(<minecraft:end_crystal>, <botania:bifrostpermpane>, <contenttweaker:ender_star>, <enderio:item_material:16>, <botania:bifrostpermpane>);
+
+recipes.remove(<minecraft:redstone_lamp>);
+Transposer.addFillRecipe(<minecraft:redstone_lamp>, <minecraft:glowstone>, <liquid:redstone> * 400, 2000);
+
 recipes.remove(<minecraft:paper>);
+recipes.remove(<minecraft:reeds>);
 recipes.remove(<minecraft:book>);
 recipes.addShapeless(<minecraft:book>, [
-    <minecraft:paper>,<minecraft:paper>,<minecraft:paper>,<harvestcraft:hardenedleatheritem>,<minecraft:string>
+    <minecraft:paper>,<minecraft:paper>,<minecraft:paper>,<harvestcraft:hardenedleatheritem>,<contenttweaker:cordage_fiber>
 ]);
 
 recipes.removeShapeless(<minecraft:obsidian>);
@@ -61,6 +81,10 @@ recipes.addShaped(<minecraft:gravel>, [
     [<contenttweaker:gravel_dust>,<contenttweaker:gravel_dust>],
     [<contenttweaker:gravel_dust>,<contenttweaker:gravel_dust>]
 ]);
+
+recipes.remove(<minecraft:bread>);
+furnace.remove(<minecraft:bread>);
+furnace.addRecipe(<minecraft:bread>,<harvestcraft:doughitem>);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <minecraft:chest> : [
@@ -115,6 +139,31 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
         [
             [<botania:manaresource:21>,<botania:manaresource:21>],
             [<botania:manaresource:21>,<botania:manaresource:21>]
+        ]
+    ],
+    <minecraft:brewing_stand> : [
+        [
+            [<minecraft:blaze_rod>,<embers:aspectus_dawnstone>,<minecraft:blaze_rod>],
+            [<ore:cobblestone>,<extrautils2:machine>,<ore:cobblestone>]
+        ]
+    ],
+    <minecraft:redstone_torch> : [
+        [
+            [<ore:dustRedstone>],
+            [<ore:stickTreatedWood>]
+        ]
+    ],
+    <minecraft:repeater> : [
+        [
+            [<minecraft:redstone_torch>,<ore:dustRedstone>,<minecraft:redstone_torch>],
+            [<contenttweaker:stone_board>,<contenttweaker:stone_board>,<contenttweaker:stone_board>]
+        ]
+    ],
+    <minecraft:comparator> : [
+        [
+            [null,<minecraft:redstone_torch>,null],
+            [<minecraft:redstone_torch>,<immersiveengineering:material:27>,<minecraft:redstone_torch>],
+            [<contenttweaker:stone_board>,<contenttweaker:stone_board>,<contenttweaker:stone_board>]
         ]
     ]
 };

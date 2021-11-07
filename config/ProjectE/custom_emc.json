@@ -705,6 +705,10 @@
       "emc": 2688
     },
     {
+      "item": "forestry:honey_drop|2",
+      "emc": 8192
+    },
+    {
       "item": "contenttweaker:calculator|0",
       "emc": 1
     },

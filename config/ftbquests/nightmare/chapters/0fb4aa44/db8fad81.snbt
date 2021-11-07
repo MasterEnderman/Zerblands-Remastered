@@ -8,13 +8,13 @@
 			PotEnergy: 0.0f
 		}
 	},
-	x: -7.0d,
-	y: -7.5d,
+	x: -8.0d,
+	y: -8.0d,
 	shape: "gear",
 	text: [
 		"Harder Recipes, harder progression, harder everything!"
 	],
-	size: 2.0d,
+	size: 4.0d,
 	tasks: [{
 		uid: "6845fe40",
 		type: "checkmark",

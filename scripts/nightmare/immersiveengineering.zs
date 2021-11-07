@@ -21,6 +21,10 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.AtomicReconstructor;
+import mods.actuallyadditions.Empowerer;
+import mods.ic2.Compressor;
+import mods.ic2.Extractor;
+import mods.ic2.Macerator;
 import mods.immersiveengineering.BlastFurnace;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.BottlingMachine;
@@ -35,6 +39,13 @@ import mods.thermalexpansion.Transposer;
 JEI.addItem(<immersiveengineering:blueprint>.withTag({blueprint: "rails"}));
 recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "rails"}),[
     [null,<contenttweaker:tie_wood>,null],
+    [<ore:dyeBlue>,<ore:dyeBlue>,<ore:dyeBlue>],
+    [<minecraft:paper>,<minecraft:paper>,<minecraft:paper>]
+]);
+
+JEI.addItem(<immersiveengineering:blueprint>.withTag({blueprint: "machinery"}));
+recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "machinery"}),[
+    [null,<ore:gearStone>,null],
     [<ore:dyeBlue>,<ore:dyeBlue>,<ore:dyeBlue>],
     [<minecraft:paper>,<minecraft:paper>,<minecraft:paper>]
 ]);
@@ -61,6 +72,116 @@ Mixer.addRecipe(<liquid:crystaloil>*1000,<liquid:canolaoil>*1000,[<actuallyaddit
 Mixer.addRecipe(<liquid:empoweredoil>*1000,<liquid:crystaloil>*1000,[<actuallyadditions:item_misc:24>], 1000);
 
 MetalPress.removeRecipe(<immersiveengineering:graphite_electrode>);
+
+Compressor.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:17> * 8);
+
+Macerator.addRecipe(<immersiveengineering:material:17>, <ore:fuelCoke>);
+
+var mapConcrete as IItemStack[string][string] = {
+    "White" : {
+        "solid" : <minecraft:concrete:0>,
+        "powder" : <minecraft:concrete_powder:0>
+    },
+    "Orange" : {
+        "solid" : <minecraft:concrete:1>,
+        "powder" : <minecraft:concrete_powder:1>
+    },
+    "Magenta" : {
+        "solid" : <minecraft:concrete:2>,
+        "powder" : <minecraft:concrete_powder:2>
+    },
+    "LightBlue" : {
+        "solid" : <minecraft:concrete:3>,
+        "powder" : <minecraft:concrete_powder:3>
+    },
+    "Yellow" : {
+        "solid" : <minecraft:concrete:4>,
+        "powder" : <minecraft:concrete_powder:4>
+    },
+    "Lime" : {
+        "solid" : <minecraft:concrete:5>,
+        "powder" : <minecraft:concrete_powder:5>
+    },
+    "Pink" : {
+        "solid" : <minecraft:concrete:6>,
+        "powder" : <minecraft:concrete_powder:6>
+    },
+    "Gray" : {
+        "solid" : <minecraft:concrete:7>,
+        "powder" : <minecraft:concrete_powder:7>
+    },
+    "LightGray" : {
+        "solid" : <minecraft:concrete:8>,
+        "powder" : <minecraft:concrete_powder:8>
+    },
+    "Cyan" : {
+        "solid" : <minecraft:concrete:9>,
+        "powder" : <minecraft:concrete_powder:9>
+    },
+    "Purple" : {
+        "solid" : <minecraft:concrete:10>,
+        "powder" : <minecraft:concrete_powder:10>
+    },
+    "Blue" : {
+        "solid" : <minecraft:concrete:11>,
+        "powder" : <minecraft:concrete_powder:11>
+    },
+    "Brown" : {
+        "solid" : <minecraft:concrete:12>,
+        "powder" : <minecraft:concrete_powder:12>
+    },
+    "Green" : {
+        "solid" : <minecraft:concrete:13>,
+        "powder" : <minecraft:concrete_powder:13>
+    },
+    "Red" : {
+        "solid" : <minecraft:concrete:14>,
+        "powder" : <minecraft:concrete_powder:14>
+    },
+    "Black" : {
+        "solid" : <minecraft:concrete:15>,
+        "powder" : <minecraft:concrete_powder:15>
+    },
+};
+
+recipes.remove(<immersiveengineering:stone_decoration:5>);
+Casting.addBasinRecipe(<immersiveengineering:stone_decoration:5>, null, <liquid:concrete>, 250, false, 100);
+
+for dye, concrete in mapConcrete {
+    var oreDye as IIngredient = getOreDict("dye",dye);
+    var solid as IItemStack = mapConcrete[dye]["solid"];
+    var powder as IItemStack = mapConcrete[dye]["powder"];
+
+    recipes.remove(powder);
+    Casting.addBasinRecipe(solid, oreDye, <liquid:concrete>, 250, true, 100);
+    BottlingMachine.addRecipe(solid, powder, <liquid:water> * 500);
+}
+
+Mixer.removeRecipe(<liquid:concrete>);
+Mixer.addRecipe(<liquid:concrete> * 100,<liquid:water> * 1000,[
+    <thermalfoundation:material:864>,
+    <earthworks:item_slaked_lime>,
+    <ic2:itemmisc:8>,
+    <earthworks:item_sand>,
+    <contenttweaker:gravel_dust>,
+    <earthworks:item_mud>,
+], 1024);
+Mixer.addRecipe(<liquid:concrete> * 1000,<liquid:sodium_hydroxide> * 500,[
+    <thermalfoundation:material:864>,
+    <earthworks:item_slaked_lime>,
+    <ic2:itemmisc:8>,
+    <earthworks:item_sand>,
+    <contenttweaker:gravel_dust>,
+    <earthworks:item_mud>,
+], 1024);
+Mixer.addRecipe(<liquid:concrete> * 2000,<liquid:sodium_hydroxide> * 500,[
+    <thermalfoundation:material:865>,
+    <earthworks:item_slaked_lime>,
+    <ic2:itemmisc:8>,
+    <earthworks:item_sand>,
+    <contenttweaker:gravel_dust>,
+    <earthworks:item_mud>,
+], 1024);
 
 recipes.removeByRecipeName("immersiveengineering:treated_wood/treated_wood");
 Casting.addBasinRecipe(<immersiveengineering:treated_wood>, <ore:plankWood>, <liquid:creosote>, 250, true, 100);
@@ -108,6 +229,25 @@ Blueprint.addRecipe("components", <immersiveengineering:material:10>, [
     <bibliocraft:framingboard> * 2
 ]);
 
+recipes.remove(<immersiveengineering:drillhead:1>);
+Blueprint.addRecipe("components", <immersiveengineering:drillhead:1>, [
+    <ore:blockIron> * 2,
+    <ore:ingotRefinedIron> * 8
+]);
+
+recipes.remove(<immersiveengineering:drillhead>);
+Blueprint.addRecipe("components", <immersiveengineering:drillhead>, [
+    <ore:blockSteel> * 2,
+    <ore:ingotDarkSteel> * 8
+]);
+
+recipes.remove(<immersiveengineering:material:12>);
+Blueprint.addRecipe("components", <immersiveengineering:material:12>, [
+    <immersiveengineering:material:5> * 6,
+    <bibliocraft:framingboard> * 6,
+    <ore:nuggetSteel> * 3
+]);
+
 recipes.remove(<immersiveengineering:stone_decoration:8>);
 Casting.addBasinRecipe(<immersiveengineering:stone_decoration:8>, <ore:blockGlassGreen>, <liquid:iron>, 288, true, 100);
 BottlingMachine.addRecipe(<immersiveengineering:stone_decoration:8>, <ore:blockGlassGreen>, <liquid:iron> * 288);
@@ -129,10 +269,11 @@ BlastFurnace.removeRecipe(<immersiveengineering:storage:8>);
 BlastFurnace.removeRecipe(<thermalfoundation:storage_alloy>);
 BlastFurnace.addRecipe(<thermalfoundation:storage_alloy>, <contenttweaker:reinforced_iron_block>, 12000, <thermalfoundation:material:864> * 9);
 
-BlastFurnace.addRecipe(<contenttweaker:enrichedgold_ingot>, <contenttweaker:enrichedgold>, 600);
-
 furnace.remove(<immersiveengineering:material:19>);
-AtomicReconstructor.addRecipe(<immersiveengineering:material:19>, <immersiveengineering:material:18>, 50000);
+AtomicReconstructor.addRecipe(<immersiveengineering:material:19>, <immersiveengineering:material:18>, 5000);
+
+var electrode as IItemStack = <immersiveengineering:graphite_electrode>;
+Empowerer.addRecipe(electrode.withTag({Unbreakable:1}), <ic2:itemmisc:258>, electrode, electrode, electrode, electrode, 200000, 400, [0.0, 0.0, 0.0]);
 
 var molds = [
     <immersiveengineering:mold>,
@@ -147,10 +288,10 @@ var molds = [
 ] as IItemStack[];
 
 for item in molds {
-        Blueprint.removeRecipe(item);
-        Blueprint.addRecipe("molds",item,[
-            <ore:plateSteel> * 6
-        ]);
+    Blueprint.removeRecipe(item);
+    Blueprint.addRecipe("molds",item,[
+        <ore:plateSteel> * 6
+    ]);
 }
 
 recipes.remove(<immersiveengineering:metal_decoration0:3>);
@@ -172,6 +313,20 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:5> * 4, [
     [<immersiveengineering:sheetmetal:8>,<immersiveengineering:material:9>,<immersiveengineering:sheetmetal:8>],
     [<immersiveengineering:material:9>,<ore:plateElectrum>,<immersiveengineering:material:9>],
     [<immersiveengineering:sheetmetal:8>,<immersiveengineering:material:9>,<immersiveengineering:sheetmetal:8>]
+]);
+
+recipes.remove(<immersiveengineering:metal_decoration0:7>);
+recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 4, [
+    [<immersiveengineering:sheetmetal:8>,<contenttweaker:copper_coil>,<immersiveengineering:sheetmetal:8>],
+    [<contenttweaker:copper_coil>,<ore:plateConstantan>,<contenttweaker:copper_coil>],
+    [<immersiveengineering:sheetmetal:8>,<contenttweaker:copper_coil>,<immersiveengineering:sheetmetal:8>]
+]);
+
+recipes.remove(<immersiveengineering:metal_decoration0:6>);
+recipes.addShaped(<immersiveengineering:metal_decoration0:6> * 4, [
+    [<immersiveengineering:sheetmetal:8>,<contenttweaker:electric_motor>,<immersiveengineering:sheetmetal:8>],
+    [<contenttweaker:electric_motor>,<immersiveengineering:metal_device1:2>,<contenttweaker:electric_motor>],
+    [<immersiveengineering:sheetmetal:8>,<contenttweaker:electric_motor>,<immersiveengineering:sheetmetal:8>]
 ]);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
@@ -241,6 +396,20 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<immersiveengineering:wirecoil>,<immersiveengineering:wirecoil>,<immersiveengineering:wirecoil>]
         ]
     ],
+    <immersiveengineering:metal_decoration0:1> : [
+        [
+            [<immersiveengineering:wirecoil:1>,<immersiveengineering:wirecoil:1>,<immersiveengineering:wirecoil:1>],
+            [<immersiveengineering:wirecoil:1>,<ic2:blockfenceiron>,<immersiveengineering:wirecoil:1>],
+            [<immersiveengineering:wirecoil:1>,<immersiveengineering:wirecoil:1>,<immersiveengineering:wirecoil:1>]
+        ]
+    ],
+    <immersiveengineering:metal_decoration0:2> : [
+        [
+            [<immersiveengineering:wirecoil:2>,<immersiveengineering:wirecoil:2>,<immersiveengineering:wirecoil:2>],
+            [<immersiveengineering:wirecoil:2>,<ic2:blockfenceiron>,<immersiveengineering:wirecoil:2>],
+            [<immersiveengineering:wirecoil:2>,<immersiveengineering:wirecoil:2>,<immersiveengineering:wirecoil:2>]
+        ]
+    ],
     <immersiveengineering:metal_device1:2> : [
         [
             [<ore:plateIron>,<cd4017be_lib:m:400>,<ore:plateIron>],
@@ -254,11 +423,60 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [null,<ore:stickTreatedWood>]
         ]
     ],
+    <immersiveengineering:wirecoil> * 4	:[
+    	[
+            [null,<ore:wireCopper>,null],
+            [<ore:wireCopper>,<ore:stickTreatedWood>,<ore:wireCopper>],
+            [null,<ore:wireCopper>,null]
+        ]
+    ],
+    <immersiveengineering:wirecoil:1> * 4	:[
+    	[
+            [null,<ore:wireElectrum>,null],
+            [<ore:wireElectrum>,<ore:stickTreatedWood>,<ore:wireElectrum>],
+            [null,<ore:wireElectrum>,null]
+        ]
+    ],
+    <immersiveengineering:wirecoil:2> * 4	:[
+    	[
+            [null,<ore:wireAluminum>,null],
+            [<ore:wireSteel>,<ore:stickTreatedWood>,<ore:wireSteel>],
+            [null,<ore:wireAluminum>,null]
+        ]
+    ],
+    <immersiveengineering:wirecoil:3> * 4	:[
+    	[
+            [null,<ore:fiberHemp>,null],
+            [<ore:fiberHemp>,<ore:stickTreatedWood>,<ore:fiberHemp>],
+            [null,<ore:fiberHemp>,null]
+        ]
+    ],
+    <immersiveengineering:wirecoil:4> * 4	:[
+    	[
+            [null,<ore:wireSteel>,null],
+            [<ore:wireSteel>,<ore:stickTreatedWood>,<ore:wireSteel>],
+            [null,<ore:wireSteel>,null]
+        ]
+    ],
     <immersiveengineering:wirecoil:5> * 4 : [
         [
             [null,<ore:wireRedAlloy>,null],
-            [<ore:wireRedAlloy>,<ore:stickWood>,<ore:wireRedAlloy>],
+            [<ore:wireRedAlloy>,<ore:stickTreatedWood>,<ore:wireRedAlloy>],
             [null,<ore:wireRedAlloy>,null]
+        ]
+    ],
+    <immersiveengineering:metal_device1:13>	: [
+    	[
+            [<actuallyadditions:block_greenhouse_glass>,<immersiveengineering:metal_device1:4>,<actuallyadditions:block_greenhouse_glass>],
+            [<actuallyadditions:block_greenhouse_glass>,<randomthings:fertilizeddirt>,<actuallyadditions:block_greenhouse_glass>],
+            [<ore:plankTreatedWood>,<immersiveengineering:metal_decoration0:5>,<ore:plankTreatedWood>]
+        ]
+    ],
+    <immersiveengineering:wooden_device0> : [
+        [
+            [<ore:plankTreatedWood>,<ore:plankTreatedWood>,<ore:plankTreatedWood>],
+            [<ore:plankTreatedWood>,<extrautils2:minichest>,<ore:plankTreatedWood>],
+            [<ore:plankTreatedWood>,<ore:plankTreatedWood>,<ore:plankTreatedWood>]
         ]
     ]
 };
@@ -273,3 +491,8 @@ for key, value in recipeMapShaped {
         index += 1;
     }
 }
+
+Extractor.addRecipe(<immersiveengineering:material:20> * 4, <ore:ingotCopper>);
+Extractor.addRecipe(<immersiveengineering:material:21> * 4, <ore:ingotElectrum>);
+Extractor.addRecipe(<immersiveengineering:material:22> * 4, <ore:ingotAluminum>);
+Extractor.addRecipe(<immersiveengineering:material:23> * 4, <ore:ingotSteel>);

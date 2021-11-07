@@ -24,3 +24,42 @@ import mods.tconstruct.Casting;
 
 recipes.remove(<chisel:brownstone>);
 Casting.addBasinRecipe(<chisel:brownstone>, <minecraft:sandstone>, <liquid:clay>, 576, true, 200);
+
+var recipeMapShaped as IIngredient[][][][IItemStack] = {
+    <chisel:chisel_iron> : [
+        [
+            [null,<ore:plateIron>],
+            [<actuallyadditions:item_misc:3>,null]
+        ]
+    ],
+    <chisel:chisel_diamond> : [
+        [
+            [null,<contenttweaker:flawlessdiamond>],
+            [<actuallyadditions:item_misc:3>,null]
+        ]
+    ],
+    <chisel:chisel_hitech> : [
+        [
+            [<ic2:itemmisc:451>,<contenttweaker:enddiamond>],
+            [<chisel:chisel_diamond:*>,<thermalfoundation:material:640>]
+        ]
+    ],
+    <chisel:auto_chisel> : [
+        [
+            [<ore:blockGlassHardened>,<minecraft:anvil>,<ore:blockGlassHardened>],
+            [<botania:rune:2>,<thermalexpansion:frame>,<botania:rune:2>],
+            [<ore:gearConstantan>,<thermalfoundation:material:513>,<ore:gearConstantan>]
+        ]
+    ]
+};
+
+for key, value in recipeMapShaped {
+	var index as int = 0;    
+    recipes.remove(key);
+
+    for recipe in value {
+        var name as string = "ct_"+toString(key)+"_"+index;
+        recipes.addShaped(name, key, recipe);
+        index += 1;
+    }
+}

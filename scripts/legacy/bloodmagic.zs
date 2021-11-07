@@ -118,5 +118,3 @@ TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:glowstone_dust>,<min
 TartaricForge.addRecipe(<bloodmagic:component:8>,[
 	<botania:spellcloth>,<woot:soulsanddust>,<embers:ember_cluster>,<bloodmagic:slate:1>
 ], 400, 50);
-
-<bloodmagic:blood_shard>.addTooltip(format.green("Kill a Mob with a Bound Blade!"));

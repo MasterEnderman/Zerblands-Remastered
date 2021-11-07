@@ -22,19 +22,24 @@ import scripts.functions.findFirstItemFromMod;
 
 import scripts.functions.calc_basic;
 
+import mods.ic2.Extractor;
+
 recipes.remove(<rs_ctr:wire>);
-recipes.addShapeless(<rs_ctr:wire> * 8, [<ic2:itemtoolcutter:*>.transformDamage(8), <immersiveengineering:wirecoil:5>]);
+recipes.addShapeless(<rs_ctr:wire> * 2, [<immersiveengineering:wirecoil:5>]);
+recipes.addShapeless(<rs_ctr:wire> * 4, [<ic2:itemtoolcutter:*>.transformDamage(8), <immersiveengineering:wirecoil:5>]);
+Extractor.addRecipe(<rs_ctr:wire> * 8, <immersiveengineering:wirecoil:5>);
 
 recipes.remove(<rs_ctr:wire_anchor>);
 recipes.addShapeless(<rs_ctr:wire_anchor> * 4, [<appliedenergistics2:nether_quartz_cutting_knife:*>, <appliedenergistics2:part:120>]);
 recipes.addShapeless(<rs_ctr:wire_anchor> * 4, [<appliedenergistics2:certus_quartz_cutting_knife:*>, <appliedenergistics2:part:120>]);
+Extractor.addRecipe(<rs_ctr:wire_anchor> * 4, <appliedenergistics2:part:120>);
 
 recipes.remove(<cd4017be_lib:m:402>);
 recipes.addShapeless(<cd4017be_lib:m:402> * 2, [
     <appliedenergistics2:material:46>,
     <astralsorcery:itemcraftingcomponent:2>,
     <contenttweaker:energium_dust>,
-    <actuallyadditions:item_dust:4>
+    <contenttweaker:electrotine_dust>
 ]);
 
 recipes.remove(<rs_ctr:rs_port>);

@@ -51,5 +51,5 @@ recipes.addShaped(<buildinggadgets:constructionpastecontainer>, [
 recipes.remove(<buildinggadgets:constructionblockpowder>);
 recipes.addShapeless(<buildinggadgets:constructionblockpowder>, [
     <ore:itemSlag>,<ore:crystalCrudeOil>,
-    <earthworks:block_chalk>,<minecraft:clay_ball>
+    <earthworks:block_chalk>,<ic2:itemmisc:8>
 ]);

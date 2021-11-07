@@ -1,0 +1,17 @@
+{
+	x: 10.5d,
+	y: -3.5d,
+	dependencies: [
+		"d4bcf09c",
+		"04c329d2",
+		"e7c1f7bb",
+		"2beae0f4"
+	],
+	tasks: [{
+		uid: "bb317fbb",
+		type: "item",
+		items: [{
+			item: "botanicadds:gaiasteel_ingot"
+		}]
+	}]
+}

@@ -24,12 +24,16 @@ import mods.actuallyadditions.AtomicReconstructor;
 import mods.astralsorcery.Altar;
 import mods.astralsorcery.Grindstone;
 import mods.bloodmagic.AlchemyTable;
+import mods.bloodmagic.BloodAltar;
+import mods.botania.RuneAltar;
 import mods.botania.PureDaisy;
 import mods.enderio.AlloySmelter;
+import mods.enderio.SoulBinder;
 import mods.evilcraft.BloodInfuser;
 import mods.forestry.Carpenter;
 import mods.forestry.Centrifuge;
 import mods.forestry.ThermionicFabricator;
+import mods.ic2.Compressor;
 import mods.ic2.Extractor;
 import mods.ic2.Macerator;
 import mods.immersiveengineering.AlloySmelter as Kiln;
@@ -39,32 +43,56 @@ import mods.immersiveengineering.BottlingMachine;
 import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Refinery;
+import mods.immersivetechnology.ElectrolyticCrucibleBattery;
 import mods.immersivetechnology.SolarTower;
 import mods.inworldcrafting.ExplosionCrafting;
-import mods.inworldcrafting.FluidToItem;
 import mods.tconstruct.Alloy;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Drying;
 import mods.tconstruct.Melting;
 import mods.thermalexpansion.Centrifuge as TECentrifuge;
+import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Infuser;
 import mods.thermalexpansion.Refinery as TERefinery;
 import mods.thermalexpansion.Transposer;
+import mods.threng.Energizer;
 
-Mixer.addRecipe(<liquid:sulfuric_acid>*1000, <liquid:distwater>*1000, [<ore:dustSulfur>*4,<ore:dustIron>], 1024);
+<contenttweaker:eternalslate>.addTooltip("Infused stone inside of a");
+<contenttweaker:eternalslate>.addTooltip("Blood Altar");
+
+<contenttweaker:potatos>.addTooltip(format.darkPurple("aka PotatOS"));
+
+Mixer.addRecipe(<liquid:sulfuric_acid>*100, <liquid:iron_chloride>*100, [<ore:dustSulfur>*4], 1024);
 
 PureDaisy.addRecipe(<sonarcore:stablestone_normal>, <contenttweaker:runestone>, 100);
+
+RuneAltar.addRecipe(<contenttweaker:infusion_block>,[
+    <botania:rune:11>,
+    <bloodmagic:slate:1>,
+    <botania:rune:15>,
+    <bloodmagic:slate:1>,
+    <botania:rune:14>,
+    <bloodmagic:slate:1>,
+    <botania:rune:9>,
+    <bloodmagic:slate:1>
+], 2000);
 
 ExplosionCrafting.explodeItemRecipe(<contenttweaker:rune_blank> * 2, <contenttweaker:runestone>);
 
 TERefinery.removeRecipe(<liquid:oil>);
 TERefinery.removeRecipe(<liquid:crude_oil>);
 
+ElectrolyticCrucibleBattery.removeRecipe(<liquid:water>);
+ElectrolyticCrucibleBattery.addRecipe(<liquid:hydrogen>*800,<liquid:oxygen>*400,null,null,<liquid:water>*1200,2048*250,250);
+
 Casting.addTableRecipe(<contenttweaker:lithium_dust>, null, <liquid:briny_water>, 200, false, 600);
+Casting.addTableRecipe(<contenttweaker:sodium_dust>, null, <liquid:moltensodium>, 250, false, 600);
 Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","plate","StyreneButadieneRubber"), <tconstruct:cast_custom:3> ,<liquid:styrene_butadiene_rubber>, 200, false, 120);
 
-Mixer.addRecipe(<liquid:hydrogen_chlorid>*250, <liquid:sulfuric_acid>*250, [<ore:dustSalt>*4], 512);
+Mixer.addRecipe(<liquid:iron_chloride>*100, <liquid:hydrochloric_acid>*100, [<ore:oreIron>], 512);
+Mixer.addRecipe(<liquid:sodium_persulfate>*2000, <liquid:oxygen>*1000, [<ore:dustSulfur>,<contenttweaker:sodium_dust>], 512);
+Mixer.addRecipe(<liquid:sodium_hydroxide>*500, <liquid:water>*500, [<contenttweaker:sodium_dust>], 512);
 Mixer.addRecipe(<liquid:battery_solution>*250, <liquid:distwater>*250, [
     <contenttweaker:lithium_dust>,
     <contenttweaker:electrotine_dust>,
@@ -78,9 +106,20 @@ Mixer.addRecipe(<liquid:battery_solution>*250, <liquid:distwater>*250, [
     <abyssalcraft:crystal:7>
 ], 512);
 
-Refinery.addRecipe(<liquid:ethylene>*8, <liquid:refined_oil>*8, <liquid:steam>*100, 512);
-Refinery.addRecipe(<liquid:plastic>*16, <liquid:ethylene>*8, <liquid:hydrogen_chlorid>*8, 512);
-Refinery.addRecipe(<liquid:steamed_naphtha>*50, <liquid:refined_oil>*50, <liquid:steam>*100, 512);
+Refinery.addRecipe(<liquid:plastic> * 16, <liquid:ethylene> * 8, <liquid:hydrogen_chlorid> * 8, 512);
+Refinery.addRecipe(<liquid:ethylene> * 10, <liquid:refined_biofuel> * 6, <liquid:hydrogen> * 4, 512);
+Refinery.addRecipe(<liquid:steamed_naphtha> * 50, <liquid:refined_oil> * 50, <liquid:steam> * 100, 512);
+Refinery.addRecipe(<liquid:hydrochloric_acid> * 100, <liquid:water> * 50, <liquid:hydrogen_chlorid> * 50, 512);
+Refinery.addRecipe(<liquid:hydrogen_chlorid> * 200, <liquid:chlorine> * 100, <liquid:hydrogen> * 100, 512);
+# Refinery.addRecipe(<liquid:sodium_hydroxid> * 200, <liquid:moltensodium> * 100, <liquid:water> * 100, 512);
+
+Refinery.addRecipe(<liquid:colour_out_of_space>*20, <liquid:astralsorcery.liquidstarlight>*15, <liquid:liquidantimatter>*5, 512);
+Refinery.addRecipe(<liquid:colour_out_of_space>*10, <liquid:astralsorcery.liquidstarlight>*10, <liquid:liquidcoralium>*10, 512);
+
+BloodAltar.addRecipe(<contenttweaker:eternalslate>, <bloodmagic:slate:4>, 5, 60000,80,200);
+
+BloodAltar.addRecipe(<contenttweaker:corruptedstarmetal>, <astralsorcery:itemcraftingcomponent:1>, 2, 10000,200,50);
+BloodInfuser.addRecipe(<astralsorcery:itemcraftingcomponent:1>, <liquid:evilcraftblood> * 64000, 3, <contenttweaker:corruptedstarmetal>, 1000, 5);
 
 Alloy.addRecipe(<liquid:soldering_alloy> * 432, [<liquid:lead> * 144, <liquid:tin> * 288]);
 Alloy.addRecipe(<liquid:battery_alloy> * 720, [<liquid:lead> * 576, <liquid:antimony> * 144]);
@@ -90,6 +129,10 @@ Casting.addTableRecipe(<contenttweaker:plastic>, <tconstruct:cast_custom:3>, <li
 AlloySmelter.addRecipe(<contenttweaker:ender_ingot>, [<ore:ingotSilver>,<embers:shard_ember>,<ore:dustEnder>], 5000);
 
 AlloySmelter.addRecipe(<contenttweaker:starsteel_ingot>, [<ore:ingotManasteel>,<ore:ingotAstralStarmetal>,<ore:ingotPsi>], 50000);
+
+AlloySmelter.addRecipe(<contenttweaker:enhanced_ender_ingot>, [<contenttweaker:ender_ingot>, <extrautils2:ingredients:17>, <botania:manaresource:14>], 500000);
+
+AlloySmelter.addRecipe(findFirstItemFromMod("contenttweaker","ingot","ferromagneticAlloy"), [<ore:ingotIron>,<ore:ingotNickel>,<ore:ingotCobalt>], 10000);
 
 AlchemyTable.addRecipe(<contenttweaker:crystal_prism>, [
 	<astralsorcery:itemrockcrystalsimple>,<tconstruct:edible:30>,<tconstruct:edible:31>,
@@ -112,6 +155,7 @@ Casting.removeTableRecipe(<contenttweaker:ender_ingot>);
 InductionSmelter.addRecipe(<contenttweaker:electro_silicon>, <appliedenergistics2:material:5>, <contenttweaker:electrotine_dust> * 4, 5000);
 
 Infuser.addRecipe(<contenttweaker:electrotine_dust>, <actuallyadditions:item_dust:4>, 2500);
+Energizer.addRecipe(<contenttweaker:electrotine_dust>, <actuallyadditions:item_dust:4>, 2500);
 
 // inputStack, inputFluid, tier, outputStack, duration, xp
 BloodInfuser.addRecipe(<sonarcore:reinforcedstoneblock>, <liquid:evilcraftblood> * 2000, 0, <contenttweaker:blood_infused_stone>, 100, 10);
@@ -123,9 +167,9 @@ BloodInfuser.addRecipe(<contenttweaker:rune_rare>, <liquid:evilcraftblood> * 640
 
 // mods.immersivetechnology.SolarTower.addRecipe(ILiquidStack outputFluid, ILiquidStack inputFluid, int time);
 SolarTower.removeRecipe(<liquid:water>);
-SolarTower.addRecipe(<liquid:brackish_water> * 100, <liquid:water> * 1000, 10);
-SolarTower.addRecipe(<liquid:saline_water> * 100, <liquid:brackish_water> * 1000, 10);
-SolarTower.addRecipe(<liquid:briny_water> * 100, <liquid:saline_water> * 1000, 10);
+SolarTower.addRecipe(<liquid:brackish_water> * 100, <liquid:water> * 1000, 600);
+SolarTower.addRecipe(<liquid:saline_water> * 100, <liquid:brackish_water> * 1000, 600);
+SolarTower.addRecipe(<liquid:briny_water> * 100, <liquid:saline_water> * 1000, 600);
 
 Altar.addDiscoveryAltarRecipe("grinding_wheel", <contenttweaker:grind_wheel>, 200, 200, [
     <ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>,
@@ -151,8 +195,11 @@ for output, input in mapPressed {
         <contenttweaker:pattern_ingot:*>.transformDamage(),input
     ]);
     MetalPress.addRecipe(output, input, <contenttweaker:mold_ingot>, 2048);
+    Compressor.addRecipe(output, input);
+    Compactor.addPressRecipe(output, input, 2000);
 }
 
+Compactor.addStorageRecipe(<contenttweaker:clay_plate_raw>, <minecraft:clay_ball>, 4000);
 MetalPress.addRecipe(<contenttweaker:clay_plate_raw>, <minecraft:clay_ball>, <immersiveengineering:mold>, 2048);
 furnace.addRecipe(<contenttweaker:clay_plate>, <contenttweaker:clay_plate_raw>);
 
@@ -173,6 +220,8 @@ recipes.addShapeless(<contenttweaker:fireclay_dust> * 2, [
 Drying.addRecipe(<contenttweaker:fireclay_dried>,<contenttweaker:pressed_fireclay>,400);
 furnace.addRecipe(<contenttweaker:fireclay_brick>,<contenttweaker:fireclay_dried>);
 
+furnace.addRecipe(<contenttweaker:reinforced_obsidian_ingot>,<enderio:block_reinforced_obsidian>);
+
 Blueprint.addRecipe("components", <contenttweaker:electric_motor>, [
     <immersiveengineering:material:8> * 1,
     <extrautils2:ingredients:13> * 1,
@@ -190,9 +239,6 @@ Blueprint.addRecipe("components", <contenttweaker:iron_rotor_blade>, [
     <ore:plateIron> * 2
 ]);
 
-FluidToItem.transform(<contenttweaker:enrichedgold>, <liquid:astralsorcery.liquidstarlight>, [<ore:dustGold>, <ore:dustRedstone> * 2], false);
-
-Macerator.addRecipe(<contenttweaker:small_stone>,<botania:manaresource:21>);
 Macerator.addRecipe(findFirstItemFromMod("contenttweaker","dust","apatite"),<forestry:apatite>);
 
 recipes.addShaped(<contenttweaker:chest_lock> * 1, [
@@ -233,9 +279,33 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:basic_blade>,<contenttweaker:basic_blade>,<contenttweaker:basic_blade>],
             [<contenttweaker:basic_blade>,<ore:gearStone>,<contenttweaker:basic_blade>],
             [<contenttweaker:basic_blade>,<contenttweaker:basic_blade>,<contenttweaker:basic_blade>]
+        ],
+        [
+            [<ic2:itemmisc:303>,<ic2:itemmisc:303>,<ic2:itemmisc:303>],
+            [<ic2:itemmisc:303>,<ore:gearStone>,<ic2:itemmisc:303>],
+            [<ic2:itemmisc:303>,<ic2:itemmisc:303>,<ic2:itemmisc:303>]
         ]
     ],
-    <contenttweaker:stone_board> : [
+    <contenttweaker:cutting_head_iron> : [
+        [
+            [<ic2:itemmisc:301>,<ic2:itemmisc:301>,<ic2:itemmisc:301>],
+            [<ic2:itemmisc:301>,<contenttweaker:cutting_head>,<ic2:itemmisc:301>],
+            [<ic2:itemmisc:301>,<ic2:itemmisc:301>,<ic2:itemmisc:301>]
+        ]
+    ],
+    <contenttweaker:cutting_head_diamond> : [
+        [
+            [<contenttweaker:flawless_diamond_shard>,<contenttweaker:flawless_diamond_shard>,<contenttweaker:flawless_diamond_shard>],
+            [<contenttweaker:flawless_diamond_shard>,<contenttweaker:cutting_head>,<contenttweaker:flawless_diamond_shard>],
+            [<contenttweaker:flawless_diamond_shard>,<contenttweaker:flawless_diamond_shard>,<contenttweaker:flawless_diamond_shard>]
+        ],
+        [
+            [null,<contenttweaker:flawless_diamond_shard>,null],
+            [<contenttweaker:flawless_diamond_shard>,<contenttweaker:cutting_head_iron>,<contenttweaker:flawless_diamond_shard>],
+            [null,<contenttweaker:flawless_diamond_shard>,null]
+        ]
+    ],
+    <contenttweaker:stone_board> * 4 : [
         [
             [null,<randomthings:ingredient:8>,null],
             [<contenttweaker:small_stone>,<ore:slimeball>,<contenttweaker:small_stone>],
@@ -247,7 +317,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [null,<contenttweaker:clay_plate>,null]
         ]
     ],
-    <contenttweaker:gravel_dust> : [
+    <contenttweaker:gravel_dust> * 4 : [
         [
             [<minecraft:gravel>]
         ]
@@ -257,6 +327,54 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:tie_wood>],
             [<contenttweaker:tie_wood>],
             [<contenttweaker:tie_wood>]
+        ]
+    ],
+    <contenttweaker:heat_conductor> * 4 : [
+        [
+            [<ore:plateCopper>,<ore:ingotConductiveIron>,<ore:plateCopper>],
+            [<ic2:itemmisc:450>,<ore:plateStyreneButadieneRubber>,<ic2:itemmisc:450>],
+            [<ore:plateCopper>,<ore:ingotConductiveIron>,<ore:plateCopper>]
+        ]
+    ],
+    <contenttweaker:cordage_fiber> : [
+        [
+            [<immersiveengineering:material:4>,<immersiveengineering:material:4>,<immersiveengineering:material:4>],
+            [<immersiveengineering:material:4>,<immersiveengineering:material:4>,<immersiveengineering:material:4>]
+        ]
+    ],
+    <contenttweaker:iridium_alloy_ingot> : [
+        [
+            [<ic2:itemmisc:181>,<ic2:itemmisc:181>,<ic2:itemmisc:181>],
+            [<ore:plateTungsten>,<ic2:itemmisc:257>,<ore:plateTungsten>],
+            [<ic2:itemmisc:181>,<ic2:itemmisc:181>,<ic2:itemmisc:181>]
+        ]
+    ],
+    <contenttweaker:block_machine_hv> : [
+        [
+            [<ore:plateTungsten>,<contenttweaker:hdpe_sheet>,<ore:plateTungsten>],
+            [<enderio:item_material:68>,<ic2:blockelectric:2>,<enderio:item_material:68>],
+            [<ore:plateTungsten>,<contenttweaker:hdpe_sheet>,<ore:plateTungsten>]
+        ]
+    ],
+    findFirstItemFromMod("contenttweaker","dust","tungsten") : [
+        [
+            [findFirstItemFromMod("contenttweaker","dustSmall","tungsten"),findFirstItemFromMod("contenttweaker","dustSmall","tungsten")],
+            [findFirstItemFromMod("contenttweaker","dustSmall","tungsten"),findFirstItemFromMod("contenttweaker","dustSmall","tungsten")]
+        ],
+        [
+            [findFirstItemFromMod("contenttweaker","dustTiny","tungsten"),findFirstItemFromMod("contenttweaker","dustTiny","tungsten"),findFirstItemFromMod("contenttweaker","dustTiny","tungsten")],
+            [findFirstItemFromMod("contenttweaker","dustTiny","tungsten"),findFirstItemFromMod("contenttweaker","dustTiny","tungsten"),findFirstItemFromMod("contenttweaker","dustTiny","tungsten")],
+            [findFirstItemFromMod("contenttweaker","dustTiny","tungsten"),findFirstItemFromMod("contenttweaker","dustTiny","tungsten"),findFirstItemFromMod("contenttweaker","dustTiny","tungsten")]
+        ]
+    ],
+    <contenttweaker:potatos> : [
+        [
+            [<ore:nuggetAluminum>,<minecraft:potato>],
+            [<contenttweaker:module_energy>,<ore:nuggetCopper>]
+        ],
+        [
+            [<ore:nuggetCopper>,<minecraft:potato>],
+            [<contenttweaker:module_energy>,<ore:nuggetAluminum>]
         ]
     ]
 };
@@ -284,6 +402,17 @@ Extractor.addRecipe(<contenttweaker:raw_rubber_pulp> * 6, <ic2:itemharz>);
 Centrifuge.addRecipe([(<contenttweaker:raw_rubber_pulp> * 2) % 100], <ic2:itemharz>, 100);
 TECentrifuge.addRecipe([(<contenttweaker:raw_rubber_pulp> * 4) % 100], <ic2:itemharz>, null, 2000);
 
+TECentrifuge.addRecipe([
+    (findFirstItemFromMod("thermalfoundation","dust","platinum")) % 5,
+    (findFirstItemFromMod("contenttweaker","dustSmall","tungsten")) % 10,
+    (findFirstItemFromMod("contenttweaker","dustTiny","tungsten")) % 20
+], <contenttweaker:end_stone_dust>, null, 20000);
+
+furnace.remove(<ore:ingotTungsten>);
+InductionSmelter.addRecipe(findFirstItemFromMod("contenttweaker","ingot","tungsten"), findFirstItemFromMod("contenttweaker","dust","tungsten"), <thermalfoundation:material:1024> * 4, 50000);
+InductionSmelter.addRecipe(findFirstItemFromMod("contenttweaker","ingot","tungsten"), findFirstItemFromMod("contenttweaker","dustSmall","tungsten") * 4, <thermalfoundation:material:1024> * 4, 50000);
+InductionSmelter.addRecipe(findFirstItemFromMod("contenttweaker","ingot","tungsten"), findFirstItemFromMod("contenttweaker","dustTiny","tungsten") * 9, <thermalfoundation:material:1024> * 4, 50000);
+
 Carpenter.addRecipe(<contenttweaker:tie_wood>, [
     [<ore:slabWood>,<ore:slabWood>,<ore:slabWood>]
 ], 40, <liquid:creosote> * 250);
@@ -300,11 +429,11 @@ Blueprint.addRecipe("rails", <contenttweaker:rail_wood>, [
 ]);
 
 Blueprint.addRecipe("rails", <contenttweaker:rail_standard> * 6, [
-    <ore:plateGold> * 3
+    <ore:plateIron> * 3
 ]);
 
 Blueprint.addRecipe("rails", <contenttweaker:rail_speed> * 6, [
-    <ore:plateIron> * 3
+    <ore:plateGold> * 3
 ]);
 
 var materialSystem as string[string] = {
@@ -312,6 +441,7 @@ var materialSystem as string[string] = {
     "batteryAlloy" : "battery_alloy",
     "redAlloy" : "red_alloy",
     "solderingAlloy" : "soldering_alloy",
+    "tungsten" : "tungsten",
 };
 
 for material, fluid in materialSystem {
@@ -328,7 +458,15 @@ for material, fluid in materialSystem {
     Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","ingot",material), <tconstruct:cast_custom>, getFluid(fluid), 144, false);
     Casting.addBasinRecipe(findFirstItemFromMod("contenttweaker","block",material), null, getFluid(fluid), 1296, false);
 
-    Melting.addRecipe(getFluid(fluid)*16, nugget, 275);
-    Melting.addRecipe(getFluid(fluid)*144, ingot, 550);
-    Melting.addRecipe(getFluid(fluid)*1296, block, 1100);
+    Melting.addRecipe(getFluid(fluid)*16, nugget, 395);
+    Melting.addRecipe(getFluid(fluid)*144, ingot, 490);
+    Melting.addRecipe(getFluid(fluid)*1296, block, 681);
 }
+
+SoulBinder.addRecipe(<contenttweaker:antispider_eye>,<abyssalcraft:antispidereye>,["minecraft:spider","minecraft:cave_spider","abyssalcraft:antispider"], 50000, 225);
+
+furnace.setFuel(<contenttweaker:bio_fuel>, 1600);
+Transposer.addFillRecipe(<contenttweaker:bio_fuel>, <forestry:wood_pulp>,  <liquid:biomass> * 500, 4000);
+Transposer.addFillRecipe(<contenttweaker:hdpe_substrate>, <contenttweaker:bio_fuel>,  <liquid:hydrogen> * 500, 4000);
+Transposer.addFillRecipe(<contenttweaker:hdpe_pellet>, <contenttweaker:hdpe_substrate>,  <liquid:ethylene> * 500, 4000);
+Compressor.addRecipe(<contenttweaker:hdpe_sheet>, <contenttweaker:hdpe_pellet> * 4);

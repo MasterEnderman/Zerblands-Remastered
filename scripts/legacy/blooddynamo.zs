@@ -21,11 +21,6 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.bloodmagic.BloodAltar;
-import mods.jei.JEI;
-
-JEI.removeAndHide(<blood_dynamo:ingredient>);
-JEI.removeAndHide(<blood_dynamo:ingredient:1>);
-JEI.removeAndHide(<blood_dynamo:ingredient:3>);
 
 BloodAltar.addRecipe(<blood_dynamo:ingredient:2>,<thermalfoundation:material:23>,1,1000,100,100);
 

@@ -1,7 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
 
-    <recipe name="Alloy: Nethercotta" disabled="true" />
+    <recipe name="Alloy: Nethercotta">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Electrical Steel">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Electrical Steel, Variant">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Energetic Alloy">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Vibrant Alloy">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Redstone Alloy">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Conductive Iron">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Pulsating Iron">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Dark Steel">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Dark Steel, Variant">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: End Steel">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Construction Alloy">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Soularium">
+        <disabled/>
+    </recipe>
+    <recipe name="Chassis">
+        <disabled/>
+    </recipe>
+    <recipe name="Enhanced Chassis">
+        <disabled/>
+    </recipe>
+    <recipe name="Soul Chassis">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Industrial Insulation">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Manyullyn">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Steel">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Signalum (Thermal Expansion)">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Lumium from dust (Thermal Expansion)">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Lumium (Thermal Expansion)">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Enderium Base (Thermal Expansion)">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Enderium (Thermal Expansion)">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Steel (Oredict)">
+        <disabled/>
+    </recipe>
+
+    <recipe name="Alloy: Endergy Crude Steel">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Endergy Crystalline Alloy">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Endergy Crystalline Pink Slime">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Endergy Melodic Alloy">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Endergy Stellar Alloy">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Energetic Silver Alloy">
+        <disabled/>
+    </recipe>
+    <recipe name="Alloy: Vivid Alloy">
+        <disabled/>
+    </recipe>
+
 
     <recipe name="Sagmill: Log" required="false">
         <sagmilling energy="2400">
@@ -43,27 +140,21 @@
         </sagmilling>
     </recipe>
 
-    <recipe name="Sagmill: ClayBlock" required="true" disabled="true">
-        <sagmilling energy="2400">
-            <input name="minecraft:clay" />
-            <output name="minecraft:clay_ball" amount="2" />
-            <output name="minecraft:clay_ball" chance="0.1" />
-            <output name="itemSilicon" amount="2" chance="0.8" />
-        </sagmilling>
+    <recipe name="Sagmill: ClayBlock">
+        <disabled/>
     </recipe>
-    <recipe name="Sagmill: oreRedstone Ore" required="true" disabled="true">
+    <recipe name="Sagmill: oreRedstone Ore">
+        <disabled/>
+    </recipe>
+    <recipe name="Sagmill: oreRedstone Ore Fix">
         <sagmilling energy="3600">
             <input name="oreRedstone" />
             <output name="dustRedstone" amount="8" />
             <output name="dustRedstone" chance="0.2" />
-            <output name="itemSilicon" chance="0.8" />
             <output name="oredict:cobblestone" chance="0.15" />
         </sagmilling>
     </recipe>
-    <recipe name="Sagmill: Silicon" required="true" disabled="true">
-        <sagmilling energy="720">
-            <input name="oredict:sand" />
-            <output name="itemSilicon" chance="0.5" />
-        </sagmilling>
+    <recipe name="Sagmill: Silicon" disabled="true">
+        <disabled/>
     </recipe>
 </enderio:recipes>

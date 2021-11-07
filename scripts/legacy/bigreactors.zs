@@ -22,13 +22,6 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
 import mods.enderio.AlloySmelter;
-import mods.jei.JEI;
-
-JEI.removeAndHide(<bigreactors:turbinepowertaptesla>);
-JEI.removeAndHide(<bigreactors:reactorpowertaptesla>);
-JEI.removeAndHide(<bigreactors:oreanglesite>);
-JEI.removeAndHide(<bigreactors:orebenitoite>);
-JEI.removeAndHide(<bigreactors:reactorrednetport>);
 
 mods.actuallyadditions.Empowerer.addRecipe(<bigreactors:ingotcyanite>,<bigreactors:ingotyellorium>,<bigreactors:ingotgraphite>,<bigreactors:ingotgraphite>,<bigreactors:ingotgraphite>,<bigreactors:ingotgraphite>, 1000, 100);
 

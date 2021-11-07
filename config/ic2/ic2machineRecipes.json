@@ -132,7 +132,39 @@
   "item.contenttweaker.material_part_541195237": true,
   "item.contenttweaker.material_part_566015675": true,
   "ic2exprecipe_Conduit Binder Composite_": true,
-  "item.contenttweaker.material_part_397084348": true
+  "item.contenttweaker.material_part_397084348": true,
+  "ic2exprecipe_Apatite Dust_": true,
+  "ic2exprecipe_Dirt Dust_": true,
+  "ic2exprecipe_Crushed Black Quartz_": true,
+  "ic2exprecipe_Ground Chicken_": true,
+  "ic2exprecipe_Ground Fish_": true,
+  "ic2exprecipe_Ground Venison_": true,
+  "ic2exprecipe_Ground Pork_": true,
+  "ic2exprecipe_Ground Turkey_": true,
+  "ic2exprecipe_Ground Rabbit_": true,
+  "ic2exprecipe_Ground Duck_": true,
+  "ic2exprecipe_Ground Beef_": true,
+  "ic2exprecipe_Ground Mutton_": true,
+  "ic2exprecipe_Machine Parts_": true,
+  "ic2exprecipe_Enhanced Machine Parts_": true,
+  "ic2exprecipe_Simple Machine Parts_": true,
+  "ic2exprecipe_Air_": true,
+  "item.contenttweaker.material_part_445971747": true,
+  "item.contenttweaker.material_part_-1505877528": true,
+  "ic2exprecipe_Coke Dust__1": true,
+  "ic2exprecipe_Tank Wall_": true,
+  "ic2exprecipe_Tank Wall__1": true,
+  "ic2exprecipe_Flux Core_": true,
+  "item.contenttweaker.material_part_397084596": true,
+  "ic2exprecipe_Reactor Casing Core (Legacy)_": true,
+  "ic2exprecipe_Flawless Diamond Shard_": true,
+  "ic2exprecipe_Coke Dust__2": true,
+  "ic2exprecipe_Graphite Dust_": true,
+  "ic2exprecipe_Turbine Housing Core (Legacy)_": true,
+  "ic2exprecipe_Soul Dust_": true,
+  "ic2exprecipe_End Stone Dust_": true,
+  "ic2exprecipe_Chalk Dust_": true,
+  "item.item_material.powder_lapis_lazuli_49444226": true
  },
  "extractor": {
   "item.coal_764578481": true,
@@ -171,7 +203,22 @@
   "ic2exprecipe_Silicon__1": true,
   "ic2exprecipe_Cable Anchor_": true,
   "ic2exprecipe_ME Glass Cable - Lime_": true,
-  "ic2exprecipe_Raw Rubber Pulp_": true
+  "ic2exprecipe_Raw Rubber Pulp_": true,
+  "ic2exprecipe_Signal Wire_": true,
+  "ic2exprecipe_Printed Calculation Circuit_": true,
+  "ic2exprecipe_Printed Silicon_": true,
+  "ic2exprecipe_Printed Logic Circuit_": true,
+  "ic2exprecipe_Printed Engineering Circuit_": true,
+  "ic2exprecipe_Printed Elementium Circuit_": true,
+  "ic2exprecipe_Printed Terrasteel Circuit_": true,
+  "ic2exprecipe_Wire Anchor_": true,
+  "ic2exprecipe_Can_": true,
+  "ic2exprecipe_Empty Cell_": true,
+  "ic2exprecipe_Copper Wire_": true,
+  "ic2exprecipe_Electrum Wire_": true,
+  "ic2exprecipe_Aluminium Wire_": true,
+  "ic2exprecipe_Steel Wire_": true,
+  "ic2exprecipe_Lightning Rod_": true
  },
  "compressor": {
   "tile.sandStone.default_1494879518": true,
@@ -202,7 +249,15 @@
   "item.potion_441693419": true,
   "ic2exprecipe_Restored Circuit_": true,
   "ic2exprecipe_Energy Crystal_": true,
-  "ic2exprecipe_Obsidian Dust_": true
+  "ic2exprecipe_Obsidian Dust_": true,
+  "ic2exprecipe_CF Pellet_": true,
+  "ic2exprecipe_CF Pellet__1": true,
+  "ic2exprecipe_Pressed Fireclay_": true,
+  "ic2exprecipe_Pressed Mud_": true,
+  "ic2exprecipe_Pressed Clay_": true,
+  "ic2exprecipe_HDPE Sheet_": true,
+  "item.iridiumIngot_-610845883": false,
+  "ic2exprecipe_Bottle of Air_": true
  },
  "massfabricatorAmplifier": {
   "ScrapAmplifier": true,
@@ -377,7 +432,13 @@
   "ingotRecycling_ingotBatteryAlloy": true,
   "ingotRecycling_ingotAntimony": true,
   "ingotRecycling_ingotSolderingAlloy": true,
-  "ingotRecycling_ingotRedAlloy": true
+  "ingotRecycling_ingotRedAlloy": true,
+  "ingotRecycling_ingotStarSteel": true,
+  "ingotRecycling_ingotAlfSteel": true,
+  "ingotRecycling_ingotStarsteel": true,
+  "ingotRecycling_ingotFerromagneticAlloy": true,
+  "ingotRecycling_ingotStygian": true,
+  "ingotRecycling_ingotAluminumBrass": true
  },
  "sawmill": {
   "tile.wood.oak_-867074482": true,
@@ -549,6 +610,10 @@
   "tile.for.planks.fireproof.0_-847188445": true,
   "tile.for.planks.fireproof.0_To_Sticks_2000286775": true,
   "item.FramingBoard_ct": true,
-  "item.FramingSheet_ct": true
+  "item.FramingSheet_ct": true,
+  "tile.blocks.integrateddynamics.menril_planks_1359100046": true,
+  "tile.blocks.integrateddynamics.menril_planks_To_Sticks_-241288806": true,
+  "item.appliedenergistics2.multi_part.cable_glass_ct": true,
+  "item.appliedenergistics2.material.silicon_ct": true
  }
 }

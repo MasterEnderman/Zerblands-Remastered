@@ -1,0 +1,18 @@
+{
+	x: 12.5d,
+	y: 5.5d,
+	shape: "heart",
+	tasks: [{
+		uid: "a4a2d919",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "appliedenergistics2:creative_storage_cell",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -22,6 +22,9 @@ import scripts.functions.calc_basic;
 
 import mods.chisel.Carving;
 
+recipes.removeByRecipeName("sonarcore:tile.reinforceddirtbrick85");
+recipes.removeByRecipeName("sonarcore:tile.stableglass84");
+
 calc_basic(<sonarcore:reinforcedstonebrick>*2,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>);
 calc_basic(<sonarcore:stableglass>*2,<ore:blockGlass>,<ore:blockGlass>);
 calc_basic(<sonarcore:stablestone_normal>*2,<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>);

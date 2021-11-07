@@ -1,0 +1,31 @@
+{
+	x: 10.5d,
+	y: -0.5d,
+	text: [
+		"Utilize Bloodmagic Rituals."
+	],
+	dependencies: [
+		"7ce80442",
+		"f3a425e7",
+		"3a3be85c"
+	],
+	tasks: [{
+		uid: "5fcf1cea",
+		type: "item",
+		items: [{
+			item: "bloodmagic:ritual_controller"
+		}]
+	},
+	{
+		uid: "d27694f1",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bloodmagic:ritual_diviner",
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	}]
+}

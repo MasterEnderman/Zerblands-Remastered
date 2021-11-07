@@ -4,7 +4,8 @@
       "0": "red_alloy_block",
       "1": "soldering_alloy_block",
       "2": "battery_alloy_block",
-      "3": "antimony_block"
+      "3": "antimony_block",
+      "4": "tungsten_block"
     }
   }
 }

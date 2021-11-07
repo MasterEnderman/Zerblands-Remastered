@@ -64,6 +64,11 @@ pattern_ingot.maxStackSize = 1;
 pattern_ingot.maxDamage = 7;
 pattern_ingot.register();
 
+var antispider_eye = VanillaFactory.createItem("antispider_eye");
+antispider_eye.setLocalizedNameSupplier(function(itemStack) {return "Arachnida Actuator";});
+antispider_eye.glowing = true;
+antispider_eye.register();
+
 var nightmare as string[string] = {
     "cast_wire" : "Wire Cast",
     "cast_stick" : "Stick Cast",
@@ -90,6 +95,8 @@ var nightmare as string[string] = {
     "railbed_wood" : "Wooden Railbed",
     "tie_wood" : "Wooden Tie",
     "cutting_head" : "Basic Cutting Head",
+    "cutting_head_iron" : "Iron Cutting Head",
+    "cutting_head_diamond" : "Diamond Cutting Head",
     "basic_blade" : "Basic Blade",
     "fireclay_dust" : "Fire Clay Dust",
     "pressed_mud" : "Pressed Mud",
@@ -110,6 +117,7 @@ var nightmare as string[string] = {
     "terrasteelprint" : "Printed Terrasteel Circuit",
     "terrasteelprocessor" : "Terrasteel Processor",
     "starsteel_ingot" : "Starsteel Ingot",
+    "starsteel_nugget" : "Starsteel Nugget",
     "chest_lock" : "Chest Lock",
     "clay_plate" : "Clay Plate",
     "clay_plate_raw" : "Raw Clay Plate",
@@ -123,6 +131,19 @@ var nightmare as string[string] = {
     "battery_hull" : "Battery Hull",
     "raw_rubber_pulp" : "Raw Rubber Pulp",
     "malignant_heart" : "Malignant Heart",
+    "signalum_base_ingot" : "Signalum Base",
+    "lumium_base_ingot" : "Lumium Base",
+    "alfsteel_ingot" : "Alfsteel Ingot",
+    "alfsteel_nugget" : "Alfsteel Nugget",
+    "sodium_dust" : "Sodium Dust",
+    "flawless_diamond_shard" : "Flawless Diamond Shard",
+    "end_stone_dust" : "End Stone Dust",
+    "hdpe_pellet" : "HDPE Pellet",
+    "hdpe_sheet" : "HDPE Sheet",
+    "hdpe_substrate" : "HDPE Substrate",
+    "bio_fuel" : "Bio Fuel",
+    "eternalslate" : "Eternal Slate",
+    "potatos" : "Potato Battery",
 };
 
 for item, local in nightmare {
@@ -171,6 +192,22 @@ var runes as string[string] = {
 for item, local in runes {
     var newItem as Item = VanillaFactory.createItem(item);
     newItem.textureLocation = ResourceLocation.create("contenttweaker:items/rune/"+item);
+    newItem.setLocalizedNameSupplier(function(itemStack) {return local;});
+    newItem.register();
+}
+
+// quantum
+
+var quantum as string[string] = {
+    "q1" : "Qbit",
+    "q2" : "Entanglement Qbit",
+    "q3" : "Observation Qbit",
+    "q4" : "Superposition Qbit",
+};
+
+for item, local in quantum {
+    var newItem as Item = VanillaFactory.createItem(item);
+    newItem.textureLocation = ResourceLocation.create("contenttweaker:items/quantum/"+item);
     newItem.setLocalizedNameSupplier(function(itemStack) {return local;});
     newItem.register();
 }

@@ -1,0 +1,20 @@
+{
+	x: 5.5d,
+	y: -2.5d,
+	dependencies: [
+		"b296c110",
+		"c20a0275"
+	],
+	tasks: [{
+		uid: "9e808042",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "evilcraft:promise",
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	}]
+}

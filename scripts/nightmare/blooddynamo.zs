@@ -26,3 +26,31 @@ import mods.evilcraft.BloodInfuser;
 BloodInfuser.addRecipe(<thermalfoundation:material:23>, <liquid:evilcraftblood> * 4000, 0, <blood_dynamo:ingredient:2>, 100, 2);
 
 BloodAltar.addRecipe(<blood_dynamo:ingredient:2>, <thermalfoundation:material:23>, 0, 2000,5,5);
+
+var recipeMapShaped as IIngredient[][][][IItemStack] = {
+    <blood_dynamo:blood_dynamo> : [
+        [
+            [null,<thermalfoundation:material:514>,null],
+            [<blood_dynamo:ingredient:2>,<contenttweaker:electric_motor>,<blood_dynamo:ingredient:2>],
+            [<immersiveengineering:metal_decoration0:5>,<bloodmagic:blood_shard>,<immersiveengineering:metal_decoration0:5>]
+        ]
+    ],
+    <blood_dynamo:mixed_dynamo> : [
+        [
+            [null,<thermalfoundation:material:514>,null],
+            [<blood_dynamo:ingredient:2>,<contenttweaker:electric_motor>,<blood_dynamo:ingredient:2>],
+            [<immersiveengineering:metal_decoration0:5>,<bloodmagic:blood_shard:1>,<immersiveengineering:metal_decoration0:5>]
+        ]
+    ],
+};
+
+for key, value in recipeMapShaped {
+	var index as int = 0;    
+    recipes.remove(key);
+
+    for recipe in value {
+        var name as string = "ct_"+toString(key)+"_"+index;
+        recipes.addShaped(name, key, recipe);
+        index += 1;
+    }
+}

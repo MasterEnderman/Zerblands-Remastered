@@ -14,7 +14,9 @@ static materials as Material[string] = {
     "battery_alloy": MaterialSystem.getMaterialBuilder().setName("Battery Alloy").setColor(8019836).build(),
     "red_alloy": MaterialSystem.getMaterialBuilder().setName("Red Alloy").setColor(9250828).build(),
     "soldering_alloy": MaterialSystem.getMaterialBuilder().setName("Soldering Alloy").setColor(11250353).build(),
+    "ferromagnetic_alloy": MaterialSystem.getMaterialBuilder().setName("Ferromagnetic Alloy").setColor(8298403).build(),
     "styrene_rubber": MaterialSystem.getMaterialBuilder().setName("Styrene Butadiene Rubber").setColor(1709331).build(),
+    "tungsten": MaterialSystem.getMaterialBuilder().setName("Tungsten").setColor(7897228).build(),
     
 };
 

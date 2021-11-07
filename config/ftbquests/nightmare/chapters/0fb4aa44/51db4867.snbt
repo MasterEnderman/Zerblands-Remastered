@@ -1,0 +1,17 @@
+{
+	x: 1.5d,
+	y: 1.5d,
+	dependencies: [
+		"b9b10029",
+		"afbe9975",
+		"f3a425e7",
+		"a217e648"
+	],
+	tasks: [{
+		uid: "6e5a9ce1",
+		type: "item",
+		items: [{
+			item: "enderio:block_transceiver"
+		}]
+	}]
+}

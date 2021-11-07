@@ -23,76 +23,107 @@ import scripts.functions.findFirstItemFromMod;
 import mods.astralsorcery.Altar;
 import mods.bloodmagic.BloodAltar;
 import mods.bloodmagic.TartaricForge;
+import mods.botania.RuneAltar;
 import mods.evilcraft.BloodInfuser;
 
 BloodInfuser.addRecipe(<evilcraft:blood_orb:1>, <liquid:evilcraftblood>*10000, 1, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), 200, 0.5);
 
-recipes.remove(<bloodmagic:blood_rune>);
-recipes.addShaped(<bloodmagic:blood_rune>, [
-    [<abyssalcraft:stone:7>,<bloodmagic:slate>,<abyssalcraft:stone:7>],
-    [<bloodmagic:slate>,<evilcraft:blood_orb:1>,<bloodmagic:slate>],
-    [<abyssalcraft:stone:7>,<bloodmagic:slate>,<abyssalcraft:stone:7>]
-]);
+var recipeMapShaped as IIngredient[][][][IItemStack] = {
+    <bloodmagic:sacrificial_dagger> : [
+        [
+            [<evilcraft:garmonbozia>,<evilcraft:garmonbozia>,<xreliquary:magicbane>],
+            [<abyssalcraft:skin:2>,<evilcraft:vein_sword>,<evilcraft:garmonbozia>],
+            [<abyssalcraft:lifecrystal>,<abyssalcraft:skin:2>,<evilcraft:garmonbozia>]
+        ]
+    ],
+    <bloodmagic:blood_rune> : [
+        [
+            [<abyssalcraft:stone:7>,<bloodmagic:slate>,<abyssalcraft:stone:7>],
+            [<bloodmagic:slate>,<evilcraft:blood_orb:1>,<bloodmagic:slate>],
+            [<abyssalcraft:stone:7>,<bloodmagic:slate>,<abyssalcraft:stone:7>]
+        ]
+    ],
+    <bloodmagic:ritual_diviner:2> : [
+        [
+            [null,<bloodmagic:slate:4>,null],
+            [<bloodmagic:inscription_tool:6>,<bloodmagic:ritual_diviner:1>,<bloodmagic:inscription_tool:6>],
+            [null,<bloodmagic:slate:4>,null]
+        ]
+    ]
+};
 
-recipes.remove(<bloodmagic:sacrificial_dagger>);
-recipes.addShaped(<bloodmagic:sacrificial_dagger>, [
-    [<evilcraft:garmonbozia>,<evilcraft:garmonbozia>,<xreliquary:magicbane>],
-    [<abyssalcraft:skin:2>,<evilcraft:vein_sword>,<evilcraft:garmonbozia>],
-    [<abyssalcraft:lifecrystal>,<abyssalcraft:skin:2>,<evilcraft:garmonbozia>]
-]);
+for key, value in recipeMapShaped {
+	var index as int = 0;    
+    recipes.remove(key);
+
+    for recipe in value {
+        var name as string = "ct_"+toString(key)+"_"+index;
+        recipes.addShaped(name, key, recipe);
+        index += 1;
+    }
+}
 
 recipes.remove(<bloodmagic:alchemy_table>);
 Altar.addDiscoveryAltarRecipe("alchemy_table", <bloodmagic:alchemy_table>, 200, 200, [
 	<minecraft:carpet:14>,<minecraft:carpet:14>,<minecraft:carpet:14>,
-	<xreliquary:mob_ingredient:7>,<appliedenergistics2:smooth_sky_stone_block>,<xreliquary:mob_ingredient:7>,
-	<appliedenergistics2:smooth_sky_stone_block>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}),<appliedenergistics2:smooth_sky_stone_block>
+	<xreliquary:mob_ingredient:7>,<sonarcore:stablestone_normal>,<xreliquary:mob_ingredient:7>,
+	<sonarcore:stablestone_normal>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}),<sonarcore:stablestone_normal>
 ]);
 
 recipes.remove(<bloodmagic:altar>);
-Altar.addAttunementAltarRecipe("bloodmagic_altar", <bloodmagic:altar>, 1000, 800, [
-	<abyssalcraft:dreadiumingot>,
-	<bloodmagic:monster_soul>,
-	<abyssalcraft:dreadiumingot>,
-	<botania:conjurationcatalyst>,
-	<abyssalcraft:tieredsacrificialaltar:2>,
-	<botania:conjurationcatalyst>,
-	<abyssalcraft:dreadiumingot>,
-	<botania:rune:13>,
-	<abyssalcraft:dreadiumingot>,
-	<astralsorcery:itemcraftingcomponent:4>,
-	<astralsorcery:itemcraftingcomponent:4>,
-	<evilcraft:garmonbozia>,
-	<evilcraft:garmonbozia>
-]);
+RuneAltar.addRecipe(<bloodmagic:altar>, [
+    <astralsorcery:itemcraftingcomponent:4>,
+    <thermalexpansion:frame:64>,
+    <botania:lens:8>,
+    <abyssalcraft:tieredsacrificialaltar:2>,
+    <xreliquary:magicbane>,
+    <abyssalcraft:dreadplate>,
+    <contenttweaker:alfsteel_ingot>,
+    <bloodmagic:monster_soul>
+], 100000);
+
+recipes.remove(<bloodmagic:ritual_diviner:0>);
+RuneAltar.addRecipe(<bloodmagic:ritual_diviner:0>, [
+    <botania:manaresource:3>,
+    <botania:manaresource:9>,
+    <bloodmagic:inscription_tool:1>,
+    <bloodmagic:inscription_tool:2>,
+    <bloodmagic:inscription_tool:3>,
+    <bloodmagic:inscription_tool:4>,
+], 500000);
 
 BloodAltar.removeRecipe(<minecraft:stone>);
 BloodAltar.addRecipe(<bloodmagic:slate>, <contenttweaker:rune_blank>, 0, 1000,5,5);
 
-BloodAltar.removeRecipe(<minecraft:diamond>);
+recipes.remove(<bloodmagic:teleposer>);
+BloodAltar.addRecipe(<bloodmagic:teleposer>, <ic2:blockmachinehv:2>, 3, 2000, 10, 10);
+
+BloodAltar.removeRecipe(<minecraft:ender_pearl>);
+BloodAltar.addRecipe(<bloodmagic:teleposition_focus>, <botanicadds:rune_tp>, 3, 2000, 10, 10);
 
 recipes.remove(<bloodmagic:soul_forge>);
 Altar.addConstellationAltarRecipe("soul_forge", <bloodmagic:soul_forge>, 800, 200, [
-    <enderio:item_alloy_ingot:6>,
+    <contenttweaker:starsteel_ingot>,
     <xreliquary:infernal_chalice>,
-    <enderio:item_alloy_ingot:6>,
-    <blood_dynamo:ingredient:2>,
-    <enderio:item_alloy_ball:8>,
-    <blood_dynamo:ingredient:2>,
-    <enderio:item_alloy_ingot:6>,
-    <blood_dynamo:ingredient:2>,
-    <enderio:item_alloy_ingot:6>,
-    <psi:material:1>,
-    <psi:material:1>,
-    <blood_dynamo:ingredient:2>,
-    <blood_dynamo:ingredient:2>,
+    <contenttweaker:starsteel_ingot>,
+    <abyssalcraft:oc>,
+    <xreliquary:apothecary_cauldron>,
+    <abyssalcraft:oc>,
+    <contenttweaker:starsteel_ingot>,
+    <bloodmagic:experience_tome>,
+    <contenttweaker:starsteel_ingot>,
+    <botania:rune:10>,
+    <botania:rune:12>,
+    <botania:rune:9>,
+    <botania:rune:11>,
+    <appliedenergistics2:quartz_fixture>,
+    <appliedenergistics2:quartz_fixture>,
     <astralsorcery:itemcraftingcomponent:4>,
     <astralsorcery:itemcraftingcomponent:4>,
     <astralsorcery:itemcraftingcomponent:4>,
     <astralsorcery:itemcraftingcomponent:4>,
-    <environmentaltech:lonsdaleite_crystal>,
-    <environmentaltech:lonsdaleite_crystal>,
-    <environmentaltech:lonsdaleite_crystal>,
-    <environmentaltech:lonsdaleite_crystal>
+    <appliedenergistics2:quartz_fixture>,
+    <appliedenergistics2:quartz_fixture>,
 ]);
 
 recipes.remove(<bloodmagic:incense_altar>);
@@ -170,6 +201,31 @@ Altar.addConstellationAltarRecipe("crystal_block", <bloodmagic:decorative_brick:
     <environmentaltech:kyronite_crystal>
 ]);
 
+recipes.remove(<bloodmagic:soul_snare>);
+Altar.addConstellationAltarRecipe("soul_snare", <bloodmagic:soul_snare> * 4, 2000, 100, [
+    <evilcraft:dark_spike>,
+    <bloodarsenal:blood_burned_string>,
+    <evilcraft:dark_spike>,
+    <bloodarsenal:blood_burned_string>,
+    <abyssalcraft:abyingot>,
+    <bloodarsenal:blood_burned_string>,
+    <evilcraft:dark_spike>,
+    <bloodarsenal:blood_burned_string>,
+    <evilcraft:dark_spike>,
+    <bloodarsenal:base_item>,
+    <bloodarsenal:base_item>,
+    <bloodarsenal:base_item>,
+    <bloodarsenal:base_item>,
+    <bloodarsenal:base_item>,
+    <bloodarsenal:base_item>,
+    <bloodarsenal:base_item>,
+    <bloodarsenal:base_item>,
+    <bloodarsenal:base_item>,
+    <bloodarsenal:base_item>,
+    <bloodarsenal:base_item>,
+    <bloodarsenal:base_item>
+]);
+
 var willBlock as IItemStack[] = [
     <bloodmagic:demon_extras:10>,
     <bloodmagic:demon_extras:11>,
@@ -191,3 +247,64 @@ for i, item in willBlock {
 		[<ore:blockMithril>, willRaw[i], willRaw[i], willRaw[i]
 	], 8192, 50);
 }
+
+
+var listOldInput as IItemStack[] = [
+    <minecraft:lapis_block>,
+    <minecraft:magma_cream>,
+    <minecraft:obsidian>,
+    <minecraft:ghast_tear>,
+    <minecraft:coal_block>,
+    <minecraft:glowstone>,
+];
+
+for entry in listOldInput {
+    BloodAltar.removeRecipe(entry);
+}
+
+var mapInscribingTool as int[][IItemStack][IItemStack] = {
+    <bloodmagic:inscription_tool:1> : {
+        <botania:rune> : [2,1000,5,5]
+    },
+    <bloodmagic:inscription_tool:2> : {
+        <botania:rune:1> : [2,1000,5,5]
+    },
+    <bloodmagic:inscription_tool:3> : {
+        <botania:rune:2> : [2,1000,5,5]
+    },
+    <bloodmagic:inscription_tool:4> : {
+        <botania:rune:3> : [2,1000,5,5]
+    },
+    <bloodmagic:inscription_tool:5> : {
+        <botania:rune:8> : [3,2000,20,10]
+    },
+    <bloodmagic:inscription_tool:6> : {
+        <botanicadds:rune_tp> : [5,200000,100,200]
+    },
+};
+
+for output, data in mapInscribingTool {
+    for input, numbers in data {
+        var tier as int = numbers[0];
+        var blood as int = numbers[1];
+        var consumption as int = numbers[2];
+        var drain as int = numbers[3];
+
+        BloodAltar.addRecipe(output, input, tier, blood, consumption, drain);
+    }
+}
+
+BloodAltar.removeRecipe(<minecraft:diamond>);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <evilcraft:blood_orb:1>, 0, 2000, 2, 2);
+
+BloodAltar.removeRecipe(<minecraft:redstone_block>);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), <evilcraft:piercing_vengeance_focus>, 1, 5000, 5, 5);
+
+BloodAltar.removeRecipe(<minecraft:gold_block>);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), <abyssalcraft:eoa>, 2, 25000, 20, 20);
+
+BloodAltar.removeRecipe(<bloodmagic:blood_shard>);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}), <bloodmagic:blood_shard:1>, 3, 40000, 30, 50);
+
+BloodAltar.removeRecipe(<minecraft:nether_star>);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <avaritiatweaks:gaia_block>, 4, 80000, 100, 50);

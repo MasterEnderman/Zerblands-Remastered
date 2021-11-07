@@ -8,5 +8,10 @@
     {
         "mob": "abyssalcraft:jzaharminion",
         "remove": "abyssalcraft:ethaxiumingot"
+    },
+    {
+        "mob": "abyssalcraft:abyssalzombie",
+        "item": "abyssalcraft:coralium",
+        "itemcount": "2-3/2-5/2-7/2-9"
     }
 ]

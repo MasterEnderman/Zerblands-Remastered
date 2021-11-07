@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.astralsorcery.Altar;
+import mods.botania.ManaInfusion;
 
 <psi:cad_assembly>.displayName = "Steel CAD Assembly";
 <psi:cad_assembly:1>.displayName = "Lumium CAD Assembly";
@@ -28,13 +29,13 @@ import mods.astralsorcery.Altar;
 recipes.remove(<psi:programmer>);
 Altar.addAttunementAltarRecipe("psi_programmer", <psi:programmer>, 500, 800, [
 	<actuallyadditions:item_crystal:3>,
-	<avaritia:double_compressed_crafting_table>,
+	<extrautils2:screen>,
 	<actuallyadditions:item_crystal:3>,
 	<thermalfoundation:material:160>,
-	<botania:autocraftinghalo>,
+	<avaritia:double_compressed_crafting_table>,
 	<thermalfoundation:material:160>,
 	<thermalfoundation:material:160>,
-	<botania:craftinghalo>,
+	<immersiveengineering:material:27>,
 	<thermalfoundation:material:160>,
 	<botania:managlass>,
 	<botania:managlass>,
@@ -59,7 +60,41 @@ Altar.addAttunementAltarRecipe("psi_cad_assembler", <psi:cad_assembler>, 500, 80
 	<thermalfoundation:material:160>
 ]);
 
-var mapShaped as IIngredient[][][IItemStack] = {
+recipes.remove(<psi:material:3>);
+Altar.addAttunementAltarRecipe("ebony_ingot", <psi:material:3> * 4, 500, 800, [
+	<psi:material:5>,
+	<psi:material:5>,
+	<psi:material:5>,
+	<ore:ingotPsi>,
+	<ore:gemPsi>,
+	<ore:ingotPsi>,
+	<psi:material:5>,
+	<psi:material:5>,
+	<psi:material:5>,
+	<astralsorcery:itemusabledust:1>,
+	<astralsorcery:itemusabledust:1>,
+	<astralsorcery:itemusabledust:1>,
+	<astralsorcery:itemusabledust:1>
+]);
+
+recipes.remove(<psi:material:4>);
+Altar.addAttunementAltarRecipe("ivory_ingot", <psi:material:4> * 4, 500, 800, [
+	<psi:material:6>,
+	<psi:material:6>,
+	<psi:material:6>,
+	<ore:ingotPsi>,
+	<ore:gemPsi>,
+	<ore:ingotPsi>,
+	<psi:material:6>,
+	<psi:material:6>,
+	<psi:material:6>,
+	<astralsorcery:itemusabledust>,
+	<astralsorcery:itemusabledust>,
+	<astralsorcery:itemusabledust>,
+	<astralsorcery:itemusabledust>
+]);
+
+var recipeMapShaped as IIngredient[][][IItemStack] = {
     <psi:cad_assembly> : [
     	[<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>],
     	[null,null,<ore:ingotSteel>]
@@ -91,6 +126,11 @@ var mapShaped as IIngredient[][][IItemStack] = {
     ]
 };
 
+for key, value in recipeMapShaped {
+	recipes.remove(key);
+    recipes.addShaped("ct_"+toString(key), key, value);
+}
+
 var mapBullets as IItemStack[IItemStack] = {
     <psi:spell_bullet> : <minecraft:stick>,
     <psi:spell_bullet:2> : <minecraft:arrow>,
@@ -104,4 +144,18 @@ var mapBullets as IItemStack[IItemStack] = {
 for key, value in mapBullets {
 	recipes.remove(key);
     recipes.addShapeless("ct_"+toString(key), key, [value,<ore:dustPsi>,<blood_dynamo:ingredient:2>,<ore:dustBedrock>]);
+}
+
+var mapMaterial as int[IItemStack] = {
+	<psi:material> : 1000,
+	<psi:material:1> : 20000,
+	<psi:material:2> : 100000,
+	<psi:material:3> : 1000000,
+	<psi:material:4> : 1000000,
+	<psi:material:5> : 10000,
+	<psi:material:6> : 10000,
+};
+
+for material, mana in mapMaterial {
+	ManaInfusion.addConjuration(material, material, mana);
 }

@@ -47,3 +47,17 @@ var styrene_rubberFluidData as MaterialPartData = materials.styrene_rubber.regis
 addDefaultMoltenData(styrene_rubberFluidData);
 
 materials.styrene_rubber.registerParts(["plate"] as string[]);
+
+//tungsten
+
+var tungstenFluidData as MaterialPartData = materials.tungsten.registerPart("molten").getData();
+addDefaultMoltenData(tungstenFluidData);
+
+materials.tungsten.registerParts(["block", "nugget", "ingot", "dust", "plate", "small_dust", "tiny_dust"] as string[]);
+
+//ferromagnetic_alloy
+
+var ferromagnetic_alloyFluidData as MaterialPartData = materials.ferromagnetic_alloy.registerPart("molten").getData();
+addDefaultMoltenData(ferromagnetic_alloyFluidData);
+
+materials.ferromagnetic_alloy.registerParts(["ingot"] as string[]);

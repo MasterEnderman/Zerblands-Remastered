@@ -51,3 +51,24 @@ butadiene.register();
 
 var styrene = VanillaFactory.createFluid("styrene", 10656403);
 styrene.register();
+
+var hydrochloric_acid = VanillaFactory.createFluid("hydrochloric_acid", 15859640);
+hydrochloric_acid.register();
+
+var iron_chloride = VanillaFactory.createFluid("iron_chloride", 16774725);
+iron_chloride.register();
+
+var hydrogen = VanillaFactory.createFluid("hydrogen", 928965);
+hydrogen.register();
+
+var oxygen = VanillaFactory.createFluid("oxygen", 6460092);
+oxygen.register();
+
+var sodium_persulfate = VanillaFactory.createFluid("sodium_persulfate", 220509);
+sodium_persulfate.register();
+
+var sodium_hydroxide = VanillaFactory.createFluid("sodium_hydroxide", 7496);
+sodium_hydroxide.register();
+
+var ectoplasma = VanillaFactory.createFluid("ectoplasma", 2080478);
+ectoplasma.register();

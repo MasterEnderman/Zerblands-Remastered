@@ -23,16 +23,30 @@ import scripts.functions.findFirstItemFromMod;
 import scripts.functions.calc_basic;
 
 import mods.actuallyadditions.Empowerer;
+import mods.enderio.AlloySmelter;
+import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.CokeOven;
 import mods.immersiveengineering.MetalPress;
 import mods.jei.JEI;
+import mods.tconstruct.Alloy;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Drying;
 import mods.tconstruct.Melting;
+import mods.thermalexpansion.Crucible;
+import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Transposer;
 
 JEI.removeAndHide(<tconstruct:throwball:1>);
+JEI.addItem(<tconstruct:slime_boots:3>);
 
 Drying.addRecipe(<tconstruct:materials:1>, <contenttweaker:pressed_mud>, 600);
+
+InductionSmelter.removeRecipe(<tconstruct:ingots:0>, <tconstruct:ingots:1>);
+Alloy.removeRecipe(<liquid:manyullyn>);
+Alloy.addRecipe(<liquid:manyullyn> * 288, [<liquid:ardite> * 144, <liquid:cobalt> * 144, <liquid:platinum> * 144]);
+AlloySmelter.addRecipe(<tconstruct:ingots:2> * 2, [<ore:ingotCobalt>, <ore:ingotArdite>, <ore:ingotPlatinum>], 10000);
+ArcFurnace.removeRecipe(<tconstruct:ingots:2>);
+ArcFurnace.addRecipe(<tconstruct:ingots:2> * 2, <ore:ingotCobalt>, null, 100, 512, [<ore:ingotArdite>, <ore:ingotPlatinum>]);
 
 Melting.removeRecipe(<liquid:stone>);
 Melting.addRecipe(<liquid:stone>*144, <tconstruct:soil>, 500);
@@ -45,6 +59,9 @@ Melting.addRecipe(<liquid:dirt>*144, <earthworks:block_mud>, 500);
 Melting.removeEntityMelting(<entity:minecraft:villager>);
 Melting.removeEntityMelting(<entity:minecraft:horse>);
 
+recipes.remove(<tconstruct:throwball>);
+Transposer.addFillRecipe(<tconstruct:throwball>, <minecraft:snowball>, <liquid:glowstone> * 50, 400);
+
 Empowerer.addRecipe(<tconstruct:slime_sapling:0>, <minecraft:deadbush>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:1>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:1>, 4000, 1200, [0.7, 0.6, 0.1]);
 Empowerer.addRecipe(<tconstruct:slime_sapling:1>, <minecraft:deadbush>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:2>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:2>, 4000, 1200, [0.8, 0.2, 0.8]);
 Empowerer.addRecipe(<tconstruct:slime_sapling:2>, <minecraft:deadbush>, <tconstruct:slime_congealed:3>, <tconstruct:slime_congealed:4>, <tconstruct:slime_congealed:3>, <tconstruct:slime_congealed:4>, 4000, 1200, [0.4, 0.1, 0.4]);
@@ -54,6 +71,8 @@ MetalPress.addRecipe(<tconstruct:stone_stick>*2, <ore:cobblestone>, <immersiveen
 MetalPress.addRecipe(<tconstruct:stone_stick>*4, <ore:stone>, <immersiveengineering:mold:2>, 64);
 
 Melting.removeRecipe(<liquid:dirt>, <earthworks:item_adobe>);
+
+Crucible.addRecipe(<liquid:stone> * 144, <tconstruct:soil>, 2000);
 
 Melting.removeRecipe(<liquid:glowstone>);
 Melting.removeRecipe(<liquid:redstone>);

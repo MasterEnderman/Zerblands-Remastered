@@ -17,15 +17,7 @@
   </recipe>
 
   <recipe name="Conduit, Liquid, Advanced" required="true">
-    <crafting>
-      <grid>
-        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
-        <item name="FUSED_QUARTZ" /><item name="FUSED_QUARTZ" /><item name="FUSED_QUARTZ" />
-        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
-      </grid>
-      <output name="enderio:item_liquid_conduit:1" amount="2">
-      </output>
-    </crafting>
+    <disabled/>
   </recipe>
 
   <recipe name="Conduit, Liquid, Advanced (upgrade)" required="true">
@@ -41,15 +33,7 @@
   </recipe>
 
   <recipe name="Conduit, Liquid, Ender" required="true">
-    <crafting>
-      <grid>
-        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
-        <item name="VIBRANT_ALLOY" /><item name="FUSED_QUARTZ" /><item name="VIBRANT_ALLOY" />
-        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
-      </grid>
-      <output name="enderio:item_liquid_conduit:2" amount="2">
-      </output>
-    </crafting>
+    <disabled/>
   </recipe>
 
   <recipe name="Conduit, Liquid, Ender (upgrade)" required="true">
@@ -77,15 +61,7 @@
   </recipe>
 
   <recipe name="Conduit, Endergy, Tier 2" required="true">
-    <crafting>
-      <grid>
-        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
-        <item name="ENERGETIC_ALLOY" /><item name="ENERGETIC_ALLOY" /><item name="ENERGETIC_ALLOY" />
-        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
-      </grid>
-      <output name="enderio:item_power_conduit:1" amount="2">
-      </output>
-    </crafting>
+    <disabled/>
   </recipe>
 
   <recipe name="Conduit, Endergy, Tier 2 (upgrade)" required="true">
@@ -101,15 +77,7 @@
   </recipe>
 
   <recipe name="Conduit, Endergy, Tier 3" required="true">
-    <crafting>
-      <grid>
-        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
-        <item name="VIBRANT_ALLOY" /><item name="VIBRANT_ALLOY" /><item name="VIBRANT_ALLOY" />
-        <item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" /><item name="CONDUIT_BINDER" />
-      </grid>
-      <output name="enderio:item_power_conduit:2" amount="2">
-      </output>
-    </crafting>
+    <disabled/>
   </recipe>
 
   <recipe name="Conduit, Endergy, Tier 3 (upgrade)" required="true">

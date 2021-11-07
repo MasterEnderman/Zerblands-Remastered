@@ -22,12 +22,13 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.enderio.AlloySmelter;
 import mods.enderio.SagMill;
+import mods.extrautils2.Crusher as XUCrusher;
 import mods.jei.JEI;
 import mods.ic2.Macerator;
 import mods.ic2.Sawmill as Saw;
 import mods.immersiveengineering.AlloySmelter as Kiln;
 import mods.immersiveengineering.ArcFurnace;
-import mods.immersiveengineering.BottlingMachine;
+import mods.immersiveengineering.Crusher;
 import mods.immersiveengineering.MetalPress;
 import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.InductionSmelter;
@@ -39,11 +40,12 @@ JEI.removeAndHide(<appliedenergistics2:material:40>);
 JEI.removeAndHide(<enderio:item_material:9>);
 JEI.removeAndHide(<enderio:item_material:10>);
 
-<ore:materialFlesh>.add(<evilcraft:werewolf_flesh:1>);
-<ore:ingotEnder>.add(<contenttweaker:ender_ingot>);
-
 recipes.remove(<ore:gearWood>);
 recipes.remove(<ore:gearStone>);
+recipes.remove(<ore:rodStone>);
+
+recipes.remove(<ore:gearElectrumFlux>);
+recipes.remove(<ore:gearGelidEnderium>);
 
 recipes.remove(<ore:plateIron>);
 recipes.remove(<ore:plateGold>);
@@ -68,6 +70,17 @@ recipes.remove(<ore:dustSignalum>);
 recipes.remove(<ore:dustLumium>);
 recipes.remove(<ore:dustEnderium>);
 
+furnace.remove(<ore:ingotUranium>);
+furnace.addRecipe(<ic2:itemmisc:180>,<ore:dustUranium>);
+
+ArcFurnace.removeRecipe(<thermalfoundation:material:160>);
+ArcFurnace.addRecipe(<thermalfoundation:material:160>,<contenttweaker:reinforcediron_ingot>,<thermalfoundation:material:864>, 400, 512);
+InductionSmelter.removeRecipe(<thermalfoundation:material:769>*4,<thermalfoundation:material>);
+InductionSmelter.removeRecipe(<thermalfoundation:material:769>*4,<minecraft:iron_ingot>);
+InductionSmelter.removeRecipe(<thermalfoundation:material:802>,<thermalfoundation:material>);
+InductionSmelter.removeRecipe(<thermalfoundation:material:802>,<minecraft:iron_ingot>);
+InductionSmelter.removeRecipe(<thermalfoundation:material:768>*4,<thermalfoundation:material>);
+InductionSmelter.removeRecipe(<thermalfoundation:material:768>*4,<minecraft:iron_ingot>);
 
 Casting.removeTableRecipe(<thermalfoundation:material:23>);
 Casting.addTableRecipe(<thermalfoundation:material:23>,<thermalfoundation:material:22>,<liquid:stone>,288,true,100);
@@ -86,7 +99,6 @@ Macerator.addRecipe(findFirstItemFromMod("actuallyadditions","dust","diamond"), 
 var mapSimpleAlloy as IItemStack[][IItemStack] = {
     <earthworks:item_adobe> : [<embers:blend_caminite>,<earthworks:item_mud>],
     <contenttweaker:black_iron> : [<ic2:itemmisc:53>,<actuallyadditions:item_dust:7>],
-    <contenttweaker:ender_ingot> : [<thermalfoundation:material:130>,<tp:ender_dust> * 4],
     <contenttweaker:basic_blade> : [<contenttweaker:bone_shard>,<contenttweaker:flint_shard>],
     <enderio:item_alloy_endergy_ingot> : [<earthworks:item_adobe>,<tconstruct:materials>],
     <appliedenergistics2:part:140> : [<ic2:itemcable:9>,<enderio:item_material:51>],
@@ -97,15 +109,19 @@ var mapSimpleAlloy as IItemStack[][IItemStack] = {
     <rs_ctr:wire_e> : [<rs_ctr:wire>,<minecraft:gold_nugget>],
     <rs_ctr:block_wire> : [<rs_ctr:wire>,<cd4017be_lib:m:402>],
     <rs_ctr:wireless> : [<rs_ctr:wire>,<rftools:dimensional_shard>],
+    <enderio:item_alloy_ingot:5> : [<ic2:itemmisc:53>,<extrautils2:endershard>],
     findFirstItemFromMod("contenttweaker","ingot","batteryAlloy") * 5 : [findFirstItemFromMod("thermalfoundation","ingot","lead") * 4,findFirstItemFromMod("contenttweaker","ingot","antimony")],
     findFirstItemFromMod("contenttweaker","ingot","solderingAlloy") * 3 : [findFirstItemFromMod("thermalfoundation","ingot","tin") * 2,findFirstItemFromMod("thermalfoundation","ingot","lead")],
     findFirstItemFromMod("contenttweaker","ingot","redAlloy") : [findFirstItemFromMod("thermalfoundation","ingot","aluminum"),<minecraft:redstone> * 4],
+    <immersivepetroleum:stone_decoration> : [<immersiveengineering:stone_decoration:5>, <thermalfoundation:material:892>],
+    <quantumflux:darkstone> : [<ic2:blockutility:2>,<minecraft:concrete:15>],
+    <ic2:itemmisc:261> : [findFirstItemFromMod("contenttweaker","ingot","ferromagneticAlloy"),<ic2:itemmisc:14> * 8]
 };
 
 ArcFurnace.removeRecipe(findFirstItemFromMod("contenttweaker","ingot","redAlloy"));
 Kiln.removeRecipe(findFirstItemFromMod("contenttweaker","ingot","redAlloy"));
-AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot>);
 furnace.remove(<minecraft:netherbrick>);
+recipes.remove(<immersivepetroleum:stone_decoration>);
 
 for item, recipe in mapSimpleAlloy {
     var input1 as IItemStack = recipe[0];
@@ -118,14 +134,45 @@ for item, recipe in mapSimpleAlloy {
 }
 
 var mapSimpleCrush as IItemStack[IItemStack] = {
-    <enderio:item_material:22> : <earthworks:item_adobe>
+    <enderio:item_material:22> : <earthworks:item_adobe>,
+    <contenttweaker:brick_dust> : <minecraft:brick>,
+    <contenttweaker:brick_dust> * 4 : <minecraft:brick_block>,
+    <contenttweaker:soil> * 4 : <minecraft:dirt>,
+    <contenttweaker:crushed_nether_wart> : <minecraft:nether_wart>,
+    <contenttweaker:crushed_nether_wart> * 9 : <minecraft:nether_wart_block>,
+    <contenttweaker:small_stone> : <botania:manaresource:21>,
+    <enderio:item_material:69> * 16 : <enderio:item_material>,
+    <enderio:item_material:2> * 32 : <enderio:item_material:1>,
+    <enderio:item_material:68> * 64 : <enderio:item_material:54>,
+    <immersiveengineering:material:17> : <thermalfoundation:material:802>,
+    <immersiveengineering:material:17> * 9 : <thermalfoundation:storage_resource:1>,
+    <pressure:tank_wall> * 16 : <enderio:block_tank:1>,
+    <pressure:tank_wall> * 2 : <enderio:block_tank>,
+    <fluxnetworks:fluxcore> * 8 : <enderio:block_transceiver>,
+    <bigreactors:reactorcasingcores> * 8 : <ic2:blockchambers>,
+    <bigreactors:turbinehousingcores> * 8 : <ic2:blockgenerator:7>,
+    <contenttweaker:flawless_diamond_shard> * 4 : <contenttweaker:flawless_block>,
+    <quantumflux:graphitedust> * 2 : <quantumflux:graphiteore>,
+    <woot:soulsanddust> * 2 : <minecraft:soul_sand>,
+    <contenttweaker:end_stone_dust> : <minecraft:end_stone>,
+    <earthworks:item_chalk> * 4 : <earthworks:block_chalk>
 };
+
+Crusher.removeRecipe(<immersiveengineering:material:17>);
+recipes.remove(<enderio:item_material:68>);
+recipes.remove(<enderio:item_material:69>);
+recipes.remove(<enderio:item_material:2>);
+recipes.remove(<bigreactors:reactorcasingcores>);
+recipes.remove(<bigreactors:turbinehousingcores>);
+recipes.remove(<woot:soulsanddust>);
 
 for output, input in mapSimpleCrush {
     recipes.remove(output);
     Macerator.addRecipe(output, input);
     SagMill.addRecipe([output], [100], input, "NONE", 1000);
     Pulverizer.addRecipe(output, input, 2000);
+    Crusher.addRecipe(output, input, 2048);
+    XUCrusher.add(output, input);
 }
 
 Sawmill.addRecipe(<bibliocraft:framingsheet> * 2, <ore:slabWood>.firstItem, 1500);
@@ -156,6 +203,8 @@ var mapWood as IItemStack[IItemStack] = {
     // abyssalcraft
     <abyssalcraft:dreadlog> : <abyssalcraft:dreadplanks>,
     <abyssalcraft:dltlog> : <abyssalcraft:dltplank>,
+    // integrated dynamics
+    <integrateddynamics:menril_log> : <integrateddynamics:menril_planks>,
     // foretry
     <forestry:logs.0> : <forestry:planks.0>,
     <forestry:logs.0:1> : <forestry:planks.0:1>,

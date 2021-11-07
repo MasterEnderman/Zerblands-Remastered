@@ -26,20 +26,11 @@ import mods.jei.JEI;
 
 JEI.removeAndHide(<forestry:still>);
 
-furnace.addRecipe(<forestry:ash>, <ore:logWood>);
-
 recipes.remove(<forestry:sturdy_machine>);
 recipes.addShaped(<forestry:sturdy_machine>, [
     [<ore:ingotInvar>,<ore:plateBronze>,<ore:ingotInvar>],
     [<ore:plateBronze>,<ore:gearConstantan>,<ore:plateBronze>],
     [<ore:ingotInvar>,<ore:plateBronze>,<ore:ingotInvar>]
-]);
-
-recipes.remove(<forestry:ash_stairs>);
-recipes.addShaped(<forestry:ash_stairs> * 4, [
-    [<forestry:ash_brick>,null,null],
-    [<forestry:ash_brick>,<forestry:ash_brick>,null],
-    [<forestry:ash_brick>,<forestry:ash_brick>,<forestry:ash_brick>]
 ]);
 
 var droneSteadfast as IItemStack = <forestry:bee_drone_ge>.withTag(
@@ -68,86 +59,15 @@ Carpenter.addRecipe(<forestry:impregnated_casing>, [
     [<ore:logWood>,<ore:logWood>,<ore:logWood>]
 ], 200, <liquid:seed.oil>*250);
 
-var x as IItemStack = <morebees:grainmetallic>;
-
-// IItemStack output, IIngredient[][] ingredients, int packagingTime, @Optional ILiquidStack fluidInput, @Optional IItemStack box
-Carpenter.addRecipe(<minecraft:gold_nugget>, [
-    [x,x,x],
-    [x,null,x],
-    [x,x,x]
-], 120, <liquid:water>*500);
-
-Carpenter.addRecipe(<minecraft:gold_nugget>, [
-    [x,x,x],
-    [x,null,x],
-    [x,x,x]
-], 120, <liquid:water>*500);
-
-Carpenter.addRecipe(<minecraft:iron_nugget>, [
-    [x,null,x],
-    [x,x,x],
-    [x,null,x]
-], 120, <liquid:water>*500);
-
-Carpenter.addRecipe(<thermalfoundation:material:192>, [
-    [null,null,null],
-    [x,x,x],
-    [null,null,null]
-], 120, <liquid:water>*500);
-
-Carpenter.addRecipe(<thermalfoundation:material:193>, [
-    [null,x,null],
-    [null,x,null],
-    [null,x,null]
-], 120, <liquid:water>*500);
-
-Carpenter.addRecipe(<thermalfoundation:material:194>, [
-    [x,null,x],
-    [null,null,null],
-    [x,null,x]
-], 120, <liquid:water>*500);
-
-Carpenter.addRecipe(<thermalfoundation:material:195>, [
-    [null,x,null],
-    [x,null,x],
-    [null,x,null]
-], 120, <liquid:water>*500);
-
-Carpenter.addRecipe(<thermalfoundation:material:196>, [
-    [null,null,null],
-    [null,x,null],
-    [null,null,null]
-], 120, <liquid:water>*500);
-
-Carpenter.addRecipe(<thermalfoundation:material:197>, [
-    [x,x,x],
-    [null,x,null],
-    [x,x,x]
-], 120, <liquid:water>*500);
-
 var y as IItemStack = <morebees:graincrystal>;
-
-Carpenter.addRecipe(<thermalfoundation:material:16>, [
-    [y,y,y],
-    [y,y,y],
-    [y,y,y]
-], 120, <liquid:water>*1000);
-
-Carpenter.addRecipe(<astralsorcery:itemcraftingcomponent>, [
-    [null,y,null],
-    [y,y,y],
-    [null,y,null]
-], 120, <liquid:water>*1000);
-
 var rockcrystal as IItemStack = <astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}});
+var celestialcrystal as IItemStack = <astralsorcery:itemcelestialcrystal>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}});
 
 Carpenter.addRecipe(rockcrystal, [
     [y,<astralsorcery:itemcraftingcomponent:4>,y],
     [y,<astralsorcery:itemrockcrystalsimple>,y],
     [y,<astralsorcery:itemcraftingcomponent:4>,y]
 ], 120, <liquid:astralsorcery.liquidstarlight>*10000);
-
-var celestialcrystal as IItemStack = <astralsorcery:itemcelestialcrystal>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}});
 
 Carpenter.addRecipe(celestialcrystal, [
     [y,<astralsorcery:itemcraftingcomponent:4>,y],

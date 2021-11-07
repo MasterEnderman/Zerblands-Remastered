@@ -1,29 +1,70 @@
 # Zerblands-Remastered
 
-## v2.1.4 - maintenance
+## v2.2.0 - Nightmare Mode
 
+- removed Actually Additions Fluxified
+- removed Diet Hoppers
+- removed EnderIO Fluxified
+- removed More Tinkers
+- removed NoRecipeBook
+- removed PackModeMenu
+- removed Singularities
+
+- updated AbyssalCraft
+- updated AbyssalCraft Integration
+- updated B.A.S.E
 - updated Botania
+- updated Brandon's Core
+- updated Chunk-Pregenerator
 - updated ContentTweaker
 - updated CraftTweaker
+- updated DarknessLib
 - updated Draconic Additions
+- updated Draconic Evolution
+- updated Dynamic Surrounding
 - updated EnderIO
-- updated EnderIO Endergy 
+- updated EnderIO Endergy
 - updated Ender Tweaker
 - updated Energy Control
 - updated FoamFix
 - updated Hammer (Lib) Core
+- updated Hungering Darkness
 - updated Immersive Petroleum
+- updated Immersive Technology
+- updated LibNine
+- updated MixinBootstrap
 - updated ModTweaker
 - updated Mouse Tweaks
 - updated MTLib
+- updated MysticalLib
+- updated OMLib
+- updated Open Modular Turrets
 - updated Reborn Core
+- updated Redstone Repository Revolved
 - updated Simply Jetpacks 2
 - updated ThermalLogisitcs
+- updated Tool Belt
 - updated Tool Progression
 - updated UniDict
 
+- added Advanced Solars Classic
+- added Common Capabilities
+- added Integrated Dynamics
+- added MoreTweaker
+- added PackMode Menu OC Edition
+- added Tinkers' Evolution
+- added Too Many Efficiency Losses
+
+- added earthworks stones to et resource miner
+- added more loading screen tips
+- changed menu background
 - fixed nightmare mode
+- fixed villager blood amount in woot farms (once and for all)
 - more recipes for nightmare mode [WIP]
+- switched to Tinkers' Evolution as material addon (as it's actually maintained)
+-> current used tconstruct tools / armor probably needs to be remade (I'm sorry)
+- tweaked infernal mob drops
+- tweaked main menu
 
 ## v2.1.3 - partnership
 
@@ -119,7 +160,7 @@
 
 - updated RandomTweaks
 
-- added old Abyssalcraft building blocks
+- added old AbyssalCraft building blocks
 - added recipe for drawer "deep storage" upgrade
 - fixed calculator recipes
 - fixed extreme reactos energy output
@@ -258,7 +299,7 @@
 ## v2.0.2 - tweaks
 
 - added Loot Capacitor Tooltips
-- reduced Abyssalcraft biom weights
+- reduced AbyssalCraft biom weights
 - reduced Astral Sorcery Structure spawn
 - fixed dupe bug with harvestcraft
 - fixed main menu links

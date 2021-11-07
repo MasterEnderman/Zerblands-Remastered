@@ -51,23 +51,6 @@ recipes.addShaped(<thermalfoundation:material:22>, [
     [null,<ore:stickTreatedWood>,null]
 ]);
 
-var listGears as string[] = [
-    "iron",
-    "gold",
-    "lead",
-    "copper",
-    "silver"
-];
-
-// mods.embers.Stamper.add(IItemStack output, ILiquidStack liquid, IIngredient stamp, @Optional IIngredient input);
-for material in listGears {
-
-    var gear as IItemStack = findFirstItemFromMod("thermalfoundation", "gear", material);
-    var fluid as ILiquidStack = getFluid(material);
-
-    Stamper.add(gear, fluid * 576, <embers:stamp_gear>);
-}
-
 var rods as IItemStack[] = [
     <immersiveengineering:material:1>,
     <immersiveengineering:material:2>,
@@ -139,43 +122,3 @@ Pulverizer.addRecipe(<evilcraft:dark_gem_crushed>, <evilcraft:dark_gem>, 4000);
 SagMill.addRecipe([<evilcraft:dark_gem_crushed>], [100], <evilcraft:dark_gem>, "NONE", 5000);
 SagMill.addRecipe([<evilcraft:dark_gem> * 2,<evilcraft:dark_gem_crushed>], [100,30], <evilcraft:dark_ore>, "NONE", 5000);
 SagMill.addRecipe([<quantumflux:graphitedust> * 2], [100],  <quantumflux:graphiteore>, "NONE", 5000);
-
-var thermalGlass as IItemStack[string] = {
-    "copper" : <thermalfoundation:glass:0>,
-    "tin" : <thermalfoundation:glass:1>,
-    "silver" : <thermalfoundation:glass:2>,
-    "lead" : <thermalfoundation:glass:3>,
-    "aluminum" : <thermalfoundation:glass:4>,
-    "nickel" : <thermalfoundation:glass:5>,
-    "platinum" : <thermalfoundation:glass:6>,
-    "iridium" : <thermalfoundation:glass:7>,
-    "mithril" : <thermalfoundation:glass:8>,
-    "steel" : <thermalfoundation:glass_alloy:0>,
-    "electrum" : <thermalfoundation:glass_alloy:1>,
-    "invar" : <thermalfoundation:glass_alloy:2>,
-    "bronze" : <thermalfoundation:glass_alloy:3>,
-    "constantan" : <thermalfoundation:glass_alloy:4>,
-    "signalum" : <thermalfoundation:glass_alloy:5>,
-    "lumium" : <thermalfoundation:glass_alloy:6>,
-    "enderium" : <thermalfoundation:glass_alloy:7>,
-};
-
-for metal, item in thermalGlass {
-    var ingot as IItemStack = findFirstItemFromMod("thermalfoundation","ingot",metal);
-    var dust as IItemStack = findFirstItemFromMod("thermalfoundation","dust",metal);
-    var glass as IItemStack = thermalGlass[metal];
-
-    <ore:blockGlassHardened>.remove(item);
-
-    if (metal == "lead") {
-        InductionSmelter.removeRecipe(dust, <thermalfoundation:material:770>);
-        InductionSmelter.removeRecipe(<thermalfoundation:glass>, dust);
-    } else {
-        if (metal != "mithril") {
-            InductionSmelter.removeRecipe(thermalGlass["lead"], dust);
-        }
-    }
-
-    InductionSmelter.addRecipe(glass, <enderio:block_fused_quartz>, ingot * 2, 2500);
-    InductionSmelter.addRecipe(glass, <enderio:block_fused_quartz>, dust * 2, 2500);
-}

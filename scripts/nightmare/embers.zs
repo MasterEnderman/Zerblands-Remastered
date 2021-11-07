@@ -20,9 +20,21 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.embers.Alchemy;
 import mods.embers.Mixer;
+import mods.enderio.AlloySmelter;
+import mods.immersiveengineering.Blueprint;
+import mods.jei.JEI;
+import mods.thermalexpansion.Crucible;
 
 <embers:archaic_brick>.addTooltip(format.green("Drops from Ancient Golem."));
+
+JEI.removeAndHide(<embers:breaker>);
+
+Crucible.addRecipe(<liquid:oil_soul> * 100, <minecraft:soul_sand>, 2000);
+
+Alchemy.remove(<embers:winding_gears>);
+Alchemy.add(<embers:winding_gears>, [<blood_dynamo:ingredient:2>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>], {"copper": 32 to 64, "iron": 32 to 128});
 
 recipes.remove(<embers:blend_caminite>);
 recipes.addShapeless("blend_caminite", <embers:blend_caminite> * 4, [
@@ -30,6 +42,16 @@ recipes.addShapeless("blend_caminite", <embers:blend_caminite> * 4, [
     <ore:dustAsh>,
     <earthworks:item_quicklime>,
     <earthworks:item_sand>
+]);
+
+recipes.remove(<embers:ember_bore>);
+Blueprint.addRecipe("machinery", <embers:ember_bore>, [
+    <immersiveengineering:drillhead:1>,
+    <embers:mech_core>,
+    <embers:block_caminite_brick> * 4,
+    <embers:stairs_caminite_brick> * 4,
+    <contenttweaker:material_part:24> * 2,
+    <contenttweaker:cutting_head> * 2,
 ]);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
@@ -73,6 +95,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<embers:block_caminite_brick>,<contenttweaker:reinforced_iron_block>,<embers:block_caminite_brick>],
             [<embers:block_caminite_brick>,null,<embers:block_caminite_brick>]
         ]
+    ],
+    <embers:ember_ring> : [
+        [
+            [<embers:ember_cluster>,<ore:ingotDawnstone>,null],
+            [<ore:ingotDawnstone>,<actuallyadditions:item_misc:6>,<ore:ingotDawnstone>],
+            [null,<ore:ingotDawnstone>,null]
+        ]
     ]
 };
 
@@ -93,3 +122,6 @@ Mixer.add(<liquid:dawnstone> * 12, [
     <liquid:constantan> * 4,
     <liquid:alubrass> * 4
 ]);
+
+AlloySmelter.addRecipe(<embers:ashen_cloth>, [<ore:wool>,<ore:dustAsh>,<ore:string>], 25000);
+AlloySmelter.addRecipe(<embers:ingot_dawnstone>, [<ore:ingotBronze>,<ore:ingotConstantan>,<ore:ingotAluminumBrass>], 25000);

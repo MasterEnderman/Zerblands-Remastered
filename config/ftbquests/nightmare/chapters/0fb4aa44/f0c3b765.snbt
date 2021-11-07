@@ -1,0 +1,33 @@
+{
+	x: 11.5d,
+	y: -0.5d,
+	dependencies: [
+		"7e483642"
+	],
+	tasks: [{
+		uid: "893ef5b4",
+		type: "item",
+		items: [{
+			item: "bloodmagic:demon_crucible"
+		}]
+	},
+	{
+		uid: "df970fd8",
+		type: "item",
+		items: [{
+			item: "bloodmagic:demon_crystallizer"
+		}]
+	},
+	{
+		uid: "dc17515c",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bloodmagic:demon_will_gauge"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

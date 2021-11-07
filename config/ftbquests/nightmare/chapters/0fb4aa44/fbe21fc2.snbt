@@ -1,0 +1,15 @@
+{
+	x: 3.5d,
+	y: -0.5d,
+	dependencies: [
+		"e75b5b06",
+		"f3a425e7"
+	],
+	tasks: [{
+		uid: "2b05fddf",
+		type: "item",
+		items: [{
+			item: "contenttweaker:corruptedstarmetal"
+		}]
+	}]
+}

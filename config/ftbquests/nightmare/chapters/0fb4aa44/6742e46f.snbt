@@ -1,0 +1,14 @@
+{
+	x: 4.5d,
+	y: -4.5d,
+	dependencies: [
+		"c84a908b"
+	],
+	tasks: [{
+		uid: "cb3a02d0",
+		type: "item",
+		items: [{
+			item: "contenttweaker:sodium_dust"
+		}]
+	}]
+}

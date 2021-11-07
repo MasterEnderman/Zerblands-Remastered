@@ -1,0 +1,15 @@
+{
+	x: 11.5d,
+	y: 0.5d,
+	dependencies: [
+		"79adecd1",
+		"79ef1f74"
+	],
+	tasks: [{
+		uid: "1845ea3f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:heat_conductor"
+		}]
+	}]
+}

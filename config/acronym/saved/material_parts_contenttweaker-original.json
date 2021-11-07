@@ -5,6 +5,7 @@
     "soldering_alloy_nugget": 19,
     "antimony_block": 1,
     "soldering_alloy_block": 18,
+    "tungsten_small_dust": 33,
     "battery_alloy_dust": 9,
     "styrene_butadiene_rubber_molten": 22,
     "battery_alloy_block": 6,
@@ -12,12 +13,20 @@
     "battery_alloy_nugget": 7,
     "red_alloy_block": 12,
     "battery_alloy_molten": 5,
+    "tungsten_dust": 29,
     "red_alloy_nugget": 13,
+    "tungsten_ingot": 28,
     "styrene_butadiene_rubber_plate": 23,
     "red_alloy_molten": 11,
+    "tungsten_block": 26,
     "soldering_alloy_ingot": 20,
     "soldering_alloy_dust": 21,
+    "ferromagnetic_alloy_ingot": 32,
+    "tungsten_tiny_dust": 34,
     "antimony_ingot": 3,
+    "ferromagnetic_alloy_molten": 31,
+    "tungsten_nugget": 27,
+    "tungsten_plate": 30,
     "battery_alloy_ingot": 8,
     "antimony_dust": 4,
     "red_alloy_plate": 24,
@@ -25,6 +34,6 @@
     "antimony_nugget": 2,
     "red_alloy_ingot": 14,
     "antimony_molten": 0,
-    "apatite_dust": 25
+    "tungsten_molten": 25
   }
 }

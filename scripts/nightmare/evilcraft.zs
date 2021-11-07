@@ -23,12 +23,35 @@ import scripts.functions.findFirstItemFromMod;
 import mods.abyssalcraft.InfusionRitual;
 import mods.astralsorcery.Altar;
 import mods.astralsorcery.Lightwell;
+import mods.bloodmagic.BloodAltar;
+import mods.bloodmagic.AlchemyArray;
 import mods.evilcraft.BloodInfuser;
 import mods.ic2.Macerator;
 import mods.tconstruct.Casting;
+import mods.thermalexpansion.Transposer;
+
+import scripts.functions.calc_basic;
+import scripts.functions.calc_scientific;
+import scripts.functions.calc_atomic;
 
 // BloodInfuser.removeRecipesWithOutput(<evilcraft:blood_waxed_coal>);
 // BloodInfuser.addRecipe(<contenttweaker:purified_coal>, <liquid:evilcraftblood> * 375, 1, <evilcraft:blood_waxed_coal>, 100, 2);
+
+recipes.remove(<evilcraft:exalted_crafter>);
+calc_basic(<evilcraft:exalted_crafter>, <actuallyadditions:item_crafter_on_a_stick>, <minecraft:ender_chest>);
+
+recipes.remove(<evilcraft:exalted_crafter:1>);
+calc_basic(<evilcraft:exalted_crafter:1>, <actuallyadditions:item_crafter_on_a_stick>, <minecraft:chest>);
+
+recipes.remove(<evilcraft:effortless_ring>);
+calc_atomic(<evilcraft:effortless_ring>, <evilcraft:vengeance_ring>, <evilcraft:promise:4>, <evilcraft:promise:3>);
+
+recipes.remove(<evilcraft:vengeance_ring>);
+calc_scientific(<evilcraft:vengeance_ring>,<embers:ember_ring>,<evilcraft:bowl_of_promises>);
+
+<ore:stickWood>.remove(<evilcraft:dark_stick>);
+recipes.remove(<evilcraft:dark_stick>);
+calc_basic(<evilcraft:dark_stick>, <ore:stickWood>, <ore:gemDarkCrushed>);
 
 Casting.addTableRecipe(<evilcraft:dark_power_gem>, <evilcraft:dark_gem>, <liquid:evilcraftblood>, 5000, true, 20);
 Casting.addTableRecipe(<evilcraft:dark_power_gem>, <evilcraft:dark_gem>, <liquid:blood>, 5000, true, 20);
@@ -36,6 +59,18 @@ Casting.addTableRecipe(<evilcraft:dark_power_gem>, <evilcraft:dark_gem>, <liquid
 Casting.addBasinRecipe(<evilcraft:hardened_blood>, null, <liquid:blood>, 1000, true, 100);
 
 Macerator.addRecipe(<evilcraft:dark_gem_crushed>, <evilcraft:dark_gem>);
+
+recipes.remove(<evilcraft:eternal_water_block>);
+AlchemyArray.addRecipe(<evilcraft:eternal_water_block>, <bloodmagic:component>, <evilcraft:dark_block>, bloodmagicAlchemyArray["watersigil"]);
+
+recipes.remove(<evilcraft:bucket_eternal_water>);
+AlchemyArray.addRecipe(<evilcraft:bucket_eternal_water>, <bloodmagic:component>, <quantumflux:voidbucket>, bloodmagicAlchemyArray["watersigil"]);
+
+recipes.remove(<evilcraft:golden_string>);
+Transposer.addFillRecipe(<evilcraft:golden_string>, <botania:manaresource:16>, <liquid:gold> * 144, 4096);
+
+recipes.remove(<evilcraft:sanguinary_pedestal:1>);
+BloodAltar.addRecipe(<evilcraft:sanguinary_pedestal:1>, <evilcraft:sanguinary_pedestal>, 2, 10000,50,50);
 
 recipes.remove(<evilcraft:blood_infuser>);
 Altar.addDiscoveryAltarRecipe("blood_infuser", <evilcraft:blood_infuser>, 200, 200, [
@@ -106,7 +141,7 @@ for item, mult in mapBlood {
 }
 
 recipes.remove(<evilcraft:promise>);
-mods.abyssalcraft.InfusionRitual.addRitual("promise_of_tenacity_i", 0, -1, 1000, false, <evilcraft:promise>, <evilcraft:promise_acceptor>, [
+InfusionRitual.addRitual("promise_of_tenacity_i", 0, 0, 1000, false, <evilcraft:promise>, <evilcraft:promise_acceptor>, [
     <minecraft:spider_eye>,
     <astralsorcery:itemusabledust:1>,
     <contenttweaker:blood_infused_stone>,
@@ -118,3 +153,109 @@ mods.abyssalcraft.InfusionRitual.addRitual("promise_of_tenacity_i", 0, -1, 1000,
 ]);
 game.setLocalization("ac.ritual.promise_of_tenacity_i", "Promise of Tenacity I");
 game.setLocalization("ac.ritual.promise_of_tenacity_i.desc", "Custom Recipe made for Nightmare Mode.");
+
+recipes.remove(<evilcraft:promise:1>);
+InfusionRitual.addRitual("promise_of_tenacity_ii", 1, 50, 2000, false, <evilcraft:promise:1>, <evilcraft:promise_acceptor:1>, [
+    <minecraft:ender_eye>,
+    <astralsorcery:itemusabledust:1>,
+    <contenttweaker:blood_infused_stone>,
+    <astralsorcery:itemusabledust:1>,
+    <ore:materialBowlOfPromises1>,
+    <astralsorcery:itemusabledust:1>,
+    <contenttweaker:blood_infused_stone>,
+    <astralsorcery:itemusabledust:1>
+]);
+game.setLocalization("ac.ritual.promise_of_tenacity_ii", "Promise of Tenacity II");
+game.setLocalization("ac.ritual.promise_of_tenacity_ii.desc", "Custom Recipe made for Nightmare Mode.");
+
+recipes.remove(<evilcraft:promise:2>);
+InfusionRitual.addRitual("promise_of_tenacity_iii", 2, 51, 3000, false, <evilcraft:promise:2>, <evilcraft:promise_acceptor:2>, [
+    <xreliquary:salamander_eye>,
+    <astralsorcery:itemusabledust:1>,
+    <contenttweaker:blood_infused_stone>,
+    <astralsorcery:itemusabledust:1>,
+    <ore:materialBowlOfPromises2>,
+    <astralsorcery:itemusabledust:1>,
+    <contenttweaker:blood_infused_stone>,
+    <astralsorcery:itemusabledust:1>
+]);
+game.setLocalization("ac.ritual.promise_of_tenacity_iii", "Promise of Tenacity III");
+game.setLocalization("ac.ritual.promise_of_tenacity_iii.desc", "Custom Recipe made for Nightmare Mode.");
+
+
+
+recipes.remove(<evilcraft:promise:3>);
+InfusionRitual.addRitual("promise_of_velocity", 0, 0, 1000, false, <evilcraft:promise:3>, <evilcraft:promise_acceptor>, [
+    <minecraft:redstone_block>,
+    <astralsorcery:itemusabledust:1>,
+    <contenttweaker:blood_infused_stone>,
+    <astralsorcery:itemusabledust:1>,
+    <ore:materialBowlOfPromises0>,
+    <astralsorcery:itemusabledust:1>,
+    <contenttweaker:blood_infused_stone>,
+    <astralsorcery:itemusabledust:1>
+]);
+game.setLocalization("ac.ritual.promise_of_velocity", "Promise of Velocity");
+game.setLocalization("ac.ritual.promise_of_velocity.desc", "Custom Recipe made for Nightmare Mode.");
+
+recipes.remove(<evilcraft:promise:4>);
+InfusionRitual.addRitual("promise_of_productivity", 0, 0, 1000, false, <evilcraft:promise:4>, <evilcraft:promise_acceptor>, [
+    <minecraft:lapis_block>,
+    <astralsorcery:itemusabledust:1>,
+    <contenttweaker:blood_infused_stone>,
+    <astralsorcery:itemusabledust:1>,
+    <ore:materialBowlOfPromises0>,
+    <astralsorcery:itemusabledust:1>,
+    <contenttweaker:blood_infused_stone>,
+    <astralsorcery:itemusabledust:1>
+]);
+game.setLocalization("ac.ritual.promise_of_productivity", "Promise of Productivity");
+game.setLocalization("ac.ritual.promise_of_productivity.desc", "Custom Recipe made for Nightmare Mode.");
+
+recipes.remove(<evilcraft:vengeance_focus>);
+InfusionRitual.addRitual("vengeance_focus", 2, 0, 5000, false, <evilcraft:vengeance_focus>, <evilcraft:vengeance_ring>, [
+    <embers:focal_lens>,
+    <evilcraft:dark_gem_crushed>,
+    <contenttweaker:crystal_prism>,
+    <evilcraft:dark_gem_crushed>,
+    <botania:lens:7>,
+    <evilcraft:dark_gem_crushed>,
+    <contenttweaker:crystal_prism>,
+    <evilcraft:dark_gem_crushed>
+]);
+game.setLocalization("ac.ritual.vengeance_focus", "Vengance Focus");
+game.setLocalization("ac.ritual.vengeance_focus.desc", "Custom Recipe made for Nightmare Mode.");
+
+recipes.remove(<evilcraft:piercing_vengeance_focus>);
+InfusionRitual.addRitual("piercing_vengeance_focus", 3, 0, 40000, true, <evilcraft:piercing_vengeance_focus>, <evilcraft:vengeance_focus>, [
+    <ic2:itemtoolmininglaser>,
+    <actuallyadditions:item_more_damage_lens>,
+    <minecraft:end_crystal>,
+    <actuallyadditions:item_more_damage_lens>,
+    <botanicadds:gaiasteel_ingot>,
+    <actuallyadditions:item_more_damage_lens>,
+    <minecraft:end_crystal>,
+    <actuallyadditions:item_more_damage_lens>
+]);
+game.setLocalization("ac.ritual.piercing_vengeance_focus", "Piercing Vengance Focus");
+game.setLocalization("ac.ritual.piercing_vengeance_focus.desc", "Custom Recipe made for Nightmare Mode.");
+
+var recipeMapShaped as IIngredient[][][][IItemStack] = {
+    <evilcraft:spiked_plate> : [
+        [
+            [<evilcraft:dark_spike>,<bloodarsenal:glass_shards>,<evilcraft:dark_spike>],
+            [<extrautils2:spike_stone>,<minecraft:heavy_weighted_pressure_plate>,<extrautils2:spike_stone>]
+        ]
+    ],
+};
+
+for key, value in recipeMapShaped {
+	var index as int = 0;    
+    recipes.remove(key);
+
+    for recipe in value {
+        var name as string = "ct_"+toString(key)+"_"+index;
+        recipes.addShaped(name, key, recipe);
+        index += 1;
+    }
+}

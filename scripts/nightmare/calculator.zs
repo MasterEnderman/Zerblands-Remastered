@@ -20,17 +20,23 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import scripts.functions.calc_basic;
-import scripts.functions.calc_scientific;
-
 import mods.actuallyadditions.Empowerer;
 import mods.astralsorcery.Altar;
 import mods.forestry.Carpenter;
 import mods.forestry.Centrifuge as FCentrifuge;
+import mods.immersiveengineering.ArcFurnace;
+import mods.immersiveengineering.BlastFurnace;
 import mods.immersiveengineering.BottlingMachine;
+import mods.inworldcrafting.FluidToItem;
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.Centrifuge;
+import mods.thermalexpansion.Infuser;
 import mods.thermalexpansion.Transposer;
+
+import scripts.functions.calc_atomic;
+import scripts.functions.calc_basic;
+import scripts.functions.calc_scientific;
+import scripts.functions.calc_flawless;
 
 furnace.setFuel(<contenttweaker:controlled_fuel>,80000);
 furnace.setFuel(<contenttweaker:purified_coal>,10000);
@@ -51,10 +57,45 @@ calc_basic(<contenttweaker:enriched_coal>,<ore:fuelCoke>,<ore:dustRedstone>);
 
 calc_scientific(<contenttweaker:weakeneddiamond>*4,<ore:gemDiamond>,<contenttweaker:reinforcediron_ingot>);
 
+calc_atomic(<contenttweaker:firediamond>,<contenttweaker:flawlessdiamond>,<extrautils2:ingredients:11>,<randomthings:imbue>);
+calc_atomic(<contenttweaker:enddiamond>,<contenttweaker:electricdiamondanimate>,<contenttweaker:reinforced_obsidian_ingot>,<ore:ingotEndSteel>);
+calc_atomic(<contenttweaker:module_speed> * 4, <opencomputers:material:4>, <appliedenergistics2:material:12>, <rs_ctr:lever:2>);
+calc_atomic(<contenttweaker:storage_module>, <actuallyadditions:item_crystal:2>, <immersiveengineering:wooden_device0>, <immersiveengineering:material:27>);
+
+calc_flawless(<contenttweaker:purifiedobsidian>,<contenttweaker:reinforced_obsidian_ingot>,<contenttweaker:reinforced_obsidian_ingot>,<contenttweaker:reinforced_obsidian_ingot>,<contenttweaker:reinforced_obsidian_ingot>);
+
+Infuser.addRecipe(<contenttweaker:electricdiamondanimate>, <contenttweaker:firediamond>, 1000000);
+
+FluidToItem.transform(<contenttweaker:enrichedgold>, <liquid:astralsorcery.liquidstarlight>, [<ore:dustGold>, <ore:dustRedstone> * 2], false);
+BlastFurnace.addRecipe(<contenttweaker:enrichedgold_ingot>, <contenttweaker:enrichedgold>, 600);
+ArcFurnace.addRecipe(<contenttweaker:enrichedgold_ingot>, <contenttweaker:enrichedgold>, null, 200, 512);
+
+calc_flawless(<contenttweaker:calculator>,<contenttweaker:calculator_screen>,<contenttweaker:calculator_assembly>,<extrautils2:ingredients>,<contenttweaker:black_iron>);
 Altar.addDiscoveryAltarRecipe("basic_calculator", <contenttweaker:calculator>, 200, 200, [
     <contenttweaker:black_iron>, <contenttweaker:calculator_screen>, <contenttweaker:black_iron>,
     <extrautils2:ingredients>, <contenttweaker:calculator_assembly>, <extrautils2:ingredients>,
     <contenttweaker:black_iron>, <contenttweaker:calculator_assembly>, <contenttweaker:black_iron>
+]);
+
+calc_flawless(<contenttweaker:scientificcalculator>,<contenttweaker:calculator_screen>,<contenttweaker:advanced_assembly>,<contenttweaker:large_amethyst>,<contenttweaker:enrichedgold_ingot>);
+Altar.addDiscoveryAltarRecipe("scientific_calculator", <contenttweaker:scientificcalculator>, 200, 200, [
+    <contenttweaker:enrichedgold_ingot>, <contenttweaker:calculator_screen>, <contenttweaker:enrichedgold_ingot>,
+    <contenttweaker:large_amethyst>, <contenttweaker:advanced_assembly>, <contenttweaker:large_amethyst>,
+    <contenttweaker:enrichedgold_ingot>, <contenttweaker:advanced_assembly>, <contenttweaker:enrichedgold_ingot>
+]);
+
+calc_flawless(<contenttweaker:atomiccalculator>,<contenttweaker:calculator_screen>,<contenttweaker:atomic_assembly>,<contenttweaker:flawlessdiamond>,<ore:ingotDarkSteel>);
+Altar.addDiscoveryAltarRecipe("atomic_calculator", <contenttweaker:atomiccalculator>, 200, 200, [
+    <ore:ingotDarkSteel>,<contenttweaker:calculator_screen>,<ore:ingotDarkSteel>,
+    <contenttweaker:flawlessdiamond>,<contenttweaker:atomic_assembly>,<contenttweaker:flawlessdiamond>,
+    <ore:ingotDarkSteel>,<contenttweaker:atomic_assembly>,<ore:ingotDarkSteel>
+]);
+
+calc_flawless(<contenttweaker:flawlesscalculator>,<contenttweaker:calculator_screen>,<contenttweaker:flawless_assembly>,<contenttweaker:enddiamond>,<ore:ingotVividAlloy>);
+Altar.addDiscoveryAltarRecipe("flawless_calculator", <contenttweaker:flawlesscalculator>, 200, 200, [
+    <ore:ingotVividAlloy>,<contenttweaker:calculator_screen>,<ore:ingotVividAlloy>,
+    <contenttweaker:enddiamond>,<contenttweaker:flawless_assembly>,<contenttweaker:enddiamond>,
+    <ore:ingotVividAlloy>,<contenttweaker:flawless_assembly>,<ore:ingotVividAlloy>
 ]);
 
 Centrifuge.addRecipe([<contenttweaker:large_amethyst> % 100, <contenttweaker:shard_amethyst> % 100], <extrautils2:ingredients:5>, null, 2000);
@@ -68,12 +109,37 @@ FCentrifuge.addRecipe([<contenttweaker:large_tanzanite> % 100, <contenttweaker:s
 FCentrifuge.addRecipe([<contenttweaker:small_tanzanite> % 100, <contenttweaker:shard_tanzanite> % 100], <forestry:apatite>, 200);
 
 Empowerer.addRecipe(<contenttweaker:atomicbinder>, <contenttweaker:enrichedgold>, findFirstItemFromMod("thermalfoundation","ingot","steel"), <appliedenergistics2:material:1>, findFirstItemFromMod("thermalfoundation","ingot","steel"), <appliedenergistics2:material:1>, 8192, 100, [0.1, 0.1, 0.1]);
+Empowerer.addRecipe(<contenttweaker:flawlessdiamond>, <contenttweaker:atomicbinder>, <contenttweaker:weakeneddiamond>, <contenttweaker:weakeneddiamond>, <contenttweaker:weakeneddiamond>, <contenttweaker:weakeneddiamond>, 8192, 100, [0.1, 0.1, 0.1]);
 
 Carpenter.addRecipe(<contenttweaker:energy_module>, [
     [<ore:plateBatteryAlloy>,<actuallyadditions:item_battery>,<ore:plateBatteryAlloy>],
     [<ore:plateBatteryAlloy>,<rs_ctr:power_hub>,<ore:plateBatteryAlloy>],
     [<ore:plateBatteryAlloy>,<actuallyadditions:item_battery>,<ore:plateBatteryAlloy>]
 ], 40, <liquid:sulfuric_acid> * 250, <contenttweaker:module_energy>);
+
+Carpenter.addRecipe(<contenttweaker:warp_module>, [
+    [<ore:ingotEnergeticSilver>,<enderio:item_material:64>,<ore:ingotEnergeticSilver>],
+    [<ore:plateGelidEnderium>,<botania:lens:18>,<ore:plateGelidEnderium>],
+    [<ore:ingotEnergeticSilver>,<simplyjetpacks:metaitemmods:30>,<ore:ingotEnergeticSilver>]
+], 40, <liquid:sulfuric_acid> * 250, <forestry:chipsets:3>);
+
+Carpenter.addRecipe(<contenttweaker:jump_module>, [
+    [<cd4017be_lib:m:401>,<enderutilities:ender_elevator>,<cd4017be_lib:m:401>],
+    [<enderutilities:linkcrystal>,<superiorshields:thermal_shield_enderium>,<enderutilities:linkcrystal>],
+    [<cd4017be_lib:m:401>,<enderutilities:ender_elevator>,<cd4017be_lib:m:401>]
+], 40, <liquid:vapor_of_levity> * 250, <simplyjetpacks:metaitemmods:15>);
+
+Carpenter.addRecipe(<contenttweaker:module_void>, [
+    [<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:module_transfer>,<actuallyadditions:item_crystal_empowered:3>],
+    [<xreliquary:void_tear>,<botania:blackholetalisman>,<xreliquary:void_tear>],
+    [<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:module_transfer>,<actuallyadditions:item_crystal_empowered:3>]
+], 40, <liquid:ender_distillation> * 250, <bloodmagic:component:4>);
+
+Carpenter.addRecipe(<contenttweaker:flux_module>, [
+    [<ore:plateTungsten>,<ic2:itemcable:16>,<ore:plateTungsten>],
+    [<redstonearsenal:material:224>,<gravisuit:coolingcore>,<redstonearsenal:material:224>],
+    [<ore:plateTungsten>,<ic2:itemcable:16>,<ore:plateTungsten>]
+], 40, <liquid:battery_solution> * 1000, <fluxnetworks:fluxcore>);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <contenttweaker:calculator_assembly> : [
@@ -90,11 +156,46 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:enrichedgold_ingot>,<contenttweaker:calculator_assembly>,<contenttweaker:enrichedgold_ingot>]
         ]
     ],
-    <contenttweaker:scientificcalculator> : [
+    <contenttweaker:atomic_module> : [
         [
-            [<contenttweaker:enrichedgold_ingot>,<contenttweaker:calculator_screen>,<contenttweaker:enrichedgold_ingot>],
-            [<contenttweaker:large_amethyst>,<contenttweaker:advanced_assembly>,<contenttweaker:large_amethyst>],
-            [<contenttweaker:enrichedgold_ingot>,<contenttweaker:advanced_assembly>,<contenttweaker:enrichedgold_ingot>]
+            [<contenttweaker:large_amethyst>|<contenttweaker:large_tanzanite>,<contenttweaker:advanced_assembly>,<contenttweaker:large_amethyst>|<contenttweaker:large_tanzanite>],
+            [<contenttweaker:advanced_assembly>,<contenttweaker:atomicbinder>,<contenttweaker:advanced_assembly>],
+            [<contenttweaker:large_amethyst>|<contenttweaker:large_tanzanite>,<contenttweaker:advanced_assembly>,<contenttweaker:large_amethyst>|<contenttweaker:large_tanzanite>]
+        ]
+    ],
+    <contenttweaker:atomic_assembly> : [
+        [
+            [<contenttweaker:advanced_assembly>,<contenttweaker:atomic_module>,<contenttweaker:advanced_assembly>],
+            [<contenttweaker:atomic_module>,<actuallyadditions:item_crystal_empowered:4>,<contenttweaker:atomic_module>],
+            [<contenttweaker:advanced_assembly>,<contenttweaker:atomic_module>,<contenttweaker:advanced_assembly>]
+        ]
+    ],
+    <contenttweaker:flawless_assembly> : [
+        [
+            [<contenttweaker:atomic_assembly>,<contenttweaker:flawlessdiamond>,<contenttweaker:atomic_assembly>],
+            [<contenttweaker:flawlessdiamond>,<opencomputers:component:1>,<contenttweaker:flawlessdiamond>],
+            [<contenttweaker:atomic_assembly>,<contenttweaker:flawlessdiamond>,<contenttweaker:atomic_assembly>]
+        ]
+    ],
+    <contenttweaker:module_transfer> * 4 : [
+        [
+            [null,<enderio:item_material:69>,null],
+            [<openmodularturrets:intermediate_regular>,<opencomputers:material:8>,<openmodularturrets:intermediate_regular>],
+            [null,<enderio:item_material:69>,null]
+        ]
+    ],
+    <contenttweaker:calculator_plug_base_on> : [
+        [
+            [null,<ic2:itemmisc:264>,null],
+            [<contenttweaker:atomic_assembly>,<actuallyadditions:block_empowerer>,<contenttweaker:atomic_assembly>],
+            [<contenttweaker:redstone_ingot_block>,<actuallyadditions:block_misc:8>,<contenttweaker:redstone_ingot_block>]
+        ]
+    ],
+    <contenttweaker:calculator_locator_on_2> : [
+        [
+            [null,<environmentaltech:nano_cont_personal_6>,null],
+            [<contenttweaker:flawless_assembly>,<contenttweaker:calculator_plug_base_on>,<contenttweaker:flawless_assembly>],
+            [<contenttweaker:purifiedobsidian>,<ic2:blockelectric:5>,<contenttweaker:purifiedobsidian>]
         ]
     ]
 };
@@ -119,6 +220,21 @@ var comp as IItemStack[IItemStack] = {
     <contenttweaker:small_amethyst> : <contenttweaker:shard_amethyst>,
     <contenttweaker:enriched_gold_block> : <contenttweaker:enrichedgold_ingot>,
     <contenttweaker:reinforced_iron_block> : <contenttweaker:reinforcediron_ingot>,
+    <contenttweaker:flawless_block> : <contenttweaker:flawlessdiamond>,
+    <contenttweaker:electric_diamond_block> : <contenttweaker:electricdiamondanimate>,
+    <contenttweaker:flawless_fire_block> : <contenttweaker:firediamond>,
+    <contenttweaker:weakened_diamond_block> : <contenttweaker:weakeneddiamond>,
+    //
+    <contenttweaker:starsteel_ingot> : <contenttweaker:starsteel_nugget>,
+    <contenttweaker:starsteel_block> : <contenttweaker:starsteel_ingot>,
+    <contenttweaker:alfsteel_ingot> : <contenttweaker:alfsteel_nugget>,
+    <contenttweaker:alfsteel_block> : <contenttweaker:alfsteel_ingot>,
+    //
+    <contenttweaker:slate_blank> : <bloodmagic:slate>,
+    <contenttweaker:slate_reinforced> : <bloodmagic:slate:1>,
+    <contenttweaker:slate_imbued> : <bloodmagic:slate:2>,
+    <contenttweaker:slate_demonic> : <bloodmagic:slate:3>,
+    <contenttweaker:slate_ethereal> : <bloodmagic:slate:4>,
 };
 
 for x,y in comp {

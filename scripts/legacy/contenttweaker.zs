@@ -57,57 +57,8 @@ recipes.addShaped(<contenttweaker:red_core>, [
     [<extrautils2:ingredients:4>,<abyssalcraft:charcoal>,<extrautils2:ingredients:4>]
 ]);
 
-recipes.addShaped(<contenttweaker:wither_clean> * 16, [
-    [<enderzoo:witheringdust>,<enderzoo:witheringdust>],
-    [<enderzoo:witheringdust>,<enderzoo:witheringdust>]
-]);
-recipes.addShaped(<contenttweaker:wither_clean> * 16, [
-    [<xreliquary:mob_ingredient:1>,<xreliquary:mob_ingredient:1>],
-    [<xreliquary:mob_ingredient:1>,<xreliquary:mob_ingredient:1>]
-]);
-recipes.addShaped(<contenttweaker:wither_clean> * 64, [
-    [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>],
-    [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>],
-    [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>]
-]);
-
 AlloySmelter.addRecipe(<contenttweaker:ender_ingot>, [<threng:material>, <enderio:item_alloy_endergy_ingot:3>, <extrautils2:ingredients:17>], 50000);
 AlloySmelter.addRecipe(<contenttweaker:enhanced_ender_ingot>, [<immersiveengineering:material:19>, <ic2:itemmisc:60>, <contenttweaker:ender_ingot>], 50000);
-
-ExtremeCrafting.addShaped("creativeingot",<contenttweaker:creative>,[
-    [<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>],
-    [<ore:ingotInfinity>,<ore:ingotCosmicNeutronium>,<contenttweaker:creativecore>,<contenttweaker:creativecore>,<ore:ingotCosmicNeutronium>,<contenttweaker:creativecore>,<contenttweaker:creativecore>,<ore:ingotCosmicNeutronium>,<ore:ingotInfinity>],
-    [<ore:ingotInfinity>,<contenttweaker:creativecore>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<contenttweaker:creativecore>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<contenttweaker:creativecore>,<ore:ingotInfinity>],
-    [<ore:ingotInfinity>,<ore:ingotCosmicNeutronium>,<contenttweaker:creativecore>,<contenttweaker:creativecore>,<ore:ingotCosmicNeutronium>,<contenttweaker:creativecore>,<contenttweaker:creativecore>,<ore:ingotCosmicNeutronium>,<ore:ingotInfinity>],
-    [<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>],
-]);
-
-ExtremeCrafting.addShaped("creativecore",<contenttweaker:creativecore> * 11, [
-    [null,null,<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>,null,null],
-    [null,<bloodmagic:decorative_brick:2>,<draconicevolution:chaotic_core>,<ic2:itemmisc:264>,<draconicevolution:chaotic_core>,<ic2:itemmisc:264>,<draconicevolution:chaotic_core>,<bloodmagic:decorative_brick:2>,null],
-    [<bloodmagic:decorative_brick:2>,<draconicevolution:chaotic_core>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<draconicevolution:chaotic_core>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<draconicevolution:chaotic_core>,<bloodmagic:decorative_brick:2>],
-    [<bloodmagic:decorative_brick:2>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<draconicevolution:chaotic_core>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<bloodmagic:decorative_brick:2>],
-    [<bloodmagic:decorative_brick:2>,<draconicevolution:chaotic_core>,<draconicevolution:chaotic_core>,<draconicevolution:chaotic_core>,<avaritia:resource:5>,<draconicevolution:chaotic_core>,<draconicevolution:chaotic_core>,<draconicevolution:chaotic_core>,<bloodmagic:decorative_brick:2>],
-    [<bloodmagic:decorative_brick:2>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<draconicevolution:chaotic_core>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<bloodmagic:decorative_brick:2>],
-    [<bloodmagic:decorative_brick:2>,<draconicevolution:chaotic_core>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<draconicevolution:chaotic_core>,<ic2:itemmisc:264>,<ic2:itemmisc:264>,<draconicevolution:chaotic_core>,<bloodmagic:decorative_brick:2>],
-    [null,<bloodmagic:decorative_brick:2>,<draconicevolution:chaotic_core>,<ic2:itemmisc:264>,<draconicevolution:chaotic_core>,<ic2:itemmisc:264>,<draconicevolution:chaotic_core>,<bloodmagic:decorative_brick:2>,null],
-    [null,null,<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>,null,null]
-]);
-
-<contenttweaker:orb_armok>.addTooltip(format.green("A homage to the original"));
-<contenttweaker:orb_armok>.addTooltip(format.green("Avaritia Mod back in 1.7.10"));
-BloodAltar.addRecipe(<contenttweaker:orb_armok>,<contenttweaker:orb_armok_clean>,5,2147483647,1000,1000);
-ExtremeCrafting.addShaped("orb_armok",<contenttweaker:orb_armok_clean>, [
-    [null,null,null,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,null,null,null],
-    [null,null,<ore:ingotInfinity>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}).noReturn(),<ore:ingotInfinity>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}).noReturn(),<ore:ingotInfinity>,null,null],
-    [null,null,<ore:ingotInfinity>,<ore:ingotInfinity>,<avaritia:resource:5>,<ore:ingotInfinity>,<ore:ingotInfinity>,null,null],
-    [null,<ore:ingotCosmicNeutronium>,<ore:ingotInfinity>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}).noReturn(),<ore:ingotInfinity>,<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}).noReturn(),<ore:ingotInfinity>,<ore:ingotCosmicNeutronium>,null],
-    [<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>],
-    [null,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,null],
-    [null,null,null,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,null,null,null],
-    [null,null,null,null,null,null,null,null,null],
-    [null,null,null,null,null,null,null,null,null]
-]);
 
 var mapSlate as IItemStack[IItemStack] = {
     <contenttweaker:slate_blank> : <bloodmagic:slate>,
@@ -130,27 +81,3 @@ for block, slate in mapSlate {
 }
 
 furnace.addRecipe(<contenttweaker:reinforced_obsidian_ingot>,<enderio:block_reinforced_obsidian>);
-
-var mapBedrock as IIngredient[IItemStack] = {
-    <contenttweaker:bedrockium_nugget> : <extrautils2:compressedcobblestone:7>,
-    <contenttweaker:bedrockium_ingot> : <contenttweaker:bedrockium_nugget>,
-    <contenttweaker:bedrockium_block> : <contenttweaker:bedrockium_ingot>,
-    <minecraft:bedrock> : <contenttweaker:bedrockium_block>
-};
-
-var index as int = 0;
-
-for output, input in mapBedrock {
-    ExtremeCrafting.addShaped("bedrock_"~index,output, [
-        [input,input,input,input,input,input,input,input,input],
-        [input,input,input,input,input,input,input,input,input],
-        [input,input,input,input,input,input,input,input,input],
-        [input,input,input,input,input,input,input,input,input],
-        [input,input,input,input,input,input,input,input,input],
-        [input,input,input,input,input,input,input,input,input],
-        [input,input,input,input,input,input,input,input,input],
-        [input,input,input,input,input,input,input,input,input],
-        [input,input,input,input,input,input,input,input,input]
-    ]);
-    index += 1;
-}

@@ -25,8 +25,6 @@ import scripts.functions.calc_flawless;
 import mods.actuallyadditions.Empowerer;
 import mods.tconstruct.Drying;
 
-furnace.remove(<minecraft:coal:1>);
-
 recipes.addShaped(<minecraft:brown_mushroom>, [
     [null,<harvestcraft:whitemushroomitem>,null],
     [<harvestcraft:whitemushroomitem>,<harvestcraft:whitemushroomitem>,<harvestcraft:whitemushroomitem>],

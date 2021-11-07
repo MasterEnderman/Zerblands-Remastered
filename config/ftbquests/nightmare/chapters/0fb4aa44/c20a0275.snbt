@@ -1,6 +1,6 @@
 {
 	x: -0.5d,
-	y: -2.5d,
+	y: -1.5d,
 	dependencies: [
 		"d4bcf09c",
 		"a321710a",
@@ -17,5 +17,10 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	},
+	{
+		uid: "68321567",
+		type: "dimension",
+		dim: 51
 	}]
 }

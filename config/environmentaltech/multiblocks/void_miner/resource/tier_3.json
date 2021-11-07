@@ -6,6 +6,26 @@
       "id": "minecraft:stone:0"
     },
     {
+      "target": "silver",
+      "weight": 22,
+      "id": "earthworks:block_chalk"
+    },
+    {
+      "target": "blue",
+      "weight": 20,
+      "id": "earthworks:block_slate"
+    },
+    {
+      "target": "green",
+      "weight": 20,
+      "id": "earthworks:block_slate_green"
+    },
+    {
+      "target": "purple",
+      "weight": 20,
+      "id": "earthworks:block_slate_purple"
+    },
+    {
       "target": "pink",
       "weight": 30,
       "id": "minecraft:stone:1"

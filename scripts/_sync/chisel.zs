@@ -128,3 +128,17 @@ for group, items in chiselMap {
         Carving.addVariation(group, item);
     }
 }
+
+recipes.addShaped(<contenttweaker:wither_clean> * 16, [
+    [<enderzoo:witheringdust>,<enderzoo:witheringdust>],
+    [<enderzoo:witheringdust>,<enderzoo:witheringdust>]
+]);
+recipes.addShaped(<contenttweaker:wither_clean> * 16, [
+    [<xreliquary:mob_ingredient:1>,<xreliquary:mob_ingredient:1>],
+    [<xreliquary:mob_ingredient:1>,<xreliquary:mob_ingredient:1>]
+]);
+recipes.addShaped(<contenttweaker:wither_clean> * 64, [
+    [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>],
+    [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>],
+    [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>]
+]);

@@ -27,14 +27,6 @@ BloodAltar.addRecipe(<draconicevolution:draconium_ingot>,<tconstruct:ingots:2>,4
 
 Empowerer.addRecipe(<draconicevolution:draconium_block>,<tconstruct:metal:2>,<minecraft:dragon_egg>,<abyssalcraft:abyingot>,<abyssalcraft:abyingot>,<abyssalcraft:abyingot>, 50000, 1000);
 
-<draconicevolution:chaos_crystal>.addTooltip(format.red("DON'T USE THIS. IT WILL END YOUR WORLD."));
-<draconicevolution:chaos_crystal>.addTooltip(format.red("YOU HAVE BEEN WARNED. I WON'T BE RESPONSIBLE"));
-<draconicevolution:chaos_crystal>.addTooltip(format.red("FOR ANY DAMAGE THIS CAUSES TO YOUR BASE!"));
-
-<draconicevolution:draconium_ore>.addTooltip(format.red("*UNOBTAINABLE*"));
-<draconicevolution:draconium_ore:1>.addTooltip(format.red("*UNOBTAINABLE*"));
-<draconicevolution:draconium_ore:2>.addTooltip(format.red("*UNOBTAINABLE*"));
-
 recipes.addShaped(<draconicevolution:chaos_crystal>, [
     [<draconicevolution:chaotic_core>,<contenttweaker:ender_token>,<draconicevolution:chaotic_core>],
     [<abyssalcraft:odb>,<abyssalcraft:odb>,<abyssalcraft:odb>],

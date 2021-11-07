@@ -1,0 +1,26 @@
+{
+	x: 8.5d,
+	y: 0.5d,
+	dependencies: [
+		"bdc179e3"
+	],
+	tasks: [{
+		uid: "aa954836",
+		type: "item",
+		items: [{
+			item: "xnet:controller"
+		}]
+	},
+	{
+		uid: "9fd9d3f7",
+		type: "item",
+		items: [{
+			id: "xnet:connector",
+			tag: {
+				display: {
+					LocName: "tile.xnet.connector_blue.name"
+				}
+			}
+		}]
+	}]
+}

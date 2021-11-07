@@ -558,3 +558,37 @@ for item in blocksEngineer {
     newBlock.setBlockSoundType(<soundtype:metal>);
     newBlock.register();
 }
+
+// nightmare
+
+var starsteel_block as Block = VanillaFactory.createBlock("starsteel_block", <blockmaterial:iron>);
+starsteel_block.setBlockHardness(5.0);
+starsteel_block.setBlockResistance(30.0);
+starsteel_block.setToolClass("pickaxe");
+starsteel_block.setToolLevel(0);
+starsteel_block.setBlockSoundType(<soundtype:metal>);
+starsteel_block.register();
+
+var alfsteel_block as Block = VanillaFactory.createBlock("alfsteel_block", <blockmaterial:iron>);
+alfsteel_block.setBlockHardness(5.0);
+alfsteel_block.setBlockResistance(30.0);
+alfsteel_block.setToolClass("pickaxe");
+alfsteel_block.setToolLevel(0);
+alfsteel_block.setBlockSoundType(<soundtype:metal>);
+alfsteel_block.register();
+
+var block_machine_hv as Block = VanillaFactory.createBlock("block_machine_hv", <blockmaterial:iron>);
+block_machine_hv.setBlockHardness(5.0);
+block_machine_hv.setBlockResistance(30.0);
+block_machine_hv.setToolClass("pickaxe");
+block_machine_hv.setToolLevel(0);
+block_machine_hv.setBlockSoundType(<soundtype:metal>);
+block_machine_hv.register();
+
+var omega_core as Block = VanillaFactory.createBlock("omega_core", <blockmaterial:iron>);
+omega_core.setBlockHardness(5.0);
+omega_core.setBlockResistance(30.0);
+omega_core.setToolClass("pickaxe");
+omega_core.setToolLevel(0);
+omega_core.setBlockSoundType(<soundtype:metal>);
+omega_core.register();
