@@ -1,5 +1,3 @@
-#packmode legacy
-
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidDefinition;

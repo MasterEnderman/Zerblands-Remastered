@@ -21,9 +21,13 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import scripts.functions.calc_atomic;
+import scripts.functions.calc_flawless;
 
 recipes.remove(<xreliquary:emperor_chalice>);
 calc_atomic(<xreliquary:emperor_chalice>, <evilcraft:bucket_eternal_water>, <xreliquary:void_tear>, <ore:ingotGold>);
+
+recipes.remove(<xreliquary:witherless_rose>);
+calc_flawless(<xreliquary:witherless_rose>, <minecraft:double_plant:4>, <tp:netherstar_block>, <xreliquary:mob_ingredient:9>, <randomthings:imbue:3>);
 
 recipes.remove(<xreliquary:mob_ingredient:9>);
 recipes.addShapeless(<xreliquary:mob_ingredient:9>, [

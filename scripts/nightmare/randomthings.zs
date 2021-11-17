@@ -33,6 +33,7 @@ import mods.thermalexpansion.Transposer;
 
 import scripts.functions.calc_basic;
 import scripts.functions.calc_scientific;
+import scripts.functions.calc_atomic;
 import scripts.functions.calc_flawless;
 
 <randomthings:naturecore>.addTooltip(format.green("Unable to contain it's magical energy."));
@@ -58,20 +59,34 @@ Apothecary.addRecipe(<randomthings:pitcherplant>, [
     <actuallyadditions:block_black_lotus>
 ]);
 
-recipes.remove(<randomthings:eclipsedclock>);
-calc_basic(<randomthings:eclipsedclock>, <minecraft:clock>, <randomthings:ingredient:1>);
+var mapCalcBasic as IIngredient[][IItemStack] = {
+    <randomthings:eclipsedclock> : [<minecraft:clock>, <randomthings:ingredient:1>],
+    <randomthings:reinforcedenderbucket> : [<randomthings:enderbucket>, <contenttweaker:reinforced_obsidian_ingot>],
+    <randomthings:goldencompass> : [<minecraft:compass>, <ore:ingotGold>],
+    <randomthings:emeraldcompass> : [<randomthings:goldencompass>, <ore:gemEmerald>],
+    <randomthings:advancedredstonetorch_on> : [<minecraft:redstone_torch>, <immersiveengineering:material:27>],
+    <randomthings:quartzglass> : [<ore:blockGlass>, <ore:blockQuartz>],
+    <randomthings:quartzlamp> : [<minecraft:redstone_lamp>, <ore:blockQuartz>],
+    <randomthings:lapisglass> : [<ore:blockGlass>, <ore:blockLapis>],
+    <randomthings:lapislamp> : [<minecraft:redstone_lamp>, <ore:blockLapis>],
+};
 
-recipes.remove(<randomthings:reinforcedenderbucket>);
-calc_basic(<randomthings:reinforcedenderbucket>, <randomthings:enderbucket>, <contenttweaker:reinforced_obsidian_ingot>);
+for output, inputs in mapCalcBasic {
+    var first as IIngredient = inputs[0];
+    var second as IIngredient = inputs[1];
 
-recipes.remove(<randomthings:goldencompass>);
-calc_basic(<randomthings:goldencompass>, <minecraft:compass>, <ore:ingotGold>);
+    recipes.remove(output);
+    calc_basic(output, first, second);
+}
 
-recipes.remove(<randomthings:emeraldcompass>);
-calc_basic(<randomthings:emeraldcompass>, <randomthings:goldencompass>, <ore:gemEmerald>);
+recipes.remove(<randomthings:triggerglass>);
+calc_atomic(<randomthings:triggerglass>, <randomthings:quartzglass>, <ore:blockRedstone>, <randomthings:lapisglass>);
 
 recipes.remove(<randomthings:enderbucket>);
 calc_scientific(<randomthings:enderbucket>, <minecraft:bucket>, <randomthings:stableenderpearl>);
+
+recipes.remove(<randomthings:redstoneobserver>);
+calc_atomic(<randomthings:redstoneobserver>, <botania:endereyeblock>, <minecraft:observer>, <ore:blockQuartz>);
 
 recipes.remove(<randomthings:ingredient:1>);
 calc_flawless(<randomthings:ingredient:1>, <minecraft:skull:1>, <minecraft:ender_pearl>, <contenttweaker:enddiamond>, <evilcraft:corrupted_tear>);

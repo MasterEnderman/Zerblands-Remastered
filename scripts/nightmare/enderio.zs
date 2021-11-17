@@ -385,9 +385,9 @@ Altar.addTraitAltarRecipe("endsteel_chassis", <enderio:item_material:66>, 4500, 
     <thermalexpansion:frame:64>, 
 	<abyssalcraft:ethaxiumingot>,
     <redstonerepository:material:7>,
-    <draconicevolution:wyvern_energy_core>,
+    <ic2:bigquantumaccumulator>,
     <redstonerepository:material:7>,
-    <enderio:item_alloy_ingot:8>, 
+    <enderio:item_alloy_ingot:8>,
 	<enderio:item_alloy_ingot:8>,
     <enderio:item_alloy_ingot:8>,
     <enderio:item_alloy_ingot:8>,
@@ -405,9 +405,9 @@ Altar.addTraitAltarRecipe("endsteel_chassis", <enderio:item_material:66>, 4500, 
     <enderio:item_material:68>,
 	//Outer Items, indices 25+
 	<botanicadds:rune_energy>,
-    <draconicevolution:draconic_core>,
-    <ic2:itembatlamacrystal>,
-    <draconicevolution:draconic_core>
+    <advancedsolars:irradiantreinforcedplate>,
+    <advancedsolars:enrichedsunnariumalloy>,
+    <advancedsolars:irradiantreinforcedplate>
 ], "astralsorcery.constellation.evorsio");
 
 Pulverizer.addRecipe(<enderio:block_holier_fog>, <enderio:item_material:76>, 50000);

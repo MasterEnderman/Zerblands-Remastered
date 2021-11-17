@@ -1,5 +1,3 @@
-#packmode legacy
-
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidDefinition;
@@ -20,6 +18,10 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.botania.ManaInfusion;
+recipes.addShaped(<storagedrawers:upgrade_creative>, [
+    [<environmentaltech:aethium>,<appliedenergistics2:material:38>,<environmentaltech:aethium>],
+    [<appliedenergistics2:material:38>,<storagedrawers:upgrade_template>,<appliedenergistics2:material:38>],
+    [<environmentaltech:aethium>,<appliedenergistics2:material:38>,<environmentaltech:aethium>]
+]);
 
-ManaInfusion.addInfusion(<psi:material>, <thermalfoundation:material:72>, 10000);
+<storagedrawers:upgrade_creative>.displayName = "Deep Storage Upgrade";

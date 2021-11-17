@@ -39,13 +39,17 @@ recipes.removeShaped(<extrautils2:angelring:3>);
 recipes.removeShaped(<extrautils2:angelring:4>);
 recipes.removeShaped(<extrautils2:angelring:5>);
 
+var vicio_cape as IItemStack = <astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.vicio"}});
+var lasso_bat as IItemStack = <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:bat"}});
+var lasso_ghast as IItemStack = <extrautils2:goldenlasso:1>.withTag({Animal: {id: "minecraft:ghast"}});
+
 ExtremeCrafting.addShaped("xu_angel_ring",<extrautils2:angelring>, [
     [null,null,null,null,null,null,null,null,null],
-    [null,null,null,<ic2:blockcompactedgenerator:2>,<environmentaltech:solar_cont_6>,<ic2:blockcompactedgenerator:2>,null,null,null],
+    [null,null,null,<advancedsolars:ultimatesolarpanel>,<environmentaltech:solar_cont_6>,<advancedsolars:ultimatesolarpanel>,null,null,null],
     [null,null,<projecte:item.pe_klein_star:5>,<botania:flighttiara>,<actuallyadditions:item_wings_of_the_bats>,<botania:flighttiara>,<projecte:item.pe_klein_star:5>,null,null],
-    [null,<projecte:item.pe_swrg>,<xreliquary:rending_gale>,<rftools:flight_module>,<astralsorcery:itemcape>,<rftools:flight_module>,<xreliquary:rending_gale>,<projecte:item.pe_swrg>,null],
-    [null,<projecte:item.pe_arcana_ring>.noReturn(),<tp:netherstar_block>,<openglider:hang_glider_advanced>,<extrautils2:chickenring:1>,<openglider:hang_glider_advanced>,<tp:netherstar_block>,<projecte:item.pe_arcana_ring>.noReturn(),null],
-    [null,<projecte:item.pe_swrg>,<environmentaltech:modifier_creative_flight>,<extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:bat"}}),<gravisuit:advancednuclearnanochestplate>,<extrautils2:goldenlasso:1>.withTag({Animal: {id: "minecraft:ghast"}}),<environmentaltech:modifier_creative_flight>,<projecte:item.pe_swrg>,null],
+    [null,<projecte:item.pe_swrg>,<xreliquary:rending_gale>,<rftools:flight_module>,vicio_cape,<rftools:flight_module>,<xreliquary:rending_gale>,<projecte:item.pe_swrg>,null],
+    [null,<projecte:item.pe_arcana_ring>.noReturn(),<actuallyadditions:item_misc:19>,<openglider:hang_glider_advanced>,<extrautils2:chickenring:1>,<openglider:hang_glider_advanced>,<actuallyadditions:item_misc:19>,<projecte:item.pe_arcana_ring>.noReturn(),null],
+    [null,<projecte:item.pe_swrg>,<environmentaltech:modifier_creative_flight>,lasso_bat,<gravisuit:advancednuclearnanochestplate>,lasso_ghast,<environmentaltech:modifier_creative_flight>,<projecte:item.pe_swrg>,null],
     [null,null,<simplyjetpacks:itemjetpack:39>,<simplyjetpacks:itemjetpack:15>,<gravisuit:nucleargravisuit>,<simplyjetpacks:itemjetpack:25>,<simplyjetpacks:itemjetpack:39>,null,null],
     [null,null,null,<gravisuit:gravitationengine>,<gravisuit:gravitationengine>,<gravisuit:gravitationengine>,null,null,null],
     [null,null,null,null,null,null,null,null,null]

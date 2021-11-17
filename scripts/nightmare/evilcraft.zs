@@ -27,12 +27,15 @@ import mods.bloodmagic.BloodAltar;
 import mods.bloodmagic.AlchemyArray;
 import mods.evilcraft.BloodInfuser;
 import mods.ic2.Macerator;
+import mods.jei.JEI;
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.Transposer;
 
 import scripts.functions.calc_basic;
 import scripts.functions.calc_scientific;
 import scripts.functions.calc_atomic;
+
+JEI.removeAndHide(<evilcraft:entangled_chalice>);
 
 // BloodInfuser.removeRecipesWithOutput(<evilcraft:blood_waxed_coal>);
 // BloodInfuser.addRecipe(<contenttweaker:purified_coal>, <liquid:evilcraftblood> * 375, 1, <evilcraft:blood_waxed_coal>, 100, 2);

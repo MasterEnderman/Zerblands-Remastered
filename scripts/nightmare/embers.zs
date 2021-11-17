@@ -27,9 +27,8 @@ import mods.immersiveengineering.Blueprint;
 import mods.jei.JEI;
 import mods.thermalexpansion.Crucible;
 
-<embers:archaic_brick>.addTooltip(format.green("Drops from Ancient Golem."));
-
 JEI.removeAndHide(<embers:breaker>);
+JEI.removeAndHide(<embers:vacuum>);
 
 Crucible.addRecipe(<liquid:oil_soul> * 100, <minecraft:soul_sand>, 2000);
 

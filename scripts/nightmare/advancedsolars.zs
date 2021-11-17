@@ -23,12 +23,11 @@ import scripts.functions.findFirstItemFromMod;
 import mods.actuallyadditions.Empowerer;
 import mods.astralsorcery.StarlightInfusion;
 import mods.threng.Aggregator;
-import mods.thermalexpansion.Transposer;
 
 import scripts.functions.calc_atomic;
 
 recipes.remove(<advancedsolars:sunnariumpart>);
-Transposer.addFillRecipe(<advancedsolars:sunnariumpart>, <ic2:itemmisc:202>,  <liquid:glowstone> * 1000, 20000);
+Aggregator.addRecipe(<advancedsolars:sunnariumpart>, <ic2:itemmisc:202>, <extrautils2:suncrystal>, <appliedenergistics2:material:47>);
 
 recipes.remove(<advancedsolars:sunnarium>);
 StarlightInfusion.addInfusion(<advancedsolars:sunnariumpart>, <advancedsolars:sunnarium>, false, 0.8, 200);

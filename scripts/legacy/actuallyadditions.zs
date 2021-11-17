@@ -22,7 +22,6 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Empowerer;
-import mods.avaritia.ExtremeCrafting;
 import mods.enderio.SagMill;
 import mods.jei.JEI;
 
@@ -120,16 +119,3 @@ AtomicReconstructor.addRecipe(<actuallyadditions:block_crystal:3>, <thermalfound
 
 // AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:5>);
 // AtomicReconstructor.addRecipe(<actuallyadditions:block_crystal:5>, , t*10);
-
-recipes.remove(<actuallyadditions:item_wings_of_the_bats>);
-ExtremeCrafting.addShaped("bat_wings",<actuallyadditions:item_wings_of_the_bats>, [
-    [<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,null,null,null,null,null,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>],
-    [<actuallyadditions:item_misc:15>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:item_misc:15>,null,null,null,<actuallyadditions:item_misc:15>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:item_misc:15>],
-    [null,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,null,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,null],
-    [null,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,null],
-    [null,null,<actuallyadditions:item_misc:15>,<avaritia:resource:1>,<simplyjetpacks:metaitem:4>,<avaritia:resource:1>,<actuallyadditions:item_misc:15>,null,null],
-    [null,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,null],
-    [null,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,null,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,null],
-    [<actuallyadditions:item_misc:15>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:item_misc:15>,null,null,null,<actuallyadditions:item_misc:15>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:item_misc:15>],
-    [<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>,null,null,null,null,null,<actuallyadditions:item_misc:15>,<actuallyadditions:item_misc:15>]
-]);

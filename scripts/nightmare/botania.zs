@@ -120,6 +120,7 @@ var mapQuartz as IItemStack[IItemStack] = {
 	<botania:quartz:2> : <minecraft:blaze_powder>,
 	<botania:quartz:3> : <minecraft:dye:5>,
 	<botania:quartz:4> : <minecraft:redstone>,
+	<botania:quartz:6> : <minecraft:double_plant>
 };
 
 for quartz, item in mapQuartz {

@@ -1,5 +1,3 @@
-#packmode legacy
-
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidDefinition;
@@ -20,6 +18,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.botania.ManaInfusion;
-
-ManaInfusion.addInfusion(<psi:material>, <thermalfoundation:material:72>, 10000);
+recipes.addShaped(<psi:cad_assembly:5>, [
+    [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>],
+    [<contenttweaker:creative>,null,null]
+]);

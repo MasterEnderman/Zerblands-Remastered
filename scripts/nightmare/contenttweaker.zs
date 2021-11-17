@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.AtomicReconstructor;
+import mods.actuallyadditions.Empowerer;
 import mods.astralsorcery.Altar;
 import mods.astralsorcery.Grindstone;
 import mods.bloodmagic.AlchemyTable;
@@ -58,6 +59,8 @@ import mods.thermalexpansion.Refinery as TERefinery;
 import mods.thermalexpansion.Transposer;
 import mods.threng.Energizer;
 
+import moretweaker.draconicevolution.FusionCrafting;
+
 <contenttweaker:eternalslate>.addTooltip("Infused stone inside of a");
 <contenttweaker:eternalslate>.addTooltip("Blood Altar");
 
@@ -79,6 +82,7 @@ RuneAltar.addRecipe(<contenttweaker:infusion_block>,[
 ], 2000);
 
 ExplosionCrafting.explodeItemRecipe(<contenttweaker:rune_blank> * 2, <contenttweaker:runestone>);
+ExplosionCrafting.explodeItemRecipe(<contenttweaker:q1> * 64, <advancedsolars:enrichedsunnarium>);
 
 TERefinery.removeRecipe(<liquid:oil>);
 TERefinery.removeRecipe(<liquid:crude_oil>);
@@ -400,13 +404,13 @@ AtomicReconstructor.addRecipe(findFirstItemFromMod("contenttweaker","ingot","ant
 
 Extractor.addRecipe(<contenttweaker:raw_rubber_pulp> * 6, <ic2:itemharz>);
 Centrifuge.addRecipe([(<contenttweaker:raw_rubber_pulp> * 2) % 100], <ic2:itemharz>, 100);
-TECentrifuge.addRecipe([(<contenttweaker:raw_rubber_pulp> * 4) % 100], <ic2:itemharz>, null, 2000);
+TECentrifuge.addRecipe([(<contenttweaker:raw_rubber_pulp> * 4) % 100], <ic2:itemharz>, <liquid:resin> * 20, 2000);
 
 TECentrifuge.addRecipe([
     (findFirstItemFromMod("thermalfoundation","dust","platinum")) % 5,
     (findFirstItemFromMod("contenttweaker","dustSmall","tungsten")) % 10,
     (findFirstItemFromMod("contenttweaker","dustTiny","tungsten")) % 20
-], <contenttweaker:end_stone_dust>, null, 20000);
+], <contenttweaker:end_stone_dust>, <liquid:ender> * 1, 20000);
 
 furnace.remove(<ore:ingotTungsten>);
 InductionSmelter.addRecipe(findFirstItemFromMod("contenttweaker","ingot","tungsten"), findFirstItemFromMod("contenttweaker","dust","tungsten"), <thermalfoundation:material:1024> * 4, 50000);
@@ -436,33 +440,6 @@ Blueprint.addRecipe("rails", <contenttweaker:rail_speed> * 6, [
     <ore:plateGold> * 3
 ]);
 
-var materialSystem as string[string] = {
-    "antimony" : "antimony",
-    "batteryAlloy" : "battery_alloy",
-    "redAlloy" : "red_alloy",
-    "solderingAlloy" : "soldering_alloy",
-    "tungsten" : "tungsten",
-};
-
-for material, fluid in materialSystem {
-    var nugget as IIngredient = getOreDict("nugget",material);
-    var ingot as IIngredient = getOreDict("ingot",material);
-    var block as IIngredient = getOreDict("block",material);
-
-    recipes.addShapeless(findFirstItemFromMod("contenttweaker","ingot",material),[nugget,nugget,nugget,nugget,nugget,nugget,nugget,nugget,nugget]);
-    recipes.addShapeless(findFirstItemFromMod("contenttweaker","nugget",material) * 9, [ingot]);
-    recipes.addShapeless(findFirstItemFromMod("contenttweaker","block",material),[ingot,ingot,ingot,ingot,ingot,ingot,ingot,ingot,ingot]);
-    recipes.addShapeless(findFirstItemFromMod("contenttweaker","ingot",material) * 9, [block]);
-
-    Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","nugget",material), <tconstruct:cast_custom:1>, getFluid(fluid), 16, false);
-    Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","ingot",material), <tconstruct:cast_custom>, getFluid(fluid), 144, false);
-    Casting.addBasinRecipe(findFirstItemFromMod("contenttweaker","block",material), null, getFluid(fluid), 1296, false);
-
-    Melting.addRecipe(getFluid(fluid)*16, nugget, 395);
-    Melting.addRecipe(getFluid(fluid)*144, ingot, 490);
-    Melting.addRecipe(getFluid(fluid)*1296, block, 681);
-}
-
 SoulBinder.addRecipe(<contenttweaker:antispider_eye>,<abyssalcraft:antispidereye>,["minecraft:spider","minecraft:cave_spider","abyssalcraft:antispider"], 50000, 225);
 
 furnace.setFuel(<contenttweaker:bio_fuel>, 1600);
@@ -470,3 +447,27 @@ Transposer.addFillRecipe(<contenttweaker:bio_fuel>, <forestry:wood_pulp>,  <liqu
 Transposer.addFillRecipe(<contenttweaker:hdpe_substrate>, <contenttweaker:bio_fuel>,  <liquid:hydrogen> * 500, 4000);
 Transposer.addFillRecipe(<contenttweaker:hdpe_pellet>, <contenttweaker:hdpe_substrate>,  <liquid:ethylene> * 500, 4000);
 Compressor.addRecipe(<contenttweaker:hdpe_sheet>, <contenttweaker:hdpe_pellet> * 4);
+
+FusionCrafting.add(<contenttweaker:q2>, <appliedenergistics2:material:48> * 2, FusionCrafting.BASIC, 100000000, [
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>
+]);
+
+FusionCrafting.add(<contenttweaker:q3>, <randomthings:redstoneobserver>, FusionCrafting.BASIC, 100000000, [
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>,
+    <contenttweaker:q1>
+]);
+
+Empowerer.addRecipe(<contenttweaker:q4>, <contenttweaker:q3>, <contenttweaker:q2>, <contenttweaker:q2>, <contenttweaker:q2>, <contenttweaker:q2>, 10000000, 100, [0.1, 0.9, 0.1]);

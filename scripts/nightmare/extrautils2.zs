@@ -182,7 +182,7 @@ recipes.remove(<extrautils2:endershard>);
 ExplosionCrafting.explodeItemRecipe(<extrautils2:endershard> * 8, <minecraft:ender_pearl>);
 
 recipes.remove(<extrautils2:suncrystal:250>);
-Transposer.addFillRecipe(<extrautils2:suncrystal:250>, <actuallyadditions:item_crystal:2>, <liquid:glowstone> * 1000, 25000);
+Transposer.addFillRecipe(<extrautils2:suncrystal:250>, <actuallyadditions:item_crystal:2>, <liquid:liquid_sunshine> * 1000, 25000);
 
 recipes.remove(<extrautils2:klein>);
 Transposer.addFillRecipe(<extrautils2:klein>, <botania:manabottle>, <liquid:ender> * 1000, 25000);

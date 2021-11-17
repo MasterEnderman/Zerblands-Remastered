@@ -121,3 +121,77 @@ for output, input in mapBedrock {
     ]);
     index += 1;
 }
+
+var comp as IItemStack[IItemStack] = {
+    <contenttweaker:tanzanite_block> : <contenttweaker:large_tanzanite>,
+    <contenttweaker:large_tanzanite> : <contenttweaker:small_tanzanite>,
+    <contenttweaker:small_tanzanite> : <contenttweaker:shard_tanzanite>,
+    <contenttweaker:amethyst_block> : <contenttweaker:large_amethyst>,
+    <contenttweaker:large_amethyst> : <contenttweaker:small_amethyst>,
+    <contenttweaker:small_amethyst> : <contenttweaker:shard_amethyst>,
+    <contenttweaker:enriched_gold_block> : <contenttweaker:enrichedgold_ingot>,
+    <contenttweaker:redstone_ingot_block> : <contenttweaker:redstone_ingot>,
+    <contenttweaker:reinforced_iron_block> : <contenttweaker:reinforcediron_ingot>,
+    <contenttweaker:flawless_block> : <contenttweaker:flawlessdiamond>,
+    <contenttweaker:electric_diamond_block> : <contenttweaker:electricdiamondanimate>,
+    <contenttweaker:flawless_fire_block> : <contenttweaker:firediamond>,
+    <contenttweaker:weakened_diamond_block> : <contenttweaker:weakeneddiamond>,
+    <contenttweaker:end_diamond_block> : <contenttweaker:enddiamond>,
+    //
+    <contenttweaker:starsteel_ingot> : <contenttweaker:starsteel_nugget>,
+    <contenttweaker:starsteel_block> : <contenttweaker:starsteel_ingot>,
+    <contenttweaker:alfsteel_ingot> : <contenttweaker:alfsteel_nugget>,
+    <contenttweaker:alfsteel_block> : <contenttweaker:alfsteel_ingot>,
+    //
+    <contenttweaker:slate_blank> : <bloodmagic:slate>,
+    <contenttweaker:slate_reinforced> : <bloodmagic:slate:1>,
+    <contenttweaker:slate_imbued> : <bloodmagic:slate:2>,
+    <contenttweaker:slate_demonic> : <bloodmagic:slate:3>,
+    <contenttweaker:slate_ethereal> : <bloodmagic:slate:4>,
+    //
+    <contenttweaker:creative_block> : <contenttweaker:creative>,
+};
+
+recipes.remove(<bloodmagic:slate>);
+recipes.remove(<bloodmagic:slate:1>);
+recipes.remove(<bloodmagic:slate:2>);
+recipes.remove(<bloodmagic:slate:3>);
+recipes.remove(<bloodmagic:slate:4>);
+
+for x,y in comp {
+    recipes.addShapeless(x,[y,y,y,y,y,y,y,y,y]);
+    recipes.addShapeless(y * 9, [x]);
+}
+
+furnace.setFuel(<contenttweaker:controlled_fuel>,80000);
+furnace.setFuel(<contenttweaker:purified_coal>,10000);
+furnace.setFuel(<contenttweaker:firecoal>,25000);
+furnace.setFuel(<contenttweaker:enriched_coal>,5000);
+furnace.setFuel(<contenttweaker:coal_dust>,1000);
+
+var materialSystem as string[string] = {
+    "antimony" : "antimony",
+    "batteryAlloy" : "battery_alloy",
+    "redAlloy" : "red_alloy",
+    "solderingAlloy" : "soldering_alloy",
+    "tungsten" : "tungsten",
+};
+
+for material, fluid in materialSystem {
+    var nugget as IIngredient = getOreDict("nugget",material);
+    var ingot as IIngredient = getOreDict("ingot",material);
+    var block as IIngredient = getOreDict("block",material);
+
+    recipes.addShapeless(findFirstItemFromMod("contenttweaker","ingot",material),[nugget,nugget,nugget,nugget,nugget,nugget,nugget,nugget,nugget]);
+    recipes.addShapeless(findFirstItemFromMod("contenttweaker","nugget",material) * 9, [ingot]);
+    recipes.addShapeless(findFirstItemFromMod("contenttweaker","block",material),[ingot,ingot,ingot,ingot,ingot,ingot,ingot,ingot,ingot]);
+    recipes.addShapeless(findFirstItemFromMod("contenttweaker","ingot",material) * 9, [block]);
+
+    Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","nugget",material), <tconstruct:cast_custom:1>, getFluid(fluid), 16, false);
+    Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","ingot",material), <tconstruct:cast_custom>, getFluid(fluid), 144, false);
+    Casting.addBasinRecipe(findFirstItemFromMod("contenttweaker","block",material), null, getFluid(fluid), 1296, false);
+
+    Melting.addRecipe(getFluid(fluid)*16, nugget, 395);
+    Melting.addRecipe(getFluid(fluid)*144, ingot, 490);
+    Melting.addRecipe(getFluid(fluid)*1296, block, 681);
+}

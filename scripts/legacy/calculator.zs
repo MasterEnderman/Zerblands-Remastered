@@ -150,35 +150,3 @@ Centrifuge.addRecipe([(<contenttweaker:redstone_ingot> * 2) % 100, (<contenttwea
 Extractor.addRecipe(<contenttweaker:circuit8_dirty>, <appliedenergistics2:material:5>);
 Transposer.addFillRecipe(<contenttweaker:circuit8_damaged>, <contenttweaker:circuit8_dirty>, <liquid:water>*100, 300);
 Compressor.addRecipe(<contenttweaker:circuit8>,<contenttweaker:circuit8_damaged>);
-
-var mapBlock as IItemStack[IItemStack] = {
-    <contenttweaker:electric_diamond_block> : <contenttweaker:electricdiamondanimate>,
-    <contenttweaker:enriched_gold_block> : <contenttweaker:enrichedgold_ingot>,
-    <contenttweaker:amethyst_block> : <contenttweaker:large_amethyst>,
-    <contenttweaker:end_diamond_block> : <contenttweaker:enddiamond>,
-    <contenttweaker:flawless_fire_block> : <contenttweaker:firediamond>,
-    <contenttweaker:tanzanite_block> : <contenttweaker:large_tanzanite>,
-    <contenttweaker:redstone_ingot_block> : <contenttweaker:redstone_ingot>,
-    <contenttweaker:weakened_diamond_block> : <contenttweaker:weakeneddiamond>,
-    <contenttweaker:flawless_block> : <contenttweaker:flawlessdiamond>,
-    <contenttweaker:reinforced_iron_block> : <contenttweaker:reinforcediron_ingot>,
-    <contenttweaker:large_tanzanite> : <contenttweaker:small_tanzanite>,
-    <contenttweaker:small_tanzanite> : <contenttweaker:shard_tanzanite>,
-    <contenttweaker:large_amethyst> : <contenttweaker:small_amethyst>,
-    <contenttweaker:small_amethyst> : <contenttweaker:shard_amethyst>,
-};
-
-for block, item in mapBlock {
-    recipes.addShapeless(item * 9, [block]);
-    recipes.addShaped(block, [
-        [item,item,item],
-        [item,item,item],
-        [item,item,item]
-    ]);
-}
-
-furnace.setFuel(<contenttweaker:controlled_fuel>,80000);
-furnace.setFuel(<contenttweaker:purified_coal>,10000);
-furnace.setFuel(<contenttweaker:firecoal>,25000);
-furnace.setFuel(<contenttweaker:enriched_coal>,5000);
-furnace.setFuel(<contenttweaker:coal_dust>,1000);

@@ -35,7 +35,7 @@ JEI.removeAndHide(<appliedenergistics2:crank>);
 JEI.removeAndHide(<appliedenergistics2:grindstone>);
 JEI.removeAndHide(<appliedenergistics2:sky_compass>);
 
-ElvenTrade.addRecipe([<appliedenergistics2:sky_stone_block>],[<minecraft:end_stone>,<minecraft:end_stone>]);
+ElvenTrade.addRecipe([<appliedenergistics2:sky_stone_block>],[<minecraft:end_stone>]);
 
 FluidToItem.transform(<appliedenergistics2:material:7>, <liquid:water>, [<appliedenergistics2:material:1>, <ore:dustRedstone>, <minecraft:quartz>], false);
 
@@ -177,16 +177,3 @@ Empowerer.addRecipe(<appliedenergistics2:material:14>, <embers:plate_dawnstone>,
 Empowerer.addRecipe(<appliedenergistics2:material:15>, <embers:plate_dawnstone>, <minecraft:gold_ingot>, plateIridium, plateIridium, plateIridium, 5000, 20);
 Empowerer.addRecipe(<appliedenergistics2:material:19>, <embers:plate_dawnstone>, <appliedenergistics2:material:5>, plateIridium, plateIridium, plateIridium, 5000, 20);
 Empowerer.addRecipe(<appliedenergistics2:material:21>, <embers:plate_dawnstone>, <minecraft:name_tag>, plateIridium, plateIridium, plateIridium, 5000, 20);
-
-//Creative ME Storage Cell
-ExtremeCrafting.addShaped("creative_me_storage_cell",<appliedenergistics2:creative_storage_cell>,[
-    [<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>],
-    [<avaritia:block_resource>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource>],
-    [<avaritia:block_resource>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource>],
-    [<avaritia:block_resource>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource>],
-    [<avaritia:block_resource>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<contenttweaker:infinite>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource>],
-    [<avaritia:block_resource>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource>],
-    [<avaritia:block_resource>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource>],
-    [<avaritia:block_resource>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource>],
-    [<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>,<appliedenergistics2:controller>,<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>]
-]);

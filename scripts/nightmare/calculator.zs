@@ -38,22 +38,27 @@ import scripts.functions.calc_basic;
 import scripts.functions.calc_scientific;
 import scripts.functions.calc_flawless;
 
-furnace.setFuel(<contenttweaker:controlled_fuel>,80000);
-furnace.setFuel(<contenttweaker:purified_coal>,10000);
-furnace.setFuel(<contenttweaker:firecoal>,25000);
-furnace.setFuel(<contenttweaker:enriched_coal>,5000);
-furnace.setFuel(<contenttweaker:coal_dust>,1000);
-
-Casting.addBasinRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>, <liquid:stone>, 2304, true, 200);
+Casting.addTableRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>, <liquid:stone>, 2304, true, 200);
 BottlingMachine.addRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>, <liquid:stone> * 2304);
 Transposer.addFillRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>,  <liquid:stone> * 2304, 2000);
 
-Casting.addBasinRecipe(<contenttweaker:calculator_screen>, <extrautils2:decorativeglass:5>, <liquid:stone>, 576, true, 200);
+Casting.addTableRecipe(<contenttweaker:calculator_screen>, <extrautils2:decorativeglass:5>, <liquid:stone>, 576, true, 200);
 BottlingMachine.addRecipe(<contenttweaker:calculator_screen>, <extrautils2:decorativeglass:5>, <liquid:stone> * 576);
 Transposer.addFillRecipe(<contenttweaker:calculator_screen>, <extrautils2:decorativeglass:5>,  <liquid:stone> * 576, 2000);
 
+Casting.addTableRecipe(<contenttweaker:purified_coal>, <contenttweaker:enriched_coal>, <liquid:refined_life_essence>, 300, true, 200);
+BottlingMachine.addRecipe(<contenttweaker:purified_coal>, <contenttweaker:enriched_coal>, <liquid:refined_life_essence> * 300);
+Transposer.addFillRecipe(<contenttweaker:purified_coal>, <contenttweaker:enriched_coal>,  <liquid:refined_life_essence> * 300, 2000);
+
+Casting.addTableRecipe(<contenttweaker:purified_coal>, <contenttweaker:enriched_coal>, <liquid:fire_water>, 250, true, 200);
+BottlingMachine.addRecipe(<contenttweaker:purified_coal>, <contenttweaker:enriched_coal>, <liquid:fire_water> * 250);
+Transposer.addFillRecipe(<contenttweaker:purified_coal>, <contenttweaker:enriched_coal>,  <liquid:fire_water> * 250, 2000);
+
 calc_basic(<contenttweaker:redstone_ingot>,<contenttweaker:reinforcediron_ingot>,<ore:dustRedstone>);
-calc_basic(<contenttweaker:enriched_coal>,<ore:fuelCoke>,<ore:dustRedstone>);
+calc_basic(<contenttweaker:enriched_coal>,<ore:fuelCoke>,<contenttweaker:enrichedgold>);
+calc_basic(<contenttweaker:firecoal>,<contenttweaker:enriched_coal>,<evilcraft:blood_waxed_coal>);
+calc_basic(<contenttweaker:firecoal>,<contenttweaker:enriched_coal>,<abyssalcraft:charcoal>);
+calc_basic(<contenttweaker:controlled_fuel>,<contenttweaker:firecoal>,<contenttweaker:circuit8>);
 
 calc_scientific(<contenttweaker:weakeneddiamond>*4,<ore:gemDiamond>,<contenttweaker:reinforcediron_ingot>);
 
@@ -188,7 +193,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
         [
             [null,<ic2:itemmisc:264>,null],
             [<contenttweaker:atomic_assembly>,<actuallyadditions:block_empowerer>,<contenttweaker:atomic_assembly>],
-            [<contenttweaker:redstone_ingot_block>,<actuallyadditions:block_misc:8>,<contenttweaker:redstone_ingot_block>]
+            [<environmentaltech:structure_frame_6>,<actuallyadditions:block_misc:8>,<environmentaltech:structure_frame_6>]
         ]
     ],
     <contenttweaker:calculator_locator_on_2> : [
@@ -209,35 +214,4 @@ for key, value in recipeMapShaped {
         recipes.addShaped(name, key, recipe);
         index += 1;
     }
-}
-
-var comp as IItemStack[IItemStack] = {
-    <contenttweaker:tanzanite_block> : <contenttweaker:large_tanzanite>,
-    <contenttweaker:large_tanzanite> : <contenttweaker:small_tanzanite>,
-    <contenttweaker:small_tanzanite> : <contenttweaker:shard_tanzanite>,
-    <contenttweaker:amethyst_block> : <contenttweaker:large_amethyst>,
-    <contenttweaker:large_amethyst> : <contenttweaker:small_amethyst>,
-    <contenttweaker:small_amethyst> : <contenttweaker:shard_amethyst>,
-    <contenttweaker:enriched_gold_block> : <contenttweaker:enrichedgold_ingot>,
-    <contenttweaker:reinforced_iron_block> : <contenttweaker:reinforcediron_ingot>,
-    <contenttweaker:flawless_block> : <contenttweaker:flawlessdiamond>,
-    <contenttweaker:electric_diamond_block> : <contenttweaker:electricdiamondanimate>,
-    <contenttweaker:flawless_fire_block> : <contenttweaker:firediamond>,
-    <contenttweaker:weakened_diamond_block> : <contenttweaker:weakeneddiamond>,
-    //
-    <contenttweaker:starsteel_ingot> : <contenttweaker:starsteel_nugget>,
-    <contenttweaker:starsteel_block> : <contenttweaker:starsteel_ingot>,
-    <contenttweaker:alfsteel_ingot> : <contenttweaker:alfsteel_nugget>,
-    <contenttweaker:alfsteel_block> : <contenttweaker:alfsteel_ingot>,
-    //
-    <contenttweaker:slate_blank> : <bloodmagic:slate>,
-    <contenttweaker:slate_reinforced> : <bloodmagic:slate:1>,
-    <contenttweaker:slate_imbued> : <bloodmagic:slate:2>,
-    <contenttweaker:slate_demonic> : <bloodmagic:slate:3>,
-    <contenttweaker:slate_ethereal> : <bloodmagic:slate:4>,
-};
-
-for x,y in comp {
-    recipes.addShapeless(x,[y,y,y,y,y,y,y,y,y]);
-    recipes.addShapeless(y * 9, [x]);
 }

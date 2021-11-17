@@ -1,5 +1,3 @@
-#packmode legacy
-
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidDefinition;
@@ -20,8 +18,10 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-recipes.addShaped(<enderutilities:endercapacitor:3>.withTag({EnderChargeAmount: 1000000000}), [
-    [<contenttweaker:creative>,<enderutilities:endercapacitor>,<contenttweaker:creative>],
-    [<contenttweaker:creative>,<enderutilities:endercapacitor:1>,<contenttweaker:creative>],
-    [<contenttweaker:creative>,<enderutilities:endercapacitor:2>,<contenttweaker:creative>]
+recipes.addShaped(<embers:creative_ember_source>, [
+    [<embers:block_dawnstone>,<embers:block_dawnstone>,<embers:block_dawnstone>],
+    [<embers:block_dawnstone>,<contenttweaker:infinite>,<embers:block_dawnstone>],
+    [<embers:block_dawnstone>,<embers:block_dawnstone>,<embers:block_dawnstone>]
 ]);
+
+<embers:archaic_brick>.addTooltip(format.green("Drops from Ancient Golem."));

@@ -22,10 +22,13 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.bloodmagic.BloodAltar;
 import mods.evilcraft.BloodInfuser;
+import mods.immersivetechnology.Distiller;
 
 BloodInfuser.addRecipe(<thermalfoundation:material:23>, <liquid:evilcraftblood> * 4000, 0, <blood_dynamo:ingredient:2>, 100, 2);
 
 BloodAltar.addRecipe(<blood_dynamo:ingredient:2>, <thermalfoundation:material:23>, 0, 2000,5,5);
+
+Distiller.addRecipe(<liquid:refined_life_essence> * 100, <liquid:lifeessence> * 100, <evilcraft:hardened_blood_shard>, 2048, 20, 0.1);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <blood_dynamo:blood_dynamo> : [

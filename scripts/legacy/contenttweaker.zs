@@ -24,6 +24,7 @@ import mods.avaritia.ExtremeCrafting;
 import mods.bloodmagic.BloodAltar;
 import mods.botania.PureDaisy;
 import mods.enderio.AlloySmelter;
+import mods.tconstruct.Casting;
 
 PureDaisy.addRecipe(<botanicadds:dreamrock>, <contenttweaker:runestone>, 100);
 
@@ -41,43 +42,14 @@ recipes.addShaped(<contenttweaker:glass_bell>, [
     [<minecraft:glass>,<minecraft:stone_button>,<minecraft:glass>]
 ]);
 
-recipes.addShaped(<contenttweaker:creative_block>, [
-    [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>],
-    [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>],
-    [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>]
-]);
-
-recipes.addShaped(<contenttweaker:creative> * 9, [
-    [<contenttweaker:creative_block>]
-]);
-
 recipes.addShaped(<contenttweaker:red_core>, [
     [<extrautils2:ingredients:4>,<abyssalcraft:charcoal>,<extrautils2:ingredients:4>],
     [<abyssalcraft:charcoal>,<extrautils2:ingredients:2>,<abyssalcraft:charcoal>],
     [<extrautils2:ingredients:4>,<abyssalcraft:charcoal>,<extrautils2:ingredients:4>]
 ]);
 
+Casting.removeTableRecipe(<contenttweaker:ender_ingot>);
 AlloySmelter.addRecipe(<contenttweaker:ender_ingot>, [<threng:material>, <enderio:item_alloy_endergy_ingot:3>, <extrautils2:ingredients:17>], 50000);
 AlloySmelter.addRecipe(<contenttweaker:enhanced_ender_ingot>, [<immersiveengineering:material:19>, <ic2:itemmisc:60>, <contenttweaker:ender_ingot>], 50000);
-
-var mapSlate as IItemStack[IItemStack] = {
-    <contenttweaker:slate_blank> : <bloodmagic:slate>,
-    <contenttweaker:slate_reinforced> : <bloodmagic:slate:1>,
-    <contenttweaker:slate_imbued> : <bloodmagic:slate:2>,
-    <contenttweaker:slate_demonic> : <bloodmagic:slate:3>,
-    <contenttweaker:slate_ethereal> : <bloodmagic:slate:4>,
-};
-
-for block, slate in mapSlate {
-    recipes.remove(slate);
-    recipes.addShaped(slate * 9, [
-        [block]
-    ]);
-    recipes.addShaped(block, [
-        [slate,slate,slate],
-        [slate,slate,slate],
-        [slate,slate,slate]
-    ]);
-}
 
 furnace.addRecipe(<contenttweaker:reinforced_obsidian_ingot>,<enderio:block_reinforced_obsidian>);
