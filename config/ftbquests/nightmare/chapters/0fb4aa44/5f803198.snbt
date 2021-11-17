@@ -1,0 +1,16 @@
+{
+	x: -0.5d,
+	y: 1.5d,
+	dependencies: [
+		"cd0c2eb9",
+		"a4439a89",
+		"ce838434"
+	],
+	tasks: [{
+		uid: "fbecfa0f",
+		type: "item",
+		items: [{
+			item: "environmentaltech:litherite_crystal"
+		}]
+	}]
+}
