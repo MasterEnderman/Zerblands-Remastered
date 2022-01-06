@@ -24,6 +24,8 @@ import mods.actuallyadditions.Empowerer;
 import mods.thermalexpansion.Infuser;
 import mods.threng.Energizer;
 
+import moretweaker.draconicevolution.FusionCrafting;
+
 Infuser.addRecipe(<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block>,10000000);
 Energizer.addRecipe(<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block>,10000000);
 
@@ -84,3 +86,15 @@ for item, main in mapWyvern {
 
 recipes.remove(<draconicevolution:energy_pylon>);
 Empowerer.addRecipe(<draconicevolution:energy_pylon>, <draconicevolution:draconium_block:1>, <draconicevolution:wyvern_core>, <botania:pylon:2>, <contenttweaker:flux_module>, <thermaldynamics:duct_0:5>, 100000, 500, [0.8, 0.0, 0.8]);
+
+FusionCrafting.remove(<minecraft:emerald_block>);
+FusionCrafting.add(<draconicevolution:wyvern_core>, <extrautils2:decorativesolid:8>, FusionCrafting.BASIC, 9000000, [
+    <draconicevolution:draconic_core>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconic_core>,
+    <draconicevolution:draconic_core>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconic_core>
+]);

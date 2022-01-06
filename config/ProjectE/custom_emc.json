@@ -727,6 +727,10 @@
     {
       "item": "contenttweaker:electricdiamondanimate|0",
       "emc": 20239
+    },
+    {
+      "item": "draconicadditions:chaos_crystal_stable|0",
+      "emc": 1381542480
     }
   ]
 }

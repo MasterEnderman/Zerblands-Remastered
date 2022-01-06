@@ -44,7 +44,6 @@ import mods.immersiveengineering.BottlingMachine;
 import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Refinery;
-import mods.immersivetechnology.ElectrolyticCrucibleBattery;
 import mods.immersivetechnology.SolarTower;
 import mods.inworldcrafting.ExplosionCrafting;
 import mods.tconstruct.Alloy;
@@ -87,15 +86,13 @@ ExplosionCrafting.explodeItemRecipe(<contenttweaker:q1> * 64, <advancedsolars:en
 TERefinery.removeRecipe(<liquid:oil>);
 TERefinery.removeRecipe(<liquid:crude_oil>);
 
-ElectrolyticCrucibleBattery.removeRecipe(<liquid:water>);
-ElectrolyticCrucibleBattery.addRecipe(<liquid:hydrogen>*800,<liquid:oxygen>*400,null,null,<liquid:water>*1200,2048*250,250);
-
 Casting.addTableRecipe(<contenttweaker:lithium_dust>, null, <liquid:briny_water>, 200, false, 600);
-Casting.addTableRecipe(<contenttweaker:sodium_dust>, null, <liquid:moltensodium>, 250, false, 600);
 Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","plate","StyreneButadieneRubber"), <tconstruct:cast_custom:3> ,<liquid:styrene_butadiene_rubber>, 200, false, 120);
 
+var cast_pan as IItemStack = <tconstruct:cast>.withTag({PartType: "tconstruct:pan_head"});
+Casting.addTableRecipe(<contenttweaker:petri_dish>, cast_pan, <liquid:glass>, 200, false, 200);
+
 Mixer.addRecipe(<liquid:iron_chloride>*100, <liquid:hydrochloric_acid>*100, [<ore:oreIron>], 512);
-Mixer.addRecipe(<liquid:sodium_persulfate>*2000, <liquid:oxygen>*1000, [<ore:dustSulfur>,<contenttweaker:sodium_dust>], 512);
 Mixer.addRecipe(<liquid:sodium_hydroxide>*500, <liquid:water>*500, [<contenttweaker:sodium_dust>], 512);
 Mixer.addRecipe(<liquid:battery_solution>*250, <liquid:distwater>*250, [
     <contenttweaker:lithium_dust>,
@@ -115,18 +112,15 @@ Refinery.addRecipe(<liquid:ethylene> * 10, <liquid:refined_biofuel> * 6, <liquid
 Refinery.addRecipe(<liquid:steamed_naphtha> * 50, <liquid:refined_oil> * 50, <liquid:steam> * 100, 512);
 Refinery.addRecipe(<liquid:hydrochloric_acid> * 100, <liquid:water> * 50, <liquid:hydrogen_chlorid> * 50, 512);
 Refinery.addRecipe(<liquid:hydrogen_chlorid> * 200, <liquid:chlorine> * 100, <liquid:hydrogen> * 100, 512);
-# Refinery.addRecipe(<liquid:sodium_hydroxid> * 200, <liquid:moltensodium> * 100, <liquid:water> * 100, 512);
-
-Refinery.addRecipe(<liquid:colour_out_of_space>*20, <liquid:astralsorcery.liquidstarlight>*15, <liquid:liquidantimatter>*5, 512);
-Refinery.addRecipe(<liquid:colour_out_of_space>*10, <liquid:astralsorcery.liquidstarlight>*10, <liquid:liquidcoralium>*10, 512);
 
 BloodAltar.addRecipe(<contenttweaker:eternalslate>, <bloodmagic:slate:4>, 5, 60000,80,200);
 
 BloodAltar.addRecipe(<contenttweaker:corruptedstarmetal>, <astralsorcery:itemcraftingcomponent:1>, 2, 10000,200,50);
 BloodInfuser.addRecipe(<astralsorcery:itemcraftingcomponent:1>, <liquid:evilcraftblood> * 64000, 3, <contenttweaker:corruptedstarmetal>, 1000, 5);
 
-Alloy.addRecipe(<liquid:soldering_alloy> * 432, [<liquid:lead> * 144, <liquid:tin> * 288]);
-Alloy.addRecipe(<liquid:battery_alloy> * 720, [<liquid:lead> * 576, <liquid:antimony> * 144]);
+Alloy.addRecipe(<liquid:soldering_alloy> * 3, [<liquid:lead> * 1, <liquid:tin> * 2]);
+Alloy.addRecipe(<liquid:battery_alloy> * 5, [<liquid:lead> * 4, <liquid:antimony> * 1]);
+Alloy.addRecipe(<liquid:ferromagnetic_alloy> * 1, [<liquid:iron> * 1, <liquid:cobalt> * 1, <liquid:nickel> * 1]);
 
 Casting.addTableRecipe(<contenttweaker:plastic>, <tconstruct:cast_custom:3>, <liquid:plastic>, 512, false);
 
@@ -153,6 +147,8 @@ ArcFurnace.addRecipe(<contenttweaker:silicon_boule>, <ore:blockCharcoal>, <therm
 Casting.addBasinRecipe(<contenttweaker:magma_soaked_cobblestone>, <minecraft:magma>, <liquid:stone>, 576, true, 200);
 BottlingMachine.addRecipe(<contenttweaker:magma_soaked_cobblestone>, <minecraft:magma>, <liquid:stone> * 576);
 Transposer.addFillRecipe(<contenttweaker:magma_soaked_cobblestone>, <minecraft:magma>,  <liquid:stone> * 576, 2000);
+
+Transposer.addFillRecipe(<contenttweaker:stemcells>, <contenttweaker:petri_dish>,  <liquid:protein> * 4000, 200000);
 
 Casting.removeTableRecipe(<contenttweaker:ender_ingot>);
 
@@ -380,6 +376,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:nuggetCopper>,<minecraft:potato>],
             [<contenttweaker:module_energy>,<ore:nuggetAluminum>]
         ]
+    ],
+    <contenttweaker:advanced_powermodule> : [
+        [
+            [<draconicevolution:draconic_ingot>,<environmentaltech:connector>,<draconicevolution:draconic_ingot>],
+            [<redstonerepository:material:3>,<gendustry:power_module>,<redstonerepository:material:3>],
+            [<draconicevolution:draconic_ingot>,<contenttweaker:flux_module>,<draconicevolution:draconic_ingot>]
+        ]
     ]
 };
 
@@ -427,6 +430,12 @@ Carpenter.addRecipe(<contenttweaker:battery_hull>, [
     [<ore:plateBatteryAlloy>,<ic2:itemcellempty>,<ore:plateBatteryAlloy>]
 ], 80, <liquid:soldering_alloy> * 144);
 
+Carpenter.addRecipe(<contenttweaker:neuro_processor>, [
+    [<draconicevolution:draconic_ingot>,<cd4017be_lib:m:405>,<draconicevolution:draconic_ingot>],
+    [<advancedsolars:enrichedsunnariumalloy>,<opencomputers:component:2>,<advancedsolars:enrichedsunnariumalloy>],
+    [<draconicevolution:draconic_ingot>,<contenttweaker:circuit8>,<draconicevolution:draconic_ingot>]
+], 800, <liquid:mana> * 1000, <contenttweaker:stemcells>);
+
 Blueprint.addRecipe("rails", <contenttweaker:rail_wood>, [
     <contenttweaker:tie_wood>,
     <ore:ingotIron>
@@ -471,3 +480,12 @@ FusionCrafting.add(<contenttweaker:q3>, <randomthings:redstoneobserver>, FusionC
 ]);
 
 Empowerer.addRecipe(<contenttweaker:q4>, <contenttweaker:q3>, <contenttweaker:q2>, <contenttweaker:q2>, <contenttweaker:q2>, <contenttweaker:q2>, 10000000, 100, [0.1, 0.9, 0.1]);
+
+FusionCrafting.add(<contenttweaker:crystal_cluster_core>, <contenttweaker:crystal_prism>, FusionCrafting.WYVERN, 4294967296, [
+    <environmentaltech:litherite_crystal>,
+    <environmentaltech:erodium_crystal>,
+    <environmentaltech:kyronite_crystal>,
+    <environmentaltech:pladium_crystal>,
+    <environmentaltech:ionite_crystal>,
+    <environmentaltech:aethium_crystal>
+]);

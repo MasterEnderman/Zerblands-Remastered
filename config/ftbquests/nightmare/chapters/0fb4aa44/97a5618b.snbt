@@ -1,0 +1,16 @@
+{
+	x: 7.5d,
+	y: 5.5d,
+	dependencies: [
+		"78dce310",
+		"95de659e",
+		"f0de1419"
+	],
+	tasks: [{
+		uid: "dd66f5b2",
+		type: "item",
+		items: [{
+			item: "projecte:transmutation_table"
+		}]
+	}]
+}

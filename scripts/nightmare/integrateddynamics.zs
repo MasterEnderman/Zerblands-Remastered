@@ -50,3 +50,5 @@ Carpenter.addRecipe(<integrateddynamics:variable> * 4, [
 
 recipes.remove(<integrateddynamics:logic_director>);
 calc_atomic(<integrateddynamics:logic_director>, <integrateddynamics:crystalized_chorus_chunk>, <contenttweaker:flawlessdiamond>, <integrateddynamics:crystalized_menril_chunk>);
+
+Transposer.addExtractRecipe(<liquid:menrilresin> * 250, <integrateddynamics:menril_berries>, 2400);

@@ -157,5 +157,5 @@ var mapMaterial as int[IItemStack] = {
 };
 
 for material, mana in mapMaterial {
-	ManaInfusion.addConjuration(material, material, mana);
+	ManaInfusion.addConjuration(material * 2, material, mana);
 }

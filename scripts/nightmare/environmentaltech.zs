@@ -137,7 +137,7 @@ AlloySmelter.addRecipe(<environmentaltech:photovoltaic_cell>, [<enderio:item_mat
 recipes.remove(<environmentaltech:diode>);
 Altar.addAttunementAltarRecipe("et_diode", <environmentaltech:diode>, 500, 800, [
     <enderio:item_material:56>,
-    <enderio:item_material:42>,
+    <opencomputers:geolyzer>,
     <enderio:item_material:56>,
     <enderio:item_material:42>,
     <opencomputers:component:1>,

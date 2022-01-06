@@ -24,6 +24,9 @@ import mods.thermalexpansion.Transposer;
 
 JEI.removeAndHide(<extrautils2:bagofholding>);
 JEI.removeAndHide(<extrautils2:itembuilderswand>);
+JEI.removeAndHide(<extrautils2:itemdestructionwand>);
+JEI.removeAndHide(<extrautils2:itemcreativedestructionwand>);
+JEI.removeAndHide(<extrautils2:itemcreativebuilderswand>);
 JEI.removeAndHide(<extrautils2:miner>);
 JEI.removeAndHide(<extrautils2:indexerremote>);
 JEI.removeAndHide(<extrautils2:chunkloader>);

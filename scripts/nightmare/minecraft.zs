@@ -25,6 +25,7 @@ import mods.immersiveengineering.CokeOven;
 import mods.jei.JEI;
 import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.Transposer;
+import mods.tconstruct.Melting;
 
 import scripts.functions.calc_basic;
 import scripts.functions.calc_flawless;
@@ -34,6 +35,11 @@ JEI.addItem(<minecraft:skull:3>);
 CokeOven.addRecipe(<minecraft:coal:1> * 4, 1600, <forestry:wood_pile>, 2000);
 CokeOven.addRecipe(<thermalfoundation:material:802>, 400, <minecraft:coal:1>, 250);
 CokeOven.addRecipe(<thermalfoundation:storage_resource:1>, 4000, <thermalfoundation:storage_resource>, 2500);
+
+Melting.removeRecipe(<liquid:gold>, <minecraft:golden_rail>);
+Melting.removeRecipe(<liquid:iron>, <minecraft:rail>);
+Melting.removeRecipe(<liquid:iron>, <minecraft:detector_rail>);
+Melting.removeRecipe(<liquid:iron>, <minecraft:activator_rail>);
 
 furnace.remove(<minecraft:brick>);
 furnace.addRecipe(<minecraft:brick>, <contenttweaker:pressed_clay>);
@@ -85,6 +91,9 @@ recipes.addShaped(<minecraft:gravel>, [
 recipes.remove(<minecraft:bread>);
 furnace.remove(<minecraft:bread>);
 furnace.addRecipe(<minecraft:bread>,<harvestcraft:doughitem>);
+
+recipes.remove(<minecraft:poisonous_potato>);
+Transposer.addFillRecipe(<minecraft:poisonous_potato>, <minecraft:potato>, <liquid:evilcraftpoison> * 250, 4096);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <minecraft:chest> : [

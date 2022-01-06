@@ -1,0 +1,16 @@
+{
+	x: -4.5d,
+	y: 4.5d,
+	dependencies: [
+		"957544ed",
+		"8860bce5",
+		"ab17ddc4"
+	],
+	tasks: [{
+		uid: "106de7b1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:circuit8"
+		}]
+	}]
+}

@@ -122,6 +122,14 @@ function findFirstItemFromMod(mod as string, type as string, metal as string) as
     }
 }
 
+function itemMS(part as string, metal as string) as IItemStack {
+    return findFirstItemFromMod("contenttweaker", part, metal);
+}
+
+function firstItemFromOreDict(dict as string, material as string) as IItemStack {
+    return oreDict.get(dict~material.substring(0,1).toUpperCase()~material.substring(1)).firstItem;
+}
+
 function sum(numbers as int[]) as int {
     var y as int = 0;
     for x in numbers {

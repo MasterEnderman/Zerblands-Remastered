@@ -22,10 +22,13 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.enderio.AlloySmelter;
 import mods.immersiveengineering.Mixer;
+import mods.jei.JEI;
 import mods.tconstruct.Alloy;
 import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.RedstoneFurnace;
 import mods.thermalexpansion.Transposer;
+
+JEI.removeAndHide(<thermalfoundation:material:656>);
 
 Alloy.removeRecipe(<liquid:enderium>);
 Alloy.removeRecipe(<liquid:lumium>);
@@ -103,6 +106,9 @@ recipes.addShapeless(<thermalfoundation:material:1027> * 2, [<thermalfoundation:
 
 Transposer.addFillRecipe(<thermalfoundation:material:1028>, <thermalfoundation:material:72>, <fluid:colour_out_of_space> * 1000, 4000);
 
+recipes.remove(<thermalfoundation:diagram_redprint>);
+Transposer.addFillRecipe(<thermalfoundation:diagram_redprint>, <minecraft:paper>, <fluid:redstone> * 200, 2000);
+
 Crucible.removeRecipe(<thermalfoundation:material:1024>);
 Mixer.addRecipe(<liquid:pyrotheum>*250, <liquid:lava>*250, [<thermalfoundation:material:1024>], 1024);
 
@@ -113,7 +119,7 @@ Crucible.removeRecipe(<thermalfoundation:material:1026>);
 Mixer.addRecipe(<liquid:aerotheum>*250, <liquid:cloud_seed_concentrated>*250, [<thermalfoundation:material:1026>], 1024);
 
 Crucible.removeRecipe(<thermalfoundation:material:1027>);
-Mixer.addRecipe(<liquid:aerotheum>*250, <liquid:crude_oil>*250, [<thermalfoundation:material:1027>], 1024);
-Mixer.addRecipe(<liquid:aerotheum>*250, <liquid:oil>*250, [<thermalfoundation:material:1027>], 1024);
+Mixer.addRecipe(<liquid:petrotheum>*250, <liquid:crude_oil>*250, [<thermalfoundation:material:1027>], 1024);
+Mixer.addRecipe(<liquid:petrotheum>*250, <liquid:oil>*250, [<thermalfoundation:material:1027>], 1024);
 
 Mixer.addRecipe(<liquid:mana>*250, <liquid:liquiddna>*250, [<thermalfoundation:material:1028>], 1024);

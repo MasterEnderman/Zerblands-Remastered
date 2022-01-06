@@ -19,6 +19,10 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.avaritia.ExtremeCrafting;
+import mods.immersiveengineering.Mixer;
+
+Mixer.addRecipe(<liquid:crystaloil>*1000,<liquid:refinedcanolaoil>*1000,[<actuallyadditions:item_misc:23>], 1000);
+Mixer.addRecipe(<liquid:empoweredoil>*1000,<liquid:crystaloil>*1000,[<actuallyadditions:item_misc:24>], 1000);
 
 recipes.remove(<actuallyadditions:item_wings_of_the_bats>);
 ExtremeCrafting.addShaped("bat_wings",<actuallyadditions:item_wings_of_the_bats>, [

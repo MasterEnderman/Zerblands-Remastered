@@ -36,6 +36,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<harvestcraft:hardenedleatheritem>,steel_toughrod,<harvestcraft:hardenedleatheritem>]
         ]
     ],
+    <simplyjetpacks:metaitemmods:29> : [
+        [
+            [<thermalfoundation:material:263>,<ic2:itemheatstorage:2>,<thermalfoundation:material:263>],
+            [<redstonearsenal:material:128>,<superiorshields:thermal_shield_cryotheum>,<redstonearsenal:material:128>],
+            [<thermalfoundation:material:263>,<ic2:itemheatstorage:2>,<thermalfoundation:material:263>]
+        ]
+    ]
 };
 
 for key, value in recipeMapShaped {

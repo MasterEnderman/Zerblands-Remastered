@@ -60,4 +60,34 @@ materials.tungsten.registerParts(["block", "nugget", "ingot", "dust", "plate", "
 var ferromagnetic_alloyFluidData as MaterialPartData = materials.ferromagnetic_alloy.registerPart("molten").getData();
 addDefaultMoltenData(ferromagnetic_alloyFluidData);
 
-materials.ferromagnetic_alloy.registerParts(["ingot"] as string[]);
+materials.ferromagnetic_alloy.registerParts(["block", "nugget", "ingot", "dust"] as string[]);
+
+// Ore Processing
+
+var materialsOreProcessing as Material[] = [
+    materials.aluminum,
+    materials.ardite,
+    materials.cobalt,
+    materials.copper,
+    materials.gold,
+    materials.iridium,
+    materials.iron,
+    materials.lead,
+    materials.mithril,
+    materials.nickel,
+    materials.platinum,
+    materials.silver,
+    materials.tin,
+    materials.uranium,
+];
+
+var partsOreProcessing as string[] = [
+	"clump",
+	"shard",
+	"crystal",
+	"dirty_dust"
+];
+
+for i, metal in materialsOreProcessing {
+	metal.registerParts(partsOreProcessing);
+}

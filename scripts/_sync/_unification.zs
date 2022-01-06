@@ -17,10 +17,15 @@ import scripts.functions.getFluid;
 import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
+import scripts.functions.firstItemFromOreDict;
+import scripts.functions.itemMS;
 
 import mods.avaritia.ExtremeCrafting;
 import mods.embers.Stamper;
 import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Transposer;
+import mods.tconstruct.Casting;
+import mods.tconstruct.Melting;
 
 <ore:ingotReinforcedObsidian>.add(<contenttweaker:reinforced_obsidian_ingot>);
 <ore:ingotStarSteel>.add(<contenttweaker:starsteel_ingot>);
@@ -175,6 +180,7 @@ var materialSystem as string[string] = {
     "redAlloy" : "red_alloy",
     "solderingAlloy" : "soldering_alloy",
     "tungsten" : "tungsten",
+    "ferromagneticAlloy" : "ferromagnetic_alloy"
 };
 
 for material, fluid in materialSystem {
@@ -195,3 +201,47 @@ for material, fluid in materialSystem {
     Melting.addRecipe(getFluid(fluid)*144, ingot, 490);
     Melting.addRecipe(getFluid(fluid)*1296, block, 681);
 }
+
+// Mekanism-like Ore Processing for basic Ores
+
+var processingMetals as string[] = [
+    "aluminum",
+    "ardite",
+    "cobalt",
+    "copper",
+    "gold",
+    "iridium",
+    "iron",
+    "lead",
+    "mithril",
+    "nickel",
+    "platinum",
+    "silver",
+    "tin",
+    "uranium",
+];
+
+for metal in processingMetals {
+    var ore as IItemStack = firstItemFromOreDict("ore",metal);
+    var dust as IItemStack = firstItemFromOreDict("dust",metal);
+    var clump as IItemStack = itemMS("clump",metal);
+    var crystal as IItemStack = itemMS("crystal",metal);
+    var shard as IItemStack = itemMS("shard",metal);
+    var dirtyDust as IItemStack = itemMS("dirtyDust",metal);
+
+    Transposer.addFillRecipe(crystal * 5, ore, <liquid:sulfuric_acid> * 200, 5000);
+
+    Transposer.addFillRecipe(shard * 4, ore, <liquid:hydrogen_chlorid> * 200, 4000);
+    Transposer.addFillRecipe(shard, crystal, <liquid:hydrogen_chlorid> * 200, 1000);
+
+    Transposer.addFillRecipe(clump * 3, ore, <liquid:oxygen> * 200, 3000);
+    Transposer.addFillRecipe(clump, shard, <liquid:oxygen> * 200, 1000);
+
+    Transposer.addFillRecipe(dirtyDust * 2, ore, <liquid:sodium_persulfate> * 200, 2000);
+    Transposer.addFillRecipe(dirtyDust, clump, <liquid:sodium_persulfate> * 200, 1000);
+    
+    Transposer.addFillRecipe(dust, dirtyDust, <liquid:distwater> * 200, 1000);
+}
+
+Transposer.addFillRecipe(<enderio:item_material:30>, itemMS("dirtyDust","ardite"), <liquid:distwater> * 200, 1000);
+Transposer.addFillRecipe(<enderio:item_material:31>, itemMS("dirtyDust","cobalt"), <liquid:distwater> * 200, 1000);

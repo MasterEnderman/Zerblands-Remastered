@@ -22,7 +22,6 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.ic2.Compressor;
 import mods.ic2.Macerator;
-import mods.immersiveengineering.Mixer;
 
 Compressor.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:17> * 8);
 Macerator.addRecipe(<immersiveengineering:material:17>, <thermalfoundation:material:802>);
@@ -55,9 +54,3 @@ recipes.addShaped(<immersiveengineering:stone_decoration:1>, [
     [<earthworks:block_concrete>,<minecraft:furnace>,<earthworks:block_concrete>],
     [<earthworks:item_mud>,<earthworks:block_concrete>,<earthworks:item_mud>]
 ]);
-
-recipes.remove(<immersiveengineering:material:14>);
-recipes.addShaped(<immersiveengineering:material:14>,[[null,null,<ore:ingotSteel>],[null,<ore:ingotSteel>,null],[<ore:ingotSteel>,null,null]]);
-
-Mixer.addRecipe(<liquid:crystaloil>*1000,<liquid:canolaoil>*1000,[<actuallyadditions:item_misc:23>], 1000);
-Mixer.addRecipe(<liquid:empoweredoil>*1000,<liquid:crystaloil>*1000,[<actuallyadditions:item_misc:24>], 1000);

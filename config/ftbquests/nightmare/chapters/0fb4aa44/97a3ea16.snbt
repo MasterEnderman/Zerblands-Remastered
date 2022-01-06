@@ -3,6 +3,7 @@
 	y: 4.0d,
 	shape: "gear",
 	dependencies: [
+		"95de659e",
 		"bf9bd431",
 		"a86b25bd"
 	],

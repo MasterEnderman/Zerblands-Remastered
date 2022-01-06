@@ -20,36 +20,85 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-recipes.remove(<buildinggadgets:buildingtool>);
-recipes.addShaped(<buildinggadgets:buildingtool>, [
-    [<ore:plateIridium>,<contenttweaker:flawless_assembly>,<ore:plateIridium>],
-    [<ore:gemDiamond>,<immersiveengineering:metal_device0:1>,<ore:gemDiamond>],
-    [<ore:plateIridium>,<contenttweaker:flawless_assembly>,<ore:plateIridium>]
-]);
-
-recipes.remove(<buildinggadgets:exchangertool>);
-recipes.addShaped(<buildinggadgets:exchangertool>, [
-    [<ore:plateIridium>,<contenttweaker:flawless_assembly>,<ore:plateIridium>],
-    [<ore:gemEmerald>,<immersiveengineering:metal_device0:1>,<ore:gemEmerald>],
-    [<ore:plateIridium>,<contenttweaker:flawless_assembly>,<ore:plateIridium>]
-]);
-
-recipes.remove(<buildinggadgets:copypastetool>);
-recipes.addShaped(<buildinggadgets:copypastetool>, [
-    [<ore:plateIridium>,<ore:gearEnderium>,<ore:plateIridium>],
-    [<contenttweaker:flawless_assembly>,<immersiveengineering:metal_device0:1>,<contenttweaker:flawless_assembly>],
-    [<ore:plateIridium>,<ore:gearEnderium>,<ore:plateIridium>]
-]);
-
-recipes.remove(<buildinggadgets:constructionpastecontainer>);
-recipes.addShaped(<buildinggadgets:constructionpastecontainer>, [
-    [<ore:plateIridium>,<ore:platePlatinum>,<ore:plateIridium>],
-    [<ore:platePlatinum>,<immersiveengineering:wooden_device0:5>,<ore:platePlatinum>],
-    [<ore:plateIridium>,<ore:platePlatinum>,<ore:plateIridium>]
-]);
-
 recipes.remove(<buildinggadgets:constructionblockpowder>);
 recipes.addShapeless(<buildinggadgets:constructionblockpowder>, [
     <ore:itemSlag>,<ore:crystalCrudeOil>,
     <earthworks:block_chalk>,<ic2:itemmisc:8>
 ]);
+
+var recipeMapShaped as IIngredient[][][][IItemStack] = {
+    <buildinggadgets:constructionpastecontainer> : [
+        [
+            [null,<danknull:dank_null_panel_2>,null],
+            [<danknull:dank_null_panel_2>,<ic2:itemarmorcfpack:*>,<danknull:dank_null_panel_2>],
+            [null,<danknull:dank_null_panel_2>,null]
+        ]
+    ],
+    <buildinggadgets:constructionpastecontainert2> : [
+        [
+            [null,<danknull:dank_null_panel_3>,null],
+            [<danknull:dank_null_panel_3>,<buildinggadgets:constructionpastecontainer>,<danknull:dank_null_panel_3>],
+            [null,<danknull:dank_null_panel_3>,null]
+        ]
+    ],
+    <buildinggadgets:constructionpastecontainert3> : [
+        [
+            [null,<danknull:dank_null_panel_4>,null],
+            [<danknull:dank_null_panel_4>,<buildinggadgets:constructionpastecontainert2>,<danknull:dank_null_panel_4>],
+            [null,<danknull:dank_null_panel_4>,null]
+        ]
+    ],
+    <buildinggadgets:constructionpastecontainercreative> : [
+        [
+            [null,<contenttweaker:creative>,null],
+            [<contenttweaker:creative>,<buildinggadgets:constructionpastecontainert3>,<contenttweaker:creative>],
+            [null,<contenttweaker:creative>,null]
+        ]
+    ],
+    <buildinggadgets:buildingtool> : [
+        [
+            [<notenoughwands:building_wand>],
+            [<thermalfoundation:material:640>],
+            [<thermalexpansion:capacitor:3>]
+        ]
+    ],
+    <buildinggadgets:exchangertool> : [
+        [
+            [<notenoughwands:swapping_wand>],
+            [<thermalfoundation:material:640>],
+            [<thermalexpansion:capacitor:4>]
+        ]
+    ],
+    <buildinggadgets:copypastetool> : [
+        [
+            [<notenoughwands:displacement_wand>,<notenoughwands:building_wand>,<notenoughwands:moving_wand>],
+            [<ore:gearElectrumFlux>,<thermalfoundation:material:640>,<ore:gearElectrumFlux>],
+            [null,<thermalexpansion:capacitor:4>,null]
+        ]
+    ],
+    <buildinggadgets:destructiontool> : [
+        [
+            [<notenoughwands:teleportation_wand>,<rftools:shape_card:1>,<enderutilities:void_pickaxe>],
+            [<ore:gearGelidEnderium>,<thermalfoundation:material:640>,<ore:gearGelidEnderium>],
+            [null,<thermalexpansion:capacitor:4>,null]
+        ]
+    ],
+    <buildinggadgets:templatemanager> : [
+        [
+            [<ore:paper>,<ore:plateIridium>,<ore:paper>],
+            [<actuallyadditions:item_crystal:4>,<thermalexpansion:frame:64>,<actuallyadditions:item_crystal:4>],
+            [<ore:dyeBlue>,<opencomputers:printer>,<ore:dyeBlue>]
+        ]
+    ]
+};
+
+for key, value in recipeMapShaped {
+	var index as int = 0;    
+    recipes.remove(key);
+
+    for recipe in value {
+        var name as string = "ct_"+toString(key)+"_"+index;
+        recipes.addShaped(name, key, recipe);
+        index += 1;
+    }
+}

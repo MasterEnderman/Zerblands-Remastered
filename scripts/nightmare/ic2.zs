@@ -34,12 +34,17 @@ import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Transposer;
 
+import scripts.functions.calc_flawless;
+
 recipes.remove(<ic2:itemmisc:53>);
 recipes.remove(<ic2:itemmisc:252>);
 recipes.remove(<ic2:itemmisc:250>);
 recipes.remove(<ic2:blockminingpipe>);
 <ore:blockCharcoal>.add(<ic2:blockmetal:12>);
 <ore:dustWheat>.add(<ic2:itemmisc:156>);
+
+recipes.remove(<ic2:blockmachinelv2:6>);
+calc_flawless(<ic2:blockmachinelv2:6>,<minecraft:crafting_table>,<ic2:blockmachinelv>,<ic2:itemtoolbox:2>,<ic2:itemmisc:451>);
 
 var mapCableCasting as ILiquidStack[IItemStack] = {
     <ic2:itemcable> : <liquid:copper>,
@@ -144,6 +149,12 @@ recipes.addShaped(<ic2:blockutility:3> * 8, [
     [<sonarcore:stableglass>,<ic2:itemmisc:257>,<sonarcore:stableglass>],
     [<sonarcore:stableglass>,<sonarcore:stableglass>,<sonarcore:stableglass>]
 ]);
+
+recipes.remove(<ic2:itemmisc:151>);
+recipes.addShapeless(<ic2:itemmisc:151> * 2, [<ic2:itemmisc:200>|<forestry:mulch>,<forestry:fertilizer_bio>]);
+
+recipes.remove(<ic2:itemmisc:157>);
+recipes.addShapeless(<ic2:itemmisc:157> * 3, [<botania:overgrowthseed>,<ic2:itemmisc:151>,<forestry:fertilizer_compound>,<botania:fertilizer>,<ic2:itemmisc:150>]);
 
 var plantball as int[IIngredient] = {
     <actuallyadditions:item_food:16> : 1,
@@ -278,9 +289,9 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ic2:itembarrel>]
         ],
         [
-            [<tconstruct:pattern>],
-            [<ore:logWood>],
-            [<tconstruct:pattern>]
+            [null,<tconstruct:pattern>,null],
+            [<harvestcraft:beeswaxitem>|<forestry:beeswax>,<ore:logWood>,<harvestcraft:beeswaxitem>|<forestry:beeswax>],
+            [null,<tconstruct:pattern>,null]
         ]
     ],
     <ic2:blockmachinehv:2> : [
@@ -324,6 +335,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [null,<bibliocraft:framingboard>,null],
             [<bibliocraft:framingboard>,null,<bibliocraft:framingboard>]
         ]
+    ],
+    <ic2:itemdrills> : [
+        [
+            [null,null,<immersiveengineering:drillhead>],
+            [null,<immersiveengineering:drill>,null],
+            [<ic2:itembatre>,<ic2:itemmisc:451>,null]
+        ]
     ]
 };
 
@@ -344,6 +362,7 @@ var mapMachineLV as IIngredient[][IItemStack] = {
     <ic2:blockmachinelv:5> : [<thermalexpansion:machine:5>, <minecraft:piston>],
     <ic2:blockmachinelv:7> : [<thermalexpansion:device:1>, <thermalexpansion:augment:129>],
     <ic2:blockmachinelv2:2> : [<ic2:blockmachinelv:7>, <ic2:blockmachinelv:4>],
+    <ic2:blockmachinelv:2> : [<thermalexpansion:machine>, <contenttweaker:heat_conductor>],
 };
 
 for machine, items in mapMachineLV {

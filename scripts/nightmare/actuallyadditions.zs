@@ -26,7 +26,6 @@ import mods.astralsorcery.Altar;
 import mods.ic2.Macerator;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.Crusher as IECrusher;
-import mods.immersiveengineering.Mixer;
 import mods.jei.JEI;
 import mods.thermalexpansion.Pulverizer;
 
@@ -195,6 +194,16 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
         [<ore:ingotAluminumBrass>,<ore:ingotLumium>,<ore:ingotAluminumBrass>],
         [<ore:ingotLumium>,<botania:spark>,<ore:ingotLumium>],
         [<ore:ingotAluminumBrass>,<ore:ingotLumium>,<ore:ingotAluminumBrass>]
+    ],
+    <actuallyadditions:block_compost> : [
+        [<earthworks:item_timber>,null,<earthworks:item_timber>],
+        [<earthworks:item_timber>,null,<earthworks:item_timber>],
+        [<earthworks:item_timber>,<actuallyadditions:block_misc:4>,<earthworks:item_timber>]
+    ],
+    <actuallyadditions:item_drill:3> : [
+        [null,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_crystal_empowered:2>],
+        [<actuallyadditions:item_misc:8>,<immersiveengineering:drillhead>,<actuallyadditions:block_crystal_empowered:2>],
+        [<immersiveengineering:drill>,<actuallyadditions:item_misc:8>,null]
     ]
 };
 
@@ -217,9 +226,6 @@ for key, value in recipeMapShapeless {
 	recipes.remove(key);
     recipes.addShapeless(key, value);
 }
-
-Mixer.addRecipe(<liquid:crystaloil>*1000, <liquid:refinedcanolaoil>*1000, [<actuallyadditions:item_misc:23>], 512);
-Mixer.addRecipe(<liquid:empoweredoil>*1000, <liquid:crystaloil>*1000, [<actuallyadditions:item_misc:24>], 512);
 
 IECrusher.addRecipe(<actuallyadditions:item_misc:5>*4, <actuallyadditions:block_misc:2>, 800, null, 0);
 Pulverizer.addRecipe(<actuallyadditions:item_misc:5>*4, <actuallyadditions:block_misc:2>, 3000, null, 0);
@@ -349,6 +355,14 @@ for machine, recipe in smallMachine {
     recipes.remove(machine);
     Blueprint.addRecipe("machinery", machine, recipe);
 }
+
+recipes.remove(<actuallyadditions:item_misc:16>);
+Blueprint.addRecipe("components", <actuallyadditions:item_misc:16>, [
+    <contenttweaker:electric_motor>,
+    <thermalfoundation:material:640>,
+    <forestry:thermionic_tubes:6> * 2,
+    <ic2:itemcable:15> * 2
+]);
 
 recipes.addShapeless(<actuallyadditions:block_fluid_collector>, [<actuallyadditions:block_fluid_collector>]); // clear NBT
 recipes.addShapeless(<actuallyadditions:block_fluid_placer>, [<actuallyadditions:block_fluid_placer>]); // clear NBT

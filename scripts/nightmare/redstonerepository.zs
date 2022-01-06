@@ -20,6 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.forestry.Carpenter;
 import mods.thermalexpansion.Transposer;
 
 Transposer.removeFillRecipe(<minecraft:emerald>, <liquid:cryotheum>);
@@ -27,3 +28,10 @@ Transposer.addFillRecipe(<redstonerepository:material:5>, <enderio:item_material
 
 Transposer.removeFillRecipe(<minecraft:string>, <liquid:redstone>);
 Transposer.addFillRecipe(<redstonerepository:material:8>, <randomthings:ingredient:12>, <liquid:redstone> * 200, 2500);
+
+recipes.remove(<redstonerepository:material:7>);
+Carpenter.addRecipe(<redstonerepository:material:7>, [
+    [<ore:plateGelidEnderium>,<ore:gearGelidEnderium>,<ore:plateGelidEnderium>],
+    [<ore:gearGelidEnderium>,<draconicevolution:draconic_core>,<ore:gearGelidEnderium>],
+    [<ore:plateGelidEnderium>,<ore:gearGelidEnderium>,<ore:plateGelidEnderium>]
+], 60, <liquid:empoweredoil> * 1000, <ic2:itembatlamacrystal>);

@@ -30,6 +30,8 @@ import mods.tconstruct.Casting;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Transposer;
 
+import moretweaker.draconicevolution.FusionCrafting;
+
 import scripts.functions.calc_basic;
 import scripts.functions.calc_scientific;
 import scripts.functions.calc_atomic;
@@ -178,6 +180,9 @@ Resonator.add(<extrautils2:passivegenerator:1>, <extrautils2:passivegenerator>, 
 
 Resonator.add(<extrautils2:decorativeglass:5>, <immersiveengineering:stone_decoration:8>, 100, false);
 
+recipes.remove(<extrautils2:quarryproxy>);
+Resonator.add(<extrautils2:quarryproxy>, <ic2:blockmachinelv:12>, 640, false);
+
 recipes.remove(<extrautils2:endershard>);
 ExplosionCrafting.explodeItemRecipe(<extrautils2:endershard> * 8, <minecraft:ender_pearl>);
 
@@ -274,6 +279,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<extrautils2:decorativesolid:3>,<extrautils2:decorativesolid:3>,<extrautils2:decorativesolid:3>],
             [<extrautils2:grocket:6>,<immersiveengineering:metal_device0:2>,<extrautils2:grocket:6>],
             [<extrautils2:decorativesolid:3>,<extrautils2:decorativesolid:3>,<extrautils2:decorativesolid:3>]
+        ]
+    ],
+    <extrautils2:wateringcan> : [
+        [
+            [<contenttweaker:plastic>,<actuallyadditions:item_fertilizer>,null],
+            [<contenttweaker:plastic>,<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),<contenttweaker:plastic>],
+            [null,<contenttweaker:plastic>,null]
         ]
     ]
 };
@@ -387,3 +399,16 @@ Carpenter.addRecipe(<extrautils2:ingredients:16>, [
     [<ore:ingotEvilMetal>,<extrautils2:ingredients:15>,<ore:ingotEvilMetal>],
     [<extrautils2:ingredients:10>,<ore:ingotEvilMetal>,<extrautils2:ingredients:10>]
 ], 500, <liquid:for.honey> * 1000, <extrautils2:simpledecorative:1>);
+
+recipes.remove(<extrautils2:rainbowgenerator>);
+FusionCrafting.add(<extrautils2:rainbowgenerator>, <embers:winding_gears> * 64, FusionCrafting.BASIC, 1000000000, [
+    <extrautils2:rainbowgenerator:2>,
+    <extrautils2:rainbowgenerator:2>,
+    <quantumflux:zeropointextractor>,
+    <quantumflux:zeropointextractor>,
+    <extrautils2:rainbowgenerator:1>,
+    <extrautils2:rainbowgenerator:1>,
+]);
+
+recipes.remove(<extrautils2:quarry>);
+Empowerer.addRecipe(<extrautils2:quarry>, <actuallyadditions:block_misc:8>, <immersiveengineering:metal_device1:7>, <extrautils2:snowglobe:1>, <simplevoidworld:portal>, <actuallyadditions:block_miner>, 8192, 100, [0.1, 0.1, 0.1]);

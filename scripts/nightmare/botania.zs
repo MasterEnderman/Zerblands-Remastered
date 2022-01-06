@@ -64,6 +64,9 @@ recipes.addShaped(<botania:manaresource:14>, [
 recipes.remove(<botania:lens:10>);
 calc_basic(<botania:lens:10>, <botania:lens>, <ic2:itemmisc:263>);
 
+recipes.remove(<botania:fertilizer>);
+calc_basic(<botania:fertilizer>, <actuallyadditions:item_fertilizer>, <botania:dye:*>);
+
 recipes.remove(<botania:manaringgreater>);
 calc_basic(<botania:manaringgreater>, <botania:manaring>, <ore:ingotTerrasteel>);
 
@@ -94,8 +97,8 @@ Alchemy.add(<botania:manaring>, [<embers:ember_ring>, <botania:manatablet>, <ore
 recipes.remove(<botania:magnetring>);
 Alchemy.add(<botania:magnetring>, [<embers:ember_ring>, <botania:lens:10>, <ore:ingotManasteel>, <ore:ingotManasteel>, <ore:ingotManasteel>], {"silver": 32 to 64, "lead": 32 to 64});
 
-recipes.remove(<botania:magnetring>);
-Alchemy.add(<botania:magnetring>, [<embers:ember_ring>, <botania:lens:10>, <ore:ingotManasteel>, <ore:ingotManasteel>, <ore:ingotManasteel>], {"silver": 32 to 64, "lead": 32 to 64});
+recipes.remove(<botania:waterring>);
+Alchemy.add(<botania:waterring>, [<embers:ember_ring>, <botania:rune>, <ore:ingotManasteel>, <minecraft:fish:3>, <ore:ingotManasteel>], {"silver": 32 to 64, "lead": 32 to 64});
 
 recipes.remove(<botania:auraring>);
 Alchemy.add(<botania:auraring>, [<embers:ember_ring>, <botania:rune:8>, <ore:ingotManasteel>, <ore:ingotManasteel>, <ore:ingotManasteel>], {"silver": 32 to 64, "lead": 32 to 64});
@@ -142,9 +145,9 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     	[<botania:livingrock>,<botania:livingrock>,<botania:livingrock>]
     ],
     <botania:spreader> : [
-    	[<botania:livingwood>,<botania:livingwood:5>,<botania:livingwood>],
+    	[<botania:livingwood>,<botania:livingwood:2>,<botania:livingwood>],
     	[<ore:ingotEnder>,<botania:petal:*>,null],
-    	[<botania:livingwood>,<botania:livingwood:5>,<botania:livingwood>]
+    	[<botania:livingwood>,<botania:livingwood:2>,<botania:livingwood>]
     ],
     <botania:spreader:2> : [
     	[<botania:dreamwood>,<botania:dreamwood:5>,<botania:dreamwood>],

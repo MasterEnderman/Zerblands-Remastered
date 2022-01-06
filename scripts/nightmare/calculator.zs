@@ -20,10 +20,12 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Empowerer;
 import mods.astralsorcery.Altar;
 import mods.forestry.Carpenter;
 import mods.forestry.Centrifuge as FCentrifuge;
+import mods.forestry.ThermionicFabricator;
 import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.BlastFurnace;
 import mods.immersiveengineering.BottlingMachine;
@@ -37,6 +39,14 @@ import scripts.functions.calc_atomic;
 import scripts.functions.calc_basic;
 import scripts.functions.calc_scientific;
 import scripts.functions.calc_flawless;
+
+AtomicReconstructor.addRecipe(<contenttweaker:circuit8_dirty>, <opencomputers:material:2>, 4000);
+Transposer.addFillRecipe(<contenttweaker:circuit8_damaged>, <contenttweaker:circuit8_dirty>,  <liquid:sodium_persulfate> * 200, 2000);
+ThermionicFabricator.addCast(<contenttweaker:circuit8>, [
+    [<advancedsolars:sunnarium>,<threng:material:4>,<advancedsolars:sunnarium>],
+    [<threng:material:14>,<contenttweaker:q4>,<threng:material:14>],
+    [<advancedsolars:sunnarium>,<contenttweaker:circuit8_damaged>,<advancedsolars:sunnarium>]
+], <liquid:glass> * 500);
 
 Casting.addTableRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>, <liquid:stone>, 2304, true, 200);
 BottlingMachine.addRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>, <liquid:stone> * 2304);

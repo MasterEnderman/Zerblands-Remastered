@@ -20,6 +20,10 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.avaritia.ExtremeCrafting;
 import mods.bloodmagic.BloodAltar;
+import mods.immersiveengineering.Mixer;
+import mods.immersiveengineering.Refinery;
+import mods.immersivetechnology.ElectrolyticCrucibleBattery;
+import mods.tconstruct.Casting;
 
 ExtremeCrafting.addShaped("creativeingot",<contenttweaker:creative>,[
     [<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>,<ore:ingotInfinity>],
@@ -55,3 +59,12 @@ ExtremeCrafting.addShaped("orb_armok",<contenttweaker:orb_armok_clean>, [
     [null,null,null,null,null,null,null,null,null],
     [null,null,null,null,null,null,null,null,null]
 ]);
+
+Refinery.addRecipe(<liquid:colour_out_of_space>*20, <liquid:astralsorcery.liquidstarlight>*15, <liquid:liquidantimatter>*5, 512);
+Refinery.addRecipe(<liquid:colour_out_of_space>*10, <liquid:astralsorcery.liquidstarlight>*10, <liquid:liquidcoralium>*10, 512);
+
+ElectrolyticCrucibleBattery.removeRecipe(<liquid:water>);
+ElectrolyticCrucibleBattery.addRecipe(<liquid:hydrogen>*800,<liquid:oxygen>*400,null,null,<liquid:water>*1200,2048*250,250);
+
+Casting.addTableRecipe(<contenttweaker:sodium_dust>, null, <liquid:moltensodium>, 250, false, 600);
+Mixer.addRecipe(<liquid:sodium_persulfate>*2000, <liquid:oxygen>*1000, [<ore:dustSulfur>,<contenttweaker:sodium_dust>], 512);

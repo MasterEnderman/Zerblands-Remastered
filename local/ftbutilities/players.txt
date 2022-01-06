@@ -17,8 +17,8 @@ ftbutilities.chat.name_format: <&4DeltaDerJedenCodeZerstückelt&r>
 
 // PackDev
 [90003ef04d504aa5a32aeb2d7f74dac3]
-parent: vip
-ftbutilities.chat.name_format: <&5[Modpack-Developer]&r {name}>
+parent: admin
+ftbutilities.chat.name_format: <&5[Modpack-Developer]&r Ender>
 
 // Moo
 [c0ac91fe542c43d8a4a62ffcabe1516f]

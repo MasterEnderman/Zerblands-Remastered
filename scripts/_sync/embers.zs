@@ -18,6 +18,8 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import scripts.functions.calc_basic;
+
 recipes.addShaped(<embers:creative_ember_source>, [
     [<embers:block_dawnstone>,<embers:block_dawnstone>,<embers:block_dawnstone>],
     [<embers:block_dawnstone>,<contenttweaker:infinite>,<embers:block_dawnstone>],
@@ -25,3 +27,7 @@ recipes.addShaped(<embers:creative_ember_source>, [
 ]);
 
 <embers:archaic_brick>.addTooltip(format.green("Drops from Ancient Golem."));
+<embers:golems_eye>.addTooltip(format.green("Drops from Ancient Golem,"));
+<embers:golems_eye>.addTooltip(format.green("when killed with a pickaxe."));
+
+calc_basic(<embers:spark_plug>, <embers:aspectus_copper>, <ore:blockGlass>);

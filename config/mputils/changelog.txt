@@ -45,7 +45,9 @@
 - updated ThermalLogisitcs
 - updated Tool Belt
 - updated Tool Progression
+- updated Torchmaster
 - updated UniDict
+- updated WanionLib
 
 - added Advanced Solars Classic
 - added Common Capabilities
@@ -55,14 +57,17 @@
 - added Tinkers' Evolution
 - added Too Many Efficiency Losses
 
+- added documentation for xu2 changes
 - added earthworks stones to et resource miner
 - added more loading screen tips
 - changed menu background
 - fixed nightmare mode
 - fixed villager blood amount in woot farms (once and for all)
 - more recipes for nightmare mode [WIP]
-- switched to Tinkers' Evolution as material addon (as it's actually maintained)
+- disabled XU Gridpower Efficiency Losses
+- switched to Tinkers' Evolution as tconstruc material addon (as it's actually maintained)
 -> current used tconstruct tools / armor probably needs to be remade (I'm sorry)
+- tweaked XU Gridpower generation values
 - tweaked infernal mob drops
 - tweaked main menu
 

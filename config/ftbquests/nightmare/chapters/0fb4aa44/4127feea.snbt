@@ -1,0 +1,16 @@
+{
+	x: -3.5d,
+	y: 4.5d,
+	dependencies: [
+		"78786878",
+		"38e3a08a",
+		"f06b629c"
+	],
+	tasks: [{
+		uid: "d6d33a4c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:neuro_processor"
+		}]
+	}]
+}

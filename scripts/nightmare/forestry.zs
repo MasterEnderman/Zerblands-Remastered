@@ -29,6 +29,8 @@ import mods.immersiveengineering.Squeezer;
 import mods.jei.JEI;
 import mods.thermalexpansion.Crucible;
 
+import scripts.functions.calc_scientific;
+
 JEI.addItem(<forestry:thermionic_tubes:3>);
 JEI.addItem(<forestry:thermionic_tubes:8>);
 JEI.addItem(<forestry:bee_combs:1>);
@@ -60,6 +62,9 @@ Crucible.addRecipe(<liquid:for.honey> * 100, <forestry:honey_drop>, 4000);
 Crucible.addRecipe(<liquid:for.honey> * 100, <forestry:honeydew>, 4000);
 Crucible.addRecipe(<liquid:for.honey> * 100, <harvestcraft:honeyitem>, 4000);
 Squeezer.addRecipe(null, <liquid:for.honey> * 100, <harvestcraft:honeyitem>, 2048);
+
+recipes.remove(<forestry:fertilizer_compound>);
+calc_scientific(<forestry:fertilizer_compound> * 4, <ore:dustApatite>, <ore:dustAsh>);
 
 Carpenter.removeRecipe(<forestry:impregnated_casing>);
 Carpenter.addRecipe(<forestry:impregnated_casing>, [
@@ -192,6 +197,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [null,<forestry:crafting_material>,null],
             [<forestry:crafting_material>,null,<forestry:crafting_material>]
         ]
+    ],
+    <forestry:imprinter> : [
+        [
+            [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>],
+            [<contenttweaker:creative>,<gendustry:imprinter>,<contenttweaker:creative>],
+            [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>]
+        ]
     ]
 };
 
@@ -283,7 +295,7 @@ for tube, data in tubes {
 ThermionicFabricator.removeCast(<forestry:flexible_casing>);
 ThermionicFabricator.addCast(<forestry:flexible_casing>, [
     [<embers:plate_dawnstone>,<actuallyadditions:item_crystal:4>,<embers:plate_dawnstone>],
-    [<embers:adhesive>,<forestry:hardened_machine>,<embers:adhesive>],
+    [<embers:dust_metallurgic>,<forestry:hardened_machine>,<embers:dust_metallurgic>],
     [<embers:plate_dawnstone>,<actuallyadditions:item_crystal:4>,<embers:plate_dawnstone>]
 ], <liquid:glass> * 500);
 
@@ -358,5 +370,22 @@ for farmblock, block in mapFarmBlock {
         [<enderio:item_material:69>,<ore:plateRedAlloy>,<enderio:item_material:69>],
         [<ore:ingotCopper>,block,<ore:ingotCopper>],
         [<ore:plankTreatedWood>,<forestry:thermionic_tubes:1>,<ore:plankTreatedWood>]
+    ]);
+}
+
+var mapDynamo as string[IItemStack] = {
+    <forestry:engine_clockwork> : "gold",
+    <forestry:engine_biogas> : "bronze",
+    <forestry:engine_peat> : "copper",
+};
+
+for dynamo, metal in mapDynamo {
+    var gear as IIngredient = getOreDict("gear",metal);
+
+    recipes.remove(dynamo);
+    recipes.addShaped(dynamo, [
+        [null,<thermalfoundation:material:514>,null],
+        [gear,<contenttweaker:electric_motor>,gear],
+        [<immersiveengineering:metal_decoration0:4>,<immersiveengineering:metal_decoration0:3>,<immersiveengineering:metal_decoration0:4>]
     ]);
 }

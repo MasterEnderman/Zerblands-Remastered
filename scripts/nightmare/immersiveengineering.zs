@@ -478,6 +478,20 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:plankTreatedWood>,<extrautils2:minichest>,<ore:plankTreatedWood>],
             [<ore:plankTreatedWood>,<ore:plankTreatedWood>,<ore:plankTreatedWood>]
         ]
+    ],
+    <immersiveengineering:drill> : [
+        [
+            [null,null,<immersiveengineering:material:13>],
+            [null,<actuallyadditions:item_misc:16>,<immersiveengineering:material:13>],
+            [<immersiveengineering:material:9>,null,null]
+        ]
+    ],
+    <immersiveengineering:metal_device1:7> : [
+        [
+            [<immersiveengineering:metal_decoration1:1>,<ic2:blockminingpipe>,<immersiveengineering:metal_decoration1:1>],
+            [<immersiveengineering:metal_decoration1:1>,<ic2:blockminingpipe>,<immersiveengineering:metal_decoration1:1>],
+            [<immersiveengineering:metal_decoration0:4>,<immersiveengineering:drillhead>,<immersiveengineering:metal_decoration0:4>]
+        ]
     ]
 };
 

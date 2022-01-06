@@ -17,7 +17,21 @@ static materials as Material[string] = {
     "ferromagnetic_alloy": MaterialSystem.getMaterialBuilder().setName("Ferromagnetic Alloy").setColor(8298403).build(),
     "styrene_rubber": MaterialSystem.getMaterialBuilder().setName("Styrene Butadiene Rubber").setColor(1709331).build(),
     "tungsten": MaterialSystem.getMaterialBuilder().setName("Tungsten").setColor(7897228).build(),
-    
+	// Ore Processing
+    "aluminum": MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(7566971).build(),
+    "ardite": MaterialSystem.getMaterialBuilder().setName("Ardite").setColor(7875094).build(),
+    "cobalt": MaterialSystem.getMaterialBuilder().setName("Cobalt").setColor(7781596).build(),
+    "copper": MaterialSystem.getMaterialBuilder().setName("Copper").setColor(13405015).build(),
+    "gold": MaterialSystem.getMaterialBuilder().setName("Gold").setColor(10769936).build(),
+    "iridium": MaterialSystem.getMaterialBuilder().setName("Iridium").setColor(10069182).build(),
+	"iron": MaterialSystem.getMaterialBuilder().setName("Iron").setColor(5131854).build(),
+    "lead": MaterialSystem.getMaterialBuilder().setName("Lead").setColor(5528431).build(),
+    "mithril": MaterialSystem.getMaterialBuilder().setName("Mithril").setColor(3953504).build(),
+    "nickel": MaterialSystem.getMaterialBuilder().setName("Nickel").setColor(15132617).build(),
+    "platinum": MaterialSystem.getMaterialBuilder().setName("Platinum").setColor(4893919).build(),
+    "silver": MaterialSystem.getMaterialBuilder().setName("Silver").setColor(12108744).build(),
+    "tin": MaterialSystem.getMaterialBuilder().setName("Tin").setColor(7050151).build(),
+    "uranium": MaterialSystem.getMaterialBuilder().setName("Uranium").setColor(8164468).build(),
 };
 
 function addDefaultMoltenData(moltenData as MaterialPartData) {

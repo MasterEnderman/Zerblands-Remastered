@@ -26,16 +26,14 @@ import mods.bloodmagic.TartaricForge;
 import mods.botania.RuneAltar;
 import mods.evilcraft.BloodInfuser;
 
+import scripts.functions.calc_atomic;
+
 BloodInfuser.addRecipe(<evilcraft:blood_orb:1>, <liquid:evilcraftblood>*10000, 1, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), 200, 0.5);
 
+recipes.remove(<bloodmagic:sacrificial_dagger>);
+calc_atomic(<bloodmagic:sacrificial_dagger>,<xreliquary:magicbane>,<evilcraft:vein_sword>,<abyssalcraft:lifecrystal>);
+
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
-    <bloodmagic:sacrificial_dagger> : [
-        [
-            [<evilcraft:garmonbozia>,<evilcraft:garmonbozia>,<xreliquary:magicbane>],
-            [<abyssalcraft:skin:2>,<evilcraft:vein_sword>,<evilcraft:garmonbozia>],
-            [<abyssalcraft:lifecrystal>,<abyssalcraft:skin:2>,<evilcraft:garmonbozia>]
-        ]
-    ],
     <bloodmagic:blood_rune> : [
         [
             [<abyssalcraft:stone:7>,<bloodmagic:slate>,<abyssalcraft:stone:7>],

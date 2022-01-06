@@ -24,6 +24,8 @@ import mods.avaritia.ExtremeCrafting;
 import mods.bloodmagic.BloodAltar;
 import mods.botania.PureDaisy;
 import mods.enderio.AlloySmelter;
+import mods.immersiveengineering.Mixer;
+import mods.immersiveengineering.Refinery;
 import mods.tconstruct.Casting;
 
 PureDaisy.addRecipe(<botanicadds:dreamrock>, <contenttweaker:runestone>, 100);
@@ -53,3 +55,6 @@ AlloySmelter.addRecipe(<contenttweaker:ender_ingot>, [<threng:material>, <enderi
 AlloySmelter.addRecipe(<contenttweaker:enhanced_ender_ingot>, [<immersiveengineering:material:19>, <ic2:itemmisc:60>, <contenttweaker:ender_ingot>], 50000);
 
 furnace.addRecipe(<contenttweaker:reinforced_obsidian_ingot>,<enderio:block_reinforced_obsidian>);
+
+Mixer.addRecipe(<liquid:sulfuric_acid>*100, <liquid:distwater>*100, [<ore:dustSulfur>*4,<ore:dustIron>], 1024);
+Refinery.addRecipe(<liquid:hydrogen_chlorid> * 200, <liquid:chlorine> * 100, <liquid:hydrogen> * 100, 512);

@@ -1,0 +1,21 @@
+{
+	x: 2.5d,
+	y: 4.5d,
+	dependencies: [
+		"f3e49700",
+		"bf9bd431"
+	],
+	tasks: [{
+		uid: "781e182f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "projecte:item.pe_philosophers_stone",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

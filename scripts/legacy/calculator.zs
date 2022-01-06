@@ -120,6 +120,9 @@ calc_basic(<contenttweaker:reinforcediron_ingot>,<ore:ingotIron>,<sonarcore:rein
 calc_basic(<contenttweaker:enriched_coal>,<minecraft:coal>,<ore:dustRedstone>);
 calc_basic(<contenttweaker:enriched_coal>,<contenttweaker:coal_dust>,<contenttweaker:coal_dust>);
 
+// Fix Missing Recipe for Enriched Gold Ingot
+calc_basic(<contenttweaker:enrichedgold_ingot>,<ore:ingotGold>,<ore:ingotSteel>);
+
 calc_scientific(<contenttweaker:purified_coal>,<contenttweaker:enriched_coal>,<contenttweaker:enrichedgold_ingot>);
 calc_scientific(<contenttweaker:weakeneddiamond>*4,<ore:gemDiamond>,<contenttweaker:reinforcediron_ingot>);
 calc_scientific(<contenttweaker:firecoal>,<contenttweaker:enriched_coal>,<minecraft:lava_bucket>);

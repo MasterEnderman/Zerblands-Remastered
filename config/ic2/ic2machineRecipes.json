@@ -164,7 +164,10 @@
   "ic2exprecipe_Soul Dust_": true,
   "ic2exprecipe_End Stone Dust_": true,
   "ic2exprecipe_Chalk Dust_": true,
-  "item.item_material.powder_lapis_lazuli_49444226": true
+  "item.item_material.powder_lapis_lazuli_49444226": true,
+  "item.contenttweaker.material_part_397086394": true,
+  "item.contenttweaker.material_part_-1420148432": true,
+  "item.contenttweaker.material_part_397086487": true
  },
  "extractor": {
   "item.coal_764578481": true,

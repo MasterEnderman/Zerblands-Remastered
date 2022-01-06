@@ -97,6 +97,20 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<minecraft:soul_sand>,<minecraft:soul_sand>],
             [<minecraft:soul_sand>,<minecraft:soul_sand>]
         ]
+    ],
+    <tp:watering_can> : [
+        [
+            [<immersiveengineering:metal_device1:6>,<botania:rune>,null],
+            [<ore:plateIron>,<extrautils2:wateringcan>,<ore:plateIron>],
+            [null,<ore:plateIron>,null]
+        ]
+    ],
+    <tp:watering_can_upgrade> : [
+        [
+            [<contenttweaker:reinforced_obsidian_ingot>,<xreliquary:emperor_chalice>.noReturn(),null],
+            [<contenttweaker:reinforced_obsidian_ingot>,<tp:watering_can>,<contenttweaker:reinforced_obsidian_ingot>],
+            [null,<contenttweaker:purifiedobsidian>,null]
+        ]
     ]
 };
 

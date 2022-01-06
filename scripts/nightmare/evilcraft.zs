@@ -262,3 +262,6 @@ for key, value in recipeMapShaped {
         index += 1;
     }
 }
+
+recipes.remove(<forge:bucketfilled>.withTag({FluidName: "evilcraftpoison", Amount: 1000}));
+Transposer.addExtractRecipe(<liquid:evilcraftpoison> * 250, <randomthings:imbue:1>, 400, <minecraft:glass_bottle> % 100);

@@ -144,6 +144,12 @@ var nightmare as string[string] = {
     "bio_fuel" : "Bio Fuel",
     "eternalslate" : "Eternal Slate",
     "potatos" : "Potato Battery",
+    "stemcells" : "Stem Cells",
+    "petri_dish" : "Petri Dish",
+    "neuro_processor" : "Neuro Processor",
+    "wetware_assembly" : "Wetware Assembly",
+    "advanced_powermodule" : "Advanced Power Module",
+    "crystal_cluster_core" : "Crystal Cluster Core",
 };
 
 for item, local in nightmare {

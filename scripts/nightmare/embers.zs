@@ -27,10 +27,19 @@ import mods.immersiveengineering.Blueprint;
 import mods.jei.JEI;
 import mods.thermalexpansion.Crucible;
 
+import scripts.functions.calc_basic;
+
 JEI.removeAndHide(<embers:breaker>);
 JEI.removeAndHide(<embers:vacuum>);
 
 Crucible.addRecipe(<liquid:oil_soul> * 100, <minecraft:soul_sand>, 2000);
+
+recipes.remove(<embers:ember_detector>);
+calc_basic(<embers:ember_detector>, <minecraft:compass>, <embers:crystal_ember>);
+calc_basic(<embers:golems_eye>, <minecraft:ender_eye>, <embers:archaic_brick>);
+
+recipes.remove(<embers:mech_accessor>);
+calc_basic(<embers:mech_accessor>, <embers:stairs_caminite_brick>, <immersiveengineering:material:8>);
 
 Alchemy.remove(<embers:winding_gears>);
 Alchemy.add(<embers:winding_gears>, [<blood_dynamo:ingredient:2>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>], {"copper": 32 to 64, "iron": 32 to 128});
@@ -122,5 +131,6 @@ Mixer.add(<liquid:dawnstone> * 12, [
     <liquid:alubrass> * 4
 ]);
 
-AlloySmelter.addRecipe(<embers:ashen_cloth>, [<ore:wool>,<ore:dustAsh>,<ore:string>], 25000);
+AlloySmelter.addRecipe(<embers:ashen_cloth>, [<ore:blockRockwool>,<ore:dustAsh>,<ore:string>], 25000);
 AlloySmelter.addRecipe(<embers:ingot_dawnstone>, [<ore:ingotBronze>,<ore:ingotConstantan>,<ore:ingotAluminumBrass>], 25000);
+AlloySmelter.addRecipe(<embers:archaic_brick> * 3, [<embers:archaic_brick>,<minecraft:soul_sand>,<minecraft:clay_ball>], 25000);

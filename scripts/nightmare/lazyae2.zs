@@ -52,3 +52,21 @@ ThermionicFabricator.addCast(<threng:material:4>, [
     [<ic2:itemheatvent:23>,<contenttweaker:terrasteelprocessor>,<ic2:itemheatvent:23>],
     [<threng:material>,<contenttweaker:elementiumprocessor>,<threng:material>]
 ], <liquid:glass> * 500);
+
+var mapSpeculation as IIngredient[][IItemStack] = {
+    <threng:material:8> : [<appliedenergistics2:material:23>,<threng:material:7>],
+    <threng:material:9> : [<appliedenergistics2:material:22>,<threng:material:8>],
+    <threng:material:10> : [<appliedenergistics2:material:24>,<threng:material:9>],
+    <threng:material:11> : [<contenttweaker:elementiumprocessor>,<threng:material:10>],
+    <threng:material:12> : [<contenttweaker:terrasteelprocessor>,<threng:material:11>],
+    <threng:material:13> : [<threng:material:6>,<threng:material:12>]
+};
+
+for output, data in mapSpeculation {
+    recipes.remove(output);
+    recipes.addShaped(output, [
+        [null,data[0],null],
+        [data[1],<ic2:itemmisc:202>,data[1]],
+        [null,data[0],null]
+    ]); 
+}

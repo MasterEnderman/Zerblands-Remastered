@@ -37,6 +37,8 @@ recipes.addShaped(<harvestcraft:freshwateritem> * 8, [
 recipes.removeByRecipeName("harvestcraft:beeswaxitem_x8_cropcandle");
 recipes.removeByRecipeName("harvestcraft:beeswaxitem_cropcandle");
 
+recipes.addShapeless(<harvestcraft:hardenedleatheritem>,[<minecraft:leather>,<forestry:beeswax>]);
+
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <harvestcraft:presser> : [
         [
