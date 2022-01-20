@@ -1,0 +1,22 @@
+{
+	x: 9.5d,
+	y: 5.5d,
+	dependencies: [
+		"a24d51fb",
+		"f0de1419",
+		"ab17ddc4"
+	],
+	tasks: [{
+		uid: "6f5cba37",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "projecte:item.pe_time_watch",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

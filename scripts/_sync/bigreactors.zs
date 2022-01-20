@@ -19,9 +19,12 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.jei.JEI;
+import mods.thermalexpansion.Transposer;
 
 JEI.removeAndHide(<bigreactors:turbinepowertaptesla>);
 JEI.removeAndHide(<bigreactors:reactorpowertaptesla>);
 JEI.removeAndHide(<bigreactors:oreanglesite>);
 JEI.removeAndHide(<bigreactors:orebenitoite>);
 JEI.removeAndHide(<bigreactors:reactorrednetport>);
+
+Transposer.addFillRecipe(<bigreactors:ingotyellorium> * 2, <ic2:itemmisc:55>, <liquid:glowstone> * 500, 4000);

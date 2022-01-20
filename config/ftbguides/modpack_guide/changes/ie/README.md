@@ -2,7 +2,7 @@
 
 ## Wires
 
-Increased the percentage of **power lost** every 16 blocks of distance for the wire tiers.
+Increased the percentage of **power loss** every 16 blocks of distance for the wire tiers.
 
 Copper: 70% loss rate
 Electrum : 50% loss rate

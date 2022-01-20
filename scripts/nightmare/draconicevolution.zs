@@ -71,8 +71,9 @@ var mapWyvern as IItemStack[IItemStack] = {
     <draconicevolution:wyvern_boots> : <ic2:itemarmorquantumboots>,
     <draconicevolution:wyvern_pick> : <gravisuit:advanceddrill>,
     <draconicevolution:wyvern_axe> : <gravisuit:advancedchainsaw>,
-    <draconicevolution:wyvern_sword> : <ic2:itemnanosabers>,
-    <draconicevolution:wyvern_shovel> : <ic2:itemdrills:1>
+    <draconicevolution:wyvern_sword> : <extrautils2:lawsword>,
+    <draconicevolution:wyvern_shovel> : <ic2:itemdrills:1>,
+    <draconicevolution:wyvern_bow> : <extrautils2:compoundbow>
 };
 
 for item, main in mapWyvern {
@@ -90,11 +91,11 @@ Empowerer.addRecipe(<draconicevolution:energy_pylon>, <draconicevolution:draconi
 FusionCrafting.remove(<minecraft:emerald_block>);
 FusionCrafting.add(<draconicevolution:wyvern_core>, <extrautils2:decorativesolid:8>, FusionCrafting.BASIC, 9000000, [
     <draconicevolution:draconic_core>,
-    <draconicevolution:draconium_block:1>,
-    <draconicevolution:draconium_block:1>,
-    <draconicevolution:draconic_core>,
     <draconicevolution:draconic_core>,
     <draconicevolution:draconium_block:1>,
     <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconic_core>,
     <draconicevolution:draconic_core>
 ]);

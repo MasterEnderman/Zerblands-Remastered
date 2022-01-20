@@ -25,7 +25,7 @@ import mods.forestry.Carpenter;
 import scripts.functions.calc_basic;
 import scripts.functions.calc_atomic;
 
-calc_basic(<pressure:pipe>, <immersiveengineering:metal_device1:6>, <ore:plateTungsten>);
+calc_basic(<pressure:pipe>, <thermaldynamics:duct_16:6>|<thermaldynamics:duct_16:7>, <ore:plateTungsten>);
 calc_basic(<pressure:tank_indicator>, <pressure:tank_block>, <enderio:block_gauge>);
 
 var calcMapAtomic as IIngredient[][IItemStack] = {
@@ -35,7 +35,7 @@ var calcMapAtomic as IIngredient[][IItemStack] = {
     <pressure:pump> : [<pressure:tank_interface>, <immersiveengineering:metal_device0:5>, <actuallyadditions:block_misc:9>],
     <pressure:drain> : [<pressure:tank_interface>, <immersiveengineering:metal_device0:6>, <actuallyadditions:block_misc:9>],
     <pressure:sluice> : [<pressure:tank_interface>, <minecraft:iron_bars>, <actuallyadditions:block_misc:9>],
-    <pressure:check_valve> : [<pressure:tank_interface>, <pressure:pipe>, <thermaldynamics:duct_16:6>|<thermaldynamics:duct_16:7>],
+    <pressure:check_valve> : [<pressure:tank_interface>, <pressure:pipe>, <immersivetech:valve>],
     <pressure:pipe_sensor> : [<pressure:tank_interface>, <pressure:pipe>, <minecraft:observer>],
 };
 

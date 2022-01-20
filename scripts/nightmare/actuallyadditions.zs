@@ -311,7 +311,7 @@ Altar.addAttunementAltarRecipe("block_atomic_reconstructor", <actuallyadditions:
 var smallMachine as IIngredient[][IItemStack] = {
     <actuallyadditions:block_ranged_collector> : [
         <actuallyadditions:block_misc:9>,
-        <randomthings:itemcollector>,
+        <tieredmagnets:magnet_energy_leadstone>,
         <actuallyadditions:item_crystal:3> * 2
     ],
     <actuallyadditions:block_breaker> : [

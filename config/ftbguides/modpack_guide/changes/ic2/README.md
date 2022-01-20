@@ -6,4 +6,4 @@
 
 ## Sticky Resin
 
-**Rubber Trees** don't generate in the world. **Sticky Resin** needs to be craftet.
+**Rubber Trees** don't generate in the world. **Sticky Resin** needs to be casted from **Resin**.

@@ -20,12 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.immersivetechnology.MeltingCrucible;
-import mods.immersivetechnology.SolarTower;
-
 recipes.remove(<immersivetech:material>);
-
-MeltingCrucible.removeRecipe(<minecraft:cobblestone>);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <immersivetech:metal_trash> : [

@@ -24,6 +24,7 @@ import mods.actuallyadditions.Empowerer;
 import mods.astralsorcery.Altar;
 import mods.bloodmagic.BloodAltar;
 import mods.botania.Apothecary;
+import mods.botania.RuneAltar;
 import mods.enderio.AlloySmelter;
 import mods.ic2.Compressor;
 import mods.inworldcrafting.FluidToItem;
@@ -44,6 +45,23 @@ JEI.removeAndHide(<randomthings:blockbreaker>);
 BloodAltar.addRecipe(<randomthings:rezstone>,<bloodarsenal:blood_diamond:3>,5,1000000000,2000,2000);
 
 Compressor.addRecipe(<randomthings:bottleofair>,<minecraft:glass_bottle>);
+
+recipes.remove(<randomthings:itemcollector>);
+Compressor.addRecipe(<randomthings:itemcollector>, <actuallyadditions:block_ranged_collector>);
+
+recipes.remove(<randomthings:ingredient:11>);
+RuneAltar.addRecipe(<randomthings:ingredient:11>, [
+    <minecraft:egg>,
+    <abyssalcraft:transmutationgem>,
+    <embers:seed_gold>,
+    <embers:seed_gold>,
+    <embers:seed_gold>,
+    <embers:seed_gold>,
+    <embers:seed_gold>,
+    <embers:seed_gold>,
+    <embers:seed_gold>,
+    <embers:seed_gold>
+], 15000);
 
 Apothecary.addRecipe(<randomthings:pitcherplant>, [
     <botania:petal:7>,
@@ -69,6 +87,7 @@ var mapCalcBasic as IIngredient[][IItemStack] = {
     <randomthings:quartzlamp> : [<minecraft:redstone_lamp>, <ore:blockQuartz>],
     <randomthings:lapisglass> : [<ore:blockGlass>, <ore:blockLapis>],
     <randomthings:lapislamp> : [<minecraft:redstone_lamp>, <ore:blockLapis>],
+    <randomthings:advanceditemcollector> : [<randomthings:itemcollector>, <enderio:item_basic_item_filter>],
 };
 
 for output, inputs in mapCalcBasic {

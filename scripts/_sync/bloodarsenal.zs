@@ -23,6 +23,8 @@ import mods.bloodmagic.TartaricForge;
 import mods.chisel.Carving;
 import mods.jei.JEI;
 
+import moretweaker.bloodarsenal.Sanguine;
+
 JEI.removeAndHide(<bloodarsenal:slate>);
 JEI.removeAndHide(<bloodarsenal:slate:1>);
 JEI.removeAndHide(<bloodarsenal:slate:2>);
@@ -34,10 +36,44 @@ TartaricForge.addRecipe(<bloodarsenal:soul_pendant:4>, [<bloodarsenal:soul_penda
 
 AlchemyArray.addRecipe(<bloodarsenal:blood_diamond:3>, <bloodmagic:component:8>, <bloodarsenal:blood_diamond:2>, bloodmagicAlchemyArray["bindinglightningarray"]);
 
-Carving.addGroup("slateblock");
-Carving.addVariation("slateblock", <contenttweaker:slate_ethereal>);
-Carving.addVariation("slateblock", <bloodarsenal:slate>);
-Carving.addVariation("slateblock", <bloodarsenal:slate:1>);
-Carving.addVariation("slateblock", <bloodarsenal:slate:2>);
-Carving.addVariation("slateblock", <bloodarsenal:slate:3>);
-Carving.addVariation("slateblock", <bloodarsenal:slate:4>);
+var itemsSanguine as IItemStack[][IItemStack] = {
+    <bloodarsenal:stasis_sword> : [<bloodmagic:bound_sword>,<bloodarsenal:blood_infused_iron_sword>],
+    <bloodarsenal:stasis_axe> : [<bloodmagic:bound_axe>,<bloodarsenal:blood_infused_iron_axe>],
+    <bloodarsenal:stasis_pickaxe> : [<bloodmagic:bound_pickaxe>,<bloodarsenal:blood_infused_iron_pickaxe>],
+    <bloodarsenal:stasis_shovel> : [<bloodmagic:bound_shovel>,<bloodarsenal:blood_infused_iron_shovel>],
+};
+
+Sanguine.removeRecipe(<bloodmagic:bound_sword>);
+Sanguine.removeRecipe(<bloodmagic:bound_axe>);
+Sanguine.removeRecipe(<bloodmagic:bound_pickaxe>);
+Sanguine.removeRecipe(<bloodmagic:bound_shovel>);
+
+Sanguine.removeRecipe(<bloodarsenal:stasis_sword>);
+Sanguine.removeRecipe(<bloodarsenal:stasis_axe>);
+Sanguine.removeRecipe(<bloodarsenal:stasis_pickaxe>);
+Sanguine.removeRecipe(<bloodarsenal:stasis_shovel>);
+
+for item, cat in itemsSanguine {
+    Sanguine.addRecipe(item, 50000, cat[0], [
+        cat[1],
+        <bloodarsenal:base_item:5>,
+        <bloodarsenal:base_item:5>,
+        <bloodarsenal:base_item:5>,
+        <bloodarsenal:base_item:5>,
+        <contenttweaker:slate_demonic>,
+        <bloodarsenal:blood_diamond:3>,
+        <bloodarsenal:blood_diamond:3>
+    ]);
+}
+
+Sanguine.removeModifier(Sanguine.BLOOD_LUST);
+Sanguine.addModifier(Sanguine.BLOOD_LUST, 20000, [
+    <contenttweaker:slate_demonic>,
+    <contenttweaker:slate_demonic>,
+    <minecraft:redstone_block> * 3,
+    <minecraft:redstone_block> * 3,
+    <bloodarsenal:base_item:2> * 5,
+    <bloodarsenal:base_item:2> * 5,
+    <bloodarsenal:base_item> * 8,
+    <bloodarsenal:base_item> * 8
+]);

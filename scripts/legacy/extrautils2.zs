@@ -21,7 +21,6 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.extrautils2.Resonator;
-import mods.jei.JEI;
 
 Resonator.remove(<extrautils2:ingredients:4>);
 Resonator.add(<extrautils2:ingredients:4>, <evilcraft:blood_waxed_coal>, 1600, true);
@@ -33,27 +32,6 @@ recipes.addShaped(<extrautils2:pipe> * 6, [
     [<ore:ingotAluminum>,<ore:ingotInvar>,<ore:ingotAluminum>],
     [<ore:dustRedstone>,<ore:blockGlassHardened>,<ore:dustRedstone>],
     [<ore:ingotAluminum>,<ore:ingotInvar>,<ore:ingotAluminum>]
-]);
-
-recipes.remove(<extrautils2:lawsword>);
-recipes.addShaped(<extrautils2:lawsword>, [
-    [<extrautils2:opinium:8>],
-    [<extrautils2:opinium:8>],
-    [<contenttweaker:ender_token>]
-]);
-
-recipes.remove(<extrautils2:fireaxe>);
-recipes.addShaped(<extrautils2:fireaxe>, [
-    [<extrautils2:opinium:8>,<extrautils2:opinium:8>],
-    [<extrautils2:opinium:8>,<contenttweaker:ender_token>],
-    [null,<contenttweaker:ender_token>]
-]);
-
-recipes.remove(<extrautils2:compoundbow>);
-recipes.addShaped(<extrautils2:compoundbow>, [
-    [null,<extrautils2:opinium:8>,<minecraft:string>],
-    [<contenttweaker:ender_token>,null,<minecraft:string>],
-    [null,<extrautils2:opinium:8>,<minecraft:string>]
 ]);
 
 recipes.remove(<extrautils2:teleporter:1>);

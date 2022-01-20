@@ -35,25 +35,12 @@ import mods.thermalexpansion.Transposer;
 
 import scripts.functions.calc_basic;
 
-JEI.removeAndHide(<abyssalcraft:ccluster2>);
-JEI.removeAndHide(<abyssalcraft:ccluster3>);
-JEI.removeAndHide(<abyssalcraft:ccluster4>);
-JEI.removeAndHide(<abyssalcraft:ccluster5>);
-JEI.removeAndHide(<abyssalcraft:ccluster6>);
-JEI.removeAndHide(<abyssalcraft:ccluster7>);
-JEI.removeAndHide(<abyssalcraft:ccluster8>);
+
 
 JEI.removeAndHide(<abyssalcraft:materializer>);
 
 recipes.remove(<abyssalcraft:coralium>);
 recipes.remove(<abyssalcraft:crystallizer>);
-
-<ore:coal>.remove(<abyssalcraft:charcoal>);
-
-<abyssalcraft:crystallizer>.addTooltip("Can be found in the Lair of Cha'garoth.");
-
-furnace.remove(<abyssalcraft:charcoal>);
-InductionSmelter.addRecipe(<abyssalcraft:charcoal>, <abyssalcraft:crystal:3>, <abyssalcraft:crystal:14>, 3000);
 
 Crucible.addRecipe(<liquid:liquidantimatter> * 10, <appliedenergistics2:material:6>, 500000);
 Crucible.addRecipe(<liquid:liquidantimatter> * 1000, <ic2:itemmisc:202>, 500000);
@@ -62,16 +49,6 @@ recipes.remove(<abyssalcraft:crate>);
 calc_basic(<abyssalcraft:crate> * 2, <actuallyadditions:block_misc:4>, <minecraft:chest>);
 
 var recipeMapShaped as IIngredient[][][IItemStack] = {
-    <abyssalcraft:coraliumstone> : [
-        [<ore:stone>,<ore:stone>,<ore:stone>],
-        [<ore:stone>,<abyssalcraft:ccluster9>,<ore:stone>],
-        [<ore:stone>,<ore:stone>,<ore:stone>]
-    ],
-    <abyssalcraft:ccluster9> : [
-    	[<abyssalcraft:coralium>,<abyssalcraft:coralium>,<abyssalcraft:coralium>],
-    	[<abyssalcraft:coralium>,<abyssalcraft:coralium>,<abyssalcraft:coralium>],
-    	[<abyssalcraft:coralium>,<abyssalcraft:coralium>,<abyssalcraft:coralium>]
-    ],
 	<abyssalcraft:transmutator> : [
 		[<abyssalcraft:cstonebrick>,<abyssalcraft:cstonebrick>,<abyssalcraft:cstonebrick>],
 		[<abyssalcraft:cstonebrick>,<abyssalcraft:transmutationgem:*>.noReturn(),<abyssalcraft:cstonebrick>],
@@ -175,10 +152,6 @@ Rituals.modifyRitualOfferings("transmutationGem", [
 	<xreliquary:mob_ingredient:11>,
 	<xreliquary:mob_ingredient:7>
 ]);
-
-Rituals.modifyRitualSacrifice("oblivionCatalyst", <evilcraft:promise:3>);
-
-Rituals.modifyRitualBookType("powerStone", 2);
 
 recipes.remove(<abyssalcraft:sacrificialaltar>);    	
 Altar.addDiscoveryAltarRecipe("ac_sacrificialaltar", <abyssalcraft:sacrificialaltar>, 60, 200, [

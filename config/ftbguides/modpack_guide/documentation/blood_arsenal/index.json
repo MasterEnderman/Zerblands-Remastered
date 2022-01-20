@@ -1,0 +1,22 @@
+[
+    {
+        "id": "baubles",
+        "title": "Baubles",
+        "icon": "item:bloodarsenal:sacrifice_amulet"
+    },
+    {
+        "id": "machines",
+        "title": "Machines",
+        "icon": "item:bloodarsenal:altare_aenigmatica"
+    },
+    {
+        "id": "rituals",
+        "title": "Rituals",
+        "icon": "item:bloodarsenal:stasis_plate"
+    },
+    {
+        "id": "tools",
+        "title": "Tools",
+        "icon": "item:bloodarsenal:blood_infused_iron_pickaxe"
+    }
+]

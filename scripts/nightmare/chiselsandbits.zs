@@ -25,6 +25,11 @@ import scripts.functions.calc_basic;
 recipes.remove(<chiselsandbits:tape_measure>);
 calc_basic(<chiselsandbits:tape_measure>,<bibliocraft:tapemeasure>,<bibliocraft:plumbline>);
 
+recipes.removeByRecipeName("chiselsandbits:chisel_stone");
+recipes.removeByRecipeName("chiselsandbits:chisel_iron");
+recipes.removeByRecipeName("chiselsandbits:chisel_gold");
+recipes.removeByRecipeName("chiselsandbits:chisel_diamond");
+
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <chiselsandbits:chisel_stone> : [
         [

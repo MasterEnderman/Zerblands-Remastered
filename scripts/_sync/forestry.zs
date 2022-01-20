@@ -23,6 +23,9 @@ import mods.jei.JEI;
 
 JEI.removeAndHide(<forestry:bottler>);
 
+recipes.remove(<forestry:kit_shovel>);
+recipes.remove(<forestry:kit_pickaxe>);
+
 furnace.remove(<minecraft:coal:1>);
 furnace.addRecipe(<forestry:ash>, <ore:logWood>);
 

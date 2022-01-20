@@ -36,6 +36,7 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Pulverizer;
 import mods.thermalexpansion.Transposer;
 
+import scripts.functions.calc_basic;
 import scripts.functions.calc_flawless;
 
 JEI.removeAndHide(<enderio:block_simple_furnace>);
@@ -89,8 +90,8 @@ AlloySmelter.addRecipe(<enderio:item_alloy_ingot:6>, [<ore:ingotSteel>,<contentt
 ArcFurnace.addRecipe(<enderio:item_alloy_ingot:6>, <ore:ingotSteel>, null, 200, 512, [<contenttweaker:black_iron>,<ore:ingotHOPGraphite>]);
 
 // End Steel
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:8>, [<ore:ingotDarkSteel>,<ore:ingotEnder>,<enderutilities:enderpart:1>], 20000);
-ArcFurnace.addRecipe(<enderio:item_alloy_ingot:8>, <ore:ingotDarkSteel>, null, 200, 512, [<ore:ingotEnder>,<enderutilities:enderpart:1>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:8>, [<ore:ingotDarkSteel>,<ore:ingotStarSteel>,<enderutilities:enderpart:1>], 20000);
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot:8>, <ore:ingotDarkSteel>, null, 200, 512, [<ore:ingotStarSteel>,<enderutilities:enderpart:1>]);
 
 // Redstone Alloy
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:3>, [<contenttweaker:redstone_ingot>,<ore:itemSilicon>,<ore:ingotRedAlloy>], 10000);
@@ -502,6 +503,9 @@ for metal, data in mapCapacitor {
 recipes.remove(<enderio:block_farm_station>);
 calc_flawless(<enderio:block_farm_station>,<actuallyadditions:block_farmer>,<enderio:item_material:42>,<enderio:item_material:53>,<thermalexpansion:machine:4>);
 
+recipes.remove(<enderio:block_vacuum_chest>);
+calc_basic(<enderio:block_vacuum_chest>, <actuallyadditions:block_ranged_collector>, <enderio:item_material:14>);
+
 SliceNSplice.removeRecipe(<enderio:item_material:41>);
 SliceNSplice.addRecipe(<enderio:item_material:41>, [
     <ore:ingotSoularium>, <minecraft:skull:2>, <ore:ingotSoularium>,
@@ -519,3 +523,15 @@ SliceNSplice.addRecipe(<enderio:item_material:43>, [
     <ore:ingotSoularium>, <enderio:block_enderman_skull>, <ore:ingotSoularium>,
     <contenttweaker:electro_silicon>,<ore:ingotVibrantAlloy>,<contenttweaker:electro_silicon>
 ], 20000);
+
+recipes.remove(<enderio:item_item_conduit>);
+AlloySmelter.addRecipe(<enderio:item_item_conduit> * 2, [
+    <thermaldynamics:duct_32:1>,
+    <enderio:item_material:4> * 2,
+    <enderio:item_alloy_nugget:5> * 3
+], 5000);
+AlloySmelter.addRecipe(<enderio:item_item_conduit> * 2, [
+    <extrautils2:pipe>,
+    <enderio:item_material:4> * 2,
+    <enderio:item_alloy_nugget:5> * 3
+], 5000);

@@ -35,6 +35,27 @@ JEI.removeAndHide(<extrautils2:analogcrafter>);
 
 Transposer.addFillRecipe(<extrautils2:ingredients:11>, <minecraft:gold_ingot>, <liquid:lava>*250, 66666);
 
+recipes.remove(<extrautils2:lawsword>);
+recipes.addShaped(<extrautils2:lawsword>, [
+    [<extrautils2:opinium:8>],
+    [<extrautils2:opinium:8>],
+    [<contenttweaker:ender_token>]
+]);
+
+recipes.remove(<extrautils2:fireaxe>);
+recipes.addShaped(<extrautils2:fireaxe>, [
+    [<extrautils2:opinium:8>,<extrautils2:opinium:8>],
+    [<extrautils2:opinium:8>,<contenttweaker:ender_token>],
+    [null,<contenttweaker:ender_token>]
+]);
+
+recipes.remove(<extrautils2:compoundbow>);
+recipes.addShaped(<extrautils2:compoundbow>, [
+    [null,<extrautils2:opinium:8>,<minecraft:string>],
+    [<contenttweaker:ender_token>,null,<minecraft:string>],
+    [null,<extrautils2:opinium:8>,<minecraft:string>]
+]);
+
 recipes.removeShaped(<extrautils2:angelring>);
 recipes.removeShaped(<extrautils2:angelring:1>);
 recipes.removeShaped(<extrautils2:angelring:2>);

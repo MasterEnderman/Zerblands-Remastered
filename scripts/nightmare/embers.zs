@@ -132,5 +132,5 @@ Mixer.add(<liquid:dawnstone> * 12, [
 ]);
 
 AlloySmelter.addRecipe(<embers:ashen_cloth>, [<ore:blockRockwool>,<ore:dustAsh>,<ore:string>], 25000);
-AlloySmelter.addRecipe(<embers:ingot_dawnstone>, [<ore:ingotBronze>,<ore:ingotConstantan>,<ore:ingotAluminumBrass>], 25000);
+AlloySmelter.addRecipe(<embers:ingot_dawnstone>, [<ore:ingotBronze>,<ore:ingotConstantan>,<ore:ingotAlubrass>], 25000);
 AlloySmelter.addRecipe(<embers:archaic_brick> * 3, [<embers:archaic_brick>,<minecraft:soul_sand>,<minecraft:clay_ball>], 25000);

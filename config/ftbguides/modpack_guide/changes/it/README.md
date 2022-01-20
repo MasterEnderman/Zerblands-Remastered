@@ -2,4 +2,4 @@
 
 ## Alternator
 
-Energy Output decreased by ~10%.
+Energy Output decreased by ~20%.

@@ -1,0 +1,22 @@
+[
+    {
+        "id": "mass_assembly_chamber",
+        "title": "Mass Assembly Chamber",
+        "icon": "item:threng:big_assembler"
+    },
+    {
+        "id": "me_level_maintainer",
+        "title": "ME Level Maintainer",
+        "icon": "item:threng:machine 1 4"
+    },
+    {
+        "id": "preemptive_assembly_unit",
+        "title": "Preemptive Assembly Unit",
+        "icon": "item:threng:machine 1 3"
+    },
+    {
+        "id": "processing_machines",
+        "title": "Processing Machines",
+        "icon": "item:threng:machine 1 2"
+    }
+]

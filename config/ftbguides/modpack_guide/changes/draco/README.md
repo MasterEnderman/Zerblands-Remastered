@@ -3,7 +3,7 @@
 ## Draconium
 
 - the ore can't be obtained
-- has to crafted or obtained through bee breeding
+- has to crafted, obtained through bee breeding, farmed with a Woot Dragon Factory
 
 ## Hardmode
 

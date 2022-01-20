@@ -20,6 +20,8 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.botania.RuneAltar;
+
 import scripts.functions.calc_atomic;
 import scripts.functions.calc_flawless;
 
@@ -59,3 +61,16 @@ for key, value in recipeMapShaped {
         index += 1;
     }
 }
+
+recipes.remove(<xreliquary:magicbane>);
+RuneAltar.addRecipe(<xreliquary:magicbane>, [
+    <botania:enderdagger>,
+    <abyssalcraft:soulreaper>,
+    <minecraft:golden_sword>,
+    <abyssalcraft:transmutationgem>,
+    <embers:shifting_scales>,
+    <xreliquary:mob_ingredient:11>,
+    <xreliquary:mob_ingredient:11>,
+    <xreliquary:mob_ingredient:11>,
+    <xreliquary:mob_ingredient:11>
+], 20000);

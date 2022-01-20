@@ -20,23 +20,12 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.abyssalcraft.Rituals;
-import mods.abyssalcraft.Transmutator;
 import mods.actuallyadditions.Empowerer;
-import mods.chisel.Carving;
 import mods.evilcraft.BloodInfuser;
 import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Refinery;
 import mods.jei.JEI;
 import mods.thermalexpansion.InductionSmelter;
-
-JEI.removeAndHide(<abyssalcraft:ccluster2>);
-JEI.removeAndHide(<abyssalcraft:ccluster3>);
-JEI.removeAndHide(<abyssalcraft:ccluster4>);
-JEI.removeAndHide(<abyssalcraft:ccluster5>);
-JEI.removeAndHide(<abyssalcraft:ccluster6>);
-JEI.removeAndHide(<abyssalcraft:ccluster7>);
-JEI.removeAndHide(<abyssalcraft:ccluster8>);
 
 furnace.remove(<abyssalcraft:charcoal>);
 InductionSmelter.addRecipe(<abyssalcraft:charcoal>, <abyssalcraft:crystal:3>, <abyssalcraft:crystal:14>, 1500);
@@ -73,20 +62,10 @@ recipes.addShaped(<abyssalcraft:transmutator>, [
     [<abyssalcraft:ingotblock:1>,getBucketDefault("liquidantimatter"),<abyssalcraft:ingotblock:1>]
 ]);
 
-Rituals.modifyRitualSacrifice("oblivionCatalyst", <evilcraft:promise:3>);
 
-Transmutator.addTransmutation(<abyssalcraft:dreadsapling>, <abyssalcraft:dltsapling>, 0.2);
-Transmutator.addTransmutation(<earthworks:block_chalk>, <abyssalcraft:calcifiedstone>, 0.1);
 
 // inputStack, inputFluid, tier, outputStack, duration, xp
 BloodInfuser.addRecipe(<abyssalcraft:stone>, <liquid:evilcraftblood> * 3000, 3, <abyssalcraft:stone:7>, 100, 0);
 BloodInfuser.addRecipe(<quantumflux:darkstone>, <liquid:evilcraftblood> * 3000, 3, <abyssalcraft:stone:7>, 100, 0);
 
-<abyssalcraft:crystalbag_small>.addTooltip(format.green("*Only used for AbyssalCraft Crystals.*"));
-<abyssalcraft:crystalbag_small>.addTooltip(format.green("*Can't store normal items.*"));
-<abyssalcraft:crystalbag_medium>.addTooltip(format.green("*Only used for AbyssalCraft Crystals.*"));
-<abyssalcraft:crystalbag_medium>.addTooltip(format.green("*Can't store normal items.*"));
-<abyssalcraft:crystalbag_large>.addTooltip(format.green("*Only used for AbyssalCraft Crystals.*"));
-<abyssalcraft:crystalbag_large>.addTooltip(format.green("*Can't store normal items.*"));
-<abyssalcraft:crystalbag_huge>.addTooltip(format.green("*Only used for AbyssalCraft Crystals.*"));
-<abyssalcraft:crystalbag_huge>.addTooltip(format.green("*Can't store normal items.*"));
+

@@ -21,6 +21,8 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.forestry.Carpenter;
+import mods.forestry.Squeezer;
+import mods.immersiveengineering.Squeezer as IESqueezer;
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.Transposer;
 
@@ -52,3 +54,5 @@ recipes.remove(<integrateddynamics:logic_director>);
 calc_atomic(<integrateddynamics:logic_director>, <integrateddynamics:crystalized_chorus_chunk>, <contenttweaker:flawlessdiamond>, <integrateddynamics:crystalized_menril_chunk>);
 
 Transposer.addExtractRecipe(<liquid:menrilresin> * 250, <integrateddynamics:menril_berries>, 2400);
+Squeezer.addRecipe(<liquid:menrilresin> * 250, [<integrateddynamics:menril_berries>], 120);
+IESqueezer.addRecipe(null, <liquid:menrilresin> * 250, <integrateddynamics:menril_berries>, 2048);

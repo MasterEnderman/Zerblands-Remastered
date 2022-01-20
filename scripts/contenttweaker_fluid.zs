@@ -72,3 +72,6 @@ sodium_hydroxide.register();
 
 var ectoplasma = VanillaFactory.createFluid("ectoplasma", 2080478);
 ectoplasma.register();
+
+var ambrosia = VanillaFactory.createFluid("ambrosia", 10713609);
+ambrosia.register();

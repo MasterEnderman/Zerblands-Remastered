@@ -58,11 +58,15 @@
 - added Too Many Efficiency Losses
 
 - added documentation for xu2 changes
+- added documentation for lazyAE2
+- added documentation for blood arsenal
 - added earthworks stones to et resource miner
 - added more loading screen tips
+- added recipe to convert uranium to yellorite
 - changed menu background
-- fixed nightmare mode
+- finished questbook for nightmare mode
 - fixed villager blood amount in woot farms (once and for all)
+- increased main menu resolution
 - more recipes for nightmare mode [WIP]
 - disabled XU Gridpower Efficiency Losses
 - switched to Tinkers' Evolution as tconstruc material addon (as it's actually maintained)

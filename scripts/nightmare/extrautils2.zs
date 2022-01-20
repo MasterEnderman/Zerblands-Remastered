@@ -24,6 +24,7 @@ import mods.actuallyadditions.Empowerer;
 import mods.astralsorcery.Altar;
 import mods.extrautils2.Resonator;
 import mods.forestry.Carpenter;
+import mods.ic2.Extractor;
 import mods.inworldcrafting.ExplosionCrafting;
 import mods.jei.JEI;
 import mods.tconstruct.Casting;
@@ -127,6 +128,12 @@ Altar.addConstellationAltarRecipe("snowglobe", <extrautils2:snowglobe>, 800, 200
     <contenttweaker:starsteel_ingot>,
 ]);
 
+recipes.remove(<extrautils2:flattransfernode>);
+Extractor.addRecipe(<extrautils2:flattransfernode> * 2, <extrautils2:grocket>);
+
+recipes.remove(<extrautils2:flattransfernode:1>);
+Extractor.addRecipe(<extrautils2:flattransfernode:1> * 2, <extrautils2:grocket:2>);
+
 recipes.remove(<extrautils2:interactionproxy>);
 calc_flawless(<extrautils2:interactionproxy>, <actuallyadditions:block_phantomface>, <actuallyadditions:block_phantom_liquiface>, <actuallyadditions:block_phantom_energyface>, <extrautils2:powermanager>);
 
@@ -181,7 +188,7 @@ Resonator.add(<extrautils2:passivegenerator:1>, <extrautils2:passivegenerator>, 
 Resonator.add(<extrautils2:decorativeglass:5>, <immersiveengineering:stone_decoration:8>, 100, false);
 
 recipes.remove(<extrautils2:quarryproxy>);
-Resonator.add(<extrautils2:quarryproxy>, <ic2:blockmachinelv:12>, 640, false);
+Resonator.add(<extrautils2:quarryproxy>, <ic2:blockmachinelv:12>, 64000, false);
 
 recipes.remove(<extrautils2:endershard>);
 ExplosionCrafting.explodeItemRecipe(<extrautils2:endershard> * 8, <minecraft:ender_pearl>);
@@ -329,6 +336,12 @@ recipes.addShaped(<extrautils2:grocket:2> * 2, [
     [<ore:ingotElectricalSteel>,<thermaldynamics:servo>,<ore:ingotElectricalSteel>]
 ]);
 
+recipes.remove(<extrautils2:grocket:1>);
+recipes.addShaped(<extrautils2:grocket:1> * 2, [
+    [<actuallyadditions:item_crystal:1>,<extrautils2:pipe>,<actuallyadditions:item_crystal:1>],
+    [<ore:ingotElectricalSteel>,<extrautils2:filter>,<ore:ingotElectricalSteel>]
+]);
+
 recipes.remove(<extrautils2:grocket:6>);
 recipes.addShaped(<extrautils2:grocket:6> * 2, [
     [<ore:plateElectrum>,<extrautils2:pipe>,<ore:plateElectrum>],
@@ -364,6 +377,9 @@ calc_atomic(<extrautils2:spike_gold>, <contenttweaker:enriched_gold_block>, <ext
 
 recipes.remove(<extrautils2:spike_diamond>);
 calc_atomic(<extrautils2:spike_diamond>, <contenttweaker:flawless_block>, <extrautils2:spike_gold>, <contenttweaker:flawless_block>);
+
+recipes.remove(<extrautils2:grocket:5>);
+calc_scientific(<extrautils2:grocket:5> * 4, <extrautils2:pipe>, <extrautils2:filter>);
 
 recipes.remove(<extrautils2:ingredients:6>);
 Carpenter.addRecipe(<extrautils2:ingredients:6>, [

@@ -133,7 +133,7 @@ var palster as IItemStack[] = [
 
 Carving.addGroup("plaster");
 
-for item in daubCob {
+for item in palster {
     recipes.remove(item);
     Carving.addVariation("plaster", item);
 }

@@ -68,9 +68,6 @@ Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:seed.
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:seed_oil>*4, 256);
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:hootch>*4, 256);
 
-Mixer.addRecipe(<liquid:crystaloil>*1000,<liquid:canolaoil>*1000,[<actuallyadditions:item_misc:23>], 1000);
-Mixer.addRecipe(<liquid:empoweredoil>*1000,<liquid:crystaloil>*1000,[<actuallyadditions:item_misc:24>], 1000);
-
 MetalPress.removeRecipe(<immersiveengineering:graphite_electrode>);
 
 Compressor.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:17> * 8);
@@ -491,6 +488,12 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<immersiveengineering:metal_decoration1:1>,<ic2:blockminingpipe>,<immersiveengineering:metal_decoration1:1>],
             [<immersiveengineering:metal_decoration1:1>,<ic2:blockminingpipe>,<immersiveengineering:metal_decoration1:1>],
             [<immersiveengineering:metal_decoration0:4>,<immersiveengineering:drillhead>,<immersiveengineering:metal_decoration0:4>]
+        ]
+    ],
+    <immersiveengineering:wooden_device0:2> : [
+        [
+            [<ore:slabTreatedWood>,<ore:slabTreatedWood>,<ore:slabTreatedWood>],
+            [<forestry:worktable>,null,<immersiveengineering:wooden_decoration>]
         ]
     ]
 };

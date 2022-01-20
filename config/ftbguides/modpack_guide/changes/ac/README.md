@@ -2,7 +2,7 @@
 
 ## Ethaxium Ingot
 
-They no longer drop from the Gatekeeper Minions. But there also is a new alternative reicpe for them.
+**Ethaxium Ingots** no longer drop from the Gatekeeper Minions. Furthermore there is a new recipe for them.
 
 ## Hardmode
 

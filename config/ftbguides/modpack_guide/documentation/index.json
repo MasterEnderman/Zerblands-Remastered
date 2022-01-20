@@ -1,7 +1,47 @@
 [
     {
+        "id": "astral",
+        "title": "Astral Sorcery",
+        "icon": "item:astralsorcery:itemcraftingcomponent"
+    },
+    {
+        "id": "blood_arsenal",
+        "title": "Blood Arsenal",
+        "icon": "item:bloodarsenal:base_item"
+    },
+    {
+        "id": "bloodmagic",
+        "title": "Bloodmagic",
+        "icon": "item:bloodmagic:sacrificial_dagger"
+    },
+    {
+        "id": "draconicadditions",
+        "title": "Draconic Additions",
+        "icon": "item:draconicadditions:chaos_stabilizer_core"
+    },
+    {
         "id": "harvestcraft",
-        "title": "Pam's HarvestCraft",
+        "title": "Harvestcraft",
         "icon": "item:harvestcraft:freshwateritem"
+    },
+    {
+        "id": "lazy_ae2",
+        "title": "LazyAE2",
+        "icon": "item:threng:material"
+    },
+    {
+        "id": "notenoughwands",
+        "title": "NotEnoughWands",
+        "icon": "item:notenoughwands:acceleration_wand"
+    },
+    {
+        "id": "tico",
+        "title": "Tinkers' Construct",
+        "icon": "item:tconstruct:slime_boots"
+    },
+    {
+        "id": "woot",
+        "title": "Woot",
+        "icon": "item:woot:yahhammer"
     }
 ]

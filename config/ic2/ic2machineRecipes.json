@@ -221,7 +221,9 @@
   "ic2exprecipe_Electrum Wire_": true,
   "ic2exprecipe_Aluminium Wire_": true,
   "ic2exprecipe_Steel Wire_": true,
-  "ic2exprecipe_Lightning Rod_": true
+  "ic2exprecipe_Lightning Rod_": true,
+  "ic2exprecipe_Flat Transfer Node (Items)_": true,
+  "ic2exprecipe_Flat Transfer Node (Fluids)_": true
  },
  "compressor": {
   "tile.sandStone.default_1494879518": true,
@@ -260,7 +262,8 @@
   "ic2exprecipe_Pressed Clay_": true,
   "ic2exprecipe_HDPE Sheet_": true,
   "item.iridiumIngot_-610845883": false,
-  "ic2exprecipe_Bottle of Air_": true
+  "ic2exprecipe_Bottle of Air_": true,
+  "ic2exprecipe_Item Collector_": true
  },
  "massfabricatorAmplifier": {
   "ScrapAmplifier": true,

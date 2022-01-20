@@ -2,7 +2,7 @@
 
 ## Charged Certus Quartz
 
-Needs to be crafted, because it doesn't generate.
+The corresponding ore doesn't generate. Normal Certus Quartz needs to be charged.
 
 ## Pure Crystals
 

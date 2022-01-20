@@ -25,9 +25,11 @@ import mods.forestry.Centrifuge;
 import mods.forestry.ThermionicFabricator;
 import mods.ic2.Extractor;
 import mods.immersiveengineering.MetalPress;
+import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Squeezer;
 import mods.jei.JEI;
 import mods.thermalexpansion.Crucible;
+import mods.thermalexpansion.Transposer;
 
 import scripts.functions.calc_scientific;
 
@@ -56,6 +58,17 @@ JEI.addItem(<forestry:honey_drop:2>);
 
 recipes.remove(<forestry:humus>);
 
+recipes.remove(<forestry:ambrosia>);
+Transposer.addFillRecipe(<forestry:ambrosia>, <forestry:capsule>, <liquid:ambrosia> * 1000, 200);
+Mixer.addRecipe(<liquid:ambrosia> * 500,<liquid:for.honey> * 500,[
+    <forestry:pollen>,
+    <forestry:pollen:1>,
+    <forestry:royal_jelly>,
+    <forestry:honeydew>,
+    <forestry:refractory_wax>,
+    <contenttweaker:root_golden>
+], 1024);
+
 Crucible.addRecipe(<liquid:ice> * 500, <forestry:crafting_material:5>, 4000);
 
 Crucible.addRecipe(<liquid:for.honey> * 100, <forestry:honey_drop>, 4000);
@@ -72,6 +85,20 @@ Carpenter.addRecipe(<forestry:impregnated_casing>, [
     [<ore:fenceTreatedWood>,<actuallyadditions:block_misc:4>,<ore:fenceTreatedWood>],
     [<ore:scaffoldingTreatedWood>,<ore:fenceTreatedWood>,<ore:scaffoldingTreatedWood>]
 ], 60, <liquid:seed.oil> * 200, <thermalfoundation:material:22>);
+
+Carpenter.removeRecipe(<forestry:hardened_machine>);
+Carpenter.addRecipe(<forestry:hardened_machine>, [
+    [<quantumflux:craftingpiece:6>,<ore:plateInvar>,<quantumflux:craftingpiece:6>],
+    [<ore:plateInvar>,<forestry:sturdy_machine>,<ore:plateInvar>],
+    [<quantumflux:craftingpiece:6>,<ore:plateInvar>,<quantumflux:craftingpiece:6>]
+], 60, <liquid:soldering_alloy> * 288);
+
+Carpenter.removeRecipe(<forestry:crafting_material:6>);
+Carpenter.addRecipe(<forestry:crafting_material:6>, [
+    [<forestry:beeswax>,<forestry:oak_stick>,<forestry:oak_stick>],
+    [<forestry:oak_stick>,<botania:livingwood:5>,<forestry:oak_stick>],
+    [<forestry:oak_stick>,<forestry:oak_stick>,<forestry:beeswax>]
+], 60, <liquid:ambrosia> * 500, <morebees:framesweet>);
 
 var woodPulp as IIngredient[][][int] = {
     2 : [

@@ -20,6 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.forestry.Carpenter;
 import mods.thermalexpansion.InductionSmelter;
 
 recipes.removeShaped(<thermaldynamics:servo:1>);
@@ -120,3 +121,45 @@ InductionSmelter.addRecipe(<thermaldynamics:duct_0:3>, <thermaldynamics:duct_0:2
 
 InductionSmelter.addRecipe(<thermaldynamics:duct_0:8>, <thermaldynamics:duct_0:7>, <redstonerepository:material:1>, 4800);
 InductionSmelter.addRecipe(<thermaldynamics:duct_0:4>, <thermaldynamics:duct_0:3>, <redstonerepository:material:1>, 4800);
+
+recipes.removeByRecipeName("thermaldynamics:duct_32");
+Carpenter.addRecipe(<thermaldynamics:duct_32> * 8, [
+    [<ore:plateSilver>,<ore:fusedQuartz>,<ore:plateSilver>],
+    [<embers:item_pipe>,<extrautils2:pipe>,<embers:item_pipe>],
+    [<ore:plateSilver>,<ore:fusedQuartz>,<ore:plateSilver>]
+], 60, <liquid:soldering_alloy> * 288);
+
+recipes.removeByRecipeName("thermaldynamics:duct_32_1");
+Carpenter.addRecipe(<thermaldynamics:duct_32:1> * 8, [
+    [<ore:plateSilver>,<ore:plateTin>,<ore:plateSilver>],
+    [<embers:item_pipe>,<extrautils2:pipe>,<embers:item_pipe>],
+    [<ore:plateSilver>,<ore:plateTin>,<ore:plateSilver>]
+], 60, <liquid:soldering_alloy> * 288);
+
+recipes.removeByRecipeName("thermaldynamics:duct_16");
+Carpenter.addRecipe(<thermaldynamics:duct_16> * 8, [
+    [<ore:plateBronze>,<ore:fusedQuartz>,<ore:plateBronze>],
+    [<embers:pipe>,<extrautils2:pipe>,<embers:pipe>],
+    [<ore:plateBronze>,<ore:fusedQuartz>,<ore:plateBronze>]
+], 60, <liquid:soldering_alloy> * 288);
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_1");
+Carpenter.addRecipe(<thermaldynamics:duct_16:1> * 8, [
+    [<ore:plateBronze>,<ore:plateCopper>,<ore:plateBronze>],
+    [<embers:pipe>,<extrautils2:pipe>,<embers:pipe>],
+    [<ore:plateBronze>,<ore:plateCopper>,<ore:plateBronze>]
+], 60, <liquid:soldering_alloy> * 288);
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_2");
+Carpenter.addRecipe(<thermaldynamics:duct_16:2> * 8, [
+    [<ore:plateInvar>,<ore:fusedQuartz>,<ore:plateInvar>],
+    [<embers:pipe>,<extrautils2:pipe>,<embers:pipe>],
+    [<ore:plateInvar>,<ore:fusedQuartz>,<ore:plateInvar>]
+], 60, <liquid:soldering_alloy> * 288);
+
+recipes.removeByRecipeName("thermaldynamics:duct_16_3");
+Carpenter.addRecipe(<thermaldynamics:duct_16:3> * 8, [
+    [<ore:plateInvar>,<ore:plateSteel>,<ore:plateInvar>],
+    [<embers:pipe>,<extrautils2:pipe>,<embers:pipe>],
+    [<ore:plateInvar>,<ore:plateSteel>,<ore:plateInvar>]
+], 60, <liquid:soldering_alloy> * 288);
