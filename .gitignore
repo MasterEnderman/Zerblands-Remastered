@@ -80,3 +80,5 @@ config\.json
 manifest\.json
 
 backups\.json
+
+imgui\.ini
