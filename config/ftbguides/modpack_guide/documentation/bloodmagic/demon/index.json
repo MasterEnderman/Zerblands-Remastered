@@ -1,0 +1,77 @@
+[
+    {
+      "id": "demon_will",
+      "title": "Demon Will and Snares",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "hellfire_forge",
+      "title": "Hellfire Forge",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "petty_tartaric_gem",
+      "title": "Petty Tartaric Gem",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "sentient_sword",
+      "title": "Sentient Sword",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "lesser_tartaric_gem",
+      "title": "Lesser Tartaric Gem",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "unexpected_reactions",
+      "title": "Unexpected Reactions",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "sentient_armour",
+      "title": "Sentient Armour",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "item_routing",
+      "title": "Item Routing",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "demon_will_aura",
+      "title": "Demon Will Aura",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "different_will_types",
+      "title": "Different Will Types",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "demon_crucible",
+      "title": "Demon Crucible",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "demon_crystallizer",
+      "title": "Demon Crystallizer",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "demon_crystal_cluster",
+      "title": "Demon Crystal Cluster",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "demon_pylon",
+      "title": "Demon Pylon",
+      "icon": "item:bloodmagic:blood_shard"
+    },
+    {
+      "id": "demon_will_aura_gauge",
+      "title": "Demon Will Aura Gauge",
+      "icon": "item:bloodmagic:blood_shard"
+    }
+]

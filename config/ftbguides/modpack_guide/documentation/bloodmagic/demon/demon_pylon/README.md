@@ -1,0 +1,3 @@
+# Demon Pylon
+
+As you may know, Demon Aura remains in its own chunk if there are not any outside influences. Well, this is one of those influences. The Demon Pylon acts as a beacon for Will in the Aura, pulling the Will from neighbouring chunks (those chunks that are directly next to it in the four cardinal directions, not diagonal) into its chunk. The Pylon will attempt to equalize the Will in its chunk with its neighbour so that the Pylon's chunk has as much Will as its highest neighbour for each Will type. This process only happens one way, however: if the neighbouring chunk has less Will in it than the Pylon's chunk, the Will will not transfer the other direction.

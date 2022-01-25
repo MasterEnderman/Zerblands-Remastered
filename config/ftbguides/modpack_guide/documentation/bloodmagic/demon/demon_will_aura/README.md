@@ -1,0 +1,4 @@
+# Demon Will Aura
+
+When an entity is killed normally, it evaporates over time and returns to the creator. When captured in a snare, it is pulled into this plane from the ethereal and is sort of stuck. We have, for all intents and purposes, broken its programming and it has frozen all action. When we burn it, it returns to an ethereal state and is able to resume normal operations. If this Will is injected into the air, we can then harness it in a variety of ways. Some of them are mundane in nature, whereas others are quite powerful.
+Demon Will when injected into the air stays within the chunk that it was put in without migrating. Each chunk has their own stored Will, with each type of Will stored individually (more on that in a different section). This Will can be accessed and manipulated by other blocks and items.

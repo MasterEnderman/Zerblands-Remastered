@@ -1,0 +1,5 @@
+# Demon Crystal Cluster
+
+The Demon Crystal Cluster can either be created by a Demon Crystallizer or by crafting one in the Hellfire Forge with Demon Will Crystals. Crafted clusters can be placed on any solid surface, such as the floor, walls, and ceilings. There are a max of seven spires on the crystal when fully grown, and when broken with a pickaxe it will drop the spires as Demon Will Crystals. However, if you right-click the cluster when you have a Tartaric Gem with more than 1024 Raw Will inside of it, you can break off a single spire from the cluster without breaking the cluster itself; this will never break the main spire from the cluster.
+When left to its own devices, the cluster will syphon some Will of the same type from the Aura to grow itself slowly. This process is a bit slow, but there is a minor net gain.
+There are two rituals that are used to grow and harvest these crystals: the "Gathering of the Forsaken Souls" and the "Crack of the fractured Crystal". In order to find out how to use them, please refer to The Ritual Master.

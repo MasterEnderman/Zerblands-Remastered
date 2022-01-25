@@ -1,0 +1,3 @@
+# Well of Suffering
+
+For those of you who prefer to use mobs instead of your own health, the Well of Suffering damages all living non-player entities in a 10 block radius and places the health in a connected altar. The ritual will look for a blood altar within its range, checking 5 blocks horizontally and 10 blocks vertically unaltered. When it finds an altar, it will store its location internally - if there isn't an altar nearby, the ritual will not work. The ritual will deal 1 HP per entity and place 25 LP into the altar (100 for peaceful animals), which can be augmented with Sacrifice runes.

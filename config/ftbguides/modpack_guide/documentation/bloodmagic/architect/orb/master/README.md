@@ -1,0 +1,3 @@
+# Master Blood Orb
+
+One of the uses for this increased affinity for the Soul Network is to use the Weak Blood Shard in a new blood orb: the Master Blood Orb. This orb has a maximum capacity of 1 million LP, and thus allows the wielder of the orb to access more powerful items and rituals. Perhaps meteors are not out of your reach...

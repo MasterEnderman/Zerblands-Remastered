@@ -1,0 +1,4 @@
+# Living Armour Upgrade Tomes
+
+Sometimes you may not be happy with the upgrades that you have gotten on your Living Armour. By using the ritual "Sound of the Cleansing Soul" (more information can be found in "The Ritual Master"), you can remove all of the upgrades from the armour and receive them in the form of "Upgrade Tomes". If you right-click these while wearing a full set of Living Armour (and while you have space for the upgrade) you can add the upgrade to your armour.
+These tomes may also be combined in an anvil - if you combine two of the exact same upgrade tomes (same upgrade, same level) together in an anvil, you can get a single tome that is one level higher. So if you combine Quick Feet II with another Quick Feet II, you will get Quick Feet III. This can then be applied to the armour in the same way.

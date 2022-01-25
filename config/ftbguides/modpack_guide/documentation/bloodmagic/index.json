@@ -1,0 +1,22 @@
+[
+  {
+    "id": "alchemy",
+    "title": "The Alchemist",
+    "icon": "item:bloodmagic:arcane_ashes"
+  },
+  {
+    "id": "architect",
+    "title": "The Architect",
+    "icon": "item:bloodmagic:sigil_divination"
+  },
+  {
+    "id": "demon",
+    "title": "The Demon Kin",
+    "icon": "item:bloodmagic:blood_shard"
+  },
+  {
+    "id": "ritual",
+    "title": "The Ritual Master",
+    "icon": "item:bloodmagic:ritual_controller"
+  }
+]

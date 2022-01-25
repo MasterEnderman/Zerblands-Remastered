@@ -1,0 +1,3 @@
+# Sigil of Ender Severance
+
+Teleportation is one of those odd powers that people can't fully explain. In most instances, teleportation can be described as a temporary warp in space-time, linking two places in space together so that the object in question can simply "step" through to the other side. The Sigil of Ender Severance attempts to stop this warping that teleportation requires, preventing creatures from teleporting when they are around the user. This does not stop some of the larger means of teleportation such as portals, but it will prevent Endermen from using their powers to warp around the user.

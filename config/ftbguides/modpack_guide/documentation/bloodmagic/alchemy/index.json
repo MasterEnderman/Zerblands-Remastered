@@ -1,0 +1,47 @@
+[
+    {
+      "id": "bouncing",
+      "title": "Bouncing Array",
+      "icon": "item:bloodmagic:arcane_ashes"
+    },
+    {
+      "id": "furnace",
+      "title": "Burning Furnace Array",
+      "icon": "item:bloodmagic:arcane_ashes"
+    },
+    {
+      "id": "laputa",
+      "title": "Shard of Laputa",
+      "icon": "item:bloodmagic:arcane_ashes"
+    },
+    {
+      "id": "miner",
+      "title": "Fast Miner Array",
+      "icon": "item:bloodmagic:arcane_ashes"
+    },
+    {
+      "id": "movement",
+      "title": "Movement Array",
+      "icon": "item:bloodmagic:arcane_ashes"
+    },
+    {
+      "id": "skeleton",
+      "title": "Skeleton Turret Array",
+      "icon": "item:bloodmagic:arcane_ashes"
+    },
+    {
+      "id": "teleport",
+      "title": "Teleportation Array",
+      "icon": "item:bloodmagic:arcane_ashes"
+    },
+    {
+      "id": "turret",
+      "title": "Turret Array",
+      "icon": "item:bloodmagic:arcane_ashes"
+    },
+    {
+      "id": "updraft",
+      "title": "Updraft Array",
+      "icon": "item:bloodmagic:arcane_ashes"
+    }
+  ]

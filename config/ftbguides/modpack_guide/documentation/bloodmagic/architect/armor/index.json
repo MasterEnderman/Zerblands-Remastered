@@ -1,0 +1,27 @@
+[
+    {
+      "id": "armour",
+      "title": "Living Armour",
+      "icon": "item:bloodmagic:component 1 8"
+    },
+    {
+      "id": "tomes",
+      "title": "Living Armour Upgrade Tomes",
+      "icon": "item:bloodmagic:component 1 8"
+    },
+    {
+      "id": "downgrades",
+      "title": "Living Armour Downgrades",
+      "icon": "item:bloodmagic:component 1 8"
+    },
+    {
+      "id": "blade",
+      "title": "Bound Blade",
+      "icon": "item:bloodmagic:component 1 8"
+    },
+    {
+      "id": "tools",
+      "title": "Bound Tools",
+      "icon": "item:bloodmagic:component 1 8"
+    }
+]

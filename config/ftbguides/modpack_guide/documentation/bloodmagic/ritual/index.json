@@ -1,0 +1,192 @@
+[
+    {
+      "id": "full_spring",
+      "title": "Ritual of the Full Spring",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "green_grove",
+      "title": "Ritual of the Green Grove",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "lava",
+      "title": "Serenade of the Nether",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "magnetism",
+      "title": "Ritual of Magnetism",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "crusher",
+      "title": "Ritual of the Crusher",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "high_jump",
+      "title": "Ritual of the High Jump",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "speed",
+      "title": "Ritual of the High Jump",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "well_of_suffering",
+      "title": "Well of Suffering",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "feathered_knife",
+      "title": "Ritual of the Feathered Knife",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "regen",
+      "title": "Ritual of Regeneration",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "harvest",
+      "title": "Reap of the Harvest Moon",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "interdiction",
+      "title": "Ritual of Interdiction",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "containment",
+      "title": "Ritual of Containment",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "suppression",
+      "title": "Ritual of Suppression",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "expulsion",
+      "title": "Aura of Expulsion",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "zephyr",
+      "title": "Call of Zephyr",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "laying",
+      "title": "Laying of the Filler",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "timberman",
+      "title": "Crash of the Timberman",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "meteor",
+      "title": "Mark of the Falling Tower",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "downgrade",
+      "title": "Penance of the Leadened Soul",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "crystal_split",
+      "title": "Resonance of the Faceted Crystal",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "portal",
+      "title": "The Gate of the Fold",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "altar_builder",
+      "title": "The Assembly of the High Altar",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "pump",
+      "title": "Hymn of Syphoning",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "cobble",
+      "title": "Le Vulcanos Frigius",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "ellipsoid",
+      "title": "Focus of the Ellipsoid",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "crystal_harvest",
+      "title": "Crack of the Fractured Crystal",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "forsaken_soul",
+      "title": "Gathering of the Forsaken Souls",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "animal_growth",
+      "title": "Ritual of the Shephard",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "living_evolution",
+      "title": "Ritual of the Living Evolution",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "upgrade_remove",
+      "title": "Ritual of the Cleansing Soul",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "full_stomach",
+      "title": "Ritual of the Satiated Stomach",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "eternal_soul",
+      "title": "Ritual of the Eternal Soul",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "condor",
+      "title": "Reverence of the Condor",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "feathered_earth",
+      "title": "Ritual of the Feathered Earth",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "grounding",
+      "title": "Ritual of Grounding",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "veil_of_evil",
+      "title": "Veil of Evil",
+      "icon": "item:bloodmagic:ritual_controller"
+    },
+    {
+      "id": "ward_of_sacrosanctity",
+      "title": "Ward of Sacrosanctity",
+      "icon": "item:bloodmagic:ritual_controller"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+      "id": "soul",
+      "title": "Soul Network",
+      "icon": "item:bloodmagic:altar"
+    },
+    {
+      "id": "blood",
+      "title": "The Blood Altar",
+      "icon": "item:bloodmagic:altar"
+    },
+    {
+      "id": "rune",
+      "title": "Upgrading your Altar",
+      "icon": "item:bloodmagic:altar"
+    },
+    {
+      "id": "incense",
+      "title": "Incense Altar",
+      "icon": "item:bloodmagic:altar"
+    },
+    {
+      "id": "dagger",
+      "title": "Dagger of Sacrifice",
+      "icon": "item:bloodmagic:altar"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+      "id": "ash",
+      "title": "Arcane Ash",
+      "icon": "item:bloodmagic:teleposer"
+    },
+    {
+      "id": "lava",
+      "title": "Lava Crystal",
+      "icon": "item:bloodmagic:teleposer"
+    },
+    {
+      "id": "shard",
+      "title": "Weak Blood Shard",
+      "icon": "item:bloodmagic:teleposer"
+    },
+    {
+      "id": "tome",
+      "title": "Tome of Peritia",
+      "icon": "item:bloodmagic:teleposer"
+    },
+    {
+      "id": "reader",
+      "title": "Inspectoris Scandalum (Block Reader)",
+      "icon": "item:bloodmagic:teleposer"
+    },
+    {
+      "id": "teleposer",
+      "title": "Teleposer",
+      "icon": "item:bloodmagic:teleposer"
+    },
+    {
+      "id": "mimic",
+      "title": "Mimics",
+      "icon": "item:bloodmagic:teleposer"
+    }
+]

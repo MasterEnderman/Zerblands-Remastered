@@ -1,0 +1,4 @@
+# Teleportation Array (Ender Pearl + Redstone)
+
+The Teleportation Array acts as a way to travel instantly from one location to another with a few specific limitations. When a player or other entity steps onto the array, the array will search up to 20 blocks away in the direction it is facing for another alchemy array (which does not need to be active). If the array manages to successfully find a destination, it will then teleport the entity to its found array instantly, even through walls.
+Studying this array has shown that there are further limitations added to it: because of the nature of bending the fabric of space-time, a Teleportation Array will not teleport something that has teleported within 2 seconds. This is to allow time for all components to rearrange themselves in a desirable manner.

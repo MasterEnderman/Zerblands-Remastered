@@ -1,0 +1,5 @@
+# Sigil of Holding
+
+As you will start to realize, there are a lot of useful sigils that are available - some toggleable, others active use. Because of this your inventory will quickly become clogged up. This need is filled by the Sigil of Holding.
+This sigil can hold up to five other sigils (no, it cannot hold other Sigils of Holding) in its internal inventory. By pressing the "Holding" key, default 'H', you can open up the sigil's GUI to rearrange the sigils that are held. If you shift and use the scroll-wheel while it is equipped, you will cycle through the contained sigils. Once you land on the sigil that you want to use, you can use the sigil as if it was the one selected!
+Naturally, you can have multiple Sigils of Holding, each with their own inventory. To help determine which one is which at a glance, you can dye the sigil using the Alchemy Table. To do this, either place the Sigil of Holding in the Alchemy Table with a dye, or the sigil with a name tag with the colour that you want in 0xZZZZZZ format for the name.

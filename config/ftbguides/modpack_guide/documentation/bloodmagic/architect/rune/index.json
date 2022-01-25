@@ -1,0 +1,47 @@
+[
+    {
+      "id": "speed",
+      "title": "Speed Rune",
+      "icon": "item:bloodmagic:blood_rune"
+    },
+    {
+      "id": "sacrifice",
+      "title": "Rune of Sacrifice",
+      "icon": "item:bloodmagic:blood_rune"
+    },
+    {
+      "id": "self_sacrifice",
+      "title": "Rune of Self Sacrifice",
+      "icon": "item:bloodmagic:blood_rune"
+    },
+    {
+      "id": "capacity",
+      "title": "Rune of Capacity",
+      "icon": "item:bloodmagic:blood_rune"
+    },
+    {
+      "id": "displacement",
+      "title": "Displacement Rune",
+      "icon": "item:bloodmagic:blood_rune"
+    },
+    {
+      "id": "orb",
+      "title": "Rune of the Orb",
+      "icon": "item:bloodmagic:blood_rune"
+    },
+    {
+      "id": "aug_capacity",
+      "title": "Rune of Augmented Capacity",
+      "icon": "item:bloodmagic:blood_rune"
+    },
+    {
+      "id": "charging",
+      "title": "Charging Rune",
+      "icon": "item:bloodmagic:blood_rune"
+    },
+    {
+      "id": "acceleration",
+      "title": "Rune of Acceleration",
+      "icon": "item:bloodmagic:blood_rune"
+    }
+]

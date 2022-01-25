@@ -1,0 +1,32 @@
+[
+    {
+      "id": "altar",
+      "title": "The Blood Altar",
+      "icon": "item:bloodmagic:altar"
+    },
+    {
+      "id": "orb",
+      "title": "The Blood Orbs",
+      "icon": "item:bloodmagic:blood_orb"
+    },
+    {
+      "id": "rune",
+      "title": "Blood Altar Runes",
+      "icon": "item:bloodmagic:blood_rune"
+    },
+    {
+      "id": "sigil",
+      "title": "Sigils",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "armor",
+      "title": "Armor and Weaponry",
+      "icon": "item:bloodmagic:bound_sword"
+    },
+    {
+      "id": "misc",
+      "title": "Usefull Blocks and Tools",
+      "icon": "item:bloodmagic:teleposer"
+    }
+]

@@ -1,0 +1,20 @@
+# The Alchemist
+
+## Introduction
+
+My name is Vlad Highborn, and I am a Blood Mage. I have studied the intricate workings of alchemy and the process of "Equivalent Exchange," which governs all aspects of magic. Basically, you cannot create something from nothing, although many have tried when searching for a particular stone. That obviously didn't end well, because people are clamoring for a fake variant even today. Of course simply saying that I am an alchemist isn't enough, because one of the main things I do is study Blood Magic with The Ritual Master and The Architect, both of whom have achieved those titles by their own merits. Magus and Tiberius have been busy recording their own works over the years, although I don't think Magus has everything written down in a book - I have yet to find any actual proof.
+My book deals with all things alchemical in Blood Magic. From the uses of Arcane Ash to the intricate workings of the Alchemy Table, you will find everything you need to know about some of the more complex elements in the world. Not everything you need to know is in this book - for a full understanding about Blood Magic, you will need to read the other entries in this entire tome.
+But for now, I hope you enjoy my research notes. You shan't find any lies between these covers.
+
+## Arcane Ash
+
+Arcane Ash is necessary in order to create alchemy arrays, powerful circles that are able to provide various effects. This ash is crafted using the Hellfire Forge and Demon Will, so if you are new to this concept please consult the "Demon Kin."
+The ash has a total of twenty uses before you need to craft another. When you right click on the ground (or a wall, though it will only render one direction), you will inscribe a simple circle out of ash. If you click on the ash again with an item, it will be "placed inside of the ash" - assuming that this item is valid, the circle will change shape to represent that it is ready for the next item. If it doesn't change shape, then you did something wrong.
+Once it has changed shape, you can then place in the secondary item. If this item matches with the first item, the circle will start rotating and performing different actions depending on the recipe it is working on.
+Every non-crafting effect that can be performed using these arrays can be found in this book, and even if the recipe changes through 3rd party means it will show updated here. The items shown are the order they need to be placed in.
+
+## Buff Arrays
+
+Through rigorous study, you realize that alchemical arrays have a wide range of applications. So far, you have managed to create powerful items through crafting arrays, as well as a couple of arrays that provide functional benefits such as rapid movement and weak forms of teleportation. However, one of the uses that you have yet to tap into is providing powerful buffs through an active array.
+"Buff Arrays" are the general term for alchemy arrays that provide some buff to players within its area of effect. These areas of effect tends to have a very large radius which cannot be manipulated (unlike Rituals). However, because alchemy arrays have no concept of a Soul Network, they have to power their effects through other means: mainly through direct blood offerings. In simplified terms, this means that whenever the array will apply a buff, it will damage (take HP) from the player that it is cast on.
+Because of the direct nature of these sacrifices, the HP -> buff conversion is a lot more favourable for players in the early game compared to similar buffs in the mod. For instance, if a buff from a sigil cost 100 LP for 10 seconds of activation, a more powerful buff can be applied by the array for 30 seconds for 1 HP (which is 100 LP in a T1 altar with no runes). This can be seen as a lot more efficient in the early tiers, while during the later tiers it is not as efficient of an effect. However, because of the stationary nature of the arrays, they will tend to provide a stronger effect than their sigil counter parts, so people may wish to still use it in the late-game.

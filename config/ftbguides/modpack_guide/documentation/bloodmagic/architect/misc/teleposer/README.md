@@ -1,0 +1,7 @@
+# Teleposer
+
+The Teleposer is a device that teleports not just entities but blocks as well. In order to set up a Teleposer, you need at least two Teleposers and one Teleposition focus. One of the Teleposers acts as the Destination, and the other acts as the Beginning.
+To set this up, you need to first bind the focus to you by right clicking it. You then right click the focus onto the Destination Teleposer to save its location (and dimension) and then insert the focus into the Beginning Teleposer by right clicking the Teleposer without a focus in your hand and placing the focus inside of the GUI.
+Powering the Beginning Teleposer (the one with the focus) with a strong redstone signal will cause the Teleposers to swap the entities and blocks (including any content in the tiles such as chest inventories) between the Teleposers, assuming that there is a Teleposer at the Destination.
+You can either have one Teleposer have a focus, have both of the Teleposers have foci that are linked to each other, or you can have one Teleposer linked to another Teleposer that is not linked to it, so depending on how you set them up you can have very intricate systems.
+Keep in mind that currently the Teleposer will only swap the blocks and entities that are right above the block, and the size depends on the focus - the T1 focus only swaps the block on top of the Teleposer, the T2 focus swaps a 3x3x3 area above the Teleposer, etc.

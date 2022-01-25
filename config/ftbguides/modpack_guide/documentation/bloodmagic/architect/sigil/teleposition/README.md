@@ -1,0 +1,3 @@
+# Teleposition Sigil
+
+The Teleposition Sigil has a contained Teleposer and focus in its structure. If you right click a Teleposer with this sigil, you can bind the coordinates and dimension to the sigil. Now, whenever you right click the sigil it will telepose you directly to the Teleposer (if it is there). Unfortunately, it doesn't seem like you are able to do a return trip...

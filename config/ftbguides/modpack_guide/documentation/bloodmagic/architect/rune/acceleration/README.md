@@ -1,0 +1,4 @@
+# Rune of Acceleration
+
+Unlike most runes, the Rune of Acceleration works best only when paired with other runes, and its effects only increase to a limited amount. What this rune does is it increases the number of processing ticks that can occur in a given period of time, specifically when it comes to the Displacement Rune and Charging Rune. For each rune added, the number of ticks before the next processing tick decreases by one. For instance, by default the Displacement Rune displaces liquids at a rate of one operation per 20 ticks - with 10 Runes of Acceleration, this would occur at a rate of one operation per 10 ticks.
+Obviously the maximum number of Acceleration Runes that presently matter is 19 - if you have this many, the Displacement Rune and Charging Rune will both activate their effects each tick. Noice!

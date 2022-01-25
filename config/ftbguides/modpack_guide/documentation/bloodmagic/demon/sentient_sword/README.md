@@ -1,0 +1,8 @@
+# Sentient Sword
+
+My snares got tangled again.
+It doesn't seem to matter how much I try to improve the design of them, the rudimentary snare never seems to work perfectly. It just gets tangled most of the time, and when I finally do manage to hit a zombie with it it's more likely to not work than work. In order to stop myself from pulling my own hair out, I went to the forge again and got to work right away.
+Well, not right away, since I had to first clean the ash off the top of it again.
+I infused the demon will-holding capabilities of the petty tartaric gem with an iron sword, and managed to create a blade that... was very dull and hardly did more damage than my fist. I was actually very disappointed with the outcome, because it took a long time of fiddling with the forge so that it would not overheat from the strain of using a petty tartaric gem as its power source.
+However, as soon as I picked up my Tartaric gem, the sword started to glow with a new energy. It seems that the higher the amount of demonic Will I have on my person, the more damage I seem to do with the sword as well as the more demon will that drops. Whenever you don't have a gem, the Will amount is very... miniscule.
+After a bit of testing I came to another realization: depending on what I kill, I receive different amounts of Will. It seems proportional to the amount of maximum health that the monster has - a spider, since it has a max health of 8 hearts gives 80%% the Will of a zombie, which has 10 hearts. This is probably because these monsters require more Will to animate. I should keep this in mind for later.

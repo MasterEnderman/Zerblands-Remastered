@@ -1,0 +1,92 @@
+[
+    {
+      "id": "divination",
+      "title": "Divination Sigil",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "water",
+      "title": "Water Sigil",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "lava",
+      "title": "Lava Sigil",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "holding",
+      "title": "Sigil of Holding",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "air",
+      "title": "Air Sigil",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "void",
+      "title": "Void Sigil",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "grove",
+      "title": "Sigil of the Green Grove",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "miner",
+      "title": "Sigil of the Fast Miner",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "seer",
+      "title": "Seer's Sigil",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "affinity",
+      "title": "Sigil of Elemental Affinity",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "lamp",
+      "title": "Sigil of the Blood Lamp",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "magnet",
+      "title": "Sigil of Magnetism",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "suppression",
+      "title": "Sigil of Suppression",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "haste",
+      "title": "Sigil of Haste",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "ender",
+      "title": "Sigil of Ender Severance",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "teleposition",
+      "title": "Teleposition Sigil",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "compression",
+      "title": "Sigil of Compression",
+      "icon": "item:bloodmagic:sigil_divination"
+    },
+    {
+      "id": "phantom",
+      "title": "Sigil of the Phantom Bridge",
+      "icon": "item:bloodmagic:sigil_divination"
+    }
+]

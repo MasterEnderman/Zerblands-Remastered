@@ -1,0 +1,22 @@
+[
+    {
+      "id": "weak",
+      "title": "Weak Blood Orb",
+      "icon": "item:bloodmagic:blood_orb"
+    },
+    {
+      "id": "apprentice",
+      "title": "Apprentice Blood Orb",
+      "icon": "item:bloodmagic:blood_orb 1 1"
+    },
+    {
+      "id": "magician",
+      "title": "Magician Blood Orb",
+      "icon": "item:bloodmagic:blood_orb 1 2"
+    },
+    {
+      "id": "master",
+      "title": "Master Blood Orb",
+      "icon": "item:bloodmagic:blood_orb 1 3"
+    }
+]
