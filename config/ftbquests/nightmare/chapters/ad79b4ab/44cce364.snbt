@@ -1,0 +1,15 @@
+{
+	x: -10.0d,
+	y: 14.5d,
+	dependencies: [
+		"d4bcf09c",
+		"3946245f"
+	],
+	tasks: [{
+		uid: "e003a97d",
+		type: "item",
+		items: [{
+			item: "botanicadds:terra_catalyst"
+		}]
+	}]
+}

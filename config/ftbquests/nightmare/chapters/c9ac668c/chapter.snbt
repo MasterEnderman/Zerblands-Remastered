@@ -1,0 +1,24 @@
+{
+	title: "Pre-Mid-Game",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "astralsorcery:blockaltar",
+		Damage: 1s
+	},
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "",
+	images: [{
+		x: 0.0d,
+		y: -4.0d,
+		width: 12.0d,
+		height: 3.0d,
+		rotation: 0.0d,
+		image: "zerblands:mainmenu/modpack.png",
+		hover: [],
+		click: "",
+		dev: false
+	}]
+}

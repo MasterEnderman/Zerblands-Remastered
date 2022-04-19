@@ -120,8 +120,8 @@ AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:1>, [<ore:ingotVividAll
 ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:1>, <ore:ingotVividAlloy>, null, 200, 512, [<quantumflux:craftingpiece:6>,<bloodmagic:item_demon_crystal>]);
 
 // Crystalline Pink Slime
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4>, [<ore:ingotKnightslime>,<ore:ingotCrystallineAlloy>,<ore:ingotVibrantAlloy>], 25000);
-ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:4>, <ore:ingotKnightslime>, null, 200, 512, [<ore:ingotCrystallineAlloy>,<ore:ingotVibrantAlloy>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4>, [<ore:ingotPinkMetal>,<ore:ingotCrystallineAlloy>,<ore:ingotVibrantAlloy>], 25000);
+ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:4>, <ore:ingotPinkMetal>, null, 200, 512, [<ore:ingotCrystallineAlloy>,<ore:ingotVibrantAlloy>]);
 
 // Melodic ALloy Ingot
 AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:2>, [<ore:ingotDraconium>,<enderutilities:enderpart:2>,<ore:ingotCrystallinePinkSlime>], 25000);
@@ -250,6 +250,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:ingotVibrantAlloy>|<ore:ingotVividAlloy>,capacitorT3,<ore:ingotVibrantAlloy>|<ore:ingotVividAlloy>]
         ]
     ],
+    <enderio:block_crafter> : [
+        [
+            [<ore:itemSilicon>,<evilcraft:exalted_crafter:1>,<ore:itemSilicon>],
+            [<opencomputers:material:7>,<forestry:worktable>,<opencomputers:material:7>],
+            [<enderio:item_material:11>,<enderio:item_material:1>,<enderio:item_material:11>]
+        ]
+    ]
 };
 
 for key, value in recipeMapShaped {
@@ -336,10 +343,10 @@ Altar.addConstellationAltarRecipe("soul_chassis", <enderio:item_material:53>, 80
     <enderio:item_material:52>,
     <thermalexpansion:frame:147>,
     <enderio:item_material:52>,
-    <ore:ingot_dark_soularium>,
-    <ore:ingot_dark_soularium>,
-    <ore:ingot_dark_soularium>,
-    <ore:ingot_dark_soularium>,
+    <ore:ingotSoularium>,
+    <ore:ingotSoularium>,
+    <ore:ingotSoularium>,
+    <ore:ingotSoularium>,
     <appliedenergistics2:quartz_vibrant_glass>,
     <appliedenergistics2:quartz_vibrant_glass>,
     <appliedenergistics2:quartz_vibrant_glass>,
@@ -388,10 +395,10 @@ Altar.addTraitAltarRecipe("endsteel_chassis", <enderio:item_material:66>, 4500, 
     <redstonerepository:material:7>,
     <ic2:bigquantumaccumulator>,
     <redstonerepository:material:7>,
-    <enderio:item_alloy_ingot:8>,
-	<enderio:item_alloy_ingot:8>,
-    <enderio:item_alloy_ingot:8>,
-    <enderio:item_alloy_ingot:8>,
+    <ore:ingotLudicrite>,
+	<ore:ingotLudicrite>,
+    <ore:ingotLudicrite>,
+    <ore:ingotLudicrite>,
     <enderio:block_end_iron_bars>,
     <enderio:block_end_iron_bars>,
 	<enderio:block_end_iron_bars>,
@@ -535,3 +542,32 @@ AlloySmelter.addRecipe(<enderio:item_item_conduit> * 2, [
     <enderio:item_material:4> * 2,
     <enderio:item_alloy_nugget:5> * 3
 ], 5000);
+
+SliceNSplice.addRecipe(<enderio:item_material>, [
+    <ore:plateDawnstone>, <embers:mech_core>, <ore:plateDawnstone>,
+    <ore:gearIronInfinity>,<ore:plateLead>,<ore:gearIronInfinity>
+], 5000);
+SliceNSplice.addRecipe(<enderio:item_material:1>, [
+    <enderio:item_material>, <opencomputers:component>, <thermalexpansion:frame:146>,
+    <actuallyadditions:item_crystal_empowered:3>,<ore:ingotDarkSteel>,<enderio:item_material:51>
+], 10000);
+SliceNSplice.addRecipe(<enderio:item_material:53>, [
+    <enderio:item_material:1>, <extrautils2:poweroverload>, <thermalexpansion:frame:147>,
+    <actuallyadditions:item_crystal_empowered:5>,<ore:ingotSoularium>,<enderio:item_material:52>
+], 20000);
+
+AlloySmelter.removeRecipe(<enderio:item_material:75>);
+AlloySmelter.addRecipe(<enderio:item_material:75>,[<enderio:item_material:20>,<ic2:itemmisc:7>],1500);
+AlloySmelter.addRecipe(<enderio:item_material:75>,[<enderio:item_material:20>,<ic2:itemmisc:13>],1500);
+
+recipes.remove(<enderio:item_material:38>);
+recipes.addShapeless(<enderio:item_material:38> * 3,[
+    <contenttweaker:material_part:94>,
+    <extrautils2:ingredients:3>,
+    <contenttweaker:lithium_dust>,
+    <enderio:block_holier_fog>,
+    <enderio:item_material:75>
+]);
+
+AlloySmelter.removeRecipe(<enderio:item_material:3>);
+AlloySmelter.addRecipe(<enderio:item_material:3>,[<botania:managlasspane>,<enderio:item_material:38>,<contenttweaker:electro_silicon>],15000);

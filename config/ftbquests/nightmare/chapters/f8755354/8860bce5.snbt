@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: 11.0d,
+	dependencies: [
+		"4d8eb0e4"
+	],
+	tasks: [{
+		uid: "074cec86",
+		type: "item",
+		items: [{
+			item: "contenttweaker:circuit8_dirty"
+		}]
+	}]
+}

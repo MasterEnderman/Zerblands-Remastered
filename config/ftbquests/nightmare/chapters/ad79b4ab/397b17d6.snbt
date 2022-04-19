@@ -1,0 +1,18 @@
+{
+	x: -14.0d,
+	y: 8.5d,
+	text: [
+		"Use the ingame Guide on how to use the Ritual."
+	],
+	dependencies: [
+		"7091a7bb",
+		"05bfff9d"
+	],
+	tasks: [{
+		uid: "a103d657",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_shard 1 1"
+		}]
+	}]
+}

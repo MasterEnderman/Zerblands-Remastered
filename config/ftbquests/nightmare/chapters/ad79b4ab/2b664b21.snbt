@@ -1,0 +1,15 @@
+{
+	x: -16.0d,
+	y: 26.5d,
+	dependencies: [
+		"da07248b",
+		"2ec2aba1"
+	],
+	tasks: [{
+		uid: "5671efc4",
+		type: "item",
+		items: [{
+			item: "ic2:blockmachinemv"
+		}]
+	}]
+}

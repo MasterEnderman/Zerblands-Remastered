@@ -68,7 +68,8 @@ calc_basic(<contenttweaker:redstone_ingot>,<contenttweaker:reinforcediron_ingot>
 calc_basic(<contenttweaker:enriched_coal>,<ore:fuelCoke>,<contenttweaker:enrichedgold>);
 calc_basic(<contenttweaker:firecoal>,<contenttweaker:enriched_coal>,<evilcraft:blood_waxed_coal>);
 calc_basic(<contenttweaker:firecoal>,<contenttweaker:enriched_coal>,<abyssalcraft:charcoal>);
-calc_basic(<contenttweaker:controlled_fuel>,<contenttweaker:firecoal>,<contenttweaker:circuit8>);
+calc_basic(<contenttweaker:controlled_fuel> * 16,<contenttweaker:firecoal>,<contenttweaker:circuit8>);
+calc_basic(<contenttweaker:controlled_fuel> * 4,<contenttweaker:firecoal>,<ic2:itemmisc:452>);
 
 calc_scientific(<contenttweaker:weakeneddiamond>*4,<ore:gemDiamond>,<contenttweaker:reinforcediron_ingot>);
 
@@ -128,33 +129,33 @@ Empowerer.addRecipe(<contenttweaker:flawlessdiamond>, <contenttweaker:atomicbind
 
 Carpenter.addRecipe(<contenttweaker:energy_module>, [
     [<ore:plateBatteryAlloy>,<actuallyadditions:item_battery>,<ore:plateBatteryAlloy>],
-    [<ore:plateBatteryAlloy>,<rs_ctr:power_hub>,<ore:plateBatteryAlloy>],
+    [<ore:plateBatteryAlloy>,<contenttweaker:heat_conductor>,<ore:plateBatteryAlloy>],
     [<ore:plateBatteryAlloy>,<actuallyadditions:item_battery>,<ore:plateBatteryAlloy>]
-], 40, <liquid:sulfuric_acid> * 250, <contenttweaker:module_energy>);
+], 10, <liquid:sulfuric_acid> * 250, <contenttweaker:module_energy>);
 
 Carpenter.addRecipe(<contenttweaker:warp_module>, [
     [<ore:ingotEnergeticSilver>,<enderio:item_material:64>,<ore:ingotEnergeticSilver>],
     [<ore:plateGelidEnderium>,<botania:lens:18>,<ore:plateGelidEnderium>],
     [<ore:ingotEnergeticSilver>,<simplyjetpacks:metaitemmods:30>,<ore:ingotEnergeticSilver>]
-], 40, <liquid:sulfuric_acid> * 250, <forestry:chipsets:3>);
+], 10, <liquid:sulfuric_acid> * 250, <forestry:chipsets:3>);
 
 Carpenter.addRecipe(<contenttweaker:jump_module>, [
     [<cd4017be_lib:m:401>,<enderutilities:ender_elevator>,<cd4017be_lib:m:401>],
     [<enderutilities:linkcrystal>,<superiorshields:thermal_shield_enderium>,<enderutilities:linkcrystal>],
     [<cd4017be_lib:m:401>,<enderutilities:ender_elevator>,<cd4017be_lib:m:401>]
-], 40, <liquid:vapor_of_levity> * 250, <simplyjetpacks:metaitemmods:15>);
+], 10, <liquid:vapor_of_levity> * 250, <simplyjetpacks:metaitemmods:15>);
 
 Carpenter.addRecipe(<contenttweaker:module_void>, [
     [<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:module_transfer>,<actuallyadditions:item_crystal_empowered:3>],
     [<xreliquary:void_tear>,<botania:blackholetalisman>,<xreliquary:void_tear>],
     [<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:module_transfer>,<actuallyadditions:item_crystal_empowered:3>]
-], 40, <liquid:ender_distillation> * 250, <bloodmagic:component:4>);
+], 10, <liquid:ender_distillation> * 250, <bloodmagic:component:4>);
 
 Carpenter.addRecipe(<contenttweaker:flux_module>, [
     [<ore:plateTungsten>,<ic2:itemcable:16>,<ore:plateTungsten>],
     [<redstonearsenal:material:224>,<gravisuit:coolingcore>,<redstonearsenal:material:224>],
     [<ore:plateTungsten>,<ic2:itemcable:16>,<ore:plateTungsten>]
-], 40, <liquid:battery_solution> * 1000, <fluxnetworks:fluxcore>);
+], 10, <liquid:battery_solution> * 1000, <fluxnetworks:fluxcore>);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <contenttweaker:calculator_assembly> : [

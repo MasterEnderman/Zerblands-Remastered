@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: 22.5d,
+	dependencies: [
+		"6ac42843"
+	],
+	tasks: [{
+		uid: "675dbf23",
+		type: "item",
+		items: [{
+			item: "contenttweaker:engraved_lapotronic_chip"
+		}]
+	}]
+}

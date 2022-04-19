@@ -72,15 +72,15 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <fluxnetworks:fluxpoint> : [
         [
             [<fluxnetworks:fluxcore>,<draconicevolution:energy_crystal:5>,<fluxnetworks:fluxcore>],
-            [<randomthings:spectrecharger:2>,<xnet:netcable>,<randomthings:spectrecharger:2>],
-            [<fluxnetworks:fluxcore>,<ic2:itemmisc:264>,<fluxnetworks:fluxcore>]
+            [<randomthings:spectrecoil_ender>,<xnet:netcable>,<randomthings:spectrecoil_ender>],
+            [<fluxnetworks:fluxcore>,<contenttweaker:flux_module>,<fluxnetworks:fluxcore>]
         ]
     ],
     <fluxnetworks:fluxplug> : [
         [
             [<fluxnetworks:fluxcore>,<draconicevolution:energy_crystal:2>,<fluxnetworks:fluxcore>],
-            [<randomthings:spectrecharger:2>,<xnet:netcable>,<randomthings:spectrecharger:2>],
-            [<fluxnetworks:fluxcore>,<ic2:itemmisc:264>,<fluxnetworks:fluxcore>]
+            [<randomthings:spectrecoil_ender>,<xnet:netcable>,<randomthings:spectrecoil_ender>],
+            [<fluxnetworks:fluxcore>,<contenttweaker:flux_module>,<fluxnetworks:fluxcore>]
         ]
     ]
 };
@@ -125,7 +125,7 @@ Altar.addTraitAltarRecipe("fluxcontroller", <fluxnetworks:fluxcontroller>, 4500,
     <ic2:blockutility:3>,
 	//Outer Items, indices 25+
 	<botanicadds:rune_energy>,
-    <draconicevolution:draconic_core>,
+    <contenttweaker:lapotronic_energy_orb>,
     <contenttweaker:flux_module>,
-    <draconicevolution:draconic_core>
+    <contenttweaker:lapotronic_energy_orb>
 ], "astralsorcery.constellation.discidia");

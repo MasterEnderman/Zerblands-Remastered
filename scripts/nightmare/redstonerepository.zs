@@ -34,4 +34,4 @@ Carpenter.addRecipe(<redstonerepository:material:7>, [
     [<ore:plateGelidEnderium>,<ore:gearGelidEnderium>,<ore:plateGelidEnderium>],
     [<ore:gearGelidEnderium>,<draconicevolution:draconic_core>,<ore:gearGelidEnderium>],
     [<ore:plateGelidEnderium>,<ore:gearGelidEnderium>,<ore:plateGelidEnderium>]
-], 60, <liquid:empoweredoil> * 1000, <ic2:itembatlamacrystal>);
+], 20, <liquid:empoweredoil> * 1000, <ic2:itembatlamacrystal>);

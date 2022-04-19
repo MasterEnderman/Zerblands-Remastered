@@ -1,0 +1,14 @@
+{
+	x: -14.0d,
+	y: 16.5d,
+	dependencies: [
+		"c20a0275"
+	],
+	tasks: [{
+		uid: "60fcea02",
+		type: "item",
+		items: [{
+			item: "abyssalcraft:dreadiumingot"
+		}]
+	}]
+}

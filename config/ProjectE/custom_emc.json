@@ -237,30 +237,6 @@
       "emc": 42560
     },
     {
-      "item": "calculator:enrichedgoldingot|0",
-      "emc": 528
-    },
-    {
-      "item": "calculator:weakeneddiamond|0",
-      "emc": 2048
-    },
-    {
-      "item": "calculator:flawlessdiamond|0",
-      "emc": 16454
-    },
-    {
-      "item": "calculator:firediamond|0",
-      "emc": 17920
-    },
-    {
-      "item": "calculator:electricdiamond|0",
-      "emc": 17920
-    },
-    {
-      "item": "calculator:enddiamond|0",
-      "emc": 17985
-    },
-    {
       "item": "draconicevolution:chaos_shard|3",
       "emc": 379024
     },
@@ -355,22 +331,6 @@
     {
       "item": "actuallyadditions:block_testifi_bucks_white_wall|0",
       "emc": 1024
-    },
-    {
-      "item": "calculator:redstoneingot|0",
-      "emc": 320
-    },
-    {
-      "item": "calculator:enrichedcoal|0",
-      "emc": 192
-    },
-    {
-      "item": "calculator:purifiedcoal|0",
-      "emc": 720
-    },
-    {
-      "item": "calculator:energymodule|0",
-      "emc": 736
     },
     {
       "item": "draconicevolution:energy_crystal|0",
@@ -731,6 +691,30 @@
     {
       "item": "draconicadditions:chaos_crystal_stable|0",
       "emc": 1381542480
+    },
+    {
+      "item": "tconevo:metal|0",
+      "emc": 2033472
+    },
+    {
+      "item": "tconevo:metal|4",
+      "emc": 8133888
+    },
+    {
+      "item": "tconevo:metal|5",
+      "emc": 74688384
+    },
+    {
+      "item": "tconevo:metal|9",
+      "emc": 298753536
+    },
+    {
+      "item": "tconevo:metal|10",
+      "emc": 1773818448
+    },
+    {
+      "item": "tconevo:metal|14",
+      "emc": 7095273792
     }
   ]
 }

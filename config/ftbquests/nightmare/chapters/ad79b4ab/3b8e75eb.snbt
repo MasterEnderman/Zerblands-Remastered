@@ -1,0 +1,14 @@
+{
+	x: -16.0d,
+	y: 18.5d,
+	dependencies: [
+		"d991d4d0"
+	],
+	tasks: [{
+		uid: "0a0bc991",
+		type: "item",
+		items: [{
+			item: "bigreactors:ingotludicrite"
+		}]
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: -8.0d,
+	y: 20.5d,
+	dependencies: [
+		"7b01d877"
+	],
+	tasks: [{
+		uid: "deac96ad",
+		type: "item",
+		items: [{
+			item: "abyssalcraft:dreadaltartop"
+		}]
+	},
+	{
+		uid: "389ba46e",
+		type: "item",
+		items: [{
+			item: "abyssalcraft:dreadaltarbottom"
+		}]
+	}]
+}

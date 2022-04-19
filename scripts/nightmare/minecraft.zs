@@ -174,6 +174,16 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<minecraft:redstone_torch>,<immersiveengineering:material:27>,<minecraft:redstone_torch>],
             [<contenttweaker:stone_board>,<contenttweaker:stone_board>,<contenttweaker:stone_board>]
         ]
+    ],
+    <minecraft:red_nether_brick> : [
+        [
+            [<minecraft:netherbrick>,<contenttweaker:crushed_nether_wart>],
+            [<contenttweaker:crushed_nether_wart>,<minecraft:netherbrick>]
+        ],
+        [
+            [<contenttweaker:crushed_nether_wart>,<minecraft:netherbrick>],
+            [<minecraft:netherbrick>,<contenttweaker:crushed_nether_wart>]
+        ]
     ]
 };
 

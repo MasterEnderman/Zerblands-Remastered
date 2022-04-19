@@ -21,6 +21,11 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.astralsorcery.Altar;
+import mods.bloodmagic.AlchemyTable;
+import mods.enderio.SliceNSplice;
+import mods.inworldcrafting.FluidToItem;
+
+import scripts.functions.calc_atomic;
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <rftools:machine_base> : [
@@ -29,6 +34,48 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:plateSteel>,<ore:gearSignalum>,<ore:plateSteel>]
         ]
     ],
+    <rftools:crafter1> : [
+        [
+            [null,<enderio:block_crafter>,null],
+            [<ore:gearIron>,<rftools:machine_frame>,<ore:gearIron>],
+            [null,<enderio:block_crafter>,null]
+        ]
+    ],
+    <rftools:crafter2> : [
+        [
+            [null,<enderio:block_crafter>,null],
+            [<ore:gearIron>,<rftools:crafter1>,<ore:gearIron>],
+            [null,<enderio:block_crafter>,null]
+        ]
+    ],
+    <rftools:crafter3> : [
+        [
+            [<enderio:block_crafter>,<ore:gearIron>,<enderio:block_crafter>],
+            [<ore:gearIron>,<rftools:crafter2>,<ore:gearIron>],
+            [<enderio:block_crafter>,<ore:gearIron>,<enderio:block_crafter>]
+        ]
+    ],
+    <rftools:endergenic> : [
+        [
+            [<contenttweaker:enddiamond>,<rftools:infused_enderpearl>,<contenttweaker:enddiamond>],
+            [<rftools:infused_enderpearl>,<rftools:machine_frame>,<rftools:infused_enderpearl>],
+            [<contenttweaker:enddiamond>,<rftools:infused_enderpearl>,<contenttweaker:enddiamond>]
+        ]
+    ],
+    <rftools:environmental_controller> : [
+        [
+            [<contenttweaker:enddiamond>,<randomthings:spectrelens>,<contenttweaker:enddiamond>],
+            [<randomthings:spectrelens>,<rftools:machine_frame>,<randomthings:spectrelens>],
+            [<contenttweaker:enddiamond>,<minecraft:beacon>,<contenttweaker:enddiamond>]
+        ]
+    ],
+    <rftools:shape_card> : [
+        [
+            [<contenttweaker:plastic>,<enderio:item_material:72>,<contenttweaker:plastic>],
+            [<ore:dustRedstone>,<immersiveengineering:material:27>,<ore:dustRedstone>],
+            [<contenttweaker:plastic>,<enderio:item_material:72>,<contenttweaker:plastic>]
+        ]
+    ]
 };
 
 for key, value in recipeMapShaped {
@@ -42,10 +89,18 @@ for key, value in recipeMapShaped {
     }
 }
 
+recipes.remove(<rftools:powercell_card>);
+recipes.addShaped(<rftools:powercell_card>,[[<rftools:powercell_card>]]);
+Altar.addDiscoveryAltarRecipe("powercell_card", <rftools:powercell_card>, 200, 200, [
+    <ore:nuggetGold>, <ore:dustRedstone>, <ore:nuggetGold>,
+    <ore:dustRedstone>, <astralsorcery:itemcraftingcomponent:5>, <ore:dustRedstone>,
+    <ore:nuggetGold>, <ore:dustRedstone>, <ore:nuggetGold>
+]);
+
 recipes.remove(<rftools:machine_frame>);
 Altar.addConstellationAltarRecipe("rft_machine_frame", <rftools:machine_frame>, 800, 200, [
     <contenttweaker:atomic_module>,
-    <contenttweaker:energy_module>,
+    <extrautils2:poweroverload>,
     <contenttweaker:atomic_module>,
     <actuallyadditions:item_crystal_empowered:1>,
     <contenttweaker:atomic_assembly>,
@@ -66,3 +121,65 @@ Altar.addConstellationAltarRecipe("rft_machine_frame", <rftools:machine_frame>, 
     <botania:elfglass>,
     <botania:elfglass>
 ]);
+
+recipes.remove(<rftools:powercell_simple>);
+recipes.addShaped(<rftools:powercell_simple>,[[<rftools:powercell_simple>]]);
+AlchemyTable.addRecipe(<rftools:powercell_simple>, [
+    <rftools:machine_frame>,
+    <immersiveengineering:metal_device0>,
+    <bloodmagic:component:10>,
+    <contenttweaker:module_transfer>,
+    <rftools:infused_diamond>,
+    <rftools:infused_enderpearl>
+], 1000, 100, 1);
+
+recipes.remove(<rftools:powercell>);
+recipes.addShaped(<rftools:powercell>,[[<rftools:powercell>]]);
+AlchemyTable.addRecipe(<rftools:powercell>, [
+    <rftools:machine_frame>,
+    <immersiveengineering:metal_device0:1>,
+    <bloodmagic:component:10>,
+    <contenttweaker:module_transfer>,
+    <rftools:infused_diamond>,
+    <rftools:infused_enderpearl>
+], 1000, 100, 2);
+AlchemyTable.addRecipe(<rftools:powercell>, [
+    <rftools:powercell_simple>,
+    <immersiveengineering:metal_device0>,
+    <bloodmagic:component:10>,
+    <contenttweaker:module_transfer>,
+    <rftools:infused_diamond>,
+    <rftools:infused_enderpearl>
+], 1000, 100, 2);
+
+recipes.remove(<rftools:powercell_advanced>);
+recipes.addShaped(<rftools:powercell_advanced>,[[<rftools:powercell_advanced>]]);
+AlchemyTable.addRecipe(<rftools:powercell_advanced>, [
+    <rftools:machine_frame>,
+    <immersiveengineering:metal_device0:2>,
+    <bloodmagic:component:10>,
+    <contenttweaker:module_transfer>,
+    <rftools:infused_diamond>,
+    <rftools:infused_enderpearl>
+], 1000, 100, 3);
+AlchemyTable.addRecipe(<rftools:powercell_advanced>, [
+    <rftools:powercell>,
+    <immersiveengineering:metal_device0:1>,
+    <bloodmagic:component:10>,
+    <contenttweaker:module_transfer>,
+    <rftools:infused_diamond>,
+    <rftools:infused_enderpearl>
+], 1000, 100, 3);
+
+SliceNSplice.addRecipe(<rftools:machine_frame>, [
+    <contenttweaker:atomic_assembly>, <extrautils2:poweroverload>, <rftools:machine_base>,
+    <actuallyadditions:item_crystal_empowered:1>,<contenttweaker:plastic>,<contenttweaker:atomic_module>
+], 20000);
+
+recipes.remove(<rftools:infused_diamond>);
+FluidToItem.transform(<rftools:infused_diamond>, <liquid:colour_out_of_space>, [<minecraft:diamond>,<rftools:dimensional_shard> * 8], true);
+recipes.remove(<rftools:infused_enderpearl>);
+FluidToItem.transform(<rftools:infused_enderpearl>, <liquid:colour_out_of_space>, [<minecraft:ender_pearl>,<rftools:dimensional_shard> * 8], true);
+
+recipes.remove(<rftools:builder>);
+calc_atomic(<rftools:builder>,<rftools:machine_frame>,<actuallyadditions:block_miner>,<rftools:shape_card>);

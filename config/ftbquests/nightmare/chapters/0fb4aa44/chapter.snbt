@@ -1,22 +1,19 @@
 {
-	title: "Zerblands - Nightmare Mode",
+	title: "Early-Game",
 	icon: {
 		ForgeCaps: {
 			"astralsorcery:cap_item_amulet_holder": {}
 		},
-		id: "contenttweaker:ender_token"
+		id: "astralsorcery:blockaltar"
 	},
-	description: [
-		"Like Zerblands - Remastered but way harder."
-	],
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: "",
 	images: [{
-		x: 2.0d,
-		y: -12.5d,
-		width: 24.0d,
-		height: 6.0d,
+		x: 0.0d,
+		y: -4.0d,
+		width: 12.0d,
+		height: 3.0d,
 		rotation: 0.0d,
 		image: "zerblands:mainmenu/modpack.png",
 		hover: [],

@@ -36,7 +36,7 @@ Carpenter.addRecipe(<redstonearsenal:material:224>, [
     [<ore:plateElectrumFlux>,<ore:gearElectrumFlux>,<ore:plateElectrumFlux>],
     [<ore:gearElectrumFlux>,<contenttweaker:red_core>,<ore:gearElectrumFlux>],
     [<ore:plateElectrumFlux>,<ore:gearElectrumFlux>,<ore:plateElectrumFlux>]
-], 60, <liquid:crystaloil> * 1000, <ic2:itembatcrystal>);
+], 20, <liquid:crystaloil> * 1000, <ic2:itembatcrystal>);
 
 var tough_rod as IIngredient = <tconstruct:tough_tool_rod>.withTag({Material: "obsidian"});
 var large_plate as IIngredient = <tconstruct:large_plate>.withTag({Material: "obsidian"});
@@ -46,4 +46,4 @@ Carpenter.addRecipe(<redstonearsenal:material:192>, [
     [null,<ic2:itemmisc:303>,tough_rod],
     [<ic2:itemmisc:303>,large_plate,<ic2:itemmisc:303>],
     [tough_rod,<ic2:itemmisc:303>,null]
-], 60, <liquid:pyrotheum> * 1000, <randomthings:obsidianskull>);
+], 20, <liquid:pyrotheum> * 1000, <randomthings:obsidianskull>);

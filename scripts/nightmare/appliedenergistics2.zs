@@ -26,6 +26,7 @@ import mods.botania.ElvenTrade;
 import mods.botania.ManaInfusion;
 import mods.enderio.AlloySmelter;
 import mods.enderio.SagMill;
+import mods.forestry.ThermionicFabricator;
 import mods.ic2.Extractor;
 import mods.ic2.Macerator;
 import mods.ic2.Sawmill;
@@ -38,6 +39,7 @@ import mods.threng.Centrifuge;
 import mods.threng.Etcher;
 
 import scripts.functions.calc_atomic;
+import scripts.functions.calc_flawless;
 
 JEI.removeAndHide(<appliedenergistics2:grindstone>);
 JEI.removeAndHide(<appliedenergistics2:crank>);
@@ -90,6 +92,9 @@ recipes.removeShaped(<appliedenergistics2:view_cell>);
 
 ElvenTrade.addRecipe([<appliedenergistics2:sky_stone_block>],[<abyssalcraft:stone:6>]);
 
+recipes.remove(<appliedenergistics2:matter_cannon>);
+calc_flawless(<appliedenergistics2:matter_cannon>,<xreliquary:handgun>,<appliedenergistics2:material:43>,<appliedenergistics2:crafting_storage_4k>,<appliedenergistics2:energy_cell>);
+
 var mapSeed as IItemStack[IItemStack] = {
 	<appliedenergistics2:crystal_seed:1200> : <appliedenergistics2:material:12>,
 	<appliedenergistics2:crystal_seed> : <appliedenergistics2:material:10>,
@@ -114,7 +119,7 @@ Macerator.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:mater
 recipes.remove(<appliedenergistics2:light_detector>);
 Casting.addTableRecipe(<appliedenergistics2:light_detector>, <ore:dustCertusQuartz>, <liquid:glass>, 1000, true, 200);
 
-SagMill.removeRecipe(<minecraft:clay>);
+// SagMill.removeRecipe(<minecraft:clay>);
 furnace.remove(<appliedenergistics2:material:5>);
 MetalPress.addRecipe(<appliedenergistics2:material:5> * 8, <contenttweaker:silicon_boule>, <immersiveengineering:mold:7>, 2048);
 Sawmill.addRecipe(<appliedenergistics2:material:5> * 16, <contenttweaker:silicon_boule>);
@@ -177,12 +182,6 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     	[<opencomputers:capacitor>,<enderio:block_cap_bank:3>,<opencomputers:capacitor>],
     	[<appliedenergistics2:fluix_block>,<opencomputers:capacitor>,<appliedenergistics2:fluix_block>]
     ],
-    <appliedenergistics2:material:44> : [
-    	[<appliedenergistics2:material:11>,<appliedenergistics2:material:9>,<appliedenergistics2:material:22>]
-    ],
-    <appliedenergistics2:material:43> : [
-    	[<appliedenergistics2:material:10>,<appliedenergistics2:material:9>,<appliedenergistics2:material:22>]
-    ],
     <appliedenergistics2:material:52> : [
     	[<appliedenergistics2:quartz_glass>,<ore:plateLumium>,<appliedenergistics2:quartz_glass>],
     	[<ore:plateLumium>,<appliedenergistics2:material:9>,<ore:plateLumium>],
@@ -205,7 +204,7 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     ],
     <appliedenergistics2:dense_energy_cell> : [
     	[<appliedenergistics2:energy_cell>,<appliedenergistics2:energy_cell>,<appliedenergistics2:energy_cell>],
-    	[<appliedenergistics2:energy_cell>,<opencomputers:material:21>,<appliedenergistics2:energy_cell>],
+    	[<appliedenergistics2:energy_cell>,<contenttweaker:energy_flow_circuit>,<appliedenergistics2:energy_cell>],
     	[<appliedenergistics2:energy_cell>,<appliedenergistics2:energy_cell>,<appliedenergistics2:energy_cell>]
     ],
     <appliedenergistics2:material:39> : [
@@ -220,7 +219,7 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     ],
     <appliedenergistics2:quantum_link> : [
     	[<appliedenergistics2:quartz_glass>,<appliedenergistics2:material:9>,<appliedenergistics2:quartz_glass>],
-    	[<appliedenergistics2:material:9>,<ore:plateIridium>,<appliedenergistics2:material:9>],
+    	[<appliedenergistics2:material:9>,<contenttweaker:energy_flow_circuit>,<appliedenergistics2:material:9>],
     	[<appliedenergistics2:quartz_glass>,<appliedenergistics2:material:9>,<appliedenergistics2:quartz_glass>]
     ],
     <appliedenergistics2:material:28> : [
@@ -257,6 +256,11 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
 		[<threng:material>,<ic2:blockmachinelv:5>,<threng:material>],
 		[<appliedenergistics2:material:12>,<thermalexpansion:machine:5>,<appliedenergistics2:material:12>],
 		[<threng:material>,<ic2:blockmachinelv:5>,<threng:material>]
+	],
+	<appliedenergistics2:quartz_growth_accelerator> : [
+		[<ore:ingotFluixSteel>,<appliedenergistics2:fluix_slab>,<ore:ingotFluixSteel>],
+		[<enderio:block_dark_iron_bars>,<tp:growth_block>,<enderio:block_dark_iron_bars>],
+		[<ore:ingotFluixSteel>,<appliedenergistics2:fluix_slab>,<ore:ingotFluixSteel>]
 	]
 };
 
@@ -316,3 +320,62 @@ for output, input in mapProcessor {
 	Inscriber.addRecipe(output, findFirstItemFromMod("contenttweaker","dust","redAlloy"), false, input, <appliedenergistics2:material:20>);
 	Etcher.addRecipe(output, findFirstItemFromMod("contenttweaker","dust","redAlloy"), input, <appliedenergistics2:material:20>);
 }
+
+var map1k as IItemStack[IItemStack] = {
+	<appliedenergistics2:material:35> : <actuallyadditions:block_crystal_empowered>,
+	<appliedenergistics2:material:54> : <actuallyadditions:block_crystal_empowered:1>,
+};
+
+for output, input in map1k {
+	recipes.remove(output);
+	Inscriber.addRecipe(output, input, false, <contenttweaker:engraved_crystal_chip>, <contenttweaker:plastic>);
+	Etcher.addRecipe(output, input, <contenttweaker:engraved_crystal_chip>, <contenttweaker:plastic>);
+}
+
+var mapComponent as IItemStack[][IItemStack] = {
+	// Item
+	<appliedenergistics2:material:36> : [<appliedenergistics2:material:35>,<contenttweaker:data_storage_circuit>],
+	<appliedenergistics2:material:37> : [<appliedenergistics2:material:36>,<contenttweaker:data_control_circuit>],
+	<appliedenergistics2:material:38> : [<appliedenergistics2:material:37>,<contenttweaker:data_orb>],
+	// Fluid
+	<appliedenergistics2:material:55> : [<appliedenergistics2:material:54>,<contenttweaker:data_storage_circuit>],
+	<appliedenergistics2:material:56> : [<appliedenergistics2:material:55>,<contenttweaker:data_control_circuit>],
+	<appliedenergistics2:material:57> : [<appliedenergistics2:material:56>,<contenttweaker:data_orb>],
+	// Spatial
+	<appliedenergistics2:material:32> : [<threng:material:6>,<contenttweaker:data_storage_circuit>],
+	<appliedenergistics2:material:33> : [<appliedenergistics2:material:32>,<contenttweaker:data_control_circuit>],
+	<appliedenergistics2:material:34> : [<appliedenergistics2:material:33>,<contenttweaker:data_orb>],
+};
+
+for output, input in mapComponent {
+	var component as IItemStack = input[0];
+	var data_part as IItemStack = input[1];
+
+	recipes.remove(output);
+	ThermionicFabricator.addCast(output, [
+		[<contenttweaker:plastic>,component,<contenttweaker:plastic>],
+		[component,data_part,component],
+		[<contenttweaker:plastic>,component,<contenttweaker:plastic>]
+	], <liquid: glass> * 200);
+}
+
+recipes.remove(<appliedenergistics2:material:43>);
+ThermionicFabricator.addCast(<appliedenergistics2:material:43>, [
+	[null,<appliedenergistics2:material:22>,null],
+	[<forestry:thermionic_tubes>,<appliedenergistics2:material:9>,<forestry:thermionic_tubes:2>],
+	[null,<contenttweaker:hdpe_sheet>,null]
+], <liquid: glass> * 200);
+
+recipes.remove(<appliedenergistics2:material:44>);
+ThermionicFabricator.addCast(<appliedenergistics2:material:44>, [
+	[null,<appliedenergistics2:material:22>,null],
+	[<forestry:thermionic_tubes:2>,<appliedenergistics2:material:9>,<forestry:thermionic_tubes:10>],
+	[null,<contenttweaker:hdpe_sheet>,null]
+], <liquid: glass> * 200);
+
+recipes.removeShaped(<appliedenergistics2:part:180>);
+recipes.addShaped(<appliedenergistics2:part:180>, [
+	[null,<ore:ingotAluminum>,<appliedenergistics2:quartz_glass>],
+	[<ore:plateLumium>,<integrateddynamics:part_display_panel_item>,<appliedenergistics2:quartz_glass>],
+	[null,<ore:ingotAluminum>,<appliedenergistics2:quartz_glass>]
+]);

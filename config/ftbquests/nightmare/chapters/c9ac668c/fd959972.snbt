@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 9.5d,
+	dependencies: [
+		"d3abed02"
+	],
+	tasks: [{
+		uid: "33728fcf",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silicon_boule"
+		}]
+	}]
+}

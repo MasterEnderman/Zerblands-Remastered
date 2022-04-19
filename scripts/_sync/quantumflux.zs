@@ -18,6 +18,6 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.inworldcrafting.ExplosionCrafting;
+import scripts.mod_functions.betterExplosion;
 
-ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <quantumflux:graphitedust>);
+betterExplosion(<quantumflux:craftingpiece:6>, <quantumflux:graphitedust>);

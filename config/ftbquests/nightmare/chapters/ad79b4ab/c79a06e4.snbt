@@ -1,0 +1,15 @@
+{
+	x: -6.0d,
+	y: 4.5d,
+	dependencies: [
+		"f003ff46",
+		"e75b5b06"
+	],
+	tasks: [{
+		uid: "a8a3267c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:starsteel_ingot"
+		}]
+	}]
+}

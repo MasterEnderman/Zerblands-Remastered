@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: 19.0d,
+	dependencies: [
+		"78dce310"
+	],
+	tasks: [{
+		uid: "d6712282",
+		type: "item",
+		items: [{
+			item: "forestry:honey_drop 1 2"
+		}]
+	}]
+}

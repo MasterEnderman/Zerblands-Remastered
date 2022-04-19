@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: 5.0d,
+	dependencies: [
+		"0606fb32"
+	],
+	tasks: [{
+		uid: "c39e92ab",
+		type: "item",
+		items: [{
+			item: "contenttweaker:eternalslate"
+		}]
+	}]
+}

@@ -22,6 +22,8 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.astralsorcery.Altar;
 import mods.astralsorcery.LiquidInteraction;
+import mods.astralsorcery.Utils;
+import mods.bloodmagic.AlchemyTable;
 import mods.botania.ManaInfusion;
 import mods.botania.PureDaisy;
 import mods.forestry.Carpenter;
@@ -32,6 +34,8 @@ import mods.thermalexpansion.Transposer;
 <astralsorcery:blockchalice>.addShiftTooltip("Water + Lava\n= Cobblestone\nWater + Liquid Starlight\n= Ice\nLava + Liquid Starlight\n= Sand\nLiquid Coralium + Antimatter\n= Coralium Stone\nLiquid Coralium + Liquid Starlight\n= Coralium Gem","Hold [shift] to show interactions.");
 LiquidInteraction.addInteraction(<liquid:liquidcoralium> * 80, 0.3, <liquid:liquidantimatter> * 10, 0.1, 400, <abyssalcraft:stone:4>);
 LiquidInteraction.addInteraction(<liquid:liquidcoralium> * 80, 0.3, <liquid:astralsorcery.liquidstarlight> * 20, 0.1, 400, <abyssalcraft:coralium>);
+
+recipes.remove(<astralsorcery:itemcraftingcomponent:5>);
 
 var mapStarlight as int[IItemStack] = {
     <astralsorcery:itemcraftingcomponent> : 1000,
@@ -57,6 +61,7 @@ PureDaisy.addRecipe(<astralsorcery:blockmarble>, <astralsorcery:blockblackmarble
 furnace.remove(<astralsorcery:itemcraftingcomponent:1>);
 
 Transposer.addFillRecipe(<astralsorcery:itemcraftingcomponent:3>, <minecraft:glass_pane>,  <liquid:astralsorcery.liquidstarlight> * 250, 2000);
+Transposer.addFillRecipe(<astralsorcery:itemcraftingcomponent:5>, <minecraft:paper>, <liquid:astralsorcery.liquidstarlight> * 250, 2000);
 
 Altar.addDiscoveryAltarRecipe("internal/altar/grindstone", <astralsorcery:blockmachine:1>, 200, 200, [
     null, null, null,
@@ -117,17 +122,39 @@ Altar.addConstellationAltarRecipe("internal/altar/upgrade_tier4", <astralsorcery
 ]);
 
 var y as IItemStack = <morebees:graincrystal>;
-var rockcrystal as IItemStack = <astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}});
-var celestialcrystal as IItemStack = <astralsorcery:itemcelestialcrystal>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}});
+var rockcrystal_max as IItemStack = <astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}});
+var celestialcrystal_max as IItemStack = <astralsorcery:itemcelestialcrystal>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}});
 
-Carpenter.addRecipe(rockcrystal, [
-    [y,<astralsorcery:itemrockcrystalsimple>,y],
-    [<astralsorcery:itemcraftingcomponent:4>,<abyssalcraft:gatekeeperessence>,<astralsorcery:itemcraftingcomponent:4>],
-    [y,<astralsorcery:itemrockcrystalsimple>,y]
-], 120, <liquid:astralsorcery.liquidstarlight>*10000);
+/* I STILL HAVEN'T FIGURED OUT WHY THIS ISN'T WORKING LIKE INTENDED!
+var rockcrystal as IIngredient = Utils.getCrystalORIngredient(false,false);
+var celestialcrystal as IIngredient = Utils.getCrystalORIngredient(true,false);
+*/
 
-Carpenter.addRecipe(celestialcrystal, [
-    [y,<astralsorcery:itemcelestialcrystal>,y],
+var rockcrystal as IIngredient = <astralsorcery:itemrockcrystalsimple>;
+var celestialcrystal as IIngredient = <astralsorcery:itemcelestialcrystal>;
+
+Carpenter.addRecipe(rockcrystal_max, [
+    [y,rockcrystal,y],
     [<astralsorcery:itemcraftingcomponent:4>,<abyssalcraft:gatekeeperessence>,<astralsorcery:itemcraftingcomponent:4>],
-    [y,<astralsorcery:itemcelestialcrystal>,y]
-], 120, <liquid:astralsorcery.liquidstarlight>*10000);
+    [y,rockcrystal,y]
+], 20, <liquid:astralsorcery.liquidstarlight>*10000);
+
+Carpenter.addRecipe(celestialcrystal_max, [
+    [y,celestialcrystal,y],
+    [<astralsorcery:itemcraftingcomponent:4>,<abyssalcraft:gatekeeperessence>,<astralsorcery:itemcraftingcomponent:4>],
+    [y,celestialcrystal,y]
+], 20, <liquid:astralsorcery.liquidstarlight>*10000);
+
+var mapLens as IItemStack[][IItemStack] = {
+    <astralsorcery:itemcoloredlens> : [<astralsorcery:itemcraftingcomponent:3>,<minecraft:blaze_powder>,<xreliquary:mob_ingredient:7>,<evilcraft:burning_gem_stone>,<randomthings:imbue>], // Ignition
+    <astralsorcery:itemcoloredlens:1> : [<astralsorcery:itemcraftingcomponent:3>,<minecraft:diamond>,<minecraft:iron_pickaxe>,<minecraft:gold_ingot>,<astralsorcery:itemcraftingcomponent>], // Break
+    <astralsorcery:itemcoloredlens:2> : [<astralsorcery:itemcraftingcomponent:3>,<bloodmagic:component:22>,<astralsorcery:itemcraftingcomponent>,<minecraft:reeds>], // Growth
+    <astralsorcery:itemcoloredlens:3> : [<astralsorcery:itemcraftingcomponent:3>,<minecraft:flint>,<minecraft:iron_ingot>,<minecraft:diamond>,<astralsorcery:itemcraftingcomponent>], // Damage
+    <astralsorcery:itemcoloredlens:4> : [<astralsorcery:itemcraftingcomponent:3>,<minecraft:diamond>,<minecraft:ghast_tear>,<astralsorcery:itemcraftingcomponent>,<astralsorcery:itemcraftingcomponent:2>], // Regeneration
+    <astralsorcery:itemcoloredlens:5> : [<astralsorcery:itemcraftingcomponent:3>,<minecraft:piston>,<minecraft:glowstone_dust>,<astralsorcery:itemcraftingcomponent>], // Push
+    <astralsorcery:itemcoloredlens:6> : [<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:2>], // Sprectral
+};
+
+for lens, data in mapLens {
+    AlchemyTable.addRecipe(lens, data, 1000, 100, 1);
+}

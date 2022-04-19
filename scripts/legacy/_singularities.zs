@@ -21,9 +21,6 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.avaritia.ExtremeCrafting;
-import mods.jei.JEI;
-
-JEI.removeAndHide(<singularities:singularity>);
 
 var list as IIngredient[IItemStack] = {
     <avaritia:singularity> : <ore:blockIron>,
@@ -56,8 +53,8 @@ var list as IIngredient[IItemStack] = {
 
 var index as int = 0;
 
-for singualrity, filler in list {
-    ExtremeCrafting.addShaped("singualrity_"~index,singualrity,[
+for singularity, filler in list {
+    ExtremeCrafting.addShaped("singularity_"~index,singularity,[
         [null,null,filler,filler,filler,filler,filler,null,null],
         [null,filler,filler,filler,filler,filler,filler,filler,null],
         [filler,filler,filler,filler,<avaritia:block_resource>,filler,filler,filler,filler],

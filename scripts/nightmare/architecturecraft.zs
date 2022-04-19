@@ -22,6 +22,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.astralsorcery.Grindstone;
 
+recipes.remove(<architecturecraft:sawblade>);
 Grindstone.addRecipe(<thermalfoundation:material:24>, <architecturecraft:sawblade>);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {

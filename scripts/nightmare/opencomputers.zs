@@ -22,8 +22,12 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.forestry.Carpenter;
 import mods.forestry.ThermionicFabricator;
-import mods.inworldcrafting.ExplosionCrafting;
+import mods.ic2.Extractor;
+import mods.immersiveengineering.BottlingMachine;
 import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Transposer;
+
+import scripts.mod_functions.betterExplosion;
 
 recipes.remove(<opencomputers:material:2>);
 recipes.addShapeless(<opencomputers:material:2> * 4, [<contenttweaker:plastic>,<enderio:item_material:48>,<enderio:item_material:48>,<contenttweaker:electro_silicon>]);
@@ -35,14 +39,21 @@ recipes.remove(<opencomputers:cable>);
 InductionSmelter.addRecipe(<opencomputers:cable>, <thermalfoundation:material:225> * 3, <ic2:itemmisc:450>, 2000);
 
 recipes.remove(<opencomputers:material:29>);
-ExplosionCrafting.explodeItemRecipe(<opencomputers:material:29> * 4,<ore:gemDiamond>);
+betterExplosion(<opencomputers:material:29> * 4,<ore:gemDiamond>);
+
+recipes.remove(<opencomputers:material:12>);
+Extractor.addRecipe(<opencomputers:material:12>,<contenttweaker:plastic>);
+
+recipes.remove(<opencomputers:material:1>);
+BottlingMachine.addRecipe(<opencomputers:material:1>, <ic2:itemmisc:454>, <liquid:grog> * 250);
+Transposer.addFillRecipe(<opencomputers:material:1>, <ic2:itemmisc:454>,  <liquid:grog> * 250, 2000);
 
 recipes.remove(<opencomputers:material:4>);
 Carpenter.addRecipe(<opencomputers:material:4>, [
     [<immersiveengineering:material:21>,<immersiveengineering:material:21>,<immersiveengineering:material:21>],
     [<immersiveengineering:material:21>,<opencomputers:material:3>,<immersiveengineering:material:21>],
     [<immersiveengineering:material:21>,<immersiveengineering:material:21>,<immersiveengineering:material:21>]
-], 30, <liquid:iron_chloride> * 200);
+], 10, <liquid:iron_chloride> * 200);
 
 recipes.remove(<opencomputers:material:6>);
 ThermionicFabricator.addCast(<opencomputers:material:6> * 8, [
@@ -72,37 +83,51 @@ ThermionicFabricator.addCast(<opencomputers:material:9> * 2, [
     [<opencomputers:material:29>,<forestry:thermionic_tubes:5>,<opencomputers:material:29>]
 ], <liquid:glass> * 200);
 
-recipes.remove(<opencomputers:material:10>);
-recipes.addShaped(<opencomputers:material:10>, [
-    [<opencomputers:material:6>,<opencomputers:material:6>,<opencomputers:material:6>],
-    [<rs_ctr:edge_trigger>,<contenttweaker:advanced_assembly>,<rs_ctr:edge_trigger>],
-    [<enderio:item_alloy_nugget:1>,<contenttweaker:plastic>,<enderio:item_alloy_nugget:1>]
-]);
+var recipeMapShaped as IIngredient[][][][IItemStack] = {
+    <opencomputers:material:10> : [
+        [
+            [<opencomputers:material:6>,<opencomputers:material:6>,<opencomputers:material:6>],
+            [<rs_ctr:edge_trigger>,<contenttweaker:advanced_assembly>,<rs_ctr:edge_trigger>],
+            [<enderio:item_alloy_nugget:1>,<contenttweaker:plastic>,<enderio:item_alloy_nugget:1>]
+        ]
+    ],
+    <opencomputers:material:11> : [
+        [
+            [<opencomputers:material:6>,<rs_ctr:clock>,<opencomputers:material:6>],
+            [<rs_ctr:pulse_gen>,<rs_ctr:ram>,<rs_ctr:pulse_gen>],
+            [<enderio:item_alloy_nugget:1>,<contenttweaker:plastic>,<enderio:item_alloy_nugget:1>]
+        ]
+    ],
+    <opencomputers:component> : [
+        [
+            [<enderio:item_alloy_nugget:1>,<contenttweaker:plastic>,<enderio:item_alloy_nugget:1>],
+            [<opencomputers:component:7>,<opencomputers:material:11>,<opencomputers:component:7>],
+            [<enderio:item_alloy_nugget:1>,<opencomputers:material:10>,<enderio:item_alloy_nugget:1>]
+        ]
+    ],
+    <opencomputers:component:1> : [
+        [
+            [<enderio:item_alloy_nugget:2>,<ic2:itemheatswtiches:2>,<enderio:item_alloy_nugget:2>],
+            [<opencomputers:component:9>,<opencomputers:component>,<opencomputers:component:9>],
+            [<enderio:item_alloy_nugget:2>,<ic2:itemheatswtiches:2>,<enderio:item_alloy_nugget:2>]
+        ]
+    ],
+    <opencomputers:component:2> : [
+        [
+            [<ore:nuggetCrystallineAlloy>,<ic2:itemheatswtiches:3>,<ore:nuggetCrystallineAlloy>],
+            [<opencomputers:component:11>,<opencomputers:component:1>,<opencomputers:component:11>],
+            [<ore:nuggetCrystallineAlloy>,<ic2:itemheatswtiches:3>,<ore:nuggetCrystallineAlloy>]
+        ]
+    ]
+};
 
-recipes.remove(<opencomputers:material:11>);
-recipes.addShaped(<opencomputers:material:11>, [
-    [<opencomputers:material:6>,<rs_ctr:clock>,<opencomputers:material:6>],
-    [<rs_ctr:pulse_gen>,<rs_ctr:ram>,<rs_ctr:pulse_gen>],
-    [<enderio:item_alloy_nugget:1>,<contenttweaker:plastic>,<enderio:item_alloy_nugget:1>]
-]);
+for key, value in recipeMapShaped {
+	var index as int = 0;    
+    recipes.remove(key);
 
-recipes.remove(<opencomputers:component>);
-recipes.addShaped(<opencomputers:component>, [
-    [<enderio:item_alloy_nugget:1>,<contenttweaker:plastic>,<enderio:item_alloy_nugget:1>],
-    [<opencomputers:component:7>,<opencomputers:material:11>,<opencomputers:component:7>],
-    [<enderio:item_alloy_nugget:1>,<opencomputers:material:10>,<enderio:item_alloy_nugget:1>]
-]);
-
-recipes.remove(<opencomputers:component:1>);
-recipes.addShaped(<opencomputers:component:1>, [
-    [<enderio:item_alloy_nugget:2>,<ic2:itemheatswtiches:2>,<enderio:item_alloy_nugget:2>],
-    [<opencomputers:component:9>,<opencomputers:component>,<opencomputers:component:9>],
-    [<enderio:item_alloy_nugget:2>,<ic2:itemheatswtiches:2>,<enderio:item_alloy_nugget:2>]
-]);
-
-recipes.remove(<opencomputers:component:2>);
-recipes.addShaped(<opencomputers:component:2>, [
-    [<ore:nuggetCrystallineAlloy>,<ic2:itemheatswtiches:3>,<ore:nuggetCrystallineAlloy>],
-    [<opencomputers:component:11>,<opencomputers:component:1>,<opencomputers:component:11>],
-    [<ore:nuggetCrystallineAlloy>,<ic2:itemheatswtiches:3>,<ore:nuggetCrystallineAlloy>]
-]);
+    for recipe in value {
+        var name as string = "ct_"+toString(key)+"_"+index;
+        recipes.addShaped(name, key, recipe);
+        index += 1;
+    }
+}

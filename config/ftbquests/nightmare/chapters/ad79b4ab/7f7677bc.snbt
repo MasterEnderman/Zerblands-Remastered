@@ -1,0 +1,14 @@
+{
+	x: -4.0d,
+	y: 22.5d,
+	dependencies: [
+		"1a742a1e"
+	],
+	tasks: [{
+		uid: "0155af33",
+		type: "item",
+		items: [{
+			item: "contenttweaker:energy_flow_circuit"
+		}]
+	}]
+}

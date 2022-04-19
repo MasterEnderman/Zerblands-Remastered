@@ -20,6 +20,8 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.jei.JEI;
 
+JEI.removeAndHide(<simplyjetpacks:metaitemmods:26>);
+
 JEI.addItem(<simplyjetpacks:metaitemmods:20>);
 JEI.addItem(<simplyjetpacks:metaitemmods:21>);
 JEI.addItem(<simplyjetpacks:metaitemmods:22>);

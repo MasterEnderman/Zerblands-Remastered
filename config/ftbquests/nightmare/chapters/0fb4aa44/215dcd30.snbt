@@ -1,9 +1,9 @@
 {
 	icon: "immersiveengineering:metal_multiblock",
-	x: 8.5d,
-	y: -8.5d,
+	x: -8.0d,
+	y: 11.5d,
 	dependencies: [
-		"95b74b5c"
+		"35fef444"
 	],
 	tasks: [{
 		uid: "11213b91",

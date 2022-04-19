@@ -25,6 +25,7 @@ import mods.abyssalcraft.Transmutator;
 import mods.astralsorcery.Altar;
 import mods.bloodmagic.AlchemyTable;
 import mods.botania.ManaInfusion;
+import mods.botania.RuneAltar;
 import mods.enderio.SagMill;
 import mods.evilcraft.BloodInfuser;
 import mods.jei.JEI;
@@ -67,7 +68,7 @@ for key, value in recipeMapShaped {
 }
 
 recipes.remove(<abyssalcraft:necronomicon>);
-Altar.addAttunementAltarRecipe("necronomicon", <abyssalcraft:necronomicon>, 500, 800, [
+Altar.addDiscoveryAltarRecipe("necronomicon", <abyssalcraft:necronomicon>, 200, 200, [
 	<evilcraft:dark_power_gem>,
 	<xreliquary:salamander_eye>,
 	<evilcraft:dark_power_gem>,
@@ -76,11 +77,7 @@ Altar.addAttunementAltarRecipe("necronomicon", <abyssalcraft:necronomicon>, 500,
 	<xreliquary:salamander_eye>,
 	<evilcraft:dark_power_gem>,
 	<xreliquary:salamander_eye>,
-	<evilcraft:dark_power_gem>,
-	<xreliquary:mob_ingredient:6>,
-	<xreliquary:mob_ingredient:6>,
-	<xreliquary:mob_ingredient:6>,
-	<xreliquary:mob_ingredient:6>
+	<evilcraft:dark_power_gem>
 ]);
 
 Transposer.addFillRecipe(<abyssalcraft:coralium>, <botania:manaresource:21>, <liquid:colour_out_of_space>*50, 2048);
@@ -145,11 +142,11 @@ game.setLocalization("transmutationGem.desc","This Recipe was changed in this Pa
 Rituals.modifyRitualOfferings("transmutationGem", [
 	<quantumflux:craftingpiece:6>,
 	<xreliquary:mob_ingredient:7>,
-	<xreliquary:mob_ingredient:11>,
+	<embers:ember_cluster>,
 	<xreliquary:mob_ingredient:7>,
 	<quantumflux:craftingpiece:6>,
 	<xreliquary:mob_ingredient:7>,
-	<xreliquary:mob_ingredient:11>,
+	<embers:ember_cluster>,
 	<xreliquary:mob_ingredient:7>
 ]);
 
@@ -174,3 +171,21 @@ SagMill.addRecipe([
 	<abyssalcraft:crystalfragment:4>,
 	<abyssalcraft:crystalfragment:7>,
 ], [0.15,0.15,0.15,0.15], <immersiveengineering:shader_bag>, "MULTIPLY_OUTPUT", 5000);
+
+recipes.remove(<abyssalcraft:powerstonetracker>);
+Altar.addDiscoveryAltarRecipe("powerstonetracker", <abyssalcraft:powerstonetracker> * 4, 200, 200, [
+    <abyssalcraft:coralium>, <abyssalcraft:coralium>, <abyssalcraft:coralium>,
+    <abyssalcraft:coralium>, <minecraft:ender_eye>, <abyssalcraft:coralium>,
+    <abyssalcraft:coralium>, <abyssalcraft:coralium>, <abyssalcraft:coralium>
+]);
+
+recipes.remove(<abyssalcraft:energypedestal>);
+RuneAltar.addRecipe(<abyssalcraft:energypedestal>, [
+	<xreliquary:pedestal>,
+	<abyssalcraft:shadowgem>,
+	<abyssalcraft:cpearl>,
+	<abyssalcraft:stone:7>,
+	<abyssalcraft:stone:7>,
+	<abyssalcraft:stone:7>,
+	<abyssalcraft:stone:7>
+], 10000);

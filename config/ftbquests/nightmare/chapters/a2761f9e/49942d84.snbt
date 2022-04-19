@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: -2.0d,
+	dependencies: [
+		"97a3ea16",
+		"e669e426"
+	],
+	tasks: [{
+		uid: "7404a69c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:infinite"
+		}]
+	}]
+}

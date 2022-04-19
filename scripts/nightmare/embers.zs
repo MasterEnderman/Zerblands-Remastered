@@ -23,6 +23,7 @@ import scripts.functions.findFirstItemFromMod;
 import mods.embers.Alchemy;
 import mods.embers.Mixer;
 import mods.enderio.AlloySmelter;
+import mods.extrautils2.Resonator;
 import mods.immersiveengineering.Blueprint;
 import mods.jei.JEI;
 import mods.thermalexpansion.Crucible;
@@ -38,11 +39,26 @@ recipes.remove(<embers:ember_detector>);
 calc_basic(<embers:ember_detector>, <minecraft:compass>, <embers:crystal_ember>);
 calc_basic(<embers:golems_eye>, <minecraft:ender_eye>, <embers:archaic_brick>);
 
+recipes.remove(<embers:item_pipe>);
+calc_basic(<embers:item_pipe>*4,<immersiveengineering:material:8>,<ore:plateLead>);
+
+recipes.remove(<embers:item_pump>);
+Resonator.add(<embers:item_pump>, <embers:item_pipe>, 800, false);
+
+recipes.remove(<embers:pipe>);
+calc_basic(<embers:pipe>*4,<immersiveengineering:material:8>,<ore:plateIron>);
+
+recipes.remove(<embers:pump>);
+Resonator.add(<embers:pump>, <embers:pipe>, 800, false);
+
 recipes.remove(<embers:mech_accessor>);
 calc_basic(<embers:mech_accessor>, <embers:stairs_caminite_brick>, <immersiveengineering:material:8>);
 
 Alchemy.remove(<embers:winding_gears>);
 Alchemy.add(<embers:winding_gears>, [<blood_dynamo:ingredient:2>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>], {"copper": 32 to 64, "iron": 32 to 128});
+
+Alchemy.remove(<embers:inflictor_gem>);
+Alchemy.add(<embers:inflictor_gem>, [<contenttweaker:flawless_diamond_shard>, <actuallyadditions:item_crystal:3>, <ore:plateDawnstone>, <actuallyadditions:item_crystal:3>, <ore:plateDawnstone>], {"dawnstone": 48 to 96, "lead": 32 to 64});
 
 recipes.remove(<embers:blend_caminite>);
 recipes.addShapeless("blend_caminite", <embers:blend_caminite> * 4, [
@@ -109,6 +125,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<embers:ember_cluster>,<ore:ingotDawnstone>,null],
             [<ore:ingotDawnstone>,<actuallyadditions:item_misc:6>,<ore:ingotDawnstone>],
             [null,<ore:ingotDawnstone>,null]
+        ]
+    ],
+    <embers:beam_cannon> : [
+        [
+            [<embers:crystal_ember>,<astralsorcery:itemcraftingcomponent:3>,<embers:crystal_ember>],
+            [<ore:plateDawnstone>,<openmodularturrets:potato_cannon_turret>,<ore:plateDawnstone>],
+            [<embers:block_caminite_brick>,<openmodularturrets:intermediate_tiered>,<embers:block_caminite_brick>]
         ]
     ]
 };

@@ -1,0 +1,14 @@
+{
+	x: -6.0d,
+	y: 3.5d,
+	dependencies: [
+		"66d64796"
+	],
+	tasks: [{
+		uid: "a5c78eac",
+		type: "item",
+		items: [{
+			item: "abyssalcraft:powerstonetracker"
+		}]
+	}]
+}

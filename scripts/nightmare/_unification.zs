@@ -93,7 +93,7 @@ recipes.addShaped("gear_wood", <thermalfoundation:material:22>, [
 
 Compactor.removeGearRecipe(<evilcraft:dark_gem>);
 
-Macerator.addRecipe(<actuallyadditions:item_dust:4>, <minecraft:dye:4>);
+Macerator.addRecipe(<enderio:item_material:32>, <minecraft:dye:4>);
 Macerator.addRecipe(findFirstItemFromMod("actuallyadditions","dust","diamond"), findFirstItemFromMod("minecraft","gem","diamond"));
 
 var mapSimpleAlloy as IItemStack[][IItemStack] = {
@@ -115,7 +115,9 @@ var mapSimpleAlloy as IItemStack[][IItemStack] = {
     findFirstItemFromMod("contenttweaker","ingot","redAlloy") : [findFirstItemFromMod("thermalfoundation","ingot","aluminum"),<minecraft:redstone> * 4],
     <immersivepetroleum:stone_decoration> : [<immersiveengineering:stone_decoration:5>, <thermalfoundation:material:892>],
     <quantumflux:darkstone> : [<ic2:blockutility:2>,<minecraft:concrete:15>],
-    <ic2:itemmisc:261> : [findFirstItemFromMod("contenttweaker","ingot","ferromagneticAlloy"),<ic2:itemmisc:14> * 8]
+    <ic2:itemmisc:261> : [findFirstItemFromMod("contenttweaker","ingot","ferromagneticAlloy"),<ic2:itemmisc:14> * 8],
+    <randomthings:spectreanchor> : [<embers:aspectus_iron>,<randomthings:ingredient:3>*2],
+    <thermalfoundation:material:657> : [<architecturecraft:sawblade>, findFirstItemFromMod("thermalfoundation","ingot","steel")]
 };
 
 ArcFurnace.removeRecipe(findFirstItemFromMod("contenttweaker","ingot","redAlloy"));
@@ -151,11 +153,10 @@ var mapSimpleCrush as IItemStack[IItemStack] = {
     <fluxnetworks:fluxcore> * 8 : <enderio:block_transceiver>,
     <bigreactors:reactorcasingcores> * 8 : <ic2:blockchambers>,
     <bigreactors:turbinehousingcores> * 8 : <ic2:blockgenerator:7>,
-    <contenttweaker:flawless_diamond_shard> * 4 : <contenttweaker:flawless_block>,
-    <quantumflux:graphitedust> * 2 : <quantumflux:graphiteore>,
+    <contenttweaker:flawless_diamond_shard> * 6 : <contenttweaker:flawless_block>,
     <woot:soulsanddust> * 2 : <minecraft:soul_sand>,
     <contenttweaker:end_stone_dust> : <minecraft:end_stone>,
-    <earthworks:item_chalk> * 4 : <earthworks:block_chalk>
+    <earthworks:item_chalk> * 4 : <earthworks:block_chalk>,
 };
 
 Crusher.removeRecipe(<immersiveengineering:material:17>);
@@ -286,6 +287,14 @@ recipes.addShaped(<minecraft:stick> * 2, [
 recipes.addShaped(<minecraft:stick> * 8, [
     [<ore:logWood>],
     [<ore:logWood>]
+]);
+
+recipes.remove(<immersiveengineering:material>);
+Sawmill.addRecipe(<immersiveengineering:material>*4, <immersiveengineering:treated_wood>, 400);
+Saw.addRecipe(<immersiveengineering:material> * 6, <ore:plankTreatedWood>);
+recipes.addShaped(<immersiveengineering:material> * 2, [
+    [<ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>]
 ]);
 
 var rods as IItemStack[] = [

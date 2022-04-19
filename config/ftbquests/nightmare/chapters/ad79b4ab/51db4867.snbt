@@ -1,0 +1,14 @@
+{
+	x: -20.0d,
+	y: 28.5d,
+	dependencies: [
+		"afbe9975"
+	],
+	tasks: [{
+		uid: "6e5a9ce1",
+		type: "item",
+		items: [{
+			item: "enderio:block_transceiver"
+		}]
+	}]
+}

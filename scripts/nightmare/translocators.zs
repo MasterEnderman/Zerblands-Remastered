@@ -23,7 +23,7 @@ import scripts.functions.findFirstItemFromMod;
 import scripts.functions.calc_atomic;
 
 recipes.remove(<translocators:translocator_part>);
-calc_atomic(<translocators:translocator_part>, <extrautils2:grocket>, <extrautils2:pipe>, <extrautils2:grocket:3>);
+calc_atomic(<translocators:translocator_part> * 2, <extrautils2:grocket>, <extrautils2:pipe>, <extrautils2:grocket:3>);
 
 recipes.remove(<translocators:translocator_part:1>);
-calc_atomic(<translocators:translocator_part:1>, <extrautils2:grocket:2>, <extrautils2:pipe>, <extrautils2:grocket:4>);
+calc_atomic(<translocators:translocator_part:1> * 2, <extrautils2:grocket:2>, <extrautils2:pipe>, <extrautils2:grocket:4>);

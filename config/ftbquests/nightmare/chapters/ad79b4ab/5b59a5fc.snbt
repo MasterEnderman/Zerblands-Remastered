@@ -1,0 +1,14 @@
+{
+	x: -4.0d,
+	y: 18.5d,
+	dependencies: [
+		"56a38cb9"
+	],
+	tasks: [{
+		uid: "1969ce96",
+		type: "item",
+		items: [{
+			item: "contenttweaker:data_orb"
+		}]
+	}]
+}

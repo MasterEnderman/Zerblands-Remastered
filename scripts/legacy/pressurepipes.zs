@@ -23,6 +23,7 @@ import scripts.functions.findFirstItemFromMod;
 // Default recipes from config (config will be removed -> different recipes in nightmare mode)
 
 var R as IIngredient = <ore:dustRedstone>;
+var D as IIngredient = <ore:gemDiamond>;
 var I as IIngredient = <ore:ingotIron>;
 var C as IIngredient = <ore:dyeGreen>;
 var E as IIngredient = <ore:enderpearl>;

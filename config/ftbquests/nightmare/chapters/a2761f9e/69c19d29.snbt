@@ -1,0 +1,24 @@
+{
+	x: 0.0d,
+	y: -2.5d,
+	shape: "heart",
+	dependencies: [
+		"49942d84",
+		"66277b36",
+		"97a3ea16",
+		"e3d9c8a6"
+	],
+	tasks: [{
+		uid: "a4a2d919",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "appliedenergistics2:creative_storage_cell",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

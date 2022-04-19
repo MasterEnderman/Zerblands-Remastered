@@ -1,0 +1,15 @@
+{
+	x: 3.0d,
+	y: 3.0d,
+	dependencies: [
+		"ac889b10",
+		"97a3ea16"
+	],
+	tasks: [{
+		uid: "f347acf8",
+		type: "item",
+		items: [{
+			item: "exponentialpower:advancedendergenerator"
+		}]
+	}]
+}

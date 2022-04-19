@@ -1,0 +1,15 @@
+{
+	x: -8.0d,
+	y: 34.5d,
+	dependencies: [
+		"c6d9f9aa",
+		"2ec2aba1"
+	],
+	tasks: [{
+		uid: "22ef4155",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:inscriber"
+		}]
+	}]
+}

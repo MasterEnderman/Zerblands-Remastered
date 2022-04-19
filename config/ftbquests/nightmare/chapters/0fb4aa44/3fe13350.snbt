@@ -1,9 +1,11 @@
 {
-	x: -1.5d,
-	y: -5.5d,
+	x: 0.0d,
+	y: 0.0d,
+	shape: "gear",
 	dependencies: [
 		"591de857"
 	],
+	size: 4.0d,
 	tasks: [{
 		uid: "c3546fb4",
 		type: "item",
@@ -13,21 +15,6 @@
 			},
 			id: "astralsorcery:blockaltar"
 		}],
-		ignore_nbt: 1b
-	},
-	{
-		uid: "3ee8cfbd",
-		type: "item",
-		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "astralsorcery:itemwand",
-			tag: {
-				astralsorcery: {}
-			}
-		}],
-		ignore_damage: true,
 		ignore_nbt: 1b
 	}]
 }

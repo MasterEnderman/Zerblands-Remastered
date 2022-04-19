@@ -1,0 +1,14 @@
+{
+	x: 12.0d,
+	y: 5.0d,
+	dependencies: [
+		"7dd203fe"
+	],
+	tasks: [{
+		uid: "cc163459",
+		type: "item",
+		items: [{
+			item: "forestry:honey_drop 1 1"
+		}]
+	}]
+}

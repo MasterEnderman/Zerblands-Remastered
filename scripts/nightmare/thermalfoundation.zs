@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.enderio.AlloySmelter;
+import mods.forestry.Carpenter;
 import mods.immersiveengineering.Mixer;
 import mods.jei.JEI;
 import mods.tconstruct.Alloy;
@@ -123,3 +124,23 @@ Mixer.addRecipe(<liquid:petrotheum>*250, <liquid:crude_oil>*250, [<thermalfounda
 Mixer.addRecipe(<liquid:petrotheum>*250, <liquid:oil>*250, [<thermalfoundation:material:1027>], 1024);
 
 Mixer.addRecipe(<liquid:mana>*250, <liquid:liquiddna>*250, [<thermalfoundation:material:1028>], 1024);
+
+var upgradeKit as IIngredient[][IItemStack] = {
+    <thermalfoundation:upgrade> : [<ore:plateInvar>, <thermalfoundation:material:291>, <forestry:thermionic_tubes:3>],
+    <thermalfoundation:upgrade:1> : [<ore:plateElectrum>, <thermalfoundation:material:258>, <forestry:thermionic_tubes:2>],
+    <thermalfoundation:upgrade:2> : [<ore:plateSignalum>, <redstonearsenal:material:96>, <forestry:thermionic_tubes:7>],
+    <thermalfoundation:upgrade:3> : [<ore:plateEnderium>, <thermalfoundation:material:294>, <forestry:thermionic_tubes:12>],
+};
+
+for kit, recipe in upgradeKit {
+    var plate as IIngredient = recipe[0];
+    var gear as IItemStack = recipe[1];
+    var tube as IIngredient = recipe[2];
+
+    recipes.remove(kit);
+    Carpenter.addRecipe(kit, [
+        [plate,tube,plate],
+        [tube,<ic2:itemmisc:260>,tube],
+        [plate,tube,plate]
+    ], 20, <liquid:lubricant> * 1000, gear);
+}

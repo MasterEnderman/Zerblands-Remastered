@@ -27,9 +27,18 @@ import mods.jei.JEI;
 ExtremeCrafting.remove(<avaritia:neutron_collector>);
 JEI.removeAndHide(<avaritia:neutron_collector>);
 
+ExtremeCrafting.remove(<avaritia:resource:5>);
+
+recipes.removeShaped(<avaritia:resource:1>);
+recipes.addShaped(<avaritia:resource:1>, [
+    [<avaritia:resource>,<avaritia:resource>,<avaritia:resource>],
+    [<avaritia:resource>,<ore:ingotChaoticMetal>,<avaritia:resource>],
+    [<avaritia:resource>,<avaritia:resource>,<avaritia:resource>]
+]);
+
 recipes.remove(<avaritia:resource>);
 Carpenter.addRecipe(<avaritia:resource>, [
-    [<contenttweaker:end_diamond_block>,<bloodmagic:slate:4>,<contenttweaker:end_diamond_block>],
-    [<bloodmagic:slate:4>,<contenttweaker:crystal_cluster_core>,<bloodmagic:slate:4>],
-    [<contenttweaker:end_diamond_block>,<bloodmagic:slate:4>,<contenttweaker:end_diamond_block>]
+    [<contenttweaker:end_diamond_block>,<contenttweaker:eternalslate>,<contenttweaker:end_diamond_block>],
+    [<contenttweaker:eternalslate>,<contenttweaker:crystal_cluster_core>,<contenttweaker:eternalslate>],
+    [<contenttweaker:end_diamond_block>,<contenttweaker:eternalslate>,<contenttweaker:end_diamond_block>]
 ], 10, <liquid:mana> * 1000, <forestry:honey_drop:2>);

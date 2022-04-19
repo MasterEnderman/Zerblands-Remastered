@@ -57,6 +57,8 @@ JEI.addItem(<forestry:honey_drop:1>);
 JEI.addItem(<forestry:honey_drop:2>);
 
 recipes.remove(<forestry:humus>);
+recipes.remove(<forestry:letters>);
+recipes.remove(<forestry:raintank>);
 
 recipes.remove(<forestry:ambrosia>);
 Transposer.addFillRecipe(<forestry:ambrosia>, <forestry:capsule>, <liquid:ambrosia> * 1000, 200);
@@ -84,21 +86,21 @@ Carpenter.addRecipe(<forestry:impregnated_casing>, [
     [<ore:scaffoldingTreatedWood>,<ore:fenceTreatedWood>,<ore:scaffoldingTreatedWood>],
     [<ore:fenceTreatedWood>,<actuallyadditions:block_misc:4>,<ore:fenceTreatedWood>],
     [<ore:scaffoldingTreatedWood>,<ore:fenceTreatedWood>,<ore:scaffoldingTreatedWood>]
-], 60, <liquid:seed.oil> * 200, <thermalfoundation:material:22>);
+], 10, <liquid:seed.oil> * 200, <thermalfoundation:material:22>);
 
 Carpenter.removeRecipe(<forestry:hardened_machine>);
 Carpenter.addRecipe(<forestry:hardened_machine>, [
     [<quantumflux:craftingpiece:6>,<ore:plateInvar>,<quantumflux:craftingpiece:6>],
     [<ore:plateInvar>,<forestry:sturdy_machine>,<ore:plateInvar>],
     [<quantumflux:craftingpiece:6>,<ore:plateInvar>,<quantumflux:craftingpiece:6>]
-], 60, <liquid:soldering_alloy> * 288);
+], 10, <liquid:soldering_alloy> * 288);
 
 Carpenter.removeRecipe(<forestry:crafting_material:6>);
 Carpenter.addRecipe(<forestry:crafting_material:6>, [
     [<forestry:beeswax>,<forestry:oak_stick>,<forestry:oak_stick>],
     [<forestry:oak_stick>,<botania:livingwood:5>,<forestry:oak_stick>],
     [<forestry:oak_stick>,<forestry:oak_stick>,<forestry:beeswax>]
-], 60, <liquid:ambrosia> * 500, <morebees:framesweet>);
+], 10, <liquid:ambrosia> * 500, <morebees:framesweet>);
 
 var woodPulp as IIngredient[][][int] = {
     2 : [
@@ -119,7 +121,7 @@ var woodPulp as IIngredient[][][int] = {
 Carpenter.removeRecipe(<forestry:wood_pulp>);
 
 for amount, recipe in woodPulp {
-    Carpenter.addRecipe(<forestry:wood_pulp>, recipe, 100, <liquid:water> * 250);
+    Carpenter.addRecipe(<forestry:wood_pulp>, recipe, 10, <liquid:water> * 250);
 }
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
@@ -174,9 +176,9 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     ],
     <forestry:fabricator> : [
         [
-            [<ore:plateGold>,<contenttweaker:calculator>,<ore:plateGold>],
+            [<ic2:itemcable:4>,<contenttweaker:calculator>,<ic2:itemcable:4>],
             [<contenttweaker:advanced_assembly>,<actuallyadditions:block_misc:9>,<contenttweaker:advanced_assembly>],
-            [<contenttweaker:copper_coil>,<extrautils2:ingredients:13>,<contenttweaker:copper_coil>]
+            [<contenttweaker:copper_coil>,<contenttweaker:heating_coil>,<contenttweaker:copper_coil>]
         ]
     ],
     <forestry:frame_untreated> : [
@@ -230,6 +232,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>],
             [<contenttweaker:creative>,<gendustry:imprinter>,<contenttweaker:creative>],
             [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>]
+        ]
+    ],
+    <forestry:worktable> : [
+        [
+            [<ore:ingotIron>,<minecraft:book>,<ore:ingotIron>],
+            [<contenttweaker:calculator_assembly>,<minecraft:crafting_table>,<contenttweaker:calculator_assembly>],
+            [<ore:plankTreatedWood>,<minecraft:chest>,<ore:plankTreatedWood>]
         ]
     ]
 };
@@ -292,7 +301,7 @@ var tubes as IItemStack[string][IItemStack] = {
     },
     <forestry:thermionic_tubes:11> : {
         "electrode" : <contenttweaker:electrode_lapis>,
-        "catalyst" : <ore:dustLapis>.firstItem
+        "catalyst" : <enderio:item_material:32>
     },
     <forestry:thermionic_tubes:12> : {
         "electrode" : <contenttweaker:electrode_ender>,
@@ -343,14 +352,24 @@ for circuit, data in boards {
         [cable,core,cable],
         [cable,plate,cable],
         [cable,<contenttweaker:stone_board>,cable]
-    ], 40, <liquid:soldering_alloy> * 144);
+    ], 10, <liquid:soldering_alloy> * 144);
+    Carpenter.addRecipe(circuit * 2, [
+        [cable,core,cable],
+        [cable,plate,cable],
+        [cable,<energycontrol:item_component:1>,cable]
+    ], 10, <liquid:soldering_alloy> * 144);
+    Carpenter.addRecipe(circuit * 3, [
+        [cable,core,cable],
+        [cable,plate,cable],
+        [cable,<energycontrol:item_component>,cable]
+    ], 10, <liquid:soldering_alloy> * 144);
 }
 
 Carpenter.addRecipe(<forestry:crafting_material:7>, [
     [<thermalfoundation:material:819>,<ic2:itemmisc:357>,<thermalfoundation:material:819>],
     [<ic2:itemmisc:357>,<earthworks:item_timber>,<ic2:itemmisc:357>],
     [<thermalfoundation:material:819>,<ic2:itemmisc:357>,<thermalfoundation:material:819>]
-], 100, <liquid:biomass> * 250);
+], 10, <liquid:biomass> * 250);
 
 Centrifuge.removeRecipe(<forestry:bee_combs:9>);
 Centrifuge.addRecipe([<ic2:itemmisc:181> % 60, <forestry:honey_drop> % 40], <forestry:bee_combs:9>, 100);
@@ -364,14 +383,14 @@ Carpenter.removeRecipe(<forestry:oak_stick>);
 Carpenter.addRecipe(<forestry:oak_stick>, [
     [<earthworks:item_timber>],
     [<earthworks:item_timber>]
-], 80, <liquid:seed.oil> * 100);
+], 10, <liquid:seed.oil> * 100);
 
 recipes.remove(<forestry:apiary>);
 Carpenter.addRecipe(<forestry:apiary>, [
     [<ore:slabWood>,<ore:slabWood>,<ore:slabWood>],
     [<ore:plankWood>,<harvestcraft:apiary>,<ore:plankWood>],
     [<ore:plankWood>,<forestry:impregnated_casing>,<ore:plankWood>]
-], 100, <liquid:for.honey> * 100);
+], 10, <liquid:for.honey> * 100);
 
 recipes.remove(<forestry:can>);
 MetalPress.addRecipe(<forestry:can>, <ore:ingotTin>, <immersiveengineering:mold:3>, 512);

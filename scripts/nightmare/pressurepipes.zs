@@ -32,11 +32,11 @@ var calcMapAtomic as IIngredient[][IItemStack] = {
     <pressure:output> : [<pressure:interface>, <appliedenergistics2:part:261>, <actuallyadditions:block_misc:9>],
     <pressure:input> : [<pressure:interface>, <appliedenergistics2:part:241>, <actuallyadditions:block_misc:9>],
     <pressure:router> : [<pressure:interface>, <appliedenergistics2:fluid_interface>, <actuallyadditions:block_misc:8>],
-    <pressure:pump> : [<pressure:tank_interface>, <immersiveengineering:metal_device0:5>, <actuallyadditions:block_misc:9>],
-    <pressure:drain> : [<pressure:tank_interface>, <immersiveengineering:metal_device0:6>, <actuallyadditions:block_misc:9>],
-    <pressure:sluice> : [<pressure:tank_interface>, <minecraft:iron_bars>, <actuallyadditions:block_misc:9>],
-    <pressure:check_valve> : [<pressure:tank_interface>, <pressure:pipe>, <immersivetech:valve>],
-    <pressure:pipe_sensor> : [<pressure:tank_interface>, <pressure:pipe>, <minecraft:observer>],
+    <pressure:pump> : [<pressure:interface>, <immersiveengineering:metal_device0:5>, <actuallyadditions:block_misc:9>],
+    <pressure:drain> : [<pressure:interface>, <immersiveengineering:metal_device0:6>, <actuallyadditions:block_misc:9>],
+    <pressure:sluice> : [<pressure:interface>, <minecraft:iron_bars>, <actuallyadditions:block_misc:9>],
+    <pressure:check_valve> : [<pressure:interface>, <pressure:pipe>, <immersivetech:valve>],
+    <pressure:pipe_sensor> : [<pressure:interface>, <pressure:pipe>, <minecraft:observer>],
 };
 
 for item, recipe in calcMapAtomic {
@@ -75,6 +75,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
         [
             [<pressure:tank_fluid_input>]
         ]
+    ],
+    <pressure:water_source> : [
+        [
+            [<ore:plateTungsten>,<botania:rune>,<ore:plateTungsten>],
+            [<botania:elfglass>,<enderio:block_reservoir>,<botania:elfglass>],
+            [<ore:plateTungsten>,<pressure:fluid_interface>,<ore:plateTungsten>]
+        ]
     ]
 };
 
@@ -93,10 +100,10 @@ Carpenter.addRecipe(<pressure:interface>, [
     [<ore:plateSteel>,<contenttweaker:iron_rotor>,<ore:plateSteel>],
     [<thermalfoundation:material:512>,<enderutilities:enderpart:15>,<thermalfoundation:material:512>],
     [<ore:plateSteel>,<contenttweaker:electric_motor>,<ore:plateSteel>]
-], 500, <liquid:lubricant> * 1000);
+], 20, <liquid:lubricant> * 1000);
 
 Carpenter.addRecipe(<pressure:fluid_interface>, [
     [<ore:plateSteel>,<contenttweaker:iron_rotor>,<ore:plateSteel>],
     [<thermalfoundation:material:512>,<minecraft:bucket>,<thermalfoundation:material:512>],
     [<ore:plateSteel>,<contenttweaker:iron_rotor>,<ore:plateSteel>]
-], 500, <liquid:lubricant> * 1000);
+], 20, <liquid:lubricant> * 1000);

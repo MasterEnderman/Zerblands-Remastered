@@ -1,10 +1,10 @@
 # ME Level Maintainer
 
-![ME Level Maintainer](me_level_maintainer.png)
+![ME Level Maintainer](maintainer.png)
 
 The ME Level Maintainer is used to maintain some quantity of an item in the ME network. This is accomplished by requesting autocrafting for items that fall beneath a certain quantity threshold.
 
-![Inventory](me_level_maintainer_inventory.png)
+![Inventory](inventory.png)
 
 To use the ME Level Maintainer, items should be loaded into the left slots to request that they be maintained. Note that these are ghost slots, so items placed in them are not consumed.
 

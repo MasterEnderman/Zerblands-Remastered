@@ -75,3 +75,6 @@ ectoplasma.register();
 
 var ambrosia = VanillaFactory.createFluid("ambrosia", 10713609);
 ambrosia.register();
+
+var grog = VanillaFactory.createFluid("grog", 6356792);
+grog.register();

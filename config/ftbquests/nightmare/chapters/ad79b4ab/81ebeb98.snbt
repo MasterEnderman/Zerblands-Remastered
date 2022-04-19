@@ -1,0 +1,40 @@
+{
+	x: -2.0d,
+	y: 36.5d,
+	dependencies: [
+		"8e915c5a",
+		"c6d9f9aa"
+	],
+	tasks: [{
+		uid: "4c9ab4d1",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:crystal_seed",
+			tag: {
+				progress: 0
+			}
+		}]
+	},
+	{
+		uid: "f28264e7",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:crystal_seed",
+			tag: {
+				progress: 600
+			},
+			Damage: 600s
+		}]
+	},
+	{
+		uid: "c75024dc",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:crystal_seed",
+			tag: {
+				progress: 1200
+			},
+			Damage: 1200s
+		}]
+	}]
+}

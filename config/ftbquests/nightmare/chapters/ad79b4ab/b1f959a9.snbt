@@ -1,0 +1,14 @@
+{
+	x: 16.0d,
+	y: 28.5d,
+	dependencies: [
+		"e9ae04e1"
+	],
+	tasks: [{
+		uid: "07765267",
+		type: "item",
+		items: [{
+			item: "gendustry:liquifier"
+		}]
+	}]
+}

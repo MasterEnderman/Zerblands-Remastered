@@ -25,20 +25,18 @@ import mods.forestry.Carpenter;
 import mods.forestry.ThermionicFabricator;
 import mods.jei.JEI;
 import mods.thermalexpansion.InductionSmelter;
-import mods.thermalexpansion.Infuser;
 import mods.thermalexpansion.Transposer;
-import mods.threng.Energizer;
 
 import scripts.functions.calc_basic;
 import scripts.functions.calc_scientific;
+
+import scripts.mod_functions.betterCharging;
 
 JEI.removeAndHide(<quantumflux:magnet>);
 
 recipes.removeByRecipeName("quantumflux:ender_pearl");
 
-recipes.remove(<quantumflux:exciterupgrade>);
-Infuser.addRecipe(<quantumflux:exciterupgrade>,<quantumflux:craftingpiece:4>,10000000);
-Energizer.addRecipe(<quantumflux:exciterupgrade>,<quantumflux:craftingpiece:4>,10000000);
+betterCharging(<quantumflux:exciterupgrade>,<quantumflux:craftingpiece:4>,10000000);
 
 recipes.remove(<quantumflux:linkingcard>);
 calc_basic(<quantumflux:linkingcard>,<quantumflux:craftingpiece:5>,<quantumflux:craftingpiece:3>);
@@ -84,7 +82,7 @@ Carpenter.addRecipe(<quantumflux:craftingpiece:5>, [
     [null,<quantumflux:craftingpiece>,null],
     [<quantumflux:craftingpiece:3>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:3>],
     [<ore:platePlatinum>,<opencomputers:material:3>,<ore:platePlatinum>]
-], 30, <liquid:iron_chloride> * 200);
+], 10, <liquid:iron_chloride> * 200);
 
 recipes.remove(<quantumflux:craftingpiece:2>);
 AlloySmelter.addRecipe(<quantumflux:craftingpiece:2>, [<enderio:item_material:18>,<contenttweaker:antispider_eye>,<botania:lens:17>], 5000);
@@ -121,6 +119,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
         [
             [<quantumflux:craftingpiece>,<enderutilities:enderpart:16>,<quantumflux:craftingpiece>],
             [<quantumflux:craftingpiece:1>,<actuallyadditions:block_laser_relay>,<quantumflux:craftingpiece:1>]
+        ]
+    ],
+    <quantumflux:zeropointextractor> : [
+        [
+            [<quantumflux:craftingpiece>,<quantumflux:craftingpiece:5>,<quantumflux:craftingpiece>],
+            [<actuallyadditions:item_crystal_empowered:3>,<extrautils2:machine>,<actuallyadditions:item_crystal_empowered:3>],
+            [<quantumflux:craftingpiece:1>,<quantumflux:craftingpiece:1>,<quantumflux:craftingpiece:1>]
         ]
     ]
 };

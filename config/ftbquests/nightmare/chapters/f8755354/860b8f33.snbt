@@ -1,0 +1,14 @@
+{
+	x: -4.0d,
+	y: 7.0d,
+	dependencies: [
+		"76124a26"
+	],
+	tasks: [{
+		uid: "55f76333",
+		type: "item",
+		items: [{
+			item: "contenttweaker:red_core"
+		}]
+	}]
+}

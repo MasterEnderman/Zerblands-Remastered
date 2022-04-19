@@ -179,6 +179,28 @@ var removeAndHide as IItemStack[] = [
     <storagedrawers:trim:2>,
     <storagedrawers:trim:4>,
     <storagedrawers:trim:5>,
+    // minecraft
+    <minecraft:wooden_sword>,
+    <minecraft:wooden_shovel>,
+    <minecraft:wooden_pickaxe>,
+    <minecraft:wooden_axe>,
+    <minecraft:wooden_hoe>,
+    <minecraft:stone_sword>,
+    <minecraft:stone_shovel>,
+    <minecraft:stone_pickaxe>,
+    <minecraft:stone_axe>,
+    <minecraft:stone_hoe>,
+    // abyssalcraft
+    <abyssalcraft:dpick>,
+    <abyssalcraft:daxe>,
+    <abyssalcraft:dshovel>,
+    <abyssalcraft:dsword>,
+    <abyssalcraft:dhoe>,
+    // ic2c
+    <ic2:itemchargepadupgrade>,
+    <ic2:itemchargepadupgrade:1>,
+    <ic2:itemchargepadupgrade:2>,
+    <ic2:itemchargepadupgrade:3>,
 ];
 
 for item in removeAndHide {

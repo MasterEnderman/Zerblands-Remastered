@@ -20,7 +20,6 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.bloodmagic.AlchemyArray;
 import mods.bloodmagic.TartaricForge;
-import mods.chisel.Carving;
 import mods.jei.JEI;
 
 import moretweaker.bloodarsenal.Sanguine;
@@ -42,11 +41,6 @@ var itemsSanguine as IItemStack[][IItemStack] = {
     <bloodarsenal:stasis_pickaxe> : [<bloodmagic:bound_pickaxe>,<bloodarsenal:blood_infused_iron_pickaxe>],
     <bloodarsenal:stasis_shovel> : [<bloodmagic:bound_shovel>,<bloodarsenal:blood_infused_iron_shovel>],
 };
-
-Sanguine.removeRecipe(<bloodmagic:bound_sword>);
-Sanguine.removeRecipe(<bloodmagic:bound_axe>);
-Sanguine.removeRecipe(<bloodmagic:bound_pickaxe>);
-Sanguine.removeRecipe(<bloodmagic:bound_shovel>);
 
 Sanguine.removeRecipe(<bloodarsenal:stasis_sword>);
 Sanguine.removeRecipe(<bloodarsenal:stasis_axe>);

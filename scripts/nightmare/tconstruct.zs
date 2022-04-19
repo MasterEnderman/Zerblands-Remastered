@@ -23,7 +23,10 @@ import scripts.functions.findFirstItemFromMod;
 import scripts.functions.calc_basic;
 
 import mods.actuallyadditions.Empowerer;
+import mods.botania.ManaInfusion;
+import mods.botania.RuneAltar;
 import mods.enderio.AlloySmelter;
+import mods.ic2.Compressor;
 import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.CokeOven;
 import mods.immersiveengineering.MetalPress;
@@ -40,6 +43,8 @@ JEI.removeAndHide(<tconstruct:throwball:1>);
 JEI.addItem(<tconstruct:slime_boots:3>);
 
 Drying.addRecipe(<tconstruct:materials:1>, <contenttweaker:pressed_mud>, 600);
+
+Compressor.addRecipe(<tconstruct:spaghetti>,<actuallyadditions:item_food:7>);
 
 InductionSmelter.removeRecipe(<tconstruct:ingots:0>, <tconstruct:ingots:1>);
 Alloy.removeRecipe(<liquid:manyullyn>);
@@ -62,15 +67,23 @@ Melting.removeEntityMelting(<entity:minecraft:horse>);
 recipes.remove(<tconstruct:throwball>);
 Transposer.addFillRecipe(<tconstruct:throwball>, <minecraft:snowball>, <liquid:glowstone> * 50, 400);
 
+recipes.remove(<tconstruct:materials:18>);
+ManaInfusion.addInfusion(<tconstruct:materials:18>, <ic2:itemmisc:350>, 1000);
+RuneAltar.addRecipe(<tconstruct:materials:19>,[<tconstruct:materials:18>, <randomthings:imbue:2>, <botania:grassseeds>], 2000);
+
 Empowerer.addRecipe(<tconstruct:slime_sapling:0>, <minecraft:deadbush>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:1>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:1>, 4000, 1200, [0.7, 0.6, 0.1]);
 Empowerer.addRecipe(<tconstruct:slime_sapling:1>, <minecraft:deadbush>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:2>, <tconstruct:slime_congealed>, <tconstruct:slime_congealed:2>, 4000, 1200, [0.8, 0.2, 0.8]);
 Empowerer.addRecipe(<tconstruct:slime_sapling:2>, <minecraft:deadbush>, <tconstruct:slime_congealed:3>, <tconstruct:slime_congealed:4>, <tconstruct:slime_congealed:3>, <tconstruct:slime_congealed:4>, 4000, 1200, [0.4, 0.1, 0.4]);
+
+recipes.remove(<tconstruct:materials:16>);
+Empowerer.addRecipe(<tconstruct:materials:16>, <actuallyadditions:item_crystal_empowered:4>, <tconstruct:materials:15>, <tconstruct:materials:15>, <tconstruct:materials:15>, <tconstruct:materials:15>, 2000, 1200, [0.9,0.9,0.2]);
 
 recipes.remove(<tconstruct:stone_stick>);
 MetalPress.addRecipe(<tconstruct:stone_stick>*2, <ore:cobblestone>, <immersiveengineering:mold:2>, 64);
 MetalPress.addRecipe(<tconstruct:stone_stick>*4, <ore:stone>, <immersiveengineering:mold:2>, 64);
 
 Melting.removeRecipe(<liquid:dirt>, <earthworks:item_adobe>);
+Melting.removeRecipe(<liquid:starmetal>, <astralsorcery:blockcustomore:1>);
 
 Crucible.addRecipe(<liquid:stone> * 144, <tconstruct:soil>, 2000);
 
@@ -83,11 +96,15 @@ recipes.remove(<tconstruct:seared_furnace_controller>);
 recipes.remove(<tconstruct:tinker_tank_controller>);
 Casting.addBasinRecipe(<tconstruct:tinker_tank_controller>, <extrautils2:drum>, <liquid:stone>, 576, true, 100);
 
+recipes.remove(<tconstruct:materials:15>);
+Casting.addTableRecipe(<tconstruct:materials:15>, <forestry:crafting_material:3>, <liquid:gold>, 288, true, 100);
+
 recipes.remove(<tconstruct:brownstone:1>);
 calc_basic(<tconstruct:brownstone:1>,<minecraft:redstone>,<chisel:brownstone>);
 
 recipes.remove(<tconstruct:firewood:1>);
 calc_basic(<tconstruct:firewood:1>,<tconstruct:firewood>,<embers:dust_ember>);
+calc_basic(<tconstruct:firewood:1>,<ore:plankTreatedWood>,<randomthings:imbue>);
 
 recipes.remove(<tconstruct:pattern>);
 recipes.addShaped(<tconstruct:pattern> * 2,[

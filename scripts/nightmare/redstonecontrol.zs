@@ -20,9 +20,10 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import scripts.functions.calc_basic;
-
 import mods.ic2.Extractor;
+
+import scripts.functions.calc_basic;
+import scripts.functions.calc_atomic;
 
 recipes.remove(<rs_ctr:wire>);
 recipes.addShapeless(<rs_ctr:wire> * 2, [<immersiveengineering:wirecoil:5>]);
@@ -53,3 +54,9 @@ calc_basic(<rs_ctr:rs_port:2>,<contenttweaker:stone_board>,<ore:dustLapis>);
 
 recipes.remove(<rs_ctr:rs_port:3>);
 calc_basic(<rs_ctr:rs_port:3>,<contenttweaker:stone_board>,<cd4017be_lib:m:402>);
+
+recipes.remove(<rs_ctr:frame>);
+calc_atomic(<rs_ctr:frame>,<bloodmagic:component:10>,<minecraft:obsidian>,<cd4017be_lib:m:402>);
+
+recipes.remove(<rs_ctr:solar_cell>);
+calc_basic(<rs_ctr:solar_cell>,<minecraft:daylight_detector>,<enderio:item_material:3>);

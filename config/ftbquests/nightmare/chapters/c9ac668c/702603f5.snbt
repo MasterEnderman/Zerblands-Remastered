@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: 9.5d,
+	dependencies: [
+		"f544d38f"
+	],
+	tasks: [{
+		uid: "8439f688",
+		type: "item",
+		items: [{
+			item: "contenttweaker:malignant_heart"
+		}]
+	}]
+}

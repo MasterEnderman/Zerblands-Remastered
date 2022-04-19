@@ -68,3 +68,21 @@ ElectrolyticCrucibleBattery.addRecipe(<liquid:hydrogen>*800,<liquid:oxygen>*400,
 
 Casting.addTableRecipe(<contenttweaker:sodium_dust>, null, <liquid:moltensodium>, 250, false, 600);
 Mixer.addRecipe(<liquid:sodium_persulfate>*2000, <liquid:oxygen>*1000, [<ore:dustSulfur>,<contenttweaker:sodium_dust>], 512);
+
+recipes.addShaped(<contenttweaker:omega_core>, [
+    [<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>],
+    [<projecte:item.pe_klein_star:5>,<draconicevolution:chaotic_core>,<projecte:item.pe_klein_star:5>],
+    [<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>]
+]);
+
+recipes.addShaped(<contenttweaker:supermassiv>, [
+    [<extrautils2:compressedcobblestone:7>,<extrautils2:compressedcobblestone:7>,<extrautils2:compressedcobblestone:7>],
+    [<extrautils2:compressedcobblestone:7>,<appliedenergistics2:material:47>,<extrautils2:compressedcobblestone:7>],
+    [<extrautils2:compressedcobblestone:7>,<extrautils2:compressedcobblestone:7>,<extrautils2:compressedcobblestone:7>]
+]);
+
+recipes.addShaped(<contenttweaker:glass_bell>, [
+    [null,<minecraft:glass>,null],
+    [<minecraft:glass>,<ore:rodStone>,<minecraft:glass>],
+    [<minecraft:glass>,<minecraft:stone_button>,<minecraft:glass>]
+]);

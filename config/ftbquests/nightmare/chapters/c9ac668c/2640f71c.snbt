@@ -1,0 +1,26 @@
+{
+	x: 0.0d,
+	y: 3.5d,
+	dependencies: [
+		"66d64796",
+		"f003ff46"
+	],
+	tasks: [{
+		uid: "fd4801eb",
+		type: "item",
+		items: [{
+			item: "psi:cad_assembler"
+		}]
+	},
+	{
+		uid: "4eda91f2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "psi:cad_assembly"
+		}],
+		ignore_nbt: 1b
+	}]
+}

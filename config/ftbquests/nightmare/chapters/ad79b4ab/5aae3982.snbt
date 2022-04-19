@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: 12.5d,
+	dependencies: [
+		"7287abd6"
+	],
+	tasks: [{
+		uid: "f6e1f99a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:flawlessdiamond"
+		}]
+	}]
+}

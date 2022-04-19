@@ -88,6 +88,8 @@ var mapCalcBasic as IIngredient[][IItemStack] = {
     <randomthings:lapisglass> : [<ore:blockGlass>, <ore:blockLapis>],
     <randomthings:lapislamp> : [<minecraft:redstone_lamp>, <ore:blockLapis>],
     <randomthings:advanceditemcollector> : [<randomthings:itemcollector>, <enderio:item_basic_item_filter>],
+    <randomthings:specialchest> : [<minecraft:chest>,<minecraft:vine>],
+    <randomthings:specialchest:1> : [<minecraft:chest>,<minecraft:prismarine>],
 };
 
 for output, inputs in mapCalcBasic {
@@ -106,6 +108,9 @@ calc_scientific(<randomthings:enderbucket>, <minecraft:bucket>, <randomthings:st
 
 recipes.remove(<randomthings:redstoneobserver>);
 calc_atomic(<randomthings:redstoneobserver>, <botania:endereyeblock>, <minecraft:observer>, <ore:blockQuartz>);
+
+recipes.remove(<randomthings:escaperope>);
+calc_atomic(<randomthings:escaperope>, <rftools:infused_enderpearl>, <evilcraft:golden_string>, <evilcraft:golden_string>);
 
 recipes.remove(<randomthings:ingredient:1>);
 calc_flawless(<randomthings:ingredient:1>, <minecraft:skull:1>, <minecraft:ender_pearl>, <contenttweaker:enddiamond>, <evilcraft:corrupted_tear>);
@@ -140,7 +145,7 @@ recipes.remove(<randomthings:ingredient:5>);
 recipes.addShapeless(<randomthings:ingredient:5> * 2, [<astralsorcery:itemusabledust:0>,<enderzoo:confusingdust>,<enderzoo:witheringdust>,<ic2:itemmisc:150>]);
 
 recipes.remove(<randomthings:ingredient:3>);
-AlloySmelter.addRecipe(<randomthings:ingredient:3>, [<ore:ingotSoularium>,<actuallyadditions:item_crystal_empowered:1>,<randomthings:ingredient:2>], 100000);
+AlloySmelter.addRecipe(<randomthings:ingredient:3>, [<ore:ingotSoularium>,<actuallyadditions:item_crystal_empowered:1>*2,<randomthings:ingredient:12>*4], 100000);
 
 Empowerer.addRecipe(<randomthings:naturecore>, <botania:livingwood:5>, <botania:rune:2>, <astralsorcery:itemcraftingcomponent:4>, <botania:rune:2>, <astralsorcery:itemcraftingcomponent:4>, 8192, 100, [0.1, 0.1, 0.1]);
 
@@ -245,3 +250,10 @@ for key, value in recipeMapShaped {
 recipes.remove(<randomthings:ingredient:12>);
 Crucible.addRecipe(<liquid:ectoplasma> * 10, <randomthings:ingredient:2>, 100000);
 Transposer.addFillRecipe(<randomthings:ingredient:12>, <enderutilities:enderpart:21>,  <liquid:ectoplasma> * 1000, 2000);
+
+recipes.remove(<randomthings:weatheregg>);
+Transposer.addFillRecipe(<randomthings:weatheregg>, <minecraft:egg>,  <liquid:liquid_sunshine> * 2000, 10000);
+recipes.remove(<randomthings:weatheregg:1>);
+Transposer.addFillRecipe(<randomthings:weatheregg:1>, <minecraft:egg>,  <liquid:cloud_seed> * 500, 2500);
+recipes.remove(<randomthings:weatheregg:2>);
+Transposer.addFillRecipe(<randomthings:weatheregg:2>, <minecraft:egg>,  <liquid:cloud_seed_concentrated> * 1000, 5000);

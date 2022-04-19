@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: 21.0d,
+	dependencies: [
+		"97a5618b"
+	],
+	tasks: [{
+		uid: "85533355",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "projecte:item.pe_transmutation_tablet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

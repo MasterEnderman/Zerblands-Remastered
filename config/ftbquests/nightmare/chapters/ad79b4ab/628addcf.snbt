@@ -1,0 +1,16 @@
+{
+	x: 18.0d,
+	y: 20.5d,
+	dependencies: [
+		"78786878",
+		"1eb7638f",
+		"81f7d324"
+	],
+	tasks: [{
+		uid: "7edb93bb",
+		type: "item",
+		items: [{
+			item: "environmentaltech:modifier_null"
+		}]
+	}]
+}

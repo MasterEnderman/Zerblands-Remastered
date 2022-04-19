@@ -66,7 +66,28 @@ var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
         1 : [
             [
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>],
+                [<environmentaltech:connector>,<openmodularturrets:turret_base>,<environmentaltech:connector>],
+                [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>]
+            ]
+        ],
+        2 : [
+            [
+                [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>],
                 [<environmentaltech:connector>,<openmodularturrets:turret_base:1>,<environmentaltech:connector>],
+                [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>]
+            ]
+        ],
+        4 : [
+            [
+                [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>],
+                [<environmentaltech:connector>,<openmodularturrets:turret_base:2>,<environmentaltech:connector>],
+                [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>]
+            ]
+        ],
+        8 : [
+            [
+                [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>],
+                [<environmentaltech:connector>,<openmodularturrets:turret_base:3>,<environmentaltech:connector>],
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>]
             ]
         ]
@@ -132,7 +153,7 @@ for key, value in recipeMapShaped {
 }
 
 recipes.remove(<environmentaltech:photovoltaic_cell>);
-AlloySmelter.addRecipe(<environmentaltech:photovoltaic_cell>, [<enderio:item_material:3>, <extrautils2:ingredients:3>, <ore:nuggetCobalt> * 3], 5000);
+AlloySmelter.addRecipe(<environmentaltech:photovoltaic_cell>, [<enderio:item_material:3>, <contenttweaker:large_tanzanite>, <ore:dustSkyStone> * 3], 5000);
 
 recipes.remove(<environmentaltech:diode>);
 Altar.addAttunementAltarRecipe("et_diode", <environmentaltech:diode>, 500, 800, [
@@ -143,7 +164,7 @@ Altar.addAttunementAltarRecipe("et_diode", <environmentaltech:diode>, 500, 800, 
     <opencomputers:component:1>,
     <enderio:item_material:42>,
     <enderio:item_material:56>,
-    <enderio:item_material:42>,
+    <contenttweaker:module_void>,
     <enderio:item_material:56>,
     <quantumflux:craftingpiece:2>,
     <quantumflux:craftingpiece:2>,
@@ -158,7 +179,7 @@ Carpenter.addRecipe(<environmentaltech:modifier_null>, [
     [<environmentaltech:lonsdaleite>,<environmentaltech:mica>,<environmentaltech:lonsdaleite>],
     [<environmentaltech:mica>,<environmentaltech:interconnect>,<environmentaltech:mica>],
     [<environmentaltech:lonsdaleite>,<environmentaltech:mica>,<environmentaltech:lonsdaleite>]
-], 250, <liquid:mana> * 500, <enderio:item_dark_steel_upgrade>);
+], 20, <liquid:mana> * 500, <enderio:item_dark_steel_upgrade>);
 
 var tiers as IItemStack[string][int] = {
     1 : {
@@ -231,7 +252,7 @@ var machines as IItemStack[][string] = {
         <environmentaltech:solar_cont_6>,
     ],
     "solar_panel" : [
-        <actuallyadditions:block_furnace_solar>,
+        <environmentaltech:photovoltaic_cell>,
         <environmentaltech:solar_cell_litherite>,
         <environmentaltech:solar_cell_erodium>,
         <environmentaltech:solar_cell_kyronite>,

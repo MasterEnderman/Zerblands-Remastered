@@ -6,6 +6,21 @@ power: 1
 ftbutilities.claims.max_chunks: 500
 ftbutilities.chunkloader.max_chunks: 50
 ftbutilities.homes.max: 1
+ftbutilities.chunkloader.load_offline: false
+ftbutilities.homes.cooldown: 0s
+ftbutilities.homes.warmup: 0s
+ftbutilities.back.cooldown: 0s
+ftbutilities.back.warmup: 0s
+ftbutilities.spawn.cooldown: 0s
+ftbutilities.spawn.warmup: 0s
+ftbutilities.tpa.cooldown: 0s
+ftbutilities.tpa.warmup: 0s
+
+[nightmare]
+power: 2
+ftbutilities.claims.max_chunks: 1024
+ftbutilities.chunkloader.max_chunks: 50
+ftbutilities.homes.max: 1
 ftbutilities.chunkloader.load_offline: true
 ftbutilities.homes.cooldown: 0s
 ftbutilities.homes.warmup: 0s
@@ -36,7 +51,7 @@ ftbutilities.tpa.warmup: 0s
 default_op_rank: true
 power: 100
 ftbutilities.chat.name_format: <&2{name}&r>
-ftbutilities.claims.max_chunks: 1000
+ftbutilities.claims.max_chunks: 10000
 ftbutilities.chunkloader.max_chunks: 100
 ftbutilities.homes.max: 1
 ftbutilities.chunkloader.load_offline: true

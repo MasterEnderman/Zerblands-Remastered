@@ -1,0 +1,16 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	shape: "gear",
+	dependencies: [
+		"e1133b09"
+	],
+	size: 4.0d,
+	tasks: [{
+		uid: "323a25c1",
+		type: "item",
+		items: [{
+			item: "avaritia:extreme_crafting_table"
+		}]
+	}]
+}

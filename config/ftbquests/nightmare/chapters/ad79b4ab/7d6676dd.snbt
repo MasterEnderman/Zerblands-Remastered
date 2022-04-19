@@ -1,0 +1,22 @@
+{
+	x: 18.0d,
+	y: 6.5d,
+	dependencies: [
+		"082b2050"
+	],
+	tasks: [{
+		uid: "b4ec6e5d",
+		type: "item",
+		items: [{
+			item: "extrautils2:quarry"
+		}]
+	},
+	{
+		uid: "508f480f",
+		type: "item",
+		items: [{
+			item: "extrautils2:quarryproxy"
+		}],
+		count: 6L
+	}]
+}

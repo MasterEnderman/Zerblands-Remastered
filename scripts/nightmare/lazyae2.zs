@@ -25,10 +25,14 @@ import mods.forestry.ThermionicFabricator;
 import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.BlastFurnace;
 import mods.threng.Aggregator;
+import mods.threng.Etcher;
 
 Aggregator.removeRecipe(<threng:material>);
 Aggregator.removeRecipe(<threng:material:1>);
 Aggregator.removeRecipe(<threng:material:2>);
+
+Aggregator.removeRecipe(<threng:material:5>);
+Aggregator.addRecipe(<threng:material:5>,<astralsorcery:itemcraftingcomponent:4>,<bloodmagic:lava_crystal>,<appliedenergistics2:material:45>);
 
 AlloySmelter.addRecipe(<threng:material:2>, [<ore:ingotRefinedIron>,<appliedenergistics2:material:45>,<threng:material:1>], 15000);
 
@@ -64,9 +68,79 @@ var mapSpeculation as IIngredient[][IItemStack] = {
 
 for output, data in mapSpeculation {
     recipes.remove(output);
+    Etcher.addRecipe(output, data[0], <ic2:itemmisc:202>, data[1]);
     recipes.addShaped(output, [
         [null,data[0],null],
         [data[1],<ic2:itemmisc:202>,data[1]],
         [null,data[0],null]
     ]); 
+}
+
+var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
+    <threng:big_assembler> : {
+        4 : [
+            [
+                [<ore:ingotFluixSteel>,<bloodmagic:component:10>,<ore:ingotFluixSteel>],
+                [<bloodmagic:component:10>,<opencomputers:upgrade:11>,<bloodmagic:component:10>],
+                [<ore:ingotFluixSteel>,<bloodmagic:component:10>,<ore:ingotFluixSteel>]
+            ]
+        ]
+    },
+    <threng:big_assembler:1> : {
+        4 : [
+            [
+                [<threng:big_assembler>,<ic2:itemheatvent:23>,<threng:big_assembler>],
+                [<ic2:reactorventspread>,<ic2:itemheatswtiches:3>,<ic2:reactorventspread>],
+                [<threng:big_assembler>,<ic2:itemheatvent:23>,<threng:big_assembler>]
+            ]
+        ]
+    },
+    <threng:big_assembler:3> : {
+        1 : [
+            [
+                [<threng:big_assembler>,<contenttweaker:terrasteelprocessor>,<threng:big_assembler>],
+                [<contenttweaker:storage_module>,<contenttweaker:data_orb>,<contenttweaker:storage_module>],
+                [<threng:big_assembler>,<appliedenergistics2:interface>,<threng:big_assembler>]
+            ]
+        ]
+    },
+    <threng:big_assembler:4> : {
+        1 : [
+            [
+                [<threng:big_assembler>,<appliedenergistics2:molecular_assembler>,<threng:big_assembler>],
+                [<threng:material:6>,<contenttweaker:data_control_circuit>,<threng:material:6>],
+                [<threng:big_assembler>,<appliedenergistics2:crafting_accelerator>,<threng:big_assembler>]
+            ]
+        ]
+    },
+    <threng:big_assembler:2> : {
+        1 : [
+            [
+                [<threng:big_assembler>,<appliedenergistics2:molecular_assembler>,<threng:big_assembler>],
+                [<threng:material:4>,<contenttweaker:circuit8>,<threng:material:4>],
+                [<threng:big_assembler>,<appliedenergistics2:controller>,<threng:big_assembler>]
+            ]
+        ]
+    },
+    <threng:machine:1> : {
+        1 : [
+            [
+                [<appliedenergistics2:quartz_growth_accelerator>,<embers:reaction_chamber>,<appliedenergistics2:quartz_growth_accelerator>],
+                [<appliedenergistics2:quartz_growth_accelerator>,<threng:material:4>,<appliedenergistics2:quartz_growth_accelerator>],
+                [<appliedenergistics2:quartz_growth_accelerator>,<threng:material:6>,<appliedenergistics2:quartz_growth_accelerator>]
+            ]
+        ]
+    },
+};
+
+for key, value in recipeMapShaped {
+	var index as int = 0;    
+    recipes.remove(key);
+    for amount, entry in value {
+        for recipe in entry {
+            var name as string = "ct_"+toString(key)+"_"+index;
+            recipes.addShaped(name, key * amount, recipe);
+            index += 1;
+        }
+    }
 }

@@ -22,7 +22,9 @@ import scripts.functions.itemMS;
 
 import mods.avaritia.ExtremeCrafting;
 import mods.embers.Stamper;
+import mods.enderio.SagMill;
 import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Pulverizer;
 import mods.thermalexpansion.Transposer;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Melting;
@@ -42,6 +44,11 @@ import mods.tconstruct.Melting;
     <abyssalcraft:shoggothflesh:3>,
     <abyssalcraft:shoggothflesh:4>,
 ]);
+
+Pulverizer.addRecipe(<evilcraft:dark_gem_crushed>, <evilcraft:dark_gem>, 4000);
+SagMill.addRecipe([<evilcraft:dark_gem_crushed>], [100], <evilcraft:dark_gem>, "NONE", 5000);
+SagMill.addRecipe([<evilcraft:dark_gem> * 2,<evilcraft:dark_gem_crushed>], [100,30], <evilcraft:dark_ore>, "NONE", 5000);
+SagMill.addRecipe([<quantumflux:graphitedust> * 2], [100],  <quantumflux:graphiteore>, "NONE", 5000);
 
 var thermalGlass as IItemStack[string] = {
     "copper" : <thermalfoundation:glass:0>,
@@ -155,6 +162,8 @@ var comp as IItemStack[IItemStack] = {
     <contenttweaker:slate_ethereal> : <bloodmagic:slate:4>,
     //
     <contenttweaker:creative_block> : <contenttweaker:creative>,
+    //
+    <contenttweaker:plutonium> : <contenttweaker:small_plutonium>,
 };
 
 recipes.remove(<bloodmagic:slate>);
@@ -188,14 +197,14 @@ for material, fluid in materialSystem {
     var ingot as IIngredient = getOreDict("ingot",material);
     var block as IIngredient = getOreDict("block",material);
 
-    recipes.addShapeless(findFirstItemFromMod("contenttweaker","ingot",material),[nugget,nugget,nugget,nugget,nugget,nugget,nugget,nugget,nugget]);
-    recipes.addShapeless(findFirstItemFromMod("contenttweaker","nugget",material) * 9, [ingot]);
-    recipes.addShapeless(findFirstItemFromMod("contenttweaker","block",material),[ingot,ingot,ingot,ingot,ingot,ingot,ingot,ingot,ingot]);
-    recipes.addShapeless(findFirstItemFromMod("contenttweaker","ingot",material) * 9, [block]);
+    recipes.addShapeless(itemMS("ingot",material),[nugget,nugget,nugget,nugget,nugget,nugget,nugget,nugget,nugget]);
+    recipes.addShapeless(itemMS("nugget",material) * 9, [ingot]);
+    recipes.addShapeless(itemMS("block",material),[ingot,ingot,ingot,ingot,ingot,ingot,ingot,ingot,ingot]);
+    recipes.addShapeless(itemMS("ingot",material) * 9, [block]);
 
-    Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","nugget",material), <tconstruct:cast_custom:1>, getFluid(fluid), 16, false);
-    Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","ingot",material), <tconstruct:cast_custom>, getFluid(fluid), 144, false);
-    Casting.addBasinRecipe(findFirstItemFromMod("contenttweaker","block",material), null, getFluid(fluid), 1296, false);
+    Casting.addTableRecipe(itemMS("nugget",material), <tconstruct:cast_custom:1>, getFluid(fluid), 16, false);
+    Casting.addTableRecipe(itemMS("ingot",material), <tconstruct:cast_custom>, getFluid(fluid), 144, false);
+    Casting.addBasinRecipe(itemMS("block",material), null, getFluid(fluid), 1296, false);
 
     Melting.addRecipe(getFluid(fluid)*16, nugget, 395);
     Melting.addRecipe(getFluid(fluid)*144, ingot, 490);

@@ -1,0 +1,16 @@
+{
+	x: -14.0d,
+	y: 44.5d,
+	dependencies: [
+		"6ae7f2a2",
+		"78c4bf7e",
+		"4b4367c1"
+	],
+	tasks: [{
+		uid: "30993efe",
+		type: "item",
+		items: [{
+			item: "advancedsolars:sunnariumpart"
+		}]
+	}]
+}

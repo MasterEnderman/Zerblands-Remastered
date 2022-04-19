@@ -150,6 +150,19 @@ var nightmare as string[string] = {
     "wetware_assembly" : "Wetware Assembly",
     "advanced_powermodule" : "Advanced Power Module",
     "crystal_cluster_core" : "Crystal Cluster Core",
+    "data_control_circuit" : "Data Control Circuit",
+    "data_orb" : "Data Orb",
+    "data_storage_circuit" : "Data Storage Circuit",
+    "energy_flow_circuit" : "Energy Flow Circuit",
+    "engraved_crystal_chip" : "Engraved Crystal Chip",
+    "engraved_lapotronic_chip" : "Engraved Lapotronic Chip",
+    "lapotronic_energy_orb" : "Lapotronic Energy Orb",
+    "heating_coil" : "Heating Coil",
+    "pink_slime" : "Pink Slime",
+    "pink_slime_ingot" : "Pink Slime Ingot",
+    "small_plutonium" : "Tiny Pile of Plutonium",
+    "rtg_pellet" : "RTG Pellet",
+    "plutonium" : "Plutonium"
 };
 
 for item, local in nightmare {

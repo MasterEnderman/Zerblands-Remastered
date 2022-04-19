@@ -1,0 +1,20 @@
+{
+	x: -12.0d,
+	y: 24.5d,
+	dependencies: [
+		"1deb8242"
+	],
+	tasks: [{
+		uid: "4b6acc8a",
+		type: "kill",
+		entity: "abyssalcraft:jzahar",
+		value: 1L
+	},
+	{
+		uid: "e9a52a86",
+		type: "item",
+		items: [{
+			item: "abyssalcraft:gatekeeperessence"
+		}]
+	}]
+}

@@ -119,3 +119,65 @@ var dragon_star = AgglomerationRecipe.create()
 	.multiblock(rune);
 
 Agglomeration.addRecipe(dragon_star);
+
+recipes.remove(<minecraft:ender_chest>);
+var ender_chest = AgglomerationRecipe.create()
+	.output(<minecraft:ender_chest>)
+	.inputs([<contenttweaker:purifiedobsidian>,<botania:thirdeye>,<enderutilities:enderpart:16>])
+	.manaCost(10000)
+	.multiblock(rune);
+
+Agglomeration.addRecipe(ender_chest);
+
+// woot upgrade caps
+
+var mapUpgrades as IItemStack[IItemStack][IItemStack] = {
+    <woot:factorycore:2> : {
+        <woot:upgradeb> : <openmodularturrets:upgrade_meta:1>,
+        <woot:upgrade:12> : <openmodularturrets:addon_meta:7>,
+        <woot:upgrade:9> : <openmodularturrets:addon_meta:1>,
+        <woot:upgrade:6> : <openmodularturrets:addon_meta:3>,
+        <woot:upgrade:3> : <openmodularturrets:upgrade_meta>,
+        <woot:upgrade> : <openmodularturrets:upgrade_meta:2>,
+		<woot:upgradeb:9> : <evilcraft:promise>,
+		<woot:upgradeb:3> : <bloodmagic:blood_tank>,
+		<woot:upgradeb:6> : <minecraft:glowstone>,
+		<woot:upgradeb:12> : <bloodmagic:soul_gem>
+    },
+    <woot:factorycore:3> : {
+        <woot:upgradeb:1> : <openmodularturrets:upgrade_meta:1>,
+        <woot:upgrade:13> : <openmodularturrets:addon_meta:7>,
+        <woot:upgrade:10> : <openmodularturrets:addon_meta:1>,
+        <woot:upgrade:7> : <openmodularturrets:addon_meta:3>,
+        <woot:upgrade:4> : <openmodularturrets:upgrade_meta>,
+        <woot:upgrade:1> : <openmodularturrets:upgrade_meta:2>,
+		<woot:upgradeb:10> : <evilcraft:promise:1>,
+		<woot:upgradeb:4> : <bloodmagic:blood_tank:1>,
+		<woot:upgradeb:7> : <bloodmagic:decorative_brick>,
+		<woot:upgradeb:13> : <bloodmagic:soul_gem:1>
+    },
+    <woot:factorycore:4> : {
+        <woot:upgradeb:2> : <openmodularturrets:upgrade_meta:1>,
+        <woot:upgrade:14> : <openmodularturrets:addon_meta:7>,
+        <woot:upgrade:11> : <openmodularturrets:addon_meta:1>,
+        <woot:upgrade:8> : <openmodularturrets:addon_meta:3>,
+        <woot:upgrade:5> : <openmodularturrets:upgrade_meta>,
+        <woot:upgrade:2> : <openmodularturrets:upgrade_meta:2>,
+		<woot:upgradeb:11> : <evilcraft:promise:2>,
+		<woot:upgradeb:5> : <bloodmagic:blood_tank:2>,
+		<woot:upgradeb:8> : <minecraft:beacon>,
+		<woot:upgradeb:14> : <bloodmagic:soul_gem:2>
+    }
+};
+
+for core, caps in mapUpgrades {
+    for cap, filter in caps {
+        recipes.remove(cap);
+		var new = AgglomerationRecipe.create()
+			.output(cap)
+			.inputs([<woot:factorybase>,core,filter])
+			.manaCost(10000)
+			.multiblock(adv_machine);
+		Agglomeration.addRecipe(new);
+    }
+}

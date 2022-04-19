@@ -20,8 +20,11 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.botania.RuneAltar;
+import mods.bloodmagic.AlchemyTable;
 import mods.enderio.AlloySmelter;
 import mods.extrautils2.Resonator;
+import mods.forestry.ThermionicFabricator;
 
 import scripts.functions.calc_atomic;
 
@@ -34,12 +37,28 @@ AlloySmelter.addRecipe(<enderutilities:enderpart:1> * 2, [<enderutilities:enderp
 recipes.remove(<enderutilities:enderpart:2>);
 AlloySmelter.addRecipe(<enderutilities:enderpart:2> * 2, [<enderutilities:enderpart:1>,<ore:ingotEndSteel>,<ic2:itemmisc:59>], 15000);
 
-recipes.remove(<enderutilities:enderbucket>);
-calc_atomic(<enderutilities:enderbucket>, <randomthings:reinforcedenderbucket>, <enderutilities:enderpart:10>, <enderutilities:enderpart>);
-
 Resonator.add(<enderutilities:enderpart:15>, <enderutilities:enderpart:10>, 12800, false);
 Resonator.add(<enderutilities:enderpart:16>, <enderutilities:enderpart:11>, 25600, false);
 Resonator.add(<enderutilities:enderpart:17>, <enderutilities:enderpart:12>, 51200, false);
+
+recipes.remove(<enderutilities:enderbucket>);
+calc_atomic(<enderutilities:enderbucket>, <randomthings:reinforcedenderbucket>, <enderutilities:enderpart:10>, <enderutilities:enderpart>);
+
+recipes.remove(<enderutilities:portal_panel>);
+calc_atomic(<enderutilities:portal_panel>,<enderutilities:frame>,<contenttweaker:advanced_assembly>,<enderutilities:enderpart:16>);
+
+recipes.remove(<enderutilities:frame>);
+RuneAltar.addRecipe(<enderutilities:frame>*8, [
+    <enderutilities:enderpart>,
+    <enderutilities:enderpart>,
+    <enderutilities:enderpart>,
+    <enderutilities:enderpart>,
+    <bloodmagic:teleposition_focus:1>,
+    <contenttweaker:purifiedobsidian>,
+    <contenttweaker:purifiedobsidian>,
+    <contenttweaker:purifiedobsidian>,
+    <contenttweaker:purifiedobsidian>
+], 12500);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <enderutilities:enderpart:10> : [
@@ -65,9 +84,9 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     ],
     <enderutilities:enderpart:20> : [
         [
-            [null,null,<evilcraft:dark_stick>],
-            [null,<enderutilities:enderpart>,null],
-            [<evilcraft:dark_stick>,null,null]
+            [null,<forestry:crafting_material:1>,<evilcraft:dark_stick>],
+            [<forestry:crafting_material:1>,<enderutilities:enderpart>,<forestry:crafting_material:1>],
+            [<evilcraft:dark_stick>,<forestry:crafting_material:1>,null]
         ]
     ],
     <enderutilities:enderpart:21> : [
@@ -95,4 +114,92 @@ for key, value in recipeMapShaped {
         recipes.addShaped(name, key, recipe);
         index += 1;
     }
+}
+
+recipes.remove(<enderutilities:storage_0>);
+AlchemyTable.addRecipe(<enderutilities:storage_0>, [
+    <appliedenergistics2:sky_stone_chest>,
+    <enderutilities:enderpart>,
+    <bloodmagic:slate:1>,
+    <contenttweaker:storage_module>,
+    <minecraft:repeater>,
+    <enderutilities:enderpart:50>
+], 1000, 100, 1);
+
+recipes.remove(<enderutilities:storage_0:1>);
+AlchemyTable.addRecipe(<enderutilities:storage_0:1>, [
+    <enderutilities:storage_0>,
+    <enderutilities:enderpart:1>,
+    <bloodmagic:slate:1>,
+    <contenttweaker:storage_module>,
+    <minecraft:repeater>,
+    <enderutilities:enderpart:50>
+], 1000, 100, 2);
+
+recipes.remove(<enderutilities:storage_0:2>);
+AlchemyTable.addRecipe(<enderutilities:storage_0:2>, [
+    <enderutilities:storage_0:1>,
+    <enderutilities:enderpart:2>,
+    <bloodmagic:slate:1>,
+    <contenttweaker:storage_module>,
+    <minecraft:repeater>,
+    <enderutilities:enderpart:50>
+], 1000, 100, 3);
+
+recipes.remove(<enderutilities:storage_0:3>);
+AlchemyTable.addRecipe(<enderutilities:storage_0:3> * 2, [
+    <appliedenergistics2:sky_stone_chest>,
+    <appliedenergistics2:sky_stone_chest>,
+    <bloodmagic:slate:1>,
+    <contenttweaker:storage_module>,
+    <extrautils2:ingredients:2>,
+   <ic2:itemmemorystick>
+], 1000, 100, 1);
+
+recipes.remove(<enderutilities:storage_0:4>);
+AlchemyTable.addRecipe(<enderutilities:storage_0:4> * 2, [
+    <enderutilities:storage_0:3>,
+    <enderutilities:storage_0:3>,
+    <bloodmagic:slate:2>,
+    <contenttweaker:storage_module>,
+    <enderutilities:enderpart:10>,
+   <ic2:itemmemorystick>
+], 1000, 100, 2);
+
+recipes.remove(<enderutilities:storage_0:5>);
+AlchemyTable.addRecipe(<enderutilities:storage_0:5> * 2, [
+    <enderutilities:storage_0:4>,
+    <enderutilities:storage_0:4>,
+    <bloodmagic:slate:3>,
+    <contenttweaker:storage_module>,
+    <enderutilities:enderpart:11>,
+   <ic2:itemmemorystick>
+], 1000, 100, 3);
+
+recipes.remove(<enderutilities:storage_0:6>);
+AlchemyTable.addRecipe(<enderutilities:storage_0:6> * 2, [
+    <enderutilities:storage_0:5>,
+    <enderutilities:storage_0:5>,
+    <bloodmagic:slate:4>,
+    <contenttweaker:storage_module>,
+    <enderutilities:enderpart:12>,
+   <ic2:itemmemorystick>
+], 1000, 100, 4);
+
+var mapMemory as int[IItemStack] = {
+    <opencomputers:component:6> : 2,
+    <opencomputers:component:7> : 4,
+    <opencomputers:component:8> : 8,
+    <opencomputers:component:9> : 16,
+    <opencomputers:component:10> : 32,
+    <opencomputers:component:11> : 64,
+};
+
+recipes.remove(<enderutilities:enderpart:50>);
+for ram, modifier in mapMemory {
+    ThermionicFabricator.addCast(<enderutilities:enderpart:50> * modifier, [
+        [<ore:nuggetGold>,<rs_ctr:rs_port:2>,<ore:nuggetGold>],
+        [<contenttweaker:plastic>,ram,<contenttweaker:plastic>],
+        [<enderutilities:enderpart>,<enderutilities:enderpart>,<enderutilities:enderpart>]
+    ], <liquid:glass> * 500);
 }

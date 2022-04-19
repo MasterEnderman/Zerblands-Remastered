@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 3.0d,
+	dependencies: [
+		"0606fb32"
+	],
+	tasks: [{
+		uid: "aa2ebd5c",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "randomthings:rezstone"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

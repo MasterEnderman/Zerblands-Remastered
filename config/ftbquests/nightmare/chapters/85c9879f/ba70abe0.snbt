@@ -1,0 +1,22 @@
+{
+	x: -2.0d,
+	y: 9.5d,
+	dependencies: [
+		"4a15e431",
+		"4ffeef6f",
+		"26791803"
+	],
+	tasks: [{
+		uid: "ee0575f1",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration"
+		}],
+		count: 27L
+	}],
+	rewards: [{
+		uid: "547d8672",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

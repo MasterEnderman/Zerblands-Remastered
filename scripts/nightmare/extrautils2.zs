@@ -22,13 +22,13 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
 import mods.astralsorcery.Altar;
+import mods.botania.RuneAltar;
+import mods.enderio.AlloySmelter;
 import mods.extrautils2.Resonator;
 import mods.forestry.Carpenter;
 import mods.ic2.Extractor;
-import mods.inworldcrafting.ExplosionCrafting;
 import mods.jei.JEI;
 import mods.tconstruct.Casting;
-import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Transposer;
 
 import moretweaker.draconicevolution.FusionCrafting;
@@ -38,10 +38,13 @@ import scripts.functions.calc_scientific;
 import scripts.functions.calc_atomic;
 import scripts.functions.calc_flawless;
 
+import scripts.mod_functions.betterExplosion;
+
 var survival_generator as IItemStack = <extrautils2:machine>.withTag({Type: "extrautils2:generator_survival"});
 var furnace_generator as IItemStack = <extrautils2:machine>.withTag({Type: "extrautils2:generator"});
 var furnace as IItemStack = <extrautils2:machine>.withTag({Type: "extrautils2:furnace"});
 var crusher as IItemStack = <extrautils2:machine>.withTag({Type: "extrautils2:crusher"});
+var enchanter as IItemStack = <extrautils2:machine>.withTag({Type: "extrautils2:enchanter"});
 
 JEI.removeAndHide(<extrautils2:glasscutter>);
 
@@ -170,17 +173,24 @@ calc_atomic(<extrautils2:goldenlasso>, <enderutilities:enderlasso>, <ore:ingotGo
 recipes.remove(<extrautils2:goldenlasso:1>);
 calc_atomic(<extrautils2:goldenlasso:1>, <enderutilities:enderlasso>, <extrautils2:ingredients:10>, <astralsorcery:itemusabledust:1>);
 
+recipes.remove(<extrautils2:terraformer:9>);
+calc_atomic(<extrautils2:terraformer:9>,<extrautils2:machine>,<gendustry:climate_module>,<ic2:itemmisc:451>);
+
 Resonator.remove(<extrautils2:ingredients:9>);
 Resonator.add(<extrautils2:ingredients:9>, <contenttweaker:enriched_gold_block>, 800, false);
 
 Resonator.remove(<extrautils2:ingredients:13>);
-Resonator.add(<extrautils2:ingredients:13>, <embers:superheater>, 1600, true);
+JEI.removeAndHide(<extrautils2:ingredients:13>);
+Resonator.add(<contenttweaker:heating_coil>, <embers:superheater>, 1500, false);
 
 Resonator.remove(<extrautils2:decorativesolid:3>);
 Resonator.add(<extrautils2:decorativesolid:3>, <botania:pavement:1>, 800, false);
 
 Resonator.remove(<extrautils2:ingredients:4>);
 Resonator.add(<extrautils2:ingredients:4>, <abyssalcraft:charcoal>, 3200, true);
+
+Resonator.remove(<extrautils2:decorativesolid:7>);
+Resonator.add(<extrautils2:decorativesolid:7>, <actuallyadditions:block_testifi_bucks_white_wall>, 800, false);
 
 recipes.remove(<extrautils2:passivegenerator:1>);
 Resonator.add(<extrautils2:passivegenerator:1>, <extrautils2:passivegenerator>, 1600, false);
@@ -191,7 +201,7 @@ recipes.remove(<extrautils2:quarryproxy>);
 Resonator.add(<extrautils2:quarryproxy>, <ic2:blockmachinelv:12>, 64000, false);
 
 recipes.remove(<extrautils2:endershard>);
-ExplosionCrafting.explodeItemRecipe(<extrautils2:endershard> * 8, <minecraft:ender_pearl>);
+betterExplosion(<extrautils2:endershard> * 8, <minecraft:ender_pearl>);
 
 recipes.remove(<extrautils2:suncrystal:250>);
 Transposer.addFillRecipe(<extrautils2:suncrystal:250>, <actuallyadditions:item_crystal:2>, <liquid:liquid_sunshine> * 1000, 25000);
@@ -201,6 +211,16 @@ Transposer.addFillRecipe(<extrautils2:klein>, <botania:manabottle>, <liquid:ende
 
 recipes.remove(<extrautils2:decorativeglass:4>);
 Transposer.addFillRecipe(<extrautils2:decorativeglass:4>, <extrautils2:decorativeglass>, <liquid:glowstone> * 1000, 10000);
+
+recipes.remove(enchanter);
+RuneAltar.addRecipe(enchanter, [
+    <extrautils2:machine>,
+    <minecraft:enchanting_table>,
+    <thermalfoundation:material:1028>,
+    <abyssalcraft:platec>,
+    <contenttweaker:rune_legendary>,
+    <minecraft:bookshelf>
+], 40000);
 
 recipes.remove(survival_generator);
 recipes.addShaped(survival_generator, [
@@ -237,7 +257,7 @@ recipes.addShaped(<extrautils2:passivegenerator> * 8, [
 ]);
 
 recipes.remove(<extrautils2:pipe>);
-InductionSmelter.addRecipe(<extrautils2:pipe>, <embers:pipe>, <embers:item_pipe>, 10000);
+AlloySmelter.addRecipe(<extrautils2:pipe>, [<embers:pipe>, <ore:ingotConductiveIron>, <embers:item_pipe>], 10000);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <extrautils2:ingredients> : [
@@ -288,7 +308,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<extrautils2:decorativesolid:3>,<extrautils2:decorativesolid:3>,<extrautils2:decorativesolid:3>]
         ]
     ],
-    <extrautils2:wateringcan> : [
+    <extrautils2:wateringcan:1000> : [
         [
             [<contenttweaker:plastic>,<actuallyadditions:item_fertilizer>,null],
             [<contenttweaker:plastic>,<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),<contenttweaker:plastic>],
@@ -386,35 +406,35 @@ Carpenter.addRecipe(<extrautils2:ingredients:6>, [
     [<minecraft:redstone>,<ore:nuggetGold>,<minecraft:redstone>],
     [<ore:nuggetGold>,<ore:ingotGold>,<ore:nuggetGold>],
     [<minecraft:redstone>,<ore:ingotGold>,<minecraft:redstone>]
-], 500, <liquid:for.honey> * 250, <extrautils2:ingredients:9>);
+], 20, <liquid:for.honey> * 250, <extrautils2:ingredients:9>);
 
 recipes.remove(<extrautils2:ingredients:8>);
 Carpenter.addRecipe(<extrautils2:ingredients:8>, [
     [<ore:ingotGold>,<ore:ingotGold>,<ore:ingotGold>],
     [<minecraft:redstone>,<ore:stickWood>,<minecraft:redstone>],
     [<minecraft:redstone>,<ore:stickWood>,<minecraft:redstone>]
-], 500, <liquid:for.honey> * 250, <extrautils2:ingredients:9>);
+], 20, <liquid:for.honey> * 250, <extrautils2:ingredients:9>);
 
 recipes.remove(<extrautils2:ingredients:7>);
 Carpenter.addRecipe(<extrautils2:ingredients:7>, [
     [<minecraft:redstone>,<ore:nuggetGold>,<minecraft:redstone>],
     [<ore:nuggetGold>,<ore:ingotGold>,<ore:nuggetGold>],
     [<ore:ingotGold>,<ore:blockGold>,<ore:ingotGold>]
-], 500, <liquid:for.honey> * 250, <extrautils2:ingredients:9>);
+], 20, <liquid:for.honey> * 250, <extrautils2:ingredients:9>);
 
 recipes.remove(<extrautils2:ingredients:15>);
 Carpenter.addRecipe(<extrautils2:ingredients:15>, [
     [<extrautils2:magicapple>,<ore:ingotEnchantedMetal>,<extrautils2:magicapple>],
     [<ore:ingotEnchantedMetal>,<extrautils2:ingredients:6>,<ore:ingotEnchantedMetal>],
     [<extrautils2:magicapple>,<ore:ingotEnchantedMetal>,<extrautils2:magicapple>]
-], 500, <liquid:for.honey> * 500, <extrautils2:decorativesolidwood:1>);
+], 20, <liquid:for.honey> * 500, <extrautils2:decorativesolidwood:1>);
 
 recipes.remove(<extrautils2:ingredients:16>);
 Carpenter.addRecipe(<extrautils2:ingredients:16>, [
     [<extrautils2:ingredients:10>,<ore:ingotEvilMetal>,<extrautils2:ingredients:10>],
     [<ore:ingotEvilMetal>,<extrautils2:ingredients:15>,<ore:ingotEvilMetal>],
     [<extrautils2:ingredients:10>,<ore:ingotEvilMetal>,<extrautils2:ingredients:10>]
-], 500, <liquid:for.honey> * 1000, <extrautils2:simpledecorative:1>);
+], 20, <liquid:for.honey> * 1000, <extrautils2:simpledecorative:1>);
 
 recipes.remove(<extrautils2:rainbowgenerator>);
 FusionCrafting.add(<extrautils2:rainbowgenerator>, <embers:winding_gears> * 64, FusionCrafting.BASIC, 1000000000, [

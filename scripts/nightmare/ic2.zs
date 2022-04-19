@@ -21,20 +21,24 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.enderio.AlloySmelter;
+import mods.forestry.Carpenter;
 import mods.forestry.ThermionicFabricator;
 import mods.ic2.Compressor;
 import mods.ic2.Extractor;
 import mods.ic2.Macerator;
+import mods.immersiveengineering.AlloySmelter as Kiln;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.BottlingMachine;
 import mods.immersiveengineering.MetalPress;
-import mods.inworldcrafting.ExplosionCrafting;
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Transposer;
 
+import scripts.functions.calc_basic;
 import scripts.functions.calc_flawless;
+
+import scripts.mod_functions.betterExplosion;
 
 recipes.remove(<ic2:itemmisc:53>);
 recipes.remove(<ic2:itemmisc:252>);
@@ -45,6 +49,9 @@ recipes.remove(<ic2:blockminingpipe>);
 
 recipes.remove(<ic2:blockmachinelv2:6>);
 calc_flawless(<ic2:blockmachinelv2:6>,<minecraft:crafting_table>,<ic2:blockmachinelv>,<ic2:itemtoolbox:2>,<ic2:itemmisc:451>);
+
+recipes.remove(<ic2:blockgenerator:2>);
+calc_basic(<ic2:blockgenerator:2>,<ic2:blockgenerator>,<immersiveengineering:wooden_device1>);
 
 var mapCableCasting as ILiquidStack[IItemStack] = {
     <ic2:itemcable> : <liquid:copper>,
@@ -94,6 +101,7 @@ for cable in mapRubber {
     while index < cable.length {
         recipes.remove(cable[index]);
         InductionSmelter.addRecipe(cable[index], cable[index - 1], <ic2:itemmisc:450>, 2500);
+        Kiln.addRecipe(cable[index], cable[index - 1], <ic2:itemmisc:450>, 200);
         index += 1;
     }
 }
@@ -105,14 +113,29 @@ Macerator.addRecipe(<contenttweaker:energium_dust> * 9, <ic2:itembatcrystal>);
 Compressor.addRecipe(<ic2:itemmisc:455>,<buildinggadgets:constructionblock_dense>);
 Compressor.addRecipe(<ic2:itemmisc:455>,<buildinggadgets:constructionblockpowder>);
 
+recipes.remove(<ic2:itemscrapbox>);
+Compressor.addRecipe(<ic2:itemscrapbox>,<ic2:itemmisc:200> * 9);
+Compactor.addPressRecipe(<ic2:itemscrapbox>, <ic2:itemmisc:200> * 9, 2000);
+Carpenter.addRecipe(<ic2:itemscrapbox>, [
+    [<ic2:itemmisc:200>,<ic2:itemmisc:200>],
+    [<ic2:itemmisc:200>,<ic2:itemmisc:200>]
+], 5, <liquid:water> * 100, <forestry:carton>);
+
 recipes.remove(<ic2:itemreactorplating:2>);
-AlloySmelter.addRecipe(<ic2:itemreactorplating:2>, [<ic2:itemheatvent:1>,<contenttweaker:material_part:30>,<ic2:itemreactorplating:1>], 10000);
+AlloySmelter.addRecipe(<ic2:itemreactorplating:2>, [<ic2:itemheatvent:1>,<ore:plateTungsten>,<ic2:itemreactorplating:1>], 10000);
 
 recipes.remove(<ic2:itemcable:9>);
 ThermionicFabricator.addCast(<ic2:itemcable:9> * 6, [
     [<contenttweaker:energium_dust>,<contenttweaker:energium_dust>,<contenttweaker:energium_dust>],
     [<ore:ingotEnergeticSilver>,<contenttweaker:energy_module>,<ore:ingotEnergeticSilver>],
     [<contenttweaker:energium_dust>,<contenttweaker:energium_dust>,<contenttweaker:energium_dust>]
+], <liquid:glass> * 500);
+
+recipes.remove(<ic2:itemmisc:401>);
+ThermionicFabricator.addCast(<ic2:itemmisc:401>, [
+    [<ic2:itemmisc:451>,<randomthings:biomeradar>,<ic2:itemmisc:451>],
+    [<contenttweaker:terrasteelprocessor>,<ic2:itemmisc:452>,<contenttweaker:terrasteelprocessor>],
+    [<thermalfoundation:material:1027>,<botania:rune:2>,<thermalfoundation:material:1027>]
 ], <liquid:glass> * 500);
 
 Compressor.addRecipe(<ic2:itemmisc:9>, findFirstItemFromMod("thermalfoundation","dust","obsidian") * 4);
@@ -148,6 +171,13 @@ recipes.addShaped(<ic2:blockutility:3> * 8, [
     [<sonarcore:stableglass>,<sonarcore:stableglass>,<sonarcore:stableglass>],
     [<sonarcore:stableglass>,<ic2:itemmisc:257>,<sonarcore:stableglass>],
     [<sonarcore:stableglass>,<sonarcore:stableglass>,<sonarcore:stableglass>]
+]);
+
+recipes.remove(<ic2:itemcable:16>);
+recipes.addShaped(<ic2:itemcable:16> * 4, [
+    [<ore:plateStyreneButadieneRubber>,<ore:plateStyreneButadieneRubber>,<ore:plateStyreneButadieneRubber>],
+    [<ic2:itemcable:9>,<ic2:itemmisc:264>,<ic2:itemcable:9>],
+    [<ore:plateStyreneButadieneRubber>,<ore:plateStyreneButadieneRubber>,<ore:plateStyreneButadieneRubber>]
 ]);
 
 recipes.remove(<ic2:itemmisc:151>);
@@ -324,7 +354,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     ],
     <ic2:blockelectric:5> : [
         [
-            [<ic2:itempesd>,<extrautils2:poweroverload>,<ic2:itempesd>],
+            [<ic2:itempesd>,<contenttweaker:energy_flow_circuit>,<ic2:itempesd>],
             [<ic2:itempesd>,<contenttweaker:block_machine_hv>,<ic2:itempesd>],
             [<ic2:itempesd>,<rftoolspower:cell3>,<ic2:itempesd>]
         ]
@@ -341,6 +371,76 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [null,null,<immersiveengineering:drillhead>],
             [null,<immersiveengineering:drill>,null],
             [<ic2:itembatre>,<ic2:itemmisc:451>,null]
+        ]
+    ],
+    <ic2:itemmisc:452> : [
+        [
+            [<bloodmagic:component:28>,<contenttweaker:elementiumprocessor>,<bloodmagic:component:28>],
+            [<opencomputers:material:9>,<ic2:itemmisc:451>,<opencomputers:material:9>],
+            [<bloodmagic:component:29>,<forestry:chipsets:3>,<bloodmagic:component:29>]
+        ]
+    ],
+    <ic2:blockmachinehv:5> : [
+        [
+            [<ic2:blockpersonal:8>,<ic2:itemreflectors:2>,<ic2:blockpersonal:8>],
+            [<ic2:itemreflectors:2>,<ic2:blockmachinemv:1>,<ic2:itemreflectors:2>],
+            [<ic2:blockpersonal:8>,<contenttweaker:block_machine_hv>,<ic2:blockpersonal:8>]
+        ]
+    ],
+    <ic2:blockmachinehv:4> : [
+        [
+            [<ic2:itemmisc:452>,<woot:anvil>,<ic2:itemmisc:452>],
+            [<contenttweaker:data_orb>,<minecraft:enchanting_table>,<contenttweaker:data_orb>],
+            [<extrautils2:decorativesolidwood:1>,<contenttweaker:block_machine_hv>,<extrautils2:decorativesolidwood:1>]
+        ]
+    ],
+    <ic2:blockmachinehv:3> : [
+        [
+            [<ic2:itemreactorplating>,<ic2:itemreactorplating>,<ic2:itemreactorplating>],
+            [<ic2:blockmachinelv:4>,<ic2:blockmachinemv:5>,<contenttweaker:energy_flow_circuit>],
+            [<ic2:itemreactorplating>,<contenttweaker:block_machine_hv>,<ic2:itemreactorplating>]
+        ]
+    ],
+    <ic2:blockmachinehv:1> : [
+        [
+            [<quantumflux:craftingpiece:4>,<ic2:itembatlamacrystal>,<quantumflux:craftingpiece:4>],
+            [<contenttweaker:data_storage_circuit>,<abyssalcraft:gatekeeperessence>,<contenttweaker:data_storage_circuit>],
+            [<appliedenergistics2:spatial_pylon>,<contenttweaker:block_machine_hv>,<appliedenergistics2:spatial_pylon>]
+        ]
+    ],
+    <ic2:blockmachinehv> : [
+        [
+            [<ore:plateTungsten>,<ic2:itemmisc:401>,<ore:plateTungsten>],
+            [<ore:gearLumium>,<extrautils2:terraformer>,<ore:gearLumium>],
+            [<ore:plateTungsten>,<contenttweaker:block_machine_hv>,<ore:plateTungsten>]
+        ]
+    ],
+    <ic2:reactorventspread> : [
+        [
+            [<ore:ingotConstructionAlloy>,<contenttweaker:heat_conductor>,<ore:ingotConstructionAlloy>],
+            [<contenttweaker:heat_conductor>,<ic2:itemheatvent>,<contenttweaker:heat_conductor>],
+            [<ore:ingotConstructionAlloy>,<contenttweaker:heat_conductor>,<ore:ingotConstructionAlloy>]
+        ]
+    ],
+    <ic2:itemmemorystick> : [
+        [
+            [<ore:dustRedstone>,<ic2:itemcable:4>,<ore:dustRedstone>],
+            [<ic2:itemmisc:452>,<enderutilities:enderpart:50>,<ic2:itemmisc:452>],
+            [<ic2:itemmisc:256>,<ic2:itemmisc:260>,<ic2:itemmisc:256>]
+        ]
+    ],
+    <ic2:blockgenerator:3> : [
+        [
+            [<enderio:item_material:3>],
+            [<ic2:blockgenerator>],
+            [<ic2:itemmisc:451>]
+        ]
+    ],
+    <ic2:itemfreq> : [
+        [
+            [<xnet:antenna>],
+            [<ic2:itemmisc:451>],
+            [<thermalfoundation:material:640>]
         ]
     ]
 };
@@ -362,6 +462,7 @@ var mapMachineLV as IIngredient[][IItemStack] = {
     <ic2:blockmachinelv:5> : [<thermalexpansion:machine:5>, <minecraft:piston>],
     <ic2:blockmachinelv:7> : [<thermalexpansion:device:1>, <thermalexpansion:augment:129>],
     <ic2:blockmachinelv2:2> : [<ic2:blockmachinelv:7>, <ic2:blockmachinelv:4>],
+    <ic2:blockmachinelv2:7> : [<thermalexpansion:machine:2>, <thermalfoundation:material:657>],
     <ic2:blockmachinelv:2> : [<thermalexpansion:machine>, <contenttweaker:heat_conductor>],
 };
 
@@ -379,7 +480,13 @@ for machine, items in mapMachineLV {
 
 furnace.remove(<ic2:itemmisc:450>);
 InductionSmelter.addRecipe(<ic2:itemmisc:450> * 9, <contenttweaker:raw_rubber_pulp> * 9, findFirstItemFromMod("thermalfoundation","dust","sulfur"), 2500);
+Kiln.addRecipe(<ic2:itemmisc:450> * 9, <contenttweaker:raw_rubber_pulp> * 9, findFirstItemFromMod("thermalfoundation","dust","sulfur"), 200);
 Casting.addTableRecipe(<ic2:itemharz>, null, <liquid:resin>, 250, false, 400);
+Carpenter.addRecipe(<ic2:itemharz>, [
+    [<forestry:wood_pulp>,<forestry:wood_pulp>,<forestry:wood_pulp>],
+    [<forestry:wood_pulp>,<ic2:itemmisc:350>,<forestry:wood_pulp>],
+    [<forestry:wood_pulp>,<forestry:wood_pulp>,<forestry:wood_pulp>]
+], 20, <liquid:for.honey> * 500);
 
 recipes.remove(<ic2:itembatre>);
 recipes.addShapeless(<ic2:itembatre> * 3, [<ic2:itemarmorindustrialbelt>]);
@@ -402,7 +509,7 @@ MetalPress.addRecipe(<ic2:itemcellempty>, <ore:ingotAluminum>, <immersiveenginee
 Extractor.addRecipe(<ic2:itemcellempty>, <ore:ingotAluminum>);
 
 recipes.remove(<ic2:itemmisc:258>);
-ExplosionCrafting.explodeItemRecipe(<ic2:itemmisc:258>, <contenttweaker:iridium_alloy_ingot>);
+betterExplosion(<ic2:itemmisc:258>, <contenttweaker:iridium_alloy_ingot>);
 
 var mapMixedMetal as int[string][string] = {
     "first" : {

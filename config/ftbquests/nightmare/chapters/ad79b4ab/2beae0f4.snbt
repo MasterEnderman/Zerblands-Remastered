@@ -1,0 +1,14 @@
+{
+	x: -10.0d,
+	y: 4.5d,
+	dependencies: [
+		"1e8689f3"
+	],
+	tasks: [{
+		uid: "c219645d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:alfsteel_ingot"
+		}]
+	}]
+}

@@ -56,6 +56,9 @@ calc_scientific(<evilcraft:vengeance_ring>,<embers:ember_ring>,<evilcraft:bowl_o
 recipes.remove(<evilcraft:dark_stick>);
 calc_basic(<evilcraft:dark_stick>, <ore:stickWood>, <ore:gemDarkCrushed>);
 
+recipes.remove(<evilcraft:sanguinary_pedestal>);
+calc_basic(<evilcraft:sanguinary_pedestal>,<xreliquary:pedestal>,<evilcraft:dark_block>);
+
 Casting.addTableRecipe(<evilcraft:dark_power_gem>, <evilcraft:dark_gem>, <liquid:evilcraftblood>, 5000, true, 20);
 Casting.addTableRecipe(<evilcraft:dark_power_gem>, <evilcraft:dark_gem>, <liquid:blood>, 5000, true, 20);
 
@@ -69,8 +72,15 @@ AlchemyArray.addRecipe(<evilcraft:eternal_water_block>, <bloodmagic:component>, 
 recipes.remove(<evilcraft:bucket_eternal_water>);
 AlchemyArray.addRecipe(<evilcraft:bucket_eternal_water>, <bloodmagic:component>, <quantumflux:voidbucket>, bloodmagicAlchemyArray["watersigil"]);
 
+BloodInfuser.removeRecipesWithOutput(<evilcraft:bound_blood_drop>);
+AlchemyArray.addRecipe(<evilcraft:bound_blood_drop>, <bloodmagic:component:8>, <tconstruct:edible:33>, bloodmagicAlchemyArray["bindinglightningarray"]);
+
 recipes.remove(<evilcraft:golden_string>);
 Transposer.addFillRecipe(<evilcraft:golden_string>, <botania:manaresource:16>, <liquid:gold> * 144, 4096);
+
+Transposer.addFillRecipe(<evilcraft:weather_container:1>, <evilcraft:weather_container>,  <liquid:liquid_sunshine> * 2000, 10000);
+Transposer.addFillRecipe(<evilcraft:weather_container:2>, <evilcraft:weather_container>,  <liquid:cloud_seed> * 500, 2500);
+Transposer.addFillRecipe(<evilcraft:weather_container:3>, <evilcraft:weather_container>,  <liquid:cloud_seed_concentrated> * 1000, 5000);
 
 recipes.remove(<evilcraft:sanguinary_pedestal:1>);
 BloodAltar.addRecipe(<evilcraft:sanguinary_pedestal:1>, <evilcraft:sanguinary_pedestal>, 2, 10000,50,50);

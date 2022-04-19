@@ -22,6 +22,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
 import mods.astralsorcery.Altar;
+import mods.enderio.SliceNSplice;
 import mods.thermalexpansion.Centrifuge;
 import mods.thermalexpansion.Transposer;
 
@@ -103,7 +104,7 @@ for dynamo, metal in mapDynamo {
 recipes.removeShaped(<thermalexpansion:capacitor>);
 recipes.addShaped(<thermalexpansion:capacitor>, [
     [null,<ore:dustRedstone>,null],
-    [<ore:ingotLead>,<ic2:itembatcrystal>,<ore:ingotLead>],
+    [<ore:ingotLead>,<ic2:itembatre>,<ore:ingotLead>],
     [<ore:dustRedstone>,<ore:ingotCopper>,<ore:dustRedstone>]
 ]);
 
@@ -114,6 +115,7 @@ var mapMachine as IIngredient[][IItemStack] = {
     <thermalexpansion:machine:6> : [<immersiveengineering:metal_device1:1>,<botania:rune:1>,<ore:gearInvar>],
     <thermalexpansion:machine:8> : [<immersiveengineering:metal_device0:5>,<thermalfoundation:material:512>,<ore:gearSilver>],
     <thermalexpansion:machine:9> : [<immersiveengineering:metal_device1:5>,<thermalfoundation:material:515>,<ore:gearSignalum>],
+    <thermalexpansion:machine:11> : [<forestry:worktable>,<opencomputers:material:7>,<ore:gearCopper>]
 };
 
 for machine, items in mapMachine {
@@ -176,3 +178,8 @@ var mapRemoveCentrifuge as IItemStack[] = [
 for item in mapRemoveCentrifuge {
     Centrifuge.removeRecipe(item);
 }
+
+SliceNSplice.addRecipe(<thermalexpansion:frame>, [
+    <forestry:impregnated_casing>, <contenttweaker:energy_module>, <embers:winding_gears>,
+    <ore:ingotLiquifiedCoralium>,<ore:ingotElectricalSteel>,<contenttweaker:weakeneddiamond>
+], 10000);

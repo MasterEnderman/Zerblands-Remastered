@@ -43,7 +43,7 @@ recipes.remove(<bibliocraft:furniturepaneler:6>);
 calc_basic(<bibliocraft:furniturepaneler:6>,<minecraft:crafting_table>,<storagedrawers:customtrim>);
 
 recipes.remove(<bibliocraft:compass>);
-calc_basic(<bibliocraft:compass>, <minecraft:compass>, <ore:ingotAluminumBrass>);
+calc_basic(<bibliocraft:compass>, <minecraft:compass>, <ore:ingotAlubrass>);
 
 var preFramed as string[] = [
     "bookcase",

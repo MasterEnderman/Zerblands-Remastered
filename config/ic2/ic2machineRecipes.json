@@ -167,7 +167,24 @@
   "item.item_material.powder_lapis_lazuli_49444226": true,
   "item.contenttweaker.material_part_397086394": true,
   "item.contenttweaker.material_part_-1420148432": true,
-  "item.contenttweaker.material_part_397086487": true
+  "item.contenttweaker.material_part_397086487": true,
+  "ic2exprecipe_Lapis Lazuli Powder_": true,
+  "ic2exprecipe_Crushed Dark Gem__1": true,
+  "item.tconevo:metal1_-2111533277": true,
+  "item.tconevo:metal6_1940993626": true,
+  "item.tconevo:metal11_-1107879367": true,
+  "item.tconevo:metal26_-1981755091": true,
+  "item.tconevo:metal31_1959607218": true,
+  "item.tconevo:metal36_1927751324": true,
+  "item.tconevo:metal41_-2141930746": true,
+  "item.tconevo:metal26_-808200014": true,
+  "item.tconevo:metal31_-1989850611": true,
+  "item.tconevo:metal1_-91064258": true,
+  "item.tconevo:metal6_-2008464203": true,
+  "item.tconevo:metal11_1397118078": true,
+  "item.tconevo:metal36_-24097951": true,
+  "item.tconevo:metal41_201187275": true,
+  "item.redstonerepository.material.dustGelidEnderium_889865417": true
  },
  "extractor": {
   "item.coal_764578481": true,
@@ -223,7 +240,17 @@
   "ic2exprecipe_Steel Wire_": true,
   "ic2exprecipe_Lightning Rod_": true,
   "ic2exprecipe_Flat Transfer Node (Items)_": true,
-  "ic2exprecipe_Flat Transfer Node (Fluids)_": true
+  "ic2exprecipe_Flat Transfer Node (Fluids)_": true,
+  "ic2exprecipe_Disk Platter_": true,
+  "ic2exprecipe_Rubber_": true,
+  "ic2exprecipe_Strong String_": true,
+  "ic2exprecipe_Cyanite Ingot_": true,
+  "ic2exprecipe_Tiny Pile of Plutonium_": true,
+  "ic2exprecipe_Tiny Pile of Plutonium__1": true,
+  "ic2exprecipe_Tiny Pile of Plutonium__2": true,
+  "ic2exprecipe_Tiny Pile of Plutonium__3": true,
+  "ic2exprecipe_Tiny Pile of Plutonium__4": true,
+  "ic2exprecipe_Tiny Pile of Plutonium__5": true
  },
  "compressor": {
   "tile.sandStone.default_1494879518": true,
@@ -263,7 +290,9 @@
   "ic2exprecipe_HDPE Sheet_": true,
   "item.iridiumIngot_-610845883": false,
   "ic2exprecipe_Bottle of Air_": true,
-  "ic2exprecipe_Item Collector_": true
+  "ic2exprecipe_Item Collector_": true,
+  "ic2exprecipe_Scrap Box_": true,
+  "ic2exprecipe_Impossibly Hard Wheat Sticks_": true
  },
  "massfabricatorAmplifier": {
   "ScrapAmplifier": true,
@@ -444,7 +473,17 @@
   "ingotRecycling_ingotStarsteel": true,
   "ingotRecycling_ingotFerromagneticAlloy": true,
   "ingotRecycling_ingotStygian": true,
-  "ingotRecycling_ingotAluminumBrass": true
+  "ingotRecycling_ingotAluminumBrass": true,
+  "ingotRecycling_ingotWyvernMetal": true,
+  "ingotRecycling_ingotDraconicMetal": true,
+  "ingotRecycling_ingotChaoticMetal": true,
+  "ingotRecycling_ingotBoundMetal": true,
+  "ingotRecycling_ingotSentientMetal": true,
+  "ingotRecycling_ingotEnergium": true,
+  "ingotRecycling_ingotUUMatter": true,
+  "ingotRecycling_ingotPrimordial": true,
+  "ingotRecycling_ingotEssenceMetal": true,
+  "ingotRecycling_ingotPinkMetal": true
  },
  "sawmill": {
   "tile.wood.oak_-867074482": true,
@@ -620,6 +659,7 @@
   "tile.blocks.integrateddynamics.menril_planks_1359100046": true,
   "tile.blocks.integrateddynamics.menril_planks_To_Sticks_-241288806": true,
   "item.appliedenergistics2.multi_part.cable_glass_ct": true,
-  "item.appliedenergistics2.material.silicon_ct": true
+  "item.appliedenergistics2.material.silicon_ct": true,
+  "item.immersiveengineering.material.stick_treated_ct": true
  }
 }

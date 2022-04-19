@@ -124,7 +124,7 @@ AlloySmelter.addRecipe(<enderio:item_alloy_ingot>, [<ore:ingotSteel>,<ore:itemSi
 /*Alloy: Energetic Alloy*/
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:1>, [<ore:ingotGold>,<ore:dustRedstone>,<ore:dustGlowstone>], 10000);
 /*Alloy: Vibrant Alloy*/
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:2>, [<ore:ingotEnergeticAlloy>,<ore:enderpearl>,], 10000);
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:2>, [<ore:ingotEnergeticAlloy>,<ore:enderpearl>], 10000);
 /*Alloy: Redstone Alloy*/
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:3>, [<ore:itemSilicon>,<ore:dustRedstone>], 10000);
 /*Alloy: Conductive Iron*/

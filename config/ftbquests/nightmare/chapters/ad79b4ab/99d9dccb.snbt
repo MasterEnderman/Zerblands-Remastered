@@ -1,0 +1,17 @@
+{
+	x: 4.0d,
+	y: 14.5d,
+	text: [
+		"Respawn the Ender Dragon"
+	],
+	dependencies: [
+		"3c97ab94"
+	],
+	tasks: [{
+		uid: "73ba3a18",
+		type: "item",
+		items: [{
+			item: "minecraft:end_crystal"
+		}]
+	}]
+}

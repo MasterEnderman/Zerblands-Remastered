@@ -8,6 +8,8 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
+// https://github.com/WayofTime/BloodMagic/tree/1.12/src/main/resources/assets/bloodmagic/textures/models/alchemyarrays
+
 global bloodmagicAlchemyArray as string[string] = {
     "airsigil" : "bloodmagic:textures/models/alchemyarrays/airsigil.png",
     "basearray" : "bloodmagic:textures/models/alchemyarrays/basearray.png",

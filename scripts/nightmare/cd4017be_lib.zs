@@ -45,7 +45,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <cd4017be_lib:m:400> : [
         [
             [<ore:nuggetElectrum>,<rs_ctr:wire_e>,<ore:nuggetElectrum>],
-            [<ore:plateBatteryAlloy>,<contenttweaker:potatos>,<ore:plateBatteryAlloy>],
+            [<ore:plateLead>,<contenttweaker:potatos>,<ore:plateLead>],
             [<ore:nuggetElectrum>,<rs_ctr:wire_e>,<ore:nuggetElectrum>]
         ]
     ]

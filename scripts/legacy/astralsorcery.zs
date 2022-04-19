@@ -20,7 +20,9 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.astralsorcery.Utils;
 import mods.botania.PureDaisy;
+import mods.forestry.Carpenter;
 import mods.thermalexpansion.Transposer;
 
 PureDaisy.addRecipe(<astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>);
@@ -39,3 +41,27 @@ recipes.addShaped(<astralsorcery:itemconstellationpaper>, [
     [null,<astralsorcery:itemcraftingcomponent:5>,null],
     [<evilcraft:dark_stick>,<astralsorcery:itemcraftingcomponent:5>,<evilcraft:dark_stick>]
 ]);
+
+var y as IItemStack = <morebees:graincrystal>;
+var rockcrystal_max as IItemStack = <astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}});
+var celestialcrystal_max as IItemStack = <astralsorcery:itemcelestialcrystal>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}});
+
+/* I STILL HAVEN'T FIGURED OUT WHY THIS ISN'T WORKING LIKE INTENDED!
+var rockcrystal as IIngredient = Utils.getCrystalORIngredient(false,false);
+var celestialcrystal as IIngredient = Utils.getCrystalORIngredient(true,false);
+*/
+
+var rockcrystal as IIngredient = <astralsorcery:itemrockcrystalsimple>;
+var celestialcrystal as IIngredient = <astralsorcery:itemcelestialcrystal>;
+
+Carpenter.addRecipe(rockcrystal_max, [
+    [y,<astralsorcery:itemcraftingcomponent:4>,y],
+    [y,rockcrystal,y],
+    [y,<astralsorcery:itemcraftingcomponent:4>,y]
+], 20, <liquid:astralsorcery.liquidstarlight>*10000);
+
+Carpenter.addRecipe(celestialcrystal_max, [
+    [y,<astralsorcery:itemcraftingcomponent:4>,y],
+    [y,celestialcrystal,y],
+    [y,<astralsorcery:itemcraftingcomponent:4>,y]
+], 20, <liquid:astralsorcery.liquidstarlight>*10000);

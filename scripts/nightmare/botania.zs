@@ -28,13 +28,14 @@ import mods.botania.PureDaisy;
 import mods.botania.RuneAltar;
 import mods.embers.Alchemy;
 import mods.immersiveengineering.MetalPress;
-import mods.inworldcrafting.ExplosionCrafting;
 import mods.jei.JEI;
 import mods.thermalexpansion.Transposer;
 
 import scripts.functions.calc_basic;
 import scripts.functions.calc_scientific;
 import scripts.functions.calc_atomic;
+
+import scripts.mod_functions.betterExplosion;
 
 JEI.addItem(<botania:manaresource:20>);
 JEI.addItem(<botania:manaresource:21>);
@@ -170,7 +171,7 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     	[<ore:ingotElvenElementium>,<botania:rune:8>,<ore:ingotElvenElementium>]
     ],
     <botania:alchemycatalyst> : [
-    	[<botania:livingrock>,<bloodmagic:component:6>,<botania:livingrock>],
+    	[<botania:livingrock>,getBucketDefault("alchemical_redstone"),<botania:livingrock>],
     	[<minecraft:brewing_stand>,<embers:intelligent_apparatus>,<minecraft:brewing_stand>],
     	[<botania:livingrock>,<ore:blockBloodBronze>,<botania:livingrock>]
     ],
@@ -198,6 +199,11 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
 		[<botania:petal:*>,<botania:petal:*>,<botania:petal:*>],
 		[<botania:petal:*>,<toolbelt:pouch>,<botania:petal:*>],
 		[<botania:petal:*>,<botania:petal:*>,<botania:petal:*>]
+	],
+	<botania:manaresource:22> : [
+		[<botania:manaresource:16>,<botania:manaresource:16>,<botania:manaresource:16>],
+		[<botania:manaresource:16>,<harvestcraft:wovencottonitem>,<botania:manaresource:16>],
+		[<botania:manaresource:16>,<botania:manaresource:16>,<botania:manaresource:16>]
 	]
 };
 
@@ -275,14 +281,14 @@ Transposer.addFillRecipe(<botania:livingwood:5>, <botania:livingwood>, <liquid:g
 <botania:manaresource:20>.addTooltip(format.green("Drops from Block of Living Root."));
 <botania:root>.displayName = "Block of Living Root";
 
-ExplosionCrafting.explodeItemRecipe(<botania:manaresource:21> * 4, <minecraft:cobblestone>);
-ExplosionCrafting.explodeItemRecipe(<botania:manaresource:21> * 4, <minecraft:stone>);
+betterExplosion(<botania:manaresource:21> * 4, <ore:cobblestone>);
+betterExplosion(<botania:manaresource:21> * 4, <ore:stone>);
 
 recipes.remove(<botania:runealtar>);
 Altar.addAttunementAltarRecipe("runealtar", <botania:runealtar>, 500, 800, [
-	null,
+	<botania:manaresource:23>,
 	<botania:specialflower>.withTag({type: "manastar"}),
-	null,
+	<botania:manaresource:23>,
 	<botania:livingrock>,
 	<astralsorcery:blockaltar>,
 	<botania:livingrock>,
@@ -463,3 +469,12 @@ for mana, runes in mapBotaniaRune {
 		RuneAltar.addRecipe(rune,recipe, mana);
 	}
 }
+
+recipes.remove(<botania:spreader:3>);
+RuneAltar.addRecipe(<botania:spreader:3>, [
+	<botania:spreader:2>,
+	<botania:rune:11>,
+	<contenttweaker:alfsteel_ingot>,
+	<botanicadds:gaia_shard>,
+	<botanicadds:gaia_shard>
+], 2000);

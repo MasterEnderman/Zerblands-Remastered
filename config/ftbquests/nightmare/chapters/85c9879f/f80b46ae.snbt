@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: 5.5d,
+	dependencies: [
+		"b064e2d7"
+	],
+	tasks: [{
+		uid: "5e19f309",
+		type: "kill",
+		entity: "minecraft:wither",
+		value: 1L
+	},
+	{
+		uid: "7a1bfff6",
+		type: "item",
+		items: [{
+			item: "minecraft:nether_star"
+		}]
+	}]
+}

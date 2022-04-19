@@ -52,7 +52,7 @@ Altar.addAttunementAltarRecipe("psi_cad_assembler", <psi:cad_assembler>, 500, 80
 	<blood_dynamo:ingredient:2>,
 	<embers:archaic_circuit>,
 	<thermalfoundation:material:160>,
-	<thermalfoundation:material:160>,
+	<botania:storage>,
 	<thermalfoundation:material:160>,
 	<enderio:item_material:11>,
 	<enderio:item_material:11>,

@@ -1,0 +1,14 @@
+{
+	x: 14.0d,
+	y: 6.5d,
+	dependencies: [
+		"bdc179e3"
+	],
+	tasks: [{
+		uid: "3eef075a",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:energy_acceptor"
+		}]
+	}]
+}

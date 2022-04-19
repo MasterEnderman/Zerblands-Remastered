@@ -1,0 +1,14 @@
+{
+	x: 18.0d,
+	y: 26.5d,
+	dependencies: [
+		"b1f959a9"
+	],
+	tasks: [{
+		uid: "c2320806",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stemcells"
+		}]
+	}]
+}

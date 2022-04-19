@@ -1,0 +1,14 @@
+{
+	x: 10.0d,
+	y: 7.0d,
+	dependencies: [
+		"7dd203fe"
+	],
+	tasks: [{
+		uid: "e6eac5b5",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_matter 1 1"
+		}]
+	}]
+}

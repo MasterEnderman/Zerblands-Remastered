@@ -32,3 +32,13 @@ JEI.removeAndHide(<rftools:shape_card:8>);
 recipes.removeByRecipeName("rftools:tablet_with_storage_module_s");
 
 recipes.remove(<rftools:dimensional_shard>);
+
+var toolrod as IItemStack = <tconstruct:tool_rod>.withTag({Material: "crystal_matrix"});
+recipes.addShaped(<rftools:shard_wand>, [
+    [null,null,<rftools:infused_diamond>],
+    [null,toolrod,null],
+    [toolrod,null,null]
+]);
+
+<rftools:shard_wand>.addTooltip(format.green("Use on any RFTools Machine"));
+<rftools:shard_wand>.addTooltip(format.green("to infuse it to 100%."));

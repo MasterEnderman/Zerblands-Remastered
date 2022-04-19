@@ -1,0 +1,25 @@
+{
+	x: 14.0d,
+	y: 14.5d,
+	text: [
+		"Check the ingame Guide for the Documentation."
+	],
+	dependencies: [
+		"95513043",
+		"7c90b36b"
+	],
+	tasks: [{
+		uid: "79e6ab62",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler 1 4"
+		}]
+	},
+	{
+		uid: "c5f0fd13",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler 1 3"
+		}]
+	}]
+}

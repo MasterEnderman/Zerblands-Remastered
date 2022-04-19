@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: 15.0d,
+	dependencies: [
+		"d86e17d0"
+	],
+	tasks: [{
+		uid: "bfc7eb93",
+		type: "item",
+		items: [{
+			item: "contenttweaker:advanced_powermodule"
+		}]
+	}]
+}

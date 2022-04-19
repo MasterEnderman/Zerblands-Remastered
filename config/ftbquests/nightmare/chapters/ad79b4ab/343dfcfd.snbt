@@ -1,0 +1,20 @@
+{
+	x: -2.0d,
+	y: 6.5d,
+	dependencies: [
+		"7e483642"
+	],
+	tasks: [{
+		uid: "b07541ed",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bloodmagic:sentient_sword",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

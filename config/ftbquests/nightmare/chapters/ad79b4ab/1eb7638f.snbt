@@ -1,0 +1,14 @@
+{
+	x: 16.0d,
+	y: 20.5d,
+	dependencies: [
+		"e1ad4ef1"
+	],
+	tasks: [{
+		uid: "94d62cc3",
+		type: "item",
+		items: [{
+			item: "environmentaltech:mica"
+		}]
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 4.0d,
+	y: 36.5d,
+	dependencies: [
+		"03f63b4e",
+		"4d8eb0e4",
+		"5ec70655"
+	],
+	tasks: [{
+		uid: "68c045ce",
+		type: "item",
+		items: [{
+			item: "opencomputers:material 1 4"
+		}]
+	}]
+}

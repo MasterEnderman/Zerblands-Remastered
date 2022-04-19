@@ -24,7 +24,7 @@ To use the Pulse Centrifuge, source material is placed in the left slot, which i
 
 ## ME Circuit Etcher
 
-![ME Circuit Etcher](me_circuit_etcher.png)
+![ME Circuit Etcher](circuit_etcher.png)
 
 The ME Circuit Etcher streamlines the operation of processor inscription. Once all four inscriber presses have been acquired, they can be combined to create this device, which is capable of etching all the standard processor types as well as a few other processor types exclusive to Lazy AE2.
 

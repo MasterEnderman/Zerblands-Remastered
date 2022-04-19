@@ -1,0 +1,20 @@
+{
+	x: -4.0d,
+	y: 17.0d,
+	dependencies: [
+		"d29106c1"
+	],
+	tasks: [{
+		uid: "1c5dffa6",
+		type: "kill",
+		entity: "draconicevolution:chaosguardian",
+		value: 1L
+	},
+	{
+		uid: "c66c64ce",
+		type: "item",
+		items: [{
+			item: "draconicevolution:chaos_shard"
+		}]
+	}]
+}

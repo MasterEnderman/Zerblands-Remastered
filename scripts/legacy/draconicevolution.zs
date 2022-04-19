@@ -106,14 +106,14 @@ recipes.addShaped(<draconicevolution:wyvern_helm>, [
 recipes.remove(<draconicevolution:wyvern_chest>);
 recipes.addShaped(<draconicevolution:wyvern_chest>, [
     [<tp:netherstar_block>,<draconicevolution:wyvern_core>,<tp:netherstar_block>],
-    [<draconicevolution:draconium_block>,<redstonerepository:armor.plate_gelid>,<draconicevolution:draconium_block>],
+    [<draconicevolution:draconium_block>,<redstonerepository:armor.chestplategelid>,<draconicevolution:draconium_block>],
     [<tp:netherstar_block>,<draconicevolution:wyvern_energy_core>,<tp:netherstar_block>]
 ]);
 
 recipes.remove(<draconicevolution:wyvern_legs>);
 recipes.addShaped(<draconicevolution:wyvern_legs>, [
     [<tp:netherstar_block>,<draconicevolution:wyvern_core>,<tp:netherstar_block>],
-    [<draconicevolution:draconium_block>,<redstonerepository:armor.legs_gelid>,<draconicevolution:draconium_block>],
+    [<draconicevolution:draconium_block>,<redstonerepository:armor.leggings_gelid>,<draconicevolution:draconium_block>],
     [<tp:netherstar_block>,<draconicevolution:wyvern_energy_core>,<tp:netherstar_block>]
 ]);
 

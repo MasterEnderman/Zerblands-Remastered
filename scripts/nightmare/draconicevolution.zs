@@ -21,13 +21,13 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
-import mods.thermalexpansion.Infuser;
-import mods.threng.Energizer;
+import mods.astralsorcery.Altar;
 
 import moretweaker.draconicevolution.FusionCrafting;
 
-Infuser.addRecipe(<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block>,10000000);
-Energizer.addRecipe(<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block>,10000000);
+import scripts.mod_functions.betterCharging;
+
+betterCharging(<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block>,10000000);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <draconicevolution:draconic_core> : [
@@ -99,3 +99,41 @@ FusionCrafting.add(<draconicevolution:wyvern_core>, <extrautils2:decorativesolid
     <draconicevolution:draconic_core>,
     <draconicevolution:draconic_core>
 ]);
+
+recipes.remove(<draconicevolution:fusion_crafting_core>);
+Altar.addTraitAltarRecipe("fusion_crafting_core", <draconicevolution:fusion_crafting_core>, 4500, 100, [
+    <advancedsolars:irradiantglasspane>,
+    <advancedsolars:irradiantglasspane>,
+    <advancedsolars:irradiantglasspane>,
+    <advancedsolars:irradiantglasspane>,
+    <enderio:item_material:66>,
+    <advancedsolars:irradiantglasspane>,
+    <advancedsolars:irradiantglasspane>,
+    <advancedsolars:irradiantglasspane>,
+    <advancedsolars:irradiantglasspane>,
+    <contenttweaker:tanzanite_block>,
+	<contenttweaker:tanzanite_block>,
+    <contenttweaker:tanzanite_block>,
+    <contenttweaker:tanzanite_block>,
+    <contenttweaker:flawless_assembly>,
+    <contenttweaker:flawless_assembly>,
+    <contenttweaker:flawless_assembly>,
+    <contenttweaker:flawless_assembly>,
+    <contenttweaker:flawless_assembly>,
+    <contenttweaker:flawless_assembly>,
+    <contenttweaker:flawless_assembly>,
+    <contenttweaker:flawless_assembly>,
+    <environmentaltech:structure_frame_6>,
+    <environmentaltech:structure_frame_6>,
+    <environmentaltech:structure_frame_6>,
+    <environmentaltech:structure_frame_6>,
+	//Outer Items, indices 25+
+    <draconicevolution:draconic_core>,
+    <ic2:itemreflectors:2>,
+    <draconicevolution:draconic_core>,
+    <ic2:itemreflectors:2>,
+    <draconicevolution:draconic_core>,
+    <ic2:itemreflectors:2>,
+    <draconicevolution:draconic_core>,
+    <ic2:itemreflectors:2>,
+], "astralsorcery.constellation.fornax");

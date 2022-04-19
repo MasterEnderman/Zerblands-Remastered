@@ -22,6 +22,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.forestry.Carpenter;
 import mods.forestry.Squeezer;
+import mods.forestry.ThermionicFabricator;
 import mods.immersiveengineering.Squeezer as IESqueezer;
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.Transposer;
@@ -48,7 +49,7 @@ Carpenter.addRecipe(<integrateddynamics:variable> * 4, [
     [<forestry:wood_pulp>,<integrateddynamics:crystalized_menril_chunk>,<forestry:wood_pulp>],
     [<integrateddynamics:crystalized_menril_chunk>,<minecraft:paper>,<integrateddynamics:crystalized_menril_chunk>],
     [<forestry:wood_pulp>,<integrateddynamics:crystalized_menril_chunk>,<forestry:wood_pulp>]
-], 80, <liquid:water> * 250);
+], 10, <liquid:water> * 250);
 
 recipes.remove(<integrateddynamics:logic_director>);
 calc_atomic(<integrateddynamics:logic_director>, <integrateddynamics:crystalized_chorus_chunk>, <contenttweaker:flawlessdiamond>, <integrateddynamics:crystalized_menril_chunk>);
@@ -56,3 +57,17 @@ calc_atomic(<integrateddynamics:logic_director>, <integrateddynamics:crystalized
 Transposer.addExtractRecipe(<liquid:menrilresin> * 250, <integrateddynamics:menril_berries>, 2400);
 Squeezer.addRecipe(<liquid:menrilresin> * 250, [<integrateddynamics:menril_berries>], 120);
 IESqueezer.addRecipe(null, <liquid:menrilresin> * 250, <integrateddynamics:menril_berries>, 2048);
+
+recipes.remove(<integrateddynamics:part_static_light_panel_item>);
+ThermionicFabricator.addCast(<integrateddynamics:part_static_light_panel_item>, [
+    [null,<integrateddynamics:crystalized_menril_chunk>,null],
+    [<integrateddynamics:variable_transformer>,<ic2:blockluminator>,<integrateddynamics:crystalized_menril_chunk>],
+    [null,<integrateddynamics:crystalized_menril_chunk>,null]
+], <liquid:glass> * 200);
+
+recipes.remove(<integrateddynamics:part_display_panel_item>);
+ThermionicFabricator.addCast(<integrateddynamics:part_display_panel_item>, [
+    [<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>],
+    [<integrateddynamics:part_static_light_panel_item>,<integrateddynamics:variable_transformer>,<integrateddynamics:part_static_light_panel_item>],
+    [<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>]
+], <liquid:glass> * 200);

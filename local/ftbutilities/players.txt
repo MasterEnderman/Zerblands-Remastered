@@ -29,3 +29,16 @@ ftbutilities.chat.name_format: <&6Gottkönig Morgoth Istari&r>
 [b5734c113c394cc3a22a4c473883952e]
 parent: admin
 ftbutilities.chat.name_format: <&4{name}&r>
+
+// TheDrJellyTime
+[4a5ace3de38e4231a96e7dc05d13875d]
+parent: vip
+ftbutilities.chat.name_format: <&3[Captain Lost]&r {name}>
+
+// Thorival
+[f3d9f66361a24234891913ef1513c631]
+parent: vip
+
+// LittleToeffels
+[99c0121e79784f0596ee373731260c59]
+parent: vip

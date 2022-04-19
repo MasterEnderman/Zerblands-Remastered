@@ -29,7 +29,9 @@ import mods.bloodmagic.BloodAltar;
 import mods.botania.RuneAltar;
 import mods.botania.PureDaisy;
 import mods.enderio.AlloySmelter;
+import mods.enderio.SliceNSplice;
 import mods.enderio.SoulBinder;
+import mods.embers.Alchemy;
 import mods.evilcraft.BloodInfuser;
 import mods.forestry.Carpenter;
 import mods.forestry.Centrifuge;
@@ -45,7 +47,6 @@ import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Refinery;
 import mods.immersivetechnology.SolarTower;
-import mods.inworldcrafting.ExplosionCrafting;
 import mods.tconstruct.Alloy;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Drying;
@@ -53,12 +54,14 @@ import mods.tconstruct.Melting;
 import mods.thermalexpansion.Centrifuge as TECentrifuge;
 import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.InductionSmelter;
-import mods.thermalexpansion.Infuser;
 import mods.thermalexpansion.Refinery as TERefinery;
 import mods.thermalexpansion.Transposer;
-import mods.threng.Energizer;
+
 
 import moretweaker.draconicevolution.FusionCrafting;
+
+import scripts.mod_functions.betterCharging;
+import scripts.mod_functions.betterExplosion;
 
 <contenttweaker:eternalslate>.addTooltip("Infused stone inside of a");
 <contenttweaker:eternalslate>.addTooltip("Blood Altar");
@@ -80,8 +83,8 @@ RuneAltar.addRecipe(<contenttweaker:infusion_block>,[
     <bloodmagic:slate:1>
 ], 2000);
 
-ExplosionCrafting.explodeItemRecipe(<contenttweaker:rune_blank> * 2, <contenttweaker:runestone>);
-ExplosionCrafting.explodeItemRecipe(<contenttweaker:q1> * 64, <advancedsolars:enrichedsunnarium>);
+betterExplosion(<contenttweaker:rune_blank> * 2, <contenttweaker:runestone>);
+betterExplosion(<contenttweaker:q1> * 64, <advancedsolars:enrichedsunnarium>);
 
 TERefinery.removeRecipe(<liquid:oil>);
 TERefinery.removeRecipe(<liquid:crude_oil>);
@@ -105,6 +108,13 @@ Mixer.addRecipe(<liquid:battery_solution>*250, <liquid:distwater>*250, [
     <contenttweaker:electrotine_dust>,
     <ore:dustApatite>,
     <abyssalcraft:crystal:7>
+], 512);
+Mixer.addRecipe(<liquid:grog>*500, <liquid:evilcraftpoison>*500, [
+    <minecraft:bone>,
+    <minecraft:fermented_spider_eye>,
+    <minecraft:sugar>,
+    <xreliquary:mob_ingredient:6>,
+    <ore:slimeball>
 ], 512);
 
 Refinery.addRecipe(<liquid:plastic> * 16, <liquid:ethylene> * 8, <liquid:hydrogen_chlorid> * 8, 512);
@@ -135,12 +145,12 @@ AlloySmelter.addRecipe(findFirstItemFromMod("contenttweaker","ingot","ferromagne
 AlchemyTable.addRecipe(<contenttweaker:crystal_prism>, [
 	<astralsorcery:itemrockcrystalsimple>,<tconstruct:edible:30>,<tconstruct:edible:31>,
     <tconstruct:edible:32>,<tconstruct:edible:33>,<tconstruct:edible:34>
-], 3000, 100, 0);
+], 3000, 100, 1);
 
 AlchemyTable.addRecipe(<contenttweaker:malignant_heart>, [
 	<scalinghealth:heartcontainer>,<embers:eldritch_insignia>,<tconstruct:materials:19>,
     <xreliquary:void_tear>,<extrautils2:ingredients:11>,<botania:specialflower>.withTag({type: "fallenKanade"})
-], 3000, 100, 0);
+], 3000, 100, 1);
 
 ArcFurnace.addRecipe(<contenttweaker:silicon_boule>, <ore:blockCharcoal>, <thermalfoundation:material:864>, 600, 512, [<ore:sand>*16]);
 
@@ -154,8 +164,8 @@ Casting.removeTableRecipe(<contenttweaker:ender_ingot>);
 
 InductionSmelter.addRecipe(<contenttweaker:electro_silicon>, <appliedenergistics2:material:5>, <contenttweaker:electrotine_dust> * 4, 5000);
 
-Infuser.addRecipe(<contenttweaker:electrotine_dust>, <actuallyadditions:item_dust:4>, 2500);
-Energizer.addRecipe(<contenttweaker:electrotine_dust>, <actuallyadditions:item_dust:4>, 2500);
+betterCharging(<contenttweaker:electrotine_dust>, <enderio:item_material:32>, 2500);
+Alchemy.add(<contenttweaker:electrotine_dust> * 4, [<botania:spark>, <ore:dustLapis>, <ore:dustLapis>, <ore:dustLapis>, <ore:dustLapis>], {"dawnstone": 16 to 32, "lead": 16 to 32});
 
 // inputStack, inputFluid, tier, outputStack, duration, xp
 BloodInfuser.addRecipe(<sonarcore:reinforcedstoneblock>, <liquid:evilcraftblood> * 2000, 0, <contenttweaker:blood_infused_stone>, 100, 10);
@@ -224,7 +234,7 @@ furnace.addRecipe(<contenttweaker:reinforced_obsidian_ingot>,<enderio:block_rein
 
 Blueprint.addRecipe("components", <contenttweaker:electric_motor>, [
     <immersiveengineering:material:8> * 1,
-    <extrautils2:ingredients:13> * 1,
+    <contenttweaker:heating_coil> * 1,
     <actuallyadditions:item_misc:7> * 1,
     <ic2:itemcable> * 4
 ]);
@@ -379,9 +389,16 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     ],
     <contenttweaker:advanced_powermodule> : [
         [
-            [<draconicevolution:draconic_ingot>,<environmentaltech:connector>,<draconicevolution:draconic_ingot>],
+            [<draconicevolution:draconic_ingot>,<woot:factorycore:5>,<draconicevolution:draconic_ingot>],
             [<redstonerepository:material:3>,<gendustry:power_module>,<redstonerepository:material:3>],
             [<draconicevolution:draconic_ingot>,<contenttweaker:flux_module>,<draconicevolution:draconic_ingot>]
+        ]
+    ],
+    <contenttweaker:rtg_pellet> : [
+        [
+            [<ic2:itemreactorplating>,<contenttweaker:plutonium>,<ic2:itemreactorplating>],
+            [<ic2:itemreactorplating>,<contenttweaker:plutonium>,<ic2:itemreactorplating>],
+            [<ic2:itemreactorplating>,<contenttweaker:plutonium>,<ic2:itemreactorplating>]
         ]
     ]
 };
@@ -422,19 +439,19 @@ InductionSmelter.addRecipe(findFirstItemFromMod("contenttweaker","ingot","tungst
 
 Carpenter.addRecipe(<contenttweaker:tie_wood>, [
     [<ore:slabWood>,<ore:slabWood>,<ore:slabWood>]
-], 40, <liquid:creosote> * 250);
+], 10, <liquid:creosote> * 250);
 
 Carpenter.addRecipe(<contenttweaker:battery_hull>, [
     [null,<ic2:itemcable:1>,null],
     [<ore:plateBatteryAlloy>,<ic2:itemcellempty>,<ore:plateBatteryAlloy>],
     [<ore:plateBatteryAlloy>,<ic2:itemcellempty>,<ore:plateBatteryAlloy>]
-], 80, <liquid:soldering_alloy> * 144);
+], 10, <liquid:soldering_alloy> * 144);
 
 Carpenter.addRecipe(<contenttweaker:neuro_processor>, [
     [<draconicevolution:draconic_ingot>,<cd4017be_lib:m:405>,<draconicevolution:draconic_ingot>],
     [<advancedsolars:enrichedsunnariumalloy>,<opencomputers:component:2>,<advancedsolars:enrichedsunnariumalloy>],
     [<draconicevolution:draconic_ingot>,<contenttweaker:circuit8>,<draconicevolution:draconic_ingot>]
-], 800, <liquid:mana> * 1000, <contenttweaker:stemcells>);
+], 40, <liquid:mana> * 1000, <contenttweaker:stemcells>);
 
 Blueprint.addRecipe("rails", <contenttweaker:rail_wood>, [
     <contenttweaker:tie_wood>,
@@ -481,7 +498,7 @@ FusionCrafting.add(<contenttweaker:q3>, <randomthings:redstoneobserver>, FusionC
 
 Empowerer.addRecipe(<contenttweaker:q4>, <contenttweaker:q3>, <contenttweaker:q2>, <contenttweaker:q2>, <contenttweaker:q2>, <contenttweaker:q2>, 10000000, 100, [0.1, 0.9, 0.1]);
 
-FusionCrafting.add(<contenttweaker:crystal_cluster_core>, <contenttweaker:crystal_prism>, FusionCrafting.WYVERN, 4294967296, [
+FusionCrafting.add(<contenttweaker:crystal_cluster_core>, <woot:prism>, FusionCrafting.WYVERN, 4294967296, [
     <environmentaltech:litherite_crystal>,
     <environmentaltech:erodium_crystal>,
     <environmentaltech:kyronite_crystal>,
@@ -489,3 +506,65 @@ FusionCrafting.add(<contenttweaker:crystal_cluster_core>, <contenttweaker:crysta
     <environmentaltech:ionite_crystal>,
     <environmentaltech:aethium_crystal>
 ]);
+
+SliceNSplice.addRecipe(<contenttweaker:engraved_crystal_chip> * 4, [
+    <contenttweaker:q1>, <opencomputers:material:9>, <contenttweaker:q1>,
+    <forestry:thermionic_tubes:9>,<actuallyadditions:item_crystal_empowered:4>,<forestry:thermionic_tubes:9>
+], 40000);
+
+SliceNSplice.addRecipe(<contenttweaker:engraved_crystal_chip>, [
+    <contenttweaker:terrasteelprocessor>, <opencomputers:material:9>, <contenttweaker:terrasteelprocessor>,
+    <forestry:thermionic_tubes:9>,<actuallyadditions:item_crystal_empowered:4>,<forestry:thermionic_tubes:9>
+], 40000);
+
+SliceNSplice.addRecipe(<contenttweaker:engraved_lapotronic_chip> * 4, [
+    <contenttweaker:lapotronic_energy_orb>, <opencomputers:material:9>, <contenttweaker:lapotronic_energy_orb>,
+    <forestry:thermionic_tubes:11>,<actuallyadditions:item_crystal_empowered:1>,<forestry:thermionic_tubes:11>
+], 40000);
+
+SliceNSplice.addRecipe(<contenttweaker:engraved_lapotronic_chip>, [
+    <ic2:itembatlamacrystal>, <opencomputers:material:9>, <ic2:itembatlamacrystal>,
+    <forestry:thermionic_tubes:11>,<actuallyadditions:item_crystal_empowered:1>,<forestry:thermionic_tubes:11>
+], 40000);
+
+ThermionicFabricator.addCast(<contenttweaker:data_storage_circuit> * 4, [
+    [<ore:plateAluminum>,<ore:circuitAdvanced>,<ore:plateAluminum>],
+    [<contenttweaker:hdpe_sheet>,<contenttweaker:engraved_crystal_chip>,<contenttweaker:hdpe_sheet>],
+    [<ore:plateAluminum>,<ore:circuitAdvanced>,<ore:plateAluminum>]
+], <liquid: glass> * 200);
+
+ThermionicFabricator.addCast(<contenttweaker:data_control_circuit> * 4, [
+    [<ore:circuitAdvanced>,<contenttweaker:data_storage_circuit>,<ore:circuitAdvanced>],
+    [<contenttweaker:data_storage_circuit>,<ic2:itemmisc:258>,<contenttweaker:data_storage_circuit>],
+    [<ore:circuitAdvanced>,<contenttweaker:data_storage_circuit>,<ore:circuitAdvanced>]
+], <liquid: glass> * 200);
+
+ThermionicFabricator.addCast(<contenttweaker:energy_flow_circuit> * 4, [
+    [<ore:circuitAdvanced>,<ore:plateTungsten>,<ore:circuitAdvanced>],
+    [<contenttweaker:engraved_lapotronic_chip>,<ic2:itemmisc:258>,<contenttweaker:engraved_lapotronic_chip>],
+    [<ore:circuitAdvanced>,<ore:plateTungsten>,<ore:circuitAdvanced>]
+], <liquid: glass> * 200);
+
+SliceNSplice.addRecipe(<contenttweaker:data_orb>, [
+    <contenttweaker:data_storage_circuit>, <contenttweaker:data_control_circuit>, <contenttweaker:data_storage_circuit>,
+    <contenttweaker:data_storage_circuit>,<contenttweaker:energy_flow_circuit>,<contenttweaker:data_storage_circuit>
+], 400000);
+
+ThermionicFabricator.addCast(<contenttweaker:lapotronic_energy_orb>, [
+    [<ic2:itembatlamacrystal>,<ic2:itembatlamacrystal>,<ic2:itembatlamacrystal>],
+    [<ic2:itembatlamacrystal>,<ic2:itemmisc:258>,<ic2:itembatlamacrystal>],
+    [<ic2:itembatlamacrystal>,<ic2:itembatlamacrystal>,<ic2:itembatlamacrystal>]
+], <liquid: glass> * 200);
+
+var mapPlutonium as int[IItemStack] = {
+    <ic2:itemmisc:553> : 3,
+    <ic2:itemmisc:551> : 4,
+    <ic2:itemmisc:550> : 5,
+    <ic2:itemmisc:552> : 6,
+    <ic2:itemmisc:555> : 7,
+    <ic2:itemmisc:554> : 8,
+};
+
+for item, mul in mapPlutonium {
+    Extractor.addRecipe(<contenttweaker:small_plutonium> * mul, item);
+}

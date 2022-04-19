@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 19.0d,
+	dependencies: [
+		"4127feea"
+	],
+	tasks: [{
+		uid: "3bd72b0a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:wetware_assembly"
+		}]
+	}]
+}

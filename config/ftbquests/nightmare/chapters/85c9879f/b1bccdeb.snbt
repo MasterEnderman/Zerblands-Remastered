@@ -1,0 +1,15 @@
+{
+	x: -4.0d,
+	y: 11.5d,
+	dependencies: [
+		"ba70abe0",
+		"0629c4d0"
+	],
+	tasks: [{
+		uid: "b17a19f5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:module_energy"
+		}]
+	}]
+}

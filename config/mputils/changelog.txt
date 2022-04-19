@@ -1,8 +1,9 @@
 # Zerblands-Remastered
 
-## v2.2.0 - Nightmare Mode
+## v2.1.4 - I'm not dead (yet)
 
 - removed Actually Additions Fluxified
+- removed Applied Energistics 2 (no more updates for 1.12)
 - removed Diet Hoppers
 - removed EnderIO Fluxified
 - removed More Tinkers
@@ -13,6 +14,7 @@
 - updated AbyssalCraft
 - updated AbyssalCraft Integration
 - updated B.A.S.E
+- updated BiblioCraft
 - updated Botania
 - updated Brandon's Core
 - updated Chunk-Pregenerator
@@ -22,6 +24,7 @@
 - updated Draconic Additions
 - updated Draconic Evolution
 - updated Dynamic Surrounding
+- updated Embers Rekindled
 - updated EnderIO
 - updated EnderIO Endergy
 - updated Ender Tweaker
@@ -32,7 +35,6 @@
 - updated Immersive Petroleum
 - updated Immersive Technology
 - updated LibNine
-- updated MixinBootstrap
 - updated ModTweaker
 - updated Mouse Tweaks
 - updated MTLib
@@ -50,6 +52,8 @@
 - updated WanionLib
 
 - added Advanced Solars Classic
+- added AE2 Unofficial Extended Life
+- added BisectHosting Server Integration Menu
 - added Common Capabilities
 - added Integrated Dynamics
 - added MoreTweaker
@@ -60,6 +64,7 @@
 - added documentation for xu2 changes
 - added documentation for lazyAE2
 - added documentation for blood arsenal
+- added documentation for blood magic
 - added earthworks stones to et resource miner
 - added more loading screen tips
 - added recipe to convert uranium to yellorite
@@ -67,9 +72,8 @@
 - finished questbook for nightmare mode
 - fixed villager blood amount in woot farms (once and for all)
 - increased main menu resolution
-- more recipes for nightmare mode [WIP]
 - disabled XU Gridpower Efficiency Losses
-- switched to Tinkers' Evolution as tconstruc material addon (as it's actually maintained)
+- switched to Tinkers' Evolution as tconstruct material addon (as it's actually maintained)
 -> current used tconstruct tools / armor probably needs to be remade (I'm sorry)
 - tweaked XU Gridpower generation values
 - tweaked infernal mob drops

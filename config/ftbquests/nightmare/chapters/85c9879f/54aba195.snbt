@@ -1,0 +1,68 @@
+{
+	x: -2.0d,
+	y: 3.5d,
+	dependencies: [
+		"5520d0b5"
+	],
+	tasks: [{
+		uid: "3d0cc498",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e4fe1236",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			tag: {
+				textureBlock: {
+					id: "minecraft:planks",
+					Count: 1b,
+					Damage: 0s
+				}
+			},
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ae86f211",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			tag: {
+				textureBlock: {
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 0s
+				}
+			},
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a6f182fb",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 3"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a6f66743",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 4"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "dc95a050",
+		type: "item",
+		item: "harvestcraft:chaoscookieitem"
+	}]
+}

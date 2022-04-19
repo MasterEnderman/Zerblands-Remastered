@@ -1,0 +1,19 @@
+{
+	x: -4.0d,
+	y: 10.5d,
+	dependencies: [
+		"f3a425e7"
+	],
+	tasks: [{
+		uid: "8d9e88e4",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bloodmagic:arcane_ashes"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

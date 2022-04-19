@@ -25,5 +25,3 @@ recipes.addShaped(<servertickmonitor:monitor>, [
     [<ore:ingotIron>,<ore:dye>,<ore:blockGlassColorless>],
     [<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>]
 ]);
-
-<servertickmonitor:monitor>.displayName = "TPS Monitor";

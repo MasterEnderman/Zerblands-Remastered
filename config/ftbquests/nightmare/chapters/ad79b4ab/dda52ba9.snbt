@@ -1,0 +1,15 @@
+{
+	x: 2.0d,
+	y: 36.5d,
+	dependencies: [
+		"c7f9acd1",
+		"c848d5cb"
+	],
+	tasks: [{
+		uid: "3f4ec865",
+		type: "item",
+		items: [{
+			item: "contenttweaker:module_speed"
+		}]
+	}]
+}

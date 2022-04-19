@@ -1,0 +1,15 @@
+{
+	x: 6.0d,
+	y: 38.5d,
+	dependencies: [
+		"fd959972",
+		"9331dfda"
+	],
+	tasks: [{
+		uid: "c9c75770",
+		type: "item",
+		items: [{
+			item: "contenttweaker:electro_silicon"
+		}]
+	}]
+}

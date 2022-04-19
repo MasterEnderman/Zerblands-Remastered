@@ -144,6 +144,11 @@ var mapConcrete as IItemStack[string][string] = {
 recipes.remove(<immersiveengineering:stone_decoration:5>);
 Casting.addBasinRecipe(<immersiveengineering:stone_decoration:5>, null, <liquid:concrete>, 250, false, 100);
 
+recipes.remove(<immersiveengineering:bullet>);
+recipes.remove(<immersiveengineering:bullet:1>);
+JEI.addItem(<immersiveengineering:bullet:1>);
+recipes.addShapeless(<immersiveengineering:bullet:1>,[<immersiveengineering:bullet>,<minecraft:paper>,<ore:dyeRed>]);
+
 for dye, concrete in mapConcrete {
     var oreDye as IIngredient = getOreDict("dye",dye);
     var solid as IItemStack = mapConcrete[dye]["solid"];
@@ -243,6 +248,14 @@ Blueprint.addRecipe("components", <immersiveengineering:material:12>, [
     <immersiveengineering:material:5> * 6,
     <bibliocraft:framingboard> * 6,
     <ore:nuggetSteel> * 3
+]);
+
+recipes.remove(<immersiveengineering:metal_device1:1>);
+Blueprint.addRecipe("machinery", <immersiveengineering:metal_device1:1>, [
+    <embers:blasting_core> * 1,
+    <contenttweaker:heating_coil> * 1,
+    <immersiveengineering:metal_decoration0> * 1,
+    <immersiveengineering:sheetmetal:9> * 2,
 ]);
 
 recipes.remove(<immersiveengineering:stone_decoration:8>);
@@ -494,6 +507,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
         [
             [<ore:slabTreatedWood>,<ore:slabTreatedWood>,<ore:slabTreatedWood>],
             [<forestry:worktable>,null,<immersiveengineering:wooden_decoration>]
+        ]
+    ],
+    <immersiveengineering:toolupgrade> : [
+        [
+            [<ic2:itemmisc:100>,<ore:dyeBlue>,null],
+            [<ore:dyeBlue>,<ic2:itemmisc:100>,<ore:dyeBlue>],
+            [null,<ore:dyeBlue>,<immersiveengineering:material:8>]
         ]
     ]
 };

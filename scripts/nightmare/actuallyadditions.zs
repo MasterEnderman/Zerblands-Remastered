@@ -23,6 +23,7 @@ import scripts.functions.findFirstItemFromMod;
 import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Empowerer;
 import mods.astralsorcery.Altar;
+import mods.forestry.Carpenter;
 import mods.ic2.Macerator;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.Crusher as IECrusher;
@@ -103,6 +104,9 @@ calc_scientific(<actuallyadditions:item_void_bag>, <actuallyadditions:item_bag>,
 recipes.remove(<actuallyadditions:item_misc:18>);
 calc_basic(<actuallyadditions:item_misc:18>,<contenttweaker:crystal_prism>,<astralsorcery:itemcraftingcomponent:3>);
 
+recipes.remove(<actuallyadditions:item_misc:14>);
+calc_basic(<actuallyadditions:item_misc:14>,<ic2:itemmisc:454>,<ore:cropCoffee>);
+
 var recipeMapShaped as IIngredient[][][IItemStack] = {
     <actuallyadditions:item_misc:7>	: [
     	[null,<immersiveengineering:wirecoil:5>,<ore:plankTreatedWood>],
@@ -137,7 +141,7 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
         [<tconstruct:pattern>,<openmodularturrets:intermediate_tiered:10>,<tconstruct:pattern>]
     ],
     <actuallyadditions:block_display_stand> : [
-        [null,<superiorshields:thermal_shield_reinforced>,null],
+        [<superiorshields:thermal_shield_reinforced>,<xreliquary:pedestal>,<superiorshields:thermal_shield_reinforced>],
         [<actuallyadditions:block_testifi_bucks_green_wall>,<actuallyadditions:block_misc:9>,<actuallyadditions:block_testifi_bucks_green_wall>],
         [<actuallyadditions:block_testifi_bucks_white_wall>,<forestry:chipsets:2>,<actuallyadditions:block_testifi_bucks_white_wall>]
     ],
@@ -204,6 +208,26 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
         [null,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_crystal_empowered:2>],
         [<actuallyadditions:item_misc:8>,<immersiveengineering:drillhead>,<actuallyadditions:block_crystal_empowered:2>],
         [<immersiveengineering:drill>,<actuallyadditions:item_misc:8>,null]
+    ],
+    <actuallyadditions:item_leaf_blower> : [
+        [null,<immersiveengineering:metal_device1:6>],
+        [<actuallyadditions:item_crystal:5>,<contenttweaker:electric_motor>],
+        [<actuallyadditions:item_crystal:5>,<thermalfoundation:material:640>]
+    ],
+    <actuallyadditions:item_leaf_blower_advanced> : [
+        [null,<actuallyadditions:item_misc:8>],
+        [<actuallyadditions:item_crystal:2>,<actuallyadditions:item_leaf_blower>],
+        [<actuallyadditions:item_crystal:2>,<opencomputers:material:7>]
+    ],
+    <actuallyadditions:item_filling_wand> : [
+        [<actuallyadditions:item_crystal_empowered:4>,<notenoughwands:building_wand>,<actuallyadditions:item_crystal_empowered:4>],
+        [<actuallyadditions:item_misc:8>,<thermalfoundation:material:640>,<actuallyadditions:item_misc:8>],
+        [null,<actuallyadditions:item_battery_triple>,null]
+    ],
+    <actuallyadditions:item_misc:20> : [
+        [<minecraft:magma_cream>,<actuallyadditions:item_crystal_empowered:1>,<minecraft:magma_cream>],
+        [<actuallyadditions:item_crystal_empowered:1>,<enderio:block_dark_iron_bars>,<actuallyadditions:item_crystal_empowered:1>],
+        [<minecraft:magma_cream>,<actuallyadditions:item_crystal_empowered:1>,<minecraft:magma_cream>]
     ]
 };
 
@@ -250,12 +274,55 @@ for item in listCrystal {
     Empowerer.removeRecipe(item);
 }
 
-Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:0>, <actuallyadditions:item_crystal:0>, <forestry:thermionic_tubes:13>, <rftools:dimensional_shard>, <forestry:thermionic_tubes:13>, <rftools:dimensional_shard>, 8192, 100, [0.1, 0.1, 0.1]);
-Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal:1>, <forestry:thermionic_tubes:11>, <rftools:dimensional_shard>, <forestry:thermionic_tubes:11>, <rftools:dimensional_shard>, 8192, 100, [0.1, 0.1, 0.1]);
-Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal:2>, <forestry:thermionic_tubes:5>, <rftools:dimensional_shard>, <forestry:thermionic_tubes:5>, <rftools:dimensional_shard>, 8192, 100, [0.1, 0.1, 0.1]);
-Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_crystal:3>, <forestry:thermionic_tubes:8>, <rftools:dimensional_shard>, <forestry:thermionic_tubes:8>, <rftools:dimensional_shard>, 8192, 100, [0.1, 0.1, 0.1]);
-Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:4>, <actuallyadditions:item_crystal:4>, <forestry:thermionic_tubes:9>, <rftools:dimensional_shard>, <forestry:thermionic_tubes:9>, <rftools:dimensional_shard>, 8192, 100, [0.1, 0.1, 0.1]);
-Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal:5>, <forestry:thermionic_tubes:3>, <rftools:dimensional_shard>, <forestry:thermionic_tubes:3>, <rftools:dimensional_shard>, 8192, 100, [0.1, 0.1, 0.1]);
+var mapCrystalEmpowered as IItemStack[string][IItemStack] = {
+    <forestry:thermionic_tubes:13> : {
+        // Restonia
+        "item_e" : <actuallyadditions:item_crystal_empowered:0>,
+        "block_e" : <actuallyadditions:block_crystal_empowered:0>,
+        "item" : <actuallyadditions:item_crystal:0>,
+        "block" : <actuallyadditions:block_crystal:0>
+    },
+    <forestry:thermionic_tubes:11> : {
+        // Palis
+        "item_e" : <actuallyadditions:item_crystal_empowered:1>,
+        "block_e" : <actuallyadditions:block_crystal_empowered:1>,
+        "item" : <actuallyadditions:item_crystal:1>,
+        "block" : <actuallyadditions:block_crystal:1>
+    },
+    <forestry:thermionic_tubes:5> : {
+        // Diamatine
+        "item_e" : <actuallyadditions:item_crystal_empowered:2>,
+        "block_e" : <actuallyadditions:block_crystal_empowered:2>,
+        "item" : <actuallyadditions:item_crystal:2>,
+        "block" : <actuallyadditions:block_crystal:2>
+    },
+    <forestry:thermionic_tubes:8> : {
+        // Void
+        "item_e" : <actuallyadditions:item_crystal_empowered:3>,
+        "block_e" : <actuallyadditions:block_crystal_empowered:3>,
+        "item" : <actuallyadditions:item_crystal:3>,
+        "block" : <actuallyadditions:block_crystal:3>
+    },
+    <forestry:thermionic_tubes:9> : {
+        // Emaradic
+        "item_e" : <actuallyadditions:item_crystal_empowered:4>,
+        "block_e" : <actuallyadditions:block_crystal_empowered:4>,
+        "item" : <actuallyadditions:item_crystal:4>,
+        "block" : <actuallyadditions:block_crystal:4>
+    },
+    <forestry:thermionic_tubes:3> : {
+        // Enori
+        "item_e" : <actuallyadditions:item_crystal_empowered:5>,
+        "block_e" : <actuallyadditions:block_crystal_empowered:5>,
+        "item" : <actuallyadditions:item_crystal:5>,
+        "block" : <actuallyadditions:block_crystal:5>
+    },
+};
+
+for tube, data in mapCrystalEmpowered {
+    Empowerer.addRecipe(data["item_e"], data["item"], tube, <rftools:dimensional_shard>, tube, <rftools:dimensional_shard>, 8192, 100, [0.1, 0.1, 0.1]);
+    Empowerer.addRecipe(data["block_e"], data["block"], tube, <rftools:infused_diamond>, tube, <rftools:infused_diamond>, 8192 * 8, 100, [0.1, 0.1, 0.1]);
+}
 
 Empowerer.addRecipe(<actuallyadditions:item_flax_seed>, <immersiveengineering:seed>, <minecraft:string>, <minecraft:string>, <minecraft:string>, <minecraft:string>, 2000, 400, [0.2, 0.4, 0.7]);
 
@@ -283,13 +350,27 @@ AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:1>);
 AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:1>);
 AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:1>, <contenttweaker:large_tanzanite>, energy);
 
+AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:2>);
+AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:2>);
+AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:2>, <minecraft:diamond>, energy);
+
 AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:3>);
 AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:3>);
 AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:3>, <randomthings:stableenderpearl>, energy);
 
+AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:4>);
+AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:4>);
+AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:4>, <minecraft:emerald>, energy);
+
 AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:5>);
 AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:5>);
 AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:5>, <contenttweaker:weakeneddiamond>, energy);
+
+AtomicReconstructor.removeRecipe(<actuallyadditions:block_testifi_bucks_green_wall>);
+AtomicReconstructor.addRecipe(<actuallyadditions:block_testifi_bucks_green_wall>, <botania:quartztypered:1>, energy);
+
+AtomicReconstructor.removeRecipe(<actuallyadditions:block_testifi_bucks_white_wall>);
+AtomicReconstructor.addRecipe(<actuallyadditions:block_testifi_bucks_white_wall>, <botania:quartztypered>, energy);
 
 recipes.remove(<actuallyadditions:block_atomic_reconstructor>);
 Altar.addAttunementAltarRecipe("block_atomic_reconstructor", <actuallyadditions:block_atomic_reconstructor>, 500, 800, [
@@ -348,6 +429,18 @@ var smallMachine as IIngredient[][IItemStack] = {
         <actuallyadditions:block_breaker> * 3,
         <actuallyadditions:item_crystal_empowered:3>,
         <actuallyadditions:item_misc:8>
+    ],
+    <actuallyadditions:block_heat_collector> : [
+        <actuallyadditions:block_misc:9>,
+        <actuallyadditions:item_crystal:5>,
+        <randomthings:imbue>,
+        <contenttweaker:heat_conductor>
+    ],
+    <actuallyadditions:block_miner> : [
+        <actuallyadditions:block_crystal_empowered:3>,
+        <thermalexpansion:frame>,
+        <actuallyadditions:item_drill:*>,
+        <actuallyadditions:item_drill_upgrade_speed_iii>
     ]
 };
 
@@ -362,6 +455,14 @@ Blueprint.addRecipe("components", <actuallyadditions:item_misc:16>, [
     <thermalfoundation:material:640>,
     <forestry:thermionic_tubes:6> * 2,
     <ic2:itemcable:15> * 2
+]);
+
+recipes.remove(<actuallyadditions:item_battery>);
+Blueprint.addRecipe("components", <actuallyadditions:item_battery>, [
+    <ic2:itembatre>,
+    <actuallyadditions:item_misc:8>,
+    <actuallyadditions:item_crystal>,
+    <actuallyadditions:item_crystal:5> * 2
 ]);
 
 recipes.addShapeless(<actuallyadditions:block_fluid_collector>, [<actuallyadditions:block_fluid_collector>]); // clear NBT
@@ -393,3 +494,24 @@ calc_basic(<actuallyadditions:block_phantom_placer>, <actuallyadditions:block_ph
 
 recipes.remove(<actuallyadditions:block_phantom_breaker>);
 calc_basic(<actuallyadditions:block_phantom_breaker>, <actuallyadditions:block_phantomface>, <actuallyadditions:block_breaker>);
+
+recipes.remove(<actuallyadditions:item_drill_upgrade_speed>);
+Carpenter.addRecipe(<actuallyadditions:item_drill_upgrade_speed>, [
+    [<actuallyadditions:item_crystal:5>,<contenttweaker:copper_coil>,<actuallyadditions:item_crystal:5>],
+    [<contenttweaker:copper_coil>,<minecraft:cookie>,<contenttweaker:copper_coil>],
+    [<actuallyadditions:item_crystal:5>,<contenttweaker:copper_coil>,<actuallyadditions:item_crystal:5>]
+], 20, <liquid:for.honey> * 250, <thermalfoundation:material:32>);
+
+recipes.remove(<actuallyadditions:item_drill_upgrade_speed_ii>);
+Carpenter.addRecipe(<actuallyadditions:item_drill_upgrade_speed_ii>, [
+    [<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:7>,<actuallyadditions:item_crystal:5>],
+    [<actuallyadditions:item_misc:7>,<minecraft:cake>,<actuallyadditions:item_misc:7>],
+    [<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:7>,<actuallyadditions:item_crystal:5>]
+], 20, <liquid:for.honey> * 250, <actuallyadditions:item_drill_upgrade_speed>);
+
+recipes.remove(<actuallyadditions:item_drill_upgrade_speed_iii>);
+Carpenter.addRecipe(<actuallyadditions:item_drill_upgrade_speed_iii>, [
+    [<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal:5>],
+    [<actuallyadditions:item_misc:8>,<harvestcraft:minerstewitem>,<actuallyadditions:item_misc:8>],
+    [<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal:5>]
+], 20, <liquid:for.honey> * 250, <actuallyadditions:item_drill_upgrade_speed_ii>);
