@@ -19,6 +19,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.avaritia.ExtremeCrafting;
+import mods.extrautils2.Resonator;
 import mods.jei.JEI;
 import mods.thermalexpansion.Transposer;
 
@@ -32,6 +33,9 @@ JEI.removeAndHide(<extrautils2:indexerremote>);
 JEI.removeAndHide(<extrautils2:chunkloader>);
 JEI.removeAndHide(<extrautils2:crafter>);
 JEI.removeAndHide(<extrautils2:analogcrafter>);
+JEI.removeAndHide(<extrautils2:ingredients:4>);
+
+Resonator.remove(<extrautils2:ingredients:4>); // fk XU2
 
 Transposer.addFillRecipe(<extrautils2:ingredients:11>, <minecraft:gold_ingot>, <liquid:lava>*250, 66666);
 

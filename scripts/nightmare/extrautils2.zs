@@ -186,8 +186,7 @@ Resonator.add(<contenttweaker:heating_coil>, <embers:superheater>, 1500, false);
 Resonator.remove(<extrautils2:decorativesolid:3>);
 Resonator.add(<extrautils2:decorativesolid:3>, <botania:pavement:1>, 800, false);
 
-Resonator.remove(<extrautils2:ingredients:4>);
-Resonator.add(<extrautils2:ingredients:4>, <abyssalcraft:charcoal>, 3200, true);
+Resonator.add(<contenttweaker:red_coal>, <abyssalcraft:charcoal>, 3200, true);
 
 Resonator.remove(<extrautils2:decorativesolid:7>);
 Resonator.add(<extrautils2:decorativesolid:7>, <actuallyadditions:block_testifi_bucks_white_wall>, 800, false);

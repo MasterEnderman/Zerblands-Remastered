@@ -570,4 +570,4 @@ recipes.addShapeless(<enderio:item_material:38> * 3,[
 ]);
 
 AlloySmelter.removeRecipe(<enderio:item_material:3>);
-AlloySmelter.addRecipe(<enderio:item_material:3>,[<botania:managlasspane>,<enderio:item_material:38>,<contenttweaker:electro_silicon>],15000);
+AlloySmelter.addRecipe(<enderio:item_material:3>, [<botania:managlasspane>,<enderio:item_material:38>,<contenttweaker:electro_silicon>], 15000);

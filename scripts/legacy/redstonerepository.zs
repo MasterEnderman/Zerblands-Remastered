@@ -25,6 +25,6 @@ recipes.remove(<redstonerepository:material:3>);
 recipes.remove(<redstonerepository:material:7>);
 recipes.addShaped(<redstonerepository:material:7>, [
     [<ore:plateGelidEnderium>,<ore:gearGelidEnderium>,<ore:plateGelidEnderium>],
-    [<ore:gearGelidEnderium>,<ore:blockGelidGem>,<ore:gearGelidEnderium>],
+    [<ore:gearGelidEnderium>,<ore:blockGelidCrystal>,<ore:gearGelidEnderium>],
     [<ore:plateGelidEnderium>,<ore:gearGelidEnderium>,<ore:plateGelidEnderium>]
 ]);

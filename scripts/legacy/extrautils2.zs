@@ -22,8 +22,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.extrautils2.Resonator;
 
-Resonator.remove(<extrautils2:ingredients:4>);
-Resonator.add(<extrautils2:ingredients:4>, <evilcraft:blood_waxed_coal>, 1600, true);
+Resonator.add(<contenttweaker:red_coal>, <evilcraft:blood_waxed_coal>, 1600, false);
 
 recipes.remove(<extrautils2:ingredients:1>);
 

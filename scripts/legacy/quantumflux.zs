@@ -34,9 +34,9 @@ SagMill.addRecipe([<quantumflux:graphitedust>], [100], <quantumflux:craftingpiec
 
 recipes.remove(<quantumflux:craftingpiece:1>);
 recipes.addShaped(<quantumflux:craftingpiece:1> * 4, [
-    [<ore:ingotSteel>,<ore:crystalGold>,<ore:ingotSteel>],
-    [<ore:crystalGold>,<contenttweaker:red_core>,<ore:crystalGold>],
-    [<ore:ingotSteel>,<ore:crystalGold>,<ore:ingotSteel>]
+    [<ore:ingotSteel>,<abyssalcraft:crystal:1>,<ore:ingotSteel>],
+    [<abyssalcraft:crystal:1>,<contenttweaker:red_core>,<abyssalcraft:crystal:1>],
+    [<ore:ingotSteel>,<abyssalcraft:crystal:1>,<ore:ingotSteel>]
 ]);
 
 recipes.remove(<quantumflux:quibitcluster:1>);

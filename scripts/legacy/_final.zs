@@ -22,3 +22,4 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 recipes.replaceAllOccurences(<ore:blockGlassHardened>, <enderio:block_fused_quartz>);
+recipes.replaceAllOccurences(<extrautils2:ingredients:4>, <contenttweaker:red_coal>);

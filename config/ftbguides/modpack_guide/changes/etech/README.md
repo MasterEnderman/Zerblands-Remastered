@@ -36,3 +36,21 @@
 ## Botanic Miner
 
 - **Disabled**
+
+## Nanobot Beacon
+
+- Absorption Potion Effect = 640 RF / tick [Default: 64]
+- Creative_flight = 640 RF / tick [Default: 64]
+- Fire_resistance Potion Effect = 640 RF / tick [Default: 64]
+- Flight Speed = 640 RF / tick [Default: 64]
+- Glowing Potion Effect = 640 RF / tick [Default: 64]
+- Haste Potion Effect = 640 RF / tick [Default: 64]
+- Health Boost Potion Effect = 640 RF / tick [Default: 64]
+- Invisibility Potion Effect = 640 RF / tick [Default: 64]
+- Jump Boost Potion Effect = 640 RF / tick [Default: 64]
+- Night Vision Potion Effect = 640 RF / tick [Default: 64]
+- Regeneration Potion Effect = 640 RF / tick [Default: 64]
+- Resistance Potion Effect = 640 RF / tick [Default: 64]
+- Saturation Potion Effect = 640 RF / tick [Default: 64]
+- Strength Potion Effect = 640 RF / tick [Default: 64]
+- Water Breathing Potion Effect = 640 RF / tick [Default: 64]

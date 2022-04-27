@@ -21,9 +21,9 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 recipes.addShaped(<exponentialpower:endergenerator>, [
-    [<tconstruct:large_plate>.withTag({Material: "darkmatter"}),<contenttweaker:ender_token>,<tconstruct:large_plate>.withTag({Material: "darkmatter"})],
+    [<tconstruct:large_plate>.withTag({Material: "dark_matter"}),<contenttweaker:ender_token>,<tconstruct:large_plate>.withTag({Material: "dark_matter"})],
     [<draconicevolution:reactor_component>,<draconicevolution:reactor_core>,<draconicevolution:reactor_component>],
-    [<tconstruct:large_plate>.withTag({Material: "darkmatter"}),<draconicevolution:reactor_component:1>,<tconstruct:large_plate>.withTag({Material: "darkmatter"})]]);
+    [<tconstruct:large_plate>.withTag({Material: "dark_matter"}),<draconicevolution:reactor_component:1>,<tconstruct:large_plate>.withTag({Material: "dark_matter"})]]);
 
 recipes.addShaped(<exponentialpower:endercell>, [
     [<appliedenergistics2:material:34>,<ic2:itempesd>,<appliedenergistics2:material:34>],

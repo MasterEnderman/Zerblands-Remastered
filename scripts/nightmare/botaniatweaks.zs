@@ -97,7 +97,7 @@ Agglomeration.addRecipe(lapatron_crystal);
 
 var red_core = AgglomerationRecipe.create()
 	.output(<contenttweaker:red_core>)
-	.inputs([<extrautils2:ingredients:2>,<abyssalcraft:crystal:1>,<extrautils2:ingredients:4>,<redstonearsenal:material:160>])
+	.inputs([<extrautils2:ingredients:2>,<abyssalcraft:crystal:1>,<contenttweaker:red_coal>,<redstonearsenal:material:160>])
 	.manaCost(10000)
 	.multiblock(rune);
 

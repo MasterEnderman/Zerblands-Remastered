@@ -171,12 +171,15 @@ AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot>, [<ore:gravel>,<ore:it
 /*Alloy: Endergy Crystalline Alloy*/
 AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:1>, [<ore:itemPulsatingPowder>,<ore:ingotGold>], 10000);
 /*Alloy: Endergy Crystalline Pink Slime*/
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:2>, [<ore:itemPulsatingPowder>,<ore:ingotKnightslime>], 10000);
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4>, [<ore:itemPulsatingPowder>,<ore:ingotKnightslime>], 10000);
 /*Alloy: Endergy Melodic Alloy*/
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:3>, [<minecraft:chorus_fruit_popped>,<ore:ingotEndSteel>], 20000);
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:2>, [<minecraft:chorus_fruit_popped>,<ore:ingotEndSteel>], 20000);
 /*Alloy: Endergy Stellar Alloy*/
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4> * 2, [<minecraft:nether_star>,<ore:ingotMelodicAlloy>,<ore:itemClay> * 4], 20000);
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:3> * 2, [<minecraft:nether_star>,<ore:ingotMelodicAlloy>,<ore:itemClay> * 4], 20000);
 /*Alloy: Energetic Silver Alloy*/
 AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:5>, [<ore:ingotSilver>,<ore:dustRedstone>,<ore:dustGlowstone>], 10000);
 /*Alloy: Vivid Alloy*/
 AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:6>, [<ore:ingotEnergeticSilver>,<ore:enderpearl>], 10000);
+
+AlloySmelter.removeRecipe(<enderio:item_material:3>);
+AlloySmelter.addRecipe(<enderio:item_material:3>, [<enderio:item_material:38>,<ore:dustLapis>,<ore:dustCoal>], 15000);

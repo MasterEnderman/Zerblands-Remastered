@@ -33,9 +33,9 @@ PureDaisy.addRecipe(<botanicadds:dreamrock>, <contenttweaker:runestone>, 100);
 furnace.addRecipe(<contenttweaker:blood_infused_stone>,<evilcraft:bloody_cobblestone>);
 
 recipes.addShaped(<contenttweaker:red_core>, [
-    [<extrautils2:ingredients:4>,<abyssalcraft:charcoal>,<extrautils2:ingredients:4>],
+    [<contenttweaker:red_coal>,<abyssalcraft:charcoal>,<contenttweaker:red_coal>],
     [<abyssalcraft:charcoal>,<extrautils2:ingredients:2>,<abyssalcraft:charcoal>],
-    [<extrautils2:ingredients:4>,<abyssalcraft:charcoal>,<extrautils2:ingredients:4>]
+    [<contenttweaker:red_coal>,<abyssalcraft:charcoal>,<contenttweaker:red_coal>]
 ]);
 
 Casting.removeTableRecipe(<contenttweaker:ender_ingot>);

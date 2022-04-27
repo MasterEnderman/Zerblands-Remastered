@@ -1,5 +1,27 @@
 # Zerblands-Remastered
 
+## v2.1.5 - guess I missed something
+
+- removed Earthworks
+- removed ReAuth (no longer works with Microsoft Accounts)
+
+- added CensoredASM
+- added DrawerFPS Legacy
+- added Earthworks Unofficial Extended Life
+- added MixinBooter
+- added OAuth (replaces ReAuth)
+- added Tinkers OreDict Cache
+
+- enabled psi material duplication utilizing mana infusion
+- fixed gaia boss not giving enough gaia spirits in woot 
+- fixed missing oredict on gelid armorplate
+- fixed missing tico materials in recipes
+- fixed yanked enderio photovoltaic plate recipe
+- fixed wrong enderio alloy recipes
+- increased nanobot beacon energy usage
+- made ID accessable in legacy mode
+- replaced XU2 Red Coal with my own version since it's a pain to autocraft with it
+
 ## v2.1.4 - I'm not dead (yet)
 
 - removed Actually Additions Fluxified

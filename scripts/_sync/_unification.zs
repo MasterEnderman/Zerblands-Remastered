@@ -183,6 +183,8 @@ furnace.setFuel(<contenttweaker:firecoal>,25000);
 furnace.setFuel(<contenttweaker:enriched_coal>,5000);
 furnace.setFuel(<contenttweaker:coal_dust>,1000);
 
+furnace.setFuel(<contenttweaker:red_coal>, 16000);
+
 var materialSystem as string[string] = {
     "antimony" : "antimony",
     "batteryAlloy" : "battery_alloy",

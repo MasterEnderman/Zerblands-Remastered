@@ -47,6 +47,7 @@ var legacy as string[string] = {
     "bedrockium_nugget" : "Bedrockium Nugget",
     "bedrockium_ingot" : "Bedrockium Ingot",
     "red_core" : "Red Core",
+    "red_coal" : "Red Coal" // fk XU2
 };
 
 for item, local in legacy {

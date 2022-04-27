@@ -21,7 +21,6 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.astralsorcery.Altar;
-import mods.botania.ManaInfusion;
 
 <psi:cad_assembly>.displayName = "Steel CAD Assembly";
 <psi:cad_assembly:1>.displayName = "Lumium CAD Assembly";
@@ -144,18 +143,4 @@ var mapBullets as IItemStack[IItemStack] = {
 for key, value in mapBullets {
 	recipes.remove(key);
     recipes.addShapeless("ct_"+toString(key), key, [value,<ore:dustPsi>,<blood_dynamo:ingredient:2>,<ore:dustBedrock>]);
-}
-
-var mapMaterial as int[IItemStack] = {
-	<psi:material> : 1000,
-	<psi:material:1> : 20000,
-	<psi:material:2> : 100000,
-	<psi:material:3> : 1000000,
-	<psi:material:4> : 1000000,
-	<psi:material:5> : 10000,
-	<psi:material:6> : 10000,
-};
-
-for material, mana in mapMaterial {
-	ManaInfusion.addConjuration(material * 2, material, mana);
 }
