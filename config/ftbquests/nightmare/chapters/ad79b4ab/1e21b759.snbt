@@ -18,11 +18,11 @@
 		uid: "d27694f1",
 		type: "item",
 		items: [{
+			id: "bloodmagic:ritual_diviner",
+			Damage: 1s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "bloodmagic:ritual_diviner",
-			Damage: 1s
+			}
 		}],
 		ignore_nbt: 1b
 	}]

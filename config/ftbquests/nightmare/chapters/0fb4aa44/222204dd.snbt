@@ -9,12 +9,12 @@
 		uid: "02726f05",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
 			id: "abyssalcraft:necronomicon",
 			tag: {
 				PotEnergy: 0.0f
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_damage: true,

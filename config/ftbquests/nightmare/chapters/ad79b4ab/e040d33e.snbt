@@ -10,10 +10,10 @@
 		uid: "33fba94b",
 		type: "item",
 		items: [{
+			id: "contenttweaker:atomiccalculator",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "contenttweaker:atomiccalculator"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

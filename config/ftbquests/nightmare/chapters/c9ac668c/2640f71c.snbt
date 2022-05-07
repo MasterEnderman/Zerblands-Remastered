@@ -16,10 +16,10 @@
 		uid: "4eda91f2",
 		type: "item",
 		items: [{
+			id: "psi:cad_assembly",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "psi:cad_assembly"
+			}
 		}],
 		ignore_nbt: 1b
 	}]

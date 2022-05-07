@@ -9,11 +9,11 @@
 		uid: "9e808042",
 		type: "item",
 		items: [{
+			id: "evilcraft:promise",
+			Damage: 2s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "evilcraft:promise",
-			Damage: 2s
+			}
 		}],
 		ignore_nbt: 1b
 	}]

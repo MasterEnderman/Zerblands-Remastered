@@ -1,10 +1,10 @@
 {
 	title: "Early-Game",
 	icon: {
+		id: "astralsorcery:blockaltar",
 		ForgeCaps: {
 			"astralsorcery:cap_item_amulet_holder": {}
-		},
-		id: "astralsorcery:blockaltar"
+		}
 	},
 	always_invisible: false,
 	group: 0,

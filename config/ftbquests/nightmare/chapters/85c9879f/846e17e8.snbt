@@ -8,11 +8,11 @@
 		uid: "e577d311",
 		type: "item",
 		items: [{
+			id: "claybucket:claybucket",
+			Damage: 2s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "claybucket:claybucket",
-			Damage: 2s
+			}
 		}],
 		ignore_nbt: 1b
 	}]

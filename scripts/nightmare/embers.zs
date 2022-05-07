@@ -55,7 +55,7 @@ recipes.remove(<embers:mech_accessor>);
 calc_basic(<embers:mech_accessor>, <embers:stairs_caminite_brick>, <immersiveengineering:material:8>);
 
 Alchemy.remove(<embers:winding_gears>);
-Alchemy.add(<embers:winding_gears>, [<blood_dynamo:ingredient:2>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>], {"copper": 32 to 64, "iron": 32 to 128});
+Alchemy.add(<embers:winding_gears>, [<contenttweaker:runic_gear>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>, <ore:gearBronze>], {"copper": 32 to 64, "iron": 32 to 128});
 
 Alchemy.remove(<embers:inflictor_gem>);
 Alchemy.add(<embers:inflictor_gem>, [<contenttweaker:flawless_diamond_shard>, <actuallyadditions:item_crystal:3>, <ore:plateDawnstone>, <actuallyadditions:item_crystal:3>, <ore:plateDawnstone>], {"dawnstone": 48 to 96, "lead": 32 to 64});

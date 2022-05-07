@@ -1,5 +1,5 @@
 {
-	x: 2.0d,
+	x: -4.0d,
 	y: 23.0d,
 	dependencies: [
 		"e1133b09"
@@ -8,10 +8,10 @@
 		uid: "33e20c34",
 		type: "item",
 		items: [{
+			id: "rftools:shard_wand",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "rftools:shard_wand"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

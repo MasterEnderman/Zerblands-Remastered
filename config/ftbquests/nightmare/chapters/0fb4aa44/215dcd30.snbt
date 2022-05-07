@@ -16,10 +16,10 @@
 		uid: "2c0a442a",
 		type: "item",
 		items: [{
+			id: "immersiveengineering:mold",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "immersiveengineering:mold"
+			}
 		}],
 		ignore_nbt: 1b
 	},
@@ -27,11 +27,11 @@
 		uid: "efc75158",
 		type: "item",
 		items: [{
+			id: "immersiveengineering:mold",
+			Damage: 1s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "immersiveengineering:mold",
-			Damage: 1s
+			}
 		}],
 		ignore_nbt: 1b
 	},
@@ -39,11 +39,11 @@
 		uid: "f7bc48d1",
 		type: "item",
 		items: [{
+			id: "immersiveengineering:mold",
+			Damage: 2s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "immersiveengineering:mold",
-			Damage: 2s
+			}
 		}],
 		ignore_nbt: 1b
 	},
@@ -51,11 +51,11 @@
 		uid: "c6df8d45",
 		type: "item",
 		items: [{
+			id: "immersiveengineering:mold",
+			Damage: 4s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "immersiveengineering:mold",
-			Damage: 4s
+			}
 		}],
 		ignore_nbt: 1b
 	}]

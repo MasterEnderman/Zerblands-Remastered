@@ -715,6 +715,22 @@
     {
       "item": "tconevo:metal|14",
       "emc": 7095273792
+    },
+    {
+      "item": "draconicadditions:chaos_heart|0",
+      "emc": 500000000
+    },
+    {
+      "item": "draconicevolution:draconium_block|1",
+      "emc": 36864
+    },
+    {
+      "item": "actuallyadditions:item_misc|19",
+      "emc": 147713
+    },
+    {
+      "item": "contenttweaker:red_coal|0",
+      "emc": 128
     }
   ]
 }

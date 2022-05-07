@@ -44,6 +44,14 @@ import mods.tconstruct.Melting;
     <abyssalcraft:shoggothflesh:3>,
     <abyssalcraft:shoggothflesh:4>,
 ]);
+<ore:kleinStarEin>.add(<projecte:item.pe_klein_star>);
+<ore:kleinStarZwei>.add(<projecte:item.pe_klein_star:1>);
+<ore:kleinStarDrei>.add(<projecte:item.pe_klein_star:2>);
+<ore:kleinStarVier>.add(<projecte:item.pe_klein_star:3>);
+<ore:kleinStarSphere>.add(<projecte:item.pe_klein_star:4>);
+<ore:kleinStarOmega>.add(<projecte:item.pe_klein_star:5>);
+<ore:matterDark>.add(<projecte:item.pe_matter>);
+<ore:matterRed>.add(<projecte:item.pe_matter:1>);
 
 Pulverizer.addRecipe(<evilcraft:dark_gem_crushed>, <evilcraft:dark_gem>, 4000);
 SagMill.addRecipe([<evilcraft:dark_gem_crushed>], [100], <evilcraft:dark_gem>, "NONE", 5000);
@@ -114,7 +122,8 @@ var mapBedrock as IIngredient[IItemStack] = {
     <contenttweaker:bedrockium_nugget> : <extrautils2:compressedcobblestone:7>,
     <contenttweaker:bedrockium_ingot> : <contenttweaker:bedrockium_nugget>,
     <contenttweaker:bedrockium_block> : <contenttweaker:bedrockium_ingot>,
-    <minecraft:bedrock> : <contenttweaker:bedrockium_block>
+    <minecraft:bedrock> : <contenttweaker:bedrockium_block>,
+    <avaritia:resource:6> : <contenttweaker:resource_infinity_drop>,
 };
 
 var index as int = 0;

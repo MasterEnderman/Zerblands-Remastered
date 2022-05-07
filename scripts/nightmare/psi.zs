@@ -48,7 +48,7 @@ Altar.addAttunementAltarRecipe("psi_cad_assembler", <psi:cad_assembler>, 500, 80
 	<avaritia:double_compressed_crafting_table>,
 	<actuallyadditions:item_crystal:3>,
 	<embers:archaic_circuit>,
-	<blood_dynamo:ingredient:2>,
+	<contenttweaker:runic_gear>,
 	<embers:archaic_circuit>,
 	<thermalfoundation:material:160>,
 	<botania:storage>,
@@ -142,5 +142,5 @@ var mapBullets as IItemStack[IItemStack] = {
 
 for key, value in mapBullets {
 	recipes.remove(key);
-    recipes.addShapeless("ct_"+toString(key), key, [value,<ore:dustPsi>,<blood_dynamo:ingredient:2>,<ore:dustBedrock>]);
+    recipes.addShapeless("ct_"+toString(key), key, [value,<ore:dustPsi>,<contenttweaker:runic_gear>,<ore:dustBedrock>]);
 }

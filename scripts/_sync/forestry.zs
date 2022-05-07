@@ -20,9 +20,32 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
 import mods.forestry.Carpenter;
+import mods.forestry.Centrifuge;
 import mods.jei.JEI;
+import mods.thermalexpansion.EnervationDynamo;
 
 JEI.removeAndHide(<forestry:bottler>);
+
+JEI.addItem(<forestry:bee_combs:1>);
+JEI.addItem(<forestry:bee_combs:8>);
+JEI.addItem(<forestry:bee_combs:9>);
+JEI.addItem(<forestry:bee_combs:10>);
+JEI.addItem(<forestry:bee_combs:11>);
+JEI.addItem(<forestry:bee_combs:12>);
+JEI.addItem(<forestry:bee_combs:13>);
+JEI.addItem(<forestry:bee_combs:14>);
+JEI.addItem(<forestry:bee_combs_0:1>);
+JEI.addItem(<forestry:bee_combs_0:8>);
+JEI.addItem(<forestry:bee_combs_0:9>);
+JEI.addItem(<forestry:bee_combs_0:10>);
+JEI.addItem(<forestry:bee_combs_0:11>);
+JEI.addItem(<forestry:bee_combs_0:12>);
+JEI.addItem(<forestry:bee_combs_0:13>);
+JEI.addItem(<forestry:bee_combs_0:14>);
+JEI.addItem(<forestry:crafting_material:5>);
+JEI.addItem(<forestry:propolis:2>);
+JEI.addItem(<forestry:honey_drop:1>);
+JEI.addItem(<forestry:honey_drop:2>);
 
 recipes.remove(<forestry:kit_shovel>);
 recipes.remove(<forestry:kit_pickaxe>);
@@ -30,12 +53,22 @@ recipes.remove(<forestry:kit_pickaxe>);
 furnace.remove(<minecraft:coal:1>);
 furnace.addRecipe(<forestry:ash>, <ore:logWood>);
 
+EnervationDynamo.addFuel(<forestry:honey_drop:1>, 100000000);
+
 recipes.remove(<forestry:ash_stairs>);
 recipes.addShaped(<forestry:ash_stairs> * 4, [
     [<forestry:ash_brick>,null,null],
     [<forestry:ash_brick>,<forestry:ash_brick>,null],
     [<forestry:ash_brick>,<forestry:ash_brick>,<forestry:ash_brick>]
 ]);
+
+Centrifuge.removeRecipe(<forestry:bee_combs:9>);
+Centrifuge.addRecipe([<ic2:itemmisc:181> % 60, <forestry:honey_drop> % 40], <forestry:bee_combs:9>, 100);
+
+Centrifuge.addRecipe([<forestry:honey_drop:1> % 100], <forestry:bee_combs:12>, 100);
+Centrifuge.addRecipe([<forestry:honey_drop:1> % 100, <forestry:honey_drop:1> % 100], <forestry:bee_combs:11>, 100);
+
+Centrifuge.addRecipe([<forestry:honey_drop:2> % 100], <forestry:bee_combs:13>, 100);
 
 var x as IItemStack = <morebees:grainmetallic>;
 

@@ -102,7 +102,28 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<minecraft:end_crystal>,<contenttweaker:ender_star>,<minecraft:end_crystal>],
             [<enderutilities:enderpart:2>,<minecraft:end_crystal>,<enderutilities:enderpart:2>]
         ]
-    ]
+    ],
+    <enderutilities:linkcrystal> : [
+        [
+            [<randomthings:runedust:13>,<randomthings:runedust:13>,<randomthings:runedust:13>],
+            [<randomthings:runedust:13>,<enderutilities:enderpart:10>,<randomthings:runedust:13>],
+            [<randomthings:runedust:13>,<randomthings:runedust:13>,<randomthings:runedust:13>]
+        ]
+    ],
+    <enderutilities:linkcrystal:1> : [
+        [
+            [<randomthings:runedust:11>,<randomthings:runedust:11>,<randomthings:runedust:11>],
+            [<randomthings:runedust:11>,<enderutilities:enderpart:10>,<randomthings:runedust:11>],
+            [<randomthings:runedust:11>,<randomthings:runedust:11>,<randomthings:runedust:11>]
+        ]
+    ],
+    <enderutilities:linkcrystal:2> : [
+        [
+            [<randomthings:runedust:10>,<randomthings:runedust:10>,<randomthings:runedust:10>],
+            [<randomthings:runedust:10>,<enderutilities:enderpart:10>,<randomthings:runedust:10>],
+            [<randomthings:runedust:10>,<randomthings:runedust:10>,<randomthings:runedust:10>]
+        ]
+    ],
 };
 
 for key, value in recipeMapShaped {

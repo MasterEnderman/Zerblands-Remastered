@@ -10,11 +10,11 @@
 		uid: "6f5cba37",
 		type: "item",
 		items: [{
+			id: "projecte:item.pe_time_watch",
+			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "projecte:item.pe_time_watch",
-			tag: {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

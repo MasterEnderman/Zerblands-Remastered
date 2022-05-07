@@ -1,0 +1,21 @@
+gendustry.bees.species.annoying=Annoying
+gendustry.bees.species.annoying.description="How long can it take to build a single honeycomb?!"|Note found in an ancient time capsule
+gendustry.bees.species.tedious=Tedious
+gendustry.bees.species.tedious.description=Their hives are actually built out of smaller hives, which are themselves built out of smaller hives...
+gendustry.bees.species.insufferable=Insufferable
+gendustry.bees.species.insufferable.description=They often sabotage other bees they perceive as having any advantages or improper vocabulary.
+gendustry.bees.species.trippy=Trippy
+gendustry.bees.species.trippy.description="Dude. Like... bees. Man. They're like... whoa."|SpitefulFox, Unlicensed Apiarist
+gendustry.bees.species.cosmic=Cosmic
+gendustry.bees.species.cosmic.description=
+gendustry.bees.species.neutronium=Neutronium
+gendustry.bees.species.neutronium.description=Small objects can often by found orbiting their hives.
+gendustry.bees.species.infinite=Infinite
+gendustry.bees.species.infinite.description=Words can't even describe what this is.
+
+gendustry.allele.flowers.matrixBlock=Crystal Matrix
+gendustry.allele.flowers.neutroniumBlock=Neutronium
+gendustry.allele.flowers.infinityBlock=Infiniy
+
+gendustry.honeycomb.cosmic.name=Cosmic Comb
+gendustry.honeycomb.nerfed.name=Nerfed Comb

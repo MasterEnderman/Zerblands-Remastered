@@ -1,5 +1,26 @@
 # Zerblands-Remastered
 
+## v2.1.6 - beeeeeeeees
+
+- removed Blood Dynamo (causes random crashes on server)
+- removed VanillaFix (now integrated in CensoredASM)
+
+- updated AE2 Unofficial Extended Life
+- updated CensoredASM
+
+- added blood altar construction to ingame documentation
+- added cheaper recipe for circuit etcher after the first is aquired
+- added cheaper recipes for speculation cores in circuit etcher
+- added end game bees
+- buffed projecte bees
+- fixed blood diamond recipe
+- fixed chaos guardian drops in woot farms
+- fixed binding compound recipe
+- fixed elytra recipe
+- fixed missing ender storage documentation
+- fixed wyvern bow recipe
+- fixed missing emc values
+
 ## v2.1.5 - guess I missed something
 
 - removed Earthworks
@@ -13,7 +34,7 @@
 - added Tinkers OreDict Cache
 
 - enabled psi material duplication utilizing mana infusion
-- fixed gaia boss not giving enough gaia spirits in woot 
+- fixed gaia boss not giving enough gaia spirits in woot farms
 - fixed missing oredict on gelid armorplate
 - fixed missing tico materials in recipes
 - fixed yanked enderio photovoltaic plate recipe

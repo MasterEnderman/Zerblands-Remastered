@@ -116,5 +116,5 @@ TartaricForge.addRecipe(<bloodmagic:soul_gem>,[
 
 TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);
 TartaricForge.addRecipe(<bloodmagic:component:8>,[
-	<botania:spellcloth>,<woot:soulsanddust>,<embers:ember_cluster>,<bloodmagic:slate:1>
+	<botania:spellcloth:*>,<woot:soulsanddust>,<embers:ember_cluster>,<bloodmagic:slate:1>
 ], 400, 50);

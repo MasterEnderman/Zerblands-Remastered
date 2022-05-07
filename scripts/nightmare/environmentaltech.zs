@@ -90,6 +90,13 @@ var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
                 [<environmentaltech:connector>,<openmodularturrets:turret_base:3>,<environmentaltech:connector>],
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>]
             ]
+        ],
+        16 : [
+            [
+                [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>],
+                [<environmentaltech:connector>,<openmodularturrets:turret_base:4>,<environmentaltech:connector>],
+                [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>]
+            ]
         ]
     },
     <environmentaltech:litherite_crystal> : {

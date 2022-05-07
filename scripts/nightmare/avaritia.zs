@@ -27,13 +27,11 @@ import mods.jei.JEI;
 ExtremeCrafting.remove(<avaritia:neutron_collector>);
 JEI.removeAndHide(<avaritia:neutron_collector>);
 
-ExtremeCrafting.remove(<avaritia:resource:5>);
-
 recipes.removeShaped(<avaritia:resource:1>);
 recipes.addShaped(<avaritia:resource:1>, [
-    [<avaritia:resource>,<avaritia:resource>,<avaritia:resource>],
-    [<avaritia:resource>,<ore:ingotChaoticMetal>,<avaritia:resource>],
-    [<avaritia:resource>,<avaritia:resource>,<avaritia:resource>]
+    [<contenttweaker:pearl_lattice>,<contenttweaker:pearl_lattice>,<contenttweaker:pearl_lattice>],
+    [<contenttweaker:pearl_lattice>,<ore:ingotChaoticMetal>,<contenttweaker:pearl_lattice>],
+    [<contenttweaker:pearl_lattice>,<contenttweaker:pearl_lattice>,<contenttweaker:pearl_lattice>]
 ]);
 
 recipes.remove(<avaritia:resource>);

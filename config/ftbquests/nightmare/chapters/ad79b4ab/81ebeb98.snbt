@@ -20,10 +20,10 @@
 		type: "item",
 		items: [{
 			id: "appliedenergistics2:crystal_seed",
+			Damage: 600s,
 			tag: {
 				progress: 600
-			},
-			Damage: 600s
+			}
 		}]
 	},
 	{
@@ -31,10 +31,10 @@
 		type: "item",
 		items: [{
 			id: "appliedenergistics2:crystal_seed",
+			Damage: 1200s,
 			tag: {
 				progress: 1200
-			},
-			Damage: 1200s
+			}
 		}]
 	}]
 }

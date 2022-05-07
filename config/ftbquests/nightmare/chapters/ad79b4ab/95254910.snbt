@@ -8,10 +8,10 @@
 		uid: "8d9e88e4",
 		type: "item",
 		items: [{
+			id: "bloodmagic:arcane_ashes",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "bloodmagic:arcane_ashes"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

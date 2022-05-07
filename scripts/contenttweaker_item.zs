@@ -47,7 +47,8 @@ var legacy as string[string] = {
     "bedrockium_nugget" : "Bedrockium Nugget",
     "bedrockium_ingot" : "Bedrockium Ingot",
     "red_core" : "Red Core",
-    "red_coal" : "Red Coal" // fk XU2
+    "red_coal" : "Red Coal", // fk XU2
+    "runic_gear" : "Runic Gear", // fk BloodDynamo for getting random entity crashes 
 };
 
 for item, local in legacy {
@@ -163,7 +164,11 @@ var nightmare as string[string] = {
     "pink_slime_ingot" : "Pink Slime Ingot",
     "small_plutonium" : "Tiny Pile of Plutonium",
     "rtg_pellet" : "RTG Pellet",
-    "plutonium" : "Plutonium"
+    "plutonium" : "Plutonium",
+    "dense_neuron_chip" : "Dense Neuron Chip (DNC)",
+    "resource_infinity_drop" : "Infinity Drop",
+    "big_pearl" : "Primordial Pearl",
+    "pearl_lattice" : "Primordial Matrix Lattice",
 };
 
 for item, local in nightmare {

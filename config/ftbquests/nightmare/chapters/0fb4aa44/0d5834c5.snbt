@@ -9,10 +9,10 @@
 		uid: "49781a78",
 		type: "item",
 		items: [{
+			id: "abyssalcraft:transmutationgem",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "abyssalcraft:transmutationgem"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

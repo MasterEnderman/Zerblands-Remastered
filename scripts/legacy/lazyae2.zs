@@ -24,6 +24,7 @@ import mods.jei.JEI;
 import mods.botania.RuneAltar;
 import mods.botaniatweaks.Agglomeration;
 import mods.botanicadds.GaiaPlate;
+import mods.threng.Etcher;
 
 JEI.removeAndHide(<threng:machine:3>);
 
@@ -38,6 +39,7 @@ var mapSpeculation as IIngredient[][IItemStack] = {
 
 for output, data in mapSpeculation {
     recipes.remove(output);
+    Etcher.addRecipe(output, data[0], data[1], data[1]);
     recipes.addShaped(output, [
         [data[1],data[0],data[1]],
         [data[0],data[1],data[0]],
@@ -52,6 +54,7 @@ Agglomeration.addRecipe(<threng:material:14>, [<appliedenergistics2:material:20>
 GaiaPlate.add(<threng:material:14>, 1000000, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:13>]);
 
 recipes.remove(<threng:machine:2>);
+Etcher.addRecipe(<threng:machine:2>,<contenttweaker:flawless_assembly>,<appliedenergistics2:inscriber>,<threng:material:14>);
 RuneAltar.addRecipe(<threng:machine:2>, [
     <appliedenergistics2:inscriber>,
     <threng:material:6>,

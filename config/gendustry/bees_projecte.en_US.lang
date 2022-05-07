@@ -1,7 +1,10 @@
 gendustry.bees.species.darkened=Darkened
+gendustry.bees.species.darkened.description=Dark Matter can't be healthy for bees, can it?
 gendustry.bees.species.reddened=Reddened
+gendustry.bees.species.reddened.description=After the contact with dark matter they seek for even more powerful matter. When does this stop?
 gendustry.bees.species.omega=Omega
+gendustry.bees.species.omega.description=You went to far. What have you done.
 
-gendustry.honeydrop.darkened.name=Darkened Honey Drop
-gendustry.honeydrop.reddened.name=Reddened Honey Drop
-gendustry.honeydrop.omega.name=Omega Honey Drop
+gendustry.allele.flowers.darkMatter=Dark Matter
+gendustry.allele.flowers.redMatter=Red Matter
+gendustry.allele.flowers.omegaMatter=Omega Core

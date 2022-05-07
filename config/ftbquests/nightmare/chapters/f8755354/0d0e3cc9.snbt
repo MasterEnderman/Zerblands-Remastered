@@ -1,0 +1,16 @@
+{
+	x: 2.0d,
+	y: 23.0d,
+	dependencies: [
+		"d05da269",
+		"95de659e",
+		"538d1c30"
+	],
+	tasks: [{
+		uid: "d796e5f0",
+		type: "item",
+		items: [{
+			item: "contenttweaker:pearl_lattice"
+		}]
+	}]
+}

@@ -10,10 +10,10 @@
 		uid: "205cff12",
 		type: "item",
 		items: [{
+			id: "abyssalcraft:gatewaykeydl",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "abyssalcraft:gatewaykeydl"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

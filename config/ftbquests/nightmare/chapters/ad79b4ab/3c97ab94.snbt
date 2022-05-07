@@ -8,10 +8,10 @@
 		uid: "24273df7",
 		type: "item",
 		items: [{
+			id: "contenttweaker:flawlesscalculator",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "contenttweaker:flawlesscalculator"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

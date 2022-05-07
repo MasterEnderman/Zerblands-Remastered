@@ -1,0 +1,23 @@
+{
+	title: "Creative-Cell-ception",
+	x: 0.0d,
+	y: -4.0d,
+	shape: "octagon",
+	text: [
+		"Put one Creative Storage Cell into another and taste the infinity of infinities."
+	],
+	dependencies: [
+		"69c19d29"
+	],
+	tasks: [{
+		uid: "4ad9502e",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:creative_storage_cell",
+			tag: {}
+		}],
+		count: 2L,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

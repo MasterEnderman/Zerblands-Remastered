@@ -233,6 +233,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:ingotIron>,<minecraft:dropper>,<ore:ingotIron>],
             [<ore:ingotIron>,<ore:dustRedstone>,<ore:ingotIron>]
         ]
+    ],
+    <randomthings:peacecandle> : [
+        [
+            [<randomthings:ingredient:1>],
+            [<forestry:candle>],
+            [<minecraft:stone_slab:3>]
+        ]
     ]
 };
 
@@ -257,3 +264,41 @@ recipes.remove(<randomthings:weatheregg:1>);
 Transposer.addFillRecipe(<randomthings:weatheregg:1>, <minecraft:egg>,  <liquid:cloud_seed> * 500, 2500);
 recipes.remove(<randomthings:weatheregg:2>);
 Transposer.addFillRecipe(<randomthings:weatheregg:2>, <minecraft:egg>,  <liquid:cloud_seed_concentrated> * 1000, 5000);
+
+recipes.remove(<randomthings:timeinabottle>);
+Altar.addTraitAltarRecipe("timeinabottle",<randomthings:timeinabottle>, 2000, 1000, [
+    <rs_ctr:cl_fuel>,
+    <extrautils2:opinium:8>,
+    <rs_ctr:cl_fuel>,
+    <extrautils2:opinium:8>,
+    <extrautils2:klein>,
+    <extrautils2:opinium:8>,
+    <rs_ctr:cl_fuel>,
+    <extrautils2:opinium:8>,
+    <rs_ctr:cl_fuel>,
+    <rs_ctr:cl_fuel>,
+    <rs_ctr:cl_fuel>,
+    <rs_ctr:cl_fuel>,
+    <rs_ctr:cl_fuel>,
+    <quantumflux:imaginarytime>,
+    <quantumflux:imaginarytime>,
+    <quantumflux:imaginarytime>,
+    <quantumflux:imaginarytime>,
+    <quantumflux:imaginarytime>,
+    <quantumflux:imaginarytime>,
+    <quantumflux:imaginarytime>,
+    <quantumflux:imaginarytime>,
+    <rs_ctr:cl_fuel>,
+    <rs_ctr:cl_fuel>,
+    <rs_ctr:cl_fuel>,
+    <rs_ctr:cl_fuel>,
+    // Outer Items
+    <minecraft:clock>,
+    <randomthings:eclipsedclock>,
+    <minecraft:clock>,
+    <randomthings:eclipsedclock>,
+    <minecraft:clock>,
+    <randomthings:eclipsedclock>,
+    <minecraft:clock>,
+    <randomthings:eclipsedclock>
+], "astralsorcery.constellation.horologium");

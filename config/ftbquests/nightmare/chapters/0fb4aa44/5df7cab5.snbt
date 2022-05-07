@@ -8,11 +8,11 @@
 		uid: "79cc68cf",
 		type: "item",
 		items: [{
+			id: "evilcraft:blood_extractor",
+			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "evilcraft:blood_extractor",
-			tag: {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

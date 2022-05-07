@@ -9,10 +9,10 @@
 		uid: "e18eb46e",
 		type: "item",
 		items: [{
+			id: "actuallyadditions:item_knife",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "actuallyadditions:item_knife"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

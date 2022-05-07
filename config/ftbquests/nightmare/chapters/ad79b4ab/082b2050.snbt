@@ -8,10 +8,10 @@
 		uid: "0cddbd4d",
 		type: "item",
 		items: [{
+			id: "extrautils2:snowglobe",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "extrautils2:snowglobe"
+			}
 		}],
 		ignore_nbt: 1b
 	},
@@ -19,11 +19,11 @@
 		uid: "acfea93c",
 		type: "item",
 		items: [{
+			id: "extrautils2:snowglobe",
+			Damage: 1s,
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "extrautils2:snowglobe",
-			Damage: 1s
+			}
 		}],
 		ignore_nbt: 1b
 	}]

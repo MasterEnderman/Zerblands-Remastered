@@ -51,6 +51,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<bloodmagic:inscription_tool:6>,<bloodmagic:ritual_diviner:1>,<bloodmagic:inscription_tool:6>],
             [null,<bloodmagic:slate:4>,null]
         ]
+    ],
+    <bloodmagic:decorative_brick> : [
+        [
+            [<sonarcore:stablestone_normal>,<sonarcore:stablestone_normal>,<sonarcore:stablestone_normal>],
+            [<sonarcore:stablestone_normal>,<bloodmagic:blood_shard>,<sonarcore:stablestone_normal>],
+            [<sonarcore:stablestone_normal>,<sonarcore:stablestone_normal>,<sonarcore:stablestone_normal>]
+        ]
     ]
 };
 
@@ -141,7 +148,7 @@ Altar.addConstellationAltarRecipe("incense_altar", <bloodmagic:incense_altar>, 8
     <evilcraft:bowl_of_promises:5>,
     <xreliquary:mob_ingredient:7>,
     <xreliquary:mercy_cross>,
-    <blood_dynamo:ingredient:2>,
+    <contenttweaker:runic_gear>,
     <xreliquary:mercy_cross>,
     <botanicadds:gaiasteel_ingot>,
     <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}),
@@ -152,8 +159,8 @@ Altar.addConstellationAltarRecipe("incense_altar", <bloodmagic:incense_altar>, 8
     <ore:ingotLumium>,
     <bloodmagic:component:1>,
     <bloodmagic:component:1>,
-    <blood_dynamo:ingredient:2>,
-    <blood_dynamo:ingredient:2>,
+    <contenttweaker:runic_gear>,
+    <contenttweaker:runic_gear>,
     <tconstruct:ingots:5>,
     <tconstruct:ingots:5>,
     <tconstruct:ingots:5>,

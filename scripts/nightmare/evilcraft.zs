@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.abyssalcraft.InfusionRitual;
+import mods.actuallyadditions.Empowerer;
 import mods.astralsorcery.Altar;
 import mods.astralsorcery.Lightwell;
 import mods.bloodmagic.BloodAltar;
@@ -84,6 +85,8 @@ Transposer.addFillRecipe(<evilcraft:weather_container:3>, <evilcraft:weather_con
 
 recipes.remove(<evilcraft:sanguinary_pedestal:1>);
 BloodAltar.addRecipe(<evilcraft:sanguinary_pedestal:1>, <evilcraft:sanguinary_pedestal>, 2, 10000,50,50);
+
+Empowerer.addRecipe(<evilcraft:environmental_accumulation_core>, <evilcraft:blood_orb:1>, <environmentaltech:lonsdaleite_crystal>, <minecraft:compass>, <environmentaltech:lonsdaleite_crystal>, <ic2:itemmetascanners>, 320000, 100, [0.1, 0.1, 0.1]);
 
 recipes.remove(<evilcraft:blood_infuser>);
 Altar.addDiscoveryAltarRecipe("blood_infuser", <evilcraft:blood_infuser>, 200, 200, [

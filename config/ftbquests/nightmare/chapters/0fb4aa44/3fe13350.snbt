@@ -10,10 +10,10 @@
 		uid: "c3546fb4",
 		type: "item",
 		items: [{
+			id: "astralsorcery:blockaltar",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "astralsorcery:blockaltar"
+			}
 		}],
 		ignore_nbt: 1b
 	}]

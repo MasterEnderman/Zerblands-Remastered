@@ -9,11 +9,11 @@
 		uid: "91e6d77b",
 		type: "item",
 		items: [{
+			id: "evilcraft:blood_infuser",
+			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "evilcraft:blood_infuser",
-			tag: {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

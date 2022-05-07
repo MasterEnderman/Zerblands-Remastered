@@ -1,11 +1,11 @@
 {
 	title: "Mid-Game",
 	icon: {
+		id: "astralsorcery:blockaltar",
+		Damage: 2s,
 		ForgeCaps: {
 			"astralsorcery:cap_item_amulet_holder": {}
-		},
-		id: "astralsorcery:blockaltar",
-		Damage: 2s
+		}
 	},
 	always_invisible: false,
 	group: 0,

@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: 7.0d,
+	dependencies: [
+		"0606fb32",
+		"bf9bd431"
+	],
+	tasks: [{
+		uid: "3f4e2719",
+		type: "item",
+		items: [{
+			id: "randomthings:timeinabottle",
+			tag: {
+				timeData: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

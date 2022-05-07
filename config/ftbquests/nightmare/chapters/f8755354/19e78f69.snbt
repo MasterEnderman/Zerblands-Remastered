@@ -3,8 +3,9 @@
 	y: 19.0d,
 	dependencies: [
 		"d29106c1",
-		"b1716f77",
-		"e6704aba"
+		"e6704aba",
+		"5823023f",
+		"b1716f77"
 	],
 	tasks: [{
 		uid: "1790dfe3",

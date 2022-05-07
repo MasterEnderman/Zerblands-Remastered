@@ -18,8 +18,9 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.jei.JEI;
-
-JEI.removeAndHide(<blood_dynamo:ingredient>);
-JEI.removeAndHide(<blood_dynamo:ingredient:1>);
-JEI.removeAndHide(<blood_dynamo:ingredient:3>);
+recipes.remove(<minecraft:elytra>);
+recipes.addShaped(<minecraft:elytra>, [
+    [<ic2:itemmisc:202>,<ic2:itemmisc:202>,<ic2:itemmisc:202>],
+    [<openglider:hang_glider_part>,<openglider:hang_glider_part:2>,<openglider:hang_glider_part:1>],
+    [<ic2:itemmisc:202>,<ic2:itemmisc:202>,<ic2:itemmisc:202>]
+]);

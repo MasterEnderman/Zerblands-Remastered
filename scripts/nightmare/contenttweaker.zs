@@ -28,10 +28,11 @@ import mods.bloodmagic.AlchemyTable;
 import mods.bloodmagic.BloodAltar;
 import mods.botania.RuneAltar;
 import mods.botania.PureDaisy;
+import mods.embers.Alchemy;
 import mods.enderio.AlloySmelter;
 import mods.enderio.SliceNSplice;
 import mods.enderio.SoulBinder;
-import mods.embers.Alchemy;
+import mods.energycontrol.KitAssembler;
 import mods.evilcraft.BloodInfuser;
 import mods.forestry.Carpenter;
 import mods.forestry.Centrifuge;
@@ -46,6 +47,7 @@ import mods.immersiveengineering.BottlingMachine;
 import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Refinery;
+import mods.immersivetechnology.Distiller;
 import mods.immersivetechnology.SolarTower;
 import mods.tconstruct.Alloy;
 import mods.tconstruct.Casting;
@@ -57,7 +59,6 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Refinery as TERefinery;
 import mods.thermalexpansion.Transposer;
 
-
 import moretweaker.draconicevolution.FusionCrafting;
 
 import scripts.mod_functions.betterCharging;
@@ -67,6 +68,10 @@ import scripts.mod_functions.betterExplosion;
 <contenttweaker:eternalslate>.addTooltip("Blood Altar");
 
 <contenttweaker:potatos>.addTooltip(format.darkPurple("aka PotatOS"));
+
+BloodInfuser.addRecipe(<thermalfoundation:material:23>, <liquid:evilcraftblood> * 4000, 0, <contenttweaker:runic_gear>, 100, 2);
+BloodAltar.addRecipe(<contenttweaker:runic_gear>, <thermalfoundation:material:23>, 0, 2000,5,5);
+Distiller.addRecipe(<liquid:refined_life_essence> * 100, <liquid:lifeessence> * 100, <evilcraft:hardened_blood_shard>, 2048, 20, 0.1);
 
 Mixer.addRecipe(<liquid:sulfuric_acid>*100, <liquid:iron_chloride>*100, [<ore:dustSulfur>*4], 1024);
 
@@ -94,6 +99,9 @@ Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","plate","StyreneBut
 
 var cast_pan as IItemStack = <tconstruct:cast>.withTag({PartType: "tconstruct:pan_head"});
 Casting.addTableRecipe(<contenttweaker:petri_dish>, cast_pan, <liquid:glass>, 200, false, 200);
+
+KitAssembler.addRecipe(<bloodmagic:component:25> * 16, <contenttweaker:stemcells> * 64, <bloodmagic:component:26> * 16, <contenttweaker:dense_neuron_chip>, 1200);
+KitAssembler.addRecipe(<contenttweaker:dense_neuron_chip> * 3, <rs_ctr:wireless_b> * 64, <contenttweaker:neuro_processor>, <contenttweaker:wetware_assembly>, 1200);
 
 Mixer.addRecipe(<liquid:iron_chloride>*100, <liquid:hydrochloric_acid>*100, [<ore:oreIron>], 512);
 Mixer.addRecipe(<liquid:sodium_hydroxide>*500, <liquid:water>*500, [<contenttweaker:sodium_dust>], 512);
@@ -399,6 +407,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ic2:itemreactorplating>,<contenttweaker:plutonium>,<ic2:itemreactorplating>],
             [<ic2:itemreactorplating>,<contenttweaker:plutonium>,<ic2:itemreactorplating>],
             [<ic2:itemreactorplating>,<contenttweaker:plutonium>,<ic2:itemreactorplating>]
+        ]
+    ],
+    <contenttweaker:pearl_lattice> : [
+        [
+            [<avaritia:resource>,<contenttweaker:wetware_assembly>,<avaritia:resource>],
+            [<contenttweaker:wetware_assembly>,<contenttweaker:big_pearl>,<contenttweaker:wetware_assembly>],
+            [<avaritia:resource>,<contenttweaker:wetware_assembly>,<avaritia:resource>]
         ]
     ]
 };

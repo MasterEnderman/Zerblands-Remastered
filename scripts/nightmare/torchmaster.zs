@@ -31,7 +31,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
         [
             [<actuallyadditions:block_tiny_torch>,<minecraft:torch>,<actuallyadditions:block_tiny_torch>],
             [<contenttweaker:runestone>,<contenttweaker:crystal_prism>,<contenttweaker:runestone>],
-            [<blood_dynamo:ingredient:2>,<actuallyadditions:block_misc:9>,<blood_dynamo:ingredient:2>]
+            [<contenttweaker:runic_gear>,<actuallyadditions:block_misc:9>,<contenttweaker:runic_gear>]
         ]
     ],
     <torchmaster:dread_lamp> : [

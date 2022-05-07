@@ -24,6 +24,8 @@ import mods.tconstruct.Melting;
 
 Melting.removeRecipe(<liquid:neutronium>,<avaritia:resource:2>);
 
+ExtremeCrafting.remove(<avaritia:resource:5>);
+
 recipes.remove(<avaritia:extreme_crafting_table>);
 Altar.addTraitAltarRecipe("dire_table",<avaritia:extreme_crafting_table>, 2000, 1000, [
     <draconicevolution:fusion_crafting_core>,<appliedenergistics2:material:34>,<draconicevolution:fusion_crafting_core>,

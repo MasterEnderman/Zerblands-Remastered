@@ -67,6 +67,10 @@ mods/
 
 *.py
 
+*.dump
+
+*.csv
+
 \.ReAuth\.cfg
 
 crafttweaker_dump/

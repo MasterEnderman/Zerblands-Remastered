@@ -269,7 +269,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <extrautils2:ingredients:1> : [
         [
             [null,<extrautils2:ingredients>,null],
-            [<extrautils2:ingredients>,<blood_dynamo:ingredient:2>,<extrautils2:ingredients>],
+            [<extrautils2:ingredients>,<contenttweaker:runic_gear>,<extrautils2:ingredients>],
             [null,<extrautils2:ingredients>,null]
         ]
     ],
@@ -312,6 +312,20 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:plastic>,<actuallyadditions:item_fertilizer>,null],
             [<contenttweaker:plastic>,<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}),<contenttweaker:plastic>],
             [null,<contenttweaker:plastic>,null]
+        ]
+    ],
+    <extrautils2:terraformer:1> : [
+        [
+            [<xnet:antenna>],
+            [<xnet:antenna_base>],
+            [<extrautils2:terraformer:9>]
+        ]
+    ],
+    <extrautils2:opinium> : [
+        [
+            [null,<contenttweaker:red_coal>,null],
+            [<contenttweaker:red_coal>,<ore:blockIron>,<contenttweaker:red_coal>],
+            [null,<contenttweaker:red_coal>,null]
         ]
     ]
 };

@@ -22,10 +22,10 @@
 		uid: "dc17515c",
 		type: "item",
 		items: [{
+			id: "bloodmagic:demon_will_gauge",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "bloodmagic:demon_will_gauge"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

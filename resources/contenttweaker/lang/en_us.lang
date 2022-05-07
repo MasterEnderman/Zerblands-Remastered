@@ -152,16 +152,18 @@ tile.glow.name=Ember Light
 tile.conjured.name=Conjured Light
 tile.draconicevolution:placed_item.name=Placed Item
 
+item.multitool.name=Multitool (useless)
+
 # missing locals
 
-enchantment.extrautils2.xu.boomereaperang.desc=
-enchantment.enderio.soulbound.desc=
-enchantment.enderio.witherweapon.desc=
-enchantment.enderio.shimmer.desc=
-enchantment.enderio.repellent.desc=
-enchantment.enderio.witherarrow.desc=
-enchantment.bibliocraft.bibliocraft.deathcompassench.desc=
-enchantment.bibliocraft.bibliocraft.readingench.desc=
-enchantment.enderzoo.witherarrow.desc=
-enchantment.enderzoo.witherweapon.desc=
-enchantment.simplyjetpacks.fuel_efficiency.desc=
+enchantment.extrautils2.xu.boomereaperang.desc=[Description needs to be done]
+enchantment.enderio.soulbound.desc=[Description needs to be done]
+enchantment.enderio.witherweapon.desc=[Description needs to be done]
+enchantment.enderio.shimmer.desc=[Description needs to be done]
+enchantment.enderio.repellent.desc=[Description needs to be done]
+enchantment.enderio.witherarrow.desc=[Description needs to be done]
+enchantment.bibliocraft.bibliocraft.deathcompassench.desc=[Description needs to be done]
+enchantment.bibliocraft.bibliocraft.readingench.desc=[Description needs to be done]
+enchantment.enderzoo.witherarrow.desc=[Description needs to be done]
+enchantment.enderzoo.witherweapon.desc=[Description needs to be done]
+enchantment.simplyjetpacks.fuel_efficiency.desc=[Description needs to be done]

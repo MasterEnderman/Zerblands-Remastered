@@ -27,7 +27,15 @@ import moretweaker.draconicevolution.FusionCrafting;
 
 import scripts.mod_functions.betterCharging;
 
+var plateDraconium as IItemStack = <tconstruct:large_plate>.withTag({Material: "draconium"});
+var plateWyvern as IItemStack = <tconstruct:large_plate>.withTag({Material: "wyvern_metal"});
+var plateDraconic as IItemStack = <tconstruct:large_plate>.withTag({Material: "draconic_metal"});
+
 betterCharging(<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block>,10000000);
+
+FusionCrafting.remove(<draconicevolution:crafting_injector>);
+FusionCrafting.remove(<draconicevolution:crafting_injector:1>);
+FusionCrafting.remove(<draconicevolution:crafting_injector:2>);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <draconicevolution:draconic_core> : [
@@ -50,7 +58,28 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:slate_ethereal>,<contenttweaker:calculator_locator_on_2>,<contenttweaker:slate_ethereal>],
             [<quantumflux:quibitcluster:5>,<enderio:item_material:66>,<quantumflux:quibitcluster:5>]
         ]
-    ]
+    ],
+    <draconicevolution:crafting_injector:1> : [
+        [
+            [<enderio:item_material:17>,<draconicevolution:wyvern_core>,<enderio:item_material:17>],
+            [plateDraconium,<draconicevolution:crafting_injector>,plateDraconium],
+            [<draconicevolution:wyvern_energy_core>,<contenttweaker:circuit8>,<draconicevolution:wyvern_energy_core>]
+        ]
+    ],
+    <draconicevolution:crafting_injector:2> : [
+        [
+            [<enderio:item_material:17>,<draconicevolution:awakened_core>,<enderio:item_material:17>],
+            [plateWyvern,<draconicevolution:crafting_injector:1>,plateWyvern],
+            [<draconicevolution:draconic_energy_core>,<contenttweaker:neuro_processor>,<draconicevolution:draconic_energy_core>]
+        ]
+    ],
+    <draconicevolution:crafting_injector:3> : [
+        [
+            [<enderio:item_material:17>,<draconicevolution:chaotic_core>,<enderio:item_material:17>],
+            [plateDraconic, <draconicevolution:crafting_injector:2>,plateDraconic],
+            [<draconicadditions:chaotic_energy_core>,<contenttweaker:wetware_assembly>,<draconicadditions:chaotic_energy_core>]
+        ]
+    ],
 };
 
 for key, value in recipeMapShaped {
@@ -98,6 +127,22 @@ FusionCrafting.add(<draconicevolution:wyvern_core>, <extrautils2:decorativesolid
     <draconicevolution:draconium_block:1>,
     <draconicevolution:draconic_core>,
     <draconicevolution:draconic_core>
+]);
+
+FusionCrafting.remove(<draconicevolution:draconium_block>);
+FusionCrafting.add(<draconicevolution:draconic_block> * 4, <draconicevolution:dragon_heart>, FusionCrafting.WYVERN, 1000000000, [
+    <tconevo:metal_block>,
+    <tconevo:metal_block>,
+    <draconicevolution:draconic_core>,
+    <draconicevolution:draconic_core>,
+    <draconicevolution:draconic_core>,
+    <draconicevolution:draconic_core>,
+    <draconicevolution:draconic_core>,
+    <draconicevolution:draconic_core>,
+    <draconicevolution:draconic_core>,
+    <draconicevolution:draconic_core>,
+    <tconevo:metal_block>,
+    <tconevo:metal_block>
 ]);
 
 recipes.remove(<draconicevolution:fusion_crafting_core>);

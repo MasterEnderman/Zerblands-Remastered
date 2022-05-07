@@ -8,11 +8,11 @@
 		uid: "b07541ed",
 		type: "item",
 		items: [{
+			id: "bloodmagic:sentient_sword",
+			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "bloodmagic:sentient_sword",
-			tag: {}
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

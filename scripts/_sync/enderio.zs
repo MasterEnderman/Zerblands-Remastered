@@ -41,5 +41,5 @@ JEI.removeAndHide(<enderio:item_material:27>);
 <enderio:block_inventory_chest_warehouse>.addTooltip(format.green("Holds 432 Stacks"));
 <enderio:block_inventory_chest_warehouse13>.addTooltip(format.green("Holds 540 Stacks"));
 
-// SagMill.removeRecipe(<minecraft:bedrock>);
+SagMill.removeRecipe(<minecraft:bedrock>);
 SagMill.addRecipe([<minecraft:bedrock>,<enderio:item_material:20>*16,<avaritia:resource:2>*2,<avaritia:resource:2>*2],[100,100,80,40],<minecraft:bedrock>,"NONE",1000000);

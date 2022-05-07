@@ -92,7 +92,7 @@ recipes.addShaped(<draconicevolution:wyvern_axe>, [
 recipes.remove(<draconicevolution:wyvern_bow>);
 recipes.addShaped(<draconicevolution:wyvern_bow>, [
     [<tp:netherstar_block>,<draconicevolution:wyvern_core>,<tp:netherstar_block>],
-    [<draconicevolution:draconium_block>,<redstonearsenal:tool.bow_flux>,<draconicevolution:draconium_block>],
+    [<draconicevolution:draconium_block>,<redstonerepository:tool.bow_gelid>,<draconicevolution:draconium_block>],
     [<tp:netherstar_block>,<draconicevolution:wyvern_energy_core>,<tp:netherstar_block>]
 ]);
 

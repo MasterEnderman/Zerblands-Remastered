@@ -20,8 +20,6 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.avaritia.ExtremeCrafting;
-import mods.bloodmagic.BloodAltar;
 import mods.botania.PureDaisy;
 import mods.enderio.AlloySmelter;
 import mods.immersiveengineering.Mixer;

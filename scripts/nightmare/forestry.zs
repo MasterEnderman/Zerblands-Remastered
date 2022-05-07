@@ -21,7 +21,6 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.forestry.Carpenter;
-import mods.forestry.Centrifuge;
 import mods.forestry.ThermionicFabricator;
 import mods.ic2.Extractor;
 import mods.immersiveengineering.MetalPress;
@@ -35,26 +34,6 @@ import scripts.functions.calc_scientific;
 
 JEI.addItem(<forestry:thermionic_tubes:3>);
 JEI.addItem(<forestry:thermionic_tubes:8>);
-JEI.addItem(<forestry:bee_combs:1>);
-JEI.addItem(<forestry:bee_combs:8>);
-JEI.addItem(<forestry:bee_combs:9>);
-JEI.addItem(<forestry:bee_combs:10>);
-JEI.addItem(<forestry:bee_combs:11>);
-JEI.addItem(<forestry:bee_combs:12>);
-JEI.addItem(<forestry:bee_combs:13>);
-JEI.addItem(<forestry:bee_combs:14>);
-JEI.addItem(<forestry:bee_combs_0:1>);
-JEI.addItem(<forestry:bee_combs_0:8>);
-JEI.addItem(<forestry:bee_combs_0:9>);
-JEI.addItem(<forestry:bee_combs_0:10>);
-JEI.addItem(<forestry:bee_combs_0:11>);
-JEI.addItem(<forestry:bee_combs_0:12>);
-JEI.addItem(<forestry:bee_combs_0:13>);
-JEI.addItem(<forestry:bee_combs_0:14>);
-JEI.addItem(<forestry:crafting_material:5>);
-JEI.addItem(<forestry:propolis:2>);
-JEI.addItem(<forestry:honey_drop:1>);
-JEI.addItem(<forestry:honey_drop:2>);
 
 recipes.remove(<forestry:humus>);
 recipes.remove(<forestry:letters>);
@@ -370,14 +349,6 @@ Carpenter.addRecipe(<forestry:crafting_material:7>, [
     [<ic2:itemmisc:357>,<earthworks:item_timber>,<ic2:itemmisc:357>],
     [<thermalfoundation:material:819>,<ic2:itemmisc:357>,<thermalfoundation:material:819>]
 ], 10, <liquid:biomass> * 250);
-
-Centrifuge.removeRecipe(<forestry:bee_combs:9>);
-Centrifuge.addRecipe([<ic2:itemmisc:181> % 60, <forestry:honey_drop> % 40], <forestry:bee_combs:9>, 100);
-
-Centrifuge.addRecipe([<forestry:honey_drop:1> % 100], <forestry:bee_combs:12>, 100);
-Centrifuge.addRecipe([<forestry:honey_drop:1> % 100, <forestry:honey_drop:1> % 100], <forestry:bee_combs:11>, 100);
-
-Centrifuge.addRecipe([<forestry:honey_drop:2> % 100], <forestry:bee_combs:13>, 100);
 
 Carpenter.removeRecipe(<forestry:oak_stick>);
 Carpenter.addRecipe(<forestry:oak_stick>, [

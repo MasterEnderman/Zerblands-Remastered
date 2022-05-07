@@ -38,7 +38,6 @@ calc_atomic(<energycontrol:item_upgrade:1>,<ic2:itemmisc:260>,<simplyjetpacks:me
 recipes.remove(<energycontrol:item_upgrade:2>);
 calc_atomic(<energycontrol:item_upgrade:2>,<ic2:itemmisc:260>,<thermalfoundation:security>,<opencomputers:material:9>);
 
-
 recipes.remove(<energycontrol:kit_assembler>);
 recipes.addShaped(<energycontrol:kit_assembler>, [
     [<contenttweaker:weakeneddiamond>,<opencomputers:assembler>,<contenttweaker:weakeneddiamond>],

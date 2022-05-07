@@ -8,10 +8,10 @@
 		uid: "20f34cde",
 		type: "item",
 		items: [{
+			id: "contenttweaker:orb_armok",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "contenttweaker:orb_armok"
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

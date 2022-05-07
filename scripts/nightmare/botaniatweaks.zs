@@ -129,6 +129,20 @@ var ender_chest = AgglomerationRecipe.create()
 
 Agglomeration.addRecipe(ender_chest);
 
+recipes.remove(<botanicadds:terra_catalyst>);
+var terra_catalyst = AgglomerationRecipe.create()
+	.output(<botanicadds:terra_catalyst>)
+	.inputs([
+		<botania:alchemycatalyst>,
+		<botania:manaresource:4>,
+		<botania:manaresource:5>,
+		<botania:shimmerrock>
+	])
+	.manaCost(100000)
+	.multiblock(rune);
+
+Agglomeration.addRecipe(terra_catalyst);
+
 // woot upgrade caps
 
 var mapUpgrades as IItemStack[IItemStack][IItemStack] = {

@@ -25,6 +25,11 @@
     "icon": "item:enderio:item_material 1 20"
   },
   {
+    "id": "es",
+    "title": "Ender Storage",
+    "icon": "item:enderstorage:ender_storage"
+  },
+  {
     "id": "etech",
     "title": "Environmental Tech",
     "icon": "item:valkyrielib:guide"

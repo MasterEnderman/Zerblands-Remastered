@@ -8,10 +8,10 @@
 		uid: "aea43da0",
 		type: "item",
 		items: [{
+			id: "extrautils2:angelring",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "extrautils2:angelring"
+			}
 		}],
 		ignore_nbt: 1b
 	}]

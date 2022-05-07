@@ -33,6 +33,11 @@ JEI.removeAndHide(<bloodarsenal:slate:4>);
 TartaricForge.removeRecipe([<bloodarsenal:soul_pendant:3>, <bloodarsenal:blood_diamond:1>, <bloodarsenal:slate:4>, <minecraft:nether_star>]);
 TartaricForge.addRecipe(<bloodarsenal:soul_pendant:4>, [<bloodarsenal:soul_pendant:3>, <bloodarsenal:blood_diamond:1>, <contenttweaker:slate_ethereal>, <minecraft:nether_star>], 4000, 3000);
 
+var bloodBucket as IItemStack = <forge:bucketfilled>.withTag({FluidName: "lifeessence", Amount: 1000});
+
+TartaricForge.removeRecipe([<minecraft:diamond>,bloodBucket,<minecraft:dragon_breath>,<bloodarsenal:blood_infused_glowstone>]);
+TartaricForge.addRecipe(<bloodarsenal:blood_diamond>, [<minecraft:diamond>,bloodBucket,<botania:manaresource:15>,<bloodarsenal:blood_infused_glowstone>], 1024, 512);
+
 AlchemyArray.addRecipe(<bloodarsenal:blood_diamond:3>, <bloodmagic:component:8>, <bloodarsenal:blood_diamond:2>, bloodmagicAlchemyArray["bindinglightningarray"]);
 
 var itemsSanguine as IItemStack[][IItemStack] = {

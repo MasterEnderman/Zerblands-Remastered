@@ -47,8 +47,3 @@ recipes.addShaped(<avaritia:resource:1>, [
     [<projecte:matter_block:1>,<ic2:itemmisc:264>,<projecte:matter_block:1>],
     [<avaritia:resource>,<draconicevolution:draconic_energy_core>,<avaritia:resource>]
 ]);
-
-ExtremeCrafting.remove(<avaritia:resource:5>);
-
-SagMill.removeRecipe(<minecraft:bedrock>);
-SagMill.addRecipe([<minecraft:bedrock>,<avaritia:resource:2>], [100,100], <minecraft:bedrock>, "NONE", 1000);

@@ -1,10 +1,10 @@
 {
-    "loadOnLogin": false,
+    "loadOnLogin": true,
     "mustRead": false,
     "pages": [
       {
-        "title": "Welcome to the Zerblands!",
-        "file": "page1"
+        "title": "Important Information!",
+        "file": "loliasm"
       }
     ]
   }

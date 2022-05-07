@@ -8,10 +8,10 @@
 		uid: "40573023",
 		type: "item",
 		items: [{
+			id: "evilcraft:promise",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "evilcraft:promise"
+			}
 		}],
 		ignore_nbt: 1b
 	}]
