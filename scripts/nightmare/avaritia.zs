@@ -21,11 +21,22 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.avaritia.ExtremeCrafting;
+import mods.bloodmagic.AlchemyTable;
 import mods.forestry.Carpenter;
 import mods.jei.JEI;
 
 ExtremeCrafting.remove(<avaritia:neutron_collector>);
 JEI.removeAndHide(<avaritia:neutron_collector>);
+
+ExtremeCrafting.remove(<avaritia:endest_pearl>);
+AlchemyTable.addRecipe(<avaritia:endest_pearl>, [
+    <randomthings:stableenderpearl>,
+    <enderio:item_alloy_ingot:8>,
+    <projecte:item.pe_matter>,
+    <contenttweaker:ender_star>,
+    <enderio:block_enderman_skull:2>,
+    <draconicevolution:chaos_shard:3>
+], 100000, 10000, 6);
 
 recipes.removeShaped(<avaritia:resource:1>);
 recipes.addShaped(<avaritia:resource:1>, [

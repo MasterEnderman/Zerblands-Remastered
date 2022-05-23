@@ -145,6 +145,67 @@ FusionCrafting.add(<draconicevolution:draconic_block> * 4, <draconicevolution:dr
     <tconevo:metal_block>
 ]);
 
+FusionCrafting.remove(<minecraft:nether_star>);
+FusionCrafting.add(<draconicevolution:awakened_core>, <tconevo:metal:4>, FusionCrafting.WYVERN, 10000000000, [
+    <draconicevolution:wyvern_core>,
+    <draconicevolution:wyvern_core>,
+    <draconicevolution:draconic_block>,
+    <draconicevolution:draconic_block>,
+    <draconicevolution:draconic_block>,
+    <draconicevolution:draconic_block>,
+    <draconicevolution:wyvern_core>,
+    <draconicevolution:wyvern_core>
+]);
+
+FusionCrafting.remove(<draconicevolution:chaos_shard>);
+FusionCrafting.add(<draconicevolution:chaotic_core>, <tconevo:metal:9>, FusionCrafting.DRACONIC, 100000000000, [
+    <draconicevolution:awakened_core>,
+    <draconicevolution:awakened_core>,
+    <draconicevolution:chaos_shard>,
+    <draconicevolution:chaos_shard>,
+    <draconicevolution:chaos_shard>,
+    <draconicevolution:chaos_shard>,
+    <draconicevolution:awakened_core>,
+    <draconicevolution:awakened_core>
+]);
+
+FusionCrafting.remove(<draconicevolution:particle_generator>);
+FusionCrafting.add(<draconicevolution:particle_generator:2>, <draconicevolution:particle_generator>, FusionCrafting.WYVERN, 250000000, [
+    <actuallyadditions:block_crystal_empowered:2>,
+    <actuallyadditions:block_crystal_empowered:2>,
+    <tconevo:metal:3>,
+    <tconevo:metal:3>,
+    <tconevo:metal:3>,
+    <tconevo:metal:3>,
+    <actuallyadditions:block_crystal_empowered:2>,
+    <actuallyadditions:block_crystal_empowered:2>
+]);
+
+recipes.remove(<draconicevolution:particle_generator>);
+Altar.addConstellationAltarRecipe("particle_generator", <draconicevolution:particle_generator>, 800, 200, [
+    <ic2:itemmisc:58>,
+    <ic2:itemmisc:58>,
+    <ic2:itemmisc:58>,
+    <ic2:itemmisc:58>,
+    <draconicevolution:draconic_core>,
+    <ic2:itemmisc:58>,
+    <ic2:itemmisc:58>,
+    <ic2:itemmisc:58>,
+    <ic2:itemmisc:58>,
+    <actuallyadditions:block_crystal_empowered>,
+    <actuallyadditions:block_crystal_empowered>,
+    <actuallyadditions:block_crystal_empowered>,
+    <actuallyadditions:block_crystal_empowered>,
+    <advancedsolars:sunnariumalloy>,
+    <advancedsolars:sunnariumalloy>,
+    <advancedsolars:sunnariumalloy>,
+    <advancedsolars:sunnariumalloy>,
+    <advancedsolars:sunnariumalloy>,
+    <advancedsolars:sunnariumalloy>,
+    <advancedsolars:sunnariumalloy>,
+    <advancedsolars:sunnariumalloy>
+]);
+
 recipes.remove(<draconicevolution:fusion_crafting_core>);
 Altar.addTraitAltarRecipe("fusion_crafting_core", <draconicevolution:fusion_crafting_core>, 4500, 100, [
     <advancedsolars:irradiantglasspane>,

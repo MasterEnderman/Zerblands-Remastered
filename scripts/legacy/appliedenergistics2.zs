@@ -35,7 +35,8 @@ JEI.removeAndHide(<appliedenergistics2:crank>);
 JEI.removeAndHide(<appliedenergistics2:grindstone>);
 JEI.removeAndHide(<appliedenergistics2:sky_compass>);
 
-ElvenTrade.addRecipe([<appliedenergistics2:sky_stone_block>],[<minecraft:end_stone>]);
+// ElvenTrade.addRecipe([<appliedenergistics2:sky_stone_block>],[<minecraft:end_stone>]);
+ManaInfusion.addConjuration(<appliedenergistics2:sky_stone_block>, <minecraft:end_stone>, 1); // fix crash when to many items are thrown into the botania portal.
 
 FluidToItem.transform(<appliedenergistics2:material:7>, <liquid:water>, [<appliedenergistics2:material:1>, <ore:dustRedstone>, <minecraft:quartz>], false);
 

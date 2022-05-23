@@ -77,6 +77,9 @@ calc_atomic(<contenttweaker:firediamond>,<contenttweaker:flawlessdiamond>,<extra
 calc_atomic(<contenttweaker:enddiamond>,<contenttweaker:electricdiamondanimate>,<contenttweaker:reinforced_obsidian_ingot>,<ore:ingotEndSteel>);
 calc_atomic(<contenttweaker:module_speed> * 4, <opencomputers:material:4>, <appliedenergistics2:material:12>, <rs_ctr:lever:2>);
 calc_atomic(<contenttweaker:storage_module>, <actuallyadditions:item_crystal:2>, <immersiveengineering:wooden_device0>, <immersiveengineering:material:27>);
+calc_atomic(<contenttweaker:storage_module> * 2, <actuallyadditions:item_crystal:2>, <rftools:storage_module>, <immersiveengineering:material:27>);
+calc_atomic(<contenttweaker:storage_module> * 3, <actuallyadditions:item_crystal:2>, <rftools:storage_module:1>, <immersiveengineering:material:27>);
+calc_atomic(<contenttweaker:storage_module> * 4, <actuallyadditions:item_crystal:2>, <rftools:storage_module:2>, <immersiveengineering:material:27>);
 
 calc_flawless(<contenttweaker:purifiedobsidian>,<contenttweaker:reinforced_obsidian_ingot>,<contenttweaker:reinforced_obsidian_ingot>,<contenttweaker:reinforced_obsidian_ingot>,<contenttweaker:reinforced_obsidian_ingot>);
 

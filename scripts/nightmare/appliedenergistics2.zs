@@ -90,7 +90,8 @@ recipes.removeShaped(<appliedenergistics2:spatial_storage_cell_16_cubed>);
 recipes.removeShaped(<appliedenergistics2:spatial_storage_cell_128_cubed>);
 recipes.removeShaped(<appliedenergistics2:view_cell>);
 
-ElvenTrade.addRecipe([<appliedenergistics2:sky_stone_block>],[<abyssalcraft:stone:6>]);
+// ElvenTrade.addRecipe([<appliedenergistics2:sky_stone_block>],[<abyssalcraft:stone:6>]);
+ManaInfusion.addConjuration(<appliedenergistics2:sky_stone_block>, <abyssalcraft:stone:6>, 1); // fix crash when to many items are thrown into the botania portal.
 
 recipes.remove(<appliedenergistics2:matter_cannon>);
 calc_flawless(<appliedenergistics2:matter_cannon>,<xreliquary:handgun>,<appliedenergistics2:material:43>,<appliedenergistics2:crafting_storage_4k>,<appliedenergistics2:energy_cell>);

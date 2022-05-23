@@ -157,7 +157,25 @@ var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
                 [<ore:plateConstantan>,<ic2:itemheatstorage>,<ore:plateConstantan>]
             ]
         ]
-    }
+    },
+    <gendustry:industrial_grafter:100> : {
+        1 : [
+            [
+                [null,null,<forestry:grafter>],
+                [null,<thermalfoundation:material:640>,null],
+                [<gendustry:power_module>,null,null]
+            ]
+        ]
+    },
+    <gendustry:industrial_scoop:100> : {
+        1 : [
+            [
+                [null,null,<forestry:scoop>],
+                [null,<thermalfoundation:material:640>,null],
+                [<gendustry:power_module>,null,null]
+            ]
+        ]
+    },
 };
 
 for key, data in recipeMapShaped {

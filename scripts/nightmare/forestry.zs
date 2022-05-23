@@ -367,26 +367,127 @@ recipes.remove(<forestry:can>);
 MetalPress.addRecipe(<forestry:can>, <ore:ingotTin>, <immersiveengineering:mold:3>, 512);
 Extractor.addRecipe(<forestry:can>, <ore:ingotTin>);
 
-var mapFarmBlock as IItemStack[IItemStack] = {
-    <forestry:ffarm>.withTag({FarmBlock: 0}) : <minecraft:stonebrick>,
-    <forestry:ffarm>.withTag({FarmBlock: 1}) : <minecraft:stonebrick:1>,
-    <forestry:ffarm>.withTag({FarmBlock: 2}) : <minecraft:stonebrick:2>,
-    <forestry:ffarm>.withTag({FarmBlock: 3}) : <minecraft:brick_block>,
-    <forestry:ffarm>.withTag({FarmBlock: 4}) : <minecraft:sandstone:2>,
-    <forestry:ffarm>.withTag({FarmBlock: 5}) : <minecraft:sandstone:1>,
-    <forestry:ffarm>.withTag({FarmBlock: 6}) : <minecraft:nether_brick>,
-    <forestry:ffarm>.withTag({FarmBlock: 7}) : <minecraft:stonebrick:3>,
-    <forestry:ffarm>.withTag({FarmBlock: 8}) : <minecraft:quartz_block>,
-    <forestry:ffarm>.withTag({FarmBlock: 9}) : <minecraft:quartz_block:1>,
-    <forestry:ffarm>.withTag({FarmBlock: 10}) : <minecraft:quartz_block:2>,
+var mapFarmBlock as IItemStack[string][IItemStack] = {
+    <minecraft:stonebrick> : {
+        "block" : <forestry:ffarm>.withTag({FarmBlock: 0}),
+        "gearbox" : <forestry:ffarm:2>.withTag({FarmBlock: 0}),
+        "hatch" : <forestry:ffarm:3>.withTag({FarmBlock: 0}),
+        "valve" : <forestry:ffarm:4>.withTag({FarmBlock: 0}),
+        "control" : <forestry:ffarm:5>.withTag({FarmBlock: 0})
+    },
+    <minecraft:stonebrick:1> : {
+        "block" : <forestry:ffarm>.withTag({FarmBlock: 1}),
+        "gearbox" : <forestry:ffarm:2>.withTag({FarmBlock: 1}),
+        "hatch" : <forestry:ffarm:3>.withTag({FarmBlock: 1}),
+        "valve" : <forestry:ffarm:4>.withTag({FarmBlock: 1}),
+        "control" : <forestry:ffarm:5>.withTag({FarmBlock: 1})
+    },
+    <minecraft:stonebrick:2> : {
+        "block" : <forestry:ffarm>.withTag({FarmBlock: 2}),
+        "gearbox" : <forestry:ffarm:2>.withTag({FarmBlock: 2}),
+        "hatch" : <forestry:ffarm:3>.withTag({FarmBlock: 2}),
+        "valve" : <forestry:ffarm:4>.withTag({FarmBlock: 2}),
+        "control" : <forestry:ffarm:5>.withTag({FarmBlock: 2})
+    },
+    <minecraft:brick_block> : {
+        "block" : <forestry:ffarm>.withTag({FarmBlock: 3}),
+        "gearbox" : <forestry:ffarm:2>.withTag({FarmBlock: 3}),
+        "hatch" : <forestry:ffarm:3>.withTag({FarmBlock: 3}),
+        "valve" : <forestry:ffarm:4>.withTag({FarmBlock: 3}),
+        "control" : <forestry:ffarm:5>.withTag({FarmBlock: 3})
+    },
+    <minecraft:sandstone:2> : {
+        "block" : <forestry:ffarm>.withTag({FarmBlock: 4}),
+        "gearbox" : <forestry:ffarm:2>.withTag({FarmBlock: 4}),
+        "hatch" : <forestry:ffarm:3>.withTag({FarmBlock: 4}),
+        "valve" : <forestry:ffarm:4>.withTag({FarmBlock: 4}),
+        "control" : <forestry:ffarm:5>.withTag({FarmBlock: 4})
+    },
+    <minecraft:sandstone:1> : {
+        "block" : <forestry:ffarm>.withTag({FarmBlock: 5}),
+        "gearbox" : <forestry:ffarm:2>.withTag({FarmBlock: 5}),
+        "hatch" : <forestry:ffarm:3>.withTag({FarmBlock: 5}),
+        "valve" : <forestry:ffarm:4>.withTag({FarmBlock: 5}),
+        "control" : <forestry:ffarm:5>.withTag({FarmBlock: 5})
+    },
+    <minecraft:nether_brick> : {
+        "block" : <forestry:ffarm>.withTag({FarmBlock: 6}),
+        "gearbox" : <forestry:ffarm:2>.withTag({FarmBlock: 6}),
+        "hatch" : <forestry:ffarm:3>.withTag({FarmBlock: 6}),
+        "valve" : <forestry:ffarm:4>.withTag({FarmBlock: 6}),
+        "control" : <forestry:ffarm:5>.withTag({FarmBlock: 6})
+    },
+    <minecraft:stonebrick:3> : {
+        "block" : <forestry:ffarm>.withTag({FarmBlock: 7}),
+        "gearbox" : <forestry:ffarm:2>.withTag({FarmBlock: 7}),
+        "hatch" : <forestry:ffarm:3>.withTag({FarmBlock: 7}),
+        "valve" : <forestry:ffarm:4>.withTag({FarmBlock: 7}),
+        "control" : <forestry:ffarm:5>.withTag({FarmBlock: 7})
+    },
+    <minecraft:quartz_block> : {
+        "block" : <forestry:ffarm>.withTag({FarmBlock: 8}),
+        "gearbox" : <forestry:ffarm:2>.withTag({FarmBlock: 8}),
+        "hatch" : <forestry:ffarm:3>.withTag({FarmBlock: 8}),
+        "valve" : <forestry:ffarm:4>.withTag({FarmBlock: 8}),
+        "control" : <forestry:ffarm:5>.withTag({FarmBlock: 8})
+    },
+    <minecraft:quartz_block:1> : {
+        "block" : <forestry:ffarm>.withTag({FarmBlock: 9}),
+        "gearbox" : <forestry:ffarm:2>.withTag({FarmBlock: 9}),
+        "hatch" : <forestry:ffarm:3>.withTag({FarmBlock: 9}),
+        "valve" : <forestry:ffarm:4>.withTag({FarmBlock: 9}),
+        "control" : <forestry:ffarm:5>.withTag({FarmBlock: 9})
+    },
+    <minecraft:quartz_block:2> : {
+        "block" : <forestry:ffarm>.withTag({FarmBlock: 10}),
+        "gearbox" : <forestry:ffarm:2>.withTag({FarmBlock: 10}),
+        "hatch" : <forestry:ffarm:3>.withTag({FarmBlock: 10}),
+        "valve" : <forestry:ffarm:4>.withTag({FarmBlock: 10}),
+        "control" : <forestry:ffarm:5>.withTag({FarmBlock: 10})
+    },
 };
 
-for farmblock, block in mapFarmBlock {
-    recipes.remove(farmblock);
-    recipes.addShaped(farmblock, [
+for type, data in mapFarmBlock {
+
+    var block as IItemStack = data["block"];
+    var gearbox as IItemStack = data["gearbox"];
+    var hatch as IItemStack = data["hatch"];
+    var valve as IItemStack = data["valve"];
+    var control as IItemStack = data["control"];
+
+    recipes.remove(block);
+    recipes.addShaped(block, [
         [<enderio:item_material:69>,<ore:plateRedAlloy>,<enderio:item_material:69>],
-        [<ore:ingotCopper>,block,<ore:ingotCopper>],
+        [<ore:ingotCopper>,type,<ore:ingotCopper>],
         [<ore:plankTreatedWood>,<forestry:thermionic_tubes:1>,<ore:plankTreatedWood>]
+    ]);
+
+    recipes.remove(gearbox);
+    recipes.addShaped(gearbox, [
+        [<hammercore:iron_bordered_cobblestone>,<forestry:thermionic_tubes:2>,<hammercore:iron_bordered_cobblestone>],
+        [<ore:gearTin>,block,<ore:gearTin>],
+        [<hammercore:iron_bordered_cobblestone>,<forestry:thermionic_tubes:2>,<hammercore:iron_bordered_cobblestone>]
+    ]);
+
+    recipes.remove(hatch);
+    recipes.addShaped(hatch, [
+        [<ore:plateRedAlloy>,<contenttweaker:module_transfer>,<ore:plateRedAlloy>],
+        [<embers:mech_accessor>,block,<embers:mech_accessor>],
+        [<ore:trapdoorWood>,<embers:mech_core>,<ore:trapdoorWood>]
+    ]);
+
+    recipes.remove(valve);
+    recipes.addShaped(valve, [
+        [null,<embers:stone_valve>,null],
+        [<immersivetech:valve>,block,<immersivetech:valve>],
+        [<ore:gearIron>,<thermalfoundation:material:512>,<ore:gearIron>]
+    ]);
+
+    recipes.remove(control);
+    recipes.addShaped(control, [
+        [<ore:plateRedAlloy>,<cd4017be_lib:m:400>,<ore:plateRedAlloy>],
+        [<forestry:thermionic_tubes:4>,block,<forestry:thermionic_tubes:4>],
+        [<ore:plateRedAlloy>,<forestry:thermionic_tubes:4>,<ore:plateRedAlloy>]
     ]);
 }
 

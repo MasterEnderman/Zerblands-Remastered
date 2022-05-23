@@ -1,5 +1,22 @@
 # Zerblands-Remastered
 
+## v2.1.7 - Welcome to Akliz
+
+- removed BisectHosting Server Integration Menu
+- removed Default World Generator (port)
+
+- updated AE2 Unofficial Extended Life
+- updated CensoredASM
+- updated Chunk-Pregenerator
+- updated CraftTweaker
+- updated Smooth Font
+
+- added Default World Generator without Server Side Prompts
+
+- added bedrockium bee
+- fixed missing refined iron recipe in legacy mode
+- updated main menu graphics
+
 ## v2.1.6 - beeeeeeeees
 
 - removed Blood Dynamo (causes random crashes on server)

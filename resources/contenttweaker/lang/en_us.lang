@@ -167,3 +167,9 @@ enchantment.bibliocraft.bibliocraft.readingench.desc=[Description needs to be do
 enchantment.enderzoo.witherarrow.desc=[Description needs to be done]
 enchantment.enderzoo.witherweapon.desc=[Description needs to be done]
 enchantment.simplyjetpacks.fuel_efficiency.desc=[Description needs to be done]
+
+# energy control fix
+
+msg.ec.InfoPanelEnergyEU=Energy: %s EU
+msg.ec.InfoPanelCapacityEU=Capacity: %s EU
+msg.ec.InfoPanelOutputEU=Output: %s EU

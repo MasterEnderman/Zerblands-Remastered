@@ -23,6 +23,7 @@ import scripts.functions.findFirstItemFromMod;
 import mods.botania.RuneAltar;
 import mods.bloodmagic.AlchemyTable;
 import mods.enderio.AlloySmelter;
+import mods.energycontrol.KitAssembler;
 import mods.extrautils2.Resonator;
 import mods.forestry.ThermionicFabricator;
 
@@ -46,6 +47,12 @@ calc_atomic(<enderutilities:enderbucket>, <randomthings:reinforcedenderbucket>, 
 
 recipes.remove(<enderutilities:portal_panel>);
 calc_atomic(<enderutilities:portal_panel>,<enderutilities:frame>,<contenttweaker:advanced_assembly>,<enderutilities:enderpart:16>);
+
+recipes.removeShaped(<enderutilities:enderpart:51>);
+KitAssembler.addRecipe(<contenttweaker:storage_module>, <enderutilities:enderpart>, <enderutilities:enderpart:50>, <enderutilities:enderpart:51>, 600);
+
+recipes.remove(<enderutilities:enderpart:53>*2);
+KitAssembler.addRecipe(<contenttweaker:storage_module>, <enderutilities:enderpart:2>, <enderutilities:enderpart:50>, <enderutilities:enderpart:53>, 600);
 
 recipes.remove(<enderutilities:frame>);
 RuneAltar.addRecipe(<enderutilities:frame>*8, [
@@ -221,6 +228,6 @@ for ram, modifier in mapMemory {
     ThermionicFabricator.addCast(<enderutilities:enderpart:50> * modifier, [
         [<ore:nuggetGold>,<rs_ctr:rs_port:2>,<ore:nuggetGold>],
         [<contenttweaker:plastic>,ram,<contenttweaker:plastic>],
-        [<enderutilities:enderpart>,<enderutilities:enderpart>,<enderutilities:enderpart>]
+        [<enderutilities:enderpart>,<rftools:storage_control_module>,<enderutilities:enderpart>]
     ], <liquid:glass> * 500);
 }

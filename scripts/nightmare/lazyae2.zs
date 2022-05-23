@@ -131,6 +131,33 @@ var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
             ]
         ]
     },
+    <threng:machine:5> : {
+        1 : [
+            [
+                [<ore:ingotFluixSteel>,<thermalexpansion:machine:9>,<ore:ingotFluixSteel>],
+                [<threng:material:4>,<forestry:flexible_casing>,<threng:material:4>],
+                [<ore:ingotFluixSteel>,<appliedenergistics2:dense_energy_cell>,<ore:ingotFluixSteel>]
+            ]
+        ]
+    },
+    <threng:machine> : {
+        1 : [
+            [
+                [<ore:ingotFluixSteel>,<appliedenergistics2:condenser>,<ore:ingotFluixSteel>],
+                [<threng:material:4>,<forestry:flexible_casing>,<threng:material:4>],
+                [<ore:ingotFluixSteel>,<threng:material:6>,<ore:ingotFluixSteel>]
+            ]
+        ]
+    },
+    <threng:machine:2> : {
+        1 : [
+            [
+                [<ore:ingotFluixSteel>,<appliedenergistics2:inscriber>,<ore:ingotFluixSteel>],
+                [<threng:material:4>,<forestry:flexible_casing>,<threng:material:4>],
+                [<ore:ingotFluixSteel>,<threng:material:14>,<ore:ingotFluixSteel>]
+            ]
+        ]
+    },
 };
 
 for key, value in recipeMapShaped {

@@ -26,9 +26,6 @@ import mods.jei.JEI;
 import mods.tconstruct.Casting;
 
 recipes.remove(<ic2:itemmisc:53>);
-furnace.remove(<ic2:itemmisc:53>);
-
-JEI.removeAndHide(<ic2:itemmisc:53>);
 
 Casting.addTableRecipe(<ic2:itemharz>, <tconstruct:cast>.withTag({PartType: "tconstruct:pan_head"}), <liquid:resin>, 250, false, 20);
 

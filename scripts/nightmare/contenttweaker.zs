@@ -468,6 +468,12 @@ Carpenter.addRecipe(<contenttweaker:neuro_processor>, [
     [<draconicevolution:draconic_ingot>,<contenttweaker:circuit8>,<draconicevolution:draconic_ingot>]
 ], 40, <liquid:mana> * 1000, <contenttweaker:stemcells>);
 
+Carpenter.addRecipe(<contenttweaker:big_pearl>, [
+    [<abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>],
+    [<abyssalcraft:gatekeeperessence>,<avaritia:endest_pearl>,<abyssalcraft:gatekeeperessence>],
+    [<abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>]
+], 10, <liquid:mana> * 10000);
+
 Blueprint.addRecipe("rails", <contenttweaker:rail_wood>, [
     <contenttweaker:tie_wood>,
     <ore:ingotIron>

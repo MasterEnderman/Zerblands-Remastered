@@ -117,32 +117,34 @@
                 "type": "quit"
             }
         },
-        "bisecthosting": {
+        "akliz": {
             "text": " ",
+            "hoverText": "Check out Akliz!",
             "pressSound": "minecraft:block.portal.ambient",
-            "posX": -60,
-            "posY": -55,
-            "width": 35,
-            "height": 35,
+            "hoverTextColor": 43732,
+            "posX": -140,
+            "posY": -150,
+            "width": 134,
+            "height": 134,
             "imageWidth": 356,
             "imageHeight": 355,
             "alignment": "bottom_right",
-            "texture": "zerblands:mainmenu/bisect.png",
+            "texture": "zerblands:mainmenu/akliz.png",
             "action": {
                 "type": "openLink",
-                "link": "https://bisecthosting.com/masterenderman"
+                "link": "https://www.akliz.net"
             }
         },
         "discord": {
             "text": " ",
             "pressSound": "minecraft:block.portal.ambient",
-            "posX": -105,
-            "posY": -55,
+            "posX": 5,
+            "posY": -70,
             "width": 35,
             "height": 35,
             "imageWidth": 356,
             "imageHeight": 355,
-            "alignment": "bottom_right",
+            "alignment": "bottom_left",
             "texture": "zerblands:mainmenu/discord.png",
             "action": {
                 "type": "openLink",
@@ -152,13 +154,13 @@
         "github": {
             "text": " ",
             "pressSound": "minecraft:block.portal.ambient",
-            "posX": -150,
-            "posY": -55,
+            "posX": 45,
+            "posY": -70,
             "width": 35,
             "height": 35,
             "imageWidth": 356,
             "imageHeight": 355,
-            "alignment": "bottom_right",
+            "alignment": "bottom_left",
             "texture": "zerblands:mainmenu/github.png",
             "action": {
                 "type": "openLink",
@@ -179,7 +181,25 @@
             }
         }
     },
-    
+    "labels":
+    {    
+        "modpack":
+        {
+            "text" : "Zerblands - Remastered\nModpack by _MasterEnderman_\nPartnered with Akliz.net",
+            "posX" : 5,
+            "posY" : -30,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+		"mojang":
+        {
+            "text" : "Copyright Mojang AB. Do not distribute!",
+            "posX" : -177,
+            "posY" : -12,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        }
+    },
     "other":
     {        
         "background": {
