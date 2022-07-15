@@ -362,3 +362,7 @@ for i, item in wires {
 Casting.addTableRecipe(<contenttweaker:cast_wire>, <immersiveengineering:material:4>, <liquid:gold>, 288, true, 100);
 Casting.addTableRecipe(<contenttweaker:cast_wire>, <immersiveengineering:material:4>, <liquid:brass>, 144, true, 100);
 Casting.addTableRecipe(<contenttweaker:cast_wire>, <immersiveengineering:material:4>, <liquid:alubrass>, 144, true, 100);
+
+Casting.addTableRecipe(<tconstruct:cast_custom:3>, <embers:plate_caminite>, <liquid:gold>, 288, true, 100);
+Casting.addTableRecipe(<tconstruct:cast_custom:3>, <embers:plate_caminite>, <liquid:brass>, 144, true, 100);
+Casting.addTableRecipe(<tconstruct:cast_custom:3>, <embers:plate_caminite>, <liquid:alubrass>, 144, true, 100);

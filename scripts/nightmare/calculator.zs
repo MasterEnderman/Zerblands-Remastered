@@ -48,11 +48,11 @@ ThermionicFabricator.addCast(<contenttweaker:circuit8>, [
     [<advancedsolars:sunnarium>,<contenttweaker:circuit8_damaged>,<advancedsolars:sunnarium>]
 ], <liquid:glass> * 500);
 
-Casting.addTableRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>, <liquid:stone>, 2304, true, 200);
+Casting.addBasinRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>, <liquid:stone>, 2304, true, 200);
 BottlingMachine.addRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>, <liquid:stone> * 2304);
 Transposer.addFillRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>,  <liquid:stone> * 2304, 2000);
 
-Casting.addTableRecipe(<contenttweaker:calculator_screen>, <extrautils2:decorativeglass:5>, <liquid:stone>, 576, true, 200);
+Casting.addBasinRecipe(<contenttweaker:calculator_screen>, <extrautils2:decorativeglass:5>, <liquid:stone>, 576, true, 200);
 BottlingMachine.addRecipe(<contenttweaker:calculator_screen>, <extrautils2:decorativeglass:5>, <liquid:stone> * 576);
 Transposer.addFillRecipe(<contenttweaker:calculator_screen>, <extrautils2:decorativeglass:5>,  <liquid:stone> * 576, 2000);
 

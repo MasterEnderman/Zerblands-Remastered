@@ -1,5 +1,10 @@
 # Zerblands-Remastered
 
+## v2.1.9 - Nightmare Hotfix
+
+- added missing plate cast recipe
+- moved energy module recipe from table to basin
+
 ## v2.1.8 - Nightmare Mode
 
 - removed Crafting Tweaks
