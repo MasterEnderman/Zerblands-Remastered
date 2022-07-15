@@ -1,5 +1,24 @@
 # Zerblands-Remastered
 
+## v2.1.8 - Nightmare Mode
+
+- removed Crafting Tweaks
+- removed Inventory Tweaks
+- removed Mouse Tweaks
+
+- updated AE2 Unofficial Extended Life
+- updated CensoredASM
+- updated Chunk-Pregenerator
+- updated Energy Control
+- updated ModTweaker
+
+- added dan's Crafting Tweaks
+- added dan's Mouse Tweaks
+- added Inventory Bogo Sorter
+- added ModularUI
+
+- slightly nerfed Avaritia bees
+
 ## v2.1.7 - Welcome to Akliz
 
 - removed BisectHosting Server Integration Menu

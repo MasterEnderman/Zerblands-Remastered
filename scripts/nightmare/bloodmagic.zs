@@ -143,29 +143,16 @@ Altar.addConstellationAltarRecipe("soul_forge", <bloodmagic:soul_forge>, 800, 20
 ]);
 
 recipes.remove(<bloodmagic:incense_altar>);
-Altar.addConstellationAltarRecipe("incense_altar", <bloodmagic:incense_altar>, 800, 200, [
-    <xreliquary:mob_ingredient:7>,
-    <evilcraft:bowl_of_promises:5>,
-    <xreliquary:mob_ingredient:7>,
+RuneAltar.addRecipe(<bloodmagic:incense_altar>, [
+    <embers:flame_barrier>,
+    <embers:block_dawnstone>,
+    <embers:eldritch_insignia>,
+    <thermalexpansion:frame:64>,
     <xreliquary:mercy_cross>,
-    <contenttweaker:runic_gear>,
-    <xreliquary:mercy_cross>,
-    <botanicadds:gaiasteel_ingot>,
-    <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}),
-    <botanicadds:gaiasteel_ingot>,
-    <ore:ingotLumium>,
-    <ore:ingotLumium>,
-    <ore:ingotLumium>,
-    <ore:ingotLumium>,
-    <bloodmagic:component:1>,
-    <bloodmagic:component:1>,
-    <contenttweaker:runic_gear>,
-    <contenttweaker:runic_gear>,
-    <tconstruct:ingots:5>,
-    <tconstruct:ingots:5>,
-    <tconstruct:ingots:5>,
-    <tconstruct:ingots:5>
-]);
+    <thermalfoundation:material:1024>,
+    <botania:rune:1>,
+    <astralsorcery:itemcoloredlens>
+], 100000);
 
 recipes.remove(<bloodmagic:blood_shard:1>);
 Sanguine.addRecipe(<bloodmagic:blood_shard:1>, 40000, <bloodmagic:blood_shard>, [
@@ -387,6 +374,22 @@ TartaricForge.addRecipe(<bloodmagic:component:10>, [<sonarcore:stablestone_norma
 // Tartaric Gem
 TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:gold_ingot>,<minecraft:glass>,<minecraft:dye:4>]);
 AlchemyArray.addRecipe(<bloodmagic:soul_gem>, <astralsorcery:itemperkseal>, <embers:inflictor_gem>, bloodmagicAlchemyArray["zombiebeacon"]);
+
+// Demon Will Aura Gauge
+TartaricForge.removeRecipe([<minecraft:glass>,<minecraft:redstone>,<bloodmagic:item_demon_crystal>,<minecraft:gold_ingot>]);
+TartaricForge.addRecipe(<bloodmagic:demon_will_gauge>, [<bloodmagic:item_demon_crystal>,<bloodmagic:sigil_divination>,<evilcraft:blood_orb>,<tconevo:metal:34>], 400, 50);
+
+// Demon Crystallizer
+TartaricForge.removeRecipe([<minecraft:glass>,<minecraft:stone>,<bloodmagic:soul_forge>,<minecraft:dye:4>]);
+TartaricForge.addRecipe(<bloodmagic:demon_crystallizer>, [<bloodmagic:soul_forge>,<bloodarsenal:gem:2>,<enderio:item_material:53>,<tconevo:metal_block:6>], 500, 100);
+
+// Demon Pylon
+TartaricForge.removeRecipe([<minecraft:iron_block>,<minecraft:stone>,<bloodmagic:item_demon_crystal>,<minecraft:dye:4>]);
+TartaricForge.addRecipe(<bloodmagic:demon_pylon>, [<botania:pylon:2>,<bloodarsenal:gem:2>,<enderio:item_material:53>,<tconevo:metal_block:6>], 400, 50);
+
+// Demon Crucible
+TartaricForge.removeRecipe([<minecraft:cauldron>,<minecraft:stone>,<minecraft:diamond>,<minecraft:dye:4>]);
+TartaricForge.addRecipe(<bloodmagic:demon_crucible>, [<xreliquary:apothecary_cauldron>,<bloodarsenal:gem:2>,<enderio:item_material:53>,<tconevo:metal_block:6>], 400, 100);
 
 var mapAlchemyTable as IIngredient[][IItemStack][int] = {
     1 : {

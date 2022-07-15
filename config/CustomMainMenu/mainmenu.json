@@ -132,7 +132,7 @@
             "texture": "zerblands:mainmenu/akliz.png",
             "action": {
                 "type": "openLink",
-                "link": "https://www.akliz.net"
+                "link": "https://www.akliz.net/manage/aff.php?aff=416"
             }
         },
         "discord": {

@@ -31,6 +31,16 @@ recipes.addShaped(<xnet:netcable> * 4, [
     	[<opencomputers:cable>,<contenttweaker:module_transfer>,<opencomputers:cable>],
     	[<immersiveengineering:wirecoil:3>,<opencomputers:cable>,<immersiveengineering:wirecoil:3>]
 ]);
+recipes.addShaped(<xnet:netcable> * 16, [
+    	[<immersiveengineering:wirecoil:6>,<opencomputers:cable>,<immersiveengineering:wirecoil:6>],
+    	[<opencomputers:cable>,<contenttweaker:module_transfer>,<opencomputers:cable>],
+    	[<immersiveengineering:wirecoil:6>,<opencomputers:cable>,<immersiveengineering:wirecoil:6>]
+]);
+recipes.addShaped(<xnet:netcable> * 64, [
+    	[<immersiveengineering:wirecoil:7>,<opencomputers:cable>,<immersiveengineering:wirecoil:7>],
+    	[<opencomputers:cable>,<contenttweaker:module_transfer>,<opencomputers:cable>],
+    	[<immersiveengineering:wirecoil:7>,<opencomputers:cable>,<immersiveengineering:wirecoil:7>]
+]);
 
 recipes.remove(<xnet:netcable:4>);
 recipes.addShaped(<xnet:netcable:4> * 8, [

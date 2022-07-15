@@ -75,7 +75,21 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:dustRedstone>,<immersiveengineering:material:27>,<ore:dustRedstone>],
             [<contenttweaker:plastic>,<enderio:item_material:72>,<contenttweaker:plastic>]
         ]
-    ]
+    ],
+    <rftools:matter_receiver> : [
+        [
+            [<contenttweaker:plastic>,<enderutilities:energy_bridge:1>,<contenttweaker:plastic>],
+            [<energycontrol:item_component>,<rftools:machine_frame>,<energycontrol:item_component>],
+            [<contenttweaker:plastic>,<contenttweaker:warp_module>,<contenttweaker:plastic>]
+        ]
+    ],
+    <rftools:matter_transmitter> : [
+        [
+            [<contenttweaker:plastic>,<enderutilities:energy_bridge:2>,<contenttweaker:plastic>],
+            [<energycontrol:item_component>,<rftools:machine_frame>,<energycontrol:item_component>],
+            [<contenttweaker:plastic>,<contenttweaker:warp_module>,<contenttweaker:plastic>]
+        ]
+    ],
 };
 
 for key, value in recipeMapShaped {

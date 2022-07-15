@@ -1,3 +1,5 @@
+#packmode nightmare
+
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidDefinition;
@@ -18,8 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import scripts.mod_functions.betterExplosion;
+import scripts.functions.calc_flawless;
 
-betterExplosion(<quantumflux:craftingpiece:6>, <quantumflux:graphitedust>);
-
-recipes.addShapeless(<quantumflux:hamcheese>, [<harvestcraft:toastitem>,<harvestcraft:bakedhamitem>,<harvestcraft:cheeseitem>]);
+recipes.remove(<aenetvistool:net_visualizer>);
+calc_flawless(<aenetvistool:net_visualizer>,<thermallogistics:manager>,<appliedenergistics2:entropy_manipulator>,<appliedenergistics2:network_tool>,<appliedenergistics2:material:41>);

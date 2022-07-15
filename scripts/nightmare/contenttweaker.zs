@@ -415,6 +415,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:wetware_assembly>,<contenttweaker:big_pearl>,<contenttweaker:wetware_assembly>],
             [<avaritia:resource>,<contenttweaker:wetware_assembly>,<avaritia:resource>]
         ]
+    ],
+    <contenttweaker:omega_core> : [
+        [
+            [<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>],
+            [<projecte:item.pe_klein_star:5>,<tconevo:metal_block:2>,<projecte:item.pe_klein_star:5>],
+            [<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>]
+        ]
     ]
 };
 

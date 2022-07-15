@@ -51,6 +51,10 @@ JEI.removeAndHide(<extrautils2:glasscutter>);
 recipes.remove(<extrautils2:decorativesolidwood:1>);
 recipes.remove(<extrautils2:magicapple>);
 
+recipes.removeByRecipeName("extrautils2:shortcut_chest");
+recipes.removeByRecipeName("extrautils2:shortcut_stick");
+recipes.removeByRecipeName("extrautils2:shortcut_hopper");
+
 recipes.removeByRecipeName("extrautils2:machine_base");
 Casting.addBasinRecipe(<extrautils2:machine>, <contenttweaker:calculator>, <liquid:iron>, 144 * 4, true, 2000);
 

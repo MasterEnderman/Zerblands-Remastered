@@ -27,6 +27,7 @@ import mods.astralsorcery.Lightwell;
 import mods.bloodmagic.BloodAltar;
 import mods.bloodmagic.AlchemyArray;
 import mods.evilcraft.BloodInfuser;
+import mods.forestry.ThermionicFabricator;
 import mods.ic2.Macerator;
 import mods.jei.JEI;
 import mods.tconstruct.Casting;
@@ -278,3 +279,9 @@ for key, value in recipeMapShaped {
 
 recipes.remove(<forge:bucketfilled>.withTag({FluidName: "evilcraftpoison", Amount: 1000}));
 Transposer.addExtractRecipe(<liquid:evilcraftpoison> * 250, <randomthings:imbue:1>, 400, <minecraft:glass_bottle> % 100);
+
+ThermionicFabricator.addCast(<evilcraft:vengeance_essence>, [
+    [null,<ore:gemDarkCrushed>,null],
+    [<ore:gemDarkCrushed>,<woot:soulsanddust>,<ore:gemDarkCrushed>],
+    [null,<ore:gemDarkCrushed>,null]
+], <liquid: glass> * 10, <evilcraft:piercing_vengeance_focus>);

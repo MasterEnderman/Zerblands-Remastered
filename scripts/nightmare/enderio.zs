@@ -256,6 +256,90 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<opencomputers:material:7>,<forestry:worktable>,<opencomputers:material:7>],
             [<enderio:item_material:11>,<enderio:item_material:1>,<enderio:item_material:11>]
         ]
+    ],
+    <enderio:block_sag_mill> : [
+        [
+            [<contenttweaker:cutting_head_diamond>,<contenttweaker:cutting_head_diamond>,<contenttweaker:cutting_head_diamond>],
+            [<contenttweaker:electric_motor>,<enderio:item_material:1>,<contenttweaker:electric_motor>],
+            [<ore:gearDark>,<thermalfoundation:material:513>,<ore:gearDark>]
+        ]
+    ],
+    <enderio:block_alloy_smelter> : [
+        [
+            [<immersiveengineering:metal_device1:1>,<ic2:reactorventspread>,<immersiveengineering:metal_device1:1>],
+            [<enderio:block_simple_alloy_smelter>,<enderio:item_material:1>,<enderio:block_simple_alloy_smelter>],
+            [<ore:gearDark>,<thermalfoundation:material:513>,<ore:gearDark>]
+        ]
+    ],
+    <enderio:block_vat> : [
+        [
+            [<contenttweaker:iron_rotor>,<minecraft:cauldron>,<contenttweaker:iron_rotor>],
+            [<enderio:block_tank>,<enderio:item_material:1>,<enderio:block_tank>],
+            [<ore:gearDark>,<thermalfoundation:material:513>,<ore:gearDark>]
+        ]
+    ],
+    <enderio:block_wired_charger> : [
+        [
+            [<ore:ingotElectricalSteel>,<embers:charger>,<ore:ingotElectricalSteel>],
+            [<ore:ingotElectricalSteel>,<enderio:item_material:1>,<ore:ingotElectricalSteel>],
+            [<ore:ingotElectricalSteel>,<thermalfoundation:material:513>,<ore:ingotElectricalSteel>]
+        ]
+    ],
+    <enderio:block_combustion_generator> : [
+        [
+            [<embers:mini_boiler>,<embers:reaction_chamber>,<embers:mini_boiler>],
+            [<enderio:block_tank>,<enderio:item_material:1>,<enderio:block_tank>],
+            [<ore:gearDark>,<thermalfoundation:material:514>,<ore:gearDark>]
+        ]
+    ],
+    <enderio:block_stirling_generator> : [
+        [
+            [<opencomputers:upgrade:16>,<ic2:blockmachinelv:1>,<opencomputers:upgrade:16>],
+            [<ic2:blockmachinelv:1>,<enderio:item_material:1>,<ic2:blockmachinelv:1>],
+            [<ore:gearDark>,<thermalfoundation:material:514>,<ore:gearDark>]
+        ]
+    ],
+    <enderio:block_enhanced_combustion_generator> : [
+        [
+            [<ore:ingotEndSteel>,<enderio:block_combustion_generator>,<ore:ingotEndSteel>],
+            [<enderio:block_tank:1>,<enderio:item_material:54>,<enderio:block_tank:1>],
+            [<ore:gearVibrant>,<embers:combustor>,<ore:gearVibrant>]
+        ]
+    ],
+    <enderio:block_enhanced_alloy_smelter> : [
+        [
+            [<ore:ingotEndSteel>,<enderio:block_alloy_smelter>,<ore:ingotEndSteel>],
+            [<gendustry:apiary.upgrade:6>,<enderio:item_material:54>,<gendustry:apiary.upgrade:6>],
+            [<ore:gearVibrant>,<embers:inferno_forge>,<ore:gearVibrant>]
+        ]
+    ],
+    <enderio:block_enhanced_sag_mill> : [
+        [
+            [<ore:ingotEndSteel>,<enderio:block_sag_mill>,<ore:ingotEndSteel>],
+            [<ic2:ic2upgrades>,<enderio:item_material:54>,<ic2:ic2upgrades>],
+            [<ore:gearVibrant>,<embers:heat_coil>,<ore:gearVibrant>]
+        ]
+    ],
+    <enderio:block_enhanced_vat> : [
+        [
+            [<ore:ingotEndSteel>,<enderio:block_vat>,<ore:ingotEndSteel>],
+            [<enderio:block_tank:1>,<enderio:item_material:54>,<enderio:block_tank:1>],
+            [<ore:gearVibrant>,<embers:boiler>,<ore:gearVibrant>]
+        ]
+    ],
+    <enderio:block_enhanced_wired_charger> : [
+        [
+            [<ore:ingotEndSteel>,<embers:catalytic_plug>,<ore:ingotEndSteel>],
+            [<enderio:block_tank:1>,<enderio:item_material:54>,<enderio:block_tank:1>],
+            [<ore:gearVibrant>,<enderio:block_wired_charger>,<ore:gearVibrant>]
+        ]
+    ],
+    <enderio:block_travel_anchor> : [
+        [
+            [<ore:ingotEnderium>,<enderio:item_material:14>,<ore:ingotEnderium>],
+            [<enderio:item_material:4>,<contenttweaker:jump_module>,<enderio:item_material:4>],
+            [<ore:ingotEnderium>,<enderio:item_material:43>,<ore:ingotEnderium>]
+        ]
     ]
 };
 
@@ -556,7 +640,6 @@ SliceNSplice.addRecipe(<enderio:item_material:53>, [
     <actuallyadditions:item_crystal_empowered:5>,<ore:ingotSoularium>,<enderio:item_material:52>
 ], 20000);
 
-AlloySmelter.removeRecipe(<enderio:item_material:75>);
 AlloySmelter.addRecipe(<enderio:item_material:75>,[<enderio:item_material:20>,<ic2:itemmisc:7>],1500);
 AlloySmelter.addRecipe(<enderio:item_material:75>,[<enderio:item_material:20>,<ic2:itemmisc:13>],1500);
 
@@ -569,5 +652,4 @@ recipes.addShapeless(<enderio:item_material:38> * 3,[
     <enderio:item_material:75>
 ]);
 
-AlloySmelter.removeRecipe(<enderio:item_material:3>);
 AlloySmelter.addRecipe(<enderio:item_material:3>, [<botania:managlasspane>,<enderio:item_material:38>,<contenttweaker:electro_silicon>], 15000);

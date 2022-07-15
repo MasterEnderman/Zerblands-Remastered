@@ -25,8 +25,19 @@ import mods.forestry.Carpenter;
 import scripts.functions.calc_basic;
 import scripts.functions.calc_atomic;
 
-calc_basic(<pressure:pipe>, <thermaldynamics:duct_16:6>|<thermaldynamics:duct_16:7>, <ore:plateTungsten>);
-calc_basic(<pressure:tank_indicator>, <pressure:tank_block>, <enderio:block_gauge>);
+var calcMapBasic as IIngredient[][IItemStack] = {
+    <pressure:pipe> : [<thermaldynamics:duct_16:6>|<thermaldynamics:duct_16:7>, <ore:plateTungsten>],
+    <pressure:tank_indicator> : [<pressure:tank_block>, <enderio:block_gauge>],
+    <pressure:tank_filter> : [<pressure:tank_block>, <extrautils2:filterfluids>],
+    <pressure:tank_interface> : [<pressure:tank_block>, <thermalfoundation:material:512>],
+    <pressure:tank_data_port> : [<pressure:tank_block>, <opencomputers:card:6>],
+    <pressure:tank_sensor> : [<pressure:tank_block>, <ic2:ic2upgrades:3>],
+    <pressure:configurator> : [<thermalfoundation:wrench>, <extrautils2:filterfluids>]
+};
+
+for item, recipe in calcMapBasic {
+    calc_basic(item, recipe[0], recipe[1]);
+}
 
 var calcMapAtomic as IIngredient[][IItemStack] = {
     <pressure:output> : [<pressure:interface>, <appliedenergistics2:part:261>, <actuallyadditions:block_misc:9>],
@@ -37,6 +48,9 @@ var calcMapAtomic as IIngredient[][IItemStack] = {
     <pressure:sluice> : [<pressure:interface>, <minecraft:iron_bars>, <actuallyadditions:block_misc:9>],
     <pressure:check_valve> : [<pressure:interface>, <pressure:pipe>, <immersivetech:valve>],
     <pressure:pipe_sensor> : [<pressure:interface>, <pressure:pipe>, <minecraft:observer>],
+    <pressure:tank_pressure_output> : [<pressure:interface>, <appliedenergistics2:part:261>, <pressure:tank_block>],
+    <pressure:tank_pressure_input> : [<pressure:interface>, <appliedenergistics2:part:241>, <pressure:tank_block>],
+    <pressure:tank_fluid_access> : [<pressure:fluid_interface>, <appliedenergistics2:fluid_interface>, <pressure:tank_block>],
 };
 
 for item, recipe in calcMapAtomic {
@@ -81,6 +95,20 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:plateTungsten>,<botania:rune>,<ore:plateTungsten>],
             [<botania:elfglass>,<enderio:block_reservoir>,<botania:elfglass>],
             [<ore:plateTungsten>,<pressure:fluid_interface>,<ore:plateTungsten>]
+        ]
+    ],
+    <pressure:hand_pump> : [
+        [
+            [null,null,<immersiveengineering:toolupgrade>],
+            [null,<forestry:pipette>,null],
+            [<immersiveengineering:toolupgrade:7>,null,null]
+        ]
+    ],
+    <pressure:canister> : [
+        [
+            [null,<ore:plateTungsten>,<ore:plateTungsten>],
+            [<ore:plateTungsten>,<immersiveengineering:jerrycan>,<immersiveengineering:jerrycan>],
+            [<ore:plateTungsten>,<immersiveengineering:jerrycan>,<immersiveengineering:jerrycan>]
         ]
     ]
 };

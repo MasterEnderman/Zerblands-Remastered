@@ -60,6 +60,12 @@ Squeezer.addRecipe(null, <liquid:for.honey> * 100, <harvestcraft:honeyitem>, 204
 recipes.remove(<forestry:fertilizer_compound>);
 calc_scientific(<forestry:fertilizer_compound> * 4, <ore:dustApatite>, <ore:dustAsh>);
 
+Carpenter.removeRecipe(<forestry:portable_alyzer>);
+calc_scientific(<forestry:portable_alyzer>,<thermalfoundation:material:640>,<harvestcraft:grubitem>);
+
+Carpenter.removeRecipe(<forestry:habitat_screen>);
+calc_scientific(<forestry:habitat_screen>,<thermalfoundation:material:640>,<forestry:habitat_locator>);
+
 Carpenter.removeRecipe(<forestry:impregnated_casing>);
 Carpenter.addRecipe(<forestry:impregnated_casing>, [
     [<ore:scaffoldingTreatedWood>,<ore:fenceTreatedWood>,<ore:scaffoldingTreatedWood>],
@@ -219,7 +225,21 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:calculator_assembly>,<minecraft:crafting_table>,<contenttweaker:calculator_assembly>],
             [<ore:plankTreatedWood>,<minecraft:chest>,<ore:plankTreatedWood>]
         ]
-    ]
+    ],
+    <forestry:analyzer> : [
+        [
+            [<ore:ingotSilver>,<forestry:portable_alyzer>,<ore:ingotSilver>],
+            [<botania:managlass>,<forestry:sturdy_machine>,<botania:managlass>],
+            [<ore:ingotSilver>,<botania:managlass>,<ore:ingotSilver>]
+        ]
+    ],
+    <forestry:habitat_former> : [
+        [
+            [<forestry:thermionic_tubes:3>,<ore:plateRedAlloy>,<forestry:thermionic_tubes:3>],
+            [<energycontrol:item_component:1>,<forestry:sturdy_machine>,<energycontrol:item_component:1>],
+            [<ore:gearBronze>,<forestry:chipsets>,<ore:gearBronze>]
+        ]
+    ],
 };
 
 for key, value in recipeMapShaped {

@@ -32,3 +32,60 @@ recipes.removeShaped(<thermallogistics:distributor:1>);
 recipes.removeShaped(<thermallogistics:distributor:2>);
 recipes.removeShaped(<thermallogistics:distributor:3>);
 recipes.removeShaped(<thermallogistics:distributor:4>);
+
+var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
+    <thermallogistics:distributor> : {
+        2 : [
+            [
+                [<ore:nuggetElectricalSteel>,<minecraft:comparator>,<ore:nuggetElectricalSteel>],
+                [<ore:ingotElectricalSteel>,<thermaldynamics:servo>,<ore:ingotElectricalSteel>]
+            ]
+        ]
+    },
+    <thermallogistics:crafter> : {
+        2 : [
+            [
+                [<ore:nuggetElectricalSteel>,<opencomputers:upgrade:11>,<ore:nuggetElectricalSteel>],
+                [<ore:ingotElectricalSteel>,<thermaldynamics:retriever>,<ore:ingotElectricalSteel>]
+            ]
+        ]
+    },
+    <thermallogistics:requester> : {
+        2 : [
+            [
+                [<ore:nuggetElectricalSteel>,<minecraft:comparator>,<ore:nuggetElectricalSteel>],
+                [<ore:ingotElectricalSteel>,<thermaldynamics:retriever>,<ore:ingotElectricalSteel>]
+            ]
+        ]
+    },
+    <thermallogistics:terminal_item> : {
+        1 : [
+            [
+                [<ore:gearSignalum>,<thermallogistics:manager>,<ore:gearSignalum>],
+                [<contenttweaker:storage_module>,<thermalexpansion:frame>,<contenttweaker:storage_module>],
+                [<immersiveengineering:metal_decoration0:5>,<thermalfoundation:material:513>,<immersiveengineering:metal_decoration0:5>]
+            ]
+        ]
+    },
+    <thermallogistics:manager> : {
+        1 : [
+            [
+                [null,<integrateddynamics:part_network_reader_item>,null],
+                [<ore:stickIron>,<rftools:network_monitor>,<ore:stickIron>],
+                [null,<thermalfoundation:material:640>,null]
+            ]
+        ]
+    }
+};
+
+for key, value in recipeMapShaped {
+	var index as int = 0;    
+    recipes.remove(key);
+    for amount, entry in value {
+        for recipe in entry {
+            var name as string = "ct_"+toString(key)+"_"+index;
+            recipes.addShaped(name, key * amount, recipe);
+            index += 1;
+        }
+    }
+}

@@ -36,6 +36,12 @@ recipes.addShaped(<contenttweaker:red_core>, [
     [<contenttweaker:red_coal>,<abyssalcraft:charcoal>,<contenttweaker:red_coal>]
 ]);
 
+recipes.addShaped(<contenttweaker:omega_core>, [
+    [<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>],
+    [<projecte:item.pe_klein_star:5>,<draconicevolution:chaotic_core>,<projecte:item.pe_klein_star:5>],
+    [<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>]
+]);
+
 Casting.removeTableRecipe(<contenttweaker:ender_ingot>);
 AlloySmelter.addRecipe(<contenttweaker:ender_ingot>, [<threng:material>, <enderio:item_alloy_endergy_ingot:3>, <extrautils2:ingredients:17>], 50000);
 AlloySmelter.addRecipe(<contenttweaker:enhanced_ender_ingot>, [<immersiveengineering:material:19>, <ic2:itemmisc:60>, <contenttweaker:ender_ingot>], 50000);

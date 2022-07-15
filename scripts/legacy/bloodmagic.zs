@@ -47,6 +47,7 @@ RuneAltar.addRecipe(<bloodmagic:blood_shard:1>, [
     <bloodmagic:blood_shard>
 ], 1000000);
 
+BloodAltar.addRecipe(<bloodmagic:decorative_brick:2>, <draconicevolution:draconium_block>, 5, 20000000, 1000, 1000);
 recipes.addShaped(<bloodmagic:decorative_brick:2>, [
     [<bloodmagic:demon_crystal:1>,<actuallyadditions:block_crystal_empowered:1>,<bloodmagic:demon_crystal:3>],
     [<bloodmagic:demon_crystal>,<draconicevolution:energy_crystal:8>,<bloodmagic:demon_crystal>],

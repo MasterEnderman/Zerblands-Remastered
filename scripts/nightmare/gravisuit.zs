@@ -62,7 +62,21 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ic2:itemreactorplating:1>,<ic2:itemmisc:258>,<ic2:itemreactorplating:1>],
             [<simplyjetpacks:metaitemmods:30>,<ic2:itemheatswtiches:3>,<simplyjetpacks:metaitemmods:30>]
         ]
-    ]
+    ],
+    <gravisuit:advancedchainsaw> : [
+        [
+            [null,<ore:gemDiamond>,null],
+            [<ic2:ic2upgrades:32>,<ic2:itemtoolchainsaw>,<ic2:ic2upgrades:32>],
+            [<ic2:itemmisc:452>,<ic2:ic2upgrades:32>,<ic2:itemmisc:452>]
+        ]
+    ],
+    <gravisuit:advanceddrill> : [
+        [
+            [null,<ore:gemDiamond>,null],
+            [<ic2:ic2upgrades:32>,<ic2:itemdrills:1>,<ic2:ic2upgrades:32>],
+            [<ic2:itemmisc:452>,<ic2:ic2upgrades:32>,<ic2:itemmisc:452>]
+        ]
+    ],
 };
 
 for key, value in recipeMapShaped {

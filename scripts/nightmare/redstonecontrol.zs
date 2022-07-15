@@ -56,7 +56,51 @@ recipes.remove(<rs_ctr:rs_port:3>);
 calc_basic(<rs_ctr:rs_port:3>,<contenttweaker:stone_board>,<cd4017be_lib:m:402>);
 
 recipes.remove(<rs_ctr:frame>);
-calc_atomic(<rs_ctr:frame>,<bloodmagic:component:10>,<minecraft:obsidian>,<cd4017be_lib:m:402>);
+calc_atomic(<rs_ctr:frame>,<bloodmagic:component:10>,<energycontrol:item_component:2>,<cd4017be_lib:m:402>);
 
 recipes.remove(<rs_ctr:solar_cell>);
 calc_basic(<rs_ctr:solar_cell>,<minecraft:daylight_detector>,<enderio:item_material:3>);
+
+recipes.remove(<rs_ctr:block_breaker>);
+calc_basic(<rs_ctr:block_breaker>,<rs_ctr:block_breaker1>,<minecraft:diamond_pickaxe>);
+
+var recipeMapShaped as IIngredient[][][][IItemStack] = {
+    <rs_ctr:power_hub> : [
+        [
+            [<rs_ctr:wire_e>,<ore:plateGold>,<rs_ctr:wire_e>],
+            [<rs_ctr:wire_e>,<energycontrol:item_component:2>,<rs_ctr:wire_e>]
+        ]
+    ],
+    <rs_ctr:teleporter1> : [
+        [
+            [<minecraft:obsidian>,<enderio:item_material:44>,<minecraft:obsidian>],
+            [<minecraft:ender_eye>,<cd4017be_lib:m:401>,<minecraft:ender_eye>],
+            [<rs_ctr:rs_port>,<contenttweaker:jump_module>,<rs_ctr:rs_port:1>]
+        ]
+    ],
+    <rs_ctr:cl_fuel> * 4 : [
+        [
+            [<ic2:blockutility:3>,<cd4017be_lib:m:402>,<ic2:blockutility:3>],
+            [<cd4017be_lib:m:402>,<minecraft:ender_eye>,<cd4017be_lib:m:402>],
+            [<ic2:blockutility:3>,<cd4017be_lib:m:402>,<ic2:blockutility:3>]
+        ]
+    ],
+    <rs_ctr:block_breaker1> : [
+        [
+            [<minecraft:golden_pickaxe>,<ore:ingotSteel>,<minecraft:hopper>],
+            [<ore:ingotSteel>,<cd4017be_lib:m:401>,<ore:ingotSteel>],
+            [<rs_ctr:rs_port>,<energycontrol:item_component:2>,<rs_ctr:rs_port:1>]
+        ]
+    ]
+};
+
+for key, value in recipeMapShaped {
+	var index as int = 0;    
+    recipes.remove(key);
+
+    for recipe in value {
+        var name as string = "ct_"+toString(key)+"_"+index;
+        recipes.addShaped(name, key, recipe);
+        index += 1;
+    }
+}

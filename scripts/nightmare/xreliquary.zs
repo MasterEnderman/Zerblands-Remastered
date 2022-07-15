@@ -20,6 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.astralsorcery.Altar;
 import mods.bloodmagic.AlchemyTable;
 import mods.botania.RuneAltar;
 import mods.immersiveengineering.Blueprint;
@@ -32,6 +33,13 @@ calc_atomic(<xreliquary:emperor_chalice>, <evilcraft:bucket_eternal_water>, <xre
 
 recipes.remove(<xreliquary:witherless_rose>);
 calc_flawless(<xreliquary:witherless_rose>, <minecraft:double_plant:4>, <tp:netherstar_block>, <xreliquary:mob_ingredient:9>, <randomthings:imbue:3>);
+
+recipes.remove(<xreliquary:alkahestry_tome:1001>);
+Altar.addDiscoveryAltarRecipe("alkahestry_tome", <xreliquary:alkahestry_tome:1001>, 200, 200, [
+    <xreliquary:sojourner_staff>,<xreliquary:phoenix_down>,<xreliquary:rod_of_lyssa>,
+    <xreliquary:infernal_tear>,<thermalfoundation:tome_experience>,<xreliquary:glowing_bread>,
+    <xreliquary:ender_staff>,<xreliquary:rending_gale>,<xreliquary:glacial_staff>
+]);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <xreliquary:magazine> : [

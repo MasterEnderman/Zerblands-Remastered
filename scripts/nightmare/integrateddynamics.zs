@@ -24,16 +24,9 @@ import mods.forestry.Carpenter;
 import mods.forestry.Squeezer;
 import mods.forestry.ThermionicFabricator;
 import mods.immersiveengineering.Squeezer as IESqueezer;
-import mods.tconstruct.Casting;
 import mods.thermalexpansion.Transposer;
 
 import scripts.functions.calc_atomic;
-
-Casting.addBasinRecipe(<integrateddynamics:crystalized_menril_block>, <ore:sand>, <liquid:menrilresin>, 1000, true, 200);
-Transposer.addFillRecipe(<integrateddynamics:crystalized_menril_block>, <minecraft:sand>, <liquid:menrilresin> * 1000, 2000);
-
-Casting.addBasinRecipe(<integrateddynamics:crystalized_chorus_block>, <ore:sand>, <liquid:liquidchorus>, 1000, true, 200);
-Transposer.addFillRecipe(<integrateddynamics:crystalized_chorus_block>, <minecraft:sand>, <liquid:liquidchorus> * 1000, 2000);
 
 recipes.remove(<integrateddynamics:cable>);
 Transposer.addFillRecipe(<integrateddynamics:cable>, <thermaldynamics:duct_48>, <liquid:menrilresin> * 500, 2000);

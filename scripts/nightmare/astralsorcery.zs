@@ -69,6 +69,12 @@ Altar.addDiscoveryAltarRecipe("internal/altar/grindstone", <astralsorcery:blockm
     <ore:stickWood>,  <ore:stickWood>, <ore:plankWood>
 ]);
 
+Altar.addDiscoveryAltarRecipe("internal/altar/attunementrelay", <astralsorcery:blockattunementrelay>, 200, 200, [
+    null, <rs_ctr:rs_port:3>, null,
+    <ore:nuggetDawnstone>, <ore:acEssence>, <ore:nuggetDawnstone>,
+    <ore:livingwood>,  <ore:stoneMarble>, <ore:livingwood>
+]);
+
 Altar.addDiscoveryAltarRecipe("internal/altar/lightwell", <astralsorcery:blockwell>, 200, 200, [
     <astralsorcery:blockmarble:6>, null, <astralsorcery:blockmarble:6>,
     <astralsorcery:blockmarble:4>, <astralsorcery:itemrockcrystalsimple>, <astralsorcery:blockmarble:4>,
@@ -97,6 +103,54 @@ Altar.addAttunementAltarRecipe("internal/altar/upgrade_tier3", <astralsorcery:bl
     <extrautils2:decorativesolid:3>,
 ]);
 
+Altar.addAttunementAltarRecipe("internal/altar/attunementrelay", <astralsorcery:blockritualpedestal>, 500, 800, [
+    <astralsorcery:blockmarble:4>,
+    <astralsorcery:itemcelestialcrystal>,
+    <astralsorcery:blockmarble:4>,
+    <astralsorcery:blockmarble:2>,
+    <minecraft:beacon>,
+    <astralsorcery:blockmarble:2>,
+    <astralsorcery:blockmarble:6>,
+    <bloodmagic:ritual_controller>,
+    <astralsorcery:blockmarble:6>,
+    <embers:aspectus_dawnstone>,
+    <embers:aspectus_dawnstone>,
+    <astralsorcery:blockmarble:2>,
+    <astralsorcery:blockmarble:2>,
+]);
+
+Altar.addAttunementAltarRecipe("internal/altar/gateway", <astralsorcery:blockcelestialgateway>, 500, 800, [
+    <astralsorcery:itemusabledust>,
+    <botanicadds:rune_tp>,
+    <astralsorcery:itemusabledust>,
+    <rs_ctr:rs_port:3>,
+    <enderio:block_travel_anchor>,
+    <rs_ctr:rs_port:3>,
+    <astralsorcery:blockmarble:6>,
+    <botania:starfield>,
+    <astralsorcery:blockmarble:6>,
+    <ore:ingotStarSteel>,
+    <ore:ingotStarSteel>,
+    <ore:ingotStarSteel>,
+    <ore:ingotStarSteel>
+]);
+
+Altar.addAttunementAltarRecipe("attunementaltar", <astralsorcery:blockattunementaltar>, 500, 800, [
+    null,
+    <astralsorcery:itemcelestialcrystal>,
+    null,
+    <contenttweaker:starsteel_ingot>,
+    <astralsorcery:blockattunementrelay>,
+    <contenttweaker:starsteel_ingot>,
+    <astralsorcery:blockmarble:6>,
+    <embers:field_chart>,
+    <astralsorcery:blockmarble:6>,
+    <ore:gemAquamarine>,
+    <ore:gemAquamarine>,
+    <astralsorcery:blockmarble:6>,
+    <astralsorcery:blockmarble:6>,
+]);
+
 Altar.addConstellationAltarRecipe("internal/altar/upgrade_tier4", <astralsorcery:blockaltar:3>, 800, 200, [
     <draconicevolution:draconium_block:1>,
     <botania:lens:14>,
@@ -119,6 +173,54 @@ Altar.addConstellationAltarRecipe("internal/altar/upgrade_tier4", <astralsorcery
     <astralsorcery:itemcraftingcomponent:4>,
     <astralsorcery:blockblackmarble>,
     <astralsorcery:blockblackmarble>,
+]);
+
+Altar.addConstellationAltarRecipe("internal/altar/rituallink", <astralsorcery:blockrituallink> * 2, 800, 200, [
+    <contenttweaker:alfsteel_nugget>,
+    <contenttweaker:alfsteel_ingot>,
+    <contenttweaker:alfsteel_nugget>,
+    <astralsorcery:itemcraftingcomponent:3>,
+    <astralsorcery:itemcraftingcomponent:4>,
+    <astralsorcery:itemcraftingcomponent:3>,
+    <botania:bifrostpermpane>,
+    <randomthings:spectreanchor>,
+    <botania:bifrostpermpane>,
+    null,
+    null,
+    null,
+    null,
+    <contenttweaker:alfsteel_nugget>,
+    <contenttweaker:alfsteel_nugget>,
+    null,
+    null,
+    null,
+    null,
+    <botania:bifrostpermpane>,
+    <botania:bifrostpermpane>,
+]);
+
+Altar.addConstellationAltarRecipe("internal/altar/starlightinfuser", <astralsorcery:blockstarlightinfuser>, 800, 200, [
+    <astralsorcery:blockworldilluminator>,
+    <astralsorcery:blockattunementrelay>,
+    <astralsorcery:blockworldilluminator>,
+    <tconstruct:large_plate>.withTag({Material: "aquamarine"}),
+    <xreliquary:altar>,
+    <tconstruct:large_plate>.withTag({Material: "aquamarine"}),
+    <astralsorcery:blockmarble:4>,
+    <astralsorcery:blockmarble:6>,
+    <astralsorcery:blockmarble:4>,
+    <botania:managlass>,
+    <botania:managlass>,
+    <astralsorcery:blockmarble:2>,
+    <astralsorcery:blockmarble:2>,
+    <appliedenergistics2:light_detector>,
+    <appliedenergistics2:light_detector>,
+    <astralsorcery:blockmarble:5>,
+    <astralsorcery:blockmarble:5>,
+    <astralsorcery:blockmarble:2>,
+    <astralsorcery:blockmarble:2>,
+    <astralsorcery:blockmarble:2>,
+    <astralsorcery:blockmarble:2>,
 ]);
 
 var y as IItemStack = <morebees:graincrystal>;

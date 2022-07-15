@@ -50,6 +50,9 @@ recipes.remove(<ic2:blockminingpipe>);
 recipes.remove(<ic2:blockmachinelv2:6>);
 calc_flawless(<ic2:blockmachinelv2:6>,<minecraft:crafting_table>,<ic2:blockmachinelv>,<ic2:itemtoolbox:2>,<ic2:itemmisc:451>);
 
+recipes.remove(<ic2:itemportableteleporter>);
+calc_flawless(<ic2:itemportableteleporter>,<ic2:blockmachinehv:2>,<ic2:itemmemorystick>,<ic2:itempesd>,<ic2:itemmisc:258>);
+
 recipes.remove(<ic2:blockgenerator:2>);
 calc_basic(<ic2:blockgenerator:2>,<ic2:blockgenerator>,<immersiveengineering:wooden_device1>);
 
@@ -328,7 +331,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
         [
             [<ic2:itemmisc:452>,<enderio:block_tele_pad>,<ic2:itemmisc:452>],
             [<enderio:item_material:16>,<ic2:blockmachinemv>,<enderio:item_material:16>],
-            [<ic2:itemmisc:452>,<contenttweaker:jump_module>,<ic2:itemmisc:452>]
+            [<ic2:itemmisc:452>,<contenttweaker:warp_module>,<ic2:itemmisc:452>]
         ]
     ],
     <ic2:itemmisc:264> : [
@@ -442,7 +445,14 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ic2:itemmisc:451>],
             [<thermalfoundation:material:640>]
         ]
-    ]
+    ],
+    <ic2:itempesd> : [
+        [
+            [<ic2:itemmisc:256>,<contenttweaker:energy_flow_circuit>,<ic2:itemmisc:256>],
+            [<contenttweaker:lapotronic_energy_orb>,<ic2:itemmisc:264>,<contenttweaker:lapotronic_energy_orb>],
+            [<ic2:itemmisc:256>,<contenttweaker:energy_flow_circuit>,<ic2:itemmisc:256>]
+        ]
+    ],
 };
 
 for key, value in recipeMapShaped {
@@ -455,6 +465,42 @@ for key, value in recipeMapShaped {
         index += 1;
     }
 }
+
+recipes.addShaped(<ic2:itemmisc:451> * 16, [
+    [<ic2:itemcable:1>,<ic2:itemcable:1>,<ic2:itemcable:1>],
+    [<contenttweaker:enrichedgold>,<contenttweaker:circuit8>,<contenttweaker:enrichedgold>],
+    [<ic2:itemcable:1>,<ic2:itemcable:1>,<ic2:itemcable:1>]
+]);
+
+recipes.addShaped(<ic2:itemmisc:451> * 32, [
+    [<ic2:itemcable:1>,<ic2:itemcable:1>,<ic2:itemcable:1>],
+    [<contenttweaker:enrichedgold>,<contenttweaker:neuro_processor>,<contenttweaker:enrichedgold>],
+    [<ic2:itemcable:1>,<ic2:itemcable:1>,<ic2:itemcable:1>]
+]);
+
+recipes.addShaped(<ic2:itemmisc:451> * 64, [
+    [<ic2:itemcable:1>,<ic2:itemcable:1>,<ic2:itemcable:1>],
+    [<contenttweaker:enrichedgold>,<contenttweaker:wetware_assembly>,<contenttweaker:enrichedgold>],
+    [<ic2:itemcable:1>,<ic2:itemcable:1>,<ic2:itemcable:1>]
+]);
+
+recipes.addShaped(<ic2:itemmisc:452> * 16, [
+    [<bloodmagic:component:28>,<contenttweaker:elementiumprocessor>,<bloodmagic:component:28>],
+    [<opencomputers:material:9>,<contenttweaker:circuit8>,<opencomputers:material:9>],
+    [<bloodmagic:component:29>,<forestry:chipsets:3>,<bloodmagic:component:29>]
+]);
+
+recipes.addShaped(<ic2:itemmisc:452> * 32, [
+    [<bloodmagic:component:28>,<contenttweaker:elementiumprocessor>,<bloodmagic:component:28>],
+    [<opencomputers:material:9>,<contenttweaker:neuro_processor>,<opencomputers:material:9>],
+    [<bloodmagic:component:29>,<forestry:chipsets:3>,<bloodmagic:component:29>]
+]);
+
+recipes.addShaped(<ic2:itemmisc:452> * 64, [
+    [<bloodmagic:component:28>,<contenttweaker:elementiumprocessor>,<bloodmagic:component:28>],
+    [<opencomputers:material:9>,<contenttweaker:wetware_assembly>,<opencomputers:material:9>],
+    [<bloodmagic:component:29>,<forestry:chipsets:3>,<bloodmagic:component:29>]
+]);
 
 var mapMachineLV as IIngredient[][IItemStack] = {
     <ic2:blockmachinelv:3> : [<ic2:blockmachinelv:15>,<contenttweaker:cutting_head_diamond>],

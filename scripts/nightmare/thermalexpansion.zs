@@ -111,11 +111,20 @@ recipes.addShaped(<thermalexpansion:capacitor>, [
 var mapMachine as IIngredient[][IItemStack] = {
     <thermalexpansion:machine> : [<ic2:blockmachinelv:1>,<immersiveengineering:metal_device1:1>,<ore:gearBronze>],
     <thermalexpansion:machine:1> : [<ic2:blockmachinelv:15>,<contenttweaker:cutting_head>,<ore:gearSteel>],
+    <thermalexpansion:machine:2> : [<thermalfoundation:material:657>,<thermalfoundation:material:657>,<ore:gearCopper>], // Saw Mill
     <thermalexpansion:machine:3> : [<contenttweaker:scientificcalculator>,<immersiveengineering:metal_decoration0:2>,<ore:gearElectrum>],
+    <thermalexpansion:machine:4> : [<immersiveengineering:metal_device1:13>,<randomthings:fertilizeddirt>,<ore:gearLumium>], // Phytogenic Insolator
+    <thermalexpansion:machine:5> : [<immersiveengineering:mold>,<minecraft:piston>,<ore:gearBronze>], // Compactor
     <thermalexpansion:machine:6> : [<immersiveengineering:metal_device1:1>,<botania:rune:1>,<ore:gearInvar>],
+    <thermalexpansion:machine:7> : [<forestry:still>,<embers:diffraction_barrel>,<ore:gearNickel>], // Fractionating Still
     <thermalexpansion:machine:8> : [<immersiveengineering:metal_device0:5>,<thermalfoundation:material:512>,<ore:gearSilver>],
     <thermalexpansion:machine:9> : [<immersiveengineering:metal_device1:5>,<thermalfoundation:material:515>,<ore:gearSignalum>],
-    <thermalexpansion:machine:11> : [<forestry:worktable>,<opencomputers:material:7>,<ore:gearCopper>]
+    <thermalexpansion:machine:10> : [<forestry:centrifuge>,<contenttweaker:iron_rotor>,<ore:gearConstantan>], // Centrifugal Seperator
+    <thermalexpansion:machine:11> : [<forestry:worktable>,<opencomputers:material:7>,<ore:gearCopper>],
+    <thermalexpansion:machine:12> : [<botania:brewery>,<xreliquary:angelheart_vial>,<ore:gearConstantan>], // Alchemical Imbuer
+    <thermalexpansion:machine:13> : [<extrautils2:machine>.withTag({Type: "extrautils2:enchanter"}),<ore:blockEnchantedMetal>,<ore:gearConstantan>], // Arcane Ensorcellator
+    <thermalexpansion:machine:14> : [<botania:rune:7>,<torchmaster:frozen_pearl>,<ore:gearInvar>], // Glacial Precipitator
+    <thermalexpansion:machine:15> : [<ic2:ic2upgrades:30>,<tp:cobblegen_block>,<ore:gearInvar>], // Igneous Extruder
 };
 
 for machine, items in mapMachine {
@@ -133,7 +142,18 @@ for machine, items in mapMachine {
 
 var mapDevice as IIngredient[][IItemStack] = {
     <thermalexpansion:device> : [<thermalfoundation:material:512>,<botania:rune>,<ore:gearTin>],
-    <thermalexpansion:device:3> : [<immersiveengineering:metal_device1:6>,<ic2:itemtreetap>,<ore:gearCopper>]
+    <thermalexpansion:device:3> : [<immersiveengineering:metal_device1:6>,<ic2:itemtreetap>,<ore:gearCopper>],
+    <thermalexpansion:device:12> : [<actuallyadditions:block_ranged_collector>,<minecraft:ender_pearl>,<ore:gearTin>],
+    <thermalexpansion:device:11> : [<minecraft:dispenser>,<thermalexpansion:morb>,<ore:gearConstantan>],
+    <thermalexpansion:device:10> : [<immersiveengineering:mold:6>,<minecraft:crafting_table>,<ore:gearLead>],
+    <thermalexpansion:device:9> : [<immersiveengineering:chemthrower>,<thermalfoundation:material:512>,<ore:gearSilver>],
+    <thermalexpansion:device:8> : [<thermalfoundation:tome_experience>,<ore:ingotEnchantedMetal>,<ore:gearGold>],
+    <thermalexpansion:device:7> : [<thermalfoundation:tome_lexicon>,<ore:ingotEnchantedMetal>,<ore:gearLead>],
+    <thermalexpansion:device:6> : [<contenttweaker:module_transfer>,<thermalfoundation:material:512>,<ore:gearCopper>],
+    <thermalexpansion:device:5> : [<contenttweaker:module_transfer>,<minecraft:chest>,<ore:gearTin>],
+    <thermalexpansion:device:4> : [<harvestcraft:watertrap>,<minecraft:fishing_rod>,<ore:gearIron>],
+    <thermalexpansion:device:2> : [<thermalexpansion:tank>,<thermaldynamics:duct_16:2>,<ore:gearInvar>],
+    <thermalexpansion:device:1> : [<extrautils2:trashcan>,<botania:rune:1>,<ore:gearInfinity>],
 };
 
 for device, items in mapDevice {

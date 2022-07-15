@@ -1,0 +1,14 @@
+{
+	x: -3.0d,
+	y: -3.0d,
+	dependencies: [
+		"97a3ea16"
+	],
+	tasks: [{
+		uid: "12a50d57",
+		type: "item",
+		items: [{
+			item: "avaritiatweaks:infinitato"
+		}]
+	}]
+}

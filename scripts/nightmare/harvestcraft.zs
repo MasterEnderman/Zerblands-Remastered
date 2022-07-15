@@ -28,6 +28,7 @@ import mods.thermalexpansion.Pulverizer;
 JEI.removeAndHide(<harvestcraft:grinder>);
 JEI.removeAndHide(<harvestcraft:market>);
 JEI.removeAndHide(<harvestcraft:shippingbin>);
+JEI.removeAndHide(<harvestcraft:well>);
 
 recipes.remove(<harvestcraft:freshwateritem>);
 recipes.addShaped(<harvestcraft:freshwateritem> * 8, [
@@ -38,6 +39,8 @@ recipes.removeByRecipeName("harvestcraft:beeswaxitem_x8_cropcandle");
 recipes.removeByRecipeName("harvestcraft:beeswaxitem_cropcandle");
 
 recipes.addShapeless(<harvestcraft:hardenedleatheritem>,[<minecraft:leather>,<forestry:beeswax>]);
+
+recipes.addShapeless(<harvestcraft:queenbeeitem>,[<harvestcraft:grubitem>,<forestry:royal_jelly>]);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <harvestcraft:presser> : [
@@ -61,20 +64,27 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:cropCotton>,<ore:cropCotton>,<ore:cropCotton>]
         ]
     ],
-    <harvestcraft:groundtrap>	:[
+    <harvestcraft:groundtrap> : [
     	[
             [<ore:plankTreatedWood>,<minecraft:iron_sword>,<ore:plankTreatedWood>],
             [<ore:fenceTreatedWood>,<thermalexpansion:frame:64>,<ore:fenceTreatedWood>],
             [<ore:plankTreatedWood>,<forestry:scoop:*>.noReturn(),<ore:plankTreatedWood>]
         ]
     ],
-    <harvestcraft:watertrap>	:[
+    <harvestcraft:watertrap> : [
     	[
             [<ore:plankTreatedWood>,<minecraft:fishing_rod>,<ore:plankTreatedWood>],
             [<ore:fenceTreatedWood>,<thermalexpansion:frame:64>,<ore:fenceTreatedWood>],
             [<ore:plankTreatedWood>,<forestry:scoop:*>.noReturn(),<ore:plankTreatedWood>]
         ]
     ],
+    <harvestcraft:waterfilter> : [
+        [
+            [<minecraft:iron_bars>,<minecraft:iron_bars>,<minecraft:iron_bars>],
+            [<harvestcraft:wovencottonitem>,<thermalexpansion:frame:64>,<harvestcraft:wovencottonitem>],
+            [<harvestcraft:wovencottonitem>,<minecraft:bucket>,<harvestcraft:wovencottonitem>]
+        ]
+    ]
 };
 
 for key, value in recipeMapShaped {

@@ -35,7 +35,7 @@ calc_basic(<gendustry:error_sensor_cover>,<ore:plateConstantan>,<ic2:ic2upgrades
 
 betterInscriber(<gendustry:bee_receptacle>, [<astralsorcery:itemcraftingcomponent:3>,<harvestcraft:queenbeeitem>,<minecraft:light_weighted_pressure_plate>]);
 
-Transposer.addFillRecipe(<gendustry:gene_template>, <advancedsolars:iridiumironplate>,  <liquid:liquiddna> * 1000, 2000);
+Transposer.addFillRecipe(<gendustry:gene_template>, <advancedsolars:iridiumironplate>, <liquid:liquiddna> * 1000, 2000);
 
 KitAssembler.addRecipe(<evilcraft:environmental_accumulation_core>, <contenttweaker:terrasteelprocessor> * 2, <rftools:environmental_controller>, <gendustry:env_processor>, 100000);
 KitAssembler.addRecipe(<gendustry:labware> * 64, <threng:material:6> * 2, <abyssalcraft:transmutator>, <gendustry:genetics_processor>, 100000);

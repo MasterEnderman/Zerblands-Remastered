@@ -731,6 +731,18 @@
     {
       "item": "contenttweaker:red_coal|0",
       "emc": 128
+    },
+    {
+      "item": "contenttweaker:runestone|0",
+      "emc": 8
+    },
+    {
+      "item": "contenttweaker:runestone_brick|0",
+      "emc": 8
+    },
+    {
+      "item": "contenttweaker:runestone_chiseled|0",
+      "emc": 8
     }
   ]
 }

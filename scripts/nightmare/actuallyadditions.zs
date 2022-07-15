@@ -449,21 +449,45 @@ for machine, recipe in smallMachine {
     Blueprint.addRecipe("machinery", machine, recipe);
 }
 
-recipes.remove(<actuallyadditions:item_misc:16>);
-Blueprint.addRecipe("components", <actuallyadditions:item_misc:16>, [
-    <contenttweaker:electric_motor>,
-    <thermalfoundation:material:640>,
-    <forestry:thermionic_tubes:6> * 2,
-    <ic2:itemcable:15> * 2
-]);
+var smallComponents as IIngredient[][IItemStack] = {
+    <actuallyadditions:item_misc:16> : [
+        <contenttweaker:electric_motor>,
+        <thermalfoundation:material:640>,
+        <forestry:thermionic_tubes:6> * 2,
+        <ic2:itemcable:15> * 2
+    ],
+    <actuallyadditions:item_battery> : [
+        <ic2:itembatre>,
+        <actuallyadditions:item_misc:8>,
+        <actuallyadditions:item_crystal>,
+        <actuallyadditions:item_crystal:5> * 2
+    ],
+    <actuallyadditions:item_battery_double> : [
+        <actuallyadditions:item_battery>,
+        <actuallyadditions:item_misc:8>,
+        <actuallyadditions:item_crystal_empowered:5> * 2
+    ],
+    <actuallyadditions:item_battery_triple> : [
+        <actuallyadditions:item_battery_double>,
+        <actuallyadditions:item_misc:8>,
+        <actuallyadditions:item_crystal_empowered> * 2
+    ],
+    <actuallyadditions:item_battery_quadruple> : [
+        <actuallyadditions:item_battery_triple>,
+        <actuallyadditions:item_misc:8>,
+        <actuallyadditions:item_crystal:2> * 2
+    ],
+    <actuallyadditions:item_battery_quintuple> : [
+        <actuallyadditions:item_battery_quadruple>,
+        <actuallyadditions:item_misc:8>,
+        <actuallyadditions:item_crystal_empowered:2> * 2
+    ],
+};
 
-recipes.remove(<actuallyadditions:item_battery>);
-Blueprint.addRecipe("components", <actuallyadditions:item_battery>, [
-    <ic2:itembatre>,
-    <actuallyadditions:item_misc:8>,
-    <actuallyadditions:item_crystal>,
-    <actuallyadditions:item_crystal:5> * 2
-]);
+for component, recipe in smallComponents {
+    recipes.remove(component);
+    Blueprint.addRecipe("components", component, recipe);
+}
 
 recipes.addShapeless(<actuallyadditions:block_fluid_collector>, [<actuallyadditions:block_fluid_collector>]); // clear NBT
 recipes.addShapeless(<actuallyadditions:block_fluid_placer>, [<actuallyadditions:block_fluid_placer>]); // clear NBT

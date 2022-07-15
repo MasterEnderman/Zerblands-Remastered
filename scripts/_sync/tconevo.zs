@@ -62,3 +62,10 @@ InductionSmelter.addRecipe(<tconevo:metal:35>, <contenttweaker:energium_dust> * 
 InductionSmelter.addRecipe(<tconevo:metal:40>, <ic2:itemmisc:202>, <tconevo:material>, 15000);
 
 Melting.addRecipe(<liquid:essence_metal>*1296, <tconevo:metal_block:3>, 800);
+Melting.addRecipe(<liquid:primal_metal>*1296, <tconevo:metal_block:4>, 800);
+
+recipes.addShaped(<tconevo:metal_block:4>, [
+    [<tconevo:material>,<tconevo:material>,<tconevo:material>],
+    [<tconevo:material>,<contenttweaker:big_pearl>,<tconevo:material>],
+    [<tconevo:material>,<tconevo:material>,<tconevo:material>]
+]);

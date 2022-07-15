@@ -1,0 +1,16 @@
+{
+	x: -3.0d,
+	y: 3.0d,
+	dependencies: [
+		"97a3ea16"
+	],
+	tasks: [{
+		uid: "04fcb09b",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_transmutation_tablet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

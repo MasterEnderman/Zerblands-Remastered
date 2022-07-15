@@ -20,6 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.astralsorcery.Altar;
 import mods.embers.Alchemy;
 import mods.embers.Mixer;
 import mods.enderio.AlloySmelter;
@@ -60,12 +61,35 @@ Alchemy.add(<embers:winding_gears>, [<contenttweaker:runic_gear>, <ore:gearBronz
 Alchemy.remove(<embers:inflictor_gem>);
 Alchemy.add(<embers:inflictor_gem>, [<contenttweaker:flawless_diamond_shard>, <actuallyadditions:item_crystal:3>, <ore:plateDawnstone>, <actuallyadditions:item_crystal:3>, <ore:plateDawnstone>], {"dawnstone": 48 to 96, "lead": 32 to 64});
 
+Alchemy.add(<embers:seed_dawnstone>, [<ore:gemQuartz>, <ore:ingotDawnstone>, <ore:ingotDawnstone>, <embers:shard_ember>, <embers:shard_ember>], {"dawnstone": 48 to 96, "iron": 48 to 96});
+
 recipes.remove(<embers:blend_caminite>);
 recipes.addShapeless("blend_caminite", <embers:blend_caminite> * 4, [
     <minecraft:clay_ball>,
     <ore:dustAsh>,
     <earthworks:item_quicklime>,
     <earthworks:item_sand>
+]);
+
+recipes.remove(<embers:alchemy_tablet>);
+Altar.addDiscoveryAltarRecipe("alchemy_tablet", <embers:alchemy_tablet>, 200, 200, [
+    <ore:plateDawnstone>,<avaritia:compressed_crafting_table>,<ore:plateDawnstone>,
+    <embers:stairs_caminite_brick>,<embers:spark_plug>,<embers:stairs_caminite_brick>,
+    <embers:block_caminite_brick>,<embers:golems_eye>,<embers:block_caminite_brick>
+]);
+
+recipes.remove(<embers:alchemy_pedestal>);
+Altar.addDiscoveryAltarRecipe("alchemy_pedestal", <embers:alchemy_pedestal>, 200, 200, [
+    <ore:ingotDawnstone>,<minecraft:cauldron>,<ore:ingotDawnstone>,
+    <embers:wall_caminite_brick>,<tconstruct:firewood:1>,<embers:wall_caminite_brick>,
+    <embers:stairs_caminite_brick>,<tconstruct:firewood:1>,<embers:stairs_caminite_brick>
+]);
+
+recipes.remove(<embers:geo_separator>);
+Altar.addDiscoveryAltarRecipe("geo_separator", <embers:geo_separator>, 200, 200, [
+    null,null,<embers:pipe>,
+    <embers:block_caminite_brick_slab>,<bloodmagic:cutting_fluid>,<ore:blockNickel>,
+    <embers:block_caminite_brick>,<embers:block_tank>,<embers:block_caminite_brick>
 ]);
 
 recipes.remove(<embers:ember_bore>);

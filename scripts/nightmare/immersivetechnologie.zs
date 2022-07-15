@@ -20,7 +20,13 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.immersivetechnology.MeltingCrucible;
+import mods.thermalexpansion.Crucible;
+
 recipes.remove(<immersivetech:material>);
+
+Crucible.addRecipe(<liquid:moltensalt> * 100, <harvestcraft:saltitem>, 10000);
+MeltingCrucible.addRecipe(<liquid:moltensalt> * 100, <harvestcraft:saltitem>, 76800, 160);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <immersivetech:metal_trash> : [

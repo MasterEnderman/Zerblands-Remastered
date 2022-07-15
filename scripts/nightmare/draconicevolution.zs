@@ -25,6 +25,8 @@ import mods.astralsorcery.Altar;
 
 import moretweaker.draconicevolution.FusionCrafting;
 
+import scripts.functions.calc_scientific;
+
 import scripts.mod_functions.betterCharging;
 
 var plateDraconium as IItemStack = <tconstruct:large_plate>.withTag({Material: "draconium"});
@@ -36,6 +38,8 @@ betterCharging(<draconicevolution:draconium_block:1>,<draconicevolution:draconiu
 FusionCrafting.remove(<draconicevolution:crafting_injector>);
 FusionCrafting.remove(<draconicevolution:crafting_injector:1>);
 FusionCrafting.remove(<draconicevolution:crafting_injector:2>);
+
+calc_scientific(<draconicevolution:dislocator_receptacle>,<draconicevolution:infused_obsidian>,<contenttweaker:warp_module>);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <draconicevolution:draconic_core> : [
@@ -80,6 +84,55 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<draconicadditions:chaotic_energy_core>,<contenttweaker:wetware_assembly>,<draconicadditions:chaotic_energy_core>]
         ]
     ],
+    <draconicevolution:reactor_part:4> : [
+        [
+            [<extrautils2:opinium:2>,<extrautils2:opinium:2>,<extrautils2:opinium:2>],
+            [<extrautils2:opinium:2>,<draconicevolution:awakened_core>,<extrautils2:opinium:2>],
+            [<extrautils2:opinium:2>,<extrautils2:opinium:2>,<extrautils2:opinium:2>]
+        ]
+    ],
+    <draconicevolution:reactor_part:3> : [
+        [
+            [<draconicevolution:reactor_part:2>,<draconicevolution:reactor_part:1>,<draconicevolution:reactor_part:2>],
+            [<bigreactors:blockludicrite>,<ic2:itemreflectors:2>,<environmentaltech:lightning_rod_insulated>],
+            [<draconicevolution:reactor_part:2>,<draconicevolution:reactor_part:1>,<draconicevolution:reactor_part:2>]
+        ]
+    ],
+    <draconicevolution:reactor_part:2> : [
+        [
+            [<ore:nuggetWyvernMetal>,<ore:nuggetWyvernMetal>,<ore:nuggetWyvernMetal>],
+            [<advancedsolars:irradiantreinforcedplate>,<ic2:itemmisc:264>,<advancedsolars:irradiantreinforcedplate>],
+            [<ore:nuggetWyvernMetal>,<ore:nuggetWyvernMetal>,<ore:nuggetWyvernMetal>]
+        ]
+    ],
+    <draconicevolution:reactor_part:1> : [
+        [
+            [<ore:nuggetDraconicMetal>,<ore:nuggetDraconicMetal>,<ore:nuggetDraconicMetal>],
+            [<advancedsolars:irradiantreinforcedplate>,<ic2:itemmisc:264>,<advancedsolars:irradiantreinforcedplate>],
+            [<ore:nuggetDraconicMetal>,<ore:nuggetDraconicMetal>,<ore:nuggetDraconicMetal>]
+        ]
+    ],
+    <draconicevolution:reactor_part> : [
+        [
+            [<ore:plateWyvernMetal>,<environmentaltech:laser_core>,<ore:plateWyvernMetal>],
+            [<contenttweaker:wetware_assembly>,<draconicadditions:chaos_heart>,<contenttweaker:wetware_assembly>],
+            [<ore:plateWyvernMetal>,<enderio:item_material:66>,<ore:plateWyvernMetal>]
+        ]
+    ],
+    <draconicevolution:energy_infuser> : [
+        [
+            [<ore:ingotDraconium>,<draconicevolution:particle_generator>,<ore:ingotDraconium>],
+            [<draconicevolution:wyvern_core>,<thermalexpansion:machine:9>,<draconicevolution:wyvern_core>],
+            [<ore:ingotDraconium>,<enderio:item_material:66>,<ore:ingotDraconium>]
+        ]
+    ],
+    <draconicevolution:celestial_manipulator> : [
+        [
+            [<rs_ctr:clock>,<randomthings:timeinabottle>,<rs_ctr:clock>],
+            [<ore:gearDraconicMetal>,<draconicevolution:ender_energy_manipulator>,<ore:gearDraconicMetal>],
+            [<openmodularturrets:intermediate_tiered:14>,<draconicadditions:chaotic_energy_core>,<openmodularturrets:intermediate_tiered:14>]
+        ]
+    ],
 };
 
 for key, value in recipeMapShaped {
@@ -116,6 +169,51 @@ for item, main in mapWyvern {
 
 recipes.remove(<draconicevolution:energy_pylon>);
 Empowerer.addRecipe(<draconicevolution:energy_pylon>, <draconicevolution:draconium_block:1>, <draconicevolution:wyvern_core>, <botania:pylon:2>, <contenttweaker:flux_module>, <thermaldynamics:duct_0:5>, 100000, 500, [0.8, 0.0, 0.8]);
+
+FusionCrafting.remove(<draconicevolution:draconic_core>);
+FusionCrafting.add(<draconicevolution:reactor_component:1>, <randomthings:spectreenergyinjector>, FusionCrafting.CHAOTIC, 640000000, [
+    <actuallyadditions:block_laser_relay_extreme>,
+    <actuallyadditions:block_laser_relay_extreme>,
+    <contenttweaker:flux_module>,
+    <contenttweaker:flux_module>,
+    <contenttweaker:flux_module>,
+    <contenttweaker:flux_module>,
+    <actuallyadditions:block_laser_relay_extreme>,
+    <actuallyadditions:block_laser_relay_extreme>
+]);
+
+FusionCrafting.remove(<draconicevolution:reactor_part>);
+FusionCrafting.add(<draconicevolution:reactor_component>, <draconicevolution:reactor_part>, FusionCrafting.CHAOTIC, 720000000, [
+    <draconicevolution:awakened_core>,
+    <draconicevolution:awakened_core>,
+    <draconicevolution:draconic_energy_core>,
+    <draconicevolution:draconic_energy_core>,
+    <draconicevolution:chaotic_core>,
+    <draconicevolution:reactor_part:4>,
+    <draconicevolution:chaotic_core>,
+    <draconicevolution:reactor_part:3>,
+    <draconicevolution:draconic_energy_core>,
+    <draconicevolution:draconic_energy_core>,
+    <draconicevolution:awakened_core>,
+    <draconicevolution:awakened_core>
+]);
+
+FusionCrafting.add(<draconicevolution:reactor_core>, <contenttweaker:omega_core>, FusionCrafting.CHAOTIC, 1000000000, [
+    <draconicadditions:chaos_crystal_stable>,
+    <draconicadditions:chaos_crystal_stable>,
+    <draconicadditions:chaos_crystal_stable>,
+    <draconicadditions:chaos_crystal_stable>,
+    <draconicadditions:chaotic_energy_core>,
+    <draconicadditions:chaotic_energy_core>,
+    <draconicadditions:chaos_heart>,
+    <draconicadditions:chaos_heart>,
+    <draconicadditions:chaotic_energy_core>,
+    <draconicadditions:chaotic_energy_core>,
+    <draconicadditions:chaos_crystal_stable>,
+    <draconicadditions:chaos_crystal_stable>,
+    <draconicadditions:chaos_crystal_stable>,
+    <draconicadditions:chaos_crystal_stable>
+]);
 
 FusionCrafting.remove(<minecraft:emerald_block>);
 FusionCrafting.add(<draconicevolution:wyvern_core>, <extrautils2:decorativesolid:8>, FusionCrafting.BASIC, 9000000, [
@@ -157,6 +255,20 @@ FusionCrafting.add(<draconicevolution:awakened_core>, <tconevo:metal:4>, FusionC
     <draconicevolution:wyvern_core>
 ]);
 
+FusionCrafting.remove(<minecraft:obsidian>);
+FusionCrafting.add(<draconicevolution:infused_obsidian>, <contenttweaker:purifiedobsidian>, FusionCrafting.WYVERN, 1000000, [
+    <tconevo:metal:7>,
+    <tconevo:metal:7>,
+    <contenttweaker:enddiamond>,
+    <contenttweaker:enddiamond>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_block:1>,
+    <contenttweaker:enddiamond>,
+    <contenttweaker:enddiamond>,
+    <tconevo:metal:7>,
+    <tconevo:metal:7>
+]);
+
 FusionCrafting.remove(<draconicevolution:chaos_shard>);
 FusionCrafting.add(<draconicevolution:chaotic_core>, <tconevo:metal:9>, FusionCrafting.DRACONIC, 100000000000, [
     <draconicevolution:awakened_core>,
@@ -169,6 +281,20 @@ FusionCrafting.add(<draconicevolution:chaotic_core>, <tconevo:metal:9>, FusionCr
     <draconicevolution:awakened_core>
 ]);
 
+FusionCrafting.remove(<draconicevolution:wyvern_energy_core>);
+FusionCrafting.add(<draconicevolution:draconic_energy_core>, <draconicevolution:awakened_core>, FusionCrafting.DRACONIC, 100000000, [
+    <draconicevolution:draconic_ingot>,
+    <draconicevolution:draconic_ingot>,
+    <ic2:itempesd>,
+    <ic2:itempesd>,
+    <draconicevolution:wyvern_energy_core>,
+    <draconicevolution:wyvern_energy_core>,
+    <ic2:itempesd>,
+    <ic2:itempesd>,
+    <draconicevolution:draconic_ingot>,
+    <draconicevolution:draconic_ingot>
+]);
+
 FusionCrafting.remove(<draconicevolution:particle_generator>);
 FusionCrafting.add(<draconicevolution:particle_generator:2>, <draconicevolution:particle_generator>, FusionCrafting.WYVERN, 250000000, [
     <actuallyadditions:block_crystal_empowered:2>,
@@ -179,6 +305,20 @@ FusionCrafting.add(<draconicevolution:particle_generator:2>, <draconicevolution:
     <tconevo:metal:3>,
     <actuallyadditions:block_crystal_empowered:2>,
     <actuallyadditions:block_crystal_empowered:2>
+]);
+
+FusionCrafting.remove(<minecraft:chest>);
+FusionCrafting.add(<draconicevolution:draconium_chest>, <projecte:alchemical_chest>, FusionCrafting.WYVERN, 100000000, [
+    <extrautils2:machine>,
+    <draconicevolution:wyvern_energy_core>,
+    <extrautils2:machine>,
+    <draconicevolution:wyvern_energy_core>,
+    <extrautils2:machine>,
+    <enderio:block_inventory_chest_warehouse13>,
+    <extrautils2:machine>,
+    <enderio:block_inventory_chest_warehouse13>,
+    <extrautils2:machine>,
+    <enderio:block_inventory_chest_warehouse13>
 ]);
 
 recipes.remove(<draconicevolution:particle_generator>);

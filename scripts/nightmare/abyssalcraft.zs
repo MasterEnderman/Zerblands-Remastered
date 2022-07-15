@@ -35,8 +35,7 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Transposer;
 
 import scripts.functions.calc_basic;
-
-
+import scripts.functions.calc_scientific;
 
 JEI.removeAndHide(<abyssalcraft:materializer>);
 
@@ -48,6 +47,9 @@ Crucible.addRecipe(<liquid:liquidantimatter> * 1000, <ic2:itemmisc:202>, 500000)
 
 recipes.remove(<abyssalcraft:crate>);
 calc_basic(<abyssalcraft:crate> * 2, <actuallyadditions:block_misc:4>, <minecraft:chest>);
+
+recipes.remove(<abyssalcraft:drainstaff>);
+calc_scientific(<abyssalcraft:drainstaff>,<embers:staff_ember>,<abyssalcraft:oblivionshard>);
 
 var recipeMapShaped as IIngredient[][][IItemStack] = {
 	<abyssalcraft:transmutator> : [

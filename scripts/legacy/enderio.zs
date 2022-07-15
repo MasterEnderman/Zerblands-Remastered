@@ -181,5 +181,7 @@ AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:5>, [<ore:ingotSilver>,
 /*Alloy: Vivid Alloy*/
 AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:6>, [<ore:ingotEnergeticSilver>,<ore:enderpearl>], 10000);
 
-AlloySmelter.removeRecipe(<enderio:item_material:3>);
+AlloySmelter.addRecipe(<enderio:item_material:75>,[<enderio:item_material:20>,<ore:dustCoal>],1500);
+AlloySmelter.addRecipe(<enderio:item_material:75>,[<enderio:item_material:20>,<ore:dustCharcoal>],1500);
+
 AlloySmelter.addRecipe(<enderio:item_material:3>, [<enderio:item_material:38>,<ore:dustLapis>,<ore:dustCoal>], 15000);

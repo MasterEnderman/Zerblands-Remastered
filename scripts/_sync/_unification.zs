@@ -44,6 +44,11 @@ import mods.tconstruct.Melting;
     <abyssalcraft:shoggothflesh:3>,
     <abyssalcraft:shoggothflesh:4>,
 ]);
+<ore:acEssence>.add([
+    <abyssalcraft:essence>,
+    <abyssalcraft:essence:1>,
+    <abyssalcraft:essence:2>,
+]);
 <ore:kleinStarEin>.add(<projecte:item.pe_klein_star>);
 <ore:kleinStarZwei>.add(<projecte:item.pe_klein_star:1>);
 <ore:kleinStarDrei>.add(<projecte:item.pe_klein_star:2>);
@@ -123,7 +128,6 @@ var mapBedrock as IIngredient[IItemStack] = {
     <contenttweaker:bedrockium_ingot> : <contenttweaker:bedrockium_nugget>,
     <contenttweaker:bedrockium_block> : <contenttweaker:bedrockium_ingot>,
     <minecraft:bedrock> : <contenttweaker:bedrockium_block>,
-    <avaritia:resource:6> : <contenttweaker:resource_infinity_drop>,
 };
 
 var index as int = 0;

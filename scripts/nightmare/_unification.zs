@@ -101,7 +101,7 @@ var mapSimpleAlloy as IItemStack[][IItemStack] = {
     <contenttweaker:black_iron> : [<ic2:itemmisc:53>,<actuallyadditions:item_dust:7>],
     <contenttweaker:basic_blade> : [<contenttweaker:bone_shard>,<contenttweaker:flint_shard>],
     <enderio:item_alloy_endergy_ingot> : [<earthworks:item_adobe>,<tconstruct:materials>],
-    <appliedenergistics2:part:140> : [<ic2:itemcable:9>,<enderio:item_material:51>],
+    <appliedenergistics2:part:140> * 4 : [<ic2:itemcable:9>,<appliedenergistics2:material:3>],
     <appliedenergistics2:part:16> : [<appliedenergistics2:part:140>,<appliedenergistics2:material:12>],
     <minecraft:netherbrick> : [<earthworks:item_adobe>,<ic2:itemmisc:11>],
     <contenttweaker:reinforcediron_ingot> : [<ic2:itemmisc:53>,<sonarcore:reinforcedstoneblock>],
@@ -124,6 +124,7 @@ ArcFurnace.removeRecipe(findFirstItemFromMod("contenttweaker","ingot","redAlloy"
 Kiln.removeRecipe(findFirstItemFromMod("contenttweaker","ingot","redAlloy"));
 furnace.remove(<minecraft:netherbrick>);
 recipes.remove(<immersivepetroleum:stone_decoration>);
+recipes.remove(<appliedenergistics2:part:140>);
 
 for item, recipe in mapSimpleAlloy {
     var input1 as IItemStack = recipe[0];

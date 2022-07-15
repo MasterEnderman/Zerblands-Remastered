@@ -34,6 +34,7 @@ import mods.immersiveengineering.MetalPress;
 import mods.jei.JEI;
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Transposer;
 import mods.threng.Aggregator;
 import mods.threng.Centrifuge;
 import mods.threng.Etcher;
@@ -51,6 +52,8 @@ JEI.removeAndHide(<appliedenergistics2:material:13>);
 JEI.removeAndHide(<appliedenergistics2:material:14>);
 JEI.removeAndHide(<appliedenergistics2:material:15>);
 JEI.removeAndHide(<appliedenergistics2:material:19>);
+
+recipes.removeByRecipeName("appliedenergistics2:network/parts/oredict_storage_bus");
 
 Inscriber.removeRecipe(<appliedenergistics2:material:13>);
 Inscriber.removeRecipe(<appliedenergistics2:material:14>);
@@ -115,6 +118,11 @@ recipes.addShapeless(<appliedenergistics2:network_tool>, [
     <enderio:item_yeta_wrench>,<minecraft:chest>
 ]);
 
+recipes.remove(<appliedenergistics2:part:520>);
+recipes.addShapeless(<appliedenergistics2:part:520>, [
+	<appliedenergistics2:part:380>,<minecraft:bucket>,<appliedenergistics2:material:22>
+]);
+
 Macerator.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material>);
 
 recipes.remove(<appliedenergistics2:light_detector>);
@@ -131,6 +139,15 @@ Centrifuge.addRecipe(<appliedenergistics2:material:10>,<appliedenergistics2:crys
 
 recipes.remove(<appliedenergistics2:quartz_fixture>);
 calc_atomic(<appliedenergistics2:quartz_fixture>, <appliedenergistics2:material:1>, <contenttweaker:electricdiamondanimate>, <contenttweaker:starsteel_nugget>);
+
+recipes.remove(<appliedenergistics2:part:56>);
+calc_atomic(<appliedenergistics2:part:56>, <appliedenergistics2:part:36>, <rs_ctr:lamp>, <cd4017be_lib:m:400>);
+
+recipes.remove(<appliedenergistics2:part:76>);
+calc_atomic(<appliedenergistics2:part:76>, <appliedenergistics2:part:516>, <rs_ctr:lamp>, <cd4017be_lib:m:400>);
+
+recipes.remove(<appliedenergistics2:part:36>);
+calc_atomic(<appliedenergistics2:part:36>, <appliedenergistics2:part:16>, <energycontrol:item_component:4>, <enderio:block_industrial_insulation>);
 
 var recipeMapShaped as IIngredient[][][IItemStack] = {
     <appliedenergistics2:crafting_unit>	: [
@@ -168,7 +185,12 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     	[<appliedenergistics2:material:44>,<opencomputers:transposer>,<appliedenergistics2:material:43>],
     	[<ore:ingotFluixSteel>,<appliedenergistics2:quartz_glass>,<ore:ingotFluixSteel>]
     ],
-    <appliedenergistics2:cell_workbench> :[
+	<appliedenergistics2:fluid_interface> : [
+    	[<ore:ingotFluixSteel>,<pressure:tank_wall>,<ore:ingotFluixSteel>],
+    	[<appliedenergistics2:material:44>,<opencomputers:transposer>,<appliedenergistics2:material:43>],
+    	[<ore:ingotFluixSteel>,<pressure:tank_wall>,<ore:ingotFluixSteel>]
+	],
+    <appliedenergistics2:cell_workbench> : [
     	[<ore:blockRockwool>,<appliedenergistics2:material:23>,<ore:blockRockwool>],
     	[<ore:ingotFluixSteel>,<ic2:blockmachinelv2:6>,<ore:ingotFluixSteel>],
     	[<ore:ingotFluixSteel>,<ore:ingotFluixSteel>,<ore:ingotFluixSteel>]
@@ -262,6 +284,16 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
 		[<ore:ingotFluixSteel>,<appliedenergistics2:fluix_slab>,<ore:ingotFluixSteel>],
 		[<enderio:block_dark_iron_bars>,<tp:growth_block>,<enderio:block_dark_iron_bars>],
 		[<ore:ingotFluixSteel>,<appliedenergistics2:fluix_slab>,<ore:ingotFluixSteel>]
+	],
+	<appliedenergistics2:spatial_pylon> : [
+		[<ore:ingotFluixSteel>,<appliedenergistics2:quartz_vibrant_glass>,<ore:ingotFluixSteel>],
+		[<appliedenergistics2:part:76>,<ic2:itemmemorystick>,<appliedenergistics2:part:76>],
+		[<ore:ingotFluixSteel>,<threng:material:6>,<ore:ingotFluixSteel>]
+	],
+	<appliedenergistics2:part:516> : [
+		[<redstonerepository:material:8>,<appliedenergistics2:part:36>,<redstonerepository:material:8>],
+		[<appliedenergistics2:part:36>,<enderio:block_industrial_insulation>,<appliedenergistics2:part:36>],
+		[<redstonerepository:material:8>,<appliedenergistics2:part:36>,<redstonerepository:material:8>]
 	]
 };
 
@@ -269,6 +301,9 @@ for key, value in recipeMapShaped {
 	recipes.remove(key);
     recipes.addShaped("ct_"+toString(key), key, value);
 }
+
+recipes.addShapeless(<appliedenergistics2:interface>, [<appliedenergistics2:part:440>]);
+recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
 
 recipes.remove(<appliedenergistics2:quartz_glass>);
 InductionSmelter.addRecipe(<appliedenergistics2:quartz_glass> * 4, <extrautils2:decorativeglass> * 4, <actuallyadditions:item_dust:7> * 5, 8192);
@@ -380,3 +415,91 @@ recipes.addShaped(<appliedenergistics2:part:180>, [
 	[<ore:plateLumium>,<integrateddynamics:part_display_panel_item>,<appliedenergistics2:quartz_glass>],
 	[null,<ore:ingotAluminum>,<appliedenergistics2:quartz_glass>]
 ]);
+
+// formation
+recipes.remove(<appliedenergistics2:part:320>);
+recipes.addShaped(<appliedenergistics2:part:320> * 2, [
+	[<thermalfoundation:rockwool:15>,<actuallyadditions:item_crystal>,<thermalfoundation:rockwool:15>],
+	[<ore:ingotFluixSteel>,<appliedenergistics2:material:43>,<ore:ingotFluixSteel>]
+]);
+recipes.remove(<appliedenergistics2:part:321>);
+recipes.addShaped(<appliedenergistics2:part:321> * 2, [
+	[<thermalfoundation:rockwool:15>,<actuallyadditions:item_crystal:1>,<thermalfoundation:rockwool:15>],
+	[<ore:ingotFluixSteel>,<appliedenergistics2:material:43>,<ore:ingotFluixSteel>]
+]);
+
+// annihilation
+recipes.remove(<appliedenergistics2:part:300>);
+recipes.addShaped(<appliedenergistics2:part:300> * 2, [
+	[<thermalfoundation:rockwool>,<actuallyadditions:item_crystal>,<thermalfoundation:rockwool>],
+	[<ore:ingotFluixSteel>,<appliedenergistics2:material:44>,<ore:ingotFluixSteel>]
+]);
+recipes.remove(<appliedenergistics2:part:302>);
+recipes.addShaped(<appliedenergistics2:part:302> * 2, [
+	[<thermalfoundation:rockwool>,<actuallyadditions:item_crystal:1>,<thermalfoundation:rockwool>],
+	[<ore:ingotFluixSteel>,<appliedenergistics2:material:44>,<ore:ingotFluixSteel>]
+]);
+
+// exporter
+recipes.remove(<appliedenergistics2:part:260>);
+recipes.addShaped(<appliedenergistics2:part:260> * 2, [
+	[<actuallyadditions:item_crystal>,<appliedenergistics2:material:43>,<actuallyadditions:item_crystal>],
+	[<ore:ingotFluixSteel>,<ic2:ic2upgrades:7>,<ore:ingotFluixSteel>]
+]);
+recipes.remove(<appliedenergistics2:part:261>);
+recipes.addShaped(<appliedenergistics2:part:261> * 2, [
+	[<actuallyadditions:item_crystal:1>,<appliedenergistics2:material:43>,<actuallyadditions:item_crystal:1>],
+	[<ore:ingotFluixSteel>,<ic2:ic2upgrades:23>,<ore:ingotFluixSteel>]
+]);
+
+// importer
+recipes.remove(<appliedenergistics2:part:240>);
+recipes.addShaped(<appliedenergistics2:part:240> * 2, [
+	[<actuallyadditions:item_crystal>,<appliedenergistics2:material:44>,<actuallyadditions:item_crystal>],
+	[<ore:ingotFluixSteel>,<ic2:ic2upgrades:5>,<ore:ingotFluixSteel>]
+]);
+recipes.remove(<appliedenergistics2:part:241>);
+recipes.addShaped(<appliedenergistics2:part:241> * 2, [
+	[<actuallyadditions:item_crystal:1>,<appliedenergistics2:material:44>,<actuallyadditions:item_crystal:1>],
+	[<ore:ingotFluixSteel>,<ic2:ic2upgrades:21>,<ore:ingotFluixSteel>]
+]);
+
+// storage
+recipes.remove(<appliedenergistics2:part:220>);
+recipes.addShaped(<appliedenergistics2:part:220> * 2, [
+	[<ic2:ic2upgrades:7>,<appliedenergistics2:interface>],
+	[<ic2:ic2upgrades:5>,<contenttweaker:storage_module>]
+]);
+recipes.remove(<appliedenergistics2:part:221>);
+recipes.addShaped(<appliedenergistics2:part:221> * 2, [
+	[<ic2:ic2upgrades:23>,<appliedenergistics2:fluid_interface>],
+	[<ic2:ic2upgrades:21>,<contenttweaker:storage_module>]
+]);
+
+// emitter
+recipes.remove(<appliedenergistics2:part:280>);
+recipes.addShaped(<appliedenergistics2:part:280>, [
+	[<rs_ctr:lever:1>],
+	[<appliedenergistics2:material:23>],
+	[<actuallyadditions:item_crystal>]
+]);
+recipes.remove(<appliedenergistics2:part:281>);
+recipes.addShaped(<appliedenergistics2:part:281>, [
+	[<rs_ctr:lever:1>],
+	[<appliedenergistics2:material:23>],
+	[<actuallyadditions:item_crystal:1>]
+]);
+
+for i in 0 .. 15 {
+	var me_glass as IItemStack = <appliedenergistics2:part>.definition.makeStack(i);
+	var me_covered as IItemStack = <appliedenergistics2:part>.definition.makeStack(i + 20);
+	var me_smart as IItemStack = <appliedenergistics2:part>.definition.makeStack(i + 40);
+	var me_smart_dense as IItemStack = <appliedenergistics2:part>.definition.makeStack(i + 60);
+	var me_covered_dense as IItemStack = <appliedenergistics2:part>.definition.makeStack(i + 500);
+
+	Transposer.addFillRecipe(<appliedenergistics2:part:16>, me_glass, <liquid:water> * 100, 200);
+	Transposer.addFillRecipe(<appliedenergistics2:part:36>, me_covered, <liquid:water> * 100, 200);
+	Transposer.addFillRecipe(<appliedenergistics2:part:56>, me_smart, <liquid:water> * 100, 200);
+	Transposer.addFillRecipe(<appliedenergistics2:part:76>, me_smart_dense, <liquid:water> * 100, 200);
+	Transposer.addFillRecipe(<appliedenergistics2:part:516>, me_covered_dense, <liquid:water> * 100, 200);
+}

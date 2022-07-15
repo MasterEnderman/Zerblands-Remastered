@@ -18,10 +18,5 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.jei.JEI;
-
-JEI.removeAndHide(<energycontrol:seed_analyzer>);
-JEI.removeAndHide(<energycontrol:seed_library>);
-
 <ore:circuitBasic>.remove(<energycontrol:item_component:1>);
 <ore:circuitAdvanced>.remove(<energycontrol:item_component>);

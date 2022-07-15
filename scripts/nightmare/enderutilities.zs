@@ -131,6 +131,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<randomthings:runedust:10>,<randomthings:runedust:10>,<randomthings:runedust:10>]
         ]
     ],
+    <enderutilities:barrel> : [
+        [
+            [<immersiveengineering:wooden_device0>,<enderutilities:enderpart>,<immersiveengineering:wooden_device0>],
+            [<immersiveengineering:wooden_device0>,<storagedrawers:customdrawers>,<immersiveengineering:wooden_device0>],
+            [<immersiveengineering:wooden_device0>,<enderutilities:enderpart>,<immersiveengineering:wooden_device0>]
+        ]
+    ]
 };
 
 for key, value in recipeMapShaped {

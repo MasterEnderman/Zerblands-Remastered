@@ -184,6 +184,38 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:crushed_nether_wart>,<minecraft:netherbrick>],
             [<minecraft:netherbrick>,<contenttweaker:crushed_nether_wart>]
         ]
+    ],
+    <minecraft:dispenser> : [
+        [
+            [<tconstruct:materials>,<tconstruct:materials>,<tconstruct:materials>],
+            [<tconstruct:materials>,<minecraft:bow:*>,<tconstruct:materials>],
+            [<tconstruct:materials>,<contenttweaker:redstone_ingot>,<tconstruct:materials>]
+        ],
+        [
+            [null,<ore:stickWood>,<ore:string>],
+            [<ore:stickWood>,<minecraft:dropper>,<ore:string>],
+            [null,<ore:stickWood>,<ore:string>]
+        ]
+    ],
+    <minecraft:dropper> : [
+        [
+            [<tconstruct:materials>,<tconstruct:materials>,<tconstruct:materials>],
+            [<tconstruct:materials>,<ore:gearStone>,<tconstruct:materials>],
+            [<tconstruct:materials>,<contenttweaker:redstone_ingot>,<tconstruct:materials>]
+        ]
+    ],
+    <minecraft:observer> : [
+        [
+            [<tconstruct:materials>,<contenttweaker:stone_board>,<tconstruct:materials>],
+            [<contenttweaker:redstone_ingot>,<contenttweaker:redstone_ingot>,<ore:gemQuartz>],
+            [<tconstruct:materials>,<contenttweaker:stone_board>,<tconstruct:materials>]
+        ]
+    ],
+    <minecraft:lit_pumpkin> : [
+        [
+            [<minecraft:pumpkin>],
+            [<ore:torch>]
+        ]
     ]
 };
 

@@ -157,4 +157,24 @@
     <recipe name="Sagmill: Silicon" disabled="true">
         <disabled/>
     </recipe>
+
+    <recipe name="Tweak: Stick from Wood">
+        <disabled/>
+    </recipe>
+    <recipe name="Tweak: Chest from Wood">
+        <disabled/>
+    </recipe>
+    <recipe name="Tweak: Wood Hopper">
+        <disabled/>
+    </recipe>
+
+    <recipe name="Alloy: Photovoltaic Plate">
+        <disabled/>
+    </recipe>
+    <recipe name="Infinity Goop">
+        <disabled/>
+    </recipe>
+    <recipe name="Infinity Goop, Charcoal">
+        <disabled/>
+    </recipe>
 </enderio:recipes>

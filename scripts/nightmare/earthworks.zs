@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.inworldcrafting.FluidToItem;
+import mods.thermalexpansion.Transposer;
 
 recipes.removeShapeless(<earthworks:block_mud>);
 recipes.removeShapeless(<earthworks:block_cob>);
@@ -29,11 +30,16 @@ recipes.removeByRecipeName("earthworks:block_dry_stone");
 furnace.addRecipe(<earthworks:block_dry_stone>,<extrautils2:decorativesolid:2>);
 
 recipes.remove(<earthworks:item_mud>);
+
 FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<earthworks:item_dirt>], false);
+Transposer.addFillRecipe(<earthworks:item_mud>, <earthworks:item_dirt>, <liquid:water> * 100, 200);
+
 FluidToItem.transform(<earthworks:item_mud>, <liquid:water>, [<contenttweaker:soil>], false);
+Transposer.addFillRecipe(<earthworks:item_mud>, <contenttweaker:soil>, <liquid:water> * 100, 200);
 
 recipes.remove(<earthworks:item_slaked_lime>);
 FluidToItem.transform(<earthworks:item_slaked_lime>, <liquid:water>, [<earthworks:item_quicklime>], false);
+Transposer.addFillRecipe(<earthworks:item_slaked_lime>, <earthworks:item_quicklime>, <liquid:water> * 100, 200);
 
 recipes.removeByRecipeName("earthworks:item_lime_plaster_alt");
 FluidToItem.transform(<earthworks:item_lime_plaster> * 8, <liquid:water>, [<earthworks:item_quicklime> * 4,<earthworks:item_sand> * 4], true);

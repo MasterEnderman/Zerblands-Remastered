@@ -45,6 +45,11 @@ recipes.addShaped(<energycontrol:kit_assembler>, [
     [<contenttweaker:weakeneddiamond>,<contenttweaker:module_energy>,<contenttweaker:weakeneddiamond>]
 ]);
 
+recipes.addShaped(<energycontrol:item_kit:4>, [
+    [<ic2:itemmisc:260>,<energycontrol:item_component:3>],
+    [<ore:paper>,<ore:dyeLightGray>]
+]);
+
 // Basic Circuit
 KitAssembler.removeRecipe(<minecraft:redstone> * 2, <minecraft:iron_ingot>, <minecraft:flint>);
 KitAssembler.addRecipe(<contenttweaker:diode> * 2, <rs_ctr:wire> * 3, <contenttweaker:stone_board>, <energycontrol:item_component:1>, 100);
@@ -54,7 +59,7 @@ KitAssembler.removeRecipe(<minecraft:redstone> * 2, <minecraft:gold_ingot>, <ene
 KitAssembler.addRecipe(<contenttweaker:resistor> * 4, <forestry:thermionic_tubes:8>, <energycontrol:item_component:1>, <energycontrol:item_component>, 100);
 
 // Machine Casing
-KitAssembler.removeRecipe(<minecraft:iron_ingot> * 3, <minecraft:iron_ingot> * 3, <energycontrol:item_component:4> * 3);
+KitAssembler.removeRecipe(<minecraft:iron_ingot> * 4, <minecraft:heavy_weighted_pressure_plate>, <energycontrol:item_component:4> * 3);
 KitAssembler.addRecipe(<contenttweaker:advanced_assembly> * 3, <forestry:sturdy_machine>, <energycontrol:item_component>, <energycontrol:item_component:2>, 100);
 Altar.addAttunementAltarRecipe("energycontrol_machine_casing", <energycontrol:item_component:2>, 500, 800, [
     <abyssalcraft:calcifiedstone>,
