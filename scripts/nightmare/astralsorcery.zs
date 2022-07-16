@@ -103,7 +103,7 @@ Altar.addAttunementAltarRecipe("internal/altar/upgrade_tier3", <astralsorcery:bl
     <extrautils2:decorativesolid:3>,
 ]);
 
-Altar.addAttunementAltarRecipe("internal/altar/attunementrelay", <astralsorcery:blockritualpedestal>, 500, 800, [
+Altar.addAttunementAltarRecipe("internal/altar/ritualpedestal", <astralsorcery:blockritualpedestal>, 500, 800, [
     <astralsorcery:blockmarble:4>,
     <astralsorcery:itemcelestialcrystal>,
     <astralsorcery:blockmarble:4>,

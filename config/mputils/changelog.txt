@@ -1,6 +1,16 @@
 # Zerblands-Remastered
 
-## v2.1.9 - Nightmare Hotfix
+## v2.1.10 - Nightmare Hotfix II
+
+- added alternative Booze Barrel recipe
+- added alternative Ender Ingot recipe
+- added Certus Quartz Dust recipe  for AS Grindstone
+- enabled ingame guide IE chapter (forgot to register it)
+- fixed wrong recipe name for AS Altar recipe
+- tweaked Blood Infuser recipe
+- tweaked Blood Infused Stone recipe
+
+## v2.1.9 - Nightmare Hotfix I
 
 - added missing plate cast recipe
 - moved energy module recipe from table to basin

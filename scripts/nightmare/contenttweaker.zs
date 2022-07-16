@@ -177,6 +177,7 @@ Alchemy.add(<contenttweaker:electrotine_dust> * 4, [<botania:spark>, <ore:dustLa
 
 // inputStack, inputFluid, tier, outputStack, duration, xp
 BloodInfuser.addRecipe(<sonarcore:reinforcedstoneblock>, <liquid:evilcraftblood> * 2000, 0, <contenttweaker:blood_infused_stone>, 100, 10);
+BloodInfuser.addRecipe(<earthworks:block_dry_stone>, <liquid:evilcraftblood> * 4000, 0, <contenttweaker:blood_infused_stone>, 100, 10);
 
 BloodInfuser.addRecipe(<contenttweaker:rune_blank>, <liquid:evilcraftblood> * 10000, 0, <contenttweaker:rune_common>, 100, 5);
 BloodInfuser.addRecipe(<contenttweaker:rune_common>, <liquid:evilcraftblood> * 40000, 1, <contenttweaker:rune_uncommon>, 100, 5);

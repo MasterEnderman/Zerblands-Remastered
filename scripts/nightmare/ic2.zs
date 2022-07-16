@@ -325,6 +325,11 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [null,<tconstruct:pattern>,null],
             [<harvestcraft:beeswaxitem>|<forestry:beeswax>,<ore:logWood>,<harvestcraft:beeswaxitem>|<forestry:beeswax>],
             [null,<tconstruct:pattern>,null]
+        ],
+        [
+            [null,<tconstruct:pattern>,null],
+            [<embers:sealed_planks>,<embers:sealed_planks>,<embers:sealed_planks>],
+            [null,<tconstruct:pattern>,null]
         ]
     ],
     <ic2:blockmachinehv:2> : [

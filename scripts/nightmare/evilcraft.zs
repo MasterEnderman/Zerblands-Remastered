@@ -91,9 +91,9 @@ Empowerer.addRecipe(<evilcraft:environmental_accumulation_core>, <evilcraft:bloo
 
 recipes.remove(<evilcraft:blood_infuser>);
 Altar.addDiscoveryAltarRecipe("blood_infuser", <evilcraft:blood_infuser>, 200, 200, [
-    <sonarcore:stablestone_normal>, <sonarcore:stablestone_normal>, <sonarcore:stablestone_normal>,
-    <sonarcore:stablestone_normal>, <evilcraft:blood_infusion_core>, <sonarcore:stablestone_normal>,
-    <sonarcore:stablestone_normal>, <sonarcore:stablestone_normal>, <sonarcore:stablestone_normal>
+    <astralsorcery:blockblackmarble>, <astralsorcery:blockblackmarble>, <astralsorcery:blockblackmarble>,
+    <astralsorcery:blockblackmarble>, <evilcraft:blood_infusion_core>, <astralsorcery:blockblackmarble>,
+    <astralsorcery:blockblackmarble>, <astralsorcery:blockblackmarble>, <astralsorcery:blockblackmarble>
 ]);
 
 recipes.remove(<evilcraft:blood_chest>);

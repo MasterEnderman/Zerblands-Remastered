@@ -20,6 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.astralsorcery.Grindstone;
 import mods.enderio.AlloySmelter;
 import mods.enderio.SagMill;
 import mods.extrautils2.Crusher as XUCrusher;
@@ -93,6 +94,8 @@ recipes.addShaped("gear_wood", <thermalfoundation:material:22>, [
 
 Compactor.removeGearRecipe(<evilcraft:dark_gem>);
 
+Grindstone.addRecipe(<appliedenergistics2:material>, <appliedenergistics2:material:2>, 0.1f);
+
 Macerator.addRecipe(<enderio:item_material:32>, <minecraft:dye:4>);
 Macerator.addRecipe(findFirstItemFromMod("actuallyadditions","dust","diamond"), findFirstItemFromMod("minecraft","gem","diamond"));
 
@@ -117,7 +120,8 @@ var mapSimpleAlloy as IItemStack[][IItemStack] = {
     <quantumflux:darkstone> : [<ic2:blockutility:2>,<minecraft:concrete:15>],
     <ic2:itemmisc:261> : [findFirstItemFromMod("contenttweaker","ingot","ferromagneticAlloy"),<ic2:itemmisc:14> * 8],
     <randomthings:spectreanchor> : [<embers:aspectus_iron>,<randomthings:ingredient:3>*2],
-    <thermalfoundation:material:657> : [<architecturecraft:sawblade>, findFirstItemFromMod("thermalfoundation","ingot","steel")]
+    <thermalfoundation:material:657> : [<architecturecraft:sawblade>, findFirstItemFromMod("thermalfoundation","ingot","steel")],
+    <contenttweaker:ender_ingot> : [<embers:archaic_brick>, <minecraft:ender_pearl> * 2]
 };
 
 ArcFurnace.removeRecipe(findFirstItemFromMod("contenttweaker","ingot","redAlloy"));

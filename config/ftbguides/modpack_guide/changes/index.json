@@ -50,6 +50,11 @@
     "icon": "item:fluxnetworks:fluxcore"
   },
   {
+    "id": "ie",
+    "title": "Immersive Engineering",
+    "icon": "item:immersiveengineering:tool"
+  },
+  {
     "id": "it",
     "title": "Immersive Technology",
     "icon": "item:immersivetech:connectors"
