@@ -21,6 +21,7 @@ import scripts.functions.firstItemFromOreDict;
 import scripts.functions.itemMS;
 
 import mods.avaritia.ExtremeCrafting;
+import mods.embers.Melter;
 import mods.embers.Stamper;
 import mods.enderio.SagMill;
 import mods.thermalexpansion.InductionSmelter;
@@ -121,6 +122,26 @@ for material in listGears {
 
     recipes.remove(gear);
     Stamper.add(gear, fluid * 576, <embers:stamp_gear>);
+}
+
+var listAdditionalMelting as string[string] = {
+    "aluminum" : "tin",
+    "tin" : "aluminum",
+    "nickel" : "iron"
+};
+
+for metal, extra in listAdditionalMelting {
+    var plate as IIngredient = getOreDict("plate", metal);
+    var ingot as IIngredient = getOreDict("ingot", metal);
+    var nugget as IIngredient = getOreDict("nugget", metal);
+    var ore as IIngredient = getOreDict("ore", metal);
+    var fluid as ILiquidStack = getFluid(metal);
+    var ex_fluid as ILiquidStack = getFluid(extra);
+
+    Melter.add(fluid * 144, plate);
+    Melter.add(fluid * 144, ingot);
+    Melter.add(fluid * 16, nugget);
+    Melter.add(fluid * 288, ore, ex_fluid * 16);
 }
 
 var mapBedrock as IIngredient[IItemStack] = {

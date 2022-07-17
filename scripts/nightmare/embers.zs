@@ -157,6 +157,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:plateDawnstone>,<openmodularturrets:potato_cannon_turret>,<ore:plateDawnstone>],
             [<embers:block_caminite_brick>,<openmodularturrets:intermediate_tiered>,<embers:block_caminite_brick>]
         ]
+    ],
+    <embers:boiler> : [
+        [
+            [<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>],
+            [<contenttweaker:heating_coil>,<ore:plateDawnstone>,<contenttweaker:heating_coil>],
+            [<ore:plateCopper>,<embers:ember_activator>,<ore:plateCopper>]
+        ]
     ]
 };
 

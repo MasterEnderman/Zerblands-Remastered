@@ -72,13 +72,13 @@ for key, value in recipeMapShaped {
 recipes.remove(<abyssalcraft:necronomicon>);
 Altar.addDiscoveryAltarRecipe("necronomicon", <abyssalcraft:necronomicon>, 200, 200, [
 	<evilcraft:dark_power_gem>,
-	<xreliquary:salamander_eye>,
+	<minecraft:ender_eye>,
 	<evilcraft:dark_power_gem>,
-	<xreliquary:salamander_eye>,
+	<minecraft:ender_eye>,
 	<minecraft:book>,
-	<xreliquary:salamander_eye>,
+	<minecraft:ender_eye>,
 	<evilcraft:dark_power_gem>,
-	<xreliquary:salamander_eye>,
+	<minecraft:ender_eye>,
 	<evilcraft:dark_power_gem>
 ]);
 

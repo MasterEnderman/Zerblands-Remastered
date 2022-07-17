@@ -219,6 +219,8 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     ]
 };
 
+recipes.addShapeless(<minecraft:cobblestone> * 9, [<extrautils2:compressedcobblestone>]);
+
 for key, value in recipeMapShaped {
 	var index as int = 0;    
     recipes.remove(key);

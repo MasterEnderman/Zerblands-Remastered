@@ -1,5 +1,13 @@
 # Zerblands-Remastered
 
+## v2.1.11 - Nightmare Hotfix III
+
+- added missing Embers Melting recipes
+- added recipe to decompress cobblestone
+- added recipes for IE mold recycling
+- reworked Embers Beam Canon progression
+- tweaked Necronomicon recipe
+
 ## v2.1.10 - Nightmare Hotfix II
 
 - added alternative Booze Barrel recipe

@@ -36,6 +36,7 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Pulverizer;
 import mods.thermalexpansion.Sawmill;
 import mods.tconstruct.Casting;
+import mods.tconstruct.Melting;
 
 JEI.removeAndHide(<appliedenergistics2:material:40>);
 JEI.removeAndHide(<enderio:item_material:9>);
@@ -121,7 +122,6 @@ var mapSimpleAlloy as IItemStack[][IItemStack] = {
     <ic2:itemmisc:261> : [findFirstItemFromMod("contenttweaker","ingot","ferromagneticAlloy"),<ic2:itemmisc:14> * 8],
     <randomthings:spectreanchor> : [<embers:aspectus_iron>,<randomthings:ingredient:3>*2],
     <thermalfoundation:material:657> : [<architecturecraft:sawblade>, findFirstItemFromMod("thermalfoundation","ingot","steel")],
-    <contenttweaker:ender_ingot> : [<embers:archaic_brick>, <minecraft:ender_pearl> * 2]
 };
 
 ArcFurnace.removeRecipe(findFirstItemFromMod("contenttweaker","ingot","redAlloy"));
@@ -370,3 +370,19 @@ Casting.addTableRecipe(<contenttweaker:cast_wire>, <immersiveengineering:materia
 Casting.addTableRecipe(<tconstruct:cast_custom:3>, <embers:plate_caminite>, <liquid:gold>, 288, true, 100);
 Casting.addTableRecipe(<tconstruct:cast_custom:3>, <embers:plate_caminite>, <liquid:brass>, 144, true, 100);
 Casting.addTableRecipe(<tconstruct:cast_custom:3>, <embers:plate_caminite>, <liquid:alubrass>, 144, true, 100);
+
+var mapPress as IItemStack[] = [
+    <immersiveengineering:mold:0>,
+    <immersiveengineering:mold:1>,
+    <immersiveengineering:mold:2>,
+    <immersiveengineering:mold:3>,
+    <immersiveengineering:mold:4>,
+    <immersiveengineering:mold:5>,
+    <immersiveengineering:mold:6>,
+    <immersiveengineering:mold:7>,
+    <contenttweaker:mold_ingot>,
+];
+
+for item in mapPress {
+    Melting.addRecipe(getFluid("steel") * 864, item, 190);
+}

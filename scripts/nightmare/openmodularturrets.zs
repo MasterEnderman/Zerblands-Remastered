@@ -63,6 +63,11 @@ var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
                 [<minecraft:stonebrick>,<earthworks:block_dry_stone>,<minecraft:stonebrick>],
                 [null,<botania:spreader>,<ore:dustRedAlloy>],
                 [<minecraft:stonebrick>,<earthworks:block_dry_stone>,<minecraft:stonebrick>]
+            ],
+            [
+                [<minecraft:stonebrick>,<earthworks:block_dry_stone>,<minecraft:stonebrick>],
+                [null,<tconstruct:slimesling:*>,<ore:dustRedAlloy>],
+                [<minecraft:stonebrick>,<earthworks:block_dry_stone>,<minecraft:stonebrick>]
             ]
         ]
     },
