@@ -42,6 +42,9 @@ import mods.thermalexpansion.Transposer;
 JEI.removeAndHide(<tconstruct:throwball:1>);
 JEI.addItem(<tconstruct:slime_boots:3>);
 
+furnace.remove(<tconstruct:seared:4>);
+furnace.remove(<tconstruct:brownstone:4>);
+
 Drying.addRecipe(<tconstruct:materials:1>, <contenttweaker:pressed_mud>, 600);
 
 Compressor.addRecipe(<tconstruct:spaghetti>,<actuallyadditions:item_food:7>);
@@ -54,7 +57,9 @@ ArcFurnace.removeRecipe(<tconstruct:ingots:2>);
 ArcFurnace.addRecipe(<tconstruct:ingots:2> * 2, <ore:ingotCobalt>, null, 100, 512, [<ore:ingotArdite>, <ore:ingotPlatinum>]);
 
 Melting.removeRecipe(<liquid:stone>);
+Melting.addRecipe(<liquid:stone>*288, <tconstruct:seared>, 500);
 Melting.addRecipe(<liquid:stone>*144, <tconstruct:soil>, 500);
+Melting.addRecipe(<liquid:stone>*72, <tconstruct:materials>, 500);
 furnace.remove(<tconstruct:materials>);
 CokeOven.addRecipe(<tconstruct:materials>, 0, <tconstruct:soil>, 200);
 

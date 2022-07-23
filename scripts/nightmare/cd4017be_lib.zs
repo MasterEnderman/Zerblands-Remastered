@@ -20,6 +20,14 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+recipes.remove(<cd4017be_lib:m:402>);
+recipes.addShapeless(<cd4017be_lib:m:402> * 2, [
+    <ore:dustEnder>,
+    <astralsorcery:itemcraftingcomponent:2>,
+    <contenttweaker:energium_dust>,
+    <contenttweaker:electrotine_dust>
+]);
+
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <cd4017be_lib:m:403> : [
         [

@@ -368,7 +368,7 @@ var mapEnergyConduit as IItemStack[][] = [
 var index as int = 0;
 
 recipes.remove(<enderio:item_power_conduit>);
-recipes.addShaped(<enderio:item_power_conduit> * 2, [
+recipes.addShaped(<enderio:item_power_conduit> * 4, [
     [<enderio:item_material:4>,<enderio:item_material:75>,<enderio:item_material:4>],
     [<enderio:item_alloy_ingot:4>,<contenttweaker:module_energy>,<enderio:item_alloy_ingot:4>],
     [<enderio:item_material:4>,<enderio:item_material:75>,<enderio:item_material:4>]
@@ -380,7 +380,7 @@ while index <= 6 {
     var ingot as IItemStack = mapEnergyConduit[index+1][1];
 
     recipes.remove(conduit);
-    recipes.addShaped(conduit * 2, [
+    recipes.addShaped(conduit * 4, [
         [<enderio:item_material:4>,<enderio:item_material:75>,<enderio:item_material:4>],
         [ingot,pre_conduit,ingot],
         [<enderio:item_material:4>,<enderio:item_material:75>,<enderio:item_material:4>],
@@ -616,15 +616,27 @@ SliceNSplice.addRecipe(<enderio:item_material:43>, [
 ], 20000);
 
 recipes.remove(<enderio:item_item_conduit>);
-AlloySmelter.addRecipe(<enderio:item_item_conduit> * 2, [
+AlloySmelter.addRecipe(<enderio:item_item_conduit> * 4, [
     <thermaldynamics:duct_32:1>,
     <enderio:item_material:4> * 2,
     <enderio:item_alloy_nugget:5> * 3
 ], 5000);
-AlloySmelter.addRecipe(<enderio:item_item_conduit> * 2, [
+AlloySmelter.addRecipe(<enderio:item_item_conduit> * 4, [
     <extrautils2:pipe>,
     <enderio:item_material:4> * 2,
     <enderio:item_alloy_nugget:5> * 3
+], 5000);
+
+recipes.remove(<enderio:item_liquid_conduit>);
+AlloySmelter.addRecipe(<enderio:item_liquid_conduit> * 4, [
+    <thermaldynamics:duct_16>,
+    <enderio:item_material:4> * 2,
+    <enderio:block_fused_glass> * 3
+], 5000);
+AlloySmelter.addRecipe(<enderio:item_liquid_conduit> * 4, [
+    <extrautils2:pipe>,
+    <enderio:item_material:4> * 2,
+    <enderio:block_fused_glass> * 3
 ], 5000);
 
 SliceNSplice.addRecipe(<enderio:item_material>, [

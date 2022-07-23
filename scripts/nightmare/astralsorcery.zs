@@ -69,6 +69,12 @@ Altar.addDiscoveryAltarRecipe("internal/altar/grindstone", <astralsorcery:blockm
     <ore:stickWood>,  <ore:stickWood>, <ore:plankWood>
 ]);
 
+Altar.addDiscoveryAltarRecipe("basic_altar", <astralsorcery:blockaltar>, 200, 200, [
+    <astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>, <astralsorcery:blockmarble>,
+    <astralsorcery:blockmarble>, <ore:craftingTableWood>, <astralsorcery:blockmarble>,
+    <astralsorcery:blockmarble>,  null, <astralsorcery:blockmarble>
+]);
+
 Altar.addDiscoveryAltarRecipe("internal/altar/attunementrelay", <astralsorcery:blockattunementrelay>, 200, 200, [
     null, <rs_ctr:rs_port:3>, null,
     <ore:nuggetDawnstone>, <ore:acEssence>, <ore:nuggetDawnstone>,
@@ -204,7 +210,7 @@ Altar.addConstellationAltarRecipe("internal/altar/starlightinfuser", <astralsorc
     <astralsorcery:blockattunementrelay>,
     <astralsorcery:blockworldilluminator>,
     <tconstruct:large_plate>.withTag({Material: "aquamarine"}),
-    <xreliquary:altar>,
+    <evilcraft:blood_infuser>,
     <tconstruct:large_plate>.withTag({Material: "aquamarine"}),
     <astralsorcery:blockmarble:4>,
     <astralsorcery:blockmarble:6>,

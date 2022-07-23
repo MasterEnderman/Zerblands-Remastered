@@ -38,7 +38,7 @@ recipes.removeShaped(<thermaldynamics:retriever:4>);
 
 var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
     <thermaldynamics:duct_0> : {
-        3 : [
+        6 : [
             [
                 [<enderio:item_material:4>,<enderio:item_material:75>,<enderio:item_material:4>],
                 [<ore:ingotConductiveIron>,<ore:gearLead>,<ore:ingotConductiveIron>],
@@ -47,7 +47,7 @@ var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
         ]
     },
     <thermaldynamics:duct_0:1> : {
-        2 : [
+        4 : [
             [
                 [<enderio:item_material:4>,<enderio:item_material:75>,<enderio:item_material:4>],
                 [<thermaldynamics:duct_0>,<ore:gearInvar>,<thermaldynamics:duct_0>],
@@ -56,7 +56,7 @@ var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
         ]
     },
     <thermaldynamics:duct_0:6> : {
-        2 : [
+        4 : [
             [
                 [<enderio:item_material:4>,<enderio:item_material:75>,<enderio:item_material:4>],
                 [<thermaldynamics:duct_0:1>,<ore:gearElectrumFlux>,<thermaldynamics:duct_0:1>],
@@ -65,7 +65,7 @@ var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
         ]
     },
     <thermaldynamics:duct_0:9> : {
-        2 : [
+        4 : [
             [
                 [<gravisuit:superconductor>,<ic2:blockutility:3>,<gravisuit:superconductor>],
                 [<ic2:blockutility:3>,<thermaldynamics:duct_0:4>,<ic2:blockutility:3>],

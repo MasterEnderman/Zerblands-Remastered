@@ -1,5 +1,31 @@
 # Zerblands-Remastered
 
+## v2.1.12 - Nightmare Hotfix IV
+
+- updated AE2 Unofficial Extended Life
+- updated CraftTweaker
+- updated MixinBooter
+- updated ModularUI
+
+- added Astral Additions
+- added Integrated NBT
+
+- added dawnstone ingot <--> plate recipes
+- added recipe for Luminous Crafting Table to the Luminous Crafting Table
+- added remelting for seared stone
+- added fluid conduit recipe similar to the item conduit
+- changed Cooking For Blockheads Kitchen Floor recipe
+- cleaned up questbook
+- decreased Distillation Tower Energy requirements
+- fixed Core Sample Drill recipe
+- fixed Empowerer recipe
+- fixed Imbuing Station recipe
+- fixed Starlight Infuser recipe
+- fixed Telekinetic Alloy recipe
+- increaded the amount of pipes / conduits per recipe
+- removed coal dupe recipe
+- removed seared brick duplication
+
 ## v2.1.11 - Nightmare Hotfix III
 
 - added missing Embers Melting recipes

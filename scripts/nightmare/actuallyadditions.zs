@@ -148,7 +148,7 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     <actuallyadditions:block_empowerer> : [
         [<botania:managlass>,<astralsorcery:itemcraftingcomponent:4>,<botania:managlass>],
         [<enderio:item_material:12>,<actuallyadditions:block_display_stand>,<enderio:item_material:12>],
-        [<actuallyadditions:item_battery_double>,<thermalexpansion:frame>,<actuallyadditions:item_battery_double>]
+        [<actuallyadditions:item_battery>,<thermalexpansion:frame>,<actuallyadditions:item_battery>]
     ],
     <actuallyadditions:block_canola_press> : [
         [<ore:cobblestone>,<actuallyadditions:item_crystal:5>,<ore:cobblestone>],

@@ -59,6 +59,8 @@ import mods.tconstruct.Melting;
 <ore:matterDark>.add(<projecte:item.pe_matter>);
 <ore:matterRed>.add(<projecte:item.pe_matter:1>);
 
+furnace.remove(<minecraft:coal>);
+
 Pulverizer.addRecipe(<evilcraft:dark_gem_crushed>, <evilcraft:dark_gem>, 4000);
 SagMill.addRecipe([<evilcraft:dark_gem_crushed>], [100], <evilcraft:dark_gem>, "NONE", 5000);
 SagMill.addRecipe([<evilcraft:dark_gem> * 2,<evilcraft:dark_gem_crushed>], [100,30], <evilcraft:dark_ore>, "NONE", 5000);

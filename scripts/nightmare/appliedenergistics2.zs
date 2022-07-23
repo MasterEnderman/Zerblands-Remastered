@@ -123,6 +123,8 @@ recipes.addShapeless(<appliedenergistics2:part:520>, [
 	<appliedenergistics2:part:380>,<minecraft:bucket>,<appliedenergistics2:material:22>
 ]);
 
+recipes.addShapeless(<appliedenergistics2:material:46>,[<tp:ender_dust>]);
+
 Macerator.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material>);
 
 recipes.remove(<appliedenergistics2:light_detector>);

@@ -26,6 +26,7 @@ import mods.embers.Mixer;
 import mods.enderio.AlloySmelter;
 import mods.extrautils2.Resonator;
 import mods.immersiveengineering.Blueprint;
+import mods.immersiveengineering.MetalPress;
 import mods.jei.JEI;
 import mods.thermalexpansion.Crucible;
 
@@ -101,6 +102,8 @@ Blueprint.addRecipe("machinery", <embers:ember_bore>, [
     <contenttweaker:material_part:24> * 2,
     <contenttweaker:cutting_head> * 2,
 ]);
+
+MetalPress.addRecipe(<embers:ingot_dawnstone>, <embers:plate_dawnstone>, <contenttweaker:mold_ingot>, 2048);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <embers:mech_core> : [

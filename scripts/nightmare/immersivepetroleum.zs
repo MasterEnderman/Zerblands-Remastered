@@ -37,12 +37,12 @@ var styrene_rubber as ILiquidStack = <liquid:styrene_butadiene_rubber>;
 
 var bitumen as IItemStack = <thermalfoundation:material:892>;
 
-Distillation.addRecipe([heavy_fuel * 5, light_fuel * 30, <liquid:gasoline> * 35, naphta * 30], [bitumen], <liquid:oil> * 100, 2048, 1, [0.09]);
-Distillation.addRecipe([heavy_fuel * 5, light_fuel * 30, <liquid:gasoline> * 35, naphta * 30], [bitumen], <liquid:crude_oil> * 100, 2048, 1, [0.11]);
+Distillation.addRecipe([heavy_fuel * 5, light_fuel * 30, <liquid:gasoline> * 35, naphta * 30], [bitumen], <liquid:oil> * 100, 512, 1, [0.09]);
+Distillation.addRecipe([heavy_fuel * 5, light_fuel * 30, <liquid:gasoline> * 35, naphta * 30], [bitumen], <liquid:crude_oil> * 100, 512, 1, [0.11]);
 
-Distillation.addRecipe([heavy_fuel * 10, light_fuel * 35, <liquid:gasoline> * 15, naphta * 40], [bitumen], <liquid:coal> * 100, 2048, 1, [0.05]);
+Distillation.addRecipe([heavy_fuel * 10, light_fuel * 35, <liquid:gasoline> * 15, naphta * 40], [bitumen], <liquid:coal> * 100, 512, 1, [0.05]);
 
-Distillation.addRecipe([heavy_fuel * 10, light_fuel * 10, toluene * 20, benzene * 50, butadiene * 50, ethylene * 60], [<contenttweaker:coal_dust>], <liquid:steamed_naphtha> * 200, 2048, 1, [0.5]);
+Distillation.addRecipe([heavy_fuel * 10, light_fuel * 10, toluene * 20, benzene * 50, butadiene * 50, ethylene * 60], [<contenttweaker:coal_dust>], <liquid:steamed_naphtha> * 200, 512, 1, [0.5]);
 
 Still.addRecipe(<liquid:gasoline> * 100, <liquid:toluene> * 100, 20);
 Still.addRecipe(<liquid:lubricant> * 25, <liquid:creosote> * 100, 20);

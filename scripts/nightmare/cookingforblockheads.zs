@@ -24,3 +24,9 @@ import mods.evilcraft.BloodInfuser;
 
 recipes.remove(<cookingforblockheads:recipe_book:2>);
 BloodInfuser.addRecipe(<cookingforblockheads:recipe_book:1>, <liquid:evilcraftblood> * 10000, 1, <cookingforblockheads:recipe_book:2>, 400, 100);
+
+recipes.remove(<cookingforblockheads:kitchen_floor>);
+recipes.addShaped(<cookingforblockheads:kitchen_floor> * 4, [
+    [<astralsorcery:blockmarble>,<astralsorcery:blockblackmarble>],
+    [<astralsorcery:blockblackmarble>,<astralsorcery:blockmarble>]
+]);

@@ -35,14 +35,6 @@ recipes.addShapeless(<rs_ctr:wire_anchor> * 4, [<appliedenergistics2:nether_quar
 recipes.addShapeless(<rs_ctr:wire_anchor> * 4, [<appliedenergistics2:certus_quartz_cutting_knife:*>, <appliedenergistics2:part:120>]);
 Extractor.addRecipe(<rs_ctr:wire_anchor> * 4, <appliedenergistics2:part:120>);
 
-recipes.remove(<cd4017be_lib:m:402>);
-recipes.addShapeless(<cd4017be_lib:m:402> * 2, [
-    <appliedenergistics2:material:46>,
-    <astralsorcery:itemcraftingcomponent:2>,
-    <contenttweaker:energium_dust>,
-    <contenttweaker:electrotine_dust>
-]);
-
 recipes.remove(<rs_ctr:rs_port>);
 calc_basic(<rs_ctr:rs_port>,<contenttweaker:stone_board>,<ore:dustRedstone>);
 

@@ -203,6 +203,14 @@ Blueprint.addRecipe("components", <immersiveengineering:material:8>, [
     <ore:gearLead> * 1
 ]);
 
+recipes.remove(<immersiveengineering:material:9>);
+Blueprint.removeRecipe(<immersiveengineering:material:9>);
+Blueprint.addRecipe("components", <immersiveengineering:material:9>, [
+    <ore:stickSteel> * 4,
+    <ore:plateBronze> * 2,
+    <ore:gearElectrum> * 1
+]);
+
 Blueprint.removeRecipe(<immersiveengineering:material:27>);
 Blueprint.addRecipe("components", <immersiveengineering:material:27>, [
     <immersiveengineering:stone_decoration:8> * 1,
@@ -498,8 +506,8 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     ],
     <immersiveengineering:metal_device1:7> : [
         [
-            [<immersiveengineering:metal_decoration1:1>,<ic2:blockminingpipe>,<immersiveengineering:metal_decoration1:1>],
-            [<immersiveengineering:metal_decoration1:1>,<ic2:blockminingpipe>,<immersiveengineering:metal_decoration1:1>],
+            [<immersiveengineering:metal_decoration1:1>,<immersiveengineering:material:9>,<immersiveengineering:metal_decoration1:1>],
+            [<immersiveengineering:metal_decoration1:1>,<actuallyadditions:item_misc:16>,<immersiveengineering:metal_decoration1:1>],
             [<immersiveengineering:metal_decoration0:4>,<immersiveengineering:drillhead>,<immersiveengineering:metal_decoration0:4>]
         ]
     ],

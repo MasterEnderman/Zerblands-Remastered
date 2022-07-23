@@ -2,13 +2,13 @@
 	x: 2.0d,
 	y: 4.5d,
 	dependencies: [
-		"7528d306"
+		"7287abd6"
 	],
 	tasks: [{
-		uid: "f0337c70",
+		uid: "0985b819",
 		type: "item",
 		items: [{
-			item: "gendustry:industrial_apiary"
+			item: "actuallyadditions:block_farmer"
 		}]
 	}]
 }
