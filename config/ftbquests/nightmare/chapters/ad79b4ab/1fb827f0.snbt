@@ -1,5 +1,5 @@
 {
-	x: 4.0d,
+	x: 6.0d,
 	y: 12.5d,
 	text: [
 		"Easier Rubber Production"
@@ -26,6 +26,7 @@
 					2b
 				]
 			}
-		}]
+		}],
+		ignore_nbt: 1b
 	}]
 }

@@ -1,6 +1,9 @@
 {
 	x: 12.0d,
 	y: 6.5d,
+	text: [
+		"XNet in combination with a Storage Scanner is a great option for a storage system before you have access to AE2."
+	],
 	dependencies: [
 		"bdc179e3"
 	],
@@ -9,6 +12,13 @@
 		type: "item",
 		items: [{
 			item: "xnet:controller"
+		}]
+	},
+	{
+		uid: "b3f3f24d",
+		type: "item",
+		items: [{
+			item: "rftools:storage_scanner"
 		}]
 	}]
 }

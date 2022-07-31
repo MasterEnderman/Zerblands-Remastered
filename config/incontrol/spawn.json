@@ -5,5 +5,15 @@
             "tconstruct:blueslime"
         ],
         "result": "deny"
+    },
+    {
+        "mob": "abyssalcraft:abyssalzombie",
+        "mincount": 75,
+        "result": "deny"
+    },
+    {
+        "mob": "abyssalcraft:depthsghoul",
+        "mincount": 75,
+        "result": "deny"
     }
 ]

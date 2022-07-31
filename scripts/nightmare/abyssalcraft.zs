@@ -109,9 +109,9 @@ Rituals.modifyRitualOfferings("summonAsorah", [
 	<contenttweaker:malignant_heart>,
 	<xreliquary:salamander_eye>,
 	<abyssalcraft:skin>,
-	<xreliquary:infernal_claws>,
+	<xreliquary:mob_ingredient:13>,
 	<abyssalcraft:skin>,
-	<xreliquary:infernal_claws>,
+	<xreliquary:mob_ingredient:13>,
 	<abyssalcraft:skin>,
 	<xreliquary:salamander_eye>
 ]);

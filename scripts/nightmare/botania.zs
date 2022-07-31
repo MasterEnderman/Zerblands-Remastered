@@ -161,9 +161,9 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     	[<ore:ingotManasteel>,<ore:plateGold>,<ore:ingotManasteel>]
     ],
     <botania:pylon:1> : [
-    	[<ore:ingotTerrasteel>,<bloodmagic:sigil_green_grove>,<ore:ingotTerrasteel>],
+    	[<ore:ingotTerrasteel>,<xreliquary:salamander_eye>,<ore:ingotTerrasteel>],
     	[<ore:ingotTerrasteel>,<botania:pylon>,<ore:ingotTerrasteel>],
-    	[<ore:ingotTerrasteel>,<xreliquary:salamander_eye>,<ore:ingotTerrasteel>]
+    	[<ore:ingotTerrasteel>,<randomthings:naturecore>,<ore:ingotTerrasteel>]
     ],
     <botania:pylon:2> : [
     	[<ore:ingotElvenElementium>,<ore:elvenPixieDust>,<ore:ingotElvenElementium>],
@@ -204,6 +204,11 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
 		[<botania:manaresource:16>,<botania:manaresource:16>,<botania:manaresource:16>],
 		[<botania:manaresource:16>,<harvestcraft:wovencottonitem>,<botania:manaresource:16>],
 		[<botania:manaresource:16>,<botania:manaresource:16>,<botania:manaresource:16>]
+	],
+	<botania:pool:1> : [
+		[<avaritiatweaks:gaia_block>,<contenttweaker:ender_token>,<avaritiatweaks:gaia_block>],
+		[<bloodmagic:blood_tank:15>,<botania:pool:3>,<bloodmagic:blood_tank:15>],
+		[<avaritiatweaks:gaia_block>,<contenttweaker:omega_core>,<avaritiatweaks:gaia_block>]
 	]
 };
 

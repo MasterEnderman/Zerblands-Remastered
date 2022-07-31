@@ -1,14 +1,14 @@
 {
 	x: 10.0d,
-	y: 7.0d,
+	y: 11.0d,
 	dependencies: [
 		"78dce310"
 	],
 	tasks: [{
-		uid: "dd66f5b2",
+		uid: "47c6d4d2",
 		type: "item",
 		items: [{
-			item: "projecte:transmutation_table"
+			item: "botania:pool 1 1"
 		}]
 	}]
 }

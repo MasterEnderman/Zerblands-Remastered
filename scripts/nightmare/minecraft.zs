@@ -20,6 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.actuallyadditions.AtomicReconstructor;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.CokeOven;
 import mods.jei.JEI;
@@ -43,6 +44,8 @@ Melting.removeRecipe(<liquid:iron>, <minecraft:activator_rail>);
 
 furnace.remove(<minecraft:brick>);
 furnace.addRecipe(<minecraft:brick>, <contenttweaker:pressed_clay>);
+
+AtomicReconstructor.addRecipe(<minecraft:clay_ball>, <earthworks:item_lime_plaster>, 200);
 
 Compactor.removeStorageRecipe(<minecraft:dye:4>);
 

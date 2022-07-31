@@ -181,8 +181,14 @@ for output, input in mapSimpleCrush {
     XUCrusher.add(output, input);
 }
 
+Crusher.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material>, 2048);
+XUCrusher.add(<appliedenergistics2:material:2>, <appliedenergistics2:material>);
+
 Sawmill.addRecipe(<bibliocraft:framingsheet> * 2, <ore:slabWood>.firstItem, 1500);
 Saw.addRecipe(<bibliocraft:framingsheet> * 2, <ore:slabWood>);
+
+Sawmill.addRecipe(<bibliocraft:framingsheet> * 4, <ore:slabTreatedWood>.firstItem, 1500);
+Saw.addRecipe(<bibliocraft:framingsheet> * 4, <ore:slabTreatedWood>);
 
 Sawmill.addRecipe(<bibliocraft:framingboard>  * 2, <bibliocraft:framingsheet>, 1500);
 Saw.addRecipe(<bibliocraft:framingboard>  * 2, <bibliocraft:framingsheet>);
@@ -289,7 +295,17 @@ recipes.addShaped(<minecraft:stick> * 2, [
     [<ore:plankWood>],
     [<ore:plankWood>]
 ]);
+recipes.addShaped(<minecraft:stick> * 4, [
+    [<earthworks:tool_saw:*>.transformDamage(3)],
+    [<ore:plankWood>],
+    [<ore:plankWood>]
+]);
 recipes.addShaped(<minecraft:stick> * 8, [
+    [<ore:logWood>],
+    [<ore:logWood>]
+]);
+recipes.addShaped(<minecraft:stick> * 16, [
+    [<earthworks:tool_saw:*>.transformDamage(6)],
     [<ore:logWood>],
     [<ore:logWood>]
 ]);
@@ -298,6 +314,11 @@ recipes.remove(<immersiveengineering:material>);
 Sawmill.addRecipe(<immersiveengineering:material>*4, <immersiveengineering:treated_wood>, 400);
 Saw.addRecipe(<immersiveengineering:material> * 6, <ore:plankTreatedWood>);
 recipes.addShaped(<immersiveengineering:material> * 2, [
+    [<ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>]
+]);
+recipes.addShaped(<immersiveengineering:material> * 4, [
+    [<earthworks:tool_saw:*>.transformDamage(3)],
     [<ore:plankTreatedWood>],
     [<ore:plankTreatedWood>]
 ]);

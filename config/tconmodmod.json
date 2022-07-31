@@ -1,0 +1,20 @@
+[
+    {
+        "modifier": "sharpness",
+        "mutations": [
+            {
+                "type": "max_level",
+                "value": 25
+            }
+        ]
+    },
+    {
+        "modifier": "resistant_armor",
+        "mutations": [
+            {
+                "type": "max_level",
+                "value": 10
+            }
+        ]
+    }
+]

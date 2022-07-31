@@ -24,6 +24,7 @@
 				],
 				Level: 0b
 			}
-		}]
+		}],
+		ignore_nbt: 1b
 	}]
 }

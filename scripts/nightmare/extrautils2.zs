@@ -144,13 +144,18 @@ Extractor.addRecipe(<extrautils2:flattransfernode:1> * 2, <extrautils2:grocket:2
 recipes.remove(<extrautils2:interactionproxy>);
 calc_flawless(<extrautils2:interactionproxy>, <actuallyadditions:block_phantomface>, <actuallyadditions:block_phantom_liquiface>, <actuallyadditions:block_phantom_energyface>, <extrautils2:powermanager>);
 
+recipes.addShapeless(<extrautils2:drum>, [<extrautils2:drum>]);
+
 recipes.remove(<extrautils2:drum:1>);
+recipes.addShapeless(<extrautils2:drum:1>, [<extrautils2:drum:1>]);
 calc_basic(<extrautils2:drum:1>, <extrautils2:drum>, <contenttweaker:reinforced_iron_block>);
 
 recipes.remove(<extrautils2:drum:2>);
+recipes.addShapeless(<extrautils2:drum:2>, [<extrautils2:drum:2>]);
 calc_atomic(<extrautils2:drum:2>, <contenttweaker:flawless_block>, <extrautils2:drum:1>, <contenttweaker:enriched_gold_block>);
 
 recipes.remove(<extrautils2:drum:3>);
+recipes.addShapeless(<extrautils2:drum:3>, [<extrautils2:drum:3>]);
 calc_flawless(<extrautils2:drum:3>, <extrautils2:simpledecorative:1>, <extrautils2:drum:2>, <extrautils2:klein>, <extrautils2:simpledecorative:1>);
 
 recipes.remove(<extrautils2:ingredients:2>);

@@ -134,11 +134,11 @@ var mapAlchemyTable as IIngredient[][IItemStack][int] = {
         <xreliquary:apothecary_mortar> : [<botania:altar>,<xreliquary:mob_ingredient:3>,<xreliquary:mob_ingredient:3>,<xreliquary:mob_ingredient:3>,<botania:pestleandmortar>,<sonarcore:stablestone_normal>],
         <xreliquary:void_tear> : [<minecraft:ghast_tear>,<xreliquary:mob_ingredient:4>,<evilcraft:ender_tear>,<xreliquary:mob_ingredient:11>],
         <xreliquary:salamander_eye> : [<minecraft:ender_eye>,<xreliquary:mob_ingredient:7>,<xreliquary:mob_ingredient:11>,<xreliquary:mob_ingredient:10>],
+        <xreliquary:fertile_potion> : [<minecraft:water_bucket>,<forestry:mulch>,<forestry:mulch>,<xreliquary:mob_ingredient:9>,<minecraft:glass_bottle>],
     },
     2 : {
         <xreliquary:apothecary_cauldron> : [<minecraft:cauldron>,<xreliquary:mob_ingredient:13>,<xreliquary:mob_ingredient:13>,<xreliquary:mob_ingredient:7>,<xreliquary:mob_ingredient:11>,<xreliquary:mob_ingredient:3>],
         <xreliquary:handgun> : [<xreliquary:gun_part>,<xreliquary:gun_part:1>,<xreliquary:gun_part:2>,<xreliquary:mob_ingredient:4>,<ore:ingotDarkSteel>,<immersiveengineering:material:13>],
-        <xreliquary:fertile_potion> : [<minecraft:water_bucket>,<forestry:mulch>,<forestry:mulch>,<xreliquary:mob_ingredient:9>,<minecraft:glass_bottle>],
         <xreliquary:lantern_of_paranoia> : [<immersiveengineering:metal_decoration2:4>,<xreliquary:mob_ingredient:7>,<xreliquary:mob_ingredient:4>,<xreliquary:interdiction_torch>],
         <xreliquary:twilight_cloak> : [<embers:ashen_cloak_chest>,<xreliquary:mob_ingredient:15>,<xreliquary:mob_ingredient:15>,<xreliquary:mob_ingredient:15>,<xreliquary:mob_ingredient:15>,<evilcraft:ender_tear>],
         <xreliquary:holy_hand_grenade> : [<xreliquary:glowing_water>,<ore:coinGold>,<appliedenergistics2:tiny_tnt>,<xreliquary:mob_ingredient:3>],

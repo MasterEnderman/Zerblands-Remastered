@@ -610,6 +610,10 @@ Transposer.addFillRecipe(<ic2:itemcellempty:1>, <ic2:itemcellempty>,  <liquid:wa
 Transposer.addFillRecipe(<ic2:itemcellempty:2>, <ic2:itemcellempty>,  <liquid:lava> * 1000, 2000);
 
 Compactor.addPressRecipe(<ic2:itembatcrystal>, <contenttweaker:energium_dust> * 18, 8000);
+Compactor.addPressRecipe(<ic2:itemmisc:251>, <ic2:itemmisc:250> * 2, 8000);
+Compactor.addPressRecipe(<ic2:itemmisc:253>, <ic2:itemmisc:252> * 2, 8000);
+Compactor.addPressRecipe(<ic2:itemmisc:351>, <ic2:itemmisc:350> * 2, 8000);
+Compactor.addPressRecipe(<ic2:itemmisc:356>, <ic2:itemmisc:354> * 2, 8000);
 
 recipes.remove(<ic2:itemheatstorage>);
 Transposer.addFillRecipe(<ic2:itemheatstorage>, <ic2:itemcellempty>,  <liquid:cryotheum> * 100, 2000);

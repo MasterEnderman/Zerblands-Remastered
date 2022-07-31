@@ -1,5 +1,34 @@
 # Zerblands-Remastered
 
+## v2.1.13 - Nightmare Hotfix V
+
+- updated CensoredASM
+- updated Inventory Bogo Sorter
+- updated ModularUI
+
+- added Tinkers' Modifier Modifier
+
+- added certus quartz crystal to dust recipe to IE and XU2 crusher
+- added clay recipe with Atomic Reconstructor
+- added more wood processing recipes with the saw
+- added recipes to clear XU2 drums
+- decreased energy consuption of Tiered Magnets
+- fixed bibliocraft framing materials EMC value
+- fixed bloodmagic orbs textures in ftb guide
+- fixed electrotine dust quest dependency
+- fixed fertile potion recipe
+- fixed Natura Pylon
+- fixed RFTools Machine Frame
+- fixed salt quest showing the wrong salt
+- fixed "summonAsorah" ritual
+- fixed TE machine nbt settings in quests
+- increaded energy storage of Tiered Magnets
+- increased max resistance level of TiCo armor
+- increased max sharpness level of TiCo tools
+- increaded RFTools storage tablet energy storage size
+- reduced Solar Tower processing time
+- reorganized questchapter "Mid-Game"
+
 ## v2.1.12 - Nightmare Hotfix IV
 
 - updated AE2 Unofficial Extended Life

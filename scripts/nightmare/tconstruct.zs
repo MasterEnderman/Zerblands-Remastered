@@ -39,6 +39,8 @@ import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Transposer;
 
+import scripts.functions.calc_atomic;
+
 JEI.removeAndHide(<tconstruct:throwball:1>);
 JEI.addItem(<tconstruct:slime_boots:3>);
 
@@ -48,6 +50,8 @@ furnace.remove(<tconstruct:brownstone:4>);
 Drying.addRecipe(<tconstruct:materials:1>, <contenttweaker:pressed_mud>, 600);
 
 Compressor.addRecipe(<tconstruct:spaghetti>,<actuallyadditions:item_food:7>);
+
+calc_atomic(<tconstruct:materials:50>,<minecraft:skull:3>,<ore:blockEnchantedMetal>,<quantumflux:craftingpiece:1>);
 
 InductionSmelter.removeRecipe(<tconstruct:ingots:0>, <tconstruct:ingots:1>);
 Alloy.removeRecipe(<liquid:manyullyn>);

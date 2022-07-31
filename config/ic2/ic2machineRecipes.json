@@ -660,6 +660,7 @@
   "tile.blocks.integrateddynamics.menril_planks_To_Sticks_-241288806": true,
   "item.appliedenergistics2.multi_part.cable_glass_ct": true,
   "item.appliedenergistics2.material.silicon_ct": true,
-  "item.immersiveengineering.material.stick_treated_ct": true
+  "item.immersiveengineering.material.stick_treated_ct": true,
+  "item.FramingSheet_ct_1": true
  }
 }

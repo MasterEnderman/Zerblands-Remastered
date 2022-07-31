@@ -1,6 +1,6 @@
 {
-	x: 6.0d,
-	y: 4.5d,
+	x: 10.0d,
+	y: 38.5d,
 	dependencies: [
 		"00d452ed"
 	],
@@ -24,6 +24,7 @@
 				],
 				Level: 0b
 			}
-		}]
+		}],
+		ignore_nbt: 1b
 	}]
 }

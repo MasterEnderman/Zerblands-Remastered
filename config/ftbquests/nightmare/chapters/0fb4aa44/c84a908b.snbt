@@ -8,7 +8,7 @@
 		uid: "ce28ff20",
 		type: "item",
 		items: [{
-			item: "immersivetech:material"
+			item: "harvestcraft:saltitem"
 		}]
 	}]
 }

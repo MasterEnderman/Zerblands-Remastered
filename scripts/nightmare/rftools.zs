@@ -114,10 +114,10 @@ Altar.addDiscoveryAltarRecipe("powercell_card", <rftools:powercell_card>, 200, 2
 recipes.remove(<rftools:machine_frame>);
 Altar.addConstellationAltarRecipe("rft_machine_frame", <rftools:machine_frame>, 800, 200, [
     <contenttweaker:atomic_module>,
-    <extrautils2:poweroverload>,
+    <contenttweaker:atomic_assembly>,
     <contenttweaker:atomic_module>,
     <actuallyadditions:item_crystal_empowered:1>,
-    <contenttweaker:atomic_assembly>,
+    <opencomputers:case3>,
     <actuallyadditions:item_crystal_empowered:1>,
     <contenttweaker:atomic_module>,
     <rftools:machine_base>,

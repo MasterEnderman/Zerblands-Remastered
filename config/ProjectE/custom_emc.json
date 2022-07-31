@@ -743,6 +743,14 @@
     {
       "item": "contenttweaker:runestone_chiseled|0",
       "emc": 8
+    },
+    {
+      "item": "bibliocraft:framingsheet|0",
+      "emc": 2
+    },
+    {
+      "item": "bibliocraft:framingboard|0",
+      "emc": 1
     }
   ]
 }

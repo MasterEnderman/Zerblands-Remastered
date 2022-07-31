@@ -186,9 +186,9 @@ BloodInfuser.addRecipe(<contenttweaker:rune_rare>, <liquid:evilcraftblood> * 640
 
 // mods.immersivetechnology.SolarTower.addRecipe(ILiquidStack outputFluid, ILiquidStack inputFluid, int time);
 SolarTower.removeRecipe(<liquid:water>);
-SolarTower.addRecipe(<liquid:brackish_water> * 100, <liquid:water> * 1000, 600);
-SolarTower.addRecipe(<liquid:saline_water> * 100, <liquid:brackish_water> * 1000, 600);
-SolarTower.addRecipe(<liquid:briny_water> * 100, <liquid:saline_water> * 1000, 600);
+SolarTower.addRecipe(<liquid:brackish_water> * 100, <liquid:water> * 1000, 60);
+SolarTower.addRecipe(<liquid:saline_water> * 100, <liquid:brackish_water> * 1000, 60);
+SolarTower.addRecipe(<liquid:briny_water> * 100, <liquid:saline_water> * 1000, 60);
 
 Altar.addDiscoveryAltarRecipe("grinding_wheel", <contenttweaker:grind_wheel>, 200, 200, [
     <ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>,
