@@ -339,6 +339,12 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     ]
 };
 
+recipes.addShaped(<extrautils2:ingredients> * 4, [
+    [<ore:dustRedstone>,<extrautils2:endershard>,<ore:dustRedstone>],
+    [<extrautils2:endershard>,<astralsorcery:itemcraftingcomponent:4>,<extrautils2:endershard>],
+    [<ore:dustRedstone>,<extrautils2:endershard>,<ore:dustRedstone>]
+]);
+
 for key, value in recipeMapShaped {
 	var index as int = 0;    
     recipes.remove(key);

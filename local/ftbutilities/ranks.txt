@@ -18,8 +18,8 @@ ftbutilities.tpa.warmup: 0s
 
 [nightmare]
 power: 2
-ftbutilities.claims.max_chunks: 1024
-ftbutilities.chunkloader.max_chunks: 50
+ftbutilities.claims.max_chunks: 2048
+ftbutilities.chunkloader.max_chunks: 100
 ftbutilities.homes.max: 1
 ftbutilities.chunkloader.load_offline: true
 ftbutilities.homes.cooldown: 0s

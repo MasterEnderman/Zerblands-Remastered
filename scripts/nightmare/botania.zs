@@ -403,7 +403,7 @@ var mapBotaniaRune as IItemStack[][IItemStack][int] = {
 		<botanicadds:rune_tp> : [
 			<contenttweaker:rune_rare>,
 			<botania:manaresource:23>,
-			<enderutilities:enderpart:17>,
+			<enderutilities:enderpart:16>,
 			<rftools:infused_enderpearl>,
 			<enderutilities:linkcrystal>
 		],

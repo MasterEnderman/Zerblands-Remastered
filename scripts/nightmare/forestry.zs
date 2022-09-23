@@ -240,6 +240,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:gearBronze>,<forestry:chipsets>,<ore:gearBronze>]
         ]
     ],
+    <forestry:bee_house> : [
+        [
+            [<ore:slabTreatedWood>,<ore:slabTreatedWood>,<ore:slabTreatedWood>],
+            [<ore:plankTreatedWood>,<harvestcraft:apiary>,<ore:plankTreatedWood>],
+            [<ore:plankTreatedWood>,<ore:plankTreatedWood>,<ore:plankTreatedWood>]
+        ]
+    ]
 };
 
 for key, value in recipeMapShaped {
@@ -365,9 +372,9 @@ for circuit, data in boards {
 }
 
 Carpenter.addRecipe(<forestry:crafting_material:7>, [
-    [<thermalfoundation:material:819>,<ic2:itemmisc:357>,<thermalfoundation:material:819>],
-    [<ic2:itemmisc:357>,<earthworks:item_timber>,<ic2:itemmisc:357>],
-    [<thermalfoundation:material:819>,<ic2:itemmisc:357>,<thermalfoundation:material:819>]
+    [<thermalfoundation:material:819>,<earthworks:item_timber>,<thermalfoundation:material:819>],
+    [<earthworks:item_timber>,<ic2:itemmisc:357>,<earthworks:item_timber>],
+    [<thermalfoundation:material:819>,<earthworks:item_timber>,<thermalfoundation:material:819>]
 ], 10, <liquid:biomass> * 250);
 
 Carpenter.removeRecipe(<forestry:oak_stick>);

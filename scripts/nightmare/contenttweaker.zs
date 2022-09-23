@@ -30,6 +30,7 @@ import mods.botania.RuneAltar;
 import mods.botania.PureDaisy;
 import mods.embers.Alchemy;
 import mods.enderio.AlloySmelter;
+import mods.enderio.SagMill;
 import mods.enderio.SliceNSplice;
 import mods.enderio.SoulBinder;
 import mods.energycontrol.KitAssembler;
@@ -43,6 +44,7 @@ import mods.ic2.Macerator;
 import mods.immersiveengineering.AlloySmelter as Kiln;
 import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.Blueprint;
+import mods.immersiveengineering.Crusher;
 import mods.immersiveengineering.BottlingMachine;
 import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.Mixer;
@@ -93,6 +95,9 @@ betterExplosion(<contenttweaker:q1> * 64, <advancedsolars:enrichedsunnarium>);
 
 TERefinery.removeRecipe(<liquid:oil>);
 TERefinery.removeRecipe(<liquid:crude_oil>);
+
+SagMill.addRecipe([<contenttweaker:small_stone>], [100], <thermalfoundation:material:864>, "NONE", 1000);
+Crusher.addRecipe(<contenttweaker:small_stone>, <thermalfoundation:material:864>, 2048);
 
 Casting.addTableRecipe(<contenttweaker:lithium_dust>, null, <liquid:briny_water>, 200, false, 600);
 Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","plate","StyreneButadieneRubber"), <tconstruct:cast_custom:3> ,<liquid:styrene_butadiene_rubber>, 200, false, 120);
@@ -333,6 +338,16 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
         [
             [null,<randomthings:ingredient:8>,null],
             [<contenttweaker:small_stone>,<ore:slimeball>,<contenttweaker:small_stone>],
+            [null,<contenttweaker:clay_plate>,null]
+        ],
+        [
+            [null,<randomthings:ingredient:8>,null],
+            [<contenttweaker:small_stone>,<ic2:itemharz>,<contenttweaker:small_stone>],
+            [null,<tconstruct:pattern>,null]
+        ],
+        [
+            [null,<randomthings:ingredient:8>,null],
+            [<contenttweaker:small_stone>,<ic2:itemharz>,<contenttweaker:small_stone>],
             [null,<contenttweaker:clay_plate>,null]
         ]
     ],

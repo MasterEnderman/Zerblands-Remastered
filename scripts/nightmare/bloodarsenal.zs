@@ -29,6 +29,8 @@ import mods.threng.Centrifuge;
 Grindstone.addRecipe(<minecraft:glass>, <bloodarsenal:base_item>, 0.25f);
 Centrifuge.addRecipe(<bloodarsenal:base_item>,<minecraft:glass>);
 
+BloodInfuser.addRecipe(<minecraft:glowstone_dust>, <liquid:evilcraftblood> * 10000, 3, <bloodarsenal:base_item:2>, 1000, 5);
+
 recipes.remove(<bloodarsenal:gem:2>);
 Grindstone.addRecipe(<bloodmagic:soul_gem>, <bloodarsenal:gem:2>);
 Centrifuge.addRecipe(<bloodarsenal:gem:2>,<bloodmagic:soul_gem>);

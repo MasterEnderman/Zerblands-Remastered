@@ -1,5 +1,38 @@
 # Zerblands-Remastered
 
+## v2.1.14 - Nightmare Hotfix VI
+
+- added Avaritiaddons
+- added ChatCalculator
+- added Fancier Block Particles
+- added Had Enough Items
+- added Not Enough Energistics
+- added Recipe Search Buttons
+
+- updated AE2 Unofficial Extended Life
+- updated Chunk-Pregenerator
+- updated CraftTweaker
+- updated dan's Mouse Tweaks
+- updated FoamFix
+- updated Inventory Bogo Sorter
+- updated OpenComputers
+- updated Smooth Font
+
+- removed Fancy Block Particles
+- removed Just Enough Energistics
+- removed Just Enough Items
+
+- added accelaration wand quest
+- added alternative Blood Infused Glowstone Dust recipe
+- added slag to stone dust recipe (IE Crusher / SAG Mill)
+- changed bee house recipe
+- disabled IC2C villager
+- fixed Camouflaged Panel recipe
+- fixed RFTools Machine Frame Slice'n'Splice recipe
+- fixed Sacrificial Dagger recipe
+- fixed Teleportation Rune recipe
+- tweaked chunk loading and claiming amount
+
 ## v2.1.13 - Nightmare Hotfix V
 
 - updated CensoredASM

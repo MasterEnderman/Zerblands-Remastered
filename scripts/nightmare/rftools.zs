@@ -186,8 +186,8 @@ AlchemyTable.addRecipe(<rftools:powercell_advanced>, [
 ], 1000, 100, 3);
 
 SliceNSplice.addRecipe(<rftools:machine_frame>, [
-    <contenttweaker:atomic_assembly>, <extrautils2:poweroverload>, <rftools:machine_base>,
-    <actuallyadditions:item_crystal_empowered:1>,<contenttweaker:plastic>,<contenttweaker:atomic_module>
+    <contenttweaker:atomic_assembly>, <opencomputers:case3>, <rftools:machine_base>,
+    <actuallyadditions:item_crystal_empowered:1>, <contenttweaker:plastic>, <contenttweaker:atomic_module>
 ], 20000);
 
 recipes.remove(<rftools:infused_diamond>);
