@@ -1,0 +1,42 @@
+{
+	title: "Early Game Item Management",
+	x: 4.0d,
+	y: 5.5d,
+	text: [
+		"Utilize Refined Relocation to keep your items ordered.",
+		"Start by using it's chests and create some basic filters.",
+		"Later you can add Sorting Interfaces to other storage blocks or machines to increase you storage capacity or build some simple automation setups.",
+		"The Sorting Interface works with Storage Crates and even the Drawer Controller."
+	],
+	dependencies: [
+		"508a9727"
+	],
+	tasks: [{
+		uid: "064f77c5",
+		type: "item",
+		items: [{
+			item: "refinedrelocation:sorting_chest"
+		}]
+	},
+	{
+		uid: "c223ed3e",
+		type: "item",
+		items: [{
+			item: "refinedrelocation:sorting_connector"
+		}]
+	},
+	{
+		uid: "ec50d268",
+		type: "item",
+		items: [{
+			item: "refinedrelocation:sorting_upgrade"
+		}]
+	},
+	{
+		uid: "b1e428cf",
+		type: "item",
+		items: [{
+			item: "refinedrelocation:sorting_interface"
+		}]
+	}]
+}

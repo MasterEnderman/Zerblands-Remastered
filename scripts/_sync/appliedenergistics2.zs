@@ -32,3 +32,10 @@ ExtremeCrafting.addShaped("creative_me_storage_cell",<appliedenergistics2:creati
     [<avaritia:block_resource>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource>],
     [<minecraft:bedrock>,<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>,<appliedenergistics2:controller>,<avaritia:block_resource>,<avaritia:block_resource>,<avaritia:block_resource>,<minecraft:bedrock>]
 ]);
+
+// Creative Energy Cell
+recipes.addShaped(<appliedenergistics2:creative_energy_cell>, [
+    [<contenttweaker:creative>,<appliedenergistics2:dense_energy_cell>,<contenttweaker:creative>],
+    [<appliedenergistics2:dense_energy_cell>,<thermalexpansion:cell>.withTag({Recv: 25000, RSControl: 0 as byte, Facing: 4 as byte, Creative: 1 as byte, Energy: 50000000, Level: 4 as byte, SideCache: [2, 2, 2, 2, 2, 2] as byte[] as byte[], Send: 25000}),<appliedenergistics2:dense_energy_cell>],
+    [<contenttweaker:creative>,<appliedenergistics2:dense_energy_cell>,<contenttweaker:creative>]
+]);

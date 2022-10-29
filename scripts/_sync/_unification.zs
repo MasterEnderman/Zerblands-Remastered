@@ -66,6 +66,10 @@ SagMill.addRecipe([<evilcraft:dark_gem_crushed>], [100], <evilcraft:dark_gem>, "
 SagMill.addRecipe([<evilcraft:dark_gem> * 2,<evilcraft:dark_gem_crushed>], [100,30], <evilcraft:dark_ore>, "NONE", 5000);
 SagMill.addRecipe([<quantumflux:graphitedust> * 2], [100],  <quantumflux:graphiteore>, "NONE", 5000);
 
+// Add missing gear cast recipes
+Casting.addTableRecipe(<tconstruct:cast_custom:4>,<thermalfoundation:material:23>,<liquid:alubrass>,144,true,100);
+Casting.addTableRecipe(<tconstruct:cast_custom:4>,<thermalfoundation:material:23>,<liquid:brass>,144,true,100);
+
 var thermalGlass as IItemStack[string] = {
     "copper" : <thermalfoundation:glass:0>,
     "tin" : <thermalfoundation:glass:1>,

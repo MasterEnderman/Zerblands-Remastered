@@ -179,7 +179,8 @@ val slimebo = [
 	<tconstruct:slime_boots:1>,
 	<tconstruct:slime_boots:2>,
 	<tconstruct:slime_boots:3>,
-	<tconstruct:slime_boots:4>
+	<tconstruct:slime_boots:4>,
+	<tconstruct:slime_boots:5>
 ] as IItemStack[];
 
 val slimebl = [
@@ -187,7 +188,8 @@ val slimebl = [
 	<tconstruct:slime:1>,
 	<tconstruct:slime:2>,
 	<tconstruct:slime:3>,
-	<tconstruct:slime:4>
+	<tconstruct:slime:4>,
+	<tconstruct:slime:5>
 ] as IItemStack[];
 
 for i, item in slimebo {

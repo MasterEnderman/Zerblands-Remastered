@@ -126,10 +126,20 @@ recipes.addShaped(<randomthings:fertilizeddirt> * 4, [
 ]);
 
 recipes.remove(<randomthings:ingredient:8>);
+recipes.addShaped(<randomthings:ingredient:8> * 4, [
+    [<ore:plateTin>,<minecraft:iron_bars>,<ore:plateTin>],
+    [<minecraft:iron_bars>,<minecraft:iron_bars>,<minecraft:iron_bars>],
+    [<ore:plateTin>,<minecraft:iron_bars>,<ore:plateTin>]
+]);
 recipes.addShaped(<randomthings:ingredient:8> * 8, [
     [<ore:plateIron>,<minecraft:iron_bars>,<ore:plateIron>],
     [<minecraft:iron_bars>,<minecraft:iron_bars>,<minecraft:iron_bars>],
     [<ore:plateIron>,<minecraft:iron_bars>,<ore:plateIron>]
+]);
+recipes.addShaped(<randomthings:ingredient:8> * 16, [
+    [<ore:plateIridium>,<minecraft:iron_bars>,<ore:plateIridium>],
+    [<minecraft:iron_bars>,<minecraft:iron_bars>,<minecraft:iron_bars>],
+    [<ore:plateIridium>,<minecraft:iron_bars>,<ore:plateIridium>]
 ]);
 
 recipes.remove(<randomthings:advancedredstonerepeater>);

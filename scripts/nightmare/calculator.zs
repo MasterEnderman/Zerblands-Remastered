@@ -52,6 +52,10 @@ Casting.addBasinRecipe(<contenttweaker:module_energy>, <thermalfoundation:storag
 BottlingMachine.addRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>, <liquid:stone> * 2304);
 Transposer.addFillRecipe(<contenttweaker:module_energy>, <thermalfoundation:storage_resource:1>,  <liquid:stone> * 2304, 2000);
 
+Casting.addBasinRecipe(<contenttweaker:module_energy>, <embers:crystal_ember>, <liquid:stone>, 2304, true, 200);
+BottlingMachine.addRecipe(<contenttweaker:module_energy>, <embers:crystal_ember>, <liquid:stone> * 2304);
+Transposer.addFillRecipe(<contenttweaker:module_energy>, <embers:crystal_ember>,  <liquid:stone> * 2304, 2000);
+
 Casting.addBasinRecipe(<contenttweaker:calculator_screen>, <extrautils2:decorativeglass:5>, <liquid:stone>, 576, true, 200);
 BottlingMachine.addRecipe(<contenttweaker:calculator_screen>, <extrautils2:decorativeglass:5>, <liquid:stone> * 576);
 Transposer.addFillRecipe(<contenttweaker:calculator_screen>, <extrautils2:decorativeglass:5>,  <liquid:stone> * 576, 2000);

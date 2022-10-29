@@ -1,0 +1,17 @@
+{
+	x: 2.0d,
+	y: 10.5d,
+	text: [
+		"The better way to get salt."
+	],
+	dependencies: [
+		"11f81e35"
+	],
+	tasks: [{
+		uid: "43d90e24",
+		type: "item",
+		items: [{
+			item: "harvestcraft:waterfilter"
+		}]
+	}]
+}

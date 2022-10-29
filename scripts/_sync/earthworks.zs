@@ -143,3 +143,40 @@ recipes.addShaped(<earthworks:plaster_arrow0> * 4, [
     [<earthworks:block_plaster>,<earthworks:item_timber>,<earthworks:block_plaster>],
     [<earthworks:item_timber>,<earthworks:block_plaster>,<earthworks:item_timber>]
 ]);
+
+var listBlue as IItemStack[] = [
+    <earthworks:block_slate>,
+    <earthworks:block_slate_slab>,
+    <earthworks:block_slate_shingle>,
+    <earthworks:block_slate_tile>,
+];
+
+var listGreen as IItemStack[] = [
+    <earthworks:block_slate_green>,
+    <earthworks:block_slate_slab_green>,
+    <earthworks:block_slate_shingle_verte>,
+    <earthworks:block_slate_tile_verte>,
+];
+
+var listPurple as IItemStack[] = [
+    <earthworks:block_slate_purple>,
+    <earthworks:block_slate_slab_purple>,
+    <earthworks:block_slate_shingle_purple>,
+    <earthworks:block_slate_tile_purple>,
+];
+
+Carving.addGroup("slate_blue");
+Carving.addGroup("slate_green");
+Carving.addGroup("slate_purple");
+
+for item in listBlue {
+    Carving.addVariation("slate_blue", item);
+}
+
+for item in listGreen {
+    Carving.addVariation("slate_green", item);
+}
+
+for item in listPurple {
+    Carving.addVariation("slate_purple", item);
+}

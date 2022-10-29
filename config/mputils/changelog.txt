@@ -1,5 +1,35 @@
 # Zerblands-Remastered
 
+## v2.1.15 - Nightmare Hotfix VII
+
+- added Material Changer (to tweak some damage values of weapons)
+- added Refined Relocation 2 (early-game "storage-network" pre-RFTools)
+
+- updated Advanced Solars Classic
+- updated AE2 Unofficial Extended Life
+- updated CraftTweaker 2
+- updated Fancier Block Particles
+- updated Fast Workbench
+- updated Gravisuit Classic
+- updated IC2 Classic
+- updated Inventory Bogo Sorter
+
+- removed Fancier Block Particles (until crash bug is fixed)
+
+- added quest to obtain salt via Harvestcraft
+- added earthworks stones to chisel menu
+- added ember grit to the infinity reagent
+- added more creative item recipes
+- added more QoL quests to point players in the right direction
+- added tooltips to RR2 explaining their functionality
+- fixed Avaritiaddons recipes
+- fixed missing gear cast recipe
+- improved stone circuit board recipe
+- increased Botania weapon damage
+- increased IE weapon damage
+- tweaked Distiller Salt output
+- tweaked Embers tinker hammer recipe
+
 ## v2.1.14 - Nightmare Hotfix VI
 
 - added Avaritiaddons

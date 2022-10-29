@@ -158,6 +158,10 @@ recipes.remove(<extrautils2:drum:3>);
 recipes.addShapeless(<extrautils2:drum:3>, [<extrautils2:drum:3>]);
 calc_flawless(<extrautils2:drum:3>, <extrautils2:simpledecorative:1>, <extrautils2:drum:2>, <extrautils2:klein>, <extrautils2:simpledecorative:1>);
 
+recipes.remove(<extrautils2:drum:4>);
+recipes.addShapeless(<extrautils2:drum:4>, [<extrautils2:drum:4>]);
+calc_flawless(<extrautils2:drum:4>, <contenttweaker:creative_block>, <extrautils2:drum:3>, <botania:blackholetalisman>, <contenttweaker:creative_block>);
+
 recipes.remove(<extrautils2:ingredients:2>);
 calc_scientific(<extrautils2:ingredients:2>, <minecraft:ender_eye>, <extrautils2:ingredients>);
 
@@ -265,7 +269,7 @@ recipes.addShaped(<extrautils2:passivegenerator> * 8, [
 ]);
 
 recipes.remove(<extrautils2:pipe>);
-AlloySmelter.addRecipe(<extrautils2:pipe>, [<embers:pipe>, <ore:ingotConductiveIron>, <embers:item_pipe>], 10000);
+AlloySmelter.addRecipe(<extrautils2:pipe> * 3, [<embers:pipe>, <ore:ingotConductiveIron>, <embers:item_pipe>], 10000);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <extrautils2:ingredients> : [
@@ -425,6 +429,9 @@ calc_atomic(<extrautils2:spike_gold>, <contenttweaker:enriched_gold_block>, <ext
 
 recipes.remove(<extrautils2:spike_diamond>);
 calc_atomic(<extrautils2:spike_diamond>, <contenttweaker:flawless_block>, <extrautils2:spike_gold>, <contenttweaker:flawless_block>);
+
+recipes.remove(<extrautils2:spike_creative>);
+calc_atomic(<extrautils2:spike_creative>, <contenttweaker:creative_block>, <extrautils2:spike_diamond>, <contenttweaker:creative_block>);
 
 recipes.remove(<extrautils2:grocket:5>);
 calc_scientific(<extrautils2:grocket:5> * 4, <extrautils2:pipe>, <extrautils2:filter>);

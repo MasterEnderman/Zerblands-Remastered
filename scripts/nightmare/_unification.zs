@@ -84,6 +84,9 @@ InductionSmelter.removeRecipe(<thermalfoundation:material:802>,<minecraft:iron_i
 InductionSmelter.removeRecipe(<thermalfoundation:material:768>*4,<thermalfoundation:material>);
 InductionSmelter.removeRecipe(<thermalfoundation:material:768>*4,<minecraft:iron_ingot>);
 
+InductionSmelter.removeRecipe(<minecraft:sand>,<minecraft:golden_rail>);
+InductionSmelter.removeRecipe(<minecraft:sand>,<minecraft:rail>);
+
 Casting.removeTableRecipe(<thermalfoundation:material:23>);
 Casting.addTableRecipe(<thermalfoundation:material:23>,<thermalfoundation:material:22>,<liquid:stone>,288,true,100);
 

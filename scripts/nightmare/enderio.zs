@@ -652,8 +652,8 @@ SliceNSplice.addRecipe(<enderio:item_material:53>, [
     <actuallyadditions:item_crystal_empowered:5>,<ore:ingotSoularium>,<enderio:item_material:52>
 ], 20000);
 
-AlloySmelter.addRecipe(<enderio:item_material:75>,[<enderio:item_material:20>,<ic2:itemmisc:7>],1500);
-AlloySmelter.addRecipe(<enderio:item_material:75>,[<enderio:item_material:20>,<ic2:itemmisc:13>],1500);
+AlloySmelter.addRecipe(<enderio:item_material:75>,[<enderio:item_material:20>,<embers:dust_ember>,<ic2:itemmisc:7>],1500);
+AlloySmelter.addRecipe(<enderio:item_material:75>,[<enderio:item_material:20>,<embers:dust_ember>,<ic2:itemmisc:13>],1500);
 
 recipes.remove(<enderio:item_material:38>);
 recipes.addShapeless(<enderio:item_material:38> * 3,[

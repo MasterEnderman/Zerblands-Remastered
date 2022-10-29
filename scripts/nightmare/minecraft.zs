@@ -109,6 +109,9 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<bibliocraft:framingsheet>,<bibliocraft:framingsheet>,<bibliocraft:framingsheet>],
             [<bibliocraft:framingsheet>,<contenttweaker:chest_lock>,<bibliocraft:framingsheet>],
             [<bibliocraft:framingsheet>,<bibliocraft:framingsheet>,<bibliocraft:framingsheet>]
+        ],
+        [
+            [<refinedrelocation:sorting_chest>]
         ]
     ],
     <minecraft:furnace> : [

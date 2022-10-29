@@ -908,5 +908,13 @@
  "shaped_item.hybridSolarHelmet_1366673412": true,
  "shaped_tile.ultimateSolarPanel_1396076159": true,
  "shaped_item.ultimateHybridSolarHelmet_-345856502": true,
- "shaped_item.enrichedSunnariumAlloy_501037649": true
+ "shaped_item.enrichedSunnariumAlloy_501037649": true,
+ "shaped_item.itemBronzeCableII_-1791473741": true,
+ "shaped_item.itemBronzeCableII_-77292557": true,
+ "shaped_item.gravitationEngine_234755385": true,
+ "shaped_item.magnetron_-1331615940": true,
+ "shaped_item.vajraCore_1903086554": true,
+ "shaped_item.ultimateLappack_955155063": true,
+ "shaped_item.gravisuit_1526583111": true,
+ "shaped_item.nuclearGravisuit_1340318514": true
 }

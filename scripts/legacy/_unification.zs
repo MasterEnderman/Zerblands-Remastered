@@ -38,9 +38,6 @@ Compactor.removeGearRecipe(<evilcraft:dark_gem>);
 Casting.removeTableRecipe(<thermalfoundation:material:23>);
 Casting.addTableRecipe(<thermalfoundation:material:23>,<thermalfoundation:material:22>,<liquid:stone>,288,true,100);
 
-Casting.addTableRecipe(<tconstruct:cast_custom:4>,<thermalfoundation:material:23>,<liquid:alubrass>,144,true,100);
-Casting.addTableRecipe(<tconstruct:cast_custom:4>,<thermalfoundation:material:23>,<liquid:brass>,144,true,100);
-
 recipes.remove(<ore:gearWood>);
 recipes.remove(<ore:gearStone>);
 

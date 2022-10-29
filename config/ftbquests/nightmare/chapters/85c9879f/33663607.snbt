@@ -1,0 +1,17 @@
+{
+	x: -4.0d,
+	y: 1.5d,
+	text: [
+		"The first of many!"
+	],
+	dependencies: [
+		"54aba195"
+	],
+	tasks: [{
+		uid: "8541e682",
+		type: "item",
+		items: [{
+			item: "minecraft:diamond"
+		}]
+	}]
+}

@@ -41,4 +41,3 @@ global bloodmagicAlchemyArray as string[string] = {
     "wiparray" : "bloodmagic:textures/models/alchemyarrays/wiparray.png",
     "zombiebeacon" : "bloodmagic:textures/models/alchemyarrays/zombiebeacon.png",
 };
-

@@ -25,3 +25,15 @@ import scripts.functions.findFirstItemFromMod;
 <draconicevolution:draconium_ore>.addTooltip(format.red("*UNOBTAINABLE*"));
 <draconicevolution:draconium_ore:1>.addTooltip(format.red("*UNOBTAINABLE*"));
 <draconicevolution:draconium_ore:2>.addTooltip(format.red("*UNOBTAINABLE*"));
+
+recipes.addShaped(<draconicevolution:creative_rf_source>, [
+    [<contenttweaker:creative>,<draconicevolution:infused_obsidian>,<contenttweaker:creative>],
+    [<draconicevolution:infused_obsidian>,<thermalexpansion:capacitor:32000>,<draconicevolution:infused_obsidian>],
+    [<contenttweaker:creative>,<draconicevolution:infused_obsidian>,<contenttweaker:creative>]
+]);
+
+recipes.addShaped(<draconicevolution:draconium_capacitor:2>, [
+    [<contenttweaker:creative>,<ore:plateDraconicMetal>,<contenttweaker:creative>],
+    [<ore:plateDraconicMetal>,<thermalexpansion:capacitor:32000>,<ore:plateDraconicMetal>],
+    [<contenttweaker:creative>,<ore:plateDraconicMetal>,<contenttweaker:creative>]
+]);

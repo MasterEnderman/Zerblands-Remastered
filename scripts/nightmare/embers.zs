@@ -167,6 +167,20 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:heating_coil>,<ore:plateDawnstone>,<contenttweaker:heating_coil>],
             [<ore:plateCopper>,<embers:ember_activator>,<ore:plateCopper>]
         ]
+    ],
+    <embers:tinker_hammer> : [
+        [
+            [<ore:ingotIron>,<ore:plateLead>,<ore:ingotIron>],
+            [<ore:ingotIron>,<ore:stickTreatedWood>,<ore:ingotIron>],
+            [null,<ore:stickTreatedWood>,null]
+        ]
+    ],
+    <embers:archaic_circuit> : [
+        [
+            [<immersiveengineering:wirecoil>,<embers:archaic_brick>,<immersiveengineering:wirecoil>],
+            [<embers:archaic_brick>,<contenttweaker:stone_board>,<embers:archaic_brick>],
+            [<immersiveengineering:wirecoil>,<embers:archaic_brick>,<immersiveengineering:wirecoil>]
+        ]
     ]
 };
 

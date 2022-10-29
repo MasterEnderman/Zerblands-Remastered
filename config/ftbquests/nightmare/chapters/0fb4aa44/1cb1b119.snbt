@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: 19.5d,
+	text: [
+		"Easiest way to get more GP. (Grid Power)"
+	],
+	dependencies: [
+		"2a05cff9"
+	],
+	tasks: [{
+		uid: "700a3847",
+		type: "item",
+		items: [{
+			item: "extrautils2:passivegenerator"
+		}]
+	}]
+}

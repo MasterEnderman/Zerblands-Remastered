@@ -26,10 +26,15 @@ import mods.enderio.SliceNSplice;
 import mods.inworldcrafting.FluidToItem;
 
 import scripts.functions.calc_atomic;
+import scripts.functions.calc_scientific;
+
+recipes.remove(<rftools:syringe>);
+calc_scientific(<rftools:syringe>,<evilcraft:blood_extractor>,<botania:manabottle>);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <rftools:machine_base> : [
         [
+            [<randomthings:ingredient:8>,<randomthings:ingredient:8>,<randomthings:ingredient:8>],
             [<immersiveengineering:connector:12>,<opencomputers:material:4>,<immersiveengineering:connector:12>],
             [<ore:plateSteel>,<ore:gearSignalum>,<ore:plateSteel>]
         ]

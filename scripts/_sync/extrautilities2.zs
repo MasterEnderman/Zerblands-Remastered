@@ -35,6 +35,11 @@ JEI.removeAndHide(<extrautils2:crafter>);
 JEI.removeAndHide(<extrautils2:analogcrafter>);
 JEI.removeAndHide(<extrautils2:ingredients:4>);
 
+<extrautils2:drum>.addTooltip(format.green("Hold up to 16,000 mB."));
+<extrautils2:drum:1>.addTooltip(format.green("Hold up to 512,000 mB."));
+<extrautils2:drum:2>.addTooltip(format.green("Hold up to 4,096,000 mB."));
+<extrautils2:drum:3>.addTooltip(format.green("Hold up to 65,536,000 mB."));
+
 Resonator.remove(<extrautils2:ingredients:4>); // fk XU2
 
 Transposer.addFillRecipe(<extrautils2:ingredients:11>, <minecraft:gold_ingot>, <liquid:lava>*250, 66666);
@@ -74,6 +79,12 @@ recipes.addShaped(<extrautils2:decorativebedrock:2> * 4, [
     [<minecraft:cobblestone>,<minecraft:bedrock>,<minecraft:cobblestone>],
     [<minecraft:bedrock>,<minecraft:cobblestone>,<minecraft:bedrock>],
     [<minecraft:cobblestone>,<minecraft:bedrock>,<minecraft:cobblestone>]
+]);
+
+recipes.addShaped(<extrautils2:passivegenerator:6>, [
+    [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>],
+    [<contenttweaker:creative>,<extrautils2:passivegenerator:8>,<contenttweaker:creative>],
+    [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>]
 ]);
 
 recipes.removeShaped(<extrautils2:angelring>);

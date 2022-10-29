@@ -1,0 +1,20 @@
+{
+	title: "Efficient Wood Processing",
+	x: -6.0d,
+	y: 1.5d,
+	text: [
+		"Makes stuff like chests much cheaper."
+	],
+	dependencies: [
+		"33663607"
+	],
+	tasks: [{
+		uid: "3fdf5a55",
+		type: "item",
+		items: [{
+			item: "earthworks:tool_saw"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

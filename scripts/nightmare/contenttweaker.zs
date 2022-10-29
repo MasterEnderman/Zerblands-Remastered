@@ -329,28 +329,6 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [null,<contenttweaker:flawless_diamond_shard>,null]
         ]
     ],
-    <contenttweaker:stone_board> * 4 : [
-        [
-            [null,<randomthings:ingredient:8>,null],
-            [<contenttweaker:small_stone>,<ore:slimeball>,<contenttweaker:small_stone>],
-            [null,<tconstruct:pattern>,null]
-        ],
-        [
-            [null,<randomthings:ingredient:8>,null],
-            [<contenttweaker:small_stone>,<ore:slimeball>,<contenttweaker:small_stone>],
-            [null,<contenttweaker:clay_plate>,null]
-        ],
-        [
-            [null,<randomthings:ingredient:8>,null],
-            [<contenttweaker:small_stone>,<ic2:itemharz>,<contenttweaker:small_stone>],
-            [null,<tconstruct:pattern>,null]
-        ],
-        [
-            [null,<randomthings:ingredient:8>,null],
-            [<contenttweaker:small_stone>,<ic2:itemharz>,<contenttweaker:small_stone>],
-            [null,<contenttweaker:clay_plate>,null]
-        ]
-    ],
     <contenttweaker:gravel_dust> * 4 : [
         [
             [<minecraft:gravel>]
@@ -611,4 +589,34 @@ var mapPlutonium as int[IItemStack] = {
 
 for item, mul in mapPlutonium {
     Extractor.addRecipe(<contenttweaker:small_plutonium> * mul, item);
+}
+
+var mapStoneboard as int[IIngredient][string] = {
+    "top" : {
+        <randomthings:ingredient:8> : 3,
+        <ic2:itemmisc:260> : 6,
+        <woot:factorybase> : 9
+    },
+    "mid" : {
+        <ore:slimeball> : 1,
+        <ore:itemRawRubber> : 2,
+        <ore:slimeballPink> : 3
+    },
+    "bot" : {
+        <tconstruct:pattern> : 1,
+        <contenttweaker:clay_plate> : 2
+    },
+};
+
+for a, amount_a in mapStoneboard["top"] {
+    for b, amount_b in mapStoneboard["mid"] {
+        for c, amount_c in mapStoneboard["bot"] {
+            var amount as int = amount_a * amount_b * amount_c;
+            recipes.addShaped(<contenttweaker:stone_board> * amount, [
+                [null,a,null],
+                [<contenttweaker:small_stone>,b,<contenttweaker:small_stone>],
+                [null,c,null]
+            ]);
+        }
+    }
 }
