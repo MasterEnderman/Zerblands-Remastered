@@ -165,6 +165,7 @@ var mapSimpleCrush as IItemStack[IItemStack] = {
     <woot:soulsanddust> * 2 : <minecraft:soul_sand>,
     <contenttweaker:end_stone_dust> : <minecraft:end_stone>,
     <earthworks:item_chalk> * 4 : <earthworks:block_chalk>,
+    <appliedenergistics2:material:8> : <appliedenergistics2:material:7>
 };
 
 Crusher.removeRecipe(<immersiveengineering:material:17>);

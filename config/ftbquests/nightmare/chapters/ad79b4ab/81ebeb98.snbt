@@ -13,7 +13,8 @@
 			tag: {
 				progress: 0
 			}
-		}]
+		}],
+		ignore_nbt: 1b
 	},
 	{
 		uid: "f28264e7",
@@ -24,7 +25,8 @@
 			tag: {
 				progress: 600
 			}
-		}]
+		}],
+		ignore_nbt: 1b
 	},
 	{
 		uid: "c75024dc",
@@ -35,6 +37,7 @@
 			tag: {
 				progress: 1200
 			}
-		}]
+		}],
+		ignore_nbt: 1b
 	}]
 }

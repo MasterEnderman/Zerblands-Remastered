@@ -56,28 +56,28 @@ Carpenter.addRecipe(<opencomputers:material:4>, [
 ], 10, <liquid:iron_chloride> * 200);
 
 recipes.remove(<opencomputers:material:6>);
-ThermionicFabricator.addCast(<opencomputers:material:6> * 8, [
+ThermionicFabricator.addCast(<opencomputers:material:6> * 16, [
     [<ic2:itemcable:10>,<ic2:itemcable:10>,<ic2:itemcable:10>],
     [<forestry:thermionic_tubes>,<rs_ctr:logic_comb>,<forestry:thermionic_tubes>],
     [<ore:nuggetEnergeticAlloy>,<contenttweaker:plastic>,<ore:nuggetEnergeticAlloy>]
 ], <liquid:glass> * 200);
 
 recipes.remove(<opencomputers:material:7>);
-ThermionicFabricator.addCast(<opencomputers:material:7> * 8, [
+ThermionicFabricator.addCast(<opencomputers:material:7> * 16, [
     [<ore:nuggetElectricalSteel>,<ore:nuggetElectricalSteel>,<ore:nuggetElectricalSteel>],
     [<opencomputers:material:6>,<forestry:thermionic_tubes:8>,<opencomputers:material:6>],
     [<ore:nuggetElectricalSteel>,<ore:nuggetElectricalSteel>,<ore:nuggetElectricalSteel>]
 ], <liquid:glass> * 200);
 
 recipes.remove(<opencomputers:material:8>);
-ThermionicFabricator.addCast(<opencomputers:material:8> * 4, [
+ThermionicFabricator.addCast(<opencomputers:material:8> * 8, [
     [<ic2:itemcable:4>,<forestry:thermionic_tubes:11>,<ic2:itemcable:4>],
     [<opencomputers:material:7>,<appliedenergistics2:material:10>,<opencomputers:material:7>],
     [<ic2:itemcable:4>,<forestry:thermionic_tubes:11>,<ic2:itemcable:4>]
 ], <liquid:glass> * 200);
 
 recipes.remove(<opencomputers:material:9>);
-ThermionicFabricator.addCast(<opencomputers:material:9> * 2, [
+ThermionicFabricator.addCast(<opencomputers:material:9> * 4, [
     [<opencomputers:material:29>,<forestry:thermionic_tubes:5>,<opencomputers:material:29>],
     [<opencomputers:material:8>,<contenttweaker:atomicbinder>,<opencomputers:material:8>],
     [<opencomputers:material:29>,<forestry:thermionic_tubes:5>,<opencomputers:material:29>]

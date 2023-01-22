@@ -265,7 +265,7 @@ for key, value in recipeMapShaped {
 }
 
 recipes.remove(<randomthings:ingredient:12>);
-Crucible.addRecipe(<liquid:ectoplasma> * 10, <randomthings:ingredient:2>, 100000);
+Crucible.addRecipe(<liquid:ectoplasma> * 50, <randomthings:ingredient:2>, 100000);
 Transposer.addFillRecipe(<randomthings:ingredient:12>, <enderutilities:enderpart:21>,  <liquid:ectoplasma> * 1000, 2000);
 
 recipes.remove(<randomthings:weatheregg>);

@@ -296,3 +296,20 @@ for metal in processingMetals {
 
 Transposer.addFillRecipe(<enderio:item_material:30>, itemMS("dirtyDust","ardite"), <liquid:distwater> * 200, 1000);
 Transposer.addFillRecipe(<enderio:item_material:31>, itemMS("dirtyDust","cobalt"), <liquid:distwater> * 200, 1000);
+
+var listPress as IItemStack[] = [
+	<contenttweaker:mold_ingot>,
+	<immersiveengineering:mold>,
+	<immersiveengineering:mold:1>,
+	<immersiveengineering:mold:2>,
+	<immersiveengineering:mold:3>,
+	<immersiveengineering:mold:4>,
+	<immersiveengineering:mold:5>,
+	<immersiveengineering:mold:6>,
+	<immersiveengineering:mold:7>,
+];
+
+for mold in listPress {
+	Melting.removeRecipe(<liquid:steel>,mold);
+	Melting.addRecipe(<liquid:steel> * 864, mold, 490);
+}

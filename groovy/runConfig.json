@@ -1,0 +1,13 @@
+{
+  "packName": "",
+  "version": "1.0.0",
+  "debug": false,
+  "loaders": {
+    "preInit": [
+      "preInit/"
+    ],
+    "postInit": [
+      "postInit/"
+    ]
+  }
+}

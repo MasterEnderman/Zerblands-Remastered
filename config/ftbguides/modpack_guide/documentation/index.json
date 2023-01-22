@@ -20,6 +20,11 @@
         "icon": "item:draconicadditions:chaos_stabilizer_core"
     },
     {
+        "id": "forestry",
+        "title": "Forestry",
+        "icon": "item:forestry:royal_jelly"
+    },
+    {
         "id": "harvestcraft",
         "title": "Harvestcraft",
         "icon": "item:harvestcraft:freshwateritem"

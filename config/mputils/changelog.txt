@@ -1,5 +1,35 @@
 # Zerblands-Remastered
 
+## v2.2.0 - Happy 2023!
+
+- added AE2 Fluid Crafting Rework
+- added AssetMover
+- added Extra Sounds Legacy
+- added GroovyScript
+- added Startup Timer
+- added Universal Tweaks
+
+- updated AE2 Unofficial Extended Life
+- updated ArchitectureCraft
+- updated CensoredASM
+- updated CraftTweaker 2
+- updated Had Enough Items
+- updated IC2 Classic
+- updated Inventory Bogo Sorter
+- updated MixinBooter
+- updated Not Enough Energistics
+
+- removed AttributeFix (replaced by Universal Tweaks)
+- removed DrawerFPS Legacy (replaced by Universal Tweaks)
+- removed Fast Leaf Decay (replaced by Universal Tweaks)
+
+- added AS constellation to ingame guide
+- changed DE Mob Grinder recipe
+- fixed AE2 seeds quest
+- fixed Fluix Crystal processing
+- increased snowball and ender pearl stack size to 64
+- increased the amount of Ectoplasm you get by melting it
+
 ## v2.1.15 - Nightmare Hotfix VII
 
 - added Material Changer (to tweak some damage values of weapons)
@@ -8,7 +38,6 @@
 - updated Advanced Solars Classic
 - updated AE2 Unofficial Extended Life
 - updated CraftTweaker 2
-- updated Fancier Block Particles
 - updated Fast Workbench
 - updated Gravisuit Classic
 - updated IC2 Classic

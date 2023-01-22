@@ -133,6 +133,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<openmodularturrets:intermediate_tiered:14>,<draconicadditions:chaotic_energy_core>,<openmodularturrets:intermediate_tiered:14>]
         ]
     ],
+    <draconicevolution:grinder> : [
+        [
+            [<enderio:item_material:68>,<draconicevolution:draconic_core>,<enderio:item_material:68>],
+            [<draconicevolution:wyvern_sword>,<enderio:block_killer_joe>,<draconicevolution:wyvern_sword>],
+            [<enderio:item_material:68>,<contenttweaker:block_machine_hv>,<enderio:item_material:68>]
+        ]
+    ]
 };
 
 for key, value in recipeMapShaped {
@@ -170,7 +177,7 @@ for item, main in mapWyvern {
 recipes.remove(<draconicevolution:energy_pylon>);
 Empowerer.addRecipe(<draconicevolution:energy_pylon>, <draconicevolution:draconium_block:1>, <draconicevolution:wyvern_core>, <botania:pylon:2>, <contenttweaker:flux_module>, <thermaldynamics:duct_0:5>, 100000, 500, [0.8, 0.0, 0.8]);
 
-FusionCrafting.remove(<draconicevolution:draconic_core>);
+FusionCrafting.remove(<draconicevolution:awakened_core>);
 FusionCrafting.add(<draconicevolution:reactor_component:1>, <randomthings:spectreenergyinjector>, FusionCrafting.CHAOTIC, 640000000, [
     <actuallyadditions:block_laser_relay_extreme>,
     <actuallyadditions:block_laser_relay_extreme>,
