@@ -245,8 +245,8 @@ Blueprint.addRecipe("components", <immersiveengineering:drillhead:1>, [
     <ore:ingotRefinedIron> * 8
 ]);
 
-recipes.remove(<immersiveengineering:drillhead>);
-Blueprint.addRecipe("components", <immersiveengineering:drillhead>, [
+recipes.remove(<immersiveengineering:drillhead:0>);
+Blueprint.addRecipe("components", <immersiveengineering:drillhead:0>, [
     <ore:blockSteel> * 2,
     <ore:ingotDarkSteel> * 8
 ]);
@@ -294,7 +294,7 @@ var electrode as IItemStack = <immersiveengineering:graphite_electrode>;
 Empowerer.addRecipe(electrode.withTag({Unbreakable:1}), <ic2:itemmisc:258>, electrode, electrode, electrode, electrode, 200000, 400, [0.0, 0.0, 0.0]);
 
 var molds = [
-    <immersiveengineering:mold>,
+    <immersiveengineering:mold:0>,
     <immersiveengineering:mold:1>,
     <immersiveengineering:mold:2>,
     <immersiveengineering:mold:3>,
@@ -302,7 +302,7 @@ var molds = [
     <immersiveengineering:mold:5>,
     <immersiveengineering:mold:6>,
     <immersiveengineering:mold:7>,
-    <contenttweaker:mold_ingot>,
+    <contenttweaker:mold_ingot:0>,
 ] as IItemStack[];
 
 for item in molds {

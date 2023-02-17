@@ -91,3 +91,38 @@ for entry in preFramed {
 }
 
 JEI.removeAndHide(<bibliocraft:framingsaw>);
+
+var recipeMapShaped as IIngredient[][][][IItemStack] = {
+    <bibliocraft:bibliochase> : [
+        [
+            [<ore:nuggetSteel>,<ore:nuggetSteel>,<ore:nuggetSteel>],
+            [<ore:nuggetSteel>,<astralsorcery:blockinfusedwood:6>,<ore:nuggetSteel>],
+            [<ore:nuggetSteel>,<ore:nuggetSteel>,<ore:nuggetSteel>]
+        ]
+    ],
+    <bibliocraft:typesettingtable> : [
+        [
+            [<ore:ingotStarSteel>,<bibliocraft:bibliochase>,<ore:ingotStarSteel>],
+            [<ore:plankTreatedWood>,<opencomputers:material:4>,<ore:plankTreatedWood>],
+            [<ore:plankTreatedWood>,<forestry:worktable>,<ore:plankTreatedWood>]
+        ]
+    ],
+    <bibliocraft:printingpress> : [
+        [
+            [<enderio:item_material:71>,<embers:focal_lens>,<enderio:item_material:71>],
+            [<bibliocraft:framingboard>,<astralsorcery:iteminfusedglass>,<bibliocraft:framingboard>],
+            [<ore:blockIron>,<energycontrol:item_component:2>,<ore:blockIron>]
+        ]
+    ],
+};
+
+for key, value in recipeMapShaped {
+	var index as int = 0;    
+    recipes.remove(key);
+
+    for recipe in value {
+        var name as string = "ct_"+toString(key)+"_"+index;
+        recipes.addShaped(name, key, recipe);
+        index += 1;
+    }
+}

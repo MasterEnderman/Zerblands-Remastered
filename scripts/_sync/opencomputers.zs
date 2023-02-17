@@ -1,5 +1,3 @@
-#packmode nightmare
-
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidDefinition;
@@ -20,7 +18,6 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import scripts.functions.calc_basic;
+import mods.jei.JEI;
 
-recipes.remove(<wct:magnet_card>);
-calc_basic(<wct:magnet_card>,<appliedenergistics2:material:28>,<ic2:itemmisc:263>);
+JEI.removeAndHide(<opencomputers:upgrade:4>);

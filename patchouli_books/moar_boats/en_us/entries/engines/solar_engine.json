@@ -1,0 +1,13 @@
+{
+    "name": "Solar Engine",
+    "icon": "minecraft:daylight_detector",
+    "category": "engines",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:daylight_detector",
+            "text": "Engine that runs only when the sun is out",
+            "title": "Solar Engine"
+        }
+    ]
+}

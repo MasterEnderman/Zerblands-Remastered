@@ -1,5 +1,5 @@
 {
-	x: -8.0d,
+	x: -2.0d,
 	y: 21.5d,
 	dependencies: [
 		"c84a908b"
@@ -9,6 +9,7 @@
 		type: "item",
 		items: [{
 			item: "contenttweaker:sodium_dust"
-		}]
+		}],
+		consume_items: true
 	}]
 }

@@ -1,6 +1,6 @@
 {
 	title: "The Bee-Movie",
-	x: 4.0d,
+	x: 6.0d,
 	y: 19.5d,
 	text: [
 		"Bee Breeding is very time consuming. The earlier you start with it, the sooner you don't have to mess with them again. (at least for now)"

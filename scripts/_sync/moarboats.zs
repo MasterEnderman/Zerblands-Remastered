@@ -1,0 +1,46 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.liquid.ILiquidDefinition;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
+
+import scripts.functions.toString;
+import scripts.functions.getOreDict;
+import scripts.functions.getItem;
+import scripts.functions.getItemAny;
+import scripts.functions.getItemMeta;
+import scripts.functions.getItemString;
+import scripts.functions.getArrayString;
+import scripts.functions.getItemsFromMod;
+import scripts.functions.getFluid;
+import scripts.functions.getBucket;
+import scripts.functions.getBucketDefault;
+import scripts.functions.findFirstItemFromMod;
+
+import mods.jei.JEI;
+
+JEI.removeAndHide(<moarboats:waterborne_redstone_unpowered>);
+JEI.removeAndHide(<moarboats:waterborne_redstone_powered>);
+JEI.removeAndHide(<moarboats:waterborne_comparator_lit>);
+JEI.removeAndHide(<moarboats:waterborne_comparator_unlit>);
+JEI.removeAndHide(<moarboats:cargo_stopper_lit>);
+JEI.removeAndHide(<moarboats:cargo_stopper_unlit>);
+JEI.removeAndHide(<moarboats:map_with_path>);
+JEI.removeAndHide(<moarboats:opencomputers_holder>);
+JEI.removeAndHide(<moarboats:modular_boat:1>);
+JEI.removeAndHide(<moarboats:modular_boat:2>);
+JEI.removeAndHide(<moarboats:modular_boat:3>);
+JEI.removeAndHide(<moarboats:modular_boat:4>);
+JEI.removeAndHide(<moarboats:modular_boat:5>);
+JEI.removeAndHide(<moarboats:modular_boat:6>);
+JEI.removeAndHide(<moarboats:modular_boat:7>);
+JEI.removeAndHide(<moarboats:modular_boat:8>);
+JEI.removeAndHide(<moarboats:modular_boat:9>);
+JEI.removeAndHide(<moarboats:modular_boat:10>);
+JEI.removeAndHide(<moarboats:modular_boat:11>);
+JEI.removeAndHide(<moarboats:modular_boat:12>);
+JEI.removeAndHide(<moarboats:modular_boat:13>);
+JEI.removeAndHide(<moarboats:modular_boat:14>);
+JEI.removeAndHide(<moarboats:modular_boat:15>);
+JEI.removeAndHide(<moarboats:chunk_loader>);

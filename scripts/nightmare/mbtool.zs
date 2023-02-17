@@ -20,7 +20,9 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import scripts.functions.calc_flawless;
-
-recipes.remove(<ae2wtlib:infinity_booster_card>);
-calc_flawless(<ae2wtlib:infinity_booster_card>,<appliedenergistics2:material:42>,<enderio:item_material:20>,<rftools:dimensional_shard>,<contenttweaker:big_pearl>);
+recipes.remove(<mbtool:mbtool>);
+recipes.addShaped(<mbtool:mbtool>, [
+    [null,<immersiveengineering:material:27>,null],
+    [<immersivepetroleum:schematic>,<thermalfoundation:material:640>,<contenttweaker:advanced_assembly>],
+    [null,<immersiveengineering:revolver>,null]
+]);

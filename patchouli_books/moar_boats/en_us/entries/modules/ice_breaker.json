@@ -1,0 +1,13 @@
+{
+    "name": "Ice Breaker Module",
+    "icon": "moarboats:icebreaker",
+    "category": "modules",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "moarboats:icebreaker",
+            "title": "Ice Breaker Module",
+            "text": "Breaks the ice in front of the boat."
+        }
+    ]
+}

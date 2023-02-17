@@ -1,0 +1,18 @@
+{
+	x: 0.0d,
+	y: 7.5d,
+	text: [
+		"PSI energy will no longer passively regenerate. Instead, players must carry PSI-storing items in their inventory from which PSI can be drawn. A couple extra tweaks are added to supplement these changes. Firstly, players collecting experience points while their PSI pools aren't topped-off will cause some of the XP to be converted to PSI. Secondly, all players will have Psi fully unlocked as soon as they join the game."
+	],
+	dependencies: [
+		"fba3e85e"
+	],
+	tasks: [{
+		uid: "69879c8f",
+		type: "item",
+		items: [{
+			item: "psicosts:psi_cell"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Storage Module",
+    "icon": "minecraft:chest",
+    "category": "modules",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:chest",
+            "title": "Storage Module",
+            "text": "Add a chest to your boat to hold items! Can be filled and emptied using hoppers."
+        }
+    ]
+}

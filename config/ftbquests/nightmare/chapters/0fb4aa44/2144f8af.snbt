@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 19.5d,
+	dependencies: [
+		"612dc5c4"
+	],
+	tasks: [{
+		uid: "116b6405",
+		type: "item",
+		items: [{
+			item: "forestry:alveary.plain"
+		}]
+	}]
+}

@@ -26,7 +26,8 @@ import mods.thermalexpansion.Crucible;
 recipes.remove(<immersivetech:material>);
 
 Crucible.addRecipe(<liquid:moltensalt> * 100, <harvestcraft:saltitem>, 10000);
-MeltingCrucible.addRecipe(<liquid:moltensalt> * 100, <harvestcraft:saltitem>, 76800, 160);
+MeltingCrucible.addRecipe(<liquid:moltensalt> * 100, <harvestcraft:saltitem>, 9600, 160);
+MeltingCrucible.addRecipe(<liquid:stone> * 288, <tconstruct:soil>, 8000, 160);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <immersivetech:metal_trash> : [

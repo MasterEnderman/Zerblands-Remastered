@@ -1,6 +1,9 @@
 {
-	x: -4.0d,
-	y: 9.5d,
+	x: -2.0d,
+	y: 11.5d,
+	text: [
+		"Use a Seared Faucet on a Coke Oven for some easy fluid transportation."
+	],
 	dependencies: [
 		"ba70abe0"
 	],

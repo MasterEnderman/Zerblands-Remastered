@@ -24,6 +24,7 @@ import mods.avaritia.ExtremeCrafting;
 import mods.embers.Melter;
 import mods.embers.Stamper;
 import mods.enderio.SagMill;
+import mods.jei.JEI;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Pulverizer;
 import mods.thermalexpansion.Transposer;
@@ -313,3 +314,8 @@ for mold in listPress {
 	Melting.removeRecipe(<liquid:steel>,mold);
 	Melting.addRecipe(<liquid:steel> * 864, mold, 490);
 }
+
+// Patchouli Books
+var book_moar_boats as IItemStack = <patchouli:guide_book>.withTag({"patchouli:book": "patchouli:moar_boats"});
+JEI.addItem(book_moar_boats);
+recipes.addShapeless(book_moar_boats, [<minecraft:book>,<moarboats:oars>]);

@@ -246,19 +246,19 @@ furnace.addRecipe(<contenttweaker:fireclay_brick>,<contenttweaker:fireclay_dried
 
 furnace.addRecipe(<contenttweaker:reinforced_obsidian_ingot>,<enderio:block_reinforced_obsidian>);
 
-Blueprint.addRecipe("components", <contenttweaker:electric_motor>, [
+Blueprint.addRecipe("components", <contenttweaker:electric_motor:0>, [
     <immersiveengineering:material:8> * 1,
     <contenttweaker:heating_coil> * 1,
     <actuallyadditions:item_misc:7> * 1,
     <ic2:itemcable> * 4
 ]);
 
-Blueprint.addRecipe("components", <contenttweaker:iron_rotor>, [
+Blueprint.addRecipe("components", <contenttweaker:iron_rotor:0>, [
     <ore:gearIron> * 1,
     <contenttweaker:iron_rotor_blade> * 4
 ]);
 
-Blueprint.addRecipe("components", <contenttweaker:iron_rotor_blade>, [
+Blueprint.addRecipe("components", <contenttweaker:iron_rotor_blade:0>, [
     <ore:stickIron> * 3,
     <ore:plateIron> * 2
 ]);
@@ -475,16 +475,16 @@ Carpenter.addRecipe(<contenttweaker:big_pearl>, [
     [<abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:gatekeeperessence>]
 ], 10, <liquid:mana> * 10000);
 
-Blueprint.addRecipe("rails", <contenttweaker:rail_wood>, [
+Blueprint.addRecipe("rails", <contenttweaker:rail_wood:0>, [
     <contenttweaker:tie_wood>,
     <ore:ingotIron>
 ]);
 
-Blueprint.addRecipe("rails", <contenttweaker:rail_standard> * 6, [
+Blueprint.addRecipe("rails", <contenttweaker:rail_standard:0> * 6, [
     <ore:plateIron> * 3
 ]);
 
-Blueprint.addRecipe("rails", <contenttweaker:rail_speed> * 6, [
+Blueprint.addRecipe("rails", <contenttweaker:rail_speed:0> * 6, [
     <ore:plateGold> * 3
 ]);
 

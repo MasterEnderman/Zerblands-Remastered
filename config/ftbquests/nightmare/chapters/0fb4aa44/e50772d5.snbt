@@ -1,0 +1,15 @@
+{
+	title: "More Buttons!",
+	x: 0.0d,
+	y: 21.5d,
+	dependencies: [
+		"8eca5ef0"
+	],
+	tasks: [{
+		uid: "86c0368b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:advanced_assembly"
+		}]
+	}]
+}

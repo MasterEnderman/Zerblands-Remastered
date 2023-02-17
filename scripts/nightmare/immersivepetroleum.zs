@@ -60,8 +60,8 @@ Blueprint.addRecipe("machinery", <immersivepetroleum:metal_device:1>, [
     <immersiveengineering:metal_device1:6> * 4,
 ]);
 
-recipes.remove(<immersivepetroleum:metal_device>);
-Blueprint.addRecipe("machinery", <immersivepetroleum:metal_device>, [
+recipes.remove(<immersivepetroleum:metal_device:0>);
+Blueprint.addRecipe("machinery", <immersivepetroleum:metal_device:0>, [
     <ore:blockGlassColorless> * 3,
     <ore:plankTreatedWood> * 2,
     <immersiveengineering:metal_device1:6> * 2,

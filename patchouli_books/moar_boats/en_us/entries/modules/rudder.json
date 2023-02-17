@@ -1,0 +1,13 @@
+{
+    "name": "Rudder Module",
+    "icon": "moarboats:rudder",
+    "category": "modules",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "moarboats:rudder",
+            "title": "Rudder Module",
+            "text": "Allows control of the movement of the boat. Needs a Seat module to be used. Can be set to non-blocking (see engine modules)."
+        }
+    ]
+}

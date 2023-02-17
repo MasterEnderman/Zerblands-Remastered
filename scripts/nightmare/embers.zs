@@ -94,7 +94,7 @@ Altar.addDiscoveryAltarRecipe("geo_separator", <embers:geo_separator>, 200, 200,
 ]);
 
 recipes.remove(<embers:ember_bore>);
-Blueprint.addRecipe("machinery", <embers:ember_bore>, [
+Blueprint.addRecipe("machinery", <embers:ember_bore:0>, [
     <immersiveengineering:drillhead:1>,
     <embers:mech_core>,
     <embers:block_caminite_brick> * 4,

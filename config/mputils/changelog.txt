@@ -1,5 +1,44 @@
 # Zerblands-Remastered
 
+## v2.2.1 - Small QoL update
+
+Thanks Xetaxheb#2851 and ADEEVdes#1184 for your feedback!
+
+- added Advancement Locator
+- added Botaunomy Reloaded
+- added JEI Utilities
+- added Moar Boats
+- added Multiblocked
+- added Multi Builder Tool
+- added No Worldgen 5 You
+- added Patchouli
+- added Psi Unofficial
+- added Psio
+- added Realistic Terrain Generator Unofficial
+- added spark
+
+- updated AE2 Fluid Crafting Rework
+- updated AE2 Unofficial Extended Life
+- updated CraftTweaker 2
+- updated Inventory Bogo Sorter
+- updated Not Enough Energistics
+- updated Universal Tweaks
+
+- removed AE2 Wireless Terminal Library
+- removed FastWorkbench (replaced by Universal Tweaks)
+- removed GroovyScript (not used yet, won't run on servers)
+- removed Psi (replaced by Psi Unofficial)
+- removed Realistic Terrain Generator (replaced by a maintained port)
+- removed Wireless Crafting Terminal (AE2 Unofficial Extended Life added one)
+
+- added recipe to get seared stone more efficient after obtaining steel
+- fixed rftools syringe recipe
+- fixed the buggy engineer's workbench (maybe)
+- improved Pre-Mid-Game quests
+- nerfed BiblioCraft enchantment duplication
+- removed village generation once and for all (only applies to new villages)
+- tuned down PSI to not be as free as it is by default
+
 ## v2.2.0 - Happy 2023!
 
 - added AE2 Fluid Crafting Rework
@@ -38,7 +77,7 @@
 - updated Advanced Solars Classic
 - updated AE2 Unofficial Extended Life
 - updated CraftTweaker 2
-- updated Fast Workbench
+- updated FastWorkbench
 - updated Gravisuit Classic
 - updated IC2 Classic
 - updated Inventory Bogo Sorter

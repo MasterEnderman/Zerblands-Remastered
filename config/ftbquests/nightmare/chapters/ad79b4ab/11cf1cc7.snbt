@@ -5,16 +5,11 @@
 		"43f326aa"
 	],
 	tasks: [{
-		uid: "b95cfeb4",
+		uid: "5be4a130",
 		type: "item",
 		items: [{
-			id: "wct:wct",
-			tag: {
-				InfinityEnergy: 0
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			id: "appliedenergistics2:wireless_crafting_terminal",
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

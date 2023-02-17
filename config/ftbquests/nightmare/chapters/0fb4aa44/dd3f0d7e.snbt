@@ -1,0 +1,21 @@
+{
+	x: -8.0d,
+	y: 21.5d,
+	text: [
+		"Muliblocks made easy!",
+		"It supports many multiblocks by default. The rest will be added over time."
+	],
+	dependencies: [
+		"95b74b5c"
+	],
+	tasks: [{
+		uid: "5fcc75a3",
+		type: "item",
+		items: [{
+			id: "mbtool:mbtool",
+			tag: {
+				electricity: 10000.0f
+			}
+		}]
+	}]
+}

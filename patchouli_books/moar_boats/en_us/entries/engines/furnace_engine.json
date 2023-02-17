@@ -1,0 +1,13 @@
+{
+    "name": "Furnace Engine",
+    "icon": "minecraft:furnace",
+    "category": "engines",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:furnace",
+            "text": "Engine that runs on fuel (any fuel accepted by the vanilla furnace + torches & magma blocks)",
+            "title": "Furnace Engine"
+        }
+    ]
+}

@@ -485,7 +485,8 @@
   "ingotRecycling_ingotUUMatter": true,
   "ingotRecycling_ingotPrimordial": true,
   "ingotRecycling_ingotEssenceMetal": true,
-  "ingotRecycling_ingotPinkMetal": true
+  "ingotRecycling_ingotPinkMetal": true,
+  "ingotRecycling_ingotPsioMetal": true
  },
  "sawmill": {
   "tile.wood.oak_-867074482": true,

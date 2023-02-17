@@ -1,0 +1,16 @@
+{
+    "name": "Mapping Table",
+    "icon": "moarboats:mapping_table",
+    "category": "navigation",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "moarboats:mapping_table",
+            "text": "This block allows to edit the path stored on a Map with Path or a Golden Ticket with more options:$(li)Adding$(li)Inserting$(li)Removing$(li)Editing$(li)Reordering$(br)waypoints."
+        },
+        {
+            "type": "text",
+            "text": "Waypoints are also created by inserting their X,Z coordinates. If you have the JourneyMap mod installed, Moar Boats will attempt to find the waypoints made using this mod and suggest them to you when editing a waypoint!"
+        }
+    ]
+}

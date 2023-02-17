@@ -29,7 +29,7 @@ import scripts.functions.calc_atomic;
 import scripts.functions.calc_scientific;
 
 recipes.remove(<rftools:syringe>);
-calc_scientific(<rftools:syringe>,<evilcraft:blood_extractor>,<botania:manabottle>);
+calc_scientific(<rftools:syringe>,<evilcraft:dark_spike>,<botania:manabottle>);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <rftools:machine_base> : [

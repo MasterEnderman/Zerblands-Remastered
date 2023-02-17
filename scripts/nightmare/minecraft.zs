@@ -222,7 +222,43 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<minecraft:pumpkin>],
             [<ore:torch>]
         ]
-    ]
+    ],
+    <minecraft:boat> : [
+        [
+            [<bibliocraft:framingsheet>,<moarboats:oars>,<bibliocraft:framingsheet>],
+            [<bibliocraft:framingsheet>,<minecraft:planks>,<bibliocraft:framingsheet>]
+        ]
+    ],
+    <minecraft:spruce_boat> : [
+        [
+            [<bibliocraft:framingsheet>,<moarboats:oars>,<bibliocraft:framingsheet>],
+            [<bibliocraft:framingsheet>,<minecraft:planks:1>,<bibliocraft:framingsheet>]
+        ]
+    ],
+    <minecraft:birch_boat> : [
+        [
+            [<bibliocraft:framingsheet>,<moarboats:oars>,<bibliocraft:framingsheet>],
+            [<bibliocraft:framingsheet>,<minecraft:planks:2>,<bibliocraft:framingsheet>]
+        ]
+    ],
+    <minecraft:jungle_boat> : [
+        [
+            [<bibliocraft:framingsheet>,<moarboats:oars>,<bibliocraft:framingsheet>],
+            [<bibliocraft:framingsheet>,<minecraft:planks:3>,<bibliocraft:framingsheet>]
+        ]
+    ],
+    <minecraft:acacia_boat> : [
+        [
+            [<bibliocraft:framingsheet>,<moarboats:oars>,<bibliocraft:framingsheet>],
+            [<bibliocraft:framingsheet>,<minecraft:planks:4>,<bibliocraft:framingsheet>]
+        ]
+    ],
+    <minecraft:dark_oak_boat> : [
+        [
+            [<bibliocraft:framingsheet>,<moarboats:oars>,<bibliocraft:framingsheet>],
+            [<bibliocraft:framingsheet>,<minecraft:planks:5>,<bibliocraft:framingsheet>]
+        ]
+    ],
 };
 
 recipes.addShapeless(<minecraft:cobblestone> * 9, [<extrautils2:compressedcobblestone>]);
@@ -239,14 +275,14 @@ for key, value in recipeMapShaped {
 }
 
 var rails as IIngredient[][IItemStack] = {
-    <minecraft:golden_rail> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<contenttweaker:rail_speed>*6,<ore:dustRedstone>*8],
-    <minecraft:detector_rail> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<ore:dustRedstone>*4,<minecraft:stone_pressure_plate>*16],
-    <minecraft:rail> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6],
-    <minecraft:activator_rail> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<ore:dustRedstone>*8,<minecraft:redstone_torch>*4],
-    <tconstruct:wood_rail> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_wood>*6],
-    <tconstruct:wood_rail_trapdoor> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_wood>*6,<minecraft:trapdoor>*4],
-    <enderio:block_exit_rail> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<minecraft:piston>*4,<minecraft:stone_pressure_plate>*16],
-    <botania:ghostrail> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<botania:platform:1>*4],
+    <minecraft:golden_rail:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<contenttweaker:rail_speed>*6,<ore:dustRedstone>*8],
+    <minecraft:detector_rail:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<ore:dustRedstone>*4,<minecraft:stone_pressure_plate>*16],
+    <minecraft:rail:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6],
+    <minecraft:activator_rail:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<ore:dustRedstone>*8,<minecraft:redstone_torch>*4],
+    <tconstruct:wood_rail:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_wood>*6],
+    <tconstruct:wood_rail_trapdoor:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_wood>*6,<minecraft:trapdoor>*4],
+    <enderio:block_exit_rail:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<minecraft:piston>*4,<minecraft:stone_pressure_plate>*16],
+    <botania:ghostrail:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<botania:platform:1>*4],
 };
 
 for rail, recipe in rails {

@@ -1,0 +1,46 @@
+{
+	title: "PSI energy for everyone!",
+	x: -2.0d,
+	y: 7.5d,
+	text: [
+		"Convert other energy sources into PSI energy."
+	],
+	dependencies: [
+		"fba3e85e"
+	],
+	tasks: [{
+		uid: "df7f6871",
+		type: "item",
+		items: [{
+			item: "psicosts:flux_resonator"
+		}]
+	},
+	{
+		uid: "15e544eb",
+		type: "item",
+		items: [{
+			item: "psicosts:starlight_resonator"
+		}]
+	},
+	{
+		uid: "3a355731",
+		type: "item",
+		items: [{
+			item: "psicosts:ember_resonator"
+		}]
+	},
+	{
+		uid: "c398c200",
+		type: "item",
+		items: [{
+			item: "psicosts:blood_resonator"
+		}]
+	},
+	{
+		uid: "e00ba026",
+		type: "item",
+		items: [{
+			item: "psicosts:mana_resonator"
+		}]
+	}]
+}

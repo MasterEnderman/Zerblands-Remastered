@@ -1,0 +1,13 @@
+{
+    "name": "Anchor Module",
+    "icon": "minecraft:anvil",
+    "category": "modules",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:anvil",
+            "title": "Anchor Module",
+            "text": "Changes your spawn point to the location the anchor is set. Also blocks the boat (see engine modules)."
+        }
+    ]
+}

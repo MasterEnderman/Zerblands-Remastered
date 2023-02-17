@@ -1,0 +1,13 @@
+{
+    "name": "Sonar Module",
+    "icon": "minecraft:noteblock",
+    "category": "navigation",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:noteblock",
+            "title": "Sonar Module",
+            "text": "This special module can be installed by adding Note Blocks to the boat. The boat will try to follow rivers when moving.$(br)Be aware that this module is more of an experiment than a reliable way to make boat navigate!"
+        }
+    ]
+}

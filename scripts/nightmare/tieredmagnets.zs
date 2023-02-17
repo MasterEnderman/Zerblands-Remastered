@@ -23,13 +23,13 @@ import scripts.functions.findFirstItemFromMod;
 import mods.immersiveengineering.Blueprint;
 
 var smallMachine as IIngredient[][IItemStack] = {
-    <tieredmagnets:magnetic_projector> : [
+    <tieredmagnets:magnetic_projector:0> : [
         <extrautils2:machine>,
         <minecraft:hopper>,
         <ore:ingotRedAlloy>,
         <minecraft:glass_pane> * 4
     ],
-    <tieredmagnets:magnetic_insulator> : [
+    <tieredmagnets:magnetic_insulator:0> : [
         <extrautils2:machine>,
         <ore:ingotRedAlloy>,
         <minecraft:ender_pearl> * 2

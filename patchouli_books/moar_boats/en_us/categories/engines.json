@@ -1,0 +1,5 @@
+{
+    "name": "Engines",
+    "description": "Engine modules make the modular boat go in a straight line. They need to be unlocked (top right button in their menu) once installed to work. The speed can be slightly adjusted in the menu. Engine modules can be blocked by using redstone signals (with Waterborne Redstone Conductors for instance).",
+    "icon": "minecraft:furnace"
+}

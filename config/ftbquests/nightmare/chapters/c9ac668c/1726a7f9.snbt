@@ -1,0 +1,17 @@
+{
+	x: -4.0d,
+	y: 7.5d,
+	text: [
+		"Don't forget to upgrade your Necronomicon."
+	],
+	dependencies: [
+		"f0439374"
+	],
+	tasks: [{
+		uid: "4cfd68c7",
+		type: "item",
+		items: [{
+			item: "abyssalcraft:skin"
+		}]
+	}]
+}

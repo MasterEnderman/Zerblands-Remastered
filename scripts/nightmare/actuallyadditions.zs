@@ -390,27 +390,27 @@ Altar.addAttunementAltarRecipe("block_atomic_reconstructor", <actuallyadditions:
 ]);
 
 var smallMachine as IIngredient[][IItemStack] = {
-    <actuallyadditions:block_ranged_collector> : [
+    <actuallyadditions:block_ranged_collector:0> : [
         <actuallyadditions:block_misc:9>,
         <tieredmagnets:magnet_energy_leadstone>,
         <actuallyadditions:item_crystal:3> * 2
     ],
-    <actuallyadditions:block_breaker> : [
+    <actuallyadditions:block_breaker:0> : [
         <actuallyadditions:block_misc:9>,
         <actuallyadditions:item_misc:7>,
         <actuallyadditions:item_crystal:3>
     ],
-    <actuallyadditions:block_placer> : [
+    <actuallyadditions:block_placer:0> : [
         <actuallyadditions:block_misc:9>,
         <actuallyadditions:item_misc:7>,
         <actuallyadditions:item_crystal:1>
     ],
-    <actuallyadditions:block_dropper> : [
+    <actuallyadditions:block_dropper:0> : [
         <actuallyadditions:block_misc:9>,
         <actuallyadditions:item_misc:8>,
         <randomthings:irondropper>
     ],
-    <actuallyadditions:block_fluid_placer> : [
+    <actuallyadditions:block_fluid_placer:0> : [
         <actuallyadditions:block_placer>,
         <thermalexpansion:tank>,
         <immersiveengineering:metal_device1:6> * 2
@@ -420,23 +420,23 @@ var smallMachine as IIngredient[][IItemStack] = {
         <thermalexpansion:tank>,
         <immersiveengineering:metal_device1:6> * 2
     ],
-    <actuallyadditions:block_phantom_booster> : [
+    <actuallyadditions:block_phantom_booster:0> : [
         <actuallyadditions:block_misc:8>,
         <actuallyadditions:item_crystal_empowered>,
         <botanicadds:rune_tp>
     ],
-    <actuallyadditions:block_directional_breaker> : [
+    <actuallyadditions:block_directional_breaker:0> : [
         <actuallyadditions:block_breaker> * 3,
         <actuallyadditions:item_crystal_empowered:3>,
         <actuallyadditions:item_misc:8>
     ],
-    <actuallyadditions:block_heat_collector> : [
+    <actuallyadditions:block_heat_collector:0> : [
         <actuallyadditions:block_misc:9>,
         <actuallyadditions:item_crystal:5>,
         <randomthings:imbue>,
         <contenttweaker:heat_conductor>
     ],
-    <actuallyadditions:block_miner> : [
+    <actuallyadditions:block_miner:0> : [
         <actuallyadditions:block_crystal_empowered:3>,
         <thermalexpansion:frame>,
         <actuallyadditions:item_drill:*>,
@@ -456,28 +456,28 @@ var smallComponents as IIngredient[][IItemStack] = {
         <forestry:thermionic_tubes:6> * 2,
         <ic2:itemcable:15> * 2
     ],
-    <actuallyadditions:item_battery> : [
+    <actuallyadditions:item_battery:0> : [
         <ic2:itembatre>,
         <actuallyadditions:item_misc:8>,
         <actuallyadditions:item_crystal>,
         <actuallyadditions:item_crystal:5> * 2
     ],
-    <actuallyadditions:item_battery_double> : [
+    <actuallyadditions:item_battery_double:0> : [
         <actuallyadditions:item_battery>,
         <actuallyadditions:item_misc:8>,
         <actuallyadditions:item_crystal_empowered:5> * 2
     ],
-    <actuallyadditions:item_battery_triple> : [
+    <actuallyadditions:item_battery_triple:0> : [
         <actuallyadditions:item_battery_double>,
         <actuallyadditions:item_misc:8>,
         <actuallyadditions:item_crystal_empowered> * 2
     ],
-    <actuallyadditions:item_battery_quadruple> : [
+    <actuallyadditions:item_battery_quadruple:0> : [
         <actuallyadditions:item_battery_triple>,
         <actuallyadditions:item_misc:8>,
         <actuallyadditions:item_crystal:2> * 2
     ],
-    <actuallyadditions:item_battery_quintuple> : [
+    <actuallyadditions:item_battery_quintuple:0> : [
         <actuallyadditions:item_battery_quadruple>,
         <actuallyadditions:item_misc:8>,
         <actuallyadditions:item_crystal_empowered:2> * 2
