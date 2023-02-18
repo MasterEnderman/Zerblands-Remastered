@@ -55,7 +55,7 @@ Refinery.addRecipe(styrene_rubber*54, butadiene*18, styrene*6, 512);
 
 recipes.remove(<immersivepetroleum:metal_device:1>);
 Blueprint.addRecipe("machinery", <immersivepetroleum:metal_device:1>, [
-    <immersiveengineering:metal_device0>,
+    <immersiveengineering:metal_device0:0>,
     <immersiveengineering:metal_decoration0:6>,
     <immersiveengineering:metal_device1:6> * 4,
 ]);

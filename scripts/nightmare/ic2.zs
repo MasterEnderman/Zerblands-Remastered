@@ -550,7 +550,7 @@ Transposer.addFillRecipe(<ic2:blockfoam>,<ic2:itemmisc:455>, <liquid:water> * 10
 recipes.remove(<ic2:itemmisc:304>);
 Blueprint.addRecipe("components", <ic2:itemmisc:304>, [
     <ore:gearSteel> * 1,
-    <contenttweaker:iron_rotor_blade> * 8
+    <contenttweaker:iron_rotor_blade:0> * 8
 ]);
 
 MetalPress.addRecipe(<ic2:itemmisc:55>, <ic2:itemmisc:180>, <contenttweaker:mold_ingot>, 2048);

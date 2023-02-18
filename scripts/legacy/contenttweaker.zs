@@ -51,3 +51,9 @@ furnace.addRecipe(<contenttweaker:flawless_diamond_shard>,<contenttweaker:flawle
 
 Mixer.addRecipe(<liquid:sulfuric_acid>*100, <liquid:distwater>*100, [<ore:dustSulfur>*4,<ore:dustIron>], 1024);
 Refinery.addRecipe(<liquid:hydrogen_chlorid> * 200, <liquid:chlorine> * 100, <liquid:hydrogen> * 100, 512);
+
+recipes.addShaped(<contenttweaker:energy_flow_circuit>, [
+    [<ic2:itemmisc:452>,<ic2:itemmisc:257>,<ic2:itemmisc:452>],
+    [<ic2:itembatlamacrystal>,<ic2:itemmisc:258>,<ic2:itembatlamacrystal>],
+    [<ic2:itemmisc:452>,<ic2:itemmisc:257>,<ic2:itemmisc:452>]
+]);

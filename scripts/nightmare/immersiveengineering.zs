@@ -215,28 +215,28 @@ Blueprint.removeRecipe(<immersiveengineering:material:27>);
 Blueprint.addRecipe("components", <immersiveengineering:material:27>, [
     <immersiveengineering:stone_decoration:8> * 1,
     <ore:plateAluminum> * 1,
-    <appliedenergistics2:light_detector> * 1,
+    <appliedenergistics2:light_detector:0> * 1,
     <immersiveengineering:material:26> * 1,
-    <embers:shard_ember> * 1,
-    <ic2:itemcable> * 4
+    <embers:shard_ember:0> * 1,
+    <ic2:itemcable:0> * 4
 ]);
 
 recipes.remove(<immersiveengineering:material:11>);
 Blueprint.addRecipe("components", <immersiveengineering:material:11>, [
-    <immersiveengineering:material> * 6,
-    <immersiveengineering:treated_wood> * 3,
-    <bibliocraft:framingsheet> * 2,
-    <minecraft:iron_nugget> * 6,
-    <bibliocraft:framingboard> * 4
+    <immersiveengineering:material:0> * 6,
+    <immersiveengineering:treated_wood:0> * 3,
+    <bibliocraft:framingsheet:0> * 2,
+    <minecraft:iron_nugget:0> * 6,
+    <bibliocraft:framingboard:0> * 4
 ]);
 
 recipes.remove(<immersiveengineering:material:10>);
 Blueprint.addRecipe("components", <immersiveengineering:material:10>, [
-    <immersiveengineering:material> * 4,
-    <immersiveengineering:treated_wood> * 2,
-    <bibliocraft:framingsheet> * 2,
+    <immersiveengineering:material:0> * 4,
+    <immersiveengineering:treated_wood:0> * 2,
+    <bibliocraft:framingsheet:0> * 2,
     <ore:nuggetSteel> * 6,
-    <bibliocraft:framingboard> * 2
+    <bibliocraft:framingboard:0> * 2
 ]);
 
 recipes.remove(<immersiveengineering:drillhead:1>);
@@ -254,15 +254,15 @@ Blueprint.addRecipe("components", <immersiveengineering:drillhead:0>, [
 recipes.remove(<immersiveengineering:material:12>);
 Blueprint.addRecipe("components", <immersiveengineering:material:12>, [
     <immersiveengineering:material:5> * 6,
-    <bibliocraft:framingboard> * 6,
+    <bibliocraft:framingboard:0> * 6,
     <ore:nuggetSteel> * 3
 ]);
 
 recipes.remove(<immersiveengineering:metal_device1:1>);
 Blueprint.addRecipe("machinery", <immersiveengineering:metal_device1:1>, [
-    <embers:blasting_core> * 1,
-    <contenttweaker:heating_coil> * 1,
-    <immersiveengineering:metal_decoration0> * 1,
+    <embers:blasting_core:0> * 1,
+    <contenttweaker:heating_coil:0> * 1,
+    <immersiveengineering:metal_decoration0:0> * 1,
     <immersiveengineering:sheetmetal:9> * 2,
 ]);
 

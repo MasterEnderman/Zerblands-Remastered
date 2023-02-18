@@ -392,7 +392,7 @@ Altar.addAttunementAltarRecipe("block_atomic_reconstructor", <actuallyadditions:
 var smallMachine as IIngredient[][IItemStack] = {
     <actuallyadditions:block_ranged_collector:0> : [
         <actuallyadditions:block_misc:9>,
-        <tieredmagnets:magnet_energy_leadstone>,
+        <tieredmagnets:magnet_energy_leadstone:0>,
         <actuallyadditions:item_crystal:3> * 2
     ],
     <actuallyadditions:block_breaker:0> : [
@@ -408,39 +408,39 @@ var smallMachine as IIngredient[][IItemStack] = {
     <actuallyadditions:block_dropper:0> : [
         <actuallyadditions:block_misc:9>,
         <actuallyadditions:item_misc:8>,
-        <randomthings:irondropper>
+        <randomthings:irondropper:0>
     ],
     <actuallyadditions:block_fluid_placer:0> : [
-        <actuallyadditions:block_placer>,
-        <thermalexpansion:tank>,
+        <actuallyadditions:block_placer:0>,
+        <thermalexpansion:tank:0>,
         <immersiveengineering:metal_device1:6> * 2
     ],
-    <actuallyadditions:block_fluid_collector> : [
-        <actuallyadditions:block_breaker>,
-        <thermalexpansion:tank>,
+    <actuallyadditions:block_fluid_collector:0> : [
+        <actuallyadditions:block_breaker:0>,
+        <thermalexpansion:tank:0>,
         <immersiveengineering:metal_device1:6> * 2
     ],
     <actuallyadditions:block_phantom_booster:0> : [
         <actuallyadditions:block_misc:8>,
-        <actuallyadditions:item_crystal_empowered>,
-        <botanicadds:rune_tp>
+        <actuallyadditions:item_crystal_empowered:0>,
+        <botanicadds:rune_tp:0>
     ],
     <actuallyadditions:block_directional_breaker:0> : [
-        <actuallyadditions:block_breaker> * 3,
+        <actuallyadditions:block_breaker:0> * 3,
         <actuallyadditions:item_crystal_empowered:3>,
         <actuallyadditions:item_misc:8>
     ],
     <actuallyadditions:block_heat_collector:0> : [
         <actuallyadditions:block_misc:9>,
         <actuallyadditions:item_crystal:5>,
-        <randomthings:imbue>,
-        <contenttweaker:heat_conductor>
+        <randomthings:imbue:0>,
+        <contenttweaker:heat_conductor:0>
     ],
     <actuallyadditions:block_miner:0> : [
         <actuallyadditions:block_crystal_empowered:3>,
-        <thermalexpansion:frame>,
+        <thermalexpansion:frame:0>,
         <actuallyadditions:item_drill:*>,
-        <actuallyadditions:item_drill_upgrade_speed_iii>
+        <actuallyadditions:item_drill_upgrade_speed_iii:0>
     ]
 };
 
@@ -451,34 +451,34 @@ for machine, recipe in smallMachine {
 
 var smallComponents as IIngredient[][IItemStack] = {
     <actuallyadditions:item_misc:16> : [
-        <contenttweaker:electric_motor>,
+        <contenttweaker:electric_motor:0>,
         <thermalfoundation:material:640>,
         <forestry:thermionic_tubes:6> * 2,
         <ic2:itemcable:15> * 2
     ],
     <actuallyadditions:item_battery:0> : [
-        <ic2:itembatre>,
+        <ic2:itembatre:0>,
         <actuallyadditions:item_misc:8>,
-        <actuallyadditions:item_crystal>,
+        <actuallyadditions:item_crystal:0>,
         <actuallyadditions:item_crystal:5> * 2
     ],
     <actuallyadditions:item_battery_double:0> : [
-        <actuallyadditions:item_battery>,
+        <actuallyadditions:item_battery:0>,
         <actuallyadditions:item_misc:8>,
         <actuallyadditions:item_crystal_empowered:5> * 2
     ],
     <actuallyadditions:item_battery_triple:0> : [
-        <actuallyadditions:item_battery_double>,
+        <actuallyadditions:item_battery_double:0>,
         <actuallyadditions:item_misc:8>,
-        <actuallyadditions:item_crystal_empowered> * 2
+        <actuallyadditions:item_crystal_empowered:0> * 2
     ],
     <actuallyadditions:item_battery_quadruple:0> : [
-        <actuallyadditions:item_battery_triple>,
+        <actuallyadditions:item_battery_triple:0>,
         <actuallyadditions:item_misc:8>,
         <actuallyadditions:item_crystal:2> * 2
     ],
     <actuallyadditions:item_battery_quintuple:0> : [
-        <actuallyadditions:item_battery_quadruple>,
+        <actuallyadditions:item_battery_quadruple:0>,
         <actuallyadditions:item_misc:8>,
         <actuallyadditions:item_crystal_empowered:2> * 2
     ],

@@ -1,0 +1,24 @@
+{
+	x: -4.0d,
+	y: 11.5d,
+	dependencies: [
+		"0629c4d0"
+	],
+	tasks: [{
+		uid: "83be7975",
+		type: "item",
+		items: [{
+			item: "moarboats:modular_boat"
+		}]
+	}],
+	rewards: [{
+		uid: "673b593a",
+		type: "item",
+		item: {
+			id: "patchouli:guide_book",
+			tag: {
+				"patchouli:book": "patchouli:moar_boats"
+			}
+		}
+	}]
+}

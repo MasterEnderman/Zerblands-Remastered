@@ -1,0 +1,19 @@
+{
+	title: "The Elven Portal sucks!",
+	x: -14.0d,
+	y: 18.5d,
+	text: [
+		"It's super slow and can cause huge TPS issues.",
+		"Use this compact version to maximize your crafting speed."
+	],
+	dependencies: [
+		"a193b866"
+	],
+	tasks: [{
+		uid: "fa4f81bf",
+		type: "item",
+		items: [{
+			item: "zerblands:elven_portal"
+		}]
+	}]
+}

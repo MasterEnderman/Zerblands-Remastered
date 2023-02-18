@@ -1,0 +1,11 @@
+# Compact Elven Portal
+elven_portal.name=Compact Elven Portal
+tile.zerblands.elven_portal.name=Compact Elven Portal Controller
+zerblands.elven_portal.description=A faster version of the Elven Gateway
+multiblocked.recipe_map.portal=Compact Elven Portal
+
+# Blueprint Table
+blueprint.name=Blueprint Table
+
+# Controller Tester
+controller_tester.name=Controller Tester

@@ -96,11 +96,11 @@ Altar.addDiscoveryAltarRecipe("geo_separator", <embers:geo_separator>, 200, 200,
 recipes.remove(<embers:ember_bore>);
 Blueprint.addRecipe("machinery", <embers:ember_bore:0>, [
     <immersiveengineering:drillhead:1>,
-    <embers:mech_core>,
-    <embers:block_caminite_brick> * 4,
-    <embers:stairs_caminite_brick> * 4,
+    <embers:mech_core:0>,
+    <embers:block_caminite_brick:0> * 4,
+    <embers:stairs_caminite_brick:0> * 4,
     <contenttweaker:material_part:24> * 2,
-    <contenttweaker:cutting_head> * 2,
+    <contenttweaker:cutting_head:0> * 2,
 ]);
 
 MetalPress.addRecipe(<embers:ingot_dawnstone>, <embers:plate_dawnstone>, <contenttweaker:mold_ingot>, 2048);

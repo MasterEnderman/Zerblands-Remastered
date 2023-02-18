@@ -1,5 +1,17 @@
 # Zerblands-Remastered
 
+## v2.2.2 - Hotfix VIII
+
+Thanks ADEEVdes#1184 for helping me with this one!
+
+- downgraded AssetMover (so it doesnt't crash with curseforge)
+
+- added a quest to introduce moar boats
+- added a custom multiblock for the elven gateway
+- cleaned up the serverfiles (there were some mods, that won't work on servers)
+- fixed the engineer's workbench (again, because I'm stupid)
+- removed ic2c villager trades (for real this time)
+
 ## v2.2.1 - Small QoL update
 
 Thanks Xetaxheb#2851 and ADEEVdes#1184 for your feedback!

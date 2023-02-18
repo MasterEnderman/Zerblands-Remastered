@@ -198,8 +198,8 @@ var bullets as IIngredient[][IItemStack] = {
     <xreliquary:bullet:1> * 8 : [
         <ore:bulletEmpty> * 8,
         <ore:nuggetGold> * 2,
-        <minecraft:flint>,
-        <minecraft:gunpowder>
+        <minecraft:flint:0>,
+        <minecraft:gunpowder:0>
     ],
     <xreliquary:bullet:2> * 8 : [
         <xreliquary:bullet:1> * 8,
@@ -208,8 +208,8 @@ var bullets as IIngredient[][IItemStack] = {
     <xreliquary:bullet:3> * 8 : [
         <ore:bulletEmpty> * 8,
         <ore:nuggetGold> * 2,
-        <minecraft:blaze_rod>,
-        <minecraft:blaze_powder>
+        <minecraft:blaze_rod:0>,
+        <minecraft:blaze_powder:0>
     ],
     <xreliquary:bullet:4> * 8 : [
         <xreliquary:bullet:7> * 8,
@@ -219,7 +219,7 @@ var bullets as IIngredient[][IItemStack] = {
         <ore:bulletEmpty> * 8,
         <ore:nuggetGold> * 2,
         <ore:slimeball>,
-        <minecraft:gunpowder>
+        <minecraft:gunpowder:0>
     ],
     <xreliquary:bullet:6> * 8 : [
         <xreliquary:bullet:5> * 8,
@@ -229,20 +229,20 @@ var bullets as IIngredient[][IItemStack] = {
         <ore:bulletEmpty> * 8,
         <ore:nuggetGold> * 2,
         <ore:gemLapis>,
-        <minecraft:gunpowder>
+        <minecraft:gunpowder:0>
     ],
     <xreliquary:bullet:8> * 8 : [
         <ore:bulletEmpty> * 8,
         <ore:nuggetGold>,
         <ore:slimeball>,
         <ore:sandstone>,
-        <minecraft:gunpowder>
+        <minecraft:gunpowder:0>
     ],
     <xreliquary:bullet:9> * 8 : [
         <ore:bulletEmpty> * 8,
         <ore:nuggetGold> * 2,
         <xreliquary:mob_ingredient:3> * 2,
-        <minecraft:gunpowder>
+        <minecraft:gunpowder:0>
     ],
 };
 

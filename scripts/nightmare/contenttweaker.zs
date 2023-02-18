@@ -248,14 +248,14 @@ furnace.addRecipe(<contenttweaker:reinforced_obsidian_ingot>,<enderio:block_rein
 
 Blueprint.addRecipe("components", <contenttweaker:electric_motor:0>, [
     <immersiveengineering:material:8> * 1,
-    <contenttweaker:heating_coil> * 1,
+    <contenttweaker:heating_coil:0> * 1,
     <actuallyadditions:item_misc:7> * 1,
-    <ic2:itemcable> * 4
+    <ic2:itemcable:0> * 4
 ]);
 
 Blueprint.addRecipe("components", <contenttweaker:iron_rotor:0>, [
     <ore:gearIron> * 1,
-    <contenttweaker:iron_rotor_blade> * 4
+    <contenttweaker:iron_rotor_blade:0> * 4
 ]);
 
 Blueprint.addRecipe("components", <contenttweaker:iron_rotor_blade:0>, [
@@ -476,7 +476,7 @@ Carpenter.addRecipe(<contenttweaker:big_pearl>, [
 ], 10, <liquid:mana> * 10000);
 
 Blueprint.addRecipe("rails", <contenttweaker:rail_wood:0>, [
-    <contenttweaker:tie_wood>,
+    <contenttweaker:tie_wood:0>,
     <ore:ingotIron>
 ]);
 

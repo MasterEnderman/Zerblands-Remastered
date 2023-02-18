@@ -1,5 +1,3 @@
-#packmode nightmare
-
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidDefinition;
@@ -20,23 +18,25 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.immersiveengineering.Blueprint;
 
-var smallMachine as IIngredient[][IItemStack] = {
-    <tieredmagnets:magnetic_projector:0> : [
-        <extrautils2:machine:0>,
-        <minecraft:hopper:0>,
-        <ore:ingotRedAlloy>,
-        <minecraft:glass_pane:0> * 4
-    ],
-    <tieredmagnets:magnetic_insulator:0> : [
-        <extrautils2:machine:0>,
-        <ore:ingotRedAlloy>,
-        <minecraft:ender_pearl:0> * 2
-    ],
+var recipeMapShaped as IIngredient[][][][IItemStack] = {
+    <zerblands:elven_portal> : [
+        [
+            [<botanicadds:gaiasteel_ingot>,<botania:alfheimportal>,<botanicadds:gaiasteel_ingot>],
+            [<tconevo:metal:44>,<energycontrol:item_component:2>,<tconevo:metal:44>],
+            [<botanicadds:gaiasteel_ingot>,<contenttweaker:jump_module>,<botanicadds:gaiasteel_ingot>]
+        ]
+    ]
 };
 
-for machine, recipe in smallMachine {
-    recipes.remove(machine);
-    Blueprint.addRecipe("machinery", machine, recipe);
+for key, value in recipeMapShaped {
+	var index as int = 0;    
+    recipes.remove(key);
+
+    for recipe in value {
+        var name as string = "ct_"+toString(key)+"_"+index;
+        recipes.addShaped(name, key, recipe);
+        index += 1;
+    }
 }
+
