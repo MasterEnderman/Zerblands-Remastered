@@ -1,0 +1,14 @@
+{
+	x: -10.0d,
+	y: 21.5d,
+	dependencies: [
+		"3ba84574"
+	],
+	tasks: [{
+		uid: "520f3d02",
+		type: "item",
+		items: [{
+			item: "embers:superheater"
+		}]
+	}]
+}

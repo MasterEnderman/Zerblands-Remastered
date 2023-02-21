@@ -1,0 +1,14 @@
+{
+	x: -4.0d,
+	y: 24.5d,
+	dependencies: [
+		"2481f65f"
+	],
+	tasks: [{
+		uid: "decbab5f",
+		type: "item",
+		items: [{
+			item: "ic2:blockcompactedgenerator 1 2"
+		}]
+	}]
+}

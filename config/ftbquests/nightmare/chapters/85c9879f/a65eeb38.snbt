@@ -1,0 +1,17 @@
+{
+	x: 4.0d,
+	y: 9.5d,
+	text: [
+		"Smelts 10 items per coal instead of 8."
+	],
+	dependencies: [
+		"978e0397"
+	],
+	tasks: [{
+		uid: "3d61c82e",
+		type: "item",
+		items: [{
+			item: "ic2:blockmachinelv 1 1"
+		}]
+	}]
+}

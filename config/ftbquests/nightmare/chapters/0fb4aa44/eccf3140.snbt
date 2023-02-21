@@ -1,0 +1,34 @@
+{
+	x: 6.0d,
+	y: 5.5d,
+	text: [
+		"Early game \"flight\""
+	],
+	dependencies: [
+		"f544d38f"
+	],
+	tasks: [{
+		uid: "0acfd326",
+		type: "item",
+		items: [{
+			id: "xreliquary:rending_gale",
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 2,
+					TotalAmounts: [
+						0
+					]
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "01caaf89",
+		type: "item",
+		item: "minecraft:feather",
+		count: 4
+	}]
+}

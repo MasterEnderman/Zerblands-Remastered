@@ -1,5 +1,15 @@
 # Zerblands-Remastered
 
+## v2.2.3 - Hotfix IX
+
+- updated AE2 Unofficial Extended Life
+- updated CraftTweaker 2
+- updated Realistic Terrain Generator Unofficial
+
+- added the Moar Boats Patchouli book to the export (forgot it in the last version)
+- added a few more quests
+- removed AssetMover from serverfiles (not needed)
+
 ## v2.2.2 - Hotfix VIII
 
 Thanks ADEEVdes#1184 for helping me with this one!

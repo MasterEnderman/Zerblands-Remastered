@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: 24.5d,
+	dependencies: [
+		"64cccdbd"
+	],
+	tasks: [{
+		uid: "7332a952",
+		type: "item",
+		items: [{
+			item: "advancedsolars:ultimatesolarpanel"
+		}]
+	}]
+}
