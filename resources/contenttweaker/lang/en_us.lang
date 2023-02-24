@@ -173,3 +173,23 @@ enchantment.simplyjetpacks.fuel_efficiency.desc=[Description needs to be done]
 msg.ec.InfoPanelEnergyEU=Energy: %s EU
 msg.ec.InfoPanelCapacityEU=Capacity: %s EU
 msg.ec.InfoPanelOutputEU=Output: %s EU
+
+# blackstone/bassalt local fix
+
+tile.basalt.name=Basalt
+tile.blackstone_bricks_stairs.name=Blackstone Bricks Stairs
+tile.polished_blackstone_slab.name=Polished Blackstone Slab
+tile.crackedblackstonebricks.name=Cracked blackstone Bricks
+tile.blackstone_wall.name=Blackstone Wall
+tile.blackstone_bricks_wall.name=Blackstone Bricks Wall
+tile.blackstoneblock.name=Blackstone
+tile.gildedblackstone.name=Gilded Blackstone
+tile.polished_blackstone_wall.name=Polished Blackstone Wall
+tile.blackstone_slab.name=Blackstone Slab
+tile.blackstonebricks.name=Blackstone Bricks
+tile.polished_blackstone_stairs.name=Polished Blackstone Stairs
+tile.blackstone_stairs.name=Blackstone Stairs
+tile.polishedbasalt.name=Polished Basalt
+tile.polished_blackstone.name=Polished Blackstone
+tile.blackstone_bricks_slab.name=Blackstone Bricks Slab
+tile.smoothbasalt.name=Smooth Basalt

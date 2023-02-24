@@ -49,6 +49,9 @@ furnace.remove(<tconstruct:brownstone:4>);
 
 Drying.addRecipe(<tconstruct:materials:1>, <contenttweaker:pressed_mud>, 600);
 
+Drying.removeRecipe(<tconstruct:materials:2>);
+Drying.addRecipe(<tconstruct:materials:2>, <contenttweaker:pressed_clay>, 600);
+
 Compressor.addRecipe(<tconstruct:spaghetti>,<actuallyadditions:item_food:7>);
 
 calc_atomic(<tconstruct:materials:50>,<minecraft:skull:3>,<ore:blockEnchantedMetal>,<quantumflux:craftingpiece:1>);

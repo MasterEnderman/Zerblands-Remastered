@@ -20,3 +20,6 @@ import scripts.functions.findFirstItemFromMod;
 
 recipes.remove(<immersiveengineering:material:14>);
 recipes.addShaped(<immersiveengineering:material:14>,[[null,null,<ore:ingotSteel>],[null,<ore:ingotSteel>,null],[<ore:ingotSteel>,null,null]]);
+
+
+recipes.addShapeless(<immersiveengineering:seed>, [<ic2:itemmisc:158>,<ic2:itemmisc:158>]);

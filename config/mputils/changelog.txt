@@ -1,5 +1,18 @@
 # Zerblands-Remastered
 
+## v2.2.4 - Hotfix X
+
+- added Aqua Acrobatics
+- added IC2C UU-Matter
+- added blackstone/basalt
+- added Wall-Jump!
+- added WI Zoom
+
+- updated AE2 Unofficial Extended Life
+
+- added Blackstone and Basalt to Nether Generation
+- fixed Dried Brick recipe
+
 ## v2.2.3 - Hotfix IX
 
 - updated AE2 Unofficial Extended Life

@@ -2,6 +2,16 @@
   "outputs": [
     {
       "target": "gray",
+      "weight": 15,
+      "id": "blackstonebasalt:basalt"
+    },
+    {
+      "target": "black",
+      "weight": 15,
+      "id": "blackstonebasalt:blackstoneblock"
+    },
+    {
+      "target": "gray",
       "weight": 32,
       "id": "minecraft:stone:0"
     },

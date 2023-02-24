@@ -486,7 +486,9 @@
   "ingotRecycling_ingotPrimordial": true,
   "ingotRecycling_ingotEssenceMetal": true,
   "ingotRecycling_ingotPinkMetal": true,
-  "ingotRecycling_ingotPsioMetal": true
+  "ingotRecycling_ingotPsioMetal": true,
+  "ingotRecycling_ingotNetherite": true,
+  "ingotRecycling_ingotAncientDebris": true
  },
  "sawmill": {
   "tile.wood.oak_-867074482": true,

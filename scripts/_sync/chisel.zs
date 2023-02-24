@@ -118,6 +118,16 @@ var chiselMap as IItemStack[][string] = {
         <contenttweaker:block21>,
         <contenttweaker:block22>,
         <contenttweaker:block23>,
+    ],
+    "ct_blackstone" : [
+        <blackstonebasalt:blackstoneblock>,
+        <blackstonebasalt:polished_blackstone>,
+        <blackstonebasalt:blackstonebricks>,
+    ],
+    "ct_blackbasalt" : [
+        <blackstonebasalt:basalt>,
+        <blackstonebasalt:polishedbasalt>,
+        <blackstonebasalt:smoothbasalt>,
     ]
 };
 
