@@ -26,6 +26,7 @@ import mods.immersiveengineering.CokeOven;
 import mods.jei.JEI;
 import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.Transposer;
+import mods.tconstruct.Drying;
 import mods.tconstruct.Melting;
 
 import scripts.functions.calc_basic;
@@ -112,17 +113,22 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
         ],
         [
             [<refinedrelocation:sorting_chest>]
+        ],
+        [
+            [<minecraft:wooden_slab>],
+            [<ore:chestWood>],
+            [<minecraft:wooden_slab>]
         ]
     ],
     <minecraft:furnace> : [
         [
             [<extrautils2:compressedcobblestone>,<extrautils2:compressedcobblestone>,<extrautils2:compressedcobblestone>],
-            [<extrautils2:compressedcobblestone>,<minecraft:coal>|<minecraft:coal:1>,<extrautils2:compressedcobblestone>],
+            [<extrautils2:compressedcobblestone>,<campfire:campfire>,<extrautils2:compressedcobblestone>],
             [<extrautils2:compressedcobblestone>,<extrautils2:compressedcobblestone>,<extrautils2:compressedcobblestone>]
         ],
         [
             [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>],
-            [<sonarcore:reinforcedstoneblock>,<minecraft:coal>|<minecraft:coal:1>,<sonarcore:reinforcedstoneblock>],
+            [<sonarcore:reinforcedstoneblock>,<campfire:campfire>,<sonarcore:reinforcedstoneblock>],
             [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>]
         ]
     ],
@@ -288,4 +294,126 @@ var rails as IIngredient[][IItemStack] = {
 for rail, recipe in rails {
     recipes.remove(rail);
     Blueprint.addRecipe("rails", rail * 16, recipe);
+}
+
+var listLeather as IItemStack[] = [
+    <harvestcraft:cookedgrubitem>,
+    <cannibalism:playerfleshcooked>,
+    <cannibalism:villagerfleshcooked>,
+];
+
+for item in listLeather {
+    Drying.addRecipe(<minecraft:leather>,item,10200);
+}
+
+var listBed as IItemStack[] = [
+    <minecraft:bed:1>,
+    <minecraft:bed:2>,
+    <minecraft:bed:3>,
+    <minecraft:bed:4>,
+    <minecraft:bed:5>,
+    <minecraft:bed:6>,
+    <minecraft:bed:7>,
+    <minecraft:bed:8>,
+    <minecraft:bed:9>,
+    <minecraft:bed:10>,
+    <minecraft:bed:11>,
+    <minecraft:bed:12>,
+    <minecraft:bed:13>,
+    <minecraft:bed:14>,
+    <minecraft:bed:15>,
+];
+
+for item in listBed {
+    recipes.removeShaped(item);
+}
+
+recipes.remove(<minecraft:bed>);
+recipes.addShapeless(<minecraft:bed>, [<minecraft:bed:*>, <ore:dyeWhite>]);
+recipes.addShaped(<minecraft:bed>, [
+    [<ore:wool>,<ore:wool>,<ore:wool>],
+    [<bibliocraft:framingsheet>,<bibliocraft:framingsheet>,<bibliocraft:framingsheet>]
+]);
+
+var mapTorch as IIngredient[][][][int] = {
+    2 : [
+        [
+            [<actuallyadditions:item_misc:10>],
+            [<ore:stickWood>]
+        ],
+        [
+            [<actuallyadditions:item_misc:11>],
+            [<ore:stickWood>]
+        ]
+    ],
+    3 : [
+        [
+            [<forestry:beeswax>],
+            [<forestry:beeswax>],
+            [<ore:stickWood>]
+        ],
+        [
+            [<harvestcraft:beeswaxitem>],
+            [<harvestcraft:beeswaxitem>],
+            [<ore:stickWood>]
+        ],
+        [
+            [<ic2:itemharz>],
+            [<ic2:itemharz>],
+            [<ore:stickWood>]
+        ]
+    ],
+    4 : [
+        [
+            [<actuallyadditions:item_misc:10>],
+            [<ore:stickTreatedWood>]
+        ],
+        [
+            [<actuallyadditions:item_misc:11>],
+            [<ore:stickTreatedWood>]
+        ],
+        [
+            [<actuallyadditions:item_misc:10>],
+            [<contenttweaker:cordage_fiber>],
+            [<ore:stickWood>]
+        ],
+        [
+            [<actuallyadditions:item_misc:11>],
+            [<contenttweaker:cordage_fiber>],
+            [<ore:stickWood>]
+        ]
+    ],
+    8 : [
+        [
+            [<thermalfoundation:material:832>],
+            [<ore:stickTreatedWood>]
+        ],
+        [
+            [<thermalfoundation:material:833>],
+            [<ore:stickTreatedWood>]
+        ],
+        [
+            [<evilcraft:blood_waxed_coal>],
+            [<ore:stickTreatedWood>]
+        ],
+        [
+            [<abyssalcraft:charcoal>],
+            [<ore:stickTreatedWood>]
+        ]
+    ],
+    12 : [
+        [
+            [null,<forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}),null],
+            [<harvestcraft:wovencottonitem>,<harvestcraft:wovencottonitem>,<harvestcraft:wovencottonitem>],
+            [<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]
+        ]
+    ]
+};
+
+recipes.remove(<minecraft:torch>);
+
+for amount, recipe_map in mapTorch {
+    for entry in recipe_map {
+        recipes.addShaped(<minecraft:torch> * amount, entry);
+    }
 }

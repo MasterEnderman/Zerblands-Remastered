@@ -36,7 +36,12 @@ import mods.tconstruct.Melting;
 <ore:ingotAlfSteel>.add(<contenttweaker:alfsteel_ingot>);
 <ore:ingotEnrichedGold>.add(<contenttweaker:enrichedgold_ingot>);
 <ore:blockEnrichedGold>.add(<contenttweaker:enriched_gold_block>);
-<ore:materialFlesh>.add(<evilcraft:werewolf_flesh:1>);
+<ore:materialFlesh>.add([
+    <abyssalcraft:corflesh>,
+    <abyssalcraft:antiflesh>,
+    <abyssalcraft:omotholflesh>,
+    <abyssalcraft:anticorflesh>,
+]);
 <ore:ingotEnder>.add(<contenttweaker:ender_ingot>);
 <ore:dustEndstone>.add(<contenttweaker:end_stone_dust>);
 <ore:shoggothFlesh>.add([
@@ -59,6 +64,15 @@ import mods.tconstruct.Melting;
 <ore:kleinStarOmega>.add(<projecte:item.pe_klein_star:5>);
 <ore:matterDark>.add(<projecte:item.pe_matter>);
 <ore:matterRed>.add(<projecte:item.pe_matter:1>);
+<ore:listAllmeatraw>.add([
+    <cannibalism:playerflesh>,
+    <cannibalism:villagerflesh>,
+    <cannibalism:witchflesh>,
+]);
+<ore:listAllmeatcooked>.add([
+    <cannibalism:playerfleshcooked>,
+    <cannibalism:villagerfleshcooked>,
+]);
 
 furnace.remove(<minecraft:coal>);
 

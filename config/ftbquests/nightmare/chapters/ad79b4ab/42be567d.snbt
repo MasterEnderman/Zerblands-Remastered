@@ -1,0 +1,17 @@
+{
+	x: -16.0d,
+	y: 18.5d,
+	text: [
+		"Elven Avatar - upgraded avatar that can interact with the world. Think of a more mystical, mana oriented autonomous activator."
+	],
+	dependencies: [
+		"a193b866"
+	],
+	tasks: [{
+		uid: "39847f49",
+		type: "item",
+		items: [{
+			item: "botaunomy:elven_avatar"
+		}]
+	}]
+}

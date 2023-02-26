@@ -1,0 +1,22 @@
+{
+	x: 8.0d,
+	y: 1.5d,
+	text: [
+		"Torch Bandolier is an item that stores a large number of torches and can place them."
+	],
+	dependencies: [
+		"3fe13350"
+	],
+	tasks: [{
+		uid: "156d6a0a",
+		type: "item",
+		items: [{
+			id: "torchbandolier:torch_bandolier",
+			tag: {
+				TorchBandolier: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: 0.0d,
+	y: 40.5d,
+	dependencies: [
+		"c848d5cb"
+	],
+	tasks: [{
+		uid: "7abb3a6c",
+		type: "item",
+		items: [{
+			item: "jecalculation:item_calculator"
+		}],
+		ignore_nbt: 1b
+	}]
+}

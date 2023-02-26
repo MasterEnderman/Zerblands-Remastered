@@ -64,3 +64,15 @@ ThermionicFabricator.addCast(<integrateddynamics:part_display_panel_item>, [
     [<integrateddynamics:part_static_light_panel_item>,<integrateddynamics:variable_transformer>,<integrateddynamics:part_static_light_panel_item>],
     [<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>]
 ], <liquid:glass> * 200);
+
+recipes.remove(<integrateddynamics:menril_torch>);
+recipes.addShaped(<integrateddynamics:menril_torch> * 2, [
+    [<integrateddynamics:menril_berries>],
+    [<ore:stickWood>]
+]);
+
+recipes.remove(<integrateddynamics:menril_torch_stone>);
+recipes.addShaped(<integrateddynamics:menril_torch_stone> * 2, [
+    [<integrateddynamics:menril_berries>],
+    [<ore:rodStone>]
+]);

@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: 13.5d,
+	description: "I need more flesh!",
+	dependencies: [
+		"0629c4d0"
+	],
+	tasks: [{
+		uid: "ce6405e2",
+		type: "item",
+		items: [{
+			item: "cannibalism:flintknife"
+		}]
+	}]
+}

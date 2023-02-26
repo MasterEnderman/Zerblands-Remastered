@@ -128,7 +128,22 @@ var chiselMap as IItemStack[][string] = {
         <blackstonebasalt:basalt>,
         <blackstonebasalt:polishedbasalt>,
         <blackstonebasalt:smoothbasalt>,
-    ]
+    ],
+    "ct_concrete_door" : [
+        <engineersdoors:door_concrete>,
+        <engineersdoors:door_concrete_ornate>,
+        <engineersdoors:door_concrete_reinforced>,
+    ],
+    "ct_steel_door" : [
+        <engineersdoors:door_steel>,
+        <engineersdoors:door_steel_ornate>,
+        <engineersdoors:door_steel_reinforced>,
+    ],
+    "ct_treated_door" : [
+        <engineersdoors:door_treated>,
+        <engineersdoors:door_treated_ornate>,
+        <engineersdoors:door_treated_reinforced>,
+    ],
 };
 
 for group, items in chiselMap {
@@ -152,3 +167,19 @@ recipes.addShaped(<contenttweaker:wither_clean> * 64, [
     [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>],
     [<minecraft:stone>,<minecraft:skull:1>,<minecraft:stone>]
 ]);
+
+Carving.addVariation("bookshelf_acacia",<quark:custom_bookshelf:3>);
+recipes.remove(<chisel:bookshelf_acacia>);
+
+Carving.addVariation("bookshelf_birch",<quark:custom_bookshelf:1>);
+recipes.remove(<chisel:bookshelf_birch>);
+
+Carving.addVariation("bookshelf_darkoak",<quark:custom_bookshelf:4>);
+recipes.remove(<chisel:bookshelf_darkoak>);
+
+Carving.addVariation("bookshelf_jungle",<quark:custom_bookshelf:2>);
+recipes.remove(<chisel:bookshelf_jungle>);
+
+Carving.addVariation("bookshelf_spruce",<quark:custom_bookshelf>);
+recipes.remove(<chisel:bookshelf_spruce>);
+

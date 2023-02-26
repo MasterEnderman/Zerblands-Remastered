@@ -44,6 +44,9 @@ JEI.removeAndHide(<actuallyadditions:block_energizer>);
 
 <actuallyadditions:item_misc:19>.displayName = "Dragon Star";
 
+recipes.remove(<actuallyadditions:item_food:7>);
+furnace.addRecipe(<actuallyadditions:item_food:7>,<harvestcraft:noodlesitem>);
+
 recipes.remove(<actuallyadditions:block_greenhouse_glass>);
 recipes.addShaped(<actuallyadditions:block_greenhouse_glass> * 4, [
     [<ore:blockGlassHardened>,<forestry:crafting_material:7>,<ore:blockGlassHardened>],

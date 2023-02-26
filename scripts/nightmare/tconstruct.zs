@@ -227,10 +227,90 @@ var mapBlood as int[IItemStack] = {
     <harvestcraft:venisonrawitem> : 200,
     <harvestcraft:duckrawitem> : 200,
     <minecraft:rotten_flesh> : 250,
+	<harvestcraft:grubitem> : 100,
+	<cannibalism:playerflesh> : 500,
+	<cannibalism:villagerflesh> : 800,
+	<cannibalism:witchflesh> : 1000,
 };
 
 Melting.removeRecipe(<liquid:blood>);
 
 for item, amount in mapBlood {
     Melting.addRecipe(<liquid:blood> * amount, item, 500);
+}
+
+
+var mapTorch as IIngredient[][][][int] = {
+    2 : [
+        [
+            [<actuallyadditions:item_misc:10>],
+            [<ore:rodStone>]
+        ],
+        [
+            [<actuallyadditions:item_misc:11>],
+            [<ore:rodStone>]
+        ]
+    ],
+    3 : [
+        [
+            [<forestry:beeswax>],
+            [<forestry:beeswax>],
+            [<ore:rodStone>]
+        ],
+        [
+            [<harvestcraft:beeswaxitem>],
+            [<harvestcraft:beeswaxitem>],
+            [<ore:rodStone>]
+        ],
+        [
+            [<ic2:itemharz>],
+            [<ic2:itemharz>],
+            [<ore:rodStone>]
+        ]
+    ],
+    4 : [
+        [
+            [<actuallyadditions:item_misc:10>],
+            [<contenttweaker:cordage_fiber>],
+            [<ore:rodStone>]
+        ],
+        [
+            [<actuallyadditions:item_misc:11>],
+            [<contenttweaker:cordage_fiber>],
+            [<ore:rodStone>]
+        ]
+    ],
+    8 : [
+        [
+            [<thermalfoundation:material:832>],
+            [<ore:rodStone>]
+        ],
+        [
+            [<thermalfoundation:material:833>],
+            [<ore:rodStone>]
+        ],
+        [
+            [<evilcraft:blood_waxed_coal>],
+            [<ore:rodStone>]
+        ],
+        [
+            [<abyssalcraft:charcoal>],
+            [<ore:rodStone>]
+        ]
+    ],
+    12 : [
+        [
+            [null,<forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}),null],
+            [<harvestcraft:wovencottonitem>,<harvestcraft:wovencottonitem>,<harvestcraft:wovencottonitem>],
+            [<ore:rodStone>,<ore:rodStone>,<ore:rodStone>]
+        ]
+    ]
+};
+
+recipes.remove(<tconstruct:stone_torch>);
+
+for amount, recipe_map in mapTorch {
+    for entry in recipe_map {
+        recipes.addShaped(<tconstruct:stone_torch> * amount, entry);
+    }
 }

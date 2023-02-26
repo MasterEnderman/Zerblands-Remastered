@@ -151,6 +151,10 @@ var mapBlood as float[IItemStack] = {
     <harvestcraft:venisonrawitem> : 0.3,
     <harvestcraft:duckrawitem> : 0.3,
     <minecraft:rotten_flesh> : 0.2,
+    <harvestcraft:grubitem> : 0.3,
+    <cannibalism:playerflesh> : 0.5,
+    <cannibalism:villagerflesh> : 0.7,
+    <cannibalism:witchflesh> : 0.9
 };
 
 for item, mult in mapBlood {

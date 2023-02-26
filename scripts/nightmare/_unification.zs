@@ -38,6 +38,14 @@ import mods.thermalexpansion.Sawmill;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Melting;
 
+function simpleAlloy(output as IItemStack, input1 as IItemStack, input2 as IItemStack) {
+    var recipe as IItemStack[] = [input1,input2];
+    recipes.remove(output);
+    Kiln.addRecipe(output, input1, input2, 200);
+    AlloySmelter.addRecipe(output, recipe, 5000);
+    InductionSmelter.addRecipe(output, input1, input2, 2500);
+}
+
 JEI.removeAndHide(<appliedenergistics2:material:40>);
 JEI.removeAndHide(<enderio:item_material:9>);
 JEI.removeAndHide(<enderio:item_material:10>);
@@ -137,11 +145,12 @@ for item, recipe in mapSimpleAlloy {
     var input1 as IItemStack = recipe[0];
     var input2 as IItemStack = recipe[1];
 
-    recipes.remove(item);
-    Kiln.addRecipe(item, input1, input2, 200);
-    AlloySmelter.addRecipe(item, recipe, 5000);
-    InductionSmelter.addRecipe(item, input1, input2, 2500);
+    simpleAlloy(item, input1, input2);
 }
+
+simpleAlloy(findFirstItemFromMod("contenttweaker","ingot","batteryAlloy") * 5,findFirstItemFromMod("thermalfoundation","dust","lead") * 4,findFirstItemFromMod("contenttweaker","dust","antimony"));
+simpleAlloy(findFirstItemFromMod("contenttweaker","ingot","solderingAlloy") * 3,findFirstItemFromMod("thermalfoundation","dust","tin") * 2,findFirstItemFromMod("thermalfoundation","dust","lead"));
+simpleAlloy(findFirstItemFromMod("contenttweaker","ingot","redAlloy"),findFirstItemFromMod("thermalfoundation","dust","aluminum"),<minecraft:redstone> * 4);
 
 var mapSimpleCrush as IItemStack[IItemStack] = {
     <enderio:item_material:22> : <earthworks:item_adobe>,

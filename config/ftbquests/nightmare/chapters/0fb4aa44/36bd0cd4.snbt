@@ -1,6 +1,12 @@
 {
 	x: -6.0d,
 	y: 13.5d,
+	text: [
+		"The Ember Bore used to harvest Ember Crystals, Ember Shards, and Ember Grit when it is placed on bedrock; the Bore works at levels y ≤ 5.",
+		"It has no interface and requires solid fuels (e.g., Coal) to be piped or transferred into the center block of the structure. The Ember Bore emits sound and the blades underneath it move when it is running.",
+		"Collected Ember Shards and Crystals must be transferred out of the middle block, which can be done with Item Pipes or any transport pipes from other mods.",
+		"A Mechanical Core can be attached to the Ember Bore's center block to simultaneously insert fuel and extract Ember products."
+	],
 	dependencies: [
 		"35fef444"
 	],

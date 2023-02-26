@@ -1,5 +1,32 @@
 # Zerblands-Remastered
 
+## v2.2.5 - Hotfix XI
+
+- added Better Foliage
+- added Blockcraftery
+- added Campfire
+- added Cannibalism
+- added Engineer's Doors
+- added Fixeroo
+- added Just Enough Calculation
+- added Quark
+- added Torch Bandolier
+- added Wavey Capes
+- added World Border
+
+- updated Universal Tweaks
+
+- removed Clumps (replaced by Fixeroo)
+- removed Tinkers OreDict Cache (replaced by Universal Tweaks)
+
+- added a few more flesh items to the leather / blood production lines
+- added a few more quests
+- added bone drops to cows, pigs, sheep
+- added description to the ember bore quest
+- integrated Cannibalism into the modpack
+- thinned out quark to the bare minimum
+- tweaked a few more minecraft recipes
+
 ## v2.2.4 - Hotfix X
 
 - added Aqua Acrobatics

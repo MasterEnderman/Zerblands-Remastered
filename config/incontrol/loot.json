@@ -13,5 +13,20 @@
         "mob": "abyssalcraft:abyssalzombie",
         "item": "abyssalcraft:coralium",
         "itemcount": "2-3/2-5/2-7/2-9"
+    },
+    {
+        "mob": "minecraft:cow",
+        "item": "minecraft:bone",
+        "itemcount": "1-2"
+    },
+    {
+        "mob": "minecraft:pig",
+        "item": "minecraft:bone",
+        "itemcount": "1-2"
+    },
+    {
+        "mob": "minecraft:sheep",
+        "item": "minecraft:bone",
+        "itemcount": "1-2"
     }
 ]
