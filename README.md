@@ -14,7 +14,7 @@ Zerblands is a Modpack containing some well known mods, but most of the recipes 
 
 This Modpack also contains a questbook, which guides the player through the different stages of the pack. Furthermore there is an ingame guide, that shows the player usefull information, like ore generation values and usefull tips on how to play through the modpack.
 
-With version 2.1.8 the second packmode (called `Nightmare Mode`) can be accessed from within the pack. After changing the packmode you need to restart the pack. THe new packmode comes with it's own questbook and new challenges to overcome. I'm still working on further improving the packmode as well as fixing most of the bugs while they come up.
+With version 2.1.8 the second packmode (called `Nightmare Mode`) can be accessed from within the pack. After changing the packmode you need to restart the pack. The new packmode comes with it's own questbook and new challenges to overcome. I'm still working on further improving the packmode as well as fixing most of the bugs while they come up.
 
 ## Pack-Developer
 
