@@ -16,6 +16,7 @@
 			tag: {
 				electricity: 10000.0f
 			}
-		}]
+		}],
+		ignore_nbt: 1b
 	}]
 }

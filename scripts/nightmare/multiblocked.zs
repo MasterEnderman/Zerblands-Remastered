@@ -29,10 +29,11 @@ import mods.multiblocked.recipe.RecipeLogic;
 import mods.multiblocked.recipe.Recipe;
 
 import scripts.nightmare.mbd_maps.elven_portal.mapPortal;
+import scripts.nightmare.mbd_maps.workbench.mapWorkbench;
 
-var definition as ComponentDefinition = MBDRegistry.getDefinition("zerblands:elven_portal");
+var definition_portal as ComponentDefinition = MBDRegistry.getDefinition("zerblands:elven_portal");
 
-var elven_portal = definition as ControllerDefinition;
+var elven_portal = definition_portal as ControllerDefinition;
 
 val portalRecipeMap = RecipeMap("portal") as RecipeMap;
 
@@ -51,19 +52,37 @@ for output, input in mapPortal {
         .buildAndRegister();
 }
 
-/*
-for mana, recipes in mapPortal {
-    for output, inputs in recipes {
-        for item in inputs {
-            logger.logInfo("Adding Recipe for "~output.name);
-            portalRecipeMap.start()
-                .name("mbd_" + toString(output) + "_" + toString(item))
-                .duration(5)
-                .inputMana(mana)
-                .inputItems(item)
-                .outputItems(output)
-                .buildAndRegister();
-        }
+var definition_workbench as ComponentDefinition = MBDRegistry.getDefinition("zerblands:workbench");
+
+var workbench = definition_workbench as ControllerDefinition;
+
+val workbenchRecipeMap = RecipeMap("workbench") as RecipeMap;
+
+RecipeMap.register(workbenchRecipeMap);
+
+workbench.recipeMap = workbenchRecipeMap;
+
+function getAmount(blueprint as string, item as IItemStack) as int {
+    if (blueprint == "rails") { return 16; }
+    if (blueprint == "bullet") { return 8; }
+    if (item.name == <immersiveengineering:material:26>.name) { return 3; }
+    return 1;
+}
+
+for blueprint_str, blueprint_map in mapWorkbench {
+    for output, items in blueprint_map {
+        var amount as int = getAmount(blueprint_str,output);
+        logger.logInfo("Adding Workbench Recipe for " ~ amount ~ "x "~ output.name ~ " || Blueprint: " ~ blueprint_str);
+        workbenchRecipeMap.start()
+            .name("mbd_" + blueprint_str + "_" + toString(output))
+            .duration(20)
+            .inputItems(items)
+            //.slotName("output")
+            .outputItems(output * amount)
+            //.slotName("blueprint")
+            .inputItems(0.0, <immersiveengineering:blueprint>.withTag({blueprint: blueprint_str}))
+            .buildAndRegister();
     }
 }
-*/
+
+// Just a Note for later; "I disable the slot name filter for now as it causes a crash. They will be re-enabled once this bug is fixed by the CleanroomMC team."

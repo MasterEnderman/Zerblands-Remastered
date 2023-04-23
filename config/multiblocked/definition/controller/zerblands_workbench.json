@@ -1,0 +1,171 @@
+{
+  "version": 2,
+  "location": "zerblands:workbench",
+  "traits": {
+    "item": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 7,
+        "y": 152,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 2,
+        "slotName": "blueprint",
+        "x": 81,
+        "y": 15,
+        "autoIO": false,
+        "valid": [
+          "\"{id:\\\"immersiveengineering:blueprint\\\",Count:1,Damage:0s,tag:{blueprint:\\\"electrode\\\"}}\"",
+          "\"{id:\\\"immersiveengineering:blueprint\\\",Count:1,Damage:0s,tag:{blueprint:\\\"rails\\\"}}\"",
+          "\"{id:\\\"immersiveengineering:blueprint\\\",Count:1,Damage:0s,tag:{blueprint:\\\"machinery\\\"}}\"",
+          "\"{id:\\\"immersiveengineering:blueprint\\\",Count:1,Damage:0s,tag:{blueprint:\\\"bullet\\\"}}\"",
+          "\"{id:\\\"immersiveengineering:blueprint\\\",Count:1,Damage:0s,tag:{blueprint:\\\"components\\\"}}\""
+        ]
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "mIO": 1,
+        "slotName": "output",
+        "x": 151,
+        "y": 152,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 25,
+        "y": 152,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 43,
+        "y": 152,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 7,
+        "y": 134,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 25,
+        "y": 134,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 7,
+        "y": 116,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 25,
+        "y": 116,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 43,
+        "y": 134,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 43,
+        "y": 116,
+        "autoIO": false
+      }
+    ],
+    "background": "multiblocked:textures/custom_gui.png"
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "multiblocked:blueprint_table_part",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "renderer": {
+        "modelLocation": "multiblocked:workbench",
+        "type": "imodel"
+      },
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "@"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "controller": {
+        "location": "zerblands:workbench",
+        "type": "component"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ]
+    }
+  }
+}

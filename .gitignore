@@ -90,3 +90,7 @@ imgui\.ini
 hei_bookmarks\.ini
 
 assetmover/
+
+dynmap/
+config/dynmap.cfg
+config/dynmapblockscan.cfg

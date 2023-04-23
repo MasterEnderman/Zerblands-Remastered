@@ -123,12 +123,12 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <minecraft:furnace> : [
         [
             [<extrautils2:compressedcobblestone>,<extrautils2:compressedcobblestone>,<extrautils2:compressedcobblestone>],
-            [<extrautils2:compressedcobblestone>,<campfire:campfire>,<extrautils2:compressedcobblestone>],
+            [<extrautils2:compressedcobblestone>,<campfire:campfire:1>,<extrautils2:compressedcobblestone>],
             [<extrautils2:compressedcobblestone>,<extrautils2:compressedcobblestone>,<extrautils2:compressedcobblestone>]
         ],
         [
             [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>],
-            [<sonarcore:reinforcedstoneblock>,<campfire:campfire>,<sonarcore:reinforcedstoneblock>],
+            [<sonarcore:reinforcedstoneblock>,<campfire:campfire:1>,<sonarcore:reinforcedstoneblock>],
             [<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>,<sonarcore:reinforcedstoneblock>]
         ]
     ],

@@ -4,6 +4,12 @@ tile.zerblands.elven_portal.name=Compact Elven Portal Controller
 zerblands.elven_portal.description=A faster version of the Elven Gateway
 multiblocked.recipe_map.portal=Compact Elven Portal
 
+# Workbench
+workbench.name=Workbench
+tile.zerblands.workbench.name=Workbench
+zerblands.workbench.description=If the Engineer's Workbench won't work
+multiblocked.recipe_map.workbench=Workbench
+
 # Blueprint Table
 blueprint.name=Blueprint Table
 

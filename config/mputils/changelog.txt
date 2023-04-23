@@ -1,5 +1,42 @@
 # Zerblands-Remastered
 
+## v2.2.6 - Hotfix XII
+
+- added ClocheTweaks
+- added DupeFix Project
+- added Dupeless Cloth
+- added Hesperus
+- added Nothirium
+- added Sledgehammer
+
+- updated AE2 Fluid Crafting Rework
+- updated AE2 Unofficial Extended Life
+- updated Aqua Acrobatics
+- updated AssetMover
+- updated Avaritiaddons
+- updated Botaunomy Reloaded
+- updated Campfire
+- updated Controlling
+- updated CraftTweaker
+- updated Extra Sounds Legacy
+- updated Had Enough Items
+- updated IC2C
+- updated IC2C UU-Matter
+- updated Inventory Bogo Sorter
+- updated MixinBooter
+- updated ModularUI
+- updated Multiblocked
+- updated Not Enough Energistics
+- updated RenderLib
+- updated Universal Tweaks
+
+- removed Phosphor (replaced by Hesperus)
+- removed Toast Control (replaced by Universal Tweaks)
+
+- added a custom workbench to hopefully fix bugs with the engineer's workbench
+- added more fertilizer and fluids to the IE garden cloche
+- updated README
+
 ## v2.2.5 - Hotfix XI
 
 - added Better Foliage

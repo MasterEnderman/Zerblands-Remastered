@@ -158,7 +158,7 @@ var mapBlood as float[IItemStack] = {
 };
 
 for item, mult in mapBlood {
-    Lightwell.addLiquefaction(item, <liquid:evilcraftblood>, 1, mult, 0);
+    Lightwell.addLiquefaction(item, <liquid:evilcraftblood>, mult, 1, 0);
 }
 
 recipes.remove(<evilcraft:promise>);

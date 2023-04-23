@@ -19,18 +19,5 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.jei.JEI;
-import mods.tconstruct.Casting;
 
-JEI.removeAndHide(<cannibalism:knifeoftesting>);
-JEI.removeAndHide(<cannibalism:woodenknife>);
-JEI.removeAndHide(<cannibalism:stoneknife>);
-JEI.removeAndHide(<cannibalism:goldknife>);
-JEI.removeAndHide(<cannibalism:ironknife>);
-JEI.removeAndHide(<cannibalism:diamondknife>);
-JEI.removeAndHide(<cannibalism:wendigoheart>);
-JEI.removeAndHide(<cannibalism:groundedplayerheart>);
-
-recipes.remove(<cannibalism:flintknife>);
-Casting.addTableRecipe(<cannibalism:flintknife>,<actuallyadditions:item_knife:*>, <liquid:blood>, 500, true, 100);
-
-recipes.addShapeless(<cannibalism:playerflesh>, [<cannibalism:playerflesh>]);
+JEI.addItem(<campfire:campfire:1>);

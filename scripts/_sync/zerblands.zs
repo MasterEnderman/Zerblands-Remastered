@@ -26,6 +26,11 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<tconevo:metal:44>,<energycontrol:item_component:2>,<tconevo:metal:44>],
             [<botanicadds:gaiasteel_ingot>,<contenttweaker:jump_module>,<botanicadds:gaiasteel_ingot>]
         ]
+    ],
+    <zerblands:workbench> : [
+        [
+            [<immersiveengineering:wooden_device0:2>]
+        ]
     ]
 };
 

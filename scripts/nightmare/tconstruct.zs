@@ -228,7 +228,6 @@ var mapBlood as int[IItemStack] = {
     <harvestcraft:duckrawitem> : 200,
     <minecraft:rotten_flesh> : 250,
 	<harvestcraft:grubitem> : 100,
-	<cannibalism:playerflesh> : 500,
 	<cannibalism:villagerflesh> : 800,
 	<cannibalism:witchflesh> : 1000,
 };
@@ -239,6 +238,12 @@ for item, amount in mapBlood {
     Melting.addRecipe(<liquid:blood> * amount, item, 500);
 }
 
+Melting.addRecipe(<liquid:blood> * 500, <ore:listAllFlesh>, 500);
+
+for i in 1 to 11 {
+    var melt_brick as IItemStack = <tconstruct:seared>.definition.makeStack(i);
+    Melting.addRecipe(<liquid:stone> * 288, melt_brick, 500);
+}
 
 var mapTorch as IIngredient[][][][int] = {
     2 : [

@@ -185,7 +185,15 @@
   "item.tconevo:metal36_-24097951": true,
   "item.tconevo:metal41_201187275": true,
   "item.redstonerepository.material.dustGelidEnderium_889865417": true,
-  "ic2exprecipe_Fluix Dust_": true
+  "ic2exprecipe_Fluix Dust_": true,
+  "item.itemDustCoal": true,
+  "item.itemDustIron": true,
+  "item.itemDustGold": true,
+  "item.itemDustSilver": true,
+  "item.itemDustCopper": true,
+  "item.itemDustBronze": true,
+  "item.itemDustTin": true,
+  "item.itemFlour_-1537062357": true
  },
  "extractor": {
   "item.coal_764578481": true,

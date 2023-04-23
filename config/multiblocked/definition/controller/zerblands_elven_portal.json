@@ -70,7 +70,8 @@
             "meta": 0
           }
         ],
-        "type": "states"
+        "type": "states",
+        "io": "IN"
       },
       "controller": {
         "location": "zerblands:elven_portal",
@@ -92,7 +93,8 @@
             "meta": 0
           }
         ],
-        "type": "states"
+        "type": "states",
+        "io": "OUT"
       },
       "D": {
         "states": [

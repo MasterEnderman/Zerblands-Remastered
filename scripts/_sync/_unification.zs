@@ -73,6 +73,9 @@ import mods.tconstruct.Melting;
     <cannibalism:playerfleshcooked>,
     <cannibalism:villagerfleshcooked>,
 ]);
+<ore:listAllFlesh>.add(<cannibalism:playerflesh>);
+<ore:bulletEmpty>.add(<xreliquary:bullet>);
+<ore:bulletEmpty>.add(<immersiveengineering:bullet>);
 
 furnace.remove(<minecraft:coal>);
 

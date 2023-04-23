@@ -181,9 +181,6 @@ for tier, items in mapAlchemyTable {
     }
 }
 
-<ore:bulletEmpty>.add(<xreliquary:bullet>);
-<ore:bulletEmpty>.add(<immersiveengineering:bullet>);
-
 recipes.removeByRecipeName("xreliquary:items/bullets/neutral");
 recipes.remove(<xreliquary:bullet:2>);
 recipes.remove(<xreliquary:bullet:3>);

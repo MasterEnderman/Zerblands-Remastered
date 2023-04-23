@@ -18,6 +18,8 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.jei.JEI;
+
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <multiblocked:item_input> : [
         [
@@ -79,4 +81,17 @@ for key, value in recipeMapShaped {
         recipes.addShaped(name, key, recipe);
         index += 1;
     }
+}
+
+var listJEI as IItemStack[] = [
+    <multiblocked:blueprint_table>,
+    <multiblocked:blueprint_table_part>,
+    <multiblocked:controller_tester>,
+    <multiblocked:part_tester>,
+    <multiblocked:blueprint>,
+    <multiblocked:multiblock_builder>
+];
+
+for item in listJEI {
+    JEI.removeAndHide(item);
 }

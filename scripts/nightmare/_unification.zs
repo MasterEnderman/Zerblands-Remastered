@@ -85,6 +85,7 @@ furnace.addRecipe(<ic2:itemmisc:180>,<ore:dustUranium>);
 
 ArcFurnace.removeRecipe(<thermalfoundation:material:160>);
 ArcFurnace.addRecipe(<thermalfoundation:material:160>,<contenttweaker:reinforcediron_ingot>,<thermalfoundation:material:864>, 400, 512);
+ArcFurnace.addRecipe(<thermalfoundation:material:163>,<thermalfoundation:material:129>,<thermalfoundation:material:128>*3, 400, 512);
 InductionSmelter.removeRecipe(<thermalfoundation:material:769>*4,<thermalfoundation:material>);
 InductionSmelter.removeRecipe(<thermalfoundation:material:769>*4,<minecraft:iron_ingot>);
 InductionSmelter.removeRecipe(<thermalfoundation:material:802>,<thermalfoundation:material>);
@@ -206,6 +207,9 @@ Saw.addRecipe(<bibliocraft:framingsheet> * 4, <ore:slabTreatedWood>);
 Sawmill.addRecipe(<bibliocraft:framingboard>  * 2, <bibliocraft:framingsheet>, 1500);
 Saw.addRecipe(<bibliocraft:framingboard>  * 2, <bibliocraft:framingsheet>);
 
+Crusher.addRecipe(<enderio:item_material:30> * 2, <tconstruct:ore:1>, 2048);
+Crusher.addRecipe(<enderio:item_material:31> * 2, <tconstruct:ore>, 2048);
+
 var mapWood as IItemStack[IItemStack] = {
     // minecraft
     <minecraft:log> : <minecraft:planks>,
@@ -300,6 +304,10 @@ var mapWood as IItemStack[IItemStack] = {
 for log, plank in mapWood {
     recipes.remove(plank);
     recipes.addShapeless(plank * 2, [log]);
+    recipes.addShaped(plank * 3, [
+        [<earthworks:tool_saw:*>.transformDamage(3)],
+        [log]
+    ]);
     Sawmill.addRecipe(<minecraft:stick>*4, plank, 400, <thermalfoundation:material:800>, 10);
 }
 
