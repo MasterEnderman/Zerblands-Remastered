@@ -16,6 +16,8 @@ This Modpack also contains a questbook, which guides the player through the diff
 
 With version 2.1.8 the second packmode (called `Nightmare Mode`) can be accessed from within the pack. After changing the packmode you need to restart the pack. THe new packmode comes with it's own questbook and new challenges to overcome. I'm still working on further improving the packmode as well as fixing most of the bugs while they come up.
 
+As of version 2.3.0 the `Nightmare Mode` became the default mode as the now called `Legacy Mode` won't get any further updates (besides bug fixes). I'm still working on rebalancing parts of the end game as I slowly approach it in my own playthrough. If you have any feedback feel free to open an issue on github. :)
+
 ## Pack-Developer
 
 `_MasterEnderman_` - Project-Manager, Lead-Artist, Developer
@@ -24,13 +26,18 @@ With version 2.1.8 the second packmode (called `Nightmare Mode`) can be accessed
 
 ## Partnership with Akliz
 
-It's a pleasure to be partnered with Akliz. Besides being a fantastic server provider, which makes it incredibly easy to setup a server of your choice, they help me to push myself and the quality of my projects to the next level. Furthermore you can click on the banner below to get a disocunt. :')
+It's a pleasure to be partnered with Akliz. Besides being a fantastic server provider, which makes it incredibly easy to setup a server of your choice, they help me to push myself and the quality of my projects to the next level. Furthermore you can click on the banner below to get a discount. :')
 
 <a href="https://www.akliz.net/enderman"><img src="Akliz_Partner.png" align="center"/></a>
 
+If you aren't located in the [US](https://www.akliz.net/enderman), Akliz now offers servers in:
+
+- [Europe](https://www.akliz.net/enderman-eu)
+- [Oceania](https://www.akliz.net/enderman-oce)
+
 ## Special Thanks
 
-`Zerberus1979` - a close friend of mine, who motivated me to start in Zerblands in the first place
+`Zerberus1979` - a close friend of mine, who motivated me to start with the Zerblands modpack in the first place
 
 `Rongmario` and the people behind `CleanroomMC` - for keeping modded 1.12 alive and still offer improvements for it
 
