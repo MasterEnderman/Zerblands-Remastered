@@ -1,0 +1,81 @@
+{
+	"versionName": "2.3.0",
+	"versionCode": 1,
+	"versionFormat": "%versionName%",
+	"sponsors": [{
+			"category": "gold",
+            "displayName": "Gold-Sponsor",
+			"titleFormat": ["GOLD", "BOLD"],
+			"sponsorFormat": ["GOLD"],
+			"sponsors": [{
+					"name": "GaertnerGeorg",
+                    "uuid": "6d5c217f-a4ee-418a-85f6-878925fa8a4"
+				},
+				{
+					"name": "Maxos4672",
+                    "uuid": "49032e89-b40a-4cb3-82ca-6cda41f4d2a8"
+				},
+				{
+					"name": "Colonel_ArronHD",
+                    "uuid": "0db05399-c68c-4f0e-99a9-2592d2749176"
+				},
+				{
+					"name": "BorgqueenDE",
+                    "uuid": "e5b0e1a5-09bd-472f-a88c-80167e12f224"
+				},
+				{
+					"name": "Klebe0815",
+                    "uuid": "4b3d242e-8c52-4987-9a53-aaef6c7f570"
+				},
+				{
+					"name": "MerryLou",
+                    "uuid": "6ead1906-c426-4767-a65f-4f5fd5303c6f"
+				},
+				{
+					"name": "_RiaG_",
+                    "uuid": "fd0beb86-e27d-4da7-ae0a-b04abd6c0e21"
+				},
+				{
+					"name": "SoorGii_x3",
+                    "uuid": "782320d1-7bff-4be5-b22c-00736ef69a6d"
+				}
+			]
+		},
+		{
+			"category": "diamond",
+            "displayName": "Diamond-Sponsor",
+			"titleFormat": ["AQUA", "BOLD"],
+			"sponsorFormat": ["AQUA"],
+			"sponsors": [{
+				"name": "Zerb1979"
+			},
+            {
+                "name": "DrJellyTime",
+                "uuid": "38934869-72d9-453c-8938-4f43d07bbbf8"
+            }]
+		}
+	],
+	"sponsorMessage": ["", {
+		"text": "Thank all of you for sponsoring!",
+		"color": "gold"
+	}, {
+		"text": "\n"
+	}, {
+		"text": "Become a sponsor!",
+		"color": "red",
+		"bold": true,
+		"underlined": true,
+		"clickEvent": {
+			"action": "open_url",
+			"value": "https://www.buymeacoffee.com/masterenderman"
+		}
+	}],
+	"changelogs": {
+		"1.2.0": [
+			"refactored almost all configs to match with the original"
+		],
+		"1.1.0": [
+			"rebuild the modpack from scratch for 1.12.2 instead of 1.10.2"
+		]
+	}
+}
