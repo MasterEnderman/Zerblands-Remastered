@@ -1,1 +1,1178 @@
-# Zerblands-Remastered
+# Changelog for the Zerblands-Remastered Modpack for Minecraft 1.12.2
+
+## v2.2.7 - Hotfix XIII [unreleased]
+
+### Added Mods
+
+- /dank/null/no_RCE
+- Alfheim Lighting Engine
+- Baubles-LTS
+- Birds On A Wire
+- Chat Calculator
+- Enchantment Storage
+- Ender Storage continuation
+- Lazy AE2 Patch
+- Metal Chests
+- Neeve's AE2: Extended Life Additions
+- OCDriversPlus
+- OpenComputers Drivers for Tinkers Construct
+- Particle Culling
+- Patchouli ROFL Edition
+- Persistent Cake
+- Power Chisels
+- Quark: RotN Edition
+- Raw Mouse Input
+- Red Core
+- ScalingGUIs
+- Screenshot Viewer
+- SerializationIsBad
+- Spice of Life: Carrot Edition
+- StructureUtils
+- The One Probe Community Edition
+- Tinker's JEI
+- Tweaked Excavation
+- Tweaked Petroleum
+- Valkyrie
+- VintageFix
+
+### Updated Mods
+
+- Advancement Locator
+- AE2 Fluid Crafting Rework
+- AE2 Unofficial Extended Life
+- Avaritiaddons
+- BdLib
+- Campfire
+- CensoredASM
+- CraftTweaker
+- Ender IO
+- Ender IO Endergy
+- EnderCore
+- Had Enough Items
+- HammerLib
+- Immersive Technology
+- Inventory Bogo Sorter
+- JEI Utilites
+- MixinBooter
+- ModularUI
+- Mouse Tweaks Unofficial
+- Multi Builder Tool
+- Multiblocked
+- Not Enough Energistics
+- Nothirium
+- OpenComputers
+- Placebo
+- Realistic Terrain Generator Unofficial
+- RenderLib
+- Storage Drawers
+- Universal Tweaks
+- WanionLib
+
+### Removed Mods
+
+- /dank/null (replaced by /dank/null/no_RCE)
+- Baubles (replaced by Baubles-LTS)
+- ChatCalculator (replaced by Chat Calculator)
+- DupeFix Project (replaced by Universal Tweaks)
+- Ender Storage (replaced by Ender Storage continuation)
+- FoamFix (replaced by VintageFix)
+- Hesperus (replaced by Alfheim)
+- Main Menu Scale (replaced by ScalingGUIs)
+- Patchouli (replaced by Patchouli ROFL Edition)
+- Quark (replaced by Quark: RotN Edition)
+- The One Probe (replaced by The One Probe Community Edition)
+- WI Zoom (replaced by Valkyrie)
+
+### Changes
+
+- decreased loadtime by ~20%
+- reformatted the changelog
+- moved changelog into the root directory
+- mp utils now loads the online version of the changelog
+- removed Nether Worldborder
+
+### Bugfixes
+
+- fixed broken bronze recipe in the Arc Furnace
+- fixed Nullifier using an empty OreDict in it's recipe
+- fixed Soulforge recipe being unobtainable with the current Blood Altar level
+- changed recipe for the T3 Blood Orb (was too expensive)
+- changed recipe for the T4 Blood Orb (was unobtainable)
+
+## v2.2.6 - Hotfix XII
+
+### Added Mods
+
+- ClocheTweaks
+- DupeFix Project
+- Dupeless Cloth
+- Hesperus
+- Nothirium
+- Sledgehammer
+
+### Updated Mods
+
+- AE2 Fluid Crafting Rework
+- AE2 Unofficial Extended Life
+- Aqua Acrobatics
+- AssetMover
+- Avaritiaddons
+- Botaunomy Reloaded
+- Campfire
+- Controlling
+- CraftTweaker
+- Extra Sounds Legacy
+- Had Enough Items
+- IC2C
+- IC2C UU-Matter
+- Inventory Bogo Sorter
+- MixinBooter
+- ModularUI
+- Multiblocked
+- Not Enough Energistics
+- RenderLib
+- Universal Tweaks
+
+### Removed Mods
+
+- Phosphor (replaced by Hesperus)
+- Toast Control (replaced by Universal Tweaks)
+
+### Changes
+
+- added a custom workbench to hopefully fix bugs with the engineer's workbench
+- added more fertilizer and fluids to the IE garden cloche
+- updated README
+
+## v2.2.5 - Hotfix XI
+
+### Added Mods
+
+- Better Foliage
+- Blockcraftery
+- Campfire
+- Cannibalism
+- Engineer's Doors
+- Fixeroo
+- Just Enough Calculation
+- Quark
+- Torch Bandolier
+- Wavey Capes
+- World Border
+
+### Updated Mods
+
+- Universal Tweaks
+
+### Removed Mods
+
+- Clumps (replaced by Fixeroo)
+- Tinkers OreDict Cache (replaced by Universal Tweaks)
+
+### Changes
+
+- added a few more flesh items to the leather / blood production lines
+- added a few more quests
+- added bone drops to cows, pigs, sheep
+- added description to the ember bore quest
+- integrated Cannibalism into the modpack
+- thinned out quark to the bare minimum
+- tweaked a few more minecraft recipes
+
+## v2.2.4 - Hotfix X
+
+### Added Mods
+
+- Aqua Acrobatics
+- IC2C UU-Matter
+- blackstone/basalt
+- Wall-Jump!
+- WI Zoom
+
+### Updated Mods
+
+- AE2 Unofficial Extended Life
+
+### Changes
+
+- added Blackstone and Basalt to Nether Generation
+
+### Bugfixes
+
+- fixed Dried Brick recipe
+
+## v2.2.3 - Hotfix IX
+
+### Updated Mods
+
+- updated AE2 Unofficial Extended Life
+- updated CraftTweaker 2
+- updated Realistic Terrain Generator Unofficial
+
+### Changes
+
+- added a few more quests
+- removed AssetMover from serverfiles (not needed)
+
+### Bugfixes
+
+- added the Moar Boats Patchouli book to the export (forgot it in the last version)
+
+## v2.2.2 - Hotfix VIII
+
+Thanks `ADEEVdes#1184` for helping me with this one!
+
+### Downgraded Mods
+
+- AssetMover (so it doesnt't crash with curseforge)
+
+### Changes
+
+- added a quest to introduce moar boats
+- added a custom multiblock for the elven gateway
+- removed ic2c villager trades (for real this time)
+
+### Bugfixes
+
+- cleaned up the serverfiles (there were some mods, that won't work on servers)
+- fixed the engineer's workbench (again, because I'm stupid)
+
+## v2.2.1 - Small QoL update
+
+Thanks `Xetaxheb#2851` and `ADEEVdes#1184` for your feedback!
+
+### Added Mods
+
+- Advancement Locator
+- Botaunomy Reloaded
+- JEI Utilities
+- Moar Boats
+- Multiblocked
+- Multi Builder Tool
+- No Worldgen 5 You
+- Patchouli
+- Psi Unofficial
+- Psio
+- Realistic Terrain Generator Unofficial
+- spark
+
+### Updated Mods
+
+- AE2 Fluid Crafting Rework
+- AE2 Unofficial Extended Life
+- CraftTweaker 2
+- Inventory Bogo Sorter
+- Not Enough Energistics
+- Universal Tweaks
+
+### Removed Mods
+
+- AE2 Wireless Terminal Library
+- FastWorkbench (replaced by Universal Tweaks)
+- GroovyScript (not used yet, won't run on servers)
+- Psi (replaced by Psi Unofficial)
+- Realistic Terrain Generator (replaced by a maintained port)
+- Wireless Crafting Terminal (AE2 Unofficial Extended Life added one)
+
+### Changes
+
+- added recipe to get seared stone more efficient after obtaining steel
+- improved Pre-Mid-Game quests
+- nerfed BiblioCraft enchantment duplication
+- removed village generation once and for all (only applies to new villages)
+- tuned down PSI to not be as free as it is by default
+
+### Bugfixes
+
+- fixed rftools syringe recipe
+- fixed the buggy engineer's workbench (maybe)
+
+## v2.2.0 - Happy 2023
+
+### Added Mods
+
+- AE2 Fluid Crafting Rework
+- AssetMover
+- Extra Sounds Legacy
+- GroovyScript
+- Startup Timer
+- Universal Tweaks
+
+### Updated Mods
+
+- AE2 Unofficial Extended Life
+- ArchitectureCraft
+- CensoredASM
+- CraftTweaker 2
+- Had Enough Items
+- IC2 Classic
+- Inventory Bogo Sorter
+- MixinBooter
+- Not Enough Energistics
+
+### Removed Mods
+
+- AttributeFix (replaced by Universal Tweaks)
+- DrawerFPS Legacy (replaced by Universal Tweaks)
+- Fast Leaf Decay (replaced by Universal Tweaks)
+
+### Changes
+
+- added AS constellation to ingame guide
+- changed DE Mob Grinder recipe
+- increased snowball and ender pearl stack size to 64
+- increased the amount of Ectoplasm you get by melting it
+
+### Bugfixes
+
+- fixed AE2 seeds quest
+- fixed Fluix Crystal processing
+
+## v2.1.15 - Nightmare Hotfix VII
+
+### Added Mods
+
+- Material Changer (to tweak some damage values of weapons)
+- Refined Relocation 2 (early-game "storage-network" pre-RFTools)
+
+### Updated Mods
+
+- Advanced Solars Classic
+- AE2 Unofficial Extended Life
+- CraftTweaker 2
+- FastWorkbench
+- Gravisuit Classic
+- IC2 Classic
+- Inventory Bogo Sorter
+
+### Removed Mods
+
+- Fancier Block Particles (until crash bug is fixed)
+
+### Changes
+
+- added quest to obtain salt via Harvestcraft
+- added earthworks stones to chisel menu
+- added ember grit to the infinity reagent
+- added more creative item recipes
+- added more QoL quests to point players in the right direction
+- added tooltips to RR2 explaining their functionality
+- improved stone circuit board recipe
+- increased Botania weapon damage
+- increased IE weapon damage
+- tweaked Distiller Salt output
+- tweaked Embers tinker hammer recipe
+
+### Bugfixes
+
+- fixed Avaritiaddons recipes
+- fixed missing gear cast recipe
+
+## v2.1.14 - Nightmare Hotfix VI
+
+### Added Mods
+
+- Avaritiaddons
+- ChatCalculator
+- Fancier Block Particles
+- Had Enough Items
+- Not Enough Energistics
+- Recipe Search Buttons
+
+### Updated Mods
+
+- AE2 Unofficial Extended Life
+- Chunk-Pregenerator
+- CraftTweaker
+- dan's Mouse Tweaks
+- FoamFix
+- Inventory Bogo Sorter
+- OpenComputers
+- Smooth Font
+
+### Removed Mods
+
+- Fancy Block Particles
+- Just Enough Energistics
+- Just Enough Items
+
+### Changes
+
+- added acceleration wand quest
+- added alternative Blood Infused Glowstone Dust recipe
+- added slag to stone dust recipe (IE Crusher / SAG Mill)
+- changed bee house recipe
+- disabled IC2C villager
+- tweaked chunk loading and claiming amount
+
+### Bugfixes
+
+- fixed Camouflaged Panel recipe
+- fixed RFTools Machine Frame Slice'n'Splice recipe
+- fixed Sacrificial Dagger recipe
+- fixed Teleportation Rune recipe
+
+## v2.1.13 - Nightmare Hotfix V
+
+### Added Mods
+
+- Tinkers' Modifier Modifier
+
+### Updated Mods
+
+- CensoredASM
+- Inventory Bogo Sorter
+- ModularUI
+
+### Changes
+
+- added certus quartz crystal to dust recipe to IE and XU2 crusher
+- added clay recipe with Atomic Reconstructor
+- added more wood processing recipes with the saw
+- added recipes to clear XU2 drums
+- decreased energy consuption of Tiered Magnets
+- increaded energy storage of Tiered Magnets
+- increased max resistance level of TiCo armor
+- increased max sharpness level of TiCo tools
+- increaded RFTools storage tablet energy storage size
+- reduced Solar Tower processing time
+- reorganized questchapter "Mid-Game"
+
+### Bugfixes
+
+- fixed bibliocraft framing materials EMC value
+- fixed bloodmagic orbs textures in ftb guide
+- fixed electrotine dust quest dependency
+- fixed fertile potion recipe
+- fixed Natura Pylon
+- fixed RFTools Machine Frame
+- fixed salt quest showing the wrong salt
+- fixed "summonAsorah" ritual
+- fixed TE machine nbt settings in quests
+
+## v2.1.12 - Nightmare Hotfix IV
+
+### Added Mods
+
+- Astral Additions
+- Integrated NBT
+
+### Updated Mods
+
+- AE2 Unofficial Extended Life
+- CraftTweaker
+- MixinBooter
+- ModularUI
+
+### Changes
+
+- added dawnstone ingot <--> plate recipes
+- added recipe for Luminous Crafting Table to the Luminous Crafting Table
+- added remelting for seared stone
+- added fluid conduit recipe similar to the item conduit
+- changed Cooking For Blockheads Kitchen Floor recipe
+- cleaned up questbook
+- decreased Distillation Tower Energy requirements
+- increaded the amount of pipes / conduits per recipe
+
+### Bugfixes
+
+- fixed Core Sample Drill recipe
+- fixed Empowerer recipe
+- fixed Imbuing Station recipe
+- fixed Starlight Infuser recipe
+- fixed Telekinetic Alloy recipe
+- removed coal dupe recipe
+- removed seared brick duplication
+
+## v2.1.11 - Nightmare Hotfix III
+
+### Changes
+
+- added recipe to decompress cobblestone
+- added recipes for IE mold recycling
+- reworked Embers Beam Canon progression
+- tweaked Necronomicon recipe
+
+### Bugfixes
+
+- added missing Embers Melting recipes
+
+## v2.1.10 - Nightmare Hotfix II
+
+### Changes
+
+- added alternative Booze Barrel recipe
+- added alternative Ender Ingot recipe
+- added Certus Quartz Dust recipe  for AS Grindstone
+- enabled ingame guide IE chapter (forgot to register it)
+- tweaked Blood Infuser recipe
+- tweaked Blood Infused Stone recipe
+
+### Bugfixes
+
+- fixed wrong recipe name for AS Altar recipe
+
+## v2.1.9 - Nightmare Hotfix I
+
+### Changes
+
+- moved energy module recipe from table to basin
+
+### Bugfixes
+
+- added missing plate cast recipe
+
+## v2.1.8 - Nightmare Mode
+
+### Added Mods
+
+- dan's Crafting Tweaks
+- dan's Mouse Tweaks
+- Inventory Bogo Sorter
+- ModularUI
+
+### Updated Mods
+
+- AE2 Unofficial Extended Life
+- CensoredASM
+- Chunk-Pregenerator
+- Energy Control
+- ModTweaker
+
+### Removed Mods
+
+- Crafting Tweaks
+- Inventory Tweaks
+- Mouse Tweaks
+
+### Changes
+
+- slightly nerfed Avaritia bees
+
+## v2.1.7 - Welcome to Akliz
+
+### Added Mods
+
+- Default World Generator without Server Side Prompts
+
+### Updated Mods
+
+- AE2 Unofficial Extended Life
+- CensoredASM
+- Chunk-Pregenerator
+- CraftTweaker
+- Smooth Font
+
+### Removed Mods
+
+- BisectHosting Server Integration Menu
+- Default World Generator (port)
+
+### Changes
+
+- added bedrockium bee
+- updated main menu graphics
+
+### Bugfixes
+
+- fixed missing refined iron recipe in legacy mode
+
+## v2.1.6 - beeeeeeeees
+
+### Updated Mods
+
+- AE2 Unofficial Extended Life
+- CensoredASM
+
+### Removed Mods
+
+- Blood Dynamo (causes random crashes on server)
+- VanillaFix (now integrated in CensoredASM)
+
+### Changes
+
+- added blood altar construction to ingame documentation
+- added cheaper recipe for circuit etcher after the first is aquired
+- added cheaper recipes for speculation cores in circuit etcher
+- added end game bees
+- buffed projecte bees
+
+### Bugfixes
+
+- fixed blood diamond recipe
+- fixed chaos guardian drops in woot farms
+- fixed binding compound recipe
+- fixed elytra recipe
+- fixed missing ender storage documentation
+- fixed wyvern bow recipe
+- fixed missing emc values
+
+## v2.1.5 - guess I missed something
+
+### Added Mods
+
+- added CensoredASM
+- added DrawerFPS Legacy
+- added Earthworks Unofficial Extended Life
+- added MixinBooter
+- added OAuth (replaces ReAuth)
+- added Tinkers OreDict Cache
+
+### Removed Mods
+
+- removed Earthworks
+- removed ReAuth (no longer works with Microsoft Accounts)
+
+### Changes
+
+- enabled psi material duplication utilizing mana infusion
+- increased nanobot beacon energy usage
+- made ID accessable in legacy mode
+- replaced XU2 Red Coal with my own version since it's a pain to autocraft with it
+
+### Bugfixes
+
+- fixed gaia boss not giving enough gaia spirits in woot farms
+- fixed missing oredict on gelid armorplate
+- fixed missing tico materials in recipes
+- fixed yanked enderio photovoltaic plate recipe
+- fixed wrong enderio alloy recipes
+
+## v2.1.4 - I'm not dead (yet)
+
+### Added Mods
+
+- Advanced Solars Classic
+- AE2 Unofficial Extended Life
+- BisectHosting Server Integration Menu
+- Common Capabilities
+- Integrated Dynamics
+- MoreTweaker
+- PackMode Menu OC Edition
+- Tinkers' Evolution
+- Too Many Efficiency Losses
+
+### Updated Mods
+
+- AbyssalCraft
+- AbyssalCraft Integration
+- B.A.S.E
+- BiblioCraft
+- Botania
+- Brandon's Core
+- Chunk-Pregenerator
+- ContentTweaker
+- CraftTweaker
+- DarknessLib
+- Draconic Additions
+- Draconic Evolution
+- Dynamic Surrounding
+- Embers Rekindled
+- EnderIO
+- EnderIO Endergy
+- Ender Tweaker
+- Energy Control
+- FoamFix
+- Hammer (Lib) Core
+- Hungering Darkness
+- Immersive Petroleum
+- Immersive Technology
+- LibNine
+- ModTweaker
+- Mouse Tweaks
+- MTLib
+- MysticalLib
+- OMLib
+- Open Modular Turrets
+- Reborn Core
+- Redstone Repository Revolved
+- Simply Jetpacks 2
+- ThermalLogisitcs
+- Tool Belt
+- Tool Progression
+- Torchmaster
+- UniDict
+- WanionLib
+
+### Removed Mods
+
+- Actually Additions Fluxified
+- Applied Energistics 2 (no more updates for 1.12)
+- Diet Hoppers
+- EnderIO Fluxified
+- More Tinkers
+- NoRecipeBook
+- PackModeMenu
+- Singularities
+
+### Changes
+
+- added documentation for xu2 changes
+- added documentation for lazyAE2
+- added documentation for blood arsenal
+- added documentation for blood magic
+- added earthworks stones to et resource miner
+- added more loading screen tips
+- added recipe to convert uranium to yellorite
+- changed menu background
+- finished questbook for nightmare mode
+- increased main menu resolution
+- disabled XU Gridpower Efficiency Losses
+- switched to Tinkers' Evolution as tconstruct material addon (as it's actually maintained)
+- breaks current used tconstruct tools / armor probably needs to be remade (I'm sorry)
+- tweaked XU Gridpower generation values
+- tweaked infernal mob drops
+- tweaked main menu
+
+### Bugfixes
+
+- fixed villager blood amount in woot farms (once and for all)
+
+## v2.1.3 - partnership
+
+### Updated Mods
+
+- Energy Control
+- Lazy AE2
+
+### Changes
+
+- tweaked main menu
+
+## v2.1.2 - bug fixes
+
+### Updated Mods
+
+- CraftTweaker
+- Embers Rekindled
+- Energy Control
+- Immersive Technology
+- MysticalLib
+- UniDict
+
+### Bugfixes
+
+- fixed astral constellation for extreme crafting table
+- fixed villager blood amount in woot farms
+
+## v2.1.1 - clean up
+
+### Updated Mods
+
+- CraftTweaker
+- Energy Control
+
+### Changes
+
+- changed extreme crafting table recipe
+
+### Bugfixes
+
+- fixed calculator screen recipe
+- fixed chisels and bits mining level
+- fixed dark ore processing
+- fixed some emc values
+- fixed missing localizations
+- fixed missing quest reward
+- fixed villager blood amount in woot farms
+
+## v2.1.0 - calculator overhaul
+
+### Added Mods
+
+- CD4017BE Library
+- Energy Control
+- Redstone Control
+
+### Updated Mods
+
+- CraftTweaker
+
+### Removed Mods
+
+- Calculator
+- Charset Lib
+- SimpleLogic Gates
+- SompleLogic Wires
+
+### Changes
+
+- added all Calculator items by myself
+- added documentation for chaos stabilizer
+- added emc values to all calculator items
+- added emc values to Woot
+- added runestone chisel variants
+- moved philo stone to last astral altar
+- removed Xu2 Crafter
+- updated guide
+- updated questbook
+
+### Bugfixes
+
+- fixed witherblock recipe
+
+## v2.0.12 - critical bug fix
+
+### Updated Mods
+
+- Simply Jetpacks 2
+
+### Bugfixes
+
+- fixed EMC value file format
+- fixed script formatting
+- fixed script importing
+
+## v2.0.11 - 250
+
+### Added Mods
+
+- Charset Lib
+- Clay Bucket
+- Just Enough Reactors
+- SimpleLogic Gates
+- SimpleLogic Wires
+
+### Updated Mods
+
+- Chunk-Pregenerator
+- CraftTweaker
+
+### Changes
+
+- added more EMC values
+- added ore processing of dark ore
+- added ore processing of industrial graphite ore
+- added recipes for lazy AE2 multiblock crafting
+- improved guide
+- more recipes for nightmare mode [WIP]
+- removed enderio tablets
+
+### Bugfixes
+
+- fixed chisels & bits mining level issues
+- fixed emerald sag mill duplication
+- fixed woot spawn amounts
+- fixed wyvern energy core EMC value
+
+## v2.0.10 - deco update
+
+### Added Mods
+
+- Cathedral
+
+### Updated Mods
+
+- RandomTweaks
+
+### Changes
+
+- added old AbyssalCraft building blocks
+- added recipe for drawer "deep storage" upgrade
+- improved guide
+
+### Bugfixes
+
+- fixed calculator recipes
+- fixed extreme reactor energy output
+
+## v2.0.9 - another bug fix update
+
+### Added Mods
+
+- Crafting Tweaks
+- Tiered Magnets
+
+### Updated Mods
+
+- CraftTweaker
+- RandomTweaks
+- UniDict
+
+### Removed Mods
+
+- Actually Addons
+- Dragon Murder
+- Hardcore Darkness
+- World Stripper
+
+### Changes
+
+- improved guide
+- increased thermal upgrade slots
+- removed Rock Crystal Ore from Void Ore Miner (too OP)
+- more recipes for nightmare mode [WIP]
+
+### Bugfixes
+
+- fixed powercells output
+- fixed hardened glass recipes
+
+## v2.0.8 - last bug fixes for now
+
+### Added Mods
+
+- Just Enough Petroleum
+- RFTools Power
+- RFTools Power / OC Integration
+
+### Updated Mods
+
+- CraftTweaker
+- Draconic Additions
+- Dragon Murder
+- Extreme Reactors
+- ZeroCore 2
+
+### Changes
+
+- added astral marble to void resource miner
+- added dark ore to void ore miner
+- added more cruide steel recipes
+- added recipe for demon ingots
+- added recipe for marble
+- added tooltips to enderio storage blocks
+- improved guide
+
+## v2.0.7 - bug fixes again
+
+### Added Mods
+
+- Hardcore Darkness
+- Hungering Darkness
+
+### Changes
+
+- added back old deep dark features
+- added basic documentation to PI
+- added better moss stone recipe
+- added enderio glass back to jei
+- added missing mining level names
+- improved guide
+- more recipes for nightmare mode [WIP]
+- removed slime island from non overworld dimensions
+- unified ardite and cobalt processing
+
+### Bugfixes
+
+- fixed bloodmagic recipes
+
+## v2.0.6 - expanded nightmare packmode
+
+## Downgraded Mods
+
+- Dragon Murder
+
+### Changes
+
+- added better Ethaxium recipe
+- added more content to nightmare mode [WIP]
+- changed ae2 inworld crafting
+- improved guide
+- removed Bedrock Fog
+- removed Ethaxium Drop
+
+### Bugfixes
+
+- fixed electrum flux recycling
+- fixed enderium jetplate
+
+## v2.0.5 - more bug fixes
+
+### Added Mods
+
+- added Tool Progression
+
+### Updated Mods
+
+- updated CraftTweaker
+
+### Changes
+
+- added ae2 info to guide
+- added nightmare packmode [WIP]
+- disabled teleporter turret
+- increase AS max perk lvl
+- removed lame soulbound enchantment
+- tweaked ae2 recipe to respect fluid crafting
+- tweaked bloodmagic recipes
+- tweaked botania recipes
+
+### Bugfixes
+
+- fixed enderium t5 jetplate values
+- fixed missing gear cast recipes
+- fixed electrum flux melting
+
+## v2.0.4 - bug fixes
+
+### Added Mods
+
+- IC2 Classic Tweaker
+- IC2 Tweaker
+- Passice Aggression
+
+### Updated Mods
+
+- Draconic Additions
+- Flux Networks
+- UniDict
+
+### Removed Mods
+
+- Just Enough Throwing In FLuids
+- TexFix
+
+### Changes
+
+- added EnderIO Alloys to IE Kiln
+- added graphite ore to ore miner
+- added more EMC values
+- disabled accelaration wand for fake players
+- disabled grave stone inventory list
+- improved guide
+- made environmental tech recipes easier
+
+### Bugfixes
+
+- fixed rftools tablet
+- fixed draconic ore generation
+- fixed wrong oil in mixer recipe
+
+## v2.0.3 - better guide
+
+### Added Mods
+
+- Client Tweaks
+- Overloaded Armor Bar
+- Superior Shields
+
+### Updated Mods
+
+- Construct's Armory
+- Flux Networks
+
+### Removed Mods
+
+- No Default Auto-Jump
+
+### Changes
+
+- improved ingame guide
+- added alternative seared brick recipe
+- show all tc tables in jei
+
+## v2.0.2 - tweaks
+
+### Added Mods
+
+- Loot Capacitor Tooltips
+
+### Changes
+
+- reduced AbyssalCraft biom weights
+- reduced Astral Sorcery Structure spawn
+
+### Bugfixes
+
+- fixed dupe bug with harvestcraft
+- fixed main menu links
+
+## v2.0.1 - day one patch
+
+### Changes
+
+- added alternative way to obtain processors
+- removed xu2 bag of holding (buggy)
+- improved quests
+
+### Bugfixes
+
+- fixed et energy costs
+- fixed villages generation
+
+## v2.0.0 - release
+
+### Changes
+
+- initial release of the remastered version
+
+## v1.7.0 - Ore Generation
+
+### Changes
+
+- added actually additions black quartz to ore gen
+- added astral sorcery marble to ore gen
+- added chisel limestone to ore gen
+- added earthworks stones to ore gen
+- added extreme reactors yellorite to ore gen
+- added forestry apatite to ore gen
+- added ic2c uranium to ore gen
+- added quantumflux graphite ore to ore gen
+- added tiCo ardite and cobalt to ore gen
+- unified ore generation utilizing cofh world
+
+## v1.6.0 - Ingame Guide
+
+### Changes
+
+- added an ingame guide for ore generation
+
+## v1.5.0 - EMC
+
+### Changes
+
+- added back all the custom EMC values
+- cleaned up JEI
+
+## v1.4.1 - many more quests
+
+### Changes
+
+- added 4 more chapters of quests
+
+## v1.4.0 - Quests
+
+### Changes
+
+- added some end game quests
+- added some easter egg quests
+
+## v1.3.1 - recipe tweaks
+
+### Changes
+
+- added back some recipes I missed before
+
+### Bugfixes
+
+- fixed the gear recipes
+- fixed tiny progression recipes
+
+## v1.3.0 - RECIPES!
+
+### Changes
+
+- added missing items with contenttweaker
+- added missing localization
+- ported all the recipes
+
+## v1.2.1 - More Config Work
+
+### Changes
+
+- removed botanic void miner
+- removed draconic ore from void miner
+
+## v1.2.0 - Where it started
+
+### Changes
+
+- refactored almost all configs to match with the original
+
+## v1.1.0 - Modlist
+
+### Changes
+
+- rebuild the modpack from scratch for 1.12.2 instead of 1.10.2
