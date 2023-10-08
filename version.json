@@ -1,5 +1,5 @@
 {
-	"versionName": "2.3.0",
+	"versionName": "2.2.7",
 	"versionCode": 1,
 	"versionFormat": "%versionName%",
 	"sponsors": [{
@@ -71,11 +71,52 @@
 		}
 	}],
 	"changelogs": {
-		"1.2.0": [
-			"refactored almost all configs to match with the original"
-		],
-		"1.1.0": [
-			"rebuild the modpack from scratch for 1.12.2 instead of 1.10.2"
-		]
+		"2.2.7": [""],
+		"2.2.6": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v226---hotfix-xii"],
+		"2.2.5": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v225---hotfix-xi"],
+		"2.2.4": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v224---hotfix-x"],
+		"2.2.3": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v223---hotfix-ix"],
+		"2.2.2": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v222---hotfix-viii"],
+		"2.2.1": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v221---small-qol-update"],
+		"2.2.0": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v220---happy-2023"],
+		"2.1.15": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2115---nightmare-hotfix-vii"],
+		"2.1.14": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2114---nightmare-hotfix-vi"],
+		"2.1.13": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2113---nightmare-hotfix-v"],
+		"2.1.12": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2112---nightmare-hotfix-iv"],
+		"2.1.11": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2111---nightmare-hotfix-iii"],
+		"2.1.10": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2110---nightmare-hotfix-ii"],
+		"2.1.9": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v219---nightmare-hotfix-i"],
+		"2.1.8": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v218---nightmare-mode"],
+		"2.1.7": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v217---welcome-to-akliz"],
+		"2.1.6": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v216---beeeeeeeees"],
+		"2.1.5": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v215---guess-i-missed-something"],
+		"2.1.4": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v214---im-not-dead-yet"],
+		"2.1.3": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v213---partnership"],
+		"2.1.2": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v212---bug-fixes"],
+		"2.1.1": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v211---clean-up"],
+		"2.1.0": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v210---calculator-overhaul"],
+		"2.0.12": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2012---critical-bug-fix"],
+		"2.0.11": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2011---250"],
+		"2.0.10": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2010---deco-update"],
+		"2.0.9": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v209---another-bug-fix-update"],
+		"2.0.8": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v208---last-bug-fixes-for-now"],
+		"2.0.7": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v207---bug-fixes-again"],
+		"2.0.6": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v206---expanded-nightmare-packmode"],
+		"2.0.5": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v205---more-bug-fixes"],
+		"2.0.4": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v204---bug-fixes"],
+		"2.0.3": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v203---better-guide"],
+		"2.0.2": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v202---tweaks"],
+		"2.0.1": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v201---day-one-patch"],
+		"2.0.0": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v200---release"],
+		"1.7.0": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v170---ore-generation"],
+		"1.6.0": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v160---ingame-guide"],
+		"1.5.0": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v150---emc"],
+		"1.4.1": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v141---many-more-quests"],
+		"1.4.0": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v140---quests"],
+		"1.3.1": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v131---recipe-tweaks"],
+		"1.3.0": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v130---recipes"],
+		"1.2.1": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v121---more-config-work"],
+		"1.2.0": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v120---where-it-started"],
+		"1.1.0": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v110---modlist"]
 	}
 }
