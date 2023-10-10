@@ -1,0 +1,17 @@
+{
+	x: -12.0d,
+	y: 11.5d,
+	text: [
+		"Don't let this thing go off in you base. You have been warned."
+	],
+	dependencies: [
+		"3d001880"
+	],
+	tasks: [{
+		uid: "9731f651",
+		type: "item",
+		items: [{
+			item: "abyssalcraft:odb"
+		}]
+	}]
+}

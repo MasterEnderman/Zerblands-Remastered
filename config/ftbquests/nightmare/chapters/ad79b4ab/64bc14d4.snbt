@@ -1,0 +1,22 @@
+{
+	x: -18.0d,
+	y: 20.5d,
+	dependencies: [
+		"a193b866"
+	],
+	tasks: [{
+		uid: "35d66fd6",
+		type: "item",
+		items: [{
+			item: "botania:pylon 1 2"
+		}],
+		count: 4L
+	},
+	{
+		uid: "b64dcf9f",
+		type: "item",
+		items: [{
+			item: "minecraft:beacon"
+		}]
+	}]
+}

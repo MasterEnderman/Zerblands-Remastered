@@ -1,14 +1,14 @@
 {
 	x: 10.0d,
-	y: 9.5d,
+	y: 3.5d,
 	dependencies: [
-		"95b74b5c"
+		"66d64796"
 	],
 	tasks: [{
-		uid: "c28cfdf5",
+		uid: "e0ca80e1",
 		type: "item",
 		items: [{
-			item: "contenttweaker:lithium_dust"
+			item: "energycontrol:kit_assembler"
 		}]
 	}]
 }

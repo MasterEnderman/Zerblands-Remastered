@@ -1,14 +1,14 @@
 {
-	x: -8.0d,
+	x: -12.0d,
 	y: 9.5d,
 	dependencies: [
-		"f0439374"
+		"0d5834c5"
 	],
 	tasks: [{
-		uid: "3306de8f",
+		uid: "86bbc369",
 		type: "item",
 		items: [{
-			item: "abyssalcraft:cingot"
+			item: "abyssalcraft:oc"
 		}]
 	}]
 }

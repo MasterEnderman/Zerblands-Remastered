@@ -1,0 +1,22 @@
+{
+	x: -2.0d,
+	y: 1.5d,
+	text: [
+		"Food is important. Especially potatoes. Quick reminder: There are no villages so the easiest way to get some is by breaking a few gardens from Pam's HarvestCraft."
+	],
+	dependencies: [
+		"5520d0b5"
+	],
+	tasks: [{
+		uid: "4ba4f97c",
+		type: "item",
+		items: [{
+			item: "minecraft:potato"
+		}]
+	}],
+	rewards: [{
+		uid: "0c3c38aa",
+		type: "item",
+		item: "solcarrot:food_book"
+	}]
+}

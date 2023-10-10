@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: 21.5d,
+	dependencies: [
+		"f2717f00"
+	],
+	tasks: [{
+		uid: "4ac80b96",
+		type: "item",
+		items: [{
+			item: "forestry:crafting_material 1 5"
+		}]
+	}]
+}

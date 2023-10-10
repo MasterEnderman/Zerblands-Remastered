@@ -1,6 +1,9 @@
 {
 	x: -4.0d,
 	y: 5.0d,
+	text: [
+		"I hope you like bees."
+	],
 	dependencies: [
 		"612dc5c4"
 	],

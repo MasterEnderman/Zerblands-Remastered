@@ -1,14 +1,14 @@
 {
-	x: 2.0d,
+	x: -12.0d,
 	y: 17.5d,
 	dependencies: [
-		"78e24ead"
+		"614ad1c3"
 	],
 	tasks: [{
-		uid: "05a61815",
+		uid: "111c6037",
 		type: "item",
 		items: [{
-			item: "forestry:apiary"
+			item: "randomthings:ingredient 1 2"
 		}]
 	}]
 }
