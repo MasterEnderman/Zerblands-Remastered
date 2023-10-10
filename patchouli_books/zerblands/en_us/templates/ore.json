@@ -1,0 +1,37 @@
+{
+    "components": [
+        {
+            "type": "header",
+            "text": "#ore->iname->capital",
+            "x": -1,
+            "y": -1
+        },
+        {
+            "type": "separator",
+            "x": -1,
+            "y": -1
+        },
+        {
+            "type": "item",
+            "item": "#ore",
+            "framed": true,
+            "link_recipe": true,
+            "x": 50,
+            "y": 22
+        },
+        {
+            "type": "text",
+            "text": "<li><b>$(t:In which Dimensions can the Ore be found?)Dimension:</><li2>#dim#<li><b>$(t:At which Y-Level can the Ore be found?)y-Level:</><li2>#yMin# - #yMax#<li><b>$(t:How large are the Ore veins?)Clustersize:</><li2>#cSize#<li><b>$(t:How many veins are there per chunk?)Clustercount:</><li2>#cCount#",
+            "guard": "#dim->exists",
+            "x": -1,
+            "y": 35
+        },
+        {
+            "type": "text",
+            "text": "<br>#desc#",
+            "guard": "#dim->exists->inv",
+            "x": -1,
+            "y": 35
+        }
+    ]
+}
