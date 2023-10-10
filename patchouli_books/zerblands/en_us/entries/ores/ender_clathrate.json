@@ -1,0 +1,17 @@
+{
+    "name": "Resonant End Stone",
+    "icon": "thermalfoundation:ore_fluid:4",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "thermalfoundation:ore_fluid:4",
+            "dim": "<end>",
+            "yMin": "10",
+            "yMax": "80",
+            "cSize": "24",
+            "cCount": "10"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Reactors",
+    "icon": "bigreactors:reactorcontroller",
+    "category": "changes/extremereactors",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Reactors",
+            "type": "default",
+            "text": "Max Height: <li>24 Blocks<br>Max Size: <li>16 Blocks<2br>So it fit's in 1 Chunk to reduce lag."
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Immersive Technology",
+    "description": "The addon adds all the functions required for the Rankine and Brayton cycles for steam and gas turbines respectively.",
+    "icon": "immersivetech:connectors",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

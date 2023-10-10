@@ -1,0 +1,7 @@
+{
+    "name": "Environmental Tech",
+    "description": "<mark>Environmental Tech</> is a mod containing a vast selection of very powerfull Multiblock machines.",
+    "icon": "environmentaltech:tool_multiblock_assembler",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

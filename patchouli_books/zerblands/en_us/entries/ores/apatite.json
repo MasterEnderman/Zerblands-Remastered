@@ -1,0 +1,17 @@
+{
+    "name": "Apatite Ore",
+    "icon": "forestry:resources",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "forestry:resources",
+            "dim": "<overworld>",
+            "yMin": "40",
+            "yMax": "75",
+            "cSize": "8",
+            "cCount": "8"
+        }
+    ]
+}

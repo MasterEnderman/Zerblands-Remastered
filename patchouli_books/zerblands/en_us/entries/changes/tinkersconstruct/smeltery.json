@@ -1,0 +1,13 @@
+{
+    "name": "Smeltery",
+    "icon": "tconstruct:smeltery_controller",
+    "category": "changes/tinkersconstruct",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Smeltery",
+            "type": "default",
+            "text": "<li>Obsidian can't be alloyed my mixing water and lava<li>smelts ores in a 1:1 ratio instead of 1:2<li>you can no longer melt villagers and horses"
+        }
+    ]
+}

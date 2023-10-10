@@ -1,0 +1,17 @@
+{
+    "name": "Ardite Ore",
+    "icon": "tconstruct:ore:1",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "tconstruct:ore:1",
+            "dim": "<nether>",
+            "yMin": "10",
+            "yMax": "118",
+            "cSize": "2",
+            "cCount": "4"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Hardmode",
+    "icon": "draconicevolution:info_tablet",
+    "category": "changes/draconicevolution",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Hardmode",
+            "type": "default",
+            "text": "Hardmode is enabled for all <mark>packmodes</>. (That means much harder default recipes)"
+        }
+    ]
+}

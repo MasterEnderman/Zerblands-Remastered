@@ -1,0 +1,17 @@
+{
+    "name": "Ender Ore",
+    "icon": "tp:ender_ore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "tp:ender_ore",
+            "dim": "<overworld>",
+            "yMin": "1",
+            "yMax": "32",
+            "cSize": "4",
+            "cCount": "3"
+        }
+    ]
+}

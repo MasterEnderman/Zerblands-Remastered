@@ -1,0 +1,14 @@
+{
+    "name": "Ore Visual Detector",
+    "icon": "orevisualdetector:scanner",
+    "category": "infos",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "orevisualdetector:scanner",
+            "link_recipe": true,
+            "text": "Right click it and it will scan all ores in the area, then display it on GUI."
+        }
+    ]
+}

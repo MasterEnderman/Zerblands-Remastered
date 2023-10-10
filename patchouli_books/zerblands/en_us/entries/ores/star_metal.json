@@ -1,0 +1,13 @@
+{
+    "name": "Starmetal Ore",
+    "icon": "astralsorcery:blockcustomore:1",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "astralsorcery:blockcustomore:1",
+            "desc": "Can be via obtained via <mark>Starlight Transmutation</> of <item>Iron Ore</>."
+        }
+    ]
+}

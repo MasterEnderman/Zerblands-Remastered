@@ -1,0 +1,13 @@
+{
+    "name": "Charged Certus Quartz",
+    "icon": "appliedenergistics2:material:1",
+    "category": "changes/appliedenergistics",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Charged Certus Quartz",
+            "type": "default",
+            "text": "The corresponding ore doesn't generate. Normal <item>Certus Quartz</> needs to be charged."
+        }
+    ]
+}

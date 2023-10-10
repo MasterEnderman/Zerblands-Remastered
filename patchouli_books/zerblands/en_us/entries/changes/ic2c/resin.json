@@ -1,0 +1,14 @@
+{
+    "name": "Sticky Resin",
+    "icon": "ic2:itemharz",
+    "category": "changes/ic2c",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "ic2:itemharz",
+            "link_recipe": true,
+            "text": "<mark>Rubber Trees</> don't generate in the world. <item>Sticky Resin</> needs to be casted from <mark>Resin</>."
+        }
+    ]
+}

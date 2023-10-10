@@ -1,0 +1,14 @@
+{
+    "name": "Crossbow Bolts",
+    "icon": "tconstruct:bolt_core",
+    "category": "documentation/tinkersconstruct",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "tconstruct:bolt_core",
+            "link_recipe": true,
+            "text": "$(l:https://tinkers-construct.fandom.com/wiki/Bolt)Tutorial$(/l) on how to make <item>Crossbow Bolts</>."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Slime Islands",
+    "icon": "tconstruct:slime_sapling:1",
+    "category": "changes/tinkersconstruct",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Slime Islands",
+            "type": "default",
+            "text": "They do still generate, but no slimes will spawn on them. This was done to improve performance and remove a potential source of lag."
+        }
+    ]
+}

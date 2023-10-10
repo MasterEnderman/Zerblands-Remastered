@@ -1,0 +1,7 @@
+{
+    "name": "Lazy AE2",
+    "description": "Lazy AE2 adds a few more Applied Energistics machines that help speed up certain operations. It was designed with the intent of creating alternate channels for automating AE2's in-world crafting mechanisms, which had a tendency to clash with lag-clearing tools.",
+    "icon": "threng:material",
+    "sortnum": 0,
+    "parent":"patchouli:documentation"
+}

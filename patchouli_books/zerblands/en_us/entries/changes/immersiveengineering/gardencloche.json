@@ -1,0 +1,24 @@
+{
+    "name": "Garden Cloche",
+    "icon": "immersiveengineering:metal_device1:13",
+    "category": "changes/immersiveengineering",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "immersiveengineering:metal_device1:13",
+            "link_recipe": true,
+            "text": "This <modpack> adds more fertilizer and growth modifier options."
+        },
+        {
+            "title": "Fertilizers",
+            "type": "default",
+            "text": "The following <mark>IC2C</> fertilizers have been added:<li>Fertilizer<li2>1.75<li>Overgrowth Fertilizer<li2>2.75<li>Restoring Fertilizer<li2>3.50"
+        },
+        {
+            "title": "Growth Modifiers",
+            "type": "default",
+            "text": "The following <mark>fluid</> fertilizers have been added:<li>Hot Spring Water<li2>2.0<li>Biomass<li2>1.50<li>Biocrude<li2>1.25"
+        }
+    ]
+}

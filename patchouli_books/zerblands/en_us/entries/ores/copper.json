@@ -1,0 +1,17 @@
+{
+    "name": "Copper Ore",
+    "icon": "thermalfoundation:ore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "thermalfoundation:ore",
+            "dim": "<overworld>",
+            "yMin": "40",
+            "yMax": "75",
+            "cSize": "8",
+            "cCount": "8"
+        }
+    ]
+}

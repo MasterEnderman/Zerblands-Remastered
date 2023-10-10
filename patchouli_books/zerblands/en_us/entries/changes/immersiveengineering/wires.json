@@ -1,0 +1,26 @@
+{
+    "name": "Wires",
+    "icon": "immersiveengineering:wirecoil",
+    "category": "changes/immersiveengineering",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "immersiveengineering:wirecoil",
+            "link_recipe": true,
+            "text": "<li>Energy Transfer Rate: 64 RF/tick<li>Energy Loss every 16 Blocks: 70%"
+        },
+        {
+            "type": "spotlight",
+            "item": "immersiveengineering:wirecoil:1",
+            "link_recipe": true,
+            "text": "<li>Energy Transfer Rate: 256 RF/tick<li>Energy Loss every 16 Blocks: 50%"
+        },
+        {
+            "type": "spotlight",
+            "item": "immersiveengineering:wirecoil:2",
+            "link_recipe": true,
+            "text": "<li>Energy Transfer Rate: 1024 RF/tick<li>Energy Loss every 16 Blocks: 30%"
+        }
+    ]
+}

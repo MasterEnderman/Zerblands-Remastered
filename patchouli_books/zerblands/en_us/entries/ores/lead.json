@@ -1,0 +1,17 @@
+{
+    "name": "Lead Ore",
+    "icon": "thermalfoundation:ore:3",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "thermalfoundation:ore:3",
+            "dim": "<overworld>",
+            "yMin": "10",
+            "yMax": "35",
+            "cSize": "8",
+            "cCount": "4"
+        }
+    ]
+}

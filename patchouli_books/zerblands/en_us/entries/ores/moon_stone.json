@@ -1,0 +1,13 @@
+{
+    "name": "Moon Stone Ore",
+    "icon": "extrautils2:ingredients:5",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "extrautils2:ingredients:5",
+            "desc": "Can be very rarely found underground in the <overworld>."
+        }
+    ]
+}

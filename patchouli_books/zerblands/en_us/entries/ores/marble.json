@@ -1,0 +1,17 @@
+{
+    "name": "Marble",
+    "icon": "astralsorcery:blockmarble",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "astralsorcery:blockmarble",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "80",
+            "cSize": "33",
+            "cCount": "10"
+        }
+    ]
+}

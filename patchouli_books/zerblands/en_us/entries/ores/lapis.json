@@ -1,0 +1,17 @@
+{
+    "name": "Lapis Lazuli Ore",
+    "icon": "minecraft:lapis_ore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "minecraft:lapis_ore",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "32",
+            "cSize": "7",
+            "cCount": "1"
+        }
+    ]
+}

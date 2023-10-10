@@ -1,0 +1,14 @@
+{
+    "name": "Sink",
+    "icon": "cookingforblockheads:recipe_book:1",
+    "category": "changes/cookingforblockheads",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "cookingforblockheads:sink",
+            "link_recipe": true,
+            "text": "Instead of providing infinite water, the <item>Sink</> needs to be provided with water."
+        }
+    ]
+}

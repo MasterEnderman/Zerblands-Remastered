@@ -1,0 +1,17 @@
+{
+    "name": "Granite",
+    "icon": "minecraft:stone:1",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "minecraft:stone:1",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "80",
+            "cSize": "33",
+            "cCount": "10"
+        }
+    ]
+}

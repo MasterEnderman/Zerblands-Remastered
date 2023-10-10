@@ -1,0 +1,7 @@
+{
+    "name": "Applied Energistics 2",
+    "description": "<mark>Applied Energistics 2 (AE2)</> is a comprehensive mod for Minecraft that introduces a unique approach to in-game <mark>inventory management</>. It presents a tech-based, futuristic theme, centered around the concept of using energy and technology to convert matter into energy and vice versa.",
+    "icon": "appliedenergistics2:material:47",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

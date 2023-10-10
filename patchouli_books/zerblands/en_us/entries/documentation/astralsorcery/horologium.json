@@ -1,0 +1,13 @@
+{
+    "name": "Horologium",
+    "icon": "astralsorcery:itemconstellationpaper",
+    "category": "documentation/astralsorcery",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Horologium",
+            "type": "default",
+            "text": "Unlike other constellations, <mark>Horologium</> will only appear the night after a solar eclipse which occurs <b>every 36 days</>. Check the bottom left corner of your screen for a day counter."
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "name": "Gridpower",
+    "icon": "extrautils2:passivegenerator:7",
+    "category": "changes/extrautilities2",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Gridpower Balancing",
+            "type": "default",
+            "text": "The Gridpower production rates of all mills have been modified."
+        },
+        {
+            "type": "spotlight",
+            "item": "extrautils2:passivegenerator:8",
+            "link_recipe": true,
+            "text": "Applied Multiplier:<li>5.00x"
+        },
+        {
+            "type": "spotlight",
+            "item": "extrautils2:passivegenerator:5",
+            "link_recipe": true,
+            "text": "Applied Multiplier:<li>2.00x"
+        },
+        {
+            "type": "spotlight",
+            "item": "extrautils2:passivegenerator:2",
+            "link_recipe": true,
+            "text": "Applied Multiplier:<li>1.50x"
+        },
+        {
+            "type": "spotlight",
+            "item": "extrautils2:passivegenerator:1",
+            "link_recipe": true,
+            "text": "Applied Multiplier:<li>1.50x"
+        },
+        {
+            "type": "spotlight",
+            "item": "extrautils2:passivegenerator:7",
+            "link_recipe": true,
+            "text": "Applied Multiplier:<li>1.20x"
+        },
+        {
+            "type": "spotlight",
+            "item": "extrautils2:passivegenerator",
+            "link_recipe": true,
+            "text": "Applied Multiplier:<li>1.50x"
+        },
+        {
+            "type": "spotlight",
+            "item": "extrautils2:passivegenerator:3",
+            "link_recipe": true,
+            "text": "Applied Multiplier:<li>0.75x"
+        },
+        {
+            "type": "spotlight",
+            "item": "extrautils2:passivegenerator:4",
+            "link_recipe": true,
+            "text": "Applied Multiplier:<li>8.0x"
+        }
+    ]
+}

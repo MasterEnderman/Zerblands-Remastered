@@ -1,0 +1,7 @@
+{
+    "name": "Blood Magic",
+    "description": "Blood Magic is an arcane art that is practiced by mages who attempt to gather a vast amount of power through utilizing a forbidden material: blood. Even though it does grant a huge amount of power, every single action that is performed with this volatile magic can prove deadly. You have been warned.",
+    "icon": "bloodmagic:sacrificial_dagger",
+    "sortnum": 0,
+    "parent":"patchouli:documentation"
+}

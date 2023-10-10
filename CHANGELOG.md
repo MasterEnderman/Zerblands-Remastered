@@ -1,21 +1,30 @@
-# Changelog for the Zerblands-Remastered Modpack for Minecraft 1.12.2
+# Changelog for the Zerblands-Remastered
 
-## v2.2.7 - Hotfix XIII [unreleased]
+A Modpack for Minecraft 1.12.2
+
+## v2.2.7 - Hotfix XIII
 
 ### Added Mods
 
 - /dank/null/no_RCE
 - Alfheim Lighting Engine
+- Ambient Environment
+- Armor Toughness Bar
 - Baubles-LTS
+- Baubley Elytra
 - Birds On A Wire
 - Chat Calculator
+- Chunky Excavation
 - Enchantment Storage
 - Ender Storage continuation
+- Enhanced Annihilation Planes
+- Keybind Description Fix
 - Lazy AE2 Patch
 - Metal Chests
+- Modern Splash
 - Neeve's AE2: Extended Life Additions
-- OCDriversPlus
 - OpenComputers Drivers for Tinkers Construct
+- Ore Visual Detector
 - Particle Culling
 - Patchouli ROFL Edition
 - Persistent Cake
@@ -23,16 +32,20 @@
 - Quark: RotN Edition
 - Raw Mouse Input
 - Red Core
+- Redirectionor [Retro]
 - ScalingGUIs
 - Screenshot Viewer
 - SerializationIsBad
+- Shut Up, Model Loader!
 - Spice of Life: Carrot Edition
 - StructureUtils
 - The One Probe Community Edition
 - Tinker's JEI
+- TOP Extras
 - Tweaked Excavation
 - Tweaked Petroleum
 - Valkyrie
+- Versioner
 - VintageFix
 
 ### Updated Mods
@@ -76,28 +89,159 @@
 - DupeFix Project (replaced by Universal Tweaks)
 - Ender Storage (replaced by Ender Storage continuation)
 - FoamFix (replaced by VintageFix)
+- FTB Guides (replaced by a custom Patchouli book)
 - Hesperus (replaced by Alfheim)
 - Main Menu Scale (replaced by ScalingGUIs)
 - Patchouli (replaced by Patchouli ROFL Edition)
 - Quark (replaced by Quark: RotN Edition)
+- Splash Logo Color Fix (replaced by Modern Splash)
+- Startup Timer (replaced by Modern Splash)
 - The One Probe (replaced by The One Probe Community Edition)
 - WI Zoom (replaced by Valkyrie)
 
 ### Changes
 
+- added a few more heads to the petal apothecary
+- added a processing chain for niter
+- added a processing chain from fish over fish oil to poison
+- added a quest description to the draconium dust quest
+- added a quest for ectoplasm
+- added a quest for ice shards
+- added a quest for potatoes
+- added a quest for the farming station
+- added a quest for the gaia pylons to guide towards the gaia boss
+- added a quest for the kit assembler
+- added a quest for the lapotron crystal
+- added a quest for the mega torch
+- added a quest for the oblivion death bomb
+- added a recipe for hydrated coal to the bottler and fluid transposer
+- added a recipe for the XU machine block to the kit assembler
+- added a recipe to cast forestry biomass into plant balls
+- added a recipe to convert TE obsidian dust into the IC2C variant
+- added a recipe to make clathrates craftable in the fluid transposer
+- added a recipe to prestinify ignoble bees
+- added a recipe to recycle arrows
+- added a recipe to recycle magma rings
+- added a recipe to recycle the ender io loot capacitors
+- added a recipe to remelt concrete
+- added a recipe to reset the scroll of written expertise
+- added a recipe to the netherbane
+- added a recipe to turn limestone into chalk
+- added a recipe to uncraft netherwart blocks
+- added a tooltip to the AE2 seeds that they won't grow in water
+- added a tooltip to the botania spark augments to explain their function
+- added a tooltip to the claybucket that it can only hold water and lava
+- added a wheat to seed recipe so it is in line with harvestcraft
+- added Abyssalcraft ores to the x5 ore processing chain
+- added an alloying recipe for bitumen
+- added an alternative recipe to the basic Ender IO item filter
+- added blood arsenal wood to the saw mill
+- added coal coke pellets as fuel source
+- added documentation for the tweaks made to the garden cloche
+- added documentation that the gaia boss can be placed in a woot farm
+- added ethaxium as tinkers material
+- added harvestcraft honey to the forestry centrifuge
+- added melting recipes for golden foods
+- added more efficient cable recipes to the IC2C extractor
+- added more tips to the loading screen
+- added netherrack and clay dust recipes to the IE crusher
+- added processing recipes for the dreaded chunk and shard
+- added rail recipes to the research table
+- added recipes for cleaning of blood altar runes
+- added recipes to all bee hives
+- added recipes to remelt most of the smeltery parts
+- added tooltips to the alveary blocks to explain their function
+- allowed aquamarine to be duplicated
+- allowed compressed saw dust in the coke oven
+- allowed creosote oil in the IT boiler
+- allowed fish oil in the production of bio diesel
+- allowed golden roots to be crafted in the fluid transposer
+- allowed harvestcraft candles to be chiseled with forestry candles
+- allowed popped chorus to be processed in the industrial squeezer
+- allowed remelting of custom metal dusts
+- allowed star steel in the arc furnace
+- altered the recipe of the "base plate" to increase the output
+- blacklisted bee hives in other dimension then the overworld
+- changed the building tool to use energy again
+- changed the cracked floor recipe to enable more early game farms
+- changed the name of the royal jelly from harvestcraft
+- changed the recipe for awakended draconium
 - decreased loadtime by ~20%
-- reformatted the changelog
+- disabled ardite and cobalt smelting in normal furnaces
+- disabled the infernal mobs drowning effect
+- disabled the open computers version check
+- documented the bogosort keybinds
+- documented the changed energy requirement of the quantum quarry
+- enabled the quark candles and added them to the candle chisel list
+- enabled the quark chest buttons in more inventories
+- increased durability of all chisels
+- increased the durability of all chisels
+- increased the pressure pipes tank volume from 32b to 256b
+- increased the required amount of honey in some recipes
+- increased the stacksize of coralium cluster gem
+- increased the stacksize of dark power gems
+- increased the stacksize of graphite electrodes
+- increased the yield of almost all alloying recipes
+- increased the yield of plutonium
+- made Elder Guardians a boss mob
+- made scented paneling cheaper
 - moved changelog into the root directory
+- moved the energy module quest
+- moved the recipe of the beam canon into the first astral table
 - mp utils now loads the online version of the changelog
+- overhauled IE excavator ore deposits
+- overhauled IP pumpjack fluid deposits
+- reenabled Abyssalcraft Materializer in the legacy mode
+- refactored the ingame guide to use patchouli
+- reformatted the changelog
 - removed Nether Worldborder
+- removed shulker boxes from the chest ore dict
+- removed the ender io gears and made them recyclable
+- replaced niter with saltpeter ore dict in all recipes
+- replaced the gaia ingot in the enhanced ender ingot with ludicrite
+- tweaked the main menu
+- tweaked the recipe for the redstone conduits
+- tweaked the recipe of all shear recipes
+- tweaked the recipe of the atomic binder
+- tweaked the recipe of the botania water rune to allow all fish
+- tweaked the recipe of the draconic evolution disenchanter
+- tweaked the recipe of the ender io power monitor to make it cheaper
+- tweaked the recipe of the Flux Reconstruction augment
+- tweaked the recipe of the gaia pylons
+- tweaked the recipe of the nuclear reactor
+- tweaked the recipe of the RFTools RF and Liquid Monitor
+- tweaked the recipe of the wand core
+- tweaked various recipes to reflect the addition of metal chests
+- updated startup screen
 
 ### Bugfixes
 
-- fixed broken bronze recipe in the Arc Furnace
-- fixed Nullifier using an empty OreDict in it's recipe
-- fixed Soulforge recipe being unobtainable with the current Blood Altar level
 - changed recipe for the T3 Blood Orb (was too expensive)
 - changed recipe for the T4 Blood Orb (was unobtainable)
+- fixed apatite not being processable in the SAG Mill
+- fixed broken bronze recipe in the Arc Furnace
+- fixed converting pulsating nuggets back into ingots
+- fixed curse earth not working in the void dimension
+- fixed custom metals could not be smelted in the magma crucible
+- fixed fluxed electrum not being processable in the SAG Mill
+- fixed Immersive Engineering Capacitor In- and Output
+- fixed log spam by sledgehammer about a broken mixin
+- fixed main menu scale on smaller screens
+- fixed Nullifier using an empty OreDict in it's recipe
+- fixed sky stone not being processable in the SAG Mill
+- fixed Soulforge recipe being unobtainable with the current Blood Altar level
+- fixed the advanced disenchanter quest requirements
+- fixed the amount of framed slabs you get
+- fixed the basic fluid filter recipe in the induction smelter
+- fixed the broken scrolling in the changelog window
+- fixed the infused wood fence crafting quantity
+- fixed the metallurgic dust recipe
+- fixed the power stone tracker quest requirements
+- fixed the recipe of the Fluix Aggregator
+- fixed the rudimentary snare quest requirements
+- fixed the TE morb being hidden in HEI
+- fixed the water consumption when making lime plaster
+- fixed various broken Multiblock templates from the Multi Builder Tool
 
 ## v2.2.6 - Hotfix XII
 
@@ -1150,7 +1294,7 @@ Thanks `Xetaxheb#2851` and `ADEEVdes#1184` for your feedback!
 - fixed the gear recipes
 - fixed tiny progression recipes
 
-## v1.3.0 - RECIPES!
+## v1.3.0 - RECIPES
 
 ### Changes
 

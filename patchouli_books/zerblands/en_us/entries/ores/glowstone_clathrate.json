@@ -1,0 +1,17 @@
+{
+    "name": "Endergized Netherrack",
+    "icon": "thermalfoundation:ore_fluid:3",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "thermalfoundation:ore_fluid:3",
+            "dim": "<nether>",
+            "yMin": "10",
+            "yMax": "40",
+            "cSize": "20",
+            "cCount": "2"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "name": "External Heater",
+    "icon": "immersiveengineering:metal_device1:1",
+    "category": "documentation/immersiveengineering",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "immersiveengineering:metal_device1:1",
+            "link_recipe": true,
+            "text": "The <item>External Heater</> is able to void items, if you don't provide it with enough energy.<br>Here is the related $(l:https://github.com/BluSunrize/ImmersiveEngineering/issues/3927)Github issue$(/l)."
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Gold Ore",
+    "icon": "minecraft:gold_ore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "minecraft:gold_ore",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "32",
+            "cSize": "9",
+            "cCount": "2"
+        }
+    ]
+}

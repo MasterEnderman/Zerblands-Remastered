@@ -1,0 +1,17 @@
+{
+    "name": "Yellorium Ore",
+    "icon": "bigreactors:oreyellorite",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "bigreactors:oreyellorite",
+            "dim": "<overworld>",
+            "yMin": "5",
+            "yMax": "20",
+            "cSize": "4",
+            "cCount": "2"
+        }
+    ]
+}

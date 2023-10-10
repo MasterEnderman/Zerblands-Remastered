@@ -1,0 +1,13 @@
+{
+    "name": "Aquamarine Shale",
+    "icon": "astralsorcery:blockcustomsandore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "astralsorcery:blockcustomsandore",
+            "desc": "Can be found in Rivers."
+        }
+    ]
+}

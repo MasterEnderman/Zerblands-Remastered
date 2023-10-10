@@ -1,0 +1,13 @@
+{
+    "name": "SoL: Carrot Edition",
+    "icon": "minecraft:carrot",
+    "category": "infos",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Spice of Life: Carrot Edition",
+            "type": "default",
+            "text": "Eating diverse food gives you additional hearts. But be aware that only nourishing food counts towards your diet. Furthermore they are only temporary, when you die your health will be reset. If you look for a permanent health increase try to craft some <item>Heart Containers</>. You can check you progress in the <item>Food Book</>."
+        }
+    ]
+}

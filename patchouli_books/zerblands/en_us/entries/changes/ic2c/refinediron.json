@@ -1,0 +1,14 @@
+{
+    "name": "Refined Iron",
+    "icon": "ic2:itemmisc:53",
+    "category": "changes/ic2c",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "ic2:itemmisc:53",
+            "link_recipe": true,
+            "text": "<item>Refined Iron</> has been replaced with <item>Steel Ingots</> in all recipes."
+        }
+    ]
+}

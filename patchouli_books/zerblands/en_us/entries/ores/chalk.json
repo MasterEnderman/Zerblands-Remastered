@@ -1,0 +1,17 @@
+{
+    "name": "Chalk",
+    "icon": "earthworks:block_chalk",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "earthworks:block_chalk",
+            "dim": "<overworld>",
+            "yMin": "60",
+            "yMax": "120",
+            "cSize": "33",
+            "cCount": "10"
+        }
+    ]
+}

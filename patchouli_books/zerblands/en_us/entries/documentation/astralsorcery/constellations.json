@@ -1,0 +1,136 @@
+{
+    "name": "Constellations",
+    "icon": "astralsorcery:itemconstellationpaper",
+    "category": "documentation/astralsorcery",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Aevitas",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/aevitas.png"
+            ]
+        },
+        {
+            "title": "Armara",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/armara.png"
+            ]
+        },
+        {
+            "title": "Discidia",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/discidia.png"
+            ]
+        },
+        {
+            "title": "Evorsio",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/evorsio.png"
+            ]
+        },
+        {
+            "title": "Vicio",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/vicio.png"
+            ]
+        },
+        {
+            "title": "Bootes",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/bootes.png"
+            ]
+        },
+        {
+            "title": "Fornax",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/fornax.png"
+            ]
+        },
+        {
+            "title": "Horologium",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/horologium.png"
+            ]
+        },
+        {
+            "title": "Lucerna",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/lucerna.png"
+            ]
+        },
+        {
+            "title": "Mineralis",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/mineralis.png"
+            ]
+        },
+        {
+            "title": "Octans",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/octans.png"
+            ]
+        },
+        {
+            "title": "Pelotrio",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/pelotrio.png"
+            ]
+        },
+        {
+            "title": "Alcara",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/alcara.png"
+            ]
+        },
+        {
+            "title": "Gelu",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/gelu.png"
+            ]
+        },
+        {
+            "title": "Ulteria",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/ulteria.png"
+            ]
+        },
+        {
+            "title": "Vorux",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/vorux.png"
+            ]
+        }
+    ]
+}

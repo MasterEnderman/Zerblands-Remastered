@@ -1,0 +1,17 @@
+{
+    "name": "Green Slate",
+    "icon": "earthworks:block_slate_green",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "earthworks:block_slate_green",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "80",
+            "cSize": "33",
+            "cCount": "10"
+        }
+    ]
+}

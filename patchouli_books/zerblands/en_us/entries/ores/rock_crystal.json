@@ -1,0 +1,13 @@
+{
+    "name": "Rock Crystal Ore",
+    "icon": "astralsorcery:blockcustomore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "astralsorcery:blockcustomore",
+            "desc": "Walk across the landscape with a <item>Resonating Wand</> in your hand at <mark>nighttime</> to spot some white particles hovering over the ground. If you found them, dig down to the rock crystals which generate <mark>near bedrock</>."
+        }
+    ]
+}

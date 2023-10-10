@@ -1,0 +1,17 @@
+{
+    "name": "Iron Ore",
+    "icon": "minecraft:iron_ore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "minecraft:iron_ore",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "64",
+            "cSize": "9",
+            "cCount": "20"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Forestry",
+    "description": "Forestry deals with farming, renewable energy production as well as the breeding of trees, bees and butterflies in Minecraft.",
+    "icon": "forestry:royal_jelly",
+    "sortnum": 0,
+    "parent":"patchouli:documentation"
+}

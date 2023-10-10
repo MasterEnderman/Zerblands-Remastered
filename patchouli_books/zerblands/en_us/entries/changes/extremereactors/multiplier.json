@@ -1,0 +1,13 @@
+{
+    "name": "Multipliers",
+    "icon": "bigreactors:ingotyellorium",
+    "category": "changes/extremereactors",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Multipliers",
+            "type": "default",
+            "text": "Fuel Usage Multiplier: <li>x16<br>Power Production Multiplier: <li>x4"
+        }
+    ]
+}

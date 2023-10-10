@@ -1,0 +1,7 @@
+{
+    "name": "Tinkers' Construct",
+    "description": "Tinkers' Construct is a mod about putting tools together in a wide variety of ways, then modifying them until they turn into something else. The tools never disappear and can be named and changed to your heart's desire. Once you make them, they're yours forever. Many different materials can be used to make your tools.",
+    "icon": "tconstruct:slime_boots",
+    "sortnum": 0,
+    "parent":"patchouli:documentation"
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Quantum Quarry",
+    "icon": "extrautils2:quarry",
+    "category": "changes/extrautilities2",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Quantum Quarry",
+            "type": "default",
+            "text": "The <mark>Base Energy Per Operation</> is set to 20 kRF."
+        }
+    ]
+}

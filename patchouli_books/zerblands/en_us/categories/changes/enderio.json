@@ -1,0 +1,7 @@
+{
+    "name": "Ender IO",
+    "description": "Ender IO is a full-sized tech-mod.",
+    "icon": "enderio:item_material:20",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

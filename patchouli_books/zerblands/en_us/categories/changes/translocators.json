@@ -1,0 +1,7 @@
+{
+    "name": "Translocators",
+    "description": "Translocators is a mod that allows you to transfer items and liquids between nearby inventories with a heavily configureable amount of control in a way that feels natural to Minecraft.",
+    "icon": "translocators:translocator_part",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

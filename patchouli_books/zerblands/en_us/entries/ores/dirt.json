@@ -1,0 +1,17 @@
+{
+    "name": "Dirt",
+    "icon": "minecraft:dirt",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "minecraft:dirt",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "256",
+            "cSize": "33",
+            "cCount": "10"
+        }
+    ]
+}

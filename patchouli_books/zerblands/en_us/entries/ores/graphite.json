@@ -1,0 +1,17 @@
+{
+    "name": "Industrial Grade Graphite Ore",
+    "icon": "quantumflux:graphiteore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "quantumflux:graphiteore",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "16",
+            "cSize": "8",
+            "cCount": "1"
+        }
+    ]
+}

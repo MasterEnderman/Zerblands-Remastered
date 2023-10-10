@@ -1,0 +1,13 @@
+{
+    "name": "Turbines",
+    "icon": "bigreactors:turbinecontroller",
+    "category": "changes/extremereactors",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Turbines",
+            "type": "default",
+            "text": "Max Height: <li>32 Blocks<br>Max Size: <li>16 Blocks<2br>So it fit's in 1 Chunk to reduce lag."
+        }
+    ]
+}

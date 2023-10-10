@@ -1,0 +1,18 @@
+{
+    "name": "zerberus1979",
+    "icon": "minecraft:skull:3{SkullOwner: {Id: 'b5734c11-3c39-4cc3-a22a-4c473883952e', Name: 'Zerb1979'}}",
+    "category": "vip",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Zerb1979",
+            "type": "default",
+            "text": "A long time friend of mine. He was the guy who originally motivated me to start with the original version of <zerblands> and I will always be grateful for that."
+        },
+        {
+            "title": "Socials",
+            "type": "default",
+            "text": "<li>$(l:https://discord.gg/GnwGf4p)Discord$(/l)<li>$(l:https://streamlabs.com/zerberus1979)Donations$(/l)<li>$(l:https://www.twitch.tv/zerberus1979)Twitch$(/l)<li>$(l:https://www.youtube.com/user/zerberus1979)YouTube$(/l)"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Flux Networks",
+    "description": "Flux Networks gives you the ability to build Wireless Energy Networks. It allows you to customise these networks and manage the flow of energy across your world. Removing the need to have cables going everywhere, hence decreasing lag and saving you time.",
+    "icon": "fluxnetworks:fluxcore",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

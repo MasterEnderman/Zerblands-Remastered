@@ -1,0 +1,34 @@
+{
+    "name": "2023-10-09",
+    "icon": "botania:manainkwell",
+    "category": "blog",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "2023-10-09",
+            "type": "default",
+            "text": "A long time no see that it. Great to have you back. I don't know where this journey will take me, but I thought it might be an interesting idea to keep some kind of special documentation in my <modpack>, while writing little tid bits I encounter during the development cycle."
+        },
+        {
+            "title": "Update Announcement",
+            "type": "default",
+            "text": "As you might have guessed I wasn't able to publish the update as promised yesterday, even though I spend another 10 hours non-stop grinding through my todo list. I guess it was just more then I had anticipated when I first starting working on the update. Everything that is left now to finish the next update are roughly"
+        },
+        {
+            "type": "text",
+            "text": "30 tweaks I need to make to different quests, to further streamline the nightmare mode experience. Then it's just porting over a few more pages from the old guide. I know that this  is a feature that almost nobody uses, but I still wanted to refactor it. But I won't finish the whole new guide, before the next update as that would take another week of work. So I'll only finish the Ore Generation"
+        },
+        {
+            "type": "text",
+            "text": "before publishing the next update. Depending on how much time I have tomorrow after work I might be able to get the update out by then, if not you can count on me that it'll be out by Friday. (for real this time) I promise when you'll see the changelog you can relate why this update took me around 120 hours of work, stretched over roughly 1.5 months. Besides fixing various bugs I encountered"
+        },
+        {
+            "type": "text",
+            "text": "during my own playthrough and some balancing on the endgame there a a few mods I changed to further increase the performance of the pack and I did some preparations, when I start working on versions beyond 2.3.x, where there will be some drastic changes to the current state of the pack, but more on that during another point of time. I want to finish"
+        },
+        {
+            "type": "text",
+            "text": "with thanking you for taking your time to check out my work and actually playing something I spend the majority of my freetime on. It just makes me happy to see that something I made is appreciated by others. Alright, time to get back to the update. Stay tuned."
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "IC2 Classic",
+    "description": "IndustrialCraft Classic (IC2 Classic for Short) is an industrial based mod that adds the Industrial Revolution to Minecraft. Compared to IC2 Experimental, IC2 Classic is based around the Original Concept and tries to keep to that, whilst also being casual player friendly without losing its main features.",
+    "icon": "ic2:itemmisc:451",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

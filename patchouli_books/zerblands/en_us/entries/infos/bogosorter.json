@@ -1,0 +1,18 @@
+{
+    "name": "Inventory Bogo Sorter",
+    "icon": "refinedrelocation:sorting_upgrade",
+    "category": "infos",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Inventory Bogo Sorter",
+            "type": "default",
+            "text": "<b>Features:</><br><li>sorting supported inventories according to configured sort rules<li>configure sort rules in a gui<li>auto refill items in hotbar when used up (f.e. blocks, foods or tools)<li>swap tools when almost broken<li>hotbar columns scrolling"
+        },
+        {
+            "title": "Keybinds",
+            "type": "default",
+            "text": "<b>CTRL + LMB:</> transfers a single item<br><b>CTRL + RMB:</> transfers a single item into an empty slot<br><b>Space + LMB:</> transfer the whole inventory<br><br>ALT + LMB:</> transfers all items of the same type<br><b>Space + Q:</> throws the whole inventory into the world<br><b>ALT + Q:</> throws all the items of the same type into the world"
+        }
+    ]
+}

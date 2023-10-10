@@ -1,0 +1,17 @@
+{
+    "name": "Nickel Ore",
+    "icon": "thermalfoundation:ore:4",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "thermalfoundation:ore:4",
+            "dim": "<overworld>",
+            "yMin": "5",
+            "yMax": "20",
+            "cSize": "4",
+            "cCount": "2"
+        }
+    ]
+}

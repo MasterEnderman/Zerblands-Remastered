@@ -1,0 +1,17 @@
+{
+    "name": "Tin Ore",
+    "icon": "thermalfoundation:ore:1",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "thermalfoundation:ore:1",
+            "dim": "<overworld>",
+            "yMin": "20",
+            "yMax": "55",
+            "cSize": "8",
+            "cCount": "7"
+        }
+    ]
+}

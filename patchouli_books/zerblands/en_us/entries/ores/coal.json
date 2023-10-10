@@ -1,0 +1,17 @@
+{
+    "name": "Coal Ore",
+    "icon": "minecraft:coal_ore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "minecraft:coal_ore",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "128",
+            "cSize": "17",
+            "cCount": "20"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Endergenic Generator",
+    "icon": "rftools:endergenic",
+    "category": "changes/rftools",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "rftools:endergenic",
+            "link_recipe": true,
+            "text": "Energy Output is reduced by 50%."
+        }
+    ]
+}

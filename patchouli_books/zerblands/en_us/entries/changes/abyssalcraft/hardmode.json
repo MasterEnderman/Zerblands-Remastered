@@ -1,0 +1,13 @@
+{
+    "name": "Hardmode",
+    "icon": "abyssalcraft:dghead",
+    "category": "changes/abyssalcraft",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Hardmode",
+            "type": "default",
+            "text": "In this Modpack the Hardmode of AbyssalCraft is enabled.<br>That means mobs:<br><li>are stronger<li>have more health<li>are sometimes invisible<li>have 10x armor piercing damage"
+        }
+    ]
+}

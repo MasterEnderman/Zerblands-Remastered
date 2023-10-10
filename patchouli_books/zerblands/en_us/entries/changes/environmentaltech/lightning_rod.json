@@ -1,0 +1,13 @@
+{
+    "name": "Lightning Rod",
+    "icon": "environmentaltech:lightning_cont_6",
+    "category": "changes/environmentaltech",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Lightning Rod",
+            "type": "default",
+            "text": "The <mark>Lightning Rod</> generates 375000 RF / Lightning Strike."
+        }
+    ]
+}

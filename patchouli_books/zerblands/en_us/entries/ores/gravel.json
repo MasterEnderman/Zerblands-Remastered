@@ -1,0 +1,17 @@
+{
+    "name": "Gravel",
+    "icon": "minecraft:gravel",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "minecraft:gravel",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "256",
+            "cSize": "33",
+            "cCount": "8"
+        }
+    ]
+}

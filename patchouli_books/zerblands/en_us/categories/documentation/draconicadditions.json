@@ -1,0 +1,7 @@
+{
+    "name": "Draconic Additions",
+    "description": "Ever wanted to expand upon Draconic Evolution? Here's your chance!",
+    "icon": "draconicadditions:chaos_stabilizer_core",
+    "sortnum": 0,
+    "parent":"patchouli:documentation"
+}

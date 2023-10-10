@@ -1,0 +1,7 @@
+{
+    "name": "Woot",
+    "description": "In Woot you build your factory then program it with the mob of your choice. Then you give it some power and an inventory to put all the loot into that the mob would have generated.",
+    "icon": "woot:yahhammer",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

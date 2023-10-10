@@ -1,0 +1,14 @@
+{
+    "name": "Flux Dust",
+    "icon": "fluxnetworks:flux",
+    "category": "changes/fluxnetworks",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "fluxnetworks:flux",
+            "link_recipe": true,
+            "text": "In this <modpack> you obtain <item>Flux Dust</> by burning a specific <item>Covalence Dust</> in a <mark>fire</>."
+        }
+    ]
+}

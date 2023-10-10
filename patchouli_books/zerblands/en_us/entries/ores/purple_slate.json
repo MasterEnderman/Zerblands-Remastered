@@ -1,0 +1,17 @@
+{
+    "name": "Purple Slate",
+    "icon": "earthworks:block_slate_purple",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "earthworks:block_slate_purple",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "80",
+            "cSize": "33",
+            "cCount": "10"
+        }
+    ]
+}

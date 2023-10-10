@@ -1,0 +1,7 @@
+{
+    "name": "Extra Utilities",
+    "description": "Just a bunch of fairly useful things.",
+    "icon": "extrautils2:angelblock",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

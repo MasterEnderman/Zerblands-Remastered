@@ -1,0 +1,17 @@
+{
+    "name": "Diamond Ore",
+    "icon": "minecraft:diamond_ore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "minecraft:diamond_ore",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "16",
+            "cSize": "8",
+            "cCount": "1"
+        }
+    ]
+}

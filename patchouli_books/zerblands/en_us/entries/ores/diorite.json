@@ -1,0 +1,17 @@
+{
+    "name": "Diorite",
+    "icon": "minecraft:stone:3",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "minecraft:stone:3",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "80",
+            "cSize": "33",
+            "cCount": "10"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Chaos Stabilizer",
+    "icon": "draconicadditions:chaos_stabilizer_core",
+    "category": "documentation/draconicadditions",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Chaos Stabilizer",
+            "type": "default",
+            "text": "To make your chaotic tool and armor useable they have to be stabilized first. This is done in the <mark>Chaos Stabilizer</>.<br>The Awakened Draconium Blocks are consumed in the stabilization process. (Keep a healthy distance to the core while the machine is running.)"
+        },
+        {
+            "title": "Chaos Stabilizer Core",
+            "type": "image",
+            "border": true,
+            "images": [
+                "zerblands:guide/images/chaos.png"
+            ],
+            "text": "You start the process by throwing your item towards the <item>Chaos Stabilizer Core</>."
+        }
+    ]
+}

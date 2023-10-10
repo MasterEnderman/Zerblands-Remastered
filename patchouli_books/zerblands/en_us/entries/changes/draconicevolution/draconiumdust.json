@@ -1,0 +1,14 @@
+{
+    "name": "Draconium Dust",
+    "icon": "draconicevolution:draconium_dust",
+    "category": "changes/draconicevolution",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "draconicevolution:draconium_dust",
+            "link_recipe": true,
+            "text": "<li>the ore can't be obtained<li>has to be crafted<li>obtained through bee breeding<li>farmed with a <mark>Woot Dragon Factory</>"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "RFTools",
+    "description": "RFTools is a mod containing various tools that are related to RF or technology in general.",
+    "icon": "rftools:infused_diamond",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

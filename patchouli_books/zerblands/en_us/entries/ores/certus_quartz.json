@@ -1,0 +1,17 @@
+{
+    "name": "Certus Quartz Ore",
+    "icon": "appliedenergistics2:quartz_ore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "appliedenergistics2:quartz_ore",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "32",
+            "cSize": "4",
+            "cCount": "4"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Botanic Miner",
+    "icon": "minecraft:barrier",
+    "category": "changes/environmentaltech",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Botanic Miner",
+            "type": "default",
+            "text": "They have been removed from the game."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Oil Sand",
+    "icon": "thermalfoundation:ore_fluid",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "thermalfoundation:ore_fluid",
+            "desc": "Can be rarely found in deserts."
+        }
+    ]
+}

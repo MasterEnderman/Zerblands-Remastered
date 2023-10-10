@@ -1,0 +1,7 @@
+{
+    "name": "Ender Storage",
+    "description": "These chests link together based on matching color patterns. All chests with the same color buttons share an inventory. Ender bags can be color coded to access chests as well giving you a portable solution to the question 'How do I access the stuff at my base when I am not there?'",
+    "icon": "enderstorage:ender_storage",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

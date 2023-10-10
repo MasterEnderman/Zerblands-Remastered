@@ -1,0 +1,14 @@
+{
+    "name": "Storage Tablet",
+    "icon": "rftools:storage_module_tablet",
+    "category": "changes/rftools",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "rftools:storage_module_tablet",
+            "link_recipe": true,
+            "text": "You can't put a <item>Storage Control Screen Module</> inside a <item>Storage Tablet</>."
+        }
+    ]
+}

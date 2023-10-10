@@ -1,0 +1,7 @@
+{
+    "name": "Blood Arsenal",
+    "description": "Blood Arsenal adds in a whole variety of different tools and mechanics to supplement and enhance a player's Blood Magic experience.",
+    "icon": "bloodarsenal:base_item",
+    "sortnum": 0,
+    "parent":"patchouli:documentation"
+}

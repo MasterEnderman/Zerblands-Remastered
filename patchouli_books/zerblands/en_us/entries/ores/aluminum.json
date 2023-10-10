@@ -1,0 +1,17 @@
+{
+    "name": "Aluminum Ore",
+    "icon": "thermalfoundation:ore:6",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "thermalfoundation:ore:6",
+            "dim": "<overworld>",
+            "yMin": "40",
+            "yMax": "75",
+            "cSize": "8",
+            "cCount": "8"
+        }
+    ]
+}

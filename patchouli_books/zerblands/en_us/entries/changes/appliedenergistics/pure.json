@@ -1,0 +1,13 @@
+{
+    "name": "Pure Crystals",
+    "icon": "appliedenergistics2:material:12",
+    "category": "changes/appliedenergistics",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Pure Crystals",
+            "type": "default",
+            "text": "Instead of growing the seeds in water, they need to be transformed by throwing them in a <item>Mana Pool</> or processed in a <item>Phytogenic Insolator</> from <mark>Thermal Expansion</>."
+        }
+    ]
+}

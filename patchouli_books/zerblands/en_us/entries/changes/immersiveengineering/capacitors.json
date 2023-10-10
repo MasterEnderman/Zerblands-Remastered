@@ -1,0 +1,26 @@
+{
+    "name": "Capacitors",
+    "icon": "immersiveengineering:metal_device0",
+    "category": "changes/immersiveengineering",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "immersiveengineering:metal_device0",
+            "link_recipe": true,
+            "text": "<li>Energy Transfer Rate: 64 RF/tick"
+        },
+        {
+            "type": "spotlight",
+            "item": "immersiveengineering:metal_device0:1",
+            "link_recipe": true,
+            "text": "<li>Energy Transfer Rate: 256 RF/tick"
+        },
+        {
+            "type": "spotlight",
+            "item": "immersiveengineering:metal_device0:2",
+            "link_recipe": true,
+            "text": "<li>Energy Transfer Rate: 1024 RF/tick"
+        }
+    ]
+}

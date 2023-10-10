@@ -1,0 +1,13 @@
+{
+    "name": "Filtering Mode",
+    "icon": "translocators:translocator_part",
+    "category": "changes/translocators",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Filtering Mode",
+            "type": "default",
+            "text": "The item used to enable the Filter mode on a Translocator was changed to a <item>Diamond Chip</>."
+        }
+    ]
+}

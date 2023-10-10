@@ -1,0 +1,13 @@
+{
+    "name": "Personalization Item",
+    "icon": "enderstorage:ender_storage",
+    "category": "changes/enderstorage",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Personalization Item",
+            "type": "default",
+            "text": "The item used to set the ender chest / ender tank to a personal ID was changed to a <item>Flawless Diamond</>."
+        }
+    ]
+}

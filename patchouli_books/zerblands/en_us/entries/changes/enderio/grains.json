@@ -1,0 +1,14 @@
+{
+    "name": "Grains of Infinity",
+    "icon": "enderio:item_material:20",
+    "read_by_default": true,
+    "category": "changes/enderio",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "enderio:item_material:20",
+            "link_recipe": true,
+            "text": "They are normally obtained by lighting bedrock on fire. In this <modpack> however you get them by dropping <item>Crushed Black Quartz</> in <item>Liquid Starlight</> or <item>Color out of Space</> depending on the <mark>packmode</>."
+        }
+    ]
+}

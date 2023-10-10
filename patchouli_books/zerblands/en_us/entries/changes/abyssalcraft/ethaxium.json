@@ -1,0 +1,14 @@
+{
+    "name": "Ethaxium Ingots",
+    "icon": "abyssalcraft:ethaxiumingot",
+    "category": "changes/abyssalcraft",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "abyssalcraft:ethaxiumingot",
+            "link_recipe": true,
+            "text": "<item>Ethaxium Ingots</> no longer drop from the Gatekeeper Minions. Furthermore there is a new recipe for them."
+        }
+    ]
+}

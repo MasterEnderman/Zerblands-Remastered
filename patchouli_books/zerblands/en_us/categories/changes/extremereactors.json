@@ -1,0 +1,7 @@
+{
+    "name": "Extreme Reactors",
+    "description": "Giants Reactors to harness the power of the atom or mighty Turbines to turn steam into energy? Why not both?",
+    "icon": "bigreactors:reactorcasingcores",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

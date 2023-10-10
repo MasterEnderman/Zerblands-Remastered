@@ -1,0 +1,17 @@
+{
+    "name": "Silver Ore",
+    "icon": "thermalfoundation:ore:2",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "thermalfoundation:ore:2",
+            "dim": "<overworld>",
+            "yMin": "5",
+            "yMax": "30",
+            "cSize": "8",
+            "cCount": "4"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Alternator",
+    "icon": "immersivetech:metal_multiblock:5",
+    "category": "changes/immersivetechnology",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "immersivetech:metal_multiblock:5",
+            "link_recipe": true,
+            "text": "Energy Output is reduced by ~20%."
+        }
+    ]
+}

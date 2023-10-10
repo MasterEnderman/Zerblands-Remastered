@@ -1,0 +1,7 @@
+{
+    "name": "Abyssalcraft",
+    "description": "<mark>AbyssalCraft</> is a mod centered around exploration, but with a growing magic influence. Another thing that has been getting more focus is influences from the works of <mark>H.P Lovecraft</>, adding even more evil to that which is already in the mod.",
+    "icon": "abyssalcraft:dghead",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

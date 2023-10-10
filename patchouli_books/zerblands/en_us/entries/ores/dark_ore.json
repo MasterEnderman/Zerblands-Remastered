@@ -1,0 +1,17 @@
+{
+    "name": "Dark Ore",
+    "icon": "evilcraft:dark_ore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "evilcraft:dark_ore",
+            "dim": "<overworld>",
+            "yMin": "16",
+            "yMax": "48",
+            "cSize": "4",
+            "cCount": "3"
+        }
+    ]
+}

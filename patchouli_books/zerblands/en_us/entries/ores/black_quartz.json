@@ -1,0 +1,17 @@
+{
+    "name": "Black Quartz Ore",
+    "icon": "actuallyadditions:block_misc:3",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "actuallyadditions:block_misc:3",
+            "dim": "<overworld>",
+            "yMin": "20",
+            "yMax": "50",
+            "cSize": "2",
+            "cCount": "7"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Cooking for Blockheads",
+    "description": "This mod adds a cooking book along with a functional kitchen to Minecraft. Use the book or the Cooking Table to find out what you can cook with what ingredients you currently have available, and start cooking immediately through a single click.",
+    "icon": "cookingforblockheads:recipe_book:1",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

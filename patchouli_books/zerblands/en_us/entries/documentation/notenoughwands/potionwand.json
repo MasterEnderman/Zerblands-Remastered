@@ -1,0 +1,14 @@
+{
+    "name": "Potion Wand",
+    "icon": "notenoughwands:potion_wand",
+    "category": "documentation/notenoughwands",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "notenoughwands:potion_wand",
+            "link_recipe": true,
+            "text": "Currently the <item>Potion Wand</> doesn't work. This issue is already known since december 2018.<br>Here is the related $(l:https://github.com/romelo333/notenoughwands/issues/83)Github issue$(/l)."
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Uranium Ore",
+    "icon": "ic2:blockmetal:2",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "ic2:blockmetal:2",
+            "dim": "<overworld>",
+            "yMin": "5",
+            "yMax": "20",
+            "cSize": "4",
+            "cCount": "2"
+        }
+    ]
+}

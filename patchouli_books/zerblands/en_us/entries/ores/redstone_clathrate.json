@@ -1,0 +1,17 @@
+{
+    "name": "Destabilized Redstone Ore",
+    "icon": "thermalfoundation:ore_fluid:2",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "thermalfoundation:ore_fluid:2",
+            "dim": "<overworld>",
+            "yMin": "0",
+            "yMax": "28",
+            "cSize": "16",
+            "cCount": "2"
+        }
+    ]
+}

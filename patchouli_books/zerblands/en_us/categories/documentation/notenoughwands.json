@@ -1,0 +1,7 @@
+{
+    "name": "Not Enough Wands",
+    "description": "This is a mod that adds various utility wands to Minecraft.",
+    "icon": "notenoughwands:building_wand",
+    "sortnum": 0,
+    "parent":"patchouli:documentation"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Pam's Harvestcraft",
+    "description": "A food mod that adds a lot of unnecessary foods.",
+    "icon": "harvestcraft:freshwateritem",
+    "sortnum": 0,
+    "parent":"patchouli:documentation"
+}
