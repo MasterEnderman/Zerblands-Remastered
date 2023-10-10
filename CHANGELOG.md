@@ -10,6 +10,7 @@ A Modpack for Minecraft 1.12.2
 - Alfheim Lighting Engine
 - Ambient Environment
 - Armor Toughness Bar
+- Avaritia Tweaks
 - Baubles-LTS
 - Baubley Elytra
 - Birds On A Wire
@@ -84,6 +85,7 @@ A Modpack for Minecraft 1.12.2
 ### Removed Mods
 
 - /dank/null (replaced by /dank/null/no_RCE)
+- Avaritia's Complement (replaced by Avaritia Tweaks)
 - Baubles (replaced by Baubles-LTS)
 - ChatCalculator (replaced by Chat Calculator)
 - DupeFix Project (replaced by Universal Tweaks)
