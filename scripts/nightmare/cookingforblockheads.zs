@@ -22,6 +22,8 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.evilcraft.BloodInfuser;
 
+import scripts.functions.calc_scientific;
+
 recipes.remove(<cookingforblockheads:recipe_book:2>);
 BloodInfuser.addRecipe(<cookingforblockheads:recipe_book:1>, <liquid:evilcraftblood> * 10000, 1, <cookingforblockheads:recipe_book:2>, 400, 100);
 
@@ -30,3 +32,14 @@ recipes.addShaped(<cookingforblockheads:kitchen_floor> * 4, [
     [<astralsorcery:blockmarble>,<astralsorcery:blockblackmarble>],
     [<astralsorcery:blockblackmarble>,<astralsorcery:blockmarble>]
 ]);
+
+var mapUpgrade as IItemStack[IItemStack] = {
+    <cookingforblockheads:heating_unit> : <contenttweaker:heating_coil>,
+    <cookingforblockheads:ice_unit> : <xreliquary:mob_ingredient:10>,
+    <cookingforblockheads:preservation_chamber> : <immersiveengineering:material:27>,
+};
+
+for upgrade, item in mapUpgrade {
+    recipes.remove(upgrade);
+    calc_scientific(upgrade,<minecraft:comparator>,item);
+}

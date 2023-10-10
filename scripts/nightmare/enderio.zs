@@ -69,8 +69,8 @@ AlloySmelter.addRecipe(<enderio:item_material:72>, [<minecraft:netherbrick>,<con
 ArcFurnace.removeRecipe(<enderio:item_alloy_ingot:4>);
 InductionSmelter.removeRecipe(<minecraft:redstone>,<minecraft:iron_ingot>);
 InductionSmelter.removeRecipe(<minecraft:redstone>,<thermalfoundation:material>);
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:4>, [<ore:ingotRefinedIron>,<ore:ingotLead>,<ore:ingotRedAlloy>], 10000);
-ArcFurnace.addRecipe(<enderio:item_alloy_ingot:4>, <ore:ingotRefinedIron>, null, 200, 512, [<ore:ingotLead>,<ore:ingotRedAlloy>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:4>*2, [<ore:ingotRefinedIron>,<ore:ingotLead>,<ore:ingotRedAlloy>], 10000);
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot:4>*2, <ore:ingotRefinedIron>, null, 200, 512, [<ore:ingotLead>,<ore:ingotRedAlloy>]);
 
 // Pulsating Iron
 InductionSmelter.removeRecipe(<minecraft:ender_pearl>,<minecraft:iron_ingot>);
@@ -78,61 +78,61 @@ InductionSmelter.removeRecipe(<minecraft:ender_pearl>,<thermalfoundation:materia
 
 // Electrical Steel
 ArcFurnace.removeRecipe(<enderio:item_alloy_ingot:0>);
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:0>, [<ore:ingotSteel>,<ore:ingotElectrum>,<ore:itemSilicon>], 10000);
-ArcFurnace.addRecipe(<enderio:item_alloy_ingot:0>, <ore:ingotSteel>, null, 200, 512, [<ore:ingotElectrum>,<ore:itemSilicon>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:0>*2, [<ore:ingotSteel>,<ore:ingotElectrum>,<ore:itemSilicon>], 10000);
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot:0>*2, <ore:ingotSteel>, null, 200, 512, [<ore:ingotElectrum>,<ore:itemSilicon>]);
 
 // Dark Steel
 Alloy.removeRecipe(<liquid:dark_steel>);
 InductionSmelter.removeRecipe(<thermalfoundation:material:770>,<thermalfoundation:material:160>);
 InductionSmelter.removeRecipe(<thermalfoundation:material:770>,<thermalfoundation:material:96>);
 ArcFurnace.removeRecipe(<enderio:item_alloy_ingot:6>);
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:6>, [<ore:ingotSteel>,<contenttweaker:black_iron>,<ore:ingotHOPGraphite>], 20000);
-ArcFurnace.addRecipe(<enderio:item_alloy_ingot:6>, <ore:ingotSteel>, null, 200, 512, [<contenttweaker:black_iron>,<ore:ingotHOPGraphite>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:6>*2, [<ore:ingotSteel>,<contenttweaker:black_iron>,<ore:ingotHOPGraphite>], 20000);
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot:6>*2, <ore:ingotSteel>, null, 200, 512, [<contenttweaker:black_iron>,<ore:ingotHOPGraphite>]);
 
 // End Steel
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:8>, [<ore:ingotDarkSteel>,<ore:ingotStarSteel>,<enderutilities:enderpart:1>], 20000);
-ArcFurnace.addRecipe(<enderio:item_alloy_ingot:8>, <ore:ingotDarkSteel>, null, 200, 512, [<ore:ingotStarSteel>,<enderutilities:enderpart:1>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:8>*2, [<ore:ingotDarkSteel>,<ore:ingotStarSteel>,<enderutilities:enderpart:1>], 20000);
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot:8>*2, <ore:ingotDarkSteel>, null, 200, 512, [<ore:ingotStarSteel>,<enderutilities:enderpart:1>]);
 
 // Redstone Alloy
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:3>, [<contenttweaker:redstone_ingot>,<ore:itemSilicon>,<ore:ingotRedAlloy>], 10000);
-ArcFurnace.addRecipe(<enderio:item_alloy_ingot:3>, <contenttweaker:redstone_ingot>, null, 200, 512, [<ore:itemSilicon>,<ore:ingotRedAlloy>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:3>*2, [<contenttweaker:redstone_ingot>,<ore:itemSilicon>,<ore:ingotRedAlloy>], 10000);
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot:3>*2, <contenttweaker:redstone_ingot>, null, 200, 512, [<ore:itemSilicon>,<ore:ingotRedAlloy>]);
 
 // Vibrant Alloy
 InductionSmelter.removeRecipe(<enderio:item_alloy_ingot:1>,<minecraft:ender_pearl>);
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:2>, [<ore:ingotEnergeticAlloy>,<ore:ingotGelidEnderium>,<ore:ingotElectrumFlux>], 15000);
-ArcFurnace.addRecipe(<enderio:item_alloy_ingot:2>, <ore:ingotEnergeticAlloy>, null, 200, 512, [<ore:ingotGelidEnderium>,<ore:ingotElectrumFlux>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:2>*2, [<ore:ingotEnergeticAlloy>,<ore:ingotGelidEnderium>,<ore:ingotElectrumFlux>], 15000);
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot:2>*2, <ore:ingotEnergeticAlloy>, null, 200, 512, [<ore:ingotGelidEnderium>,<ore:ingotElectrumFlux>]);
 
 // Energetic Alloy
 ArcFurnace.removeRecipe(<enderio:item_alloy_ingot:1>);
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:1>, [<ore:ingotElectrum>,<ore:ingotSignalum>,<ore:ingotLumium>], 10000);
-ArcFurnace.addRecipe(<enderio:item_alloy_ingot:1>, <ore:ingotElectrum>, null, 200, 512, [<ore:ingotSignalum>,<ore:ingotLumium>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:1>*2, [<ore:ingotElectrum>,<ore:ingotSignalum>,<ore:ingotLumium>], 10000);
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot:1>*2, <ore:ingotElectrum>, null, 200, 512, [<ore:ingotSignalum>,<ore:ingotLumium>]);
 
 // Energetic Silver ALloy
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:5>, [<ore:ingotEnergeticAlloy>,<ore:ingotMithril>,<ore:ingotManasteel>], 10000);
-ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:5>, <ore:ingotEnergeticAlloy>, null, 200, 512, [<ore:ingotMithril>,<ore:ingotManasteel>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:5>*2, [<ore:ingotEnergeticAlloy>,<ore:ingotMithril>,<ore:ingotManasteel>], 10000);
+ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:5>*2, <ore:ingotEnergeticAlloy>, null, 200, 512, [<ore:ingotMithril>,<ore:ingotManasteel>]);
 
 // Vivid Alloy
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:6>, [<ore:ingotEnergeticSilver>,<extrautils2:unstableingots:2>,<extrautils2:ingredients:12>], 10000);
-ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:6>, <ore:ingotEnergeticSilver>, null, 200, 512, [<extrautils2:unstableingots:2>,<extrautils2:ingredients:12>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:6>*2, [<ore:ingotEnergeticSilver>,<extrautils2:unstableingots:2>,<extrautils2:ingredients:12>], 10000);
+ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:6>*2, <ore:ingotEnergeticSilver>, null, 200, 512, [<extrautils2:unstableingots:2>,<extrautils2:ingredients:12>]);
 
 // Crystalline ALloy
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:1>, [<ore:ingotVividAlloy>,<quantumflux:craftingpiece:6>,<bloodmagic:item_demon_crystal>], 25000);
-ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:1>, <ore:ingotVividAlloy>, null, 200, 512, [<quantumflux:craftingpiece:6>,<bloodmagic:item_demon_crystal>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:1>*2, [<ore:ingotVividAlloy>,<quantumflux:craftingpiece:6>,<bloodmagic:item_demon_crystal>], 25000);
+ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:1>*2, <ore:ingotVividAlloy>, null, 200, 512, [<quantumflux:craftingpiece:6>,<bloodmagic:item_demon_crystal>]);
 
 // Crystalline Pink Slime
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4>, [<ore:ingotPinkMetal>,<ore:ingotCrystallineAlloy>,<ore:ingotVibrantAlloy>], 25000);
-ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:4>, <ore:ingotPinkMetal>, null, 200, 512, [<ore:ingotCrystallineAlloy>,<ore:ingotVibrantAlloy>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4>*2, [<ore:ingotPinkMetal>,<ore:ingotCrystallineAlloy>,<ore:ingotVibrantAlloy>], 25000);
+ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:4>*2, <ore:ingotPinkMetal>, null, 200, 512, [<ore:ingotCrystallineAlloy>,<ore:ingotVibrantAlloy>]);
 
 // Melodic ALloy Ingot
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:2>, [<ore:ingotDraconium>,<enderutilities:enderpart:2>,<ore:ingotCrystallinePinkSlime>], 25000);
-ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:2>, <ore:ingotEndSteel>, null, 200, 512, [<ore:ingotDraconium>,<ore:ingotCrystallinePinkSlime>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:2>*2, [<ore:ingotDraconium>,<enderutilities:enderpart:2>,<ore:ingotCrystallinePinkSlime>], 25000);
+ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:2>*2, <ore:ingotEndSteel>, null, 200, 512, [<ore:ingotDraconium>,<ore:ingotCrystallinePinkSlime>]);
 
 // Stellar Alloy
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:3>, [<ore:ingotMelodicAlloy>,<ic2:itemmisc:258>,<contenttweaker:enhanced_ender_ingot>], 50000);
-ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:3>, <ore:ingotMelodicAlloy>, null, 200, 512, [<ic2:itemmisc:258>,<contenttweaker:enhanced_ender_ingot>]);
+AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:3>*2, [<ore:ingotMelodicAlloy>,<ic2:itemmisc:258>,<contenttweaker:enhanced_ender_ingot>], 50000);
+ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:3>*2, <ore:ingotMelodicAlloy>, null, 200, 512, [<ic2:itemmisc:258>,<contenttweaker:enhanced_ender_ingot>]);
 
 // Iron Alloy
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:9>, [<enderio:item_alloy_endergy_ingot>,<enderio:item_alloy_ingot:4>,<contenttweaker:fireclay_brick>], 2500);
+AlloySmelter.addRecipe(<enderio:item_alloy_ingot:9>*2, [<enderio:item_alloy_endergy_ingot>,<enderio:item_alloy_ingot:4>,<contenttweaker:fireclay_brick>], 2500);
 
 // Soularium Alloy
 InductionSmelter.removeRecipe(<minecraft:soul_sand>,<minecraft:gold_ingot>);
@@ -151,7 +151,12 @@ Transposer.addFillRecipe(<enderio:item_material:20>, <actuallyadditions:item_dus
 
 recipes.remove(<enderio:item_basic_item_filter>);
 InductionSmelter.addRecipe(<enderio:item_basic_item_filter>, <extrautils2:filter>, <enderio:item_alloy_ingot> * 2, 2000);
+InductionSmelter.addRecipe(<enderio:item_basic_item_filter> * 4, <enderio:item_advanced_item_filter>, <enderio:item_alloy_ingot> * 2, 2000);
 InductionSmelter.addRecipe(<enderio:item_basic_item_filter>, <extrautils2:filter>, <minecraft:hopper>, 2000);
+
+recipes.remove(<enderio:item_fluid_filter>);
+InductionSmelter.addRecipe(<enderio:item_basic_item_filter>, <extrautils2:filterfluids>, <enderio:item_alloy_ingot> * 2, 2000);
+InductionSmelter.addRecipe(<enderio:item_basic_item_filter>, <extrautils2:filterfluids>, <minecraft:hopper>, 2000);
 
 recipes.remove(<enderio:item_material:51>);
 FluidToItem.transform(<enderio:item_material:51> * 2, <liquid:lubricant>, [
@@ -340,6 +345,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<enderio:item_material:4>,<contenttweaker:jump_module>,<enderio:item_material:4>],
             [<ore:ingotEnderium>,<enderio:item_material:43>,<ore:ingotEnderium>]
         ]
+    ],
+    <enderio:block_power_monitor> : [
+        [
+            [<ore:ingotElectricalSteel>,<enderio:item_conduit_probe>,<ore:ingotElectricalSteel>],
+            [<ore:ingotElectricalSteel>,<enderio:item_material>,<ore:ingotElectricalSteel>],
+            [<ore:ingotElectricalSteel>,<enderio:item_power_conduit>,<ore:ingotElectricalSteel>]
+        ]
     ]
 };
 
@@ -372,6 +384,18 @@ recipes.addShaped(<enderio:item_power_conduit> * 4, [
     [<enderio:item_material:4>,<enderio:item_material:75>,<enderio:item_material:4>],
     [<enderio:item_alloy_ingot:4>,<contenttweaker:module_energy>,<enderio:item_alloy_ingot:4>],
     [<enderio:item_material:4>,<enderio:item_material:75>,<enderio:item_material:4>]
+]);
+
+recipes.addShaped(<enderio:item_redstone_conduit> * 4, [
+    [<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],
+    [<enderio:item_alloy_ingot:3>,<redstonearsenal:material>,<enderio:item_alloy_ingot:3>],
+    [<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]
+]);
+
+recipes.addShaped(<enderio:item_redstone_conduit> * 8, [
+    [<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],
+    [<enderio:item_alloy_ingot:3>,<redstonearsenal:material:160>,<enderio:item_alloy_ingot:3>],
+    [<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]
 ]);
 
 while index <= 6 {

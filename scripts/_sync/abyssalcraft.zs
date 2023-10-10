@@ -20,6 +20,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.abyssalcraft.Rituals;
 import mods.abyssalcraft.Transmutator;
+import mods.botania.ManaInfusion;
 import mods.jei.JEI;
 import mods.thermalexpansion.InductionSmelter;
 
@@ -69,3 +70,5 @@ for key, value in recipeMapShaped {
 	recipes.remove(key);
     recipes.addShaped("ct_"+toString(key), key, value);
 }
+
+ManaInfusion.addConjuration(<abyssalcraft:coralium> * 2, <abyssalcraft:coralium>, 1000);

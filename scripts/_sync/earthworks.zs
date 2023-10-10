@@ -180,3 +180,10 @@ for item in listGreen {
 for item in listPurple {
     Carving.addVariation("slate_purple", item);
 }
+
+recipes.remove(<earthworks:block_plaster>);
+recipes.addShaped(<earthworks:block_plaster> * 2, [
+    [null,<earthworks:item_lime_plaster>,null],
+    [<earthworks:item_lime_plaster>,<ore:plankWood>,<earthworks:item_lime_plaster>],
+    [null,<earthworks:item_lime_plaster>,null]
+]);

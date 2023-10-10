@@ -22,6 +22,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
 import mods.astralsorcery.Altar;
+import mods.botania.RuneAltar;
 
 import moretweaker.draconicevolution.FusionCrafting;
 
@@ -32,6 +33,15 @@ import scripts.mod_functions.betterCharging;
 var plateDraconium as IItemStack = <tconstruct:large_plate>.withTag({Material: "draconium"});
 var plateWyvern as IItemStack = <tconstruct:large_plate>.withTag({Material: "wyvern_metal"});
 var plateDraconic as IItemStack = <tconstruct:large_plate>.withTag({Material: "draconic_metal"});
+
+recipes.remove(<draconicevolution:diss_enchanter>);
+RuneAltar.addRecipe(<draconicevolution:diss_enchanter>, [
+    <minecraft:enchanting_table>,
+    <actuallyadditions:block_crystal_empowered:4>,
+    <minecraft:bookshelf>,
+    <randomthings:imbue:2>,
+    <evilcraft:purifier>
+], 10000);
 
 betterCharging(<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block>,10000000);
 
@@ -226,38 +236,36 @@ FusionCrafting.remove(<minecraft:emerald_block>);
 FusionCrafting.add(<draconicevolution:wyvern_core>, <extrautils2:decorativesolid:8>, FusionCrafting.BASIC, 9000000, [
     <draconicevolution:draconic_core>,
     <draconicevolution:draconic_core>,
-    <draconicevolution:draconium_block:1>,
-    <draconicevolution:draconium_block:1>,
-    <draconicevolution:draconium_block:1>,
-    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_ingot>,
+    <draconicevolution:draconium_ingot>,
+    <draconicevolution:draconium_ingot>,
+    <draconicevolution:draconium_ingot>,
     <draconicevolution:draconic_core>,
     <draconicevolution:draconic_core>
 ]);
 
 FusionCrafting.remove(<draconicevolution:draconium_block>);
-FusionCrafting.add(<draconicevolution:draconic_block> * 4, <draconicevolution:dragon_heart>, FusionCrafting.WYVERN, 1000000000, [
-    <tconevo:metal_block>,
-    <tconevo:metal_block>,
-    <draconicevolution:draconic_core>,
-    <draconicevolution:draconic_core>,
-    <draconicevolution:draconic_core>,
-    <draconicevolution:draconic_core>,
-    <draconicevolution:draconic_core>,
-    <draconicevolution:draconic_core>,
-    <draconicevolution:draconic_core>,
-    <draconicevolution:draconic_core>,
-    <tconevo:metal_block>,
-    <tconevo:metal_block>
+FusionCrafting.add(<draconicevolution:draconic_block> * 9, <tconevo:metal_block>, FusionCrafting.WYVERN, 1000000000, [
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:dragon_heart>,
+    <draconicevolution:dragon_heart>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_block:1>,
+    <draconicevolution:draconium_block:1>
 ]);
 
 FusionCrafting.remove(<minecraft:nether_star>);
 FusionCrafting.add(<draconicevolution:awakened_core>, <tconevo:metal:4>, FusionCrafting.WYVERN, 10000000000, [
     <draconicevolution:wyvern_core>,
     <draconicevolution:wyvern_core>,
-    <draconicevolution:draconic_block>,
-    <draconicevolution:draconic_block>,
-    <draconicevolution:draconic_block>,
-    <draconicevolution:draconic_block>,
+    <draconicevolution:draconic_ingot>,
+    <draconicevolution:draconic_ingot>,
+    <draconicevolution:draconic_ingot>,
+    <draconicevolution:draconic_ingot>,
     <draconicevolution:wyvern_core>,
     <draconicevolution:wyvern_core>
 ]);
@@ -316,15 +324,15 @@ FusionCrafting.add(<draconicevolution:particle_generator:2>, <draconicevolution:
 
 FusionCrafting.remove(<minecraft:chest>);
 FusionCrafting.add(<draconicevolution:draconium_chest>, <projecte:alchemical_chest>, FusionCrafting.WYVERN, 100000000, [
-    <extrautils2:machine>,
+    <ic2:blockmachinemv:1>,
     <draconicevolution:wyvern_energy_core>,
-    <extrautils2:machine>,
+    <ic2:blockmachinemv:1>,
     <draconicevolution:wyvern_energy_core>,
-    <extrautils2:machine>,
+    <ic2:blockmachinemv:1>,
     <enderio:block_inventory_chest_warehouse13>,
-    <extrautils2:machine>,
+    <ic2:blockmachinemv:1>,
     <enderio:block_inventory_chest_warehouse13>,
-    <extrautils2:machine>,
+    <ic2:blockmachinemv:1>,
     <enderio:block_inventory_chest_warehouse13>
 ]);
 

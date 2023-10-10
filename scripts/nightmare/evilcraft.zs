@@ -249,13 +249,13 @@ game.setLocalization("ac.ritual.vengeance_focus.desc", "Custom Recipe made for N
 
 recipes.remove(<evilcraft:piercing_vengeance_focus>);
 InfusionRitual.addRitual("piercing_vengeance_focus", 3, 0, 40000, true, <evilcraft:piercing_vengeance_focus>, <evilcraft:vengeance_focus>, [
-    <ic2:itemtoolmininglaser>,
+    <embers:caster_orb>,
     <actuallyadditions:item_more_damage_lens>,
-    <minecraft:end_crystal>,
+    <ic2:itemtoolmininglaser>,
     <actuallyadditions:item_more_damage_lens>,
     <botanicadds:gaiasteel_ingot>,
     <actuallyadditions:item_more_damage_lens>,
-    <minecraft:end_crystal>,
+    <ic2:itemtoolmininglaser>,
     <actuallyadditions:item_more_damage_lens>
 ]);
 game.setLocalization("ac.ritual.piercing_vengeance_focus", "Piercing Vengance Focus");

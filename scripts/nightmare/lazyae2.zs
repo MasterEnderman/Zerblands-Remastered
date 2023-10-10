@@ -29,7 +29,7 @@ import mods.threng.Etcher;
 
 Aggregator.removeRecipe(<threng:material>);
 Aggregator.removeRecipe(<threng:material:1>);
-Aggregator.removeRecipe(<threng:material:2>);
+// Aggregator.removeRecipe(<threng:material:2>);
 
 Aggregator.removeRecipe(<threng:material:5>);
 Aggregator.addRecipe(<threng:material:5>,<astralsorcery:itemcraftingcomponent:4>,<bloodmagic:lava_crystal>,<appliedenergistics2:material:45>);
@@ -145,7 +145,7 @@ var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
             [
                 [<ore:ingotFluixSteel>,<appliedenergistics2:condenser>,<ore:ingotFluixSteel>],
                 [<threng:material:4>,<forestry:flexible_casing>,<threng:material:4>],
-                [<ore:ingotFluixSteel>,<threng:material:6>,<ore:ingotFluixSteel>]
+                [<ore:ingotFluixSteel>,<contenttweaker:terrasteelprocessor>,<ore:ingotFluixSteel>]
             ]
         ]
     },

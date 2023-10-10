@@ -78,3 +78,6 @@ ambrosia.register();
 
 var grog = VanillaFactory.createFluid("grog", 6356792);
 grog.register();
+
+var fish_oil = VanillaFactory.createFluid("fish_oil", 12493632);
+fish_oil.register();

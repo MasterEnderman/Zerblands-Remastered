@@ -29,6 +29,7 @@ import mods.ic2.Macerator;
 import mods.immersiveengineering.AlloySmelter as Kiln;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.BottlingMachine;
+import mods.immersiveengineering.Crusher;
 import mods.immersiveengineering.MetalPress;
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.Compactor;
@@ -36,6 +37,7 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Transposer;
 
 import scripts.functions.calc_basic;
+import scripts.functions.calc_scientific;
 import scripts.functions.calc_flawless;
 
 import scripts.mod_functions.betterExplosion;
@@ -55,6 +57,14 @@ calc_flawless(<ic2:itemportableteleporter>,<ic2:blockmachinehv:2>,<ic2:itemmemor
 
 recipes.remove(<ic2:blockgenerator:2>);
 calc_basic(<ic2:blockgenerator:2>,<ic2:blockgenerator>,<immersiveengineering:wooden_device1>);
+
+calc_scientific(<ic2:reactorheatpack>*4,<randomthings:lavacharm>,<ic2:itemcellempty>);
+
+Crusher.addRecipe(<ic2:itemmisc:11>, <minecraft:netherrack>, 2048);
+Crusher.addRecipe(<ic2:itemmisc:8>*2, <minecraft:clay>, 2048);
+
+Casting.addTableRecipe(<ic2:itemmisc:350>, <ic2:itemharz>, <liquid:biomass>, 250, true, 200);
+Transposer.addFillRecipe(<ic2:itemmisc:350>, <ic2:itemharz>,  <liquid:biomass> * 250, 2000);
 
 var mapCableCasting as ILiquidStack[IItemStack] = {
     <ic2:itemcable> : <liquid:copper>,
@@ -88,7 +98,7 @@ for cable, ingot in mapCableCrafting {
 recipes.remove(<ic2:blockmachinelv:15>);
 recipes.addShaped(<ic2:blockmachinelv:15>, [
     [<contenttweaker:cutting_head>,<contenttweaker:cutting_head>,<contenttweaker:cutting_head>],
-    [<sonarcore:stablestone_normal>,<contenttweaker:electric_motor>,<sonarcore:stablestone_normal>],
+    [<sonarcore:stablestone_normal>,<contenttweaker:heating_coil>,<sonarcore:stablestone_normal>],
     [<sonarcore:stablestone_normal>,<extrautils2:machine>,<sonarcore:stablestone_normal>]
 ]);
 
@@ -458,6 +468,19 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ic2:itemmisc:256>,<contenttweaker:energy_flow_circuit>,<ic2:itemmisc:256>]
         ]
     ],
+    <ic2:itemtoolbox> : [
+        [
+            [<ore:plateSteel>,<metalchests:metal_chest:3>,<ore:plateSteel>],
+            [<ore:plateSteel>,<ore:plateSteel>,<ore:plateSteel>]
+        ]
+    ],
+    <ic2:blockgenerator:5> : [
+        [
+            [null,<ic2:itemmisc:452>,null],
+            [<ic2:blockchambers>,<ic2:blockchambers>,<ic2:blockchambers>],
+            [<ic2:blockmachinemv>,<ic2:blockgenerator>,<ic2:blockmachinemv>]
+        ]
+    ]
 };
 
 for key, value in recipeMapShaped {
@@ -554,10 +577,18 @@ Blueprint.addRecipe("components", <ic2:itemmisc:304>, [
 ]);
 
 MetalPress.addRecipe(<ic2:itemmisc:55>, <ic2:itemmisc:180>, <contenttweaker:mold_ingot>, 2048);
+MetalPress.addRecipe(<ic2:itemmisc:9>, <thermalfoundation:material:770> * 4, <immersiveengineering:mold:5>, 2048);
+Compactor.addPressRecipe(<ic2:itemmisc:9>, <thermalfoundation:material:770> * 4, 2000);
 
 recipes.remove(<ic2:itemcellempty>);
 MetalPress.addRecipe(<ic2:itemcellempty>, <ore:ingotAluminum>, <immersiveengineering:mold:3>, 512);
 Extractor.addRecipe(<ic2:itemcellempty>, <ore:ingotAluminum>);
+
+Extractor.addRecipe(<ic2:itemcable>*4,<ore:ingotCopper>);
+Extractor.addRecipe(<ic2:itemcable:13>*4,<ore:ingotBronze>);
+Extractor.addRecipe(<ic2:itemcable:2>*4,<ore:ingotGold>);
+Extractor.addRecipe(<ic2:itemcable:5>*4,<ore:ingotSteel>);
+Extractor.addRecipe(<ic2:itemcable:10>*8,<ore:ingotSilver>);
 
 recipes.remove(<ic2:itemmisc:258>);
 betterExplosion(<ic2:itemmisc:258>, <contenttweaker:iridium_alloy_ingot>);
@@ -604,7 +635,9 @@ for metal_a, amount_a in mapMixedMetal["first"] {
 }
 
 Transposer.addFillRecipe(<ic2:itemmisc:7>, <thermalfoundation:material:768>,  <liquid:water> * 1000, 2000);
+Casting.addTableRecipe(<ic2:itemmisc:7>, <thermalfoundation:material:768>, <liquid:water>, 1000, true, 200);
 Transposer.addFillRecipe(<ic2:itemmisc:13>, <thermalfoundation:material:769>,  <liquid:water> * 1000, 2000);
+Casting.addTableRecipe(<ic2:itemmisc:13>, <thermalfoundation:material:769>, <liquid:water>, 1000, true, 200);
 
 Transposer.addFillRecipe(<ic2:itemcellempty:1>, <ic2:itemcellempty>,  <liquid:water> * 1000, 2000);
 Transposer.addFillRecipe(<ic2:itemcellempty:2>, <ic2:itemcellempty>,  <liquid:lava> * 1000, 2000);

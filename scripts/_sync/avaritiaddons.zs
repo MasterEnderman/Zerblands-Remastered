@@ -21,9 +21,9 @@ import scripts.functions.findFirstItemFromMod;
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <avaritiaddons:avaritiaddons_chest> : [
         [
-            [<astralsorcery:blockinfusedwood>,<minecraft:chest>,<astralsorcery:blockinfusedwood>],
-            [<minecraft:chest>,<actuallyadditions:block_giant_chest_medium>,<minecraft:chest>],
-            [<astralsorcery:blockinfusedwood>,<minecraft:chest>,<astralsorcery:blockinfusedwood>]
+            [<astralsorcery:blockinfusedwood>,<metalchests:metal_chest:4>,<astralsorcery:blockinfusedwood>],
+            [<metalchests:metal_chest:4>,<actuallyadditions:block_giant_chest_medium>,<metalchests:metal_chest:4>],
+            [<astralsorcery:blockinfusedwood>,<metalchests:metal_chest:4>,<astralsorcery:blockinfusedwood>]
         ]
     ],
     <avaritiaddons:extreme_auto_crafter> : [

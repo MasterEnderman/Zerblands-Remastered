@@ -35,6 +35,16 @@ recipes.addShaped(<bibliocraft:framingsheet> * 4, [
     [<ore:slabTreatedWood>]
 ]);
 
+recipes.addShaped(<bibliocraft:framingsheet> * 6, [
+    [<earthworks:tool_saw:*>.transformDamage(3)],
+    [<botania:livingwood0slab>]
+]);
+
+recipes.addShaped(<bibliocraft:framingsheet> * 8, [
+    [<earthworks:tool_saw:*>.transformDamage(3)],
+    [<botania:dreamwood0slab>]
+]);
+
 recipes.remove(<bibliocraft:framingboard>);
 recipes.addShaped(<bibliocraft:framingboard> * 2, [
     [<earthworks:tool_saw:*>.transformDamage(3)],

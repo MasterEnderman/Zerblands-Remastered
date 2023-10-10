@@ -18,6 +18,8 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+<zerblands:workbench>.addTooltip(format.green("The better Engineer's Workbench."));
+<zerblands:workbench>.addTooltip(format.green("Only works in the Nightmare Mode."));
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <zerblands:elven_portal> : [
@@ -45,3 +47,10 @@ for key, value in recipeMapShaped {
     }
 }
 
+var guide as IItemStack = <patchouli:guide_book>.withTag({"patchouli:book": "patchouli:zerblands"});
+
+recipes.addShaped(guide, [
+    [<extrautils2:endershard>,<extrautils2:endershard>,<extrautils2:endershard>],
+    [<extrautils2:endershard>,<minecraft:book>,<extrautils2:endershard>],
+    [<extrautils2:endershard>,<extrautils2:endershard>,<extrautils2:endershard>]
+]);

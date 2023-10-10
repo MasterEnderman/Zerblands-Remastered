@@ -18,10 +18,12 @@ static materials as Material[string] = {
     "styrene_rubber": MaterialSystem.getMaterialBuilder().setName("Styrene Butadiene Rubber").setColor(1709331).build(),
     "tungsten": MaterialSystem.getMaterialBuilder().setName("Tungsten").setColor(7897228).build(),
 	// Ore Processing
+    "abyssalnite": MaterialSystem.getMaterialBuilder().setName("Abyssalnite").setColor(5842089).build(),
     "aluminum": MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(7566971).build(),
     "ardite": MaterialSystem.getMaterialBuilder().setName("Ardite").setColor(7875094).build(),
     "cobalt": MaterialSystem.getMaterialBuilder().setName("Cobalt").setColor(7781596).build(),
     "copper": MaterialSystem.getMaterialBuilder().setName("Copper").setColor(13405015).build(),
+    "coralium": MaterialSystem.getMaterialBuilder().setName("Coralium").setColor(1352814).build(),
     "gold": MaterialSystem.getMaterialBuilder().setName("Gold").setColor(10769936).build(),
     "iridium": MaterialSystem.getMaterialBuilder().setName("Iridium").setColor(10069182).build(),
 	"iron": MaterialSystem.getMaterialBuilder().setName("Iron").setColor(5131854).build(),

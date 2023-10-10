@@ -137,6 +137,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<immersiveengineering:wooden_device0>,<storagedrawers:customdrawers>,<immersiveengineering:wooden_device0>],
             [<immersiveengineering:wooden_device0>,<enderutilities:enderpart>,<immersiveengineering:wooden_device0>]
         ]
+    ],
+    <enderutilities:floor:1> : [
+        [
+            [<bibliocraft:framingboard>,<bibliocraft:framingboard>,<bibliocraft:framingboard>],
+            [null,<ore:stickTreatedWood>,null],
+            [<bibliocraft:framingboard>,<bibliocraft:framingboard>,<bibliocraft:framingboard>]
+        ]
     ]
 };
 

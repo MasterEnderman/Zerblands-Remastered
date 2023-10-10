@@ -20,6 +20,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.botania.PureDaisy;
 import mods.inworldcrafting.FluidToItem;
 import mods.thermalexpansion.Transposer;
 
@@ -42,7 +43,7 @@ FluidToItem.transform(<earthworks:item_slaked_lime>, <liquid:water>, [<earthwork
 Transposer.addFillRecipe(<earthworks:item_slaked_lime>, <earthworks:item_quicklime>, <liquid:water> * 100, 200);
 
 recipes.removeByRecipeName("earthworks:item_lime_plaster_alt");
-FluidToItem.transform(<earthworks:item_lime_plaster> * 8, <liquid:water>, [<earthworks:item_quicklime> * 4,<earthworks:item_sand> * 4], true);
+FluidToItem.transform(<earthworks:item_lime_plaster> * 8, <liquid:water>, [<earthworks:item_quicklime> * 4,<earthworks:item_sand> * 4], false);
 
 recipes.remove(<earthworks:item_timber>);
 recipes.addShaped(<earthworks:item_timber> * 4, [
@@ -51,3 +52,4 @@ recipes.addShaped(<earthworks:item_timber> * 4, [
     [<ore:stickWood>,<bibliocraft:framingboard>,<ore:stickWood>]
 ]);
 
+PureDaisy.addRecipe(<chisel:limestone2:7>, <earthworks:block_chalk>, 100);

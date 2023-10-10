@@ -1,5 +1,6 @@
 #packmode nightmare
 
+import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidDefinition;
@@ -20,6 +21,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.actuallyadditions.Empowerer;
 import mods.forestry.Carpenter;
 import mods.forestry.ThermionicFabricator;
 import mods.ic2.Extractor;
@@ -81,11 +83,11 @@ Carpenter.addRecipe(<forestry:hardened_machine>, [
 ], 10, <liquid:soldering_alloy> * 288);
 
 Carpenter.removeRecipe(<forestry:crafting_material:6>);
-Carpenter.addRecipe(<forestry:crafting_material:6>, [
+Carpenter.addRecipe(<forestry:crafting_material:6> * 4, [
     [<forestry:beeswax>,<forestry:oak_stick>,<forestry:oak_stick>],
     [<forestry:oak_stick>,<botania:livingwood:5>,<forestry:oak_stick>],
     [<forestry:oak_stick>,<forestry:oak_stick>,<forestry:beeswax>]
-], 10, <liquid:ambrosia> * 500, <morebees:framesweet>);
+], 10, <liquid:ambrosia> * 100, <morebees:framesweet>);
 
 var woodPulp as IIngredient[][][int] = {
     2 : [
@@ -533,4 +535,31 @@ for dynamo, metal in mapDynamo {
         [gear,<contenttweaker:electric_motor>,gear],
         [<immersiveengineering:metal_decoration0:4>,<immersiveengineering:metal_decoration0:3>,<immersiveengineering:metal_decoration0:4>]
     ]);
+}
+
+// Bee Pristinification
+recipes.addShapeless("bee_pristinification",<forestry:bee_princess_ge>.withLore(["This will pristinify the Princess."]), [
+    <forestry:bee_princess_ge>.marked("princess"), <forestry:royal_jelly>, <woot:shard:3>
+], function(out, ins, cInfo) {
+    // if (ins.princess.tag has "NA") {
+        return out.withTag(ins.princess.tag - "NA");
+    // }
+    // return ins.princess;
+},null);
+
+// Hive Crafting
+
+var mapMarker as IItemStack[IItemStack] = {
+    <forestry:beehives> : <evilcraft:biome_extract:1>.withTag({biomeKey: "minecraft:forest"}),
+    <forestry:beehives:1> : <evilcraft:biome_extract:1>.withTag({biomeKey: "minecraft:plains"}),
+    <forestry:beehives:2> : <evilcraft:biome_extract:1>.withTag({biomeKey: "minecraft:desert"}),
+    <forestry:beehives:3> : <evilcraft:biome_extract:1>.withTag({biomeKey: "minecraft:jungle"}),
+    <forestry:beehives:4> : <evilcraft:biome_extract:1>.withTag({biomeKey: "minecraft:sky"}),
+    <forestry:beehives:5> : <evilcraft:biome_extract:1>.withTag({biomeKey: "minecraft:taiga"}),
+    <forestry:beehives:6> : <evilcraft:biome_extract:1>.withTag({biomeKey: "minecraft:swampland"}),
+    <morebees:hive> : <evilcraft:biome_extract:1>.withTag({biomeKey: "minecraft:hell"})
+};
+
+for hive, biome in mapMarker {
+    Empowerer.addRecipe(hive, <harvestcraft:queenbeeitem>, biome, <harvestcraft:honey>, <forestry:wax_cast>, <forestry:ambrosia>, 500000, 100, [0.1, 0.1, 0.1]);
 }

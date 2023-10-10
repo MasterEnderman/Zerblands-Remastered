@@ -115,7 +115,7 @@ Extractor.addRecipe(<appliedenergistics2:part:120>, findFirstItemFromMod("therma
 recipes.remove(<appliedenergistics2:network_tool>);
 recipes.addShapeless(<appliedenergistics2:network_tool>, [
     <appliedenergistics2:part:180>,<appliedenergistics2:material:23>,
-    <enderio:item_yeta_wrench>,<minecraft:chest>
+    <enderio:item_yeta_wrench>,<metalchests:metal_chest:1>
 ]);
 
 recipes.remove(<appliedenergistics2:part:520>);
@@ -420,60 +420,60 @@ recipes.addShaped(<appliedenergistics2:part:180>, [
 
 // formation
 recipes.remove(<appliedenergistics2:part:320>);
-recipes.addShaped(<appliedenergistics2:part:320> * 2, [
+recipes.addShaped(<appliedenergistics2:part:320> * 4, [
 	[<thermalfoundation:rockwool:15>,<actuallyadditions:item_crystal>,<thermalfoundation:rockwool:15>],
 	[<ore:ingotFluixSteel>,<appliedenergistics2:material:43>,<ore:ingotFluixSteel>]
 ]);
 recipes.remove(<appliedenergistics2:part:321>);
-recipes.addShaped(<appliedenergistics2:part:321> * 2, [
+recipes.addShaped(<appliedenergistics2:part:321> * 4, [
 	[<thermalfoundation:rockwool:15>,<actuallyadditions:item_crystal:1>,<thermalfoundation:rockwool:15>],
 	[<ore:ingotFluixSteel>,<appliedenergistics2:material:43>,<ore:ingotFluixSteel>]
 ]);
 
 // annihilation
 recipes.remove(<appliedenergistics2:part:300>);
-recipes.addShaped(<appliedenergistics2:part:300> * 2, [
+recipes.addShaped(<appliedenergistics2:part:300> * 4, [
 	[<thermalfoundation:rockwool>,<actuallyadditions:item_crystal>,<thermalfoundation:rockwool>],
 	[<ore:ingotFluixSteel>,<appliedenergistics2:material:44>,<ore:ingotFluixSteel>]
 ]);
 recipes.remove(<appliedenergistics2:part:302>);
-recipes.addShaped(<appliedenergistics2:part:302> * 2, [
+recipes.addShaped(<appliedenergistics2:part:302> * 4, [
 	[<thermalfoundation:rockwool>,<actuallyadditions:item_crystal:1>,<thermalfoundation:rockwool>],
 	[<ore:ingotFluixSteel>,<appliedenergistics2:material:44>,<ore:ingotFluixSteel>]
 ]);
 
 // exporter
 recipes.remove(<appliedenergistics2:part:260>);
-recipes.addShaped(<appliedenergistics2:part:260> * 2, [
+recipes.addShaped(<appliedenergistics2:part:260> * 4, [
 	[<actuallyadditions:item_crystal>,<appliedenergistics2:material:43>,<actuallyadditions:item_crystal>],
 	[<ore:ingotFluixSteel>,<ic2:ic2upgrades:7>,<ore:ingotFluixSteel>]
 ]);
 recipes.remove(<appliedenergistics2:part:261>);
-recipes.addShaped(<appliedenergistics2:part:261> * 2, [
+recipes.addShaped(<appliedenergistics2:part:261> * 4, [
 	[<actuallyadditions:item_crystal:1>,<appliedenergistics2:material:43>,<actuallyadditions:item_crystal:1>],
 	[<ore:ingotFluixSteel>,<ic2:ic2upgrades:23>,<ore:ingotFluixSteel>]
 ]);
 
 // importer
 recipes.remove(<appliedenergistics2:part:240>);
-recipes.addShaped(<appliedenergistics2:part:240> * 2, [
+recipes.addShaped(<appliedenergistics2:part:240> * 4, [
 	[<actuallyadditions:item_crystal>,<appliedenergistics2:material:44>,<actuallyadditions:item_crystal>],
 	[<ore:ingotFluixSteel>,<ic2:ic2upgrades:5>,<ore:ingotFluixSteel>]
 ]);
 recipes.remove(<appliedenergistics2:part:241>);
-recipes.addShaped(<appliedenergistics2:part:241> * 2, [
+recipes.addShaped(<appliedenergistics2:part:241> * 4, [
 	[<actuallyadditions:item_crystal:1>,<appliedenergistics2:material:44>,<actuallyadditions:item_crystal:1>],
 	[<ore:ingotFluixSteel>,<ic2:ic2upgrades:21>,<ore:ingotFluixSteel>]
 ]);
 
 // storage
 recipes.remove(<appliedenergistics2:part:220>);
-recipes.addShaped(<appliedenergistics2:part:220> * 2, [
+recipes.addShaped(<appliedenergistics2:part:220> * 4, [
 	[<ic2:ic2upgrades:7>,<appliedenergistics2:interface>],
 	[<ic2:ic2upgrades:5>,<contenttweaker:storage_module>]
 ]);
 recipes.remove(<appliedenergistics2:part:221>);
-recipes.addShaped(<appliedenergistics2:part:221> * 2, [
+recipes.addShaped(<appliedenergistics2:part:221> * 4, [
 	[<ic2:ic2upgrades:23>,<appliedenergistics2:fluid_interface>],
 	[<ic2:ic2upgrades:21>,<contenttweaker:storage_module>]
 ]);

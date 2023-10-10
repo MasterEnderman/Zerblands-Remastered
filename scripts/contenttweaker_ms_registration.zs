@@ -79,6 +79,8 @@ var materialsOreProcessing as Material[] = [
     materials.silver,
     materials.tin,
     materials.uranium,
+    materials.abyssalnite,
+    materials.coralium
 ];
 
 var partsOreProcessing as string[] = [

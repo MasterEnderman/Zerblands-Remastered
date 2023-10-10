@@ -25,11 +25,18 @@ import mods.bloodmagic.AlchemyTable;
 import mods.enderio.SliceNSplice;
 import mods.inworldcrafting.FluidToItem;
 
+import scripts.functions.calc_basic;
 import scripts.functions.calc_atomic;
 import scripts.functions.calc_scientific;
 
 recipes.remove(<rftools:syringe>);
 calc_scientific(<rftools:syringe>,<evilcraft:dark_spike>,<botania:manabottle>);
+
+recipes.remove(<rftools:rf_monitor>);
+calc_basic(<rftools:rf_monitor>,<energycontrol:item_component:2>,<integrateddynamics:part_machine_reader_item>);
+
+recipes.remove(<rftools:liquid_monitor>);
+calc_basic(<rftools:liquid_monitor>,<energycontrol:item_component:2>,<integrateddynamics:part_fluid_reader_item>);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <rftools:machine_base> : [

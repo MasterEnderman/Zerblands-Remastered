@@ -125,22 +125,37 @@ recipes.addShaped(<randomthings:fertilizeddirt> * 4, [
     [<tconstruct:soil:4>,<evilcraft:blood_potash>,<tconstruct:soil:4>]
 ]);
 
+var mapPlateBase as int[string][string] = {
+    "plate" : {
+        "tin" : 2,
+        "iron" : 4,
+        "iridium" : 8,
+        "tungsten" : 16
+    },
+    "bars" : {
+        "iron" : 1,
+        "dawnstone" : 2,
+        "darkSteel" : 3,
+        "endSteel" : 4
+    }
+};
+
 recipes.remove(<randomthings:ingredient:8>);
-recipes.addShaped(<randomthings:ingredient:8> * 4, [
-    [<ore:plateTin>,<minecraft:iron_bars>,<ore:plateTin>],
-    [<minecraft:iron_bars>,<minecraft:iron_bars>,<minecraft:iron_bars>],
-    [<ore:plateTin>,<minecraft:iron_bars>,<ore:plateTin>]
-]);
-recipes.addShaped(<randomthings:ingredient:8> * 8, [
-    [<ore:plateIron>,<minecraft:iron_bars>,<ore:plateIron>],
-    [<minecraft:iron_bars>,<minecraft:iron_bars>,<minecraft:iron_bars>],
-    [<ore:plateIron>,<minecraft:iron_bars>,<ore:plateIron>]
-]);
-recipes.addShaped(<randomthings:ingredient:8> * 16, [
-    [<ore:plateIridium>,<minecraft:iron_bars>,<ore:plateIridium>],
-    [<minecraft:iron_bars>,<minecraft:iron_bars>,<minecraft:iron_bars>],
-    [<ore:plateIridium>,<minecraft:iron_bars>,<ore:plateIridium>]
-]);
+
+for plate, amount_a in mapPlateBase["plate"] {
+    for bars, amount_b in mapPlateBase["bars"] {
+        var amount as int = amount_a * amount_b;
+        var plate as IIngredient = getOreDict("plate",plate);
+        var bar as IIngredient = getOreDict("bars",bars);
+        recipes.addShaped(<randomthings:ingredient:8> * amount, [
+            [plate,bar,plate],
+            [bar,bar,bar],
+            [plate,bar,plate]
+        ]);
+    }
+}
+
+
 
 recipes.remove(<randomthings:advancedredstonerepeater>);
 recipes.addShaped(<randomthings:advancedredstonerepeater>, [

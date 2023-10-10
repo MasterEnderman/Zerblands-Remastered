@@ -159,3 +159,34 @@ var droneSteadfast as IItemStack = <forestry:bee_drone_ge>.withTag(
 );
 
 Empowerer.addRecipe(droneSteadfast, <harvestcraft:grubitem>, <forestry:royal_jelly>, <forestry:pollen:1>, <forestry:pollen>, <forestry:propolis:3>, 50000, 1000);
+
+JEI.addDescription(<forestry:alveary.swarmer>,[
+    "The Swarmer requires no power. To use it, right click it to open up its inventory, and put some royal jelly inside.",
+    "There's a 1% chance per jelly that within 25 blocks of the alveary, a swarm hive will appear, which contains a princess exactly the same as the queen currently in the alveary.",
+    "These queens are marked with a line [-], and will die after a few generations."
+]);
+
+JEI.addDescription(<forestry:alveary.fan>,[
+    "The Alveary Fan removes 20% points from the internal temperature rating with a minimum at 5%."
+]);
+
+JEI.addDescription(<forestry:alveary.heater>,[
+    "The Alveary Heater adds 20% points to the internal temperature rating, with a maximum at 250%."
+]);
+
+JEI.addDescription(<forestry:alveary.hygro>,[
+    "This block will change both the humidity and the temperature rating, depending on the liquid used.",
+    "Water will raise the humidity by 20% points (up to 100%) and reduce the temperature by 10% points (up to 0%) and lasts 50 seconds.",
+    "Lava will reduce the humidity by 20% points (up to 0%) and raise the temperature by 10% points (up to 200%) and lasts 500 seconds.",
+    "Liquid Ice will raise the humidity by 40% points (up to 100%) and reduce the temperature by 20% points (up to 0%) and lasts 500 seconds."
+]);
+
+JEI.addDescription(<forestry:alveary.stabiliser>,[
+    "The Alveary Stabiliser is a block used in the alveary structure. It will prevent new species from appearing in the alveary output. Changing alleles is still permitted."
+]);
+
+JEI.addDescription(<forestry:alveary.sieve>,[
+    "The Alveary Sieve takes the pollen that would've pollinated a tree and stores it in the sieve for crossbreeding with different trees.",
+    "This is useful for arborculture since it reduces the space required to breed trees of the same variety"
+]);
+

@@ -39,6 +39,7 @@ TartaricForge.removeRecipe([<minecraft:diamond>,bloodBucket,<minecraft:dragon_br
 TartaricForge.addRecipe(<bloodarsenal:blood_diamond>, [<minecraft:diamond>,bloodBucket,<botania:manaresource:15>,<bloodarsenal:blood_infused_glowstone>], 1024, 512);
 
 AlchemyArray.addRecipe(<bloodarsenal:blood_diamond:3>, <bloodmagic:component:8>, <bloodarsenal:blood_diamond:2>, bloodmagicAlchemyArray["bindinglightningarray"]);
+AlchemyArray.addRecipe(<bloodarsenal:warp_blade>, <bloodmagic:component:8>, <enderio:item_dark_steel_sword>, bloodmagicAlchemyArray["bindinglightningarray"]);
 
 var itemsSanguine as IItemStack[][IItemStack] = {
     <bloodarsenal:stasis_sword> : [<bloodmagic:bound_sword>,<bloodarsenal:blood_infused_iron_sword>],

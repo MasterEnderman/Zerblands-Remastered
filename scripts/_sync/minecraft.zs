@@ -24,3 +24,7 @@ recipes.addShaped(<minecraft:elytra>, [
     [<openglider:hang_glider_part>,<openglider:hang_glider_part:2>,<openglider:hang_glider_part:1>],
     [<ic2:itemmisc:202>,<ic2:itemmisc:202>,<ic2:itemmisc:202>]
 ]);
+
+recipes.addShapeless(<minecraft:beetroot_seeds>,[<minecraft:beetroot>]);
+recipes.addShapeless(<minecraft:wheat_seeds>,[<minecraft:wheat>]);
+recipes.addShapeless(<minecraft:nether_wart>*9, [<minecraft:nether_wart_block>]);

@@ -54,6 +54,9 @@ Drying.addRecipe(<tconstruct:materials:2>, <contenttweaker:pressed_clay>, 600);
 
 Compressor.addRecipe(<tconstruct:spaghetti>,<actuallyadditions:item_food:7>);
 
+furnace.remove(<tconstruct:ingots>);
+furnace.remove(<tconstruct:ingots:1>);
+
 calc_atomic(<tconstruct:materials:50>,<minecraft:skull:3>,<ore:blockEnchantedMetal>,<quantumflux:craftingpiece:1>);
 
 InductionSmelter.removeRecipe(<tconstruct:ingots:0>, <tconstruct:ingots:1>);
@@ -67,6 +70,12 @@ Melting.removeRecipe(<liquid:stone>);
 Melting.addRecipe(<liquid:stone>*288, <tconstruct:seared>, 500);
 Melting.addRecipe(<liquid:stone>*144, <tconstruct:soil>, 500);
 Melting.addRecipe(<liquid:stone>*72, <tconstruct:materials>, 500);
+Melting.addRecipe(<liquid:stone>*144*7, <tconstruct:casting>, 500);
+Melting.addRecipe(<liquid:stone>*144*7, <tconstruct:casting:1>, 500);
+Melting.addRecipe(<liquid:stone>*240, <tconstruct:channel>, 500);
+Melting.addRecipe(<liquid:stone>*144*3, <tconstruct:faucet>, 500);
+Melting.addRecipe(<liquid:stone>*144*6, <tconstruct:smeltery_io>, 500);
+
 furnace.remove(<tconstruct:materials>);
 CokeOven.addRecipe(<tconstruct:materials>, 0, <tconstruct:soil>, 200);
 
@@ -175,6 +184,13 @@ recipes.addShaped(<tconstruct:wooden_hopper>, [
 	[<ore:plankWood>,<ore:gearWood>,<ore:plankWood>],
 	[<bibliocraft:framingboard>,<minecraft:chest>,<bibliocraft:framingboard>],
 	[null,<ore:plankWood>,null]
+]);
+
+recipes.remove(<tconstruct:materials:14>);
+recipes.addShaped(<tconstruct:materials:14>, [
+    [<enderio:block_reinforced_obsidian>,<embers:plate_dawnstone>,<enderio:block_reinforced_obsidian>],
+    [<embers:plate_dawnstone>,<ore:cast>,<embers:plate_dawnstone>],
+    [<enderio:block_reinforced_obsidian>,<embers:plate_dawnstone>,<enderio:block_reinforced_obsidian>]
 ]);
 
 val slimebo = [

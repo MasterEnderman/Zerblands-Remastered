@@ -48,7 +48,8 @@ var legacy as string[string] = {
     "bedrockium_ingot" : "Bedrockium Ingot",
     "red_core" : "Red Core",
     "red_coal" : "Red Coal", // fk XU2
-    "runic_gear" : "Runic Gear", // fk BloodDynamo for getting random entity crashes 
+    "runic_gear" : "Runic Gear", // fk BloodDynamo for getting random entity crashes
+    "coke_pellet" : "Coke Pellet"
 };
 
 for item, local in legacy {
@@ -169,6 +170,7 @@ var nightmare as string[string] = {
     "resource_infinity_drop" : "Infinity Drop",
     "big_pearl" : "Primordial Pearl",
     "pearl_lattice" : "Primordial Matrix Lattice",
+    "raw_atomicbinder": "Raw Atomic Binder",
 };
 
 for item, local in nightmare {

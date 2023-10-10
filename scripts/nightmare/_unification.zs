@@ -85,7 +85,8 @@ furnace.addRecipe(<ic2:itemmisc:180>,<ore:dustUranium>);
 
 ArcFurnace.removeRecipe(<thermalfoundation:material:160>);
 ArcFurnace.addRecipe(<thermalfoundation:material:160>,<contenttweaker:reinforcediron_ingot>,<thermalfoundation:material:864>, 400, 512);
-ArcFurnace.addRecipe(<thermalfoundation:material:163>,<thermalfoundation:material:129>,<thermalfoundation:material:128>*3, 400, 512);
+ArcFurnace.addRecipe(<thermalfoundation:material:163>,<thermalfoundation:material:129>,null, 400, 512, [<thermalfoundation:material:128>*3]);
+
 InductionSmelter.removeRecipe(<thermalfoundation:material:769>*4,<thermalfoundation:material>);
 InductionSmelter.removeRecipe(<thermalfoundation:material:769>*4,<minecraft:iron_ingot>);
 InductionSmelter.removeRecipe(<thermalfoundation:material:802>,<thermalfoundation:material>);
@@ -134,6 +135,7 @@ var mapSimpleAlloy as IItemStack[][IItemStack] = {
     <ic2:itemmisc:261> : [findFirstItemFromMod("contenttweaker","ingot","ferromagneticAlloy"),<ic2:itemmisc:14> * 8],
     <randomthings:spectreanchor> : [<embers:aspectus_iron>,<randomthings:ingredient:3>*2],
     <thermalfoundation:material:657> : [<architecturecraft:sawblade>, findFirstItemFromMod("thermalfoundation","ingot","steel")],
+    <thermalfoundation:material:892> : [<minecraft:flint>,<thermalfoundation:material:833>],
 };
 
 ArcFurnace.removeRecipe(findFirstItemFromMod("contenttweaker","ingot","redAlloy"));
@@ -175,7 +177,11 @@ var mapSimpleCrush as IItemStack[IItemStack] = {
     <woot:soulsanddust> * 2 : <minecraft:soul_sand>,
     <contenttweaker:end_stone_dust> : <minecraft:end_stone>,
     <earthworks:item_chalk> * 4 : <earthworks:block_chalk>,
-    <appliedenergistics2:material:8> : <appliedenergistics2:material:7>
+    <appliedenergistics2:material:8> : <appliedenergistics2:material:7>,
+    <ic2:itemmisc:12> : <minecraft:coal:1>,
+    <enderio:item_capacitor_grainy> * 4 : <enderio:item_basic_capacitor:3>,
+    <enderio:item_capacitor_grainy> * 6 : <enderio:item_basic_capacitor:4>,
+    <minecraft:fire_charge> * 16 : <randomthings:lavacharm>,
 };
 
 Crusher.removeRecipe(<immersiveengineering:material:17>);
@@ -194,6 +200,11 @@ for output, input in mapSimpleCrush {
     Crusher.addRecipe(output, input, 2048);
     XUCrusher.add(output, input);
 }
+
+SagMill.addRecipe([<contenttweaker:material_part:94>], [100], <forestry:apatite>, "NONE", 1000);
+SagMill.addRecipe([<redstonearsenal:material>], [100], <redstonearsenal:material:32>, "NONE", 1000);
+SagMill.addRecipe([<redstonerepository:material>], [100], <redstonerepository:material:1>, "NONE", 1000);
+SagMill.addRecipe([<appliedenergistics2:material:45>], [100], <appliedenergistics2:sky_stone_block>, "NONE", 1000);
 
 Crusher.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material>, 2048);
 XUCrusher.add(<appliedenergistics2:material:2>, <appliedenergistics2:material>);
@@ -427,4 +438,25 @@ var mapPress as IItemStack[] = [
 
 for item in mapPress {
     Melting.addRecipe(getFluid("steel") * 864, item, 190);
+}
+
+recipes.addShaped(<enderio:item_alloy_ingot:5>, [
+    [<ore:nuggetPulsatingIron>,<ore:nuggetPulsatingIron>,<ore:nuggetPulsatingIron>],
+    [<ore:nuggetPulsatingIron>,<ore:nuggetPulsatingIron>,<ore:nuggetPulsatingIron>],
+    [<ore:nuggetPulsatingIron>,<ore:nuggetPulsatingIron>,<ore:nuggetPulsatingIron>]
+]);
+
+var mapShear as IItemStack[IItemStack] = {
+    <minecraft:shears> : <tconstruct:knife_blade>.withTag({Material: "iron"}),
+    <botania:manasteelshears> : <tconstruct:knife_blade>.withTag({Material: "manasteel"}),
+    <botania:elementiumshears> : <tconstruct:knife_blade>.withTag({Material: "elementium"}),
+    <enderio:item_dark_steel_shears> : <tconstruct:knife_blade>.withTag({Material: "dark_steel"}),
+};
+
+for shear, mat in mapShear {
+    recipes.remove(shear);
+    recipes.addShaped(shear,[
+        [mat,null],
+        [null,mat]
+    ]);
 }

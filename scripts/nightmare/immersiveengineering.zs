@@ -34,6 +34,7 @@ import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Refinery;
 import mods.jei.JEI;
 import mods.tconstruct.Casting;
+import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.Transposer;
 
 JEI.addItem(<immersiveengineering:blueprint>.withTag({blueprint: "rails"}));
@@ -66,6 +67,7 @@ Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*4, <liquid:refine
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*4, <liquid:refined_biofuel>*12, 256);
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:seed.oil>*4, 256);
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:seed_oil>*4, 256);
+Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:fish_oil>*4, 256);
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:hootch>*4, 256);
 
 MetalPress.removeRecipe(<immersiveengineering:graphite_electrode>);
@@ -142,7 +144,8 @@ var mapConcrete as IItemStack[string][string] = {
 };
 
 recipes.remove(<immersiveengineering:stone_decoration:5>);
-Casting.addBasinRecipe(<immersiveengineering:stone_decoration:5>, null, <liquid:concrete>, 250, false, 100);
+Casting.addBasinRecipe(<immersiveengineering:stone_decoration:5>, <earthworks:block_concrete>, <liquid:concrete>, 250, true, 100);
+Crucible.addRecipe(<liquid:concrete> * 250, <immersiveengineering:stone_decoration:5>, 25000);
 
 recipes.remove(<immersiveengineering:bullet>);
 recipes.remove(<immersiveengineering:bullet:1>);
@@ -292,25 +295,6 @@ AtomicReconstructor.addRecipe(<immersiveengineering:material:19>, <immersiveengi
 
 var electrode as IItemStack = <immersiveengineering:graphite_electrode>;
 Empowerer.addRecipe(electrode.withTag({Unbreakable:1}), <ic2:itemmisc:258>, electrode, electrode, electrode, electrode, 200000, 400, [0.0, 0.0, 0.0]);
-
-var molds = [
-    <immersiveengineering:mold:0>,
-    <immersiveengineering:mold:1>,
-    <immersiveengineering:mold:2>,
-    <immersiveengineering:mold:3>,
-    <immersiveengineering:mold:4>,
-    <immersiveengineering:mold:5>,
-    <immersiveengineering:mold:6>,
-    <immersiveengineering:mold:7>,
-    <contenttweaker:mold_ingot:0>,
-] as IItemStack[];
-
-for item in molds {
-    Blueprint.removeRecipe(item);
-    Blueprint.addRecipe("molds",item,[
-        <ore:plateSteel> * 6
-    ]);
-}
 
 recipes.remove(<immersiveengineering:metal_decoration0:3>);
 recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 4, [
@@ -537,7 +521,27 @@ for key, value in recipeMapShaped {
     }
 }
 
-Extractor.addRecipe(<immersiveengineering:material:20> * 4, <ore:ingotCopper>);
-Extractor.addRecipe(<immersiveengineering:material:21> * 4, <ore:ingotElectrum>);
-Extractor.addRecipe(<immersiveengineering:material:22> * 4, <ore:ingotAluminum>);
-Extractor.addRecipe(<immersiveengineering:material:23> * 4, <ore:ingotSteel>);
+Extractor.addRecipe(<immersiveengineering:material:20> * 4, <ore:plateCopper>);
+Extractor.addRecipe(<immersiveengineering:material:21> * 4, <ore:plateElectrum>);
+Extractor.addRecipe(<immersiveengineering:material:22> * 4, <ore:plateAluminum>);
+Extractor.addRecipe(<immersiveengineering:material:23> * 4, <ore:plateSteel>);
+
+var mapMold as IItemStack[IItemStack] = {
+    <contenttweaker:mold_ingot> : <botania:craftpattern>,
+    <immersiveengineering:mold> : <botania:craftpattern:7>,
+    <immersiveengineering:mold:1> : <botania:craftpattern:8>,
+    <immersiveengineering:mold:2> : <botania:craftpattern:2>,
+    <immersiveengineering:mold:3> : <botania:craftpattern:3>,
+    <immersiveengineering:mold:4> : <botania:craftpattern:6>,
+    <immersiveengineering:mold:5> : <botania:craftpattern:1>,
+    <immersiveengineering:mold:6> : <botania:manaresource:11>,
+    <immersiveengineering:mold:7> : <botania:craftpattern:5>,
+};
+
+for mold, input in mapMold {
+    Blueprint.removeRecipe(mold);
+    Blueprint.addRecipe("molds",mold,[
+        <ore:plateSteel> * 6
+    ]);
+    Casting.addTableRecipe(mold, input, <liquid:steel>, 144*6, true, 100);
+}

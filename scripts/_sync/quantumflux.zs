@@ -23,3 +23,9 @@ import scripts.mod_functions.betterExplosion;
 betterExplosion(<quantumflux:craftingpiece:6>, <quantumflux:graphitedust>);
 
 recipes.addShapeless(<quantumflux:hamcheese>, [<harvestcraft:toastitem>,<harvestcraft:bakedhamitem>,<harvestcraft:cheeseitem>]);
+
+recipes.addShaped(<quantumflux:netherbane>, [
+    [null,null,<xreliquary:mob_ingredient:1>],
+    [<tconstruct:materials:17>,<xreliquary:mob_ingredient:1>,null],
+    [<enderio:item_material:72>,<tconstruct:materials:17>,null]
+]);

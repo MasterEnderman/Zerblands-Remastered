@@ -120,7 +120,7 @@ BloodAltar.addRecipe(<bloodmagic:teleposition_focus>, <botanicadds:rune_tp>, 3, 
 recipes.remove(<bloodmagic:soul_forge>);
 Altar.addConstellationAltarRecipe("soul_forge", <bloodmagic:soul_forge>, 800, 200, [
     <contenttweaker:starsteel_ingot>,
-    <xreliquary:infernal_chalice>,
+    <xreliquary:infernal_tear>,
     <contenttweaker:starsteel_ingot>,
     <abyssalcraft:oc>,
     <xreliquary:apothecary_cauldron>,
@@ -305,10 +305,10 @@ BloodAltar.removeRecipe(<minecraft:redstone_block>);
 BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), <abyssalcraft:eoa>, 1, 5000, 5, 5);
 
 BloodAltar.removeRecipe(<minecraft:gold_block>);
-BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), <evilcraft:piercing_vengeance_focus>, 2, 25000, 20, 20);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), <ic2:itembatlamacrystal>, 2, 25000, 20, 20);
 
 BloodAltar.removeRecipe(<bloodmagic:blood_shard>);
-BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}), <avaritiatweaks:gaia_block>, 3, 40000, 30, 50);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}), <botania:laputashard:19>, 3, 40000, 30, 50);
 
 BloodAltar.removeRecipe(<minecraft:nether_star>);
 BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <bloodmagic:blood_shard:1>, 4, 80000, 100, 50);
@@ -416,5 +416,6 @@ for tier, items in mapAlchemyTable {
     for item, recipe in items {
         recipes.remove(item);
         AlchemyTable.addRecipe(item, recipe, 500 * (tier + 1), 20 * (tier + 1), tier);
+        AlchemyTable.addRecipe(<bloodmagic:blood_rune>, [item, getBucketDefault("water")], 500, 20, 1);
     }
 }

@@ -27,6 +27,10 @@ import mods.thermalexpansion.Centrifuge;
 import mods.thermalexpansion.Transposer;
 
 import scripts.functions.calc_basic;
+import scripts.functions.calc_atomic;
+
+recipes.remove(<thermalexpansion:augment:401>);
+calc_atomic(<thermalexpansion:augment:401>,<thermalexpansion:augment:400>,<actuallyadditions:block_item_repairer>,<evilcraft:blood_chest>);
 
 recipes.remove(<thermalexpansion:frame>);
 Altar.addConstellationAltarRecipe("te_machine_frame", <thermalexpansion:frame>, 800, 200, [
@@ -150,10 +154,10 @@ var mapDevice as IIngredient[][IItemStack] = {
     <thermalexpansion:device:8> : [<thermalfoundation:tome_experience>,<ore:ingotEnchantedMetal>,<ore:gearGold>],
     <thermalexpansion:device:7> : [<thermalfoundation:tome_lexicon>,<ore:ingotEnchantedMetal>,<ore:gearLead>],
     <thermalexpansion:device:6> : [<contenttweaker:module_transfer>,<thermalfoundation:material:512>,<ore:gearCopper>],
-    <thermalexpansion:device:5> : [<contenttweaker:module_transfer>,<minecraft:chest>,<ore:gearTin>],
+    <thermalexpansion:device:5> : [<contenttweaker:module_transfer>,<metalchests:metal_chest>,<ore:gearTin>],
     <thermalexpansion:device:4> : [<harvestcraft:watertrap>,<minecraft:fishing_rod>,<ore:gearIron>],
     <thermalexpansion:device:2> : [<thermalexpansion:tank>,<thermaldynamics:duct_16:2>,<ore:gearInvar>],
-    <thermalexpansion:device:1> : [<extrautils2:trashcan>,<botania:rune:1>,<ore:gearInfinity>],
+    <thermalexpansion:device:1> : [<extrautils2:trashcan>,<botania:rune:1>,<ore:gearInvar>],
 };
 
 for device, items in mapDevice {

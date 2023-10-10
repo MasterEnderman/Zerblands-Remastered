@@ -185,7 +185,7 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     ],
     <actuallyadditions:block_laser_relay_item> * 4 : [
         [null,<botania:lens:10>,null],
-        [<minecraft:chest>,<actuallyadditions:item_misc:8>,<minecraft:chest>],
+        [<metalchests:metal_chest:2>,<actuallyadditions:item_misc:8>,<metalchests:metal_chest:2>],
         [<contenttweaker:reinforced_obsidian_ingot>,<ic2:itembatcrystal>,<contenttweaker:reinforced_obsidian_ingot>]
     ],
     <actuallyadditions:block_battery_box> : [
@@ -198,9 +198,9 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
         [<forestry:oak_stick>,null,null]
     ],
     <actuallyadditions:item_misc:6> : [
-        [<ore:ingotAluminumBrass>,<ore:ingotLumium>,<ore:ingotAluminumBrass>],
+        [<ore:ingotAlubrass>,<ore:ingotLumium>,<ore:ingotAlubrass>],
         [<ore:ingotLumium>,<botania:spark>,<ore:ingotLumium>],
-        [<ore:ingotAluminumBrass>,<ore:ingotLumium>,<ore:ingotAluminumBrass>]
+        [<ore:ingotAlubrass>,<ore:ingotLumium>,<ore:ingotAlubrass>]
     ],
     <actuallyadditions:block_compost> : [
         [<earthworks:item_timber>,null,<earthworks:item_timber>],

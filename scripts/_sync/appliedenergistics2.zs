@@ -39,3 +39,7 @@ recipes.addShaped(<appliedenergistics2:creative_energy_cell>, [
     [<appliedenergistics2:dense_energy_cell>,<thermalexpansion:cell>.withTag({Recv: 25000, RSControl: 0 as byte, Facing: 4 as byte, Creative: 1 as byte, Energy: 50000000, Level: 4 as byte, SideCache: [2, 2, 2, 2, 2, 2] as byte[] as byte[], Send: 25000}),<appliedenergistics2:dense_energy_cell>],
     [<contenttweaker:creative>,<appliedenergistics2:dense_energy_cell>,<contenttweaker:creative>]
 ]);
+
+<appliedenergistics2:crystal_seed>.addTooltip(format.red("*Won't grow, when thrown in water.*"));
+<appliedenergistics2:crystal_seed:600>.addTooltip(format.red("*Won't grow, when thrown in water.*"));
+<appliedenergistics2:crystal_seed:1200>.addTooltip(format.red("*Won't grow, when thrown in water.*"));

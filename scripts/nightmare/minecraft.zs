@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.AtomicReconstructor;
+import mods.enderio.SagMill;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.CokeOven;
 import mods.jei.JEI;
@@ -35,6 +36,7 @@ import scripts.functions.calc_flawless;
 JEI.addItem(<minecraft:skull:3>);
 
 CokeOven.addRecipe(<minecraft:coal:1> * 4, 1600, <forestry:wood_pile>, 2000);
+CokeOven.addRecipe(<minecraft:coal:1>, 100, <thermalfoundation:material:801>, 250);
 CokeOven.addRecipe(<thermalfoundation:material:802>, 400, <minecraft:coal:1>, 250);
 CokeOven.addRecipe(<thermalfoundation:storage_resource:1>, 4000, <thermalfoundation:storage_resource>, 2500);
 
@@ -265,6 +267,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<bibliocraft:framingsheet>,<minecraft:planks:5>,<bibliocraft:framingsheet>]
         ]
     ],
+    <minecraft:arrow> : [
+        [
+            [<minecraft:flint>],
+            [<ore:stickWood>],
+            [<minecraft:feather>]
+        ]
+    ]
 };
 
 recipes.addShapeless(<minecraft:cobblestone> * 9, [<extrautils2:compressedcobblestone>]);
@@ -417,3 +426,5 @@ for amount, recipe_map in mapTorch {
         recipes.addShaped(<minecraft:torch> * amount, entry);
     }
 }
+
+SagMill.addRecipe([<minecraft:flint>,<minecraft:stick>,<minecraft:feather>], [15,15,15], <minecraft:arrow>, "CHANCE_ONLY");

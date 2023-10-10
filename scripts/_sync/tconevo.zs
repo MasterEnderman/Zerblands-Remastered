@@ -20,6 +20,7 @@ import scripts.functions.findFirstItemFromMod;
 import scripts.functions.firstItemFromOreDict;
 import scripts.functions.itemMS;
 
+import mods.contenttweaker.tconstruct.Material;
 import mods.enderio.AlloySmelter;
 import mods.forestry.ThermionicFabricator;
 import mods.thermalexpansion.InductionSmelter;
@@ -33,6 +34,11 @@ recipes.remove(<tconevo:metal:29>);
 recipes.remove(<tconevo:metal:34>);
 recipes.remove(<tconevo:metal:39>);
 recipes.remove(<tconevo:metal:44>);
+
+// fix missing materials
+
+<ticonmaterial:pink_slime>.addItem(<item:tconevo:material:1>);
+<ticonmaterial:meat_metal>.addItem(<item:tconevo:edible:1>);
 
 // add missing oredicts --> map items to materials
 
@@ -58,8 +64,10 @@ AlloySmelter.addRecipe(<contenttweaker:pink_slime_ingot>, [<ore:ingotKnightslime
 AlloySmelter.addRecipe(<tconevo:metal_block:3>, [<tconevo:material> * 3, <abyssalcraft:cpearl>, <abyssalcraft:essence> * 4], 15000);
 
 InductionSmelter.addRecipe(<tconevo:metal:35>, <contenttweaker:energium_dust> * 3, <tconevo:material>, 15000);
+AlloySmelter.addRecipe(<tconevo:metal:35>, [<contenttweaker:energium_dust> * 3, <tconevo:material>], 15000);
 
 InductionSmelter.addRecipe(<tconevo:metal:40>, <ic2:itemmisc:202>, <tconevo:material>, 15000);
+AlloySmelter.addRecipe(<tconevo:metal:40>, [<ic2:itemmisc:202>, <tconevo:material>], 15000);
 
 Melting.addRecipe(<liquid:essence_metal>*1296, <tconevo:metal_block:3>, 800);
 Melting.addRecipe(<liquid:primal_metal>*1296, <tconevo:metal_block:4>, 800);

@@ -25,6 +25,7 @@ import mods.embers.Melter;
 import mods.embers.Stamper;
 import mods.enderio.SagMill;
 import mods.jei.JEI;
+import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Pulverizer;
 import mods.thermalexpansion.Transposer;
@@ -76,6 +77,36 @@ import mods.tconstruct.Melting;
 <ore:listAllFlesh>.add(<cannibalism:playerflesh>);
 <ore:bulletEmpty>.add(<xreliquary:bullet>);
 <ore:bulletEmpty>.add(<immersiveengineering:bullet>);
+<ore:gearWood>.remove(<enderio:item_material:9>);
+<ore:gearStone>.remove(<enderio:item_material:10>);
+<ore:chest>.remove([
+    <minecraft:white_shulker_box>,
+    <minecraft:orange_shulker_box>,
+    <minecraft:magenta_shulker_box>,
+    <minecraft:light_blue_shulker_box>,
+    <minecraft:yellow_shulker_box>,
+    <minecraft:lime_shulker_box>,
+    <minecraft:pink_shulker_box>,
+    <minecraft:gray_shulker_box>,
+    <minecraft:silver_shulker_box>,
+    <minecraft:cyan_shulker_box>,
+    <minecraft:purple_shulker_box>,
+    <minecraft:blue_shulker_box>,
+    <minecraft:brown_shulker_box>,
+    <minecraft:green_shulker_box>,
+    <minecraft:red_shulker_box>,
+    <minecraft:black_shulker_box>,
+]);
+<ore:logWood>.add(<bloodarsenal:blood_infused_wooden_log>);
+<ore:plankWood>.add(<bloodarsenal:blood_infused_wooden_planks>);
+<ore:oreAbyssalnite>.add(<abyssalcraft:dreadore>);
+<ore:barsDawnstone>.add(<cathedral:dwemer_bars_normal>);
+<ore:barsDarkSteel>.add(<enderio:block_dark_iron_bars>);
+<ore:barsEndSteel>.add(<enderio:block_end_iron_bars>);
+
+
+recipes.remove(<enderio:item_material:9>);
+recipes.remove(<enderio:item_material:10>);
 
 furnace.remove(<minecraft:coal>);
 
@@ -242,6 +273,7 @@ furnace.setFuel(<contenttweaker:enriched_coal>,5000);
 furnace.setFuel(<contenttweaker:coal_dust>,1000);
 
 furnace.setFuel(<contenttweaker:red_coal>, 16000);
+furnace.setFuel(<contenttweaker:coke_pellet>, 200);
 
 var materialSystem as string[string] = {
     "antimony" : "antimony",
@@ -255,6 +287,7 @@ var materialSystem as string[string] = {
 for material, fluid in materialSystem {
     var nugget as IIngredient = getOreDict("nugget",material);
     var ingot as IIngredient = getOreDict("ingot",material);
+    var dust as IIngredient = getOreDict("dust",material);
     var block as IIngredient = getOreDict("block",material);
 
     recipes.addShapeless(itemMS("ingot",material),[nugget,nugget,nugget,nugget,nugget,nugget,nugget,nugget,nugget]);
@@ -268,16 +301,28 @@ for material, fluid in materialSystem {
 
     Melting.addRecipe(getFluid(fluid)*16, nugget, 395);
     Melting.addRecipe(getFluid(fluid)*144, ingot, 490);
+    Melting.addRecipe(getFluid(fluid)*144, dust, 490);
     Melting.addRecipe(getFluid(fluid)*1296, block, 681);
+
+    Crucible.addRecipe(getFluid(fluid)*16, itemMS("nugget",material), 500);
+    Crucible.addRecipe(getFluid(fluid)*144, itemMS("ingot",material), 4000);
+    Crucible.addRecipe(getFluid(fluid)*144, itemMS("dust",material), 2000);
+    Crucible.addRecipe(getFluid(fluid)*1296,itemMS("block",material), 32000);
 }
+
+Melting.addRecipe(<liquid:gold>*16*8, <minecraft:golden_carrot>, 395);
+Melting.addRecipe(<liquid:gold>*144*8, <minecraft:golden_apple>, 490);
+Melting.addRecipe(<liquid:gold>*1296*8, <minecraft:golden_apple:1>, 681);
 
 // Mekanism-like Ore Processing for basic Ores
 
 var processingMetals as string[] = [
+    "abyssalnite",
     "aluminum",
     "ardite",
     "cobalt",
     "copper",
+    "coralium",
     "gold",
     "iridium",
     "iron",
@@ -291,29 +336,39 @@ var processingMetals as string[] = [
 ];
 
 for metal in processingMetals {
-    var ore as IItemStack = firstItemFromOreDict("ore",metal);
+    var ore as IIngredient = getOreDict("ore",metal);
     var dust as IItemStack = firstItemFromOreDict("dust",metal);
     var clump as IItemStack = itemMS("clump",metal);
     var crystal as IItemStack = itemMS("crystal",metal);
     var shard as IItemStack = itemMS("shard",metal);
     var dirtyDust as IItemStack = itemMS("dirtyDust",metal);
-
-    Transposer.addFillRecipe(crystal * 5, ore, <liquid:sulfuric_acid> * 200, 5000);
-
-    Transposer.addFillRecipe(shard * 4, ore, <liquid:hydrogen_chlorid> * 200, 4000);
-    Transposer.addFillRecipe(shard, crystal, <liquid:hydrogen_chlorid> * 200, 1000);
-
-    Transposer.addFillRecipe(clump * 3, ore, <liquid:oxygen> * 200, 3000);
-    Transposer.addFillRecipe(clump, shard, <liquid:oxygen> * 200, 1000);
-
-    Transposer.addFillRecipe(dirtyDust * 2, ore, <liquid:sodium_persulfate> * 200, 2000);
-    Transposer.addFillRecipe(dirtyDust, clump, <liquid:sodium_persulfate> * 200, 1000);
     
-    Transposer.addFillRecipe(dust, dirtyDust, <liquid:distwater> * 200, 1000);
+    // fix incorrect items
+    if metal == "coralium" {
+        ore = <ore:oreLiquifiedCoralium>;
+        dust = <acintegration:dust:1>;
+    }
+    if metal == "ardite" {
+        dust = <enderio:item_material:30>;
+    }
+    if metal == "cobalt" {
+        dust = <enderio:item_material:31>;
+    }
+
+    for block in ore.items {
+        Transposer.addFillRecipe(crystal * 5, block, <liquid:sulfuric_acid> * 50, 5000);
+        Transposer.addFillRecipe(shard * 4, block, <liquid:hydrogen_chlorid> * 50, 4000);
+        Transposer.addFillRecipe(clump * 3, block, <liquid:oxygen> * 50, 3000);
+        Transposer.addFillRecipe(dirtyDust * 2, block, <liquid:sodium_persulfate> * 50, 2000);
+    }
+    Transposer.addFillRecipe(shard, crystal, <liquid:hydrogen_chlorid> * 50, 1000);
+    Transposer.addFillRecipe(clump, shard, <liquid:oxygen> * 50, 1000);
+    Transposer.addFillRecipe(dirtyDust, clump, <liquid:sodium_persulfate> * 50, 1000);
+    Transposer.addFillRecipe(dust, dirtyDust, <liquid:distwater> * 50, 1000);
 }
 
-Transposer.addFillRecipe(<enderio:item_material:30>, itemMS("dirtyDust","ardite"), <liquid:distwater> * 200, 1000);
-Transposer.addFillRecipe(<enderio:item_material:31>, itemMS("dirtyDust","cobalt"), <liquid:distwater> * 200, 1000);
+// Transposer.addFillRecipe(<enderio:item_material:30>, itemMS("dirtyDust","ardite"), <liquid:distwater> * 200, 1000);
+// Transposer.addFillRecipe(<enderio:item_material:31>, itemMS("dirtyDust","cobalt"), <liquid:distwater> * 200, 1000);
 
 var listPress as IItemStack[] = [
 	<contenttweaker:mold_ingot>,

@@ -40,6 +40,8 @@ JEI.removeAndHide(<extrautils2:ingredients:4>);
 <extrautils2:drum:2>.addTooltip(format.green("Hold up to 4,096,000 mB."));
 <extrautils2:drum:3>.addTooltip(format.green("Hold up to 65,536,000 mB."));
 
+<extrautils2:supermobspawner>.addTooltip(format.green("Won't function if you don't have any Gridpower (GP)."));
+
 Resonator.remove(<extrautils2:ingredients:4>); // fk XU2
 
 Transposer.addFillRecipe(<extrautils2:ingredients:11>, <minecraft:gold_ingot>, <liquid:lava>*250, 66666);

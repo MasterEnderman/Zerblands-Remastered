@@ -84,6 +84,10 @@ Altar.addDiscoveryAltarRecipe("necronomicon", <abyssalcraft:necronomicon>, 200, 
 
 Transposer.addFillRecipe(<abyssalcraft:coralium>, <botania:manaresource:21>, <liquid:colour_out_of_space>*50, 2048);
 
+Transposer.addFillRecipe(<acintegration:dust> * 2, <abyssalcraft:abychunk>, <liquid:sodium_persulfate>*200, 2048);
+Transposer.addFillRecipe(<acintegration:dust> * 4, <abyssalcraft:dreadchunk>, <liquid:sodium_persulfate>*200, 2048);
+Transposer.addFillRecipe(<acintegration:dust:2>*4, <abyssalcraft:dreadshard>, <liquid:sodium_persulfate>*200, 2048);
+
 ManaInfusion.addAlchemy(<abyssalcraft:coralium>, <abyssalcraft:stone:4>, 5000);
 
 recipes.remove(<abyssalcraft:gatewaykey>);

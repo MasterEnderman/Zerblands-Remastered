@@ -36,6 +36,7 @@ JEI.removeAndHide(<embers:breaker>);
 JEI.removeAndHide(<embers:vacuum>);
 
 Crucible.addRecipe(<liquid:oil_soul> * 100, <minecraft:soul_sand>, 2000);
+Crucible.addRecipe(<liquid:dawnstone> * 144, <embers:ingot_dawnstone>, 4000);
 
 recipes.remove(<embers:ember_detector>);
 calc_basic(<embers:ember_detector>, <minecraft:compass>, <embers:crystal_ember>);
@@ -91,6 +92,13 @@ Altar.addDiscoveryAltarRecipe("geo_separator", <embers:geo_separator>, 200, 200,
     null,null,<embers:pipe>,
     <embers:block_caminite_brick_slab>,<bloodmagic:cutting_fluid>,<ore:blockNickel>,
     <embers:block_caminite_brick>,<embers:block_tank>,<embers:block_caminite_brick>
+]);
+
+recipes.remove(<embers:beam_cannon>);
+Altar.addDiscoveryAltarRecipe("beam_cannon", <embers:beam_cannon>, 200, 200, [
+    <embers:crystal_ember>,<astralsorcery:itemcraftingcomponent:3>,<embers:crystal_ember>,
+    <ore:plateDawnstone>,<openmodularturrets:potato_cannon_turret>,<ore:plateDawnstone>,
+    <embers:block_caminite_brick>,<openmodularturrets:intermediate_tiered>,<embers:block_caminite_brick>
 ]);
 
 recipes.remove(<embers:ember_bore>);
@@ -152,13 +160,6 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<embers:ember_cluster>,<ore:ingotDawnstone>,null],
             [<ore:ingotDawnstone>,<actuallyadditions:item_misc:6>,<ore:ingotDawnstone>],
             [null,<ore:ingotDawnstone>,null]
-        ]
-    ],
-    <embers:beam_cannon> : [
-        [
-            [<embers:crystal_ember>,<astralsorcery:itemcraftingcomponent:3>,<embers:crystal_ember>],
-            [<ore:plateDawnstone>,<openmodularturrets:potato_cannon_turret>,<ore:plateDawnstone>],
-            [<embers:block_caminite_brick>,<openmodularturrets:intermediate_tiered>,<embers:block_caminite_brick>]
         ]
     ],
     <embers:boiler> : [

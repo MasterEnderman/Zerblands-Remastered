@@ -22,6 +22,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.jei.JEI;
 import mods.ic2.Macerator;
+import mods.tconstruct.Casting;
 import mods.thermalexpansion.Centrifuge;
 import mods.thermalexpansion.Pulverizer;
 
@@ -41,6 +42,9 @@ recipes.removeByRecipeName("harvestcraft:beeswaxitem_cropcandle");
 recipes.addShapeless(<harvestcraft:hardenedleatheritem>,[<minecraft:leather>,<forestry:beeswax>]);
 
 recipes.addShapeless(<harvestcraft:queenbeeitem>,[<harvestcraft:grubitem>,<forestry:royal_jelly>]);
+
+recipes.remove(<harvestcraft:honey>);
+Casting.addBasinRecipe(<harvestcraft:honey>, null, <liquid:for.honey>, 900, true, 100);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <harvestcraft:presser> : [

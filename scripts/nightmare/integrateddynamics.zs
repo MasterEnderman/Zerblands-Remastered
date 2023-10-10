@@ -49,7 +49,9 @@ calc_atomic(<integrateddynamics:logic_director>, <integrateddynamics:crystalized
 
 Transposer.addExtractRecipe(<liquid:menrilresin> * 250, <integrateddynamics:menril_berries>, 2400);
 Squeezer.addRecipe(<liquid:menrilresin> * 250, [<integrateddynamics:menril_berries>], 120);
-IESqueezer.addRecipe(null, <liquid:menrilresin> * 250, <integrateddynamics:menril_berries>, 2048);
+Squeezer.addRecipe(<liquid:liquidchorus> * 125, [<minecraft:chorus_fruit_popped>], 120);
+IESqueezer.addRecipe(null, <liquid:menrilresin> * 250, <integrateddynamics:menril_berries>, 1024);
+IESqueezer.addRecipe(null, <liquid:liquidchorus> * 125, <minecraft:chorus_fruit_popped>, 1024);
 
 recipes.remove(<integrateddynamics:part_static_light_panel_item>);
 ThermionicFabricator.addCast(<integrateddynamics:part_static_light_panel_item>, [

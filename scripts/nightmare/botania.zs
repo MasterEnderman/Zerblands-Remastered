@@ -167,7 +167,7 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
     ],
     <botania:pylon:2> : [
     	[<ore:ingotElvenElementium>,<ore:elvenPixieDust>,<ore:ingotElvenElementium>],
-    	[<bloodmagic:slate:3>,<botania:pylon:1>,<bloodmagic:slate:3>],
+    	[<bloodmagic:slate:2>,<botania:pylon:1>,<bloodmagic:slate:2>],
     	[<ore:ingotElvenElementium>,<botania:rune:8>,<ore:ingotElvenElementium>]
     ],
     <botania:alchemycatalyst> : [
@@ -331,12 +331,12 @@ Altar.addConstellationAltarRecipe("terraplate", <botania:terraplate>, 500, 800, 
 	<astralsorcery:itemcraftingcomponent:4>
 ]);
 
-var mapBotaniaRune as IItemStack[][IItemStack][int] = {
+var mapBotaniaRune as IIngredient[][IItemStack][int] = {
 	1000 : {
 		<botania:rune> : [
 			<contenttweaker:rune_common>,
 			<botania:manaresource:23>,
-			<minecraft:fish>,
+			<ore:listAllfishraw>,
 			<minecraft:reeds>,
 			<minecraft:prismarine_crystals>
 		],
@@ -471,7 +471,11 @@ var mapBotaniaRune as IItemStack[][IItemStack][int] = {
 for mana, runes in mapBotaniaRune {
 	for rune, recipe in runes {
 		RuneAltar.removeRecipe(rune);
-		RuneAltar.addRecipe(rune,recipe, mana);
+		if mana == 8000 {
+			RuneAltar.addRecipe(rune,recipe, mana);
+		} else {
+			RuneAltar.addRecipe(rune*2,recipe, mana);
+		}
 	}
 }
 

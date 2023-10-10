@@ -24,7 +24,6 @@ import mods.actuallyadditions.Empowerer;
 import mods.evilcraft.BloodInfuser;
 import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Refinery;
-import mods.jei.JEI;
 import mods.thermalexpansion.InductionSmelter;
 
 furnace.remove(<abyssalcraft:charcoal>);

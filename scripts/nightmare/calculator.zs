@@ -41,6 +41,7 @@ import scripts.functions.calc_scientific;
 import scripts.functions.calc_flawless;
 
 AtomicReconstructor.addRecipe(<contenttweaker:circuit8_dirty>, <opencomputers:material:2>, 4000);
+AtomicReconstructor.addRecipe(<contenttweaker:atomicbinder>, <contenttweaker:raw_atomicbinder>, 1000);
 Transposer.addFillRecipe(<contenttweaker:circuit8_damaged>, <contenttweaker:circuit8_dirty>,  <liquid:sodium_persulfate> * 200, 2000);
 ThermionicFabricator.addCast(<contenttweaker:circuit8>, [
     [<advancedsolars:sunnarium>,<threng:material:4>,<advancedsolars:sunnarium>],
@@ -131,7 +132,7 @@ Centrifuge.addRecipe([<contenttweaker:small_tanzanite> % 100, <contenttweaker:sh
 FCentrifuge.addRecipe([<contenttweaker:large_tanzanite> % 100, <contenttweaker:shard_tanzanite> % 100], <forestry:resource_storage>, 200);
 FCentrifuge.addRecipe([<contenttweaker:small_tanzanite> % 100, <contenttweaker:shard_tanzanite> % 100], <forestry:apatite>, 200);
 
-Empowerer.addRecipe(<contenttweaker:atomicbinder>, <contenttweaker:enrichedgold>, findFirstItemFromMod("thermalfoundation","ingot","steel"), <appliedenergistics2:material:1>, findFirstItemFromMod("thermalfoundation","ingot","steel"), <appliedenergistics2:material:1>, 8192, 100, [0.1, 0.1, 0.1]);
+Empowerer.addRecipe(<contenttweaker:raw_atomicbinder>, <contenttweaker:enrichedgold>, findFirstItemFromMod("thermalfoundation","ingot","steel"), <appliedenergistics2:material:1>, findFirstItemFromMod("thermalfoundation","ingot","steel"), <appliedenergistics2:material:1>, 8192, 100, [0.1, 0.1, 0.1]);
 Empowerer.addRecipe(<contenttweaker:flawlessdiamond>, <contenttweaker:atomicbinder>, <contenttweaker:weakeneddiamond>, <contenttweaker:weakeneddiamond>, <contenttweaker:weakeneddiamond>, <contenttweaker:weakeneddiamond>, 8192, 100, [0.1, 0.1, 0.1]);
 
 Carpenter.addRecipe(<contenttweaker:energy_module>, [

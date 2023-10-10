@@ -43,3 +43,5 @@ JEI.removeAndHide(<enderio:item_material:27>);
 
 SagMill.removeRecipe(<minecraft:bedrock>);
 SagMill.addRecipe([<minecraft:bedrock>,<enderio:item_material:20>*16,<avaritia:resource:2>*2,<avaritia:resource:2>*2],[100,100,80,40],<minecraft:bedrock>,"NONE",1000000);
+
+recipes.addShapeless(<enderio:item_material:28>*9,[<ore:dustEnder>]);

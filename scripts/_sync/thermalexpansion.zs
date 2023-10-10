@@ -19,6 +19,9 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.avaritia.ExtremeCrafting;
+import mods.jei.JEI;
+
+JEI.addItem(<thermalexpansion:morb>);
 
 ExtremeCrafting.addShaped("te_creative_tank",<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte}), [
     [<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>,<contenttweaker:creative>],

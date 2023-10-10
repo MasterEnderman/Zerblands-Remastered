@@ -22,8 +22,10 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.actuallyadditions.Empowerer;
 
+import scripts.functions.calc_scientific;
+
 recipes.remove(<notenoughwands:wandcore>);
-Empowerer.addRecipe(<notenoughwands:wandcore>, <evilcraft:dark_stick>, <ore:nuggetDawnstone>, <ore:nuggetDawnstone>, <ore:nuggetDawnstone>, <ore:nuggetDawnstone>, 20000, 400, [0.2, 0.4, 0.7]);
+calc_scientific(<notenoughwands:wandcore>,<evilcraft:dark_stick>,<embers:plate_dawnstone>);
 
 recipes.remove(<notenoughwands:advanced_wandcore>);
 Empowerer.addRecipe(<notenoughwands:advanced_wandcore>, <notenoughwands:wandcore>, <contenttweaker:alfsteel_nugget>, <contenttweaker:alfsteel_nugget>, <contenttweaker:alfsteel_nugget>, <contenttweaker:alfsteel_nugget>, 20000, 400, [0.2, 0.4, 0.7]);

@@ -37,6 +37,7 @@ import mods.energycontrol.KitAssembler;
 import mods.evilcraft.BloodInfuser;
 import mods.forestry.Carpenter;
 import mods.forestry.Centrifuge;
+import mods.forestry.Still;
 import mods.forestry.ThermionicFabricator;
 import mods.ic2.Compressor;
 import mods.ic2.Extractor;
@@ -49,6 +50,7 @@ import mods.immersiveengineering.BottlingMachine;
 import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Refinery;
+import mods.immersiveengineering.Squeezer;
 import mods.immersivetechnology.Distiller;
 import mods.immersivetechnology.SolarTower;
 import mods.tconstruct.Alloy;
@@ -73,11 +75,16 @@ import scripts.mod_functions.betterExplosion;
 
 BloodInfuser.addRecipe(<thermalfoundation:material:23>, <liquid:evilcraftblood> * 4000, 0, <contenttweaker:runic_gear>, 100, 2);
 BloodAltar.addRecipe(<contenttweaker:runic_gear>, <thermalfoundation:material:23>, 0, 2000,5,5);
-Distiller.addRecipe(<liquid:refined_life_essence> * 100, <liquid:lifeessence> * 100, <evilcraft:hardened_blood_shard>, 2048, 20, 0.1);
+Distiller.addRecipe(<liquid:refined_life_essence> * 300, <liquid:lifeessence> * 100, <evilcraft:hardened_blood_shard>, 2048, 20, 0.1);
+Still.addRecipe(<liquid:refined_life_essence> * 300, <liquid:lifeessence> * 100, 20);
 
 Mixer.addRecipe(<liquid:sulfuric_acid>*100, <liquid:iron_chloride>*100, [<ore:dustSulfur>*4], 1024);
 
 PureDaisy.addRecipe(<sonarcore:stablestone_normal>, <contenttweaker:runestone>, 100);
+
+Squeezer.addRecipe(<harvestcraft:fishtrapbaititem>, <liquid:fish_oil> * 400, <harvestcraft:groundfishitem> * 8, 2048);
+Distiller.addRecipe(<liquid:evilcraftpoison> * 100, <liquid:fish_oil> * 200, <ic2:itemmisc:150>, 2048, 20, 0.1);
+Still.addRecipe(<liquid:evilcraftpoison> * 100, <liquid:fish_oil> * 200, 20);
 
 RuneAltar.addRecipe(<contenttweaker:infusion_block>,[
     <botania:rune:11>,
@@ -108,7 +115,7 @@ Casting.addTableRecipe(<contenttweaker:petri_dish>, cast_pan, <liquid:glass>, 20
 KitAssembler.addRecipe(<bloodmagic:component:25> * 16, <contenttweaker:stemcells> * 64, <bloodmagic:component:26> * 16, <contenttweaker:dense_neuron_chip>, 1200);
 KitAssembler.addRecipe(<contenttweaker:dense_neuron_chip> * 3, <rs_ctr:wireless_b> * 64, <contenttweaker:neuro_processor>, <contenttweaker:wetware_assembly>, 1200);
 
-Mixer.addRecipe(<liquid:iron_chloride>*100, <liquid:hydrochloric_acid>*100, [<ore:oreIron>], 512);
+Mixer.addRecipe(<liquid:iron_chloride>*1000, <liquid:hydrochloric_acid>*1000, [<ore:oreIron>], 1024);
 Mixer.addRecipe(<liquid:sodium_hydroxide>*500, <liquid:water>*500, [<contenttweaker:sodium_dust>], 512);
 Mixer.addRecipe(<liquid:battery_solution>*250, <liquid:distwater>*250, [
     <contenttweaker:lithium_dust>,
@@ -148,12 +155,16 @@ Alloy.addRecipe(<liquid:ferromagnetic_alloy> * 1, [<liquid:iron> * 1, <liquid:co
 Casting.addTableRecipe(<contenttweaker:plastic>, <tconstruct:cast_custom:3>, <liquid:plastic>, 512, false);
 
 AlloySmelter.addRecipe(<contenttweaker:ender_ingot>, [<ore:ingotSilver>,<embers:shard_ember>,<ore:dustEnder>], 5000);
+ArcFurnace.addRecipe(<contenttweaker:ender_ingot>, <ore:ingotSilver>, <thermalfoundation:material:864>, 600, 512, [<embers:shard_ember>,<ore:dustEnder>]);
 
-AlloySmelter.addRecipe(<contenttweaker:starsteel_ingot>, [<ore:ingotManasteel>,<ore:ingotAstralStarmetal>,<ore:ingotPsi>], 50000);
+AlloySmelter.addRecipe(<contenttweaker:starsteel_ingot>*2, [<ore:ingotManasteel>,<ore:ingotAstralStarmetal>,<ore:ingotPsi>], 50000);
+ArcFurnace.addRecipe(<contenttweaker:starsteel_ingot>*2, <ore:ingotManasteel>, <thermalfoundation:material:864>, 600, 512, [<ore:ingotAstralStarmetal>,<ore:ingotPsi>]);
 
-AlloySmelter.addRecipe(<contenttweaker:enhanced_ender_ingot>, [<contenttweaker:ender_ingot>, <extrautils2:ingredients:17>, <botania:manaresource:14>], 500000);
+AlloySmelter.addRecipe(<contenttweaker:enhanced_ender_ingot>*2, [<contenttweaker:ender_ingot>, <extrautils2:ingredients:17>, <ore:ingotLudicrite>], 500000);
+ArcFurnace.addRecipe(<contenttweaker:enhanced_ender_ingot>*2, <contenttweaker:ender_ingot>, <thermalfoundation:material:864>, 600, 512, [<extrautils2:ingredients:17>, <ore:ingotLudicrite>]);
 
-AlloySmelter.addRecipe(findFirstItemFromMod("contenttweaker","ingot","ferromagneticAlloy"), [<ore:ingotIron>,<ore:ingotNickel>,<ore:ingotCobalt>], 10000);
+AlloySmelter.addRecipe(findFirstItemFromMod("contenttweaker","ingot","ferromagneticAlloy")*2, [<ore:ingotIron>,<ore:ingotNickel>,<ore:ingotCobalt>], 10000);
+ArcFurnace.addRecipe(findFirstItemFromMod("contenttweaker","ingot","ferromagneticAlloy")*2, <ore:ingotIron>, <thermalfoundation:material:864>, 600, 512, [<ore:ingotNickel>,<ore:ingotCobalt>]);
 
 AlchemyTable.addRecipe(<contenttweaker:crystal_prism>, [
 	<astralsorcery:itemrockcrystalsimple>,<tconstruct:edible:30>,<tconstruct:edible:31>,
@@ -203,6 +214,7 @@ Altar.addDiscoveryAltarRecipe("grinding_wheel", <contenttweaker:grind_wheel>, 20
 
 Drying.addRecipe(<contenttweaker:root_dried>,<botania:manaresource:20>,200);
 Casting.addTableRecipe(<contenttweaker:root_golden>, <contenttweaker:root_dried>, <liquid:gold>, 288, true);
+Transposer.addFillRecipe(<contenttweaker:root_golden>, <contenttweaker:root_dried>,  <liquid:gold> * 288, 2000);
 
 recipes.addShapeless(<contenttweaker:pattern_ingot>, [
     <actuallyadditions:item_knife:*>.transformDamage(),<tconstruct:pattern>
@@ -588,7 +600,7 @@ var mapPlutonium as int[IItemStack] = {
 };
 
 for item, mul in mapPlutonium {
-    Extractor.addRecipe(<contenttweaker:small_plutonium> * mul, item);
+    Extractor.addRecipe(<contenttweaker:small_plutonium> * (mul * 8), item);
 }
 
 var mapStoneboard as int[IIngredient][string] = {
@@ -620,3 +632,5 @@ for a, amount_a in mapStoneboard["top"] {
         }
     }
 }
+
+recipes.addShapeless(<contenttweaker:coke_pellet>*16,[<ore:fuelCoke>]);

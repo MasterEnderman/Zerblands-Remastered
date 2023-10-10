@@ -227,7 +227,10 @@ static mapWorkbench as IIngredient[][IItemStack][string] = {
         <tconstruct:wood_rail:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_wood>*6],
         <tconstruct:wood_rail_trapdoor:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_wood>*6,<minecraft:trapdoor>*4],
         <enderio:block_exit_rail:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<minecraft:piston>*4,<minecraft:stone_pressure_plate>*16],
-        <botania:ghostrail:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<botania:platform:1>*4]
+        <botania:ghostrail:0> : [<contenttweaker:railbed_wood>,<contenttweaker:rail_standard>*6,<botania:platform:1>*4],
+        <contenttweaker:rail_wood:0> : [<contenttweaker:tie_wood:0>,<ore:ingotIron>],
+        <contenttweaker:rail_standard:0> * 6 : [<ore:plateIron> * 3],
+        <contenttweaker:rail_speed:0> * 6 : [<ore:plateGold> * 3],
     },
     "bullet" : {
         <xreliquary:bullet:1> : [
