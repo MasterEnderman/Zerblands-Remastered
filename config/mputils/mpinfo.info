@@ -1,10 +1,11 @@
 {
   "name": "Zerblands-Remastered",
   "description": "An old Classic remade in a newer Version",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "url": "https://github.com/MasterEnderman/Zerblands-Remastered",
   "authorList": [
-    "_MasterEnderman_, Ender-Development"
+    "_MasterEnderman_",
+    "Ender-Development"
   ],
   "credits": "Huge thanks to ZerberuS1979 and Akliz for making all of this possible."
 }

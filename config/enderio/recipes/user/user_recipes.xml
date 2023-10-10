@@ -140,9 +140,12 @@
         </sagmilling>
     </recipe>
 
-    <recipe name="Sagmill: ClayBlock">
-        <disabled/>
-    </recipe>
+    <recipe name="Sagmill: ClayBlock" required="false">
+        <sagmilling energy="2400">
+          <input name="minecraft:clay"/>
+          <output name="minecraft:clay_ball" amount="4" />
+        </sagmilling>
+      </recipe>
     <recipe name="Sagmill: oreRedstone Ore">
         <disabled/>
     </recipe>

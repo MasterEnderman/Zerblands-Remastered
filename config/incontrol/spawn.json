@@ -15,5 +15,19 @@
         "mob": "abyssalcraft:depthsghoul",
         "mincount": 75,
         "result": "deny"
-    }
+    },
+	{
+		"dimension": 43,
+		"mob": ["minecraft:witch", "minecraft:skeleton", "minecraft:creeper", "minecraft:zombie", "minecraft:spider"],
+		"block": "extrautils2:cursedearth",
+		"result": "allow"
+	},
+	{
+		"dimension": 43,
+		"spawner": false,
+		"result": "deny"
+	},
+	{
+		"result": "default"
+	}
 ]

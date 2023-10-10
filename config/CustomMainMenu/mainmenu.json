@@ -119,20 +119,20 @@
         },
         "akliz": {
             "text": " ",
-            "hoverText": "Check out Akliz!",
+            "hoverText": "I'm partnered with Akliz!",
             "pressSound": "minecraft:block.portal.ambient",
-            "hoverTextColor": 43732,
-            "posX": -140,
-            "posY": -150,
-            "width": 134,
-            "height": 134,
-            "imageWidth": 356,
-            "imageHeight": 355,
-            "alignment": "bottom_right",
-            "texture": "zerblands:mainmenu/akliz.png",
+            "hoverTextColor": 11534512,
+            "posX": -163,
+            "posY": 68,
+            "width": 288,
+            "height": 108,
+            "imageWidth": 865,
+            "imageHeight": 326,
+            "alignment": "center",
+            "texture": "zerblands:mainmenu/Akliz_Partner.png",
             "action": {
                 "type": "openLink",
-                "link": "https://www.akliz.net/manage/aff.php?aff=416"
+                "link": "https://www.akliz.net/enderman"
             }
         },
         "discord": {
@@ -237,7 +237,7 @@
                     "zerblands:mainmenu/bg/frame_28.png"
                 ],
                 "displayDuration": 1,
-                "fadeDuration": 1
+                "fadeDuration": 2
             }
         }
     }

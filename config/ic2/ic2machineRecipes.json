@@ -193,7 +193,12 @@
   "item.itemDustCopper": true,
   "item.itemDustBronze": true,
   "item.itemDustTin": true,
-  "item.itemFlour_-1537062357": true
+  "item.itemFlour_-1537062357": true,
+  "ic2exprecipe_Charcoal Dust_": true,
+  "ic2exprecipe_Grainy Capacitor_": true,
+  "ic2exprecipe_Grainy Capacitor__1": true,
+  "ic2exprecipe_Fire Charge_": true,
+  "item.contenttweaker.material_part_397086735": true
  },
  "extractor": {
   "item.coal_764578481": true,
@@ -259,7 +264,12 @@
   "ic2exprecipe_Tiny Pile of Plutonium__2": true,
   "ic2exprecipe_Tiny Pile of Plutonium__3": true,
   "ic2exprecipe_Tiny Pile of Plutonium__4": true,
-  "ic2exprecipe_Tiny Pile of Plutonium__5": true
+  "ic2exprecipe_Tiny Pile of Plutonium__5": true,
+  "ic2exprecipe_Uninsulated Copper Cable_": true,
+  "ic2exprecipe_Bronze Cable_": true,
+  "ic2exprecipe_Gold Cable_": true,
+  "ic2exprecipe_HV Cable_": true,
+  "ic2exprecipe_Ultra-Low-Current Cable_": true
  },
  "compressor": {
   "tile.sandStone.default_1494879518": true,
@@ -674,6 +684,8 @@
   "item.appliedenergistics2.multi_part.cable_glass_ct": true,
   "item.appliedenergistics2.material.silicon_ct": true,
   "item.immersiveengineering.material.stick_treated_ct": true,
-  "item.FramingSheet_ct_1": true
+  "item.FramingSheet_ct_1": true,
+  "tile.bloodarsenal.blood_infused_wooden_planks_-1713210252": true,
+  "tile.bloodarsenal.blood_infused_wooden_planks_To_Sticks_-456206612": true
  }
 }

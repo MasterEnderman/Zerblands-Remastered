@@ -22,9 +22,11 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.enderio.AlloySmelter;
 import mods.forestry.Carpenter;
+import mods.immersiveengineering.CokeOven;
 import mods.immersiveengineering.Mixer;
 import mods.jei.JEI;
 import mods.tconstruct.Alloy;
+import mods.tconstruct.Casting;
 import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.RedstoneFurnace;
 import mods.thermalexpansion.Transposer;
@@ -107,6 +109,9 @@ recipes.addShapeless(<thermalfoundation:material:1027> * 2, [<thermalfoundation:
 
 Transposer.addFillRecipe(<thermalfoundation:material:1028>, <thermalfoundation:material:72>, <fluid:colour_out_of_space> * 1000, 4000);
 
+Transposer.addFillRecipe(<thermalfoundation:material:772>, <thermalfoundation:material:768>, <fluid:sodium_hydroxide> * 100, 1000);
+Transposer.addFillRecipe(<thermalfoundation:material:772>, <thermalfoundation:material:769>, <fluid:sodium_hydroxide> * 100, 1000);
+
 recipes.remove(<thermalfoundation:diagram_redprint>);
 Transposer.addFillRecipe(<thermalfoundation:diagram_redprint>, <minecraft:paper>, <fluid:redstone> * 200, 2000);
 
@@ -118,6 +123,12 @@ Mixer.addRecipe(<liquid:cryotheum>*250, <liquid:ice>*250, [<thermalfoundation:ma
 
 Crucible.removeRecipe(<thermalfoundation:material:1026>);
 Mixer.addRecipe(<liquid:aerotheum>*250, <liquid:cloud_seed_concentrated>*250, [<thermalfoundation:material:1026>], 1024);
+
+Crucible.removeRecipe(<thermalfoundation:material:892>);
+Crucible.addRecipe(<liquid:oil>*250,<thermalfoundation:material:892>,2000);
+CokeOven.addRecipe(<thermalfoundation:material:892> * 16, 0, <forestry:bituminous_peat>, 400);
+
+Crucible.addRecipe(<liquid:coal>*200,<immersiveengineering:material:17>,4000);
 
 Crucible.removeRecipe(<thermalfoundation:material:1027>);
 Mixer.addRecipe(<liquid:petrotheum>*250, <liquid:crude_oil>*250, [<thermalfoundation:material:1027>], 1024);
@@ -144,3 +155,10 @@ for kit, recipe in upgradeKit {
         [plate,tube,plate]
     ], 20, <liquid:lubricant> * 1000, gear);
 }
+
+Casting.addTableRecipe(<thermalfoundation:material:22>, <enderio:item_material:9>, <liquid:creosote>, 1000, true, 100);
+Casting.addTableRecipe(<thermalfoundation:material:23>, <enderio:item_material:10>, <liquid:stone>, 288, true, 100);
+
+Transposer.addFillRecipe(<thermalfoundation:material:893>, <thermalfoundation:material:892>, <fluid:redstone> * 250, 2000);
+Transposer.addFillRecipe(<thermalfoundation:material:894>, <thermalfoundation:material:892>, <fluid:glowstone> * 250, 2000);
+Transposer.addFillRecipe(<thermalfoundation:material:895>, <thermalfoundation:material:892>, <fluid:ender> * 250, 2000);
