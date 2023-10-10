@@ -7,8 +7,6 @@ journeymap/
 
 TombManyGraves/
 
-astralsorcery/
-
 asm/
 
 MEutilities/
@@ -36,8 +34,6 @@ ResourceCache/
 options\.txt
 
 crash-reports/
-
-mputils/settings\.dat
 
 usercache\.json
 
@@ -70,6 +66,10 @@ mods/
 *.dump
 
 *.csv
+
+*.html
+
+*.cache
 
 \.ReAuth\.cfg
 
