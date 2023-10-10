@@ -1,0 +1,31 @@
+{
+    "name": "Zerblands Guide",
+    "landing_text": "Welcome to the <zerblands>. This book documents most of the changes as well as serving as a collection of useful information.<li><curseforge><li><bugtracker><li><coffee><li><discord>",
+    "version": 69420,
+    "book_texture": "patchouli:textures/gui/book_purple.png",
+    "model": "patchouli:book_purple",
+    "show_progress": false,
+    "filler_texture": "zerblands:guide/images/filler.PNG",
+    "index_icon": "contenttweaker:ender_token",
+    "text_color": "292929",
+    "macros": {
+        "<zerblands>": "$(l)$(#f60)Zerblands$()",
+        "<b>": "$(l)",
+        "<i>": "$(o)",
+        "</>": "$()",
+        "<item>": "$(#b0b)",
+        "<mark>": "$(#490)",
+        "<li>": "$(li)",
+        "<li2>": "$(li2)",
+        "<2br>": "<br> <br>",
+        "<modpack>": "$(#606)$(l)modpack$()",
+        "<discord>": "$(l:https://discord.gg/JF7x2vG)Discord$(/l)",
+        "<linktree>": "$(l:https://ender.bio.link)My Linktree$(/l)",
+        "<bugtracker>": "$(l:https://github.com/MasterEnderman/Zerblands-Remastered/issues)Bugtracker$(/l)",
+        "<curseforge>": "$(l:https://legacy.curseforge.com/minecraft/modpacks/zerblands-remastered)Curseforge$(/l)",
+        "<coffee>": "$(l:https://www.buymeacoffee.com/masterenderman)buymeacoffee$(/l)",
+        "<overworld>": "$(#5c0)Overworld$()",
+        "<nether>": "$(#922)Nether$()",
+        "<end>": "$(#aa7)The End$()"
+    }
+}
