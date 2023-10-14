@@ -1,7 +1,7 @@
 {
-	"versionName": "2.2.7",
-	"versionCode": 1,
-	"versionFormat": "%versionName%",
+	"versionName": "2.2",
+	"versionCode": 8,
+	"versionFormat": "%versionName%.%versionCode%",
 	"sponsors": [{
 			"category": "gold",
             "displayName": "Gold-Sponsor",
@@ -71,7 +71,8 @@
 		}
 	}],
 	"changelogs": {
-		"2.2.7": [""],
+		"2.2.8": [],
+		"2.2.7": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v227---hotfix-xiii"],
 		"2.2.6": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v226---hotfix-xii"],
 		"2.2.5": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v225---hotfix-xi"],
 		"2.2.4": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v224---hotfix-x"],
