@@ -2,6 +2,28 @@
 
 A Modpack for Minecraft 1.12.2
 
+## v2.2.8 - Hotfix XIV
+
+### Added Mods
+
+- Patchouli (only until the ROFL Edition is patched)
+
+### Removed Mods
+
+- Patchouli ROFL Edition (won't run on servers for now)
+- Shut Up, Model Loader (from Server Files)
+
+### Changes
+
+- added another blog entry to the ingame guide
+- disabled fish oil for now
+- tweaked log to plank to stick ratios (thanks for pointing that out @Xetaxheb)
+- tweaked recipes that contained fish oil
+
+### Bugfixes
+
+- fixed world corruption bug (I'm looking at you ContentTweaker)
+
 ## v2.2.7 - Hotfix XIII
 
 ### Added Mods
