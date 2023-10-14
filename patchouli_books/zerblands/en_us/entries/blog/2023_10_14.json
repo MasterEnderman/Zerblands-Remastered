@@ -1,0 +1,29 @@
+{
+    "name": "2023-10-14",
+    "icon": "botania:manainkwell",
+    "category": "blog",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "2023-10-14",
+            "type": "default",
+            "text": "If you only plan on updating your private test server and it ends in another update for the modpack. That would be a fitting title of the day I had so far. Like I stated before I only had the intention to update my private server after finally publishing v2.2.7, but as it turned out that broke the whole world. Luckily I made a backup"
+        },
+        {
+            "type": "text",
+            "text": "before installing the update. (Something that you should do as well!) I encountered this bug before in older updates of the pack, but I was never able to figure out what caused it in the first place. At least until now, because with version 2.2.7 there were only a few blocks that got added, which could have caused the corruption. The first step was to disable all the performance I added to the pack to see if"
+        },
+        {
+            "type": "text",
+            "text": "something was causing any issues and you have no idea how crappy minecraft runs without all of these mods. After some testing I couldn't find any mod that caused the issue so I started to the individual blocks I added with the last update and one of them was a custom fluid added via ContentTweaker - Fish Oil. An intermediated fluid that was used in the advanced liquid poison processing chain."
+        },
+        {
+            "type": "text",
+            "text": "After disabling the fluid I was able to join a world from the previous version without any corruption - so I found the culprit. I guess ContentTweaker just uses a really hacky way to register it's 'content', luckily I plan to rewrite all those items in GroovyScript with v2.3.0, that way I should have a much stable base as GroovyScript adds items in the same way any other Minecraft mod registers their blocks,"
+        },
+        {
+            "type": "text",
+            "text": "items and fluids. So for now I tweaked the recipes that contained the newly added fish oil and tweaked them to exclude it. I think all of this is enough to publish another update, that also contains some fixes for the server files, where I added a few mods that were client side only, which won't disable thyself, if run on a server."
+        }
+    ]
+}
