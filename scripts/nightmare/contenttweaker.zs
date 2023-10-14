@@ -82,9 +82,12 @@ Mixer.addRecipe(<liquid:sulfuric_acid>*100, <liquid:iron_chloride>*100, [<ore:du
 
 PureDaisy.addRecipe(<sonarcore:stablestone_normal>, <contenttweaker:runestone>, 100);
 
+/* disabled until v2.3.0 to fix the world corruption bug
 Squeezer.addRecipe(<harvestcraft:fishtrapbaititem>, <liquid:fish_oil> * 400, <harvestcraft:groundfishitem> * 8, 2048);
 Distiller.addRecipe(<liquid:evilcraftpoison> * 100, <liquid:fish_oil> * 200, <ic2:itemmisc:150>, 2048, 20, 0.1);
 Still.addRecipe(<liquid:evilcraftpoison> * 100, <liquid:fish_oil> * 200, 20);
+*/
+Squeezer.addRecipe(<harvestcraft:fishtrapbaititem>, <liquid:evilcraftpoison> * 100, <harvestcraft:groundfishitem> * 8, 2048);
 
 RuneAltar.addRecipe(<contenttweaker:infusion_block>,[
     <botania:rune:11>,

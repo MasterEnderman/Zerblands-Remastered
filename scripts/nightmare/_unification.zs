@@ -332,11 +332,19 @@ recipes.addShaped(<minecraft:stick> * 4, [
     [<ore:plankWood>],
     [<ore:plankWood>]
 ]);
-recipes.addShaped(<minecraft:stick> * 8, [
+/*
+    reduced to 4 to be more in line with the deault log -> plank -> stick chain
+    1 log -> 2 planks -> 2 sticks
+    2 log -> 4 sticks
+    1 log + saw -> 3 planks -> 6 sticks
+    2 log + saw -> 6 planks -> 12 sticks
+    2 log + saw -> 12 sticks
+*/
+recipes.addShaped(<minecraft:stick> * 4, [
     [<ore:logWood>],
     [<ore:logWood>]
 ]);
-recipes.addShaped(<minecraft:stick> * 16, [
+recipes.addShaped(<minecraft:stick> * 12, [
     [<earthworks:tool_saw:*>.transformDamage(6)],
     [<ore:logWood>],
     [<ore:logWood>]

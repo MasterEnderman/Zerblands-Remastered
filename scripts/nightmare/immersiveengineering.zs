@@ -67,7 +67,7 @@ Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*4, <liquid:refine
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*4, <liquid:refined_biofuel>*12, 256);
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:seed.oil>*4, 256);
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:seed_oil>*4, 256);
-Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:fish_oil>*4, 256);
+// Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:fish_oil>*4, 256); disabled until v2.3.0
 Refinery.addRecipe(<liquid:biodiesel>*16, <liquid:bio.ethanol>*12, <liquid:hootch>*4, 256);
 
 MetalPress.removeRecipe(<immersiveengineering:graphite_electrode>);

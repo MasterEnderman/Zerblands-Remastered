@@ -78,6 +78,7 @@ ambrosia.register();
 
 var grog = VanillaFactory.createFluid("grog", 6356792);
 grog.register();
-
+/* will be enabled in v2.3.0 -> but will probably be rewritten in GroovyScript
 var fish_oil = VanillaFactory.createFluid("fish_oil", 12493632);
 fish_oil.register();
+*/
