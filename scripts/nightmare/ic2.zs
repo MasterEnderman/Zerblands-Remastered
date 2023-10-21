@@ -468,9 +468,15 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ic2:itemmisc:256>,<contenttweaker:energy_flow_circuit>,<ic2:itemmisc:256>]
         ]
     ],
+    // <ic2:itemtoolbox> : [
+    //     [
+    //         [<ore:plateSteel>,<metalchests:metal_chest:3>,<ore:plateSteel>],
+    //         [<ore:plateSteel>,<ore:plateSteel>,<ore:plateSteel>]
+    //     ]
+    // ],
     <ic2:itemtoolbox> : [
         [
-            [<ore:plateSteel>,<metalchests:metal_chest:3>,<ore:plateSteel>],
+            [<ore:plateSteel>,<ore:chest>,<ore:plateSteel>],
             [<ore:plateSteel>,<ore:plateSteel>,<ore:plateSteel>]
         ]
     ],

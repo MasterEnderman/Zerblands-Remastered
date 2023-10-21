@@ -183,9 +183,14 @@ var recipeMapShaped as IIngredient[][][IItemStack] = {
         [<minecraft:bucket>,<actuallyadditions:item_misc:8>,<minecraft:bucket>],
         [<contenttweaker:reinforced_obsidian_ingot>,<ic2:itembatcrystal>,<contenttweaker:reinforced_obsidian_ingot>]
     ],
+    // <actuallyadditions:block_laser_relay_item> * 4 : [
+    //     [null,<botania:lens:10>,null],
+    //     [<metalchests:metal_chest:2>,<actuallyadditions:item_misc:8>,<metalchests:metal_chest:2>],
+    //     [<contenttweaker:reinforced_obsidian_ingot>,<ic2:itembatcrystal>,<contenttweaker:reinforced_obsidian_ingot>]
+    // ],
     <actuallyadditions:block_laser_relay_item> * 4 : [
         [null,<botania:lens:10>,null],
-        [<metalchests:metal_chest:2>,<actuallyadditions:item_misc:8>,<metalchests:metal_chest:2>],
+        [<ore:chest>,<actuallyadditions:item_misc:8>,<ore:chest>],
         [<contenttweaker:reinforced_obsidian_ingot>,<ic2:itembatcrystal>,<contenttweaker:reinforced_obsidian_ingot>]
     ],
     <actuallyadditions:block_battery_box> : [

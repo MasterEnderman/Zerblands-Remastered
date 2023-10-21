@@ -19,11 +19,18 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
-    <avaritiaddons:avaritiaddons_chest> : [
+    // <avaritiaddons:avaritiaddons_chest> : [
+    //     [
+    //         [<astralsorcery:blockinfusedwood>,<metalchests:metal_chest:4>,<astralsorcery:blockinfusedwood>],
+    //         [<metalchests:metal_chest:4>,<actuallyadditions:block_giant_chest_medium>,<metalchests:metal_chest:4>],
+    //         [<astralsorcery:blockinfusedwood>,<metalchests:metal_chest:4>,<astralsorcery:blockinfusedwood>]
+    //     ]
+    // ],
+     <avaritiaddons:avaritiaddons_chest> : [
         [
-            [<astralsorcery:blockinfusedwood>,<metalchests:metal_chest:4>,<astralsorcery:blockinfusedwood>],
-            [<metalchests:metal_chest:4>,<actuallyadditions:block_giant_chest_medium>,<metalchests:metal_chest:4>],
-            [<astralsorcery:blockinfusedwood>,<metalchests:metal_chest:4>,<astralsorcery:blockinfusedwood>]
+            [<astralsorcery:blockinfusedwood>,<ore:chest>,<astralsorcery:blockinfusedwood>],
+            [<ore:chest>,<actuallyadditions:block_giant_chest_medium>,<ore:chest>],
+            [<astralsorcery:blockinfusedwood>,<ore:chest>,<astralsorcery:blockinfusedwood>]
         ]
     ],
     <avaritiaddons:extreme_auto_crafter> : [

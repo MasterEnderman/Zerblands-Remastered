@@ -205,28 +205,6 @@ var removeAndHide as IItemStack[] = [
     <immersivepetroleum:material>,
     // baubles
     <baubles:baublesring>,
-    // metal chests
-    <metalchests:chest_upgrade>,
-    <metalchests:chest_upgrade:1>,
-    <metalchests:chest_upgrade:2>,
-    <metalchests:chest_upgrade:3>,
-    <metalchests:chest_upgrade:4>,
-    <metalchests:chest_upgrade:5>,
-    <metalchests:chest_upgrade:6>,
-    <metalchests:chest_upgrade:7>,
-    <metalchests:chest_upgrade:8>,
-    <metalchests:chest_upgrade:9>,
-    <metalchests:chest_upgrade:10>,
-    <metalchests:chest_upgrade:11>,
-    <metalchests:chest_upgrade:12>,
-    <metalchests:chest_upgrade:13>,
-    <metalchests:chest_upgrade:14>,
-    <metalchests:chest_upgrade:15>,
-    <metalchests:chest_upgrade:16>,
-    <metalchests:chest_upgrade:17>,
-    <metalchests:chest_upgrade:18>,
-    <metalchests:chest_upgrade:19>,
-    <metalchests:chest_upgrade:20>,
 ];
 
 for item in removeAndHide {

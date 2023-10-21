@@ -1,0 +1,17 @@
+{
+	x: -8.0d,
+	y: 13.5d,
+	text: [
+		"A better pair of eyes."
+	],
+	dependencies: [
+		"35fef444"
+	],
+	tasks: [{
+		uid: "6c14417d",
+		type: "item",
+		items: [{
+			item: "theoneprobe:probe_goggles"
+		}]
+	}]
+}

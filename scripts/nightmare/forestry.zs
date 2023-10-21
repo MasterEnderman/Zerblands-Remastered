@@ -59,6 +59,26 @@ Crucible.addRecipe(<liquid:for.honey> * 100, <forestry:honeydew>, 4000);
 Crucible.addRecipe(<liquid:for.honey> * 100, <harvestcraft:honeyitem>, 4000);
 Squeezer.addRecipe(null, <liquid:for.honey> * 100, <harvestcraft:honeyitem>, 2048);
 
+var mapSeed as int[IIngredient] = {
+    <ore:listAllseed> : 5,
+    <ore:listAllnut> : 75,
+    <ore:cropChestnut> : 220,
+    <ore:cropCherry> : 50,
+    <ore:cropWalnut> : 180,
+    <ore:seedRice> : 5,
+    <ore:seedCoffee> : 5,
+    <ore:seedCanola> : 5,
+    <ore:seedFlax> : 5,
+    <ic2:itemmisc:158> : 50
+};
+
+Squeezer.removeFluidRecipe(<liquid:plantoil>);
+Squeezer.addRecipe(null, <liquid:plantoil> * 120, <immersiveengineering:seed>, 2048);
+
+for input, amount in mapSeed {
+    Squeezer.addRecipe(null, <liquid:seed.oil> * amount, input, 2048);
+}
+
 recipes.remove(<forestry:fertilizer_compound>);
 calc_scientific(<forestry:fertilizer_compound> * 4, <ore:dustApatite>, <ore:dustAsh>);
 

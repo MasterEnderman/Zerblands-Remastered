@@ -2,6 +2,45 @@
 
 A Modpack for Minecraft 1.12.2
 
+## v2.2.9 - Hotfix XV
+
+Thanks `Abyssal Moth` for your help with the player model glitch!
+
+### Added Mods
+
+- VisualOres
+
+### Updated Mods
+
+- AE2 Fluid Crafting Rework
+- AE2 Unofficial Extended Life
+- CensoredASM
+- HammerLib
+- Inventory Bogo Sorter
+- Neeve's AE2: Extended Life Additions
+- Sledgehammer
+- VintageFix
+
+### Removed Mods
+
+- BetterFps (causing the player model glitch)
+- Enchantment Storage (will come back with v2.3.0)
+- Metal Chests (will come back with v2.3.0)
+
+### Changes
+
+- added a quest for the one probe
+- added a recipe for the name tag
+- added another blog entry to the ingame guide
+- added backwards compatibility for worlds made in v2.2.0
+- added seed oil processing in the IE Squeezer
+- tweaked recipe for the EIO Yeta Wrench
+
+### Bugfixes
+
+- fixed an issue where the player model would spin like crazy
+- fixed broken harvestcraft recipes
+
 ## v2.2.8 - Hotfix XIV
 
 ### Added Mods

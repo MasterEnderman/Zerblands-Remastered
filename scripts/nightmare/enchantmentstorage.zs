@@ -1,3 +1,4 @@
+#modloaded enchantmentstorage
 #packmode nightmare
 
 import crafttweaker.item.IItemStack;

@@ -352,6 +352,13 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:ingotElectricalSteel>,<enderio:item_material>,<ore:ingotElectricalSteel>],
             [<ore:ingotElectricalSteel>,<enderio:item_power_conduit>,<ore:ingotElectricalSteel>]
         ]
+    ],
+    <enderio:item_yeta_wrench> : [
+        [
+            [<ore:ingotSteel>,null,<ore:ingotSteel>],
+            [null,<ore:gearStone>,null],
+            [null,<ore:ingotSteel>,null]
+        ]
     ]
 };
 

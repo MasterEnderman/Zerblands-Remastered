@@ -52,7 +52,8 @@ AtomicReconstructor.addRecipe(<minecraft:clay_ball>, <earthworks:item_lime_plast
 
 Compactor.removeStorageRecipe(<minecraft:dye:4>);
 
-calc_basic(<minecraft:dragon_breath>,<botania:manaresource:15>, <botania:manaresource:9>);
+calc_basic(<minecraft:dragon_breath>, <botania:manaresource:15>, <botania:manaresource:9>);
+calc_basic(<minecraft:name_tag>, <tconstruct:pattern>, <minecraft:lead>);
 
 recipes.remove(<minecraft:ender_eye>);
 calc_basic(<minecraft:ender_eye>, <minecraft:ender_pearl>, <minecraft:blaze_powder>);

@@ -113,9 +113,13 @@ recipes.remove(<appliedenergistics2:part:120>);
 Extractor.addRecipe(<appliedenergistics2:part:120>, findFirstItemFromMod("thermalfoundation","ingot","invar"));
 
 recipes.remove(<appliedenergistics2:network_tool>);
+// recipes.addShapeless(<appliedenergistics2:network_tool>, [
+//     <appliedenergistics2:part:180>,<appliedenergistics2:material:23>,
+//     <enderio:item_yeta_wrench>,<metalchests:metal_chest:1>
+// ]);
 recipes.addShapeless(<appliedenergistics2:network_tool>, [
     <appliedenergistics2:part:180>,<appliedenergistics2:material:23>,
-    <enderio:item_yeta_wrench>,<metalchests:metal_chest:1>
+    <enderio:item_yeta_wrench>,<ore:chest>
 ]);
 
 recipes.remove(<appliedenergistics2:part:520>);

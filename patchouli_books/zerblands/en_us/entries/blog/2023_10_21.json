@@ -1,0 +1,17 @@
+{
+    "name": "2023-10-21",
+    "icon": "botania:manainkwell",
+    "category": "blog",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "2023-10-21",
+            "type": "default",
+            "text": "Yeah it's that time again. I finally managed to figure out what caused the issues I had with updating my private test server. Thank you Minecraft for being so horrible at what you're are. Now that I finally figured that out, I'm able to release a fix for it. Once that is done. I may continue working in the v2.3.0 version of the pack."
+        },
+        {
+            "type": "text",
+            "text": "So fingers crossed.<br>Thanks again for keep playing my modpack! I hope you're having a great time.<br>    Sincerely Enderman"
+        }
+    ]
+}
