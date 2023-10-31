@@ -1,0 +1,7 @@
+{
+    "name": "Storage Drawers",
+    "description": "Put your most frequently used items within convenient reach. <mark>Storage Drawers</> borrows ideas from Jabba and Bibliocraft, resulting in a highly functional, compact, and aesthetic storage solution that is meant to complement rather than replace those mods.",
+    "icon": "storagedrawers:drawer_key",
+    "sortnum": 0,
+    "parent":"patchouli:changes"
+}

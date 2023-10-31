@@ -1,0 +1,16 @@
+{
+	x: -12.0d,
+	y: 13.5d,
+	text: [
+		"Villages don't generate, but they may be useful later."
+	],
+	dependencies: [
+		"614ad1c3"
+	],
+	tasks: [{
+		uid: "c9d5ae7d",
+		type: "kill",
+		entity: "minecraft:villager",
+		value: 1L
+	}]
+}

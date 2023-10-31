@@ -274,13 +274,6 @@ recipes.remove(<extrautils2:pipe>);
 AlloySmelter.addRecipe(<extrautils2:pipe> * 3, [<embers:pipe>, <ore:ingotConductiveIron>, <embers:item_pipe>], 10000);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
-    <extrautils2:ingredients> : [
-        [
-            [<ore:dustRedstone>,<extrautils2:endershard>,<ore:dustRedstone>],
-            [<extrautils2:endershard>,<ore:gemAquamarine>,<extrautils2:endershard>],
-            [<ore:dustRedstone>,<extrautils2:endershard>,<ore:dustRedstone>]
-        ]
-    ],
     <extrautils2:ingredients:1> : [
         [
             [null,<extrautils2:ingredients>,null],
@@ -345,12 +338,6 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     ]
 };
 
-recipes.addShaped(<extrautils2:ingredients> * 4, [
-    [<ore:dustRedstone>,<extrautils2:endershard>,<ore:dustRedstone>],
-    [<extrautils2:endershard>,<astralsorcery:itemcraftingcomponent:4>,<extrautils2:endershard>],
-    [<ore:dustRedstone>,<extrautils2:endershard>,<ore:dustRedstone>]
-]);
-
 for key, value in recipeMapShaped {
 	var index as int = 0;    
     recipes.remove(key);
@@ -361,6 +348,39 @@ for key, value in recipeMapShaped {
         index += 1;
     }
 }
+
+var mapResonantingRedstoneCrystal as int[IItemStack][string] = {
+    "shard" : {
+        <extrautils2:endershard> : 1,
+        <contenttweaker:shard_tanzanite> : 2,
+        <contenttweaker:shard_amethyst> : 3,
+        <botanicadds:gaia_shard> : 4,
+        <morebees:nether_starfragment> : 5
+    },
+    "gem" : {
+        <astralsorcery:itemcraftingcomponent> : 1,
+        <astralsorcery:itemcraftingcomponent:4> : 2,
+        <contenttweaker:flawlessdiamond> : 3,
+        <contenttweaker:flawless_diamond_shard> : 4
+    }
+};
+
+var index as int = 0;
+
+recipes.remove(<extrautils2:ingredients>);
+
+for item_shard, amount_shard in mapResonantingRedstoneCrystal["shard"] {
+    for item_gem, amount_gem in mapResonantingRedstoneCrystal["gem"] {
+        var output as int = amount_shard * amount_gem;
+        recipes.addShaped("xu2_resonating_crystal_" + index, <extrautils2:ingredients> * output, [
+            [<ore:dustRedstone>,item_shard,<ore:dustRedstone>],
+            [item_shard,item_gem,item_shard],
+            [<ore:dustRedstone>,item_shard,<ore:dustRedstone>]
+        ]);
+        index += 1;
+    }
+}
+
 
 recipes.remove(<extrautils2:filter>);
 recipes.addShapeless(<extrautils2:filter>, [<extrautils2:filter>]); // clear nbt

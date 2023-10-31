@@ -1,6 +1,9 @@
 {
 	x: -12.0d,
-	y: 11.5d,
+	y: 9.5d,
+	text: [
+		"Some rituals require a living sacrifice. This means you need to have an adult animal within close proximity of the altar and pedestals. When the ritual starts, the target animal will begin to glow, and needs to die before the ritual ends. Failing to complete a ritual will trigger a Disruption, which is bad."
+	],
 	dependencies: [
 		"0d5834c5"
 	],

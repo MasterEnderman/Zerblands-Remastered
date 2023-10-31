@@ -1,6 +1,9 @@
 {
 	x: -8.0d,
 	y: 7.5d,
+	text: [
+		"The Dreadlands Infused Powerstone is located inside an Abyssal Stronghold, which can be found using Powerstone Trackers."
+	],
 	dependencies: [
 		"46b10295",
 		"f0439374"

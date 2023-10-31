@@ -2,6 +2,82 @@
 
 A Modpack for Minecraft 1.12.2
 
+## v2.2.10 - Hotfix XVI
+
+### Added Mods
+
+- Aerial Affinity
+- Athenaeum
+- Cake Chomps
+- Classic Bars
+- Dropt
+- Enhanced P2P
+- Equipment Tooltips
+- MAtmos (incl. MAtmos 2020 "Zen")
+- More Default Options
+
+### Updated Mods
+
+- AE2 Unofficial Extended Life
+- CraftTweaker
+- Had Enough Items
+- MixinBooter
+- Neeve's AE2: Extended Life Additions
+- Red Core
+- Sledgehammer
+- Tinkers' Evolution
+- Valkyrie
+
+### Removed Mods
+
+- Armor Toughness Bar (replaced by Classic Bars)
+- Apple Skin (replaced by Classic Bars)
+- Overloaded Armor Bar (replaced by Classic Bars)
+- Power Chisels (item duplication)
+- Raw Input (causes too many issues for players who don't need it anyway)
+
+### Changes
+
+- added burn time to bee wax
+- added more fuels to boilers and the diesel generator
+- added a custom texture for xp bar
+- added a quest for the core sample drill
+- added a quest for the piercing vengeance focus
+- added a recipe for sulfur from blaze powder
+- added Abyssalcraft ores to the guide
+- added Aerial Affinity enchantment to EIO enchanter
+- added more recipes for the Resonating Redstone Crystal
+- added nether quartz processing to macerator
+- added recipes for more simple EIO machines
+- added recipes to add upgrade simple EIO machines
+- allowed Villagers in EIO Powered Spawners
+- enabled AstralAdditions Starmetal Armor
+- increased EIO capacitor bank output
+- made ancient motive cores recyclable
+- made the iChisel unbreakable
+- overwrote TP Ender Ore drop
+- tweaked the recipes of the DE Gates
+- tweaked the recipe of the DE Entity Detector
+
+### Bugfixes
+
+- fixed broken Vengeance Focus recipe
+- fixed IE Squeezer seed oil recipe preview
+- fixed missing furnace recipes for cobalt and ardite
+- fixed missing material system recipes
+- fixed missing propolis processing recipes
+- fixed weird text in main menu
+- fixed wrong entries in the ingame guide
+- removed EvilCraft book to prevent crashes
+
+### Known Issues
+
+- [Mod breaks Astral Sorcery Observatory](https://github.com/seanld03/RawInputMod-1.12.2-1.7.10/issues/5)
+- [Player gets kicked from server when stepping on a campfire](https://github.com/jbredwards/Campfire-Mod/issues/9)
+- [Log gets spammed with crash report (without a real crash)](https://github.com/ACGaming/ExtraSoundsLegacy/issues/19)
+- [Crash on server startup (Patchouli ROFL)](https://github.com/ISurrealI/Patchouli/issues/2)
+- [java.lang.NullPointerException in 1.12.2 (Ender Storage Continuation)](https://github.com/igentuman/EnderStorage-continuation/issues/6)
+
 ## v2.2.9 - Hotfix XV
 
 Thanks `Abyssal Moth` for your help with the player model glitch!

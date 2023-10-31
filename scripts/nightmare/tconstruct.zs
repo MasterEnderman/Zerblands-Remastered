@@ -20,8 +20,6 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import scripts.functions.calc_basic;
-
 import mods.actuallyadditions.Empowerer;
 import mods.botania.ManaInfusion;
 import mods.botania.RuneAltar;
@@ -39,6 +37,7 @@ import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Transposer;
 
+import scripts.functions.calc_basic;
 import scripts.functions.calc_atomic;
 
 JEI.removeAndHide(<tconstruct:throwball:1>);
@@ -53,9 +52,6 @@ Drying.removeRecipe(<tconstruct:materials:2>);
 Drying.addRecipe(<tconstruct:materials:2>, <contenttweaker:pressed_clay>, 600);
 
 Compressor.addRecipe(<tconstruct:spaghetti>,<actuallyadditions:item_food:7>);
-
-furnace.remove(<tconstruct:ingots>);
-furnace.remove(<tconstruct:ingots:1>);
 
 calc_atomic(<tconstruct:materials:50>,<minecraft:skull:3>,<ore:blockEnchantedMetal>,<quantumflux:craftingpiece:1>);
 

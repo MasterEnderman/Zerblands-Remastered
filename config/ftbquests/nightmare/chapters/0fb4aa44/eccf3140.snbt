@@ -2,7 +2,8 @@
 	x: 6.0d,
 	y: 5.5d,
 	text: [
-		"Early game \"flight\""
+		"Early game \"flight\"",
+		"\"Early Game\" if you ignore the required Blood Altar."
 	],
 	dependencies: [
 		"f544d38f"

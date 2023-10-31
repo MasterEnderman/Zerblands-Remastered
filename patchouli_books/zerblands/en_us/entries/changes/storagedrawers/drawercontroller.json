@@ -1,0 +1,14 @@
+{
+    "name": "Drawer Controller",
+    "icon": "storagedrawers:controller",
+    "category": "changes/storagedrawers",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "storagedrawers:controller",
+            "link_recipe": true,
+            "text": "Changed Rage to only be 8 Blocks in each direction."
+        }
+    ]
+}

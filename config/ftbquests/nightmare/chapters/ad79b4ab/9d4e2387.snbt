@@ -1,6 +1,9 @@
 {
-	x: -8.0d,
+	x: -10.0d,
 	y: 20.5d,
+	text: [
+		"Once you have both Altar pieces, you need to place them at Y40 inside a Dreadlands Mountain biome and rightclick it."
+	],
 	dependencies: [
 		"7b01d877"
 	],

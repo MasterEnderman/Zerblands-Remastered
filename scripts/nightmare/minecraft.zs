@@ -428,4 +428,4 @@ for amount, recipe_map in mapTorch {
     }
 }
 
-SagMill.addRecipe([<minecraft:flint>,<minecraft:stick>,<minecraft:feather>], [15,15,15], <minecraft:arrow>, "CHANCE_ONLY");
+SagMill.addRecipe([<minecraft:flint>,<minecraft:stick>,<minecraft:feather>], [0.15,0.15,0.15], <minecraft:arrow>, "CHANCE_ONLY");

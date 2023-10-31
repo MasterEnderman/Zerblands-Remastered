@@ -248,7 +248,7 @@ game.setLocalization("ac.ritual.vengeance_focus", "Vengance Focus");
 game.setLocalization("ac.ritual.vengeance_focus.desc", "Custom Recipe made for Nightmare Mode.");
 
 recipes.remove(<evilcraft:piercing_vengeance_focus>);
-InfusionRitual.addRitual("piercing_vengeance_focus", 3, 0, 40000, true, <evilcraft:piercing_vengeance_focus>, <evilcraft:vengeance_focus>, [
+InfusionRitual.addRitual("piercing_vengeance_focus", 3, 0, 40000, false, <evilcraft:piercing_vengeance_focus>, <evilcraft:vengeance_focus>, [
     <embers:caster_orb>,
     <actuallyadditions:item_more_damage_lens>,
     <ic2:itemtoolmininglaser>,

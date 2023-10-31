@@ -1,0 +1,17 @@
+{
+	x: 4.0d,
+	y: 18.5d,
+	text: [
+		"Finally a place to store all those xp."
+	],
+	dependencies: [
+		"30c3d493"
+	],
+	tasks: [{
+		uid: "42345640",
+		type: "item",
+		items: [{
+			item: "enderio:block_experience_obelisk"
+		}]
+	}]
+}

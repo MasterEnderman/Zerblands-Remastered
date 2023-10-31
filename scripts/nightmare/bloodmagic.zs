@@ -374,6 +374,7 @@ TartaricForge.addRecipe(<bloodmagic:component:10>, [<sonarcore:stablestone_norma
 // Tartaric Gem
 TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:gold_ingot>,<minecraft:glass>,<minecraft:dye:4>]);
 AlchemyArray.addRecipe(<bloodmagic:soul_gem>, <astralsorcery:itemperkseal>, <embers:inflictor_gem>, bloodmagicAlchemyArray["zombiebeacon"]);
+BloodAltar.addRecipe(<bloodmagic:soul_gem>, <contenttweaker:flawless_diamond_shard>, 4, 4000, 100, 50);
 
 // Demon Will Aura Gauge
 TartaricForge.removeRecipe([<minecraft:glass>,<minecraft:redstone>,<bloodmagic:item_demon_crystal>,<minecraft:gold_ingot>]);

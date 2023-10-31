@@ -22,6 +22,8 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.tconstruct.Casting;
 
+recipes.remove(<chisel:chisel_hitech>);
+
 recipes.remove(<chisel:brownstone>);
 Casting.addBasinRecipe(<chisel:brownstone>, <minecraft:sandstone>, <liquid:clay>, 576, true, 200);
 
@@ -38,7 +40,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<actuallyadditions:item_misc:3>,null]
         ]
     ],
-    <chisel:chisel_hitech> : [
+    <chisel:chisel_hitech>.withTag({Unbreakable:1}) : [
         [
             [<ic2:itemmisc:451>,<contenttweaker:enddiamond>],
             [<chisel:chisel_diamond:*>,<thermalfoundation:material:640>]

@@ -81,7 +81,10 @@ recipes.remove(<ore:dustLumium>);
 recipes.remove(<ore:dustEnderium>);
 
 furnace.remove(<ore:ingotUranium>);
-furnace.addRecipe(<ic2:itemmisc:180>,<ore:dustUranium>);
+furnace.addRecipe(<ic2:itemmisc:180>, <ore:dustUranium>);
+
+furnace.remove(<tconstruct:ingots>, <tconstruct:ore>);
+furnace.remove(<tconstruct:ingots:1>, <tconstruct:ore:1>);
 
 ArcFurnace.removeRecipe(<thermalfoundation:material:160>);
 ArcFurnace.addRecipe(<thermalfoundation:material:160>,<contenttweaker:reinforcediron_ingot>,<thermalfoundation:material:864>, 400, 512);
@@ -220,6 +223,8 @@ Saw.addRecipe(<bibliocraft:framingboard>  * 2, <bibliocraft:framingsheet>);
 
 Crusher.addRecipe(<enderio:item_material:30> * 2, <tconstruct:ore:1>, 2048);
 Crusher.addRecipe(<enderio:item_material:31> * 2, <tconstruct:ore>, 2048);
+
+Macerator.addRecipe(<appliedenergistics2:material:3>, <minecraft:quartz>);
 
 var mapWood as IItemStack[IItemStack] = {
     // minecraft

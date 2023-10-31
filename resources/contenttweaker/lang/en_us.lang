@@ -194,3 +194,10 @@ tile.polishedbasalt.name=Polished Basalt
 tile.polished_blackstone.name=Polished Blackstone
 tile.blackstone_bricks_slab.name=Blackstone Bricks Slab
 tile.smoothbasalt.name=Smooth Basalt
+
+# main menu
+menu.title=
+menu.akliz=
+menu.discord=
+menu.github=
+menu.refresh=

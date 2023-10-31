@@ -127,12 +127,11 @@ recipes.addShapeless(<appliedenergistics2:part:520>, [
 	<appliedenergistics2:part:380>,<minecraft:bucket>,<appliedenergistics2:material:22>
 ]);
 
-recipes.addShapeless(<appliedenergistics2:material:46>,[<tp:ender_dust>]);
-
 Macerator.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material>);
 
 recipes.remove(<appliedenergistics2:light_detector>);
 Casting.addTableRecipe(<appliedenergistics2:light_detector>, <ore:dustCertusQuartz>, <liquid:glass>, 1000, true, 200);
+Transposer.addFillRecipe(<appliedenergistics2:light_detector>, <appliedenergistics2:material:2>, <liquid:glass> * 1000, 2000);
 
 // SagMill.removeRecipe(<minecraft:clay>);
 furnace.remove(<appliedenergistics2:material:5>);

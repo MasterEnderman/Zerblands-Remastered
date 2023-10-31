@@ -20,6 +20,7 @@ import scripts.functions.findFirstItemFromMod;
 
 import mods.avaritia.ExtremeCrafting;
 import mods.jei.JEI;
+import mods.thermalexpansion.Centrifuge as TE_Centrifuge;
 
 JEI.addItem(<thermalexpansion:morb>);
 
@@ -52,3 +53,10 @@ recipes.addShaped(<thermalexpansion:capacitor:32000>, [
     [<contenttweaker:creative>,<thermalexpansion:capacitor:4>,<contenttweaker:creative>],
     [<avaritia:singularity:3>,<ic2:itemmisc:264>,<avaritia:singularity:3>]
 ]);
+
+TE_Centrifuge.addRecipe([
+    <thermalfoundation:material:771>%80,
+    <thermalfoundation:material:772>%40,
+    <embers:dust_ash>%60,
+    <contenttweaker:coal_dust>%20
+], <minecraft:blaze_powder>, null, 2000);

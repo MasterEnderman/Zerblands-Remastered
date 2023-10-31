@@ -1,0 +1,13 @@
+{
+    "name": "Abyssalnite Ore",
+    "icon": "abyssalcraft:abyore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "abyssalcraft:abyore",
+            "desc": "Abyssalnite can be found in the <overworld> in Darklands biomes below Y32."
+        }
+    ]
+}

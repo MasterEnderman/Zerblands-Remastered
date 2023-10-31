@@ -1,0 +1,22 @@
+{
+	x: -6.0d,
+	y: 21.5d,
+	text: [
+		"The deposits of Ore found around your world are nothing new to you. What you have so far left out of consideration though are mineral veins, which contain a mix of different ores. Due to their wide and thin spread, the average miner can't find them, but an Excavator from Immersive Engineering might be able to assist with that.",
+		"",
+		"To find and determine minerals in the world, you will want to craft a Core Sample Drill. Supply the machine with power and rightclick it or use redstone to activate it. It drills into the chunk and extracts a core sample which shows if and what mineral was found and its yield.",
+		"",
+		"Check the Engineer's Manual or JEI to get an overview of all veins."
+	],
+	dependencies: [
+		"f104aebf",
+		"95b74b5c"
+	],
+	tasks: [{
+		uid: "980ae312",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 7"
+		}]
+	}]
+}

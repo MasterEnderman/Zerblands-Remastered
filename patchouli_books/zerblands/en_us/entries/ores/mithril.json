@@ -1,0 +1,17 @@
+{
+    "name": "Mana Infused Ore",
+    "icon": "thermalfoundation:ore:8",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "thermalfoundation:ore:8",
+            "dim": "<overworld>",
+            "yMin": "5",
+            "yMax": "25",
+            "cSize": "4",
+            "cCount": "1"
+        }
+    ]
+}

@@ -24,6 +24,7 @@ import mods.abyssalcraft.Rituals;
 import mods.abyssalcraft.Transmutator;
 import mods.astralsorcery.Altar;
 import mods.bloodmagic.AlchemyTable;
+import mods.bloodmagic.BloodAltar;
 import mods.botania.ManaInfusion;
 import mods.botania.RuneAltar;
 import mods.enderio.SagMill;
@@ -41,6 +42,7 @@ JEI.removeAndHide(<abyssalcraft:materializer>);
 
 recipes.remove(<abyssalcraft:coralium>);
 recipes.remove(<abyssalcraft:crystallizer>);
+BloodAltar.addRecipe(<abyssalcraft:crystallizer>, <abyssalcraft:ingotblock:2>, 4, 50000, 500, 100);
 
 Crucible.addRecipe(<liquid:liquidantimatter> * 10, <appliedenergistics2:material:6>, 500000);
 Crucible.addRecipe(<liquid:liquidantimatter> * 1000, <ic2:itemmisc:202>, 500000);

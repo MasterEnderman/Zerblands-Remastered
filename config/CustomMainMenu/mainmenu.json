@@ -1,7 +1,7 @@
 {
     "buttons": {
         "title": {
-            "text": " ",
+            "text": "menu.title",
             "pressSound": "",
             "posX": -276,
             "posY": -120,
@@ -118,7 +118,7 @@
             }
         },
         "akliz": {
-            "text": " ",
+            "text": "menu.akliz",
             "hoverText": "I'm partnered with Akliz!",
             "pressSound": "minecraft:block.portal.ambient",
             "hoverTextColor": 11534512,
@@ -136,7 +136,7 @@
             }
         },
         "discord": {
-            "text": " ",
+            "text": "menu.discord",
             "pressSound": "minecraft:block.portal.ambient",
             "posX": 5,
             "posY": -70,
@@ -152,7 +152,7 @@
             }
         },
         "github": {
-            "text": " ",
+            "text": "menu.github",
             "pressSound": "minecraft:block.portal.ambient",
             "posX": 45,
             "posY": -70,
@@ -168,7 +168,7 @@
             }
         },
         "refresh": {
-            "text": " ",
+            "text": "menu.refresh",
             "pressSound": "minecraft:block.portal.ambient",
             "posX": -20,
             "posY": 0,

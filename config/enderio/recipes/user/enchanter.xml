@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+  <recipe name="Enchanter: aerialaffinity:aerial_affinity" required="false" disabled="false">
+    <enchanting>
+      <input name="xreliquary:angelic_feather" amount="1"/>
+      <enchantment name="aerialaffinity:aerial_affinity" costMultiplier="2"/>
+    </enchanting>
+  </recipe>
+</enderio:recipes>

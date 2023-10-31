@@ -1,6 +1,6 @@
 {
-	x: -8.0d,
-	y: 23.5d,
+	x: -2.0d,
+	y: 21.5d,
 	text: [
 		"Muliblocks made easy!",
 		"It supports many multiblocks by default. The rest will be added over time."

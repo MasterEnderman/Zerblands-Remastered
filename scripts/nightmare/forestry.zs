@@ -28,6 +28,7 @@ import mods.ic2.Extractor;
 import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.Mixer;
 import mods.immersiveengineering.Squeezer;
+import mods.immersivetechnology.MeltingCrucible;
 import mods.jei.JEI;
 import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.Transposer;
@@ -57,6 +58,12 @@ Crucible.addRecipe(<liquid:ice> * 500, <forestry:crafting_material:5>, 4000);
 Crucible.addRecipe(<liquid:for.honey> * 100, <forestry:honey_drop>, 4000);
 Crucible.addRecipe(<liquid:for.honey> * 100, <forestry:honeydew>, 4000);
 Crucible.addRecipe(<liquid:for.honey> * 100, <harvestcraft:honeyitem>, 4000);
+
+MeltingCrucible.addRecipe(<liquid:for.honey> * 100, <forestry:honey_drop>, 9600, 160);
+MeltingCrucible.addRecipe(<liquid:for.honey> * 100, <forestry:honeydew>, 9600, 160);
+MeltingCrucible.addRecipe(<liquid:for.honey> * 100, <harvestcraft:honeyitem>, 9600, 160);
+MeltingCrucible.addRecipe(<liquid:ice> * 500, <forestry:crafting_material:5>, 9600, 160);
+
 Squeezer.addRecipe(null, <liquid:for.honey> * 100, <harvestcraft:honeyitem>, 2048);
 
 var mapSeed as int[IIngredient] = {
@@ -76,7 +83,9 @@ Squeezer.removeFluidRecipe(<liquid:plantoil>);
 Squeezer.addRecipe(null, <liquid:plantoil> * 120, <immersiveengineering:seed>, 2048);
 
 for input, amount in mapSeed {
-    Squeezer.addRecipe(null, <liquid:seed.oil> * amount, input, 2048);
+    for item in input.items {
+        Squeezer.addRecipe(null, <liquid:seed.oil> * amount, item, 2048);
+    }
 }
 
 recipes.remove(<forestry:fertilizer_compound>);

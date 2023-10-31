@@ -18,6 +18,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.immersiveengineering.DieselHandler;
 import mods.immersiveengineering.Excavator;
 import mods.J0B10.tweaks.GardenCloche as GC;
 import mods.TweakedLib.TweakedPowerTier;
@@ -51,6 +52,23 @@ var listFluid as float[ILiquidStack] = {
 for fluid, multiplier in listFluid {
     GC.registerFluidFertilizer(fluid, multiplier);
 }
+
+// Additional Fuels for the Diesel Generator
+
+// DieselHandler.registerFuel(fluidBiodiesel, 125);
+// DieselHandler.registerFuel(FluidRegistry.getFluid("fuel"), 375);
+// DieselHandler.registerFuel(FluidRegistry.getFluid("diesel"), 175);
+// DieselHandler.registerDrillFuel(fluidBiodiesel);
+// DieselHandler.registerDrillFuel(FluidRegistry.getFluid("fuel"));
+// DieselHandler.registerDrillFuel(FluidRegistry.getFluid("diesel"));
+
+DieselHandler.addFuel(<liquid:refined_fuel>, 375);
+DieselHandler.addFuel(<liquid:refinedcanolaoil>, 125);
+DieselHandler.addFuel(<liquid:empoweredoil>, 250);
+
+DieselHandler.addDrillFuel(<liquid:refined_fuel>);
+DieselHandler.addDrillFuel(<liquid:refinedcanolaoil>);
+DieselHandler.addDrillFuel(<liquid:empoweredoil>);
 
 // Excavator Overhaul
 // Credit: https://github.com/voidsong-dragonfly/mechcanical-technology-rocketry/blob/93e5200062cec49604adb56a908c9c7fbf68105f/scripts/immersiveengineering/excavator.zs

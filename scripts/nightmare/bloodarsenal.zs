@@ -41,7 +41,7 @@ BloodInfuser.addRecipe(<evilcraft:golden_string>, <liquid:evilcraftblood>*10000,
 
 var dagger_sac as IItemStack = <bloodarsenal:glass_dagger_of_sacrifice>;
 recipes.remove(<bloodarsenal:gem:1>);
-ThermionicFabricator.addCast(<bloodarsenal:gem:1>, [
+ThermionicFabricator.addCast(<bloodarsenal:gem:1> * 4, [
     [<evilcraft:promise_acceptor:1>,<evilcraft:blood_orb:1>,<evilcraft:promise_acceptor:1>],
     [<bloodmagic:slate:1>,<bloodarsenal:gem:2>,<bloodmagic:slate:1>],
     [<evilcraft:promise_acceptor:1>,<evilcraft:blood_orb:1>,<evilcraft:promise_acceptor:1>]
@@ -49,7 +49,7 @@ ThermionicFabricator.addCast(<bloodarsenal:gem:1>, [
 
 var dagger_self_sac as IItemStack = <bloodmagic:dagger_of_sacrifice>;
 recipes.remove(<bloodarsenal:gem:0>);
-ThermionicFabricator.addCast(<bloodarsenal:gem:0>, [
+ThermionicFabricator.addCast(<bloodarsenal:gem:0> * 4, [
     [<evilcraft:promise_acceptor:1>,<evilcraft:blood_orb:1>,<evilcraft:promise_acceptor:1>],
     [<bloodmagic:slate:1>,<bloodarsenal:gem:2>,<bloodmagic:slate:1>],
     [<evilcraft:promise_acceptor:1>,<evilcraft:blood_orb:1>,<evilcraft:promise_acceptor:1>]

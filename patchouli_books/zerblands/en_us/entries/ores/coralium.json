@@ -1,0 +1,13 @@
+{
+    "name": "Coralium Ore",
+    "icon": "abyssalcraft:coraliumore",
+    "category": "ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "ore",
+            "ore": "abyssalcraft:coraliumore",
+            "desc": "Can be found in the <overworld> in ocean and swamp biomes. Large amounts of gems can be used to create Coralium Chunks, which can be smelted down for Refined Coralium Ingots."
+        }
+    ]
+}

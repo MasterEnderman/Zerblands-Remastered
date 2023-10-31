@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.immersivetechnology.Boiler;
+import mods.immersivetechnology.HeatExchanger;
 import mods.immersivetechnology.MeltingCrucible;
 import mods.thermalexpansion.Crucible;
 
@@ -30,7 +31,10 @@ Crucible.addRecipe(<liquid:moltensalt> * 100, <harvestcraft:saltitem>, 10000);
 MeltingCrucible.addRecipe(<liquid:moltensalt> * 100, <harvestcraft:saltitem>, 9600, 160);
 MeltingCrucible.addRecipe(<liquid:stone> * 288, <tconstruct:soil>, 8000, 160);
 
-// oiler.addFuel(ILiquidStack input, int time, double heat);
+// addRecipe(ILiquidStack outputFluid0, ILiquidStack outputFluid1, ILiquidStack inputFluid0, ILiquidStack inputFluid1, int energy, int time)
+HeatExchanger.addRecipe(<liquid:highpressuresteam> * 500, <liquid:lava> * 80, <liquid:steam> * 500, <liquid:pyrotheum> * 80, 640, 10);
+
+// Boiler.addFuel(ILiquidStack input, int time, double heat);
 Boiler.removeFuel(<liquid:gasoline>);
 Boiler.removeFuel(<liquid:diesel>);
 Boiler.removeFuel(<liquid:biodiesel>);
@@ -39,6 +43,11 @@ Boiler.addFuel(<liquid:diesel> * 70, 10, 10);
 Boiler.addFuel(<liquid:biodiesel> * 100, 10, 10);
 Boiler.addFuel(<liquid:gasoline> * 200, 10, 10);
 Boiler.addFuel(<liquid:creosote> * 250, 10, 10);
+
+Boiler.addFuel(<liquid:coal> * 100, 10, 10);
+Boiler.addFuel(<liquid:refined_fuel> * 80, 10, 20);
+Boiler.addFuel(<liquid:refinedcanolaoil> * 80, 10, 10);
+Boiler.addFuel(<liquid:empoweredoil> * 80, 10, 20);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <immersivetech:metal_trash> : [

@@ -50,6 +50,16 @@ var mapComb as WeightedItemStack[][IItemStack] = {
         <morebees:propoliscrystal>%50,
         <forestry:honey_drop>%50
     ],
+    <morebees:propolismetallic> : [
+        <forestry:propolis>%30,
+        <morebees:grainmetallic>%60,
+        <morebees:grainmetallic>%30
+    ],
+    <morebees:propoliscrystal> : [
+        <forestry:propolis>%30,
+        <morebees:graincrystal>%60,
+        <morebees:graincrystal>%30
+    ]
 };
 
 for comb, drops in mapComb {

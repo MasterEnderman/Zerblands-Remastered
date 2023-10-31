@@ -1,0 +1,14 @@
+{
+	x: -8.0d,
+	y: 10.5d,
+	dependencies: [
+		"ea695eaf"
+	],
+	tasks: [{
+		uid: "c6441384",
+		type: "item",
+		items: [{
+			item: "evilcraft:piercing_vengeance_focus"
+		}]
+	}]
+}

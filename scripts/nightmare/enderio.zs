@@ -39,10 +39,8 @@ import mods.thermalexpansion.Transposer;
 import scripts.functions.calc_basic;
 import scripts.functions.calc_flawless;
 
-JEI.removeAndHide(<enderio:block_simple_furnace>);
 JEI.removeAndHide(<enderio:block_simple_sag_mill>);
 JEI.removeAndHide(<enderio:block_simple_stirling_generator>);
-JEI.removeAndHide(<enderio:block_simple_crafter>);
 JEI.removeAndHide(<enderio:block_simple_wired_charger>);
 
 JEI.removeAndHide(<enderio:item_endergy_conduit>);
@@ -62,7 +60,7 @@ var capacitorT2 as IIngredient = <enderio:item_basic_capacitor:1>|<enderio:item_
 var capacitorT3 as IIngredient = <enderio:item_basic_capacitor:2>|<enderio:item_capacitor_vivid>;
 
 // Nether Cotta
-# AlloySmelter.removeRecipe(<enderio:item_material:72>);
+// AlloySmelter.removeRecipe(<enderio:item_material:72>);
 AlloySmelter.addRecipe(<enderio:item_material:72>, [<minecraft:netherbrick>,<contenttweaker:crushed_nether_wart>,<contenttweaker:fireclay_brick>], 5000);
 
 // Conductive Iron
@@ -260,6 +258,11 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:itemSilicon>,<evilcraft:exalted_crafter:1>,<ore:itemSilicon>],
             [<opencomputers:material:7>,<forestry:worktable>,<opencomputers:material:7>],
             [<enderio:item_material:11>,<enderio:item_material:1>,<enderio:item_material:11>]
+        ],
+        [
+            [<enderio:item_material:2>,<enderio:item_material:2>,<enderio:item_material:2>],
+            [<enderio:item_material:2>,<enderio:block_simple_crafter>,<enderio:item_material:2>],
+            [<enderio:item_material:2>,<enderio:item_material:2>,<enderio:item_material:2>]
         ]
     ],
     <enderio:block_sag_mill> : [
@@ -273,6 +276,11 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
         [
             [<immersiveengineering:metal_device1:1>,<ic2:reactorventspread>,<immersiveengineering:metal_device1:1>],
             [<enderio:block_simple_alloy_smelter>,<enderio:item_material:1>,<enderio:block_simple_alloy_smelter>],
+            [<ore:gearDark>,<thermalfoundation:material:513>,<ore:gearDark>]
+        ],
+        [
+            [<immersiveengineering:metal_device1:1>,<enderio:block_simple_furnace>,<immersiveengineering:metal_device1:1>],
+            [<enderio:block_simple_furnace>,<enderio:item_material:1>,<enderio:block_simple_furnace>],
             [<ore:gearDark>,<thermalfoundation:material:513>,<ore:gearDark>]
         ]
     ],
@@ -358,6 +366,20 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:ingotSteel>,null,<ore:ingotSteel>],
             [null,<ore:gearStone>,null],
             [null,<ore:ingotSteel>,null]
+        ]
+    ],
+    <enderio:block_simple_crafter> : [
+        [
+            [<ore:ingotCrudeSteel>,<botania:opencrate:1>,<ore:ingotCrudeSteel>],
+            [<immersiveengineering:conveyor>,<enderio:item_material>,<immersiveengineering:conveyor>],
+            [<ore:gearIronInfinity>,<thermalfoundation:material:513>,<ore:gearIronInfinity>]
+        ]
+    ],
+    <enderio:block_simple_furnace> : [
+        [
+            [<ore:ingotCrudeSteel>,<ic2:blockmachinelv:1>,<ore:ingotCrudeSteel>],
+            [<immersiveengineering:metal_device1:1>,<enderio:item_material>,<immersiveengineering:metal_device1:1>],
+            [<ore:ingotCrudeSteel>,<thermalfoundation:material:513>,<ore:ingotCrudeSteel>]
         ]
     ]
 };
@@ -497,7 +519,7 @@ Altar.addConstellationAltarRecipe("soulless_chassis", <enderio:item_material:55>
     <enderio:block_industrial_insulation>
 ]);
 
-SoulBinder.addRecipe(<enderio:item_material:54>,<enderio:item_material:55>,["minecraft:silverfish","evilcraft:netherfish"], 50000, 1725);
+SoulBinder.addRecipe(<enderio:item_material:54>,<enderio:item_material:55>,["minecraft:silverfish","evilcraft:netherfish"], 50000, 100);
 
 recipes.remove(<enderio:item_material:66>);
 Altar.addTraitAltarRecipe("endsteel_chassis", <enderio:item_material:66>, 4500, 100, [
@@ -688,7 +710,7 @@ AlloySmelter.addRecipe(<enderio:item_material:75>,[<enderio:item_material:20>,<e
 
 recipes.remove(<enderio:item_material:38>);
 recipes.addShapeless(<enderio:item_material:38> * 3,[
-    <contenttweaker:material_part:94>,
+    <ore:dustApatite>,
     <extrautils2:ingredients:3>,
     <contenttweaker:lithium_dust>,
     <enderio:block_holier_fog>,

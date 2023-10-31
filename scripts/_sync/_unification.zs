@@ -21,6 +21,7 @@ import scripts.functions.firstItemFromOreDict;
 import scripts.functions.itemMS;
 
 import mods.avaritia.ExtremeCrafting;
+import mods.dropt.Dropt;
 import mods.embers.Melter;
 import mods.embers.Stamper;
 import mods.enderio.SagMill;
@@ -104,6 +105,17 @@ import mods.tconstruct.Melting;
 <ore:barsDarkSteel>.add(<enderio:block_dark_iron_bars>);
 <ore:barsEndSteel>.add(<enderio:block_end_iron_bars>);
 
+// recipes.addShapeless(<appliedenergistics2:material:46>,[<tp:ender_dust>]);
+
+Dropt.list("dropt")
+    .priority(0)
+    .add(Dropt.rule()
+        .matchDrops([<tp:ender_dust>])
+        .addDrop(Dropt.drop()
+            .items([<appliedenergistics2:material:46>])
+            .matchQuantity([<tp:ender_dust>])
+        )
+    );
 
 recipes.remove(<enderio:item_material:9>);
 recipes.remove(<enderio:item_material:10>);
@@ -275,6 +287,9 @@ furnace.setFuel(<contenttweaker:coal_dust>,1000);
 furnace.setFuel(<contenttweaker:red_coal>, 16000);
 furnace.setFuel(<contenttweaker:coke_pellet>, 200);
 
+furnace.setFuel(<forestry:beeswax>,800);
+furnace.setFuel(<forestry:refractory_wax>,2400);
+
 var materialSystem as string[string] = {
     "antimony" : "antimony",
     "batteryAlloy" : "battery_alloy",
@@ -308,6 +323,10 @@ for material, fluid in materialSystem {
     Crucible.addRecipe(getFluid(fluid)*144, itemMS("ingot",material), 4000);
     Crucible.addRecipe(getFluid(fluid)*144, itemMS("dust",material), 2000);
     Crucible.addRecipe(getFluid(fluid)*1296,itemMS("block",material), 32000);
+
+    if (material != "ferromagneticAlloy") {
+        SagMill.addRecipe([itemMS("dust",material)], [100],  itemMS("ingot",material), "NONE", 2000);
+    }
 }
 
 Melting.addRecipe(<liquid:gold>*16*8, <minecraft:golden_carrot>, 395);

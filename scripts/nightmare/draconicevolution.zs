@@ -149,7 +149,28 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<draconicevolution:wyvern_sword>,<enderio:block_killer_joe>,<draconicevolution:wyvern_sword>],
             [<enderio:item_material:68>,<contenttweaker:block_machine_hv>,<enderio:item_material:68>]
         ]
-    ]
+    ],
+    <draconicevolution:flow_gate> : [
+        [
+            [<ore:plateTungsten>,<draconicevolution:potentiometer>,<ore:plateTungsten>],
+            [<thermaldynamics:duct_0:4>,<energycontrol:item_component:2>,<thermaldynamics:duct_0:4>],
+            [<ore:plateTungsten>,<immersiveengineering:material:27>,<ore:plateTungsten>]
+        ]
+    ],
+    <draconicevolution:flow_gate:8> : [
+        [
+            [<ore:plateTungsten>,<draconicevolution:potentiometer>,<ore:plateTungsten>],
+            [<thermaldynamics:duct_16:6>,<energycontrol:item_component:2>,<thermaldynamics:duct_16:6>],
+            [<ore:plateTungsten>,<immersiveengineering:material:27>,<ore:plateTungsten>]
+        ]
+    ],
+    <draconicevolution:entity_detector> : [
+        [
+            [<ore:dustRedstone>,<minecraft:ender_eye>,<ore:dustRedstone>],
+            [<immersiveengineering:material:27>,<enderio:item_material:40>,<immersiveengineering:material:27>],
+            [<ore:plateTungsten>,<energycontrol:item_component:2>,<ore:plateTungsten>]
+        ]
+    ],
 };
 
 for key, value in recipeMapShaped {

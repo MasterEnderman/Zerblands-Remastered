@@ -24,6 +24,7 @@ import mods.astralsorcery.Altar;
 import mods.embers.Alchemy;
 import mods.embers.Mixer;
 import mods.enderio.AlloySmelter;
+import mods.enderio.SagMill;
 import mods.extrautils2.Resonator;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.MetalPress;
@@ -206,3 +207,5 @@ Mixer.add(<liquid:dawnstone> * 12, [
 AlloySmelter.addRecipe(<embers:ashen_cloth>, [<ore:blockRockwool>,<ore:dustAsh>,<ore:string>], 25000);
 AlloySmelter.addRecipe(<embers:ingot_dawnstone>, [<ore:ingotBronze>,<ore:ingotConstantan>,<ore:ingotAlubrass>], 25000);
 AlloySmelter.addRecipe(<embers:archaic_brick> * 3, [<embers:archaic_brick>,<minecraft:soul_sand>,<minecraft:clay_ball>], 25000);
+
+SagMill.addRecipe([<embers:shard_ember>,<embers:archaic_brick> * 2,<embers:archaic_brick> * 2], [0.80,0.30,0.15], <embers:ancient_motive_core>, "CHANCE_ONLY");
