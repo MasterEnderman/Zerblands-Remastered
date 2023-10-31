@@ -45,6 +45,12 @@ If you aren't located in the [US](https://www.akliz.net/enderman), Akliz now off
 
 `Zerberus1979` - a close friend of mine, who motivated me to start with the Zerblands modpack in the first place
 
+- [Underworld - Discord](https://discord.gg/tZgppPC2pa)
+
 `Rongmario` and the people behind `CleanroomMC` - for keeping modded 1.12 alive and still offer improvements for it
 
-`Desoroxxx` and his `Opticraft` [project](https://red-studio-ragnarok.github.io/Opticraft/) - for his complete guide for an optimized 1.12 modded experience
+- [Cleanroom - Discord](https://discord.gg/f2K4aSpG4F)
+
+`Desoroxxx` and her `Opticraft` [project](https://red-studio-ragnarok.github.io/Opticraft/) - for her complete guide for an optimized 1.12 modded experience
+
+- [Red Studio - Discord](https://discord.gg/hKpUYx7VwS)
