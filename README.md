@@ -24,6 +24,11 @@ With **version 2.2.7** the available block IDs will be completely used up and I 
 
 With **version 2.3.0** the `Nightmare Mode` will become the default mode as the now called `Legacy Mode` won't get any further updates (besides bug fixes). I'm still working on fixing the balance for some parts of the end game as I slowly approach it in my own playthrough. If you have any feedback feel free to open an issue on github. :) Furthermore version 2.3.0 will break any worlds created in an older version, so I recommend finishing your playthrough, before updating to version 2.3.0 otherwise you will lose all of your progress as I will clean up a lot of block ids, which breaks compatibility with older worlds. Another feature of version 2.3.0 will be an extended midgame, with more mods integrated into the overall progression. Stay tuned for further updates!
 
+## Installation Guides
+
+- [English](INSTALLATION_ENG.md)
+- [German](INSTALLATION_GER.md)
+
 ## Pack-Developer
 
 `_MasterEnderman_` - Project-Manager, Lead-Artist, Developer
@@ -51,6 +56,6 @@ If you aren't located in the [US](https://www.akliz.net/enderman), Akliz now off
 
 - [Cleanroom - Discord](https://discord.gg/f2K4aSpG4F)
 
-`Desoroxxx` and her `Opticraft` [project](https://red-studio-ragnarok.github.io/Opticraft/) - for her complete guide for an optimized 1.12 modded experience
+`Desoroxxx` aka `Luna Lage` and her `Opticraft` [project](https://red-studio-ragnarok.github.io/Opticraft/) - for her complete guide for an optimized 1.12 modded experience
 
 - [Red Studio - Discord](https://discord.gg/hKpUYx7VwS)
