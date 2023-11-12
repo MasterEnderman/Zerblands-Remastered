@@ -1,0 +1,27 @@
+{
+    "name": "Shaded Garden",
+    "icon": "harvestcraft:shadedgarden",
+    "category": "documentation/harvestcraft",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "garden",
+            "garden": "harvestcraft:shadedgarden",
+            "o1": "harvestcraft:beanitem",
+            "o2": "harvestcraft:blackberryitem",
+            "o3": "harvestcraft:garlicitem",
+            "o4": "harvestcraft:juteitem",
+            "o5": "harvestcraft:leekitem",
+            "o6": "harvestcraft:radishitem",
+            "o7": "harvestcraft:rhubarbitem",
+            "o8": "harvestcraft:scallionitem",
+            "o9": "harvestcraft:spiceleafitem",
+            "o10": "harvestcraft:sweetpotatoitem",
+            "o11": "harvestcraft:tealeafitem",
+            "o12": "harvestcraft:tomatoitem",
+            "o13": "harvestcraft:turnipitem",
+            "o14": "harvestcraft:whitemushroomitem",
+            "o15": "harvestcraft:zucchiniitem"
+        }
+    ]
+}

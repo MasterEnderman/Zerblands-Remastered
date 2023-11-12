@@ -1,0 +1,19 @@
+{
+    "name": "Arid Garden",
+    "icon": "harvestcraft:aridgarden",
+    "category": "documentation/harvestcraft",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "garden",
+            "garden": "harvestcraft:aridgarden",
+            "o1": "harvestcraft:agaveitem",
+            "o2": "minecraft:cactus",
+            "o3": "harvestcraft:cactusfruititem",
+            "o4": "harvestcraft:cassavaitem",
+            "o5": "harvestcraft:chickpeaitem",
+            "o6": "harvestcraft:lentilitem",
+            "o7": "harvestcraft:sisalitem"
+        }
+    ]
+}

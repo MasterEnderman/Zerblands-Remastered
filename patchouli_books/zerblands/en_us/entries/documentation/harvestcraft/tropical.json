@@ -1,0 +1,26 @@
+{
+    "name": "Tropical Garden",
+    "icon": "harvestcraft:tropicalgarden",
+    "category": "documentation/harvestcraft",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "garden",
+            "garden": "harvestcraft:tropicalgarden",
+            "o1": "harvestcraft:arrowrootitem",
+            "o2": "harvestcraft:bambooshootitem",
+            "o3": "harvestcraft:cantaloupeitem",
+            "o4": "harvestcraft:coffeebeanitem",
+            "o5": "harvestcraft:curryleafitem",
+            "o6": "harvestcraft:eggplantitem",
+            "o7": "harvestcraft:gingeritem",
+            "o8": "harvestcraft:grapeitem",
+            "o9": "harvestcraft:kenafitem",
+            "o10": "harvestcraft:kiwiitem",
+            "o11": "harvestcraft:pineappleitem",
+            "o12": "harvestcraft:sesameseedsitem",
+            "o13": "harvestcraft:soybeanitem",
+            "o14": "harvestcraft:taroitem"
+        }
+    ]
+}

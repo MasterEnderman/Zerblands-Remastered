@@ -1,0 +1,27 @@
+{
+    "name": "Frost Garden",
+    "icon": "harvestcraft:frostgarden",
+    "category": "documentation/harvestcraft",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "garden",
+            "garden": "harvestcraft:frostgarden",
+            "o1": "harvestcraft:beetitem",
+            "o2": "harvestcraft:broccoliitem",
+            "o3": "harvestcraft:cabbageitem",
+            "o4": "harvestcraft:caulifloweritem",
+            "o5": "harvestcraft:celeryitem",
+            "o6": "harvestcraft:cottonitem",
+            "o7": "harvestcraft:huckleberryitem",
+            "o8": "harvestcraft:kohlrabiitem",
+            "o9": "harvestcraft:oatsitem",
+            "o10": "harvestcraft:peasitem",
+            "o11": "harvestcraft:quinoaitem",
+            "o12": "harvestcraft:raspberryitem",
+            "o13": "harvestcraft:rutabagaitem",
+            "o14": "harvestcraft:ryeitem",
+            "o15": "harvestcraft:spinachitem"
+        }
+    ]
+}

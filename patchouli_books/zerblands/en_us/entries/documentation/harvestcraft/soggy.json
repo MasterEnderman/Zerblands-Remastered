@@ -1,0 +1,28 @@
+{
+    "name": "Soggy Garden",
+    "icon": "harvestcraft:soggygarden",
+    "category": "documentation/harvestcraft",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "garden",
+            "garden": "harvestcraft:soggygarden",
+            "o1": "harvestcraft:asparagusitem",
+            "o2": "harvestcraft:blueberryitem",
+            "o3": "harvestcraft:brusselsproutitem",
+            "o4": "harvestcraft:cottonitem",
+            "o5": "harvestcraft:cranberryitem",
+            "o6": "harvestcraft:greengrapeitem",
+            "o7": "harvestcraft:jicamaitem",
+            "o8": "harvestcraft:kaleitem",
+            "o9": "harvestcraft:milletitem",
+            "o10": "harvestcraft:mulberryitem",
+            "o11": "harvestcraft:okraitem",
+            "o12": "harvestcraft:riceitem",
+            "o13": "harvestcraft:seaweeditem",
+            "o14": "harvestcraft:spiceleafitem",
+            "o15": "harvestcraft:tomatilloitem",
+            "o16": "harvestcraft:waterchestnutitem"
+        }
+    ]
+}

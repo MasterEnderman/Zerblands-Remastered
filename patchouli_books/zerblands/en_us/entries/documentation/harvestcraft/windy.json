@@ -1,0 +1,35 @@
+{
+    "name": "Windy Garden",
+    "icon": "harvestcraft:windygarden",
+    "category": "documentation/harvestcraft",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "garden",
+            "garden": "harvestcraft:windygarden",
+            "o1": "harvestcraft:amaranthitem",
+            "o2": "harvestcraft:artichokeitem",
+            "o3": "harvestcraft:barleyitem",
+            "o4": "harvestcraft:bellpepperitem",
+            "o5": "harvestcraft:chilipepperitem",
+            "o6": "harvestcraft:cornitem",
+            "o7": "harvestcraft:cucumberitem",
+            "o8": "harvestcraft:elderberryitem",
+            "o9": "harvestcraft:flaxitem",
+            "o10": "harvestcraft:lettuceitem",
+            "o11": "harvestcraft:mustardseedsitem",
+            "o12": "harvestcraft:onionitem",
+            "o13": "harvestcraft:parsnipitem",
+            "o14": "harvestcraft:peanutitem",
+            "o15": "harvestcraft:strawberryitem",
+            "o16": "harvestcraft:wintersquashitem"
+        },
+        {
+            "type": "garden",
+            "garden": "harvestcraft:windygarden",
+            "o1": "minecraft:carrot",
+            "o2": "minecraft:potato",
+            "o3": "minecraft:wheat"
+        }
+    ]
+}
