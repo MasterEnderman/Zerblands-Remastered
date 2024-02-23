@@ -8,19 +8,19 @@
             "type": "spotlight",
             "item": "immersiveengineering:metal_device0",
             "link_recipe": true,
-            "text": "<li>Energy Transfer Rate: 64 RF/tick"
+            "text": "<li>Energy Input Rate: 256 RF/tick<li>Energy Output: 64 RF/tick"
         },
         {
             "type": "spotlight",
             "item": "immersiveengineering:metal_device0:1",
             "link_recipe": true,
-            "text": "<li>Energy Transfer Rate: 256 RF/tick"
+            "text": "<li>Energy Input Rate: 1024 RF/tick<li>Energy Output: 256 RF/tick"
         },
         {
             "type": "spotlight",
             "item": "immersiveengineering:metal_device0:2",
             "link_recipe": true,
-            "text": "<li>Energy Transfer Rate: 1024 RF/tick"
+            "text": "<li>Energy Input Rate: 4096 RF/tick<li>Energy Output: 1024 RF/tick"
         }
     ]
 }

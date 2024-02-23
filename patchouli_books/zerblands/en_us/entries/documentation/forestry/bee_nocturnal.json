@@ -1,0 +1,13 @@
+{
+    "name": "Bee Nocturnal",
+    "icon": "forestry:bee_queen_ge",
+    "category": "documentation/forestry",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Bee Nocturnal",
+            "type": "default",
+            "text": "Nocturnal queens work both day and night."
+        }
+    ]
+}

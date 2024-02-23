@@ -1,0 +1,13 @@
+{
+    "name": "Bee Fertility",
+    "icon": "forestry:bee_queen_ge",
+    "category": "documentation/forestry",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Bee Fertility",
+            "type": "default",
+            "text": "Fertility controls how many drones are spawned when the queen dies.<br>Possible offspring sizes:<li>1 Drone<li>2 Drones<li>3 Drones<li>4 Drones"
+        }
+    ]
+}

@@ -19,6 +19,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.avaritia.ExtremeCrafting;
+import mods.botania.ManaInfusion;
 
 //Creative ME Storage Cell
 ExtremeCrafting.addShaped("creative_me_storage_cell",<appliedenergistics2:creative_storage_cell>,[
@@ -43,3 +44,5 @@ recipes.addShaped(<appliedenergistics2:creative_energy_cell>, [
 <appliedenergistics2:crystal_seed>.addTooltip(format.red("*Won't grow, when thrown in water.*"));
 <appliedenergistics2:crystal_seed:600>.addTooltip(format.red("*Won't grow, when thrown in water.*"));
 <appliedenergistics2:crystal_seed:1200>.addTooltip(format.red("*Won't grow, when thrown in water.*"));
+
+ManaInfusion.addConjuration(<appliedenergistics2:material> * 2, <appliedenergistics2:material>, 2500);

@@ -199,7 +199,8 @@
   "ic2exprecipe_Grainy Capacitor__1": true,
   "ic2exprecipe_Fire Charge_": true,
   "item.contenttweaker.material_part_397086735": true,
-  "ic2exprecipe_Nether Quartz Dust_": true
+  "ic2exprecipe_Nether Quartz Dust_": true,
+  "ic2exprecipe_Ember Grit_": true
  },
  "extractor": {
   "item.coal_764578481": true,

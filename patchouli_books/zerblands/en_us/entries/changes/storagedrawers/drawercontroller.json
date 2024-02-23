@@ -8,7 +8,7 @@
             "type": "spotlight",
             "item": "storagedrawers:controller",
             "link_recipe": true,
-            "text": "Changed Rage to only be 8 Blocks in each direction."
+            "text": "Changed Rage to only be 7 Blocks in each direction."
         }
     ]
 }

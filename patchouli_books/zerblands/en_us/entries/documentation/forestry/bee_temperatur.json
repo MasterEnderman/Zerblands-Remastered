@@ -1,0 +1,18 @@
+{
+    "name": "Bee Temperature",
+    "icon": "forestry:bee_queen_ge",
+    "category": "documentation/forestry",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Bee Temperature",
+            "type": "default",
+            "text": "Queens have different requirements concerning the temperature rating of their biome. This attribute is locked with the species and cannot be changed. If the temperature of the current biome isn't matching their tolerance, the bee won't produce, but it also won't age."
+        },
+        {
+            "title": "Bee Temperature",
+            "type": "default",
+            "text": "The following temperatures exist:<li>Icy<li>Cold<li>Normal<li>Warm<li>Hot<li>Hellish"
+        }
+    ]
+}

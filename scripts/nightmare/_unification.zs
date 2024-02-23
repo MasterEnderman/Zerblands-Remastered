@@ -142,6 +142,7 @@ var mapSimpleAlloy as IItemStack[][IItemStack] = {
 };
 
 ArcFurnace.removeRecipe(findFirstItemFromMod("contenttweaker","ingot","redAlloy"));
+ArcFurnace.removeRecipe(findFirstItemFromMod("thermalfoundation","ingot","Bronze"));
 Kiln.removeRecipe(findFirstItemFromMod("contenttweaker","ingot","redAlloy"));
 furnace.remove(<minecraft:netherbrick>);
 recipes.remove(<immersivepetroleum:stone_decoration>);
@@ -157,6 +158,11 @@ for item, recipe in mapSimpleAlloy {
 simpleAlloy(findFirstItemFromMod("contenttweaker","ingot","batteryAlloy") * 5,findFirstItemFromMod("thermalfoundation","dust","lead") * 4,findFirstItemFromMod("contenttweaker","dust","antimony"));
 simpleAlloy(findFirstItemFromMod("contenttweaker","ingot","solderingAlloy") * 3,findFirstItemFromMod("thermalfoundation","dust","tin") * 2,findFirstItemFromMod("thermalfoundation","dust","lead"));
 simpleAlloy(findFirstItemFromMod("contenttweaker","ingot","redAlloy"),findFirstItemFromMod("thermalfoundation","dust","aluminum"),<minecraft:redstone> * 4);
+
+ArcFurnace.addRecipe(findFirstItemFromMod("thermalfoundation","ingot","Bronze") * 4, <ore:ingotTin>, null, 100, 512, [<ore:ingotCopper> * 3]);
+ArcFurnace.addRecipe(findFirstItemFromMod("thermalfoundation","ingot","Bronze") * 4, <ore:ingotTin>, null, 100, 512, [<ore:dustCopper> * 3]);
+ArcFurnace.addRecipe(findFirstItemFromMod("thermalfoundation","ingot","Bronze") * 4, <ore:dustTin>, null, 100, 512, [<ore:dustCopper> * 3]);
+ArcFurnace.addRecipe(findFirstItemFromMod("thermalfoundation","ingot","Bronze") * 1, <ore:dustBronze>, null, 100, 256);
 
 var mapSimpleCrush as IItemStack[IItemStack] = {
     <enderio:item_material:22> : <earthworks:item_adobe>,
@@ -185,9 +191,12 @@ var mapSimpleCrush as IItemStack[IItemStack] = {
     <enderio:item_capacitor_grainy> * 4 : <enderio:item_basic_capacitor:3>,
     <enderio:item_capacitor_grainy> * 6 : <enderio:item_basic_capacitor:4>,
     <minecraft:fire_charge> * 16 : <randomthings:lavacharm>,
+    <embers:dust_ember> : <embers:crystal_ember>,
 };
 
 Crusher.removeRecipe(<immersiveengineering:material:17>);
+Crusher.removeRecipe(<minecraft:sand>);
+Crusher.removeRecipe(<minecraft:clay_ball>);
 recipes.remove(<enderio:item_material:68>);
 recipes.remove(<enderio:item_material:69>);
 recipes.remove(<enderio:item_material:2>);
@@ -204,7 +213,7 @@ for output, input in mapSimpleCrush {
     XUCrusher.add(output, input);
 }
 
-SagMill.addRecipe([<contenttweaker:material_part:94>], [100], <forestry:apatite>, "NONE", 1000);
+SagMill.addRecipe([findFirstItemFromMod("contenttweaker","dust","apatite")], [100], <forestry:apatite>, "NONE", 1000);
 SagMill.addRecipe([<redstonearsenal:material>], [100], <redstonearsenal:material:32>, "NONE", 1000);
 SagMill.addRecipe([<redstonerepository:material>], [100], <redstonerepository:material:1>, "NONE", 1000);
 SagMill.addRecipe([<appliedenergistics2:material:45>], [100], <appliedenergistics2:sky_stone_block>, "NONE", 1000);
@@ -223,6 +232,8 @@ Saw.addRecipe(<bibliocraft:framingboard>  * 2, <bibliocraft:framingsheet>);
 
 Crusher.addRecipe(<enderio:item_material:30> * 2, <tconstruct:ore:1>, 2048);
 Crusher.addRecipe(<enderio:item_material:31> * 2, <tconstruct:ore>, 2048);
+
+Crusher.addRecipe(<actuallyadditions:item_dust:7> * 2, <actuallyadditions:block_misc:3>, 2048);
 
 Macerator.addRecipe(<appliedenergistics2:material:3>, <minecraft:quartz>);
 

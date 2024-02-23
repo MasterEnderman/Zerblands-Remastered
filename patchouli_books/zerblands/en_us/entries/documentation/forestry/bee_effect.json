@@ -1,0 +1,13 @@
+{
+    "name": "Bee Effect",
+    "icon": "forestry:bee_queen_ge",
+    "category": "documentation/forestry",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Bee Effect",
+            "type": "default",
+            "text": "Several bees have special effects, which can be activated inside their territory (usually 9x6x9)."
+        }
+    ]
+}

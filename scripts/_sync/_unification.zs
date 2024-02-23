@@ -97,6 +97,7 @@ import mods.tconstruct.Melting;
     <minecraft:green_shulker_box>,
     <minecraft:red_shulker_box>,
     <minecraft:black_shulker_box>,
+    <minecraft:ender_chest>
 ]);
 <ore:logWood>.add(<bloodarsenal:blood_infused_wooden_log>);
 <ore:plankWood>.add(<bloodarsenal:blood_infused_wooden_planks>);

@@ -277,6 +277,18 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ore:plankTreatedWood>,<harvestcraft:apiary>,<ore:plankTreatedWood>],
             [<ore:plankTreatedWood>,<ore:plankTreatedWood>,<ore:plankTreatedWood>]
         ]
+    ],
+    <forestry:alveary.plain> : [
+        [
+            [<forestry:crafting_material:6>,<forestry:crafting_material:6>,<forestry:crafting_material:6>],
+            [<forestry:crafting_material:6>,<forestry:impregnated_casing>,<forestry:crafting_material:6>],
+            [<forestry:crafting_material:6>,<forestry:crafting_material:6>,<forestry:crafting_material:6>]
+        ],
+        [
+            [<earthworks:item_timber>,<forestry:crafting_material:6>,<earthworks:item_timber>],
+            [<forestry:crafting_material:6>,<forestry:apiary>,<forestry:crafting_material:6>],
+            [<earthworks:item_timber>,<forestry:crafting_material:6>,<earthworks:item_timber>]
+        ]
     ]
 };
 

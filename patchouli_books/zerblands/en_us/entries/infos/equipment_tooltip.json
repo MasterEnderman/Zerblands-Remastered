@@ -1,0 +1,17 @@
+{
+    "name": "Equipment Tooltips",
+    "icon": "minecraft:iron_pickaxe",
+    "category": "infos",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "default",
+            "title": "Equipment Tooltips",
+            "text": "Equipment Tooltips does one thing: adds a row of icons and numbers above the tooltip for tools, swords, bows, armor, and other damageable items. Support for swords, bows, pickaxes, shovels, axes, hoes, shears, fishing rods, and more."
+        },
+        {
+            "type": "text",
+            "text": "If possible, the mod also compares the item you are looking at to your currently equipped one (the appropriate armor slot for armor, or your main hand for everything else). A green up arrow means the stat is higher than what you have, a red down arrow means lower, and a yellow dash means equal."
+        }
+    ]
+}

@@ -1,13 +1,13 @@
 {
     "name": "Resource Miner",
-    "icon": "environmentaltech:void_resource_miner_cont_6",
+    "icon": "environmentaltech:void_res_miner_cont_6",
     "category": "changes/environmentaltech",
     "read_by_default": true,
     "pages": [
         {
             "title": "Resource Miner",
             "type": "default",
-            "text": "<li>Tier 1: 2000000 RF / Block<li>Tier 2: 1800000 RF / Block<li>Tier 3: 1400000 RF / Block<li>Tier 4: 1000000 RF / Block<li>Tier 5: 800000 RF / Block<li>Tier 6: 600000 RF / Block"
+            "text": "<li>Tier 1: 80000 RF / Block<li>Tier 2: 60000 RF / Block<li>Tier 3: 40000 RF / Block<li>Tier 4: 20000 RF / Block<li>Tier 5: 10000 RF / Block<li>Tier 6: 5000 RF / Block"
         }
     ]
 }

@@ -1,0 +1,18 @@
+{
+    "name": "Bee Humidity Tolerance",
+    "icon": "forestry:bee_queen_ge",
+    "category": "documentation/forestry",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Bee Humidity Tolerance",
+            "type": "default",
+            "text": "Queens have different tolerances concerning the humidity rating of their biome. If the humidity of the current biome isn't matching their tolerance, the bee won't produce, but it also won't age."
+        },
+        {
+            "title": "Bee Temperature",
+            "type": "default",
+            "text": "The following tolerances currently exist:<li>None<li>Both 1<li>Both 2<li>Down 1<li>Down 2<li>Up 1<li>Up 2"
+        }
+    ]
+}

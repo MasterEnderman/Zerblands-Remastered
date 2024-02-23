@@ -1,0 +1,14 @@
+{
+    "name": "Multi Builder Tool",
+    "icon": "mbtool:mbtool",
+    "category": "infos",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "mbtool:mbtool",
+            "link_recipe": true,
+            "text": "Tired of building numerous structures by hand? Use MBTool!"
+        }
+    ]
+}

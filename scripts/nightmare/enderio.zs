@@ -27,6 +27,7 @@ import mods.enderio.SliceNSplice;
 import mods.enderio.SoulBinder;
 import mods.forestry.ThermionicFabricator;
 import mods.ic2.Macerator;
+import mods.immersiveengineering.AlloySmelter as Kiln;
 import mods.immersiveengineering.ArcFurnace;
 import mods.inworldcrafting.FluidToItem;
 import mods.jei.JEI;
@@ -151,10 +152,12 @@ recipes.remove(<enderio:item_basic_item_filter>);
 InductionSmelter.addRecipe(<enderio:item_basic_item_filter>, <extrautils2:filter>, <enderio:item_alloy_ingot> * 2, 2000);
 InductionSmelter.addRecipe(<enderio:item_basic_item_filter> * 4, <enderio:item_advanced_item_filter>, <enderio:item_alloy_ingot> * 2, 2000);
 InductionSmelter.addRecipe(<enderio:item_basic_item_filter>, <extrautils2:filter>, <minecraft:hopper>, 2000);
+Kiln.addRecipe(<enderio:item_basic_item_filter>, <extrautils2:filter>, <minecraft:hopper>, 200);
 
 recipes.remove(<enderio:item_fluid_filter>);
-InductionSmelter.addRecipe(<enderio:item_basic_item_filter>, <extrautils2:filterfluids>, <enderio:item_alloy_ingot> * 2, 2000);
-InductionSmelter.addRecipe(<enderio:item_basic_item_filter>, <extrautils2:filterfluids>, <minecraft:hopper>, 2000);
+InductionSmelter.addRecipe(<enderio:item_fluid_filter>, <extrautils2:filterfluids>, <enderio:item_alloy_ingot> * 2, 2000);
+InductionSmelter.addRecipe(<enderio:item_fluid_filter>, <extrautils2:filterfluids>, <minecraft:hopper>, 2000);
+Kiln.addRecipe(<enderio:item_fluid_filter>, <extrautils2:filterfluids>, <minecraft:hopper>, 200);
 
 recipes.remove(<enderio:item_material:51>);
 FluidToItem.transform(<enderio:item_material:51> * 2, <liquid:lubricant>, [
@@ -209,6 +212,13 @@ recipes.remove(<enderio:item_material:15>);
 Casting.removeTableRecipe(<enderio:item_material:15>);
 Casting.addTableRecipe(<enderio:item_material:15>, <actuallyadditions:item_crystal_empowered:4>, <liquid:vibrant_alloy>, 288, true, 200);
 InductionSmelter.addRecipe(<enderio:item_material:15>, <actuallyadditions:item_crystal_empowered:4>, <enderio:item_alloy_ingot:2> * 2, 40000);
+
+recipes.remove(<enderio:block_tele_pad>);
+recipes.addShaped(<enderio:block_tele_pad> * 9, [
+    [<ore:blockGlassHardened>,<ore:ingotVibrantAlloy>,<ore:blockGlassHardened>],
+    [<ore:ingotDarkSteel>,<enderio:block_travel_anchor>,<ore:ingotDarkSteel>],
+    [<ore:ingotDarkSteel>,capacitorT1,<ore:ingotDarkSteel>]
+]);
 
 var recipeMapShaped as IIngredient[][][][IItemStack] = {
     <enderio:item_material> : [

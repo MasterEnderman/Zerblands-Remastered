@@ -1,0 +1,13 @@
+{
+    "name": "Chat Calculator",
+    "icon": "contenttweaker:calculator",
+    "category": "infos",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "default",
+            "title": "Chat Calculator",
+            "text": "This mod allows you to evaluate math expressions in the Minecraft chat box. Type an <mark>=</> in chat, and follow it with the rest of your expression!"
+        }
+    ]
+}

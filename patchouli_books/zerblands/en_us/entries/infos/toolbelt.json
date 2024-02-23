@@ -1,0 +1,14 @@
+{
+    "name": "Tool Belt",
+    "icon": "toolbelt:belt",
+    "category": "infos",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "toolbelt:belt",
+            "link_recipe": true,
+            "text": "A belt to carry your tools in.<li>2 stock slots, upgradeable to 9 by combining with tool pouches in an anvil!<li>Quickly switch between tools using the handy Radial Menu!"
+        }
+    ]
+}

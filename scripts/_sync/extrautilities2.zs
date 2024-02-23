@@ -36,7 +36,7 @@ JEI.removeAndHide(<extrautils2:analogcrafter>);
 JEI.removeAndHide(<extrautils2:ingredients:4>);
 
 <extrautils2:drum>.addTooltip(format.green("Hold up to 16,000 mB."));
-<extrautils2:drum:1>.addTooltip(format.green("Hold up to 512,000 mB."));
+<extrautils2:drum:1>.addTooltip(format.green("Hold up to 256,000 mB."));
 <extrautils2:drum:2>.addTooltip(format.green("Hold up to 4,096,000 mB."));
 <extrautils2:drum:3>.addTooltip(format.green("Hold up to 65,536,000 mB."));
 

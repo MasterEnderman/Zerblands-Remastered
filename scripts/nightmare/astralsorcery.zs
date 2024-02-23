@@ -69,6 +69,12 @@ Altar.addDiscoveryAltarRecipe("internal/altar/grindstone", <astralsorcery:blockm
     <ore:stickWood>,  <ore:stickWood>, <ore:plankWood>
 ]);
 
+Altar.addDiscoveryAltarRecipe("blank_itemconstellationpaper", <astralsorcery:itemconstellationpaper>, 200, 200, [
+    <astralsorcery:itemcraftingcomponent:5>,<evilcraft:dark_stick>, <astralsorcery:itemcraftingcomponent:5>,
+    <astralsorcery:itemcraftingcomponent:5>, <botania:phantomink>, <astralsorcery:itemcraftingcomponent:5>,
+    <astralsorcery:itemcraftingcomponent:5>,  <evilcraft:dark_stick>, <astralsorcery:itemcraftingcomponent:5>
+]);
+
 Altar.addDiscoveryAltarRecipe("basic_altar", <astralsorcery:blockaltar>, 200, 200, [
     <astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>, <astralsorcery:blockmarble>,
     <astralsorcery:blockmarble>, <ore:craftingTableWood>, <astralsorcery:blockmarble>,

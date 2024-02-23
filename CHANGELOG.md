@@ -2,6 +2,71 @@
 
 A Modpack for Minecraft 1.12.2
 
+## v2.2.11 - Hotfix XVII
+
+### Added Mods
+
+- Integrated Computers
+- Legendary Tooltips
+- RLFoliage
+
+### Updated Mods
+
+- AbyssalCraft
+- AE2 Fluid Crafting Rework
+- AE2 Unofficial Extended Life
+- Alfheim Lighting Engine
+- CensoredASM
+- ConfigAnytime
+- Chunk Pregenerator
+- CraftTweaker
+- Earthworks Unofficial Extended Life
+- Ender Storage continuation
+- Energy Control
+- HammerLib
+- Immersive Technologie
+- Inventory Bogo Sorter
+- JourneyMap
+- MAtmos
+- MixinBooter
+- ModularUI
+- Multi Builder Tool
+- Multiblocked
+- Neeve's AE2: Extended Life Additions
+- Red Core
+- The One Probe Community Edition
+- Tinkers' Evolution
+- Universal Tweaks
+- VintageFix
+- Visual Ores
+
+### Removed Mods
+
+- Better Foliage
+- Redirectionor
+- SerilizationIsBad
+- Shut Up, Model Loader!
+
+### Changes
+
+- added an alternative recipe for Sentient Ingots
+- added a recipe for blank constellation papers
+- added a recipes for the basic EIO filters to the IE Alloy Kiln
+- added a new blog entry to the guide
+- decreased the amount of reflectors needed for the Solar Tower 230 -> 64
+- increased Embers Reservoir size
+- made Sulfuric Acid cheaper
+- removed the Unusing enchantment
+- tweaked IE Capacitor input
+
+### Bugfixes
+
+- fixed Apatite dust in SAG Mill
+- fixed EIO Fluid Filter recipe
+- fixed Environmental Tech guide entry
+- fixed IE Squeezer template in Multi Builder Tool (again)
+- fixed weird bronze recipe in the arc furnace
+
 ## v2.2.10 - Hotfix XVI
 
 ### Added Mods

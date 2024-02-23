@@ -33,6 +33,11 @@ recipes.addShaped(<immersiveengineering:material:14>,[[null,null,<ore:ingotSteel
 
 recipes.addShapeless(<immersiveengineering:seed>, [<ic2:itemmisc:158>,<ic2:itemmisc:158>]);
 
+recipes.addShapeless("immersiveengineering_metal_device0_reset",<immersiveengineering:metal_device0>,[<immersiveengineering:metal_device0>]);
+recipes.addShapeless("immersiveengineering_metal_device0_1_reset",<immersiveengineering:metal_device0:1>,[<immersiveengineering:metal_device0:1>]);
+recipes.addShapeless("immersiveengineering_metal_device0_2_reset",<immersiveengineering:metal_device0:2>,[<immersiveengineering:metal_device0:2>]);
+recipes.addShapeless("immersiveengineering_metal_device0_3_reset",<immersiveengineering:metal_device0:3>,[<immersiveengineering:metal_device0:3>]);
+
 var listFertilizer as float[IIngredient] = {
     <ic2:itemmisc:151> : 1.75,
     <ic2:itemmisc:157> : 2.75,
@@ -202,7 +207,7 @@ TweakedReservoir.registerReservoir("Hot Spring Water Reservoir", <liquid:hot_spr
 // Uncommon Fluids
 TweakedReservoir.registerReservoir("Liquified Coal Reservoir", <liquid:coal>, 2500000, 15000000, 0, 50, WEIGHT_UNCOMMON, POWER_TIER_2, [], DIM_STONE);
 TweakedReservoir.registerReservoir("Coralium Reservoir", <liquid:liquidcoralium>, 2500000, 15000000, 0, 50, WEIGHT_UNCOMMON, POWER_TIER_2, [], DIM_WASTE);
-TweakedReservoir.registerReservoir("Starlight Reservoir", <liquid:astralsorcery.liquidstarlight>, 2500000, 15000000, 0, 50, WEIGHT_UNCOMMON, POWER_TIER_2, [], [0], ["MOUNTAIN"]);
+TweakedReservoir.registerReservoir("Starlight Reservoir", <liquid:astralsorcery.liquidstarlight>, 2500000, 15000000, 0, 50, WEIGHT_UNCOMMON, POWER_TIER_2, [], [0], [], ["MOUNTAIN"]);
 
 // Rare Fluids
 

@@ -1,6 +1,6 @@
 {
-    "name": "squeezer",
-    "label": "Squeezer",
+    "name": "immersiveengineering_Squeezer",
+    "label": "IE Squeezer",
     "target-item": "immersiveengineering:tool",
   
     "input-types": {

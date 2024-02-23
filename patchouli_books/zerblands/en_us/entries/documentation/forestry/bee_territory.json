@@ -1,0 +1,13 @@
+{
+    "name": "Bee Territory",
+    "icon": "forestry:bee_queen_ge",
+    "category": "documentation/forestry",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Bee Territory",
+            "type": "default",
+            "text": "Territory is a mechanic utilized by bees. It is the area size in which bees search for their flower and use their innate effects. The rate of flower spreading in this area is increased. Alvearies boost the territory by a factor of 2, so the standard size of 9x6x9 changes to 18x12x18, centered on the Apiary/Alveary. The most common size is 9x6x9."
+        }
+    ]
+}

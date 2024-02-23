@@ -1,0 +1,25 @@
+{
+    "name": "2024-02-23",
+    "icon": "botania:manainkwell",
+    "category": "blog",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "2024-02-23",
+            "type": "default",
+            "text": "Greetings and welcome back to my modpack. Sorry for not publishing an update in so long. THere have been quite some unexpected events, that counted towards this delay. Mostly figuring out how to actually mod minecraft. Something I wanted to do for the longest time. One mod I forked and worked on since is Embers."
+        },
+        {
+            "type":"text",
+            "text":"I really wanted to replace Embers Rekindled with my own fork of it, but unfortunately I already encountered that world corruption bug with it again. I guess it's just another thing that has to be delayed until v2.3.0. Speaking of that version I almost want to start working on it, but that would probably mean that"
+        },
+        {
+            "type":"text",
+            "text":"version 2.2.* won't be supported anymore, which makes me quite sad as I'm currently hosting a server of that version on my private server. So it would break as well. No idea how things will work out, but it's definitely something I need to think about in the coming weeks / months as the current version of the pack"
+        },
+        {
+            "type":"text",
+            "text":"simply doesn't allow me the freedom I need to implement some of the features I have in mind. Anyway I hope you are having a great time with the pack and we will hear us again in a future update. :)"
+        }
+    ]
+}

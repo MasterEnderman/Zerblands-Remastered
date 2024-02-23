@@ -1,0 +1,13 @@
+{
+    "name": "Bee Rain Tolerant",
+    "icon": "forestry:bee_queen_ge",
+    "category": "documentation/forestry",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Bee Rain Tolerant",
+            "type": "default",
+            "text": "Rain tolerant bees will produce in spite of rain."
+        }
+    ]
+}

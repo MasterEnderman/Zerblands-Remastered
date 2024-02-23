@@ -1,0 +1,13 @@
+{
+    "name": "Bee Cave Dwelling",
+    "icon": "forestry:bee_queen_ge",
+    "category": "documentation/forestry",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Bee Cave Dwelling",
+            "type": "default",
+            "text": "Cave dwelling queens don't need to see the sky from their apiary."
+        }
+    ]
+}

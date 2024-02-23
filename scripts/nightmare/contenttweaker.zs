@@ -78,7 +78,7 @@ BloodAltar.addRecipe(<contenttweaker:runic_gear>, <thermalfoundation:material:23
 Distiller.addRecipe(<liquid:refined_life_essence> * 300, <liquid:lifeessence> * 100, <evilcraft:hardened_blood_shard>, 2048, 20, 0.1);
 Still.addRecipe(<liquid:refined_life_essence> * 300, <liquid:lifeessence> * 100, 20);
 
-Mixer.addRecipe(<liquid:sulfuric_acid>*100, <liquid:iron_chloride>*100, [<ore:dustSulfur>*4], 1024);
+Mixer.addRecipe(<liquid:sulfuric_acid>*100, <liquid:iron_chloride>*100, [<ore:dustSulfur>], 1024);
 
 PureDaisy.addRecipe(<sonarcore:stablestone_normal>, <contenttweaker:runestone>, 100);
 
@@ -444,6 +444,12 @@ for key, value in recipeMapShaped {
         index += 1;
     }
 }
+
+recipes.addShaped(<contenttweaker:cutting_head> * 2, [
+    [<ic2:itemmisc:303>,<ic2:itemmisc:303>,<ic2:itemmisc:303>],
+    [<ic2:itemmisc:303>,<ore:gearStone>,<ic2:itemmisc:303>],
+    [<ic2:itemmisc:303>,<ic2:itemmisc:303>,<ic2:itemmisc:303>]
+]);
 
 Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","plate","batteryAlloy"), <tconstruct:cast_custom:3>, <liquid:battery_alloy>, 144, false);
 Melting.addRecipe(getFluid("battery_alloy")*144, findFirstItemFromMod("contenttweaker","plate","batteryAlloy"), 550);

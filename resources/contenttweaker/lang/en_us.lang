@@ -169,6 +169,10 @@ enchantment.enderzoo.witherarrow.desc=[Description needs to be done]
 enchantment.enderzoo.witherweapon.desc=[Description needs to be done]
 enchantment.simplyjetpacks.fuel_efficiency.desc=[Description needs to be done]
 
+enchantment.walljump.walljump.desc=[Description needs to be done]
+enchantment.walljump.doublejump.desc=[Description needs to be done]
+enchantment.walljump.speedboost.desc=[Description needs to be done]
+
 # energy control fix
 
 msg.ec.InfoPanelEnergyEU=Energy: %s EU

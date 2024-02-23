@@ -21,6 +21,7 @@ import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
 import mods.bloodmagic.AlchemyTable;
+import mods.bloodmagic.TartaricForge;
 
 recipes.remove(<tconevo:material>);
 AlchemyTable.addRecipe(<tconevo:material>, [
@@ -31,3 +32,5 @@ AlchemyTable.addRecipe(<tconevo:material>, [
     <abyssalcraft:essence:2>,
     <botanicadds:gaia_shard>
 ], 10000, 100, 2);
+
+TartaricForge.addRecipe(<tconevo:metal:30>, [<tconevo:material>,<bloodmagic:demon_extras:10>], 16, 6);

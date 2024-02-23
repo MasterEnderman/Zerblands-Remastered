@@ -1,0 +1,22 @@
+{
+    "name": "Just Enough Calculation",
+    "icon": "jecalculation:item_calculator",
+    "category": "infos",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "jecalculation:item_calculator",
+            "link_recipe": true,
+            "text": "It is a simple calculator to help you calculate how many of resources you need to gather for certain items. You can manage tons of crafting procedures with the help of it. Actually it is designed for some mega packs to help you manage the crafting"
+        },
+        {
+            "type": "text",
+            "text": "things manually without drove mad by the crazy steps.<br>The mod adds an item called Crafting Calculator, right click with it in hand to open the GUI. Putting any item into the upper-left slot will let the calculator to calculate the cost."
+        },
+        {
+            "type": "text",
+            "text": "One thing to notice: You need to input the recipes needed for it to work since there might be many recipes for one item, automatically loading the recipe may lead to a mess."
+        }
+    ]
+}

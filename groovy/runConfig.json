@@ -1,6 +1,6 @@
 {
-  "packName": "",
-  "version": "1.0.0",
+  "packName": "Zerblands",
+  "version": "2.2.11",
   "debug": false,
   "loaders": {
     "preInit": [

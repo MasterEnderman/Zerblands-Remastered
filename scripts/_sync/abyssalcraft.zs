@@ -18,6 +18,7 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.abyssalcraft.Crystallizer;
 import mods.abyssalcraft.Rituals;
 import mods.abyssalcraft.Transmutator;
 import mods.botania.ManaInfusion;
@@ -52,6 +53,8 @@ Transmutator.addTransmutation(<earthworks:block_chalk>, <abyssalcraft:calcifieds
 <ore:coal>.remove(<abyssalcraft:charcoal>);
 furnace.remove(<abyssalcraft:charcoal>);
 InductionSmelter.addRecipe(<abyssalcraft:charcoal>, <abyssalcraft:crystal:3>, <abyssalcraft:crystal:14>, 3000);
+
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<forestry:phosphor>, <abyssalcraft:crystal:7> * 1, 0.5);
 
 var recipeMapShaped as IIngredient[][][IItemStack] = {
     <abyssalcraft:coraliumstone> : [

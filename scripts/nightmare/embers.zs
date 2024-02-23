@@ -25,6 +25,7 @@ import mods.embers.Alchemy;
 import mods.embers.Mixer;
 import mods.enderio.AlloySmelter;
 import mods.enderio.SagMill;
+import mods.enderio.SliceNSplice;
 import mods.extrautils2.Resonator;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.MetalPress;
@@ -209,3 +210,8 @@ AlloySmelter.addRecipe(<embers:ingot_dawnstone>, [<ore:ingotBronze>,<ore:ingotCo
 AlloySmelter.addRecipe(<embers:archaic_brick> * 3, [<embers:archaic_brick>,<minecraft:soul_sand>,<minecraft:clay_ball>], 25000);
 
 SagMill.addRecipe([<embers:shard_ember>,<embers:archaic_brick> * 2,<embers:archaic_brick> * 2], [0.80,0.30,0.15], <embers:ancient_motive_core>, "CHANCE_ONLY");
+
+SliceNSplice.addRecipe(<embers:mech_core>, [
+    <ore:ingotLead>,<immersiveengineering:material:8>,<ore:ingotLead>,
+    <ore:stickIron>,<ore:stickIron>,<ore:stickIron>
+], 10000);

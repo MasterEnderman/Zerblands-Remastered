@@ -317,7 +317,7 @@ recipes.remove(<appliedenergistics2:quartz_vibrant_glass>);
 InductionSmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>*2, <appliedenergistics2:quartz_glass>*2, <thermalfoundation:material:102>, 8192);
 
 Aggregator.removeRecipe(<appliedenergistics2:material:7>);
-Aggregator.addRecipe(<appliedenergistics2:material:7>, <appliedenergistics2:material:1>, <ore:dustQuartz>, <ore:dustRedstone>);
+Aggregator.addRecipe(<appliedenergistics2:material:7>*2, <appliedenergistics2:material:1>, <ore:dustQuartz>, <ore:dustRedstone>);
 Empowerer.addRecipe(<appliedenergistics2:material:7>*2, <appliedenergistics2:material:1>, <minecraft:redstone>, <ore:dustQuartz>, <minecraft:redstone>, <ore:dustQuartz>, 8192, 100, [0.7, 0.4, 0.9]);
 
 recipes.remove(<appliedenergistics2:material:9>);

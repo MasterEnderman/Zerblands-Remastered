@@ -1,0 +1,14 @@
+{
+    "name": "Torch Bandolier",
+    "icon": "torchbandolier:torch_bandolier",
+    "category": "infos",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "torchbandolier:torch_bandolier",
+            "link_recipe": true,
+            "text": "Torch Bandolier adds an item that stores a large number of torches and can place them."
+        }
+    ]
+}
