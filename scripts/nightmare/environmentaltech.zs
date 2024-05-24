@@ -66,35 +66,35 @@ var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
         1 : [
             [
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>],
-                [<environmentaltech:connector>,<openmodularturrets:turret_base>,<environmentaltech:connector>],
+                [<environmentaltech:connector>,<openmodularturrets:intermediate_tiered>,<environmentaltech:connector>],
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>]
             ]
         ],
         2 : [
             [
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>],
-                [<environmentaltech:connector>,<openmodularturrets:turret_base:1>,<environmentaltech:connector>],
+                [<environmentaltech:connector>,<openmodularturrets:intermediate_tiered:1>,<environmentaltech:connector>],
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>]
             ]
         ],
         4 : [
             [
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>],
-                [<environmentaltech:connector>,<openmodularturrets:turret_base:2>,<environmentaltech:connector>],
+                [<environmentaltech:connector>,<openmodularturrets:intermediate_tiered:2>,<environmentaltech:connector>],
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>]
             ]
         ],
         8 : [
             [
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>],
-                [<environmentaltech:connector>,<openmodularturrets:turret_base:3>,<environmentaltech:connector>],
+                [<environmentaltech:connector>,<openmodularturrets:intermediate_tiered:3>,<environmentaltech:connector>],
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>]
             ]
         ],
         16 : [
             [
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>],
-                [<environmentaltech:connector>,<openmodularturrets:turret_base:4>,<environmentaltech:connector>],
+                [<environmentaltech:connector>,<openmodularturrets:intermediate_tiered:4>,<environmentaltech:connector>],
                 [<immersivepetroleum:stone_decoration>,<valkyrielib:modifier_component>,<immersivepetroleum:stone_decoration>]
             ]
         ]

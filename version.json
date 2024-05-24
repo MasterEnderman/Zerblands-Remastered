@@ -72,7 +72,9 @@
 		}
 	}],
 	"changelogs": {
-		"2.2.10": [],
+		"2.2.12": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v229---hotfix-xviii"],
+		"2.2.11": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v229---hotfix-xvii"],
+		"2.2.10": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v229---hotfix-xvi"],
 		"2.2.9": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v229---hotfix-xv"],
 		"2.2.8": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v228---hotfix-xiv"],
 		"2.2.7": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v227---hotfix-xiii"],

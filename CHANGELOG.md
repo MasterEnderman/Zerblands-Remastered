@@ -2,6 +2,98 @@
 
 A Modpack for Minecraft 1.12.2
 
+## v2.2.12 - Hotfix XVIII
+
+NIGHTMARE MODE IS NOW THE DEFAULT PACKMODE!
+
+### Added Mods
+
+- Better Biome Blend
+- Condition Overload
+- Entity Culling
+- Forced Resourcepacks
+- Item Borders
+- Patchouli ROFL Edition
+- Raw Mouse Input - Blessed Edition
+- Rebirth of the Mobs
+- Sound Filters Continued
+- XU2-Patcher
+
+### Updated Mods
+
+- AE2 Fluid Crafting Rework
+- AE2 Unofficial Extended Life
+- Alfheim Lightning Engine
+- Aqua Acrobatics
+- Botaunomy Reloaded
+- CensoredASM
+- Chunk Pregenerator
+- ConfigAnytime
+- Controlling
+- CraftTweaker
+- Had Enough Items
+- HammerLib
+- IC2 Classic
+- Inventory Bogo Sorter
+- JourneyMap
+- Modern Splash
+- ModularUI
+- Neeve's AE2: Extended Life Additions
+- Not Enough Energistics
+- OpenComputers
+- Ore Visual Detector
+- Particle Culling
+- Red Core
+- RenderLib
+- RLFoliage
+- ScalingGUIs
+- Sledgehammer
+- The One Probe Community Edition
+- Tweaked Excavation
+- Tweaked Lib
+- Tweaked Petroleum
+- Universal Tweaks
+- Valkyrie
+- VintageFix
+
+### Removed Mods
+
+- Patchouli
+- Sound Filters
+
+### Changes
+
+- added a button for MMCReviews to the main menu
+- added a cheaper recipe for the Extreme Crafting Table after getting the first one
+- added fancy tooltips to most items
+- implemented Modded Legendary Tooltips Textures
+- tweaked recipe for AA Vertical Digger
+- tweaked recipe for CoT Stone Circuit Board
+- tweaked recipe for EIO Machine Chassis
+- tweaked recipe for EIO Simple Crafter
+- tweaked recipe for ET Interconnect
+- tweaked recipe for Enriched Sunnarium
+- tweaked recipe of the Gendustry Imprinter
+- updated README.md to include some player feedback
+
+### Bugfixes
+
+- fixed being unable to craft the first AS Table inside AS Altars
+- fixed bee breeding loop hole
+- fixed missing Red Alloy Wire recipe in the IC2C Extractor
+- fixed missing recipes for Treated Wood in the TE Fluid Transposer and IE Bottling Machine
+- fixed Melodic Alloy Arc Furnace recipe
+- fixed Quantum Quarry mining Bedrock
+- fixed slots in my custom workbench (f**k you IE for being an unmainted mess)
+- fixed a few typos in the ingame guide
+- fixed dirt melting in the Magma Crucible
+- fixed missing cleaning recipes for black ME cables
+- fixed EIO ME Conduit recipes
+- fixed Sodium Persulfate recipe
+- removed duplicated recipe for the Basic Cutting Head
+- removed empty IC2C Stone Mug recipe
+- removed silicon drop from SAG Milling Clay Blocks
+
 ## v2.2.11 - Hotfix XVII
 
 ### Added Mods

@@ -23,6 +23,8 @@ import scripts.functions.findFirstItemFromMod;
 import mods.forestry.Carpenter;
 import mods.thermalexpansion.Transposer;
 
+<redstonerepository:util.feeder>.addTooltip(format.red("[-DISABLED-]"));
+
 Transposer.removeFillRecipe(<minecraft:emerald>, <liquid:cryotheum>);
 Transposer.addFillRecipe(<redstonerepository:material:5>, <enderio:item_material:15>, <liquid:cryotheum> * 1000, 2500);
 

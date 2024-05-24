@@ -447,13 +447,14 @@ var smallMachine as IIngredient[][IItemStack] = {
     <actuallyadditions:block_miner:0> : [
         <actuallyadditions:block_crystal_empowered:3>,
         <thermalexpansion:frame:0>,
-        <actuallyadditions:item_drill:*>,
+        <environmentaltech:laser_lens:0>,
         <actuallyadditions:item_drill_upgrade_speed_iii:0>
     ]
 };
 
 for machine, recipe in smallMachine {
     recipes.remove(machine);
+    recipes.addShapeless(toString(machine)+"_reset_nbt", machine.withLore(["This will reset the NTB data."]), [machine]);
     Blueprint.addRecipe("machinery", machine, recipe);
 }
 

@@ -46,6 +46,7 @@ recipes.remove(<ic2:itemmisc:53>);
 recipes.remove(<ic2:itemmisc:252>);
 recipes.remove(<ic2:itemmisc:250>);
 recipes.remove(<ic2:blockminingpipe>);
+recipes.removeShapeless(<ic2:itemmisc:454>);
 <ore:blockCharcoal>.add(<ic2:blockmetal:12>);
 <ore:dustWheat>.add(<ic2:itemmisc:156>);
 

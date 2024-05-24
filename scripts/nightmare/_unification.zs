@@ -168,7 +168,7 @@ var mapSimpleCrush as IItemStack[IItemStack] = {
     <enderio:item_material:22> : <earthworks:item_adobe>,
     <contenttweaker:brick_dust> : <minecraft:brick>,
     <contenttweaker:brick_dust> * 4 : <minecraft:brick_block>,
-    <contenttweaker:soil> * 4 : <minecraft:dirt>,
+    <contenttweaker:soil> * 8 : <minecraft:dirt>,
     <contenttweaker:crushed_nether_wart> : <minecraft:nether_wart>,
     <contenttweaker:crushed_nether_wart> * 9 : <minecraft:nether_wart_block>,
     <contenttweaker:small_stone> : <botania:manaresource:21>,

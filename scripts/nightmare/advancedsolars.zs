@@ -36,7 +36,7 @@ recipes.remove(<advancedsolars:irradianturanium>);
 Empowerer.addRecipe(<advancedsolars:irradianturanium>, <ic2:itemmisc:60>, <advancedsolars:sunnariumpart>, <advancedsolars:sunnariumpart>, <advancedsolars:sunnariumpart>, <advancedsolars:sunnariumpart>, 500000, 100, [0.6, 0.9, 0.6]);
 
 recipes.remove(<advancedsolars:enrichedsunnarium>);
-Aggregator.addRecipe(<advancedsolars:enrichedsunnarium>, <advancedsolars:sunnarium>, <advancedsolars:irradianturanium>, <advancedsolars:sunnarium>);
+Aggregator.addRecipe(<advancedsolars:enrichedsunnarium>, <advancedsolars:sunnarium>, <advancedsolars:irradianturanium>, <ic2:itemmisc:181>);
 
 recipes.remove(<advancedsolars:irradiantreinforcedplate>);
 calc_atomic(<advancedsolars:irradiantreinforcedplate>, <advancedsolars:reinforcediridiumironplate>, <woot:prism>, <advancedsolars:sunnarium>);

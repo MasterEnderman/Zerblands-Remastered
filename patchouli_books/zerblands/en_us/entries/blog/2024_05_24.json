@@ -1,0 +1,21 @@
+{
+    "name": "2024-05-24",
+    "icon": "botania:manainkwell",
+    "category": "blog",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "2024-05-24",
+            "type": "default",
+            "text": "Yep, it's time for another update. This time it's mostly bugfixes and a few recipe tweaks. Thanks again to Fwengum on my discord for reporting most of them. This should also mark the last update before I really start working on 2.3.0, with the exception of one last bugfix update before that,"
+        },
+        {
+            "type":"text",
+            "text":"if something new comes up. Once 2.3.0 is published I'm basically done with the pack except more balance tweaks and bug fixes as I already have more then enough projects that need my attention. So it will be a great feeling to have something 'finished' for the most part."
+        },
+        {
+            "type":"text",
+            "text":"And who knows maybe there will be a day, where I have enough time to start working on the successor of <zerblands>. Anyway have a nice day and thank you for playing something I created. :)"
+        }
+    ]
+}

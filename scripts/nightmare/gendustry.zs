@@ -37,8 +37,8 @@ betterInscriber(<gendustry:bee_receptacle>, [<astralsorcery:itemcraftingcomponen
 
 Transposer.addFillRecipe(<gendustry:gene_template>, <advancedsolars:iridiumironplate>, <liquid:liquiddna> * 1000, 2000);
 
-KitAssembler.addRecipe(<evilcraft:environmental_accumulation_core>, <contenttweaker:terrasteelprocessor> * 2, <rftools:environmental_controller>, <gendustry:env_processor>, 100000);
-KitAssembler.addRecipe(<gendustry:labware> * 64, <threng:material:6> * 2, <abyssalcraft:transmutator>, <gendustry:genetics_processor>, 100000);
+KitAssembler.addRecipe(<evilcraft:environmental_accumulation_core>, <contenttweaker:terrasteelprocessor> * 2, <rftools:environmental_controller>, <gendustry:env_processor>, 10000);
+KitAssembler.addRecipe(<gendustry:labware> * 64, <threng:material:6> * 2, <abyssalcraft:transmutator>, <gendustry:genetics_processor>, 10000);
 
 var recipeMapShaped as IIngredient[][][][int][IItemStack] = {
     <gendustry:power_module> : {
@@ -220,6 +220,7 @@ var D as IIngredient = <ic2:itembatlamacrystal>; // Lapotron Crystal
 var L as IIngredient = <ic2:blockutility:3>; // Reinforced Glass
 var B as IIngredient = <ore:plateConstantan>;
 var A as IIngredient = <ore:gearEnergium>;
+var U as IIngredient = <ore:gearUUMatter>;
 var M as IIngredient = <gendustry:mutagen_tank>;
 var Z as IIngredient = <gendustry:genetics_processor>;
 var T as IIngredient = <gendustry:bee_receptacle>;
@@ -245,9 +246,9 @@ recipes.addShaped(<gendustry:liquifier> * 1, [
 ]);
 
 recipes.addShaped(<gendustry:replicator> * 1, [
-    [A,Z,A],
+    [U,Z,U],
     [P,O,P],
-    [A,Z,A]
+    [U,Z,U]
 ]);
 
 recipes.addShaped(<gendustry:transposer> * 1, [
@@ -263,15 +264,15 @@ recipes.addShaped(<gendustry:mutatron> * 1, [
 ]);
 
 recipes.addShaped(<gendustry:mutatron_advanced> * 1, [
-    [A,<ore:gemQuartz>,A],
+    [U,<ore:gemQuartz>,U],
     [Z,<gendustry:mutatron>,Z],
-    [A,<contenttweaker:advanced_powermodule>,A]
+    [U,<contenttweaker:advanced_powermodule>,U]
 ]);
 
 recipes.addShaped(<gendustry:imprinter> * 1, [
-    [A,Z,A],
+    [U,Z,U],
     [T,O,T],
-    [A,P,A]
+    [U,P,U]
 ]);
 
 recipes.addShaped(<gendustry:sampler> * 1, [

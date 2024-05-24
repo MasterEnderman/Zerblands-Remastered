@@ -135,6 +135,22 @@
                 "link": "https://www.akliz.net/enderman"
             }
         },
+        "mmcreview": {
+            "text": "menu.mmcreview",
+            "pressSound": "minecraft:block.portal.ambient",
+            "posX": 85,
+            "posY": -70,
+            "width": 105,
+            "height": 35,
+            "imageWidth": 201,
+            "imageHeight": 64,
+            "alignment": "bottom_left",
+            "texture": "zerblands:mainmenu/mmcreview.png",
+            "action": {
+                "type": "openLink",
+                "link": "https://mmcreviews.com/all/modpacks/zerblands-remastered/"
+            }
+        },
         "discord": {
             "text": "menu.discord",
             "pressSound": "minecraft:block.portal.ambient",

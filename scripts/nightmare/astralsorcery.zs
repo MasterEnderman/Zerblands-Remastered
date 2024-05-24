@@ -69,16 +69,33 @@ Altar.addDiscoveryAltarRecipe("internal/altar/grindstone", <astralsorcery:blockm
     <ore:stickWood>,  <ore:stickWood>, <ore:plankWood>
 ]);
 
+// Altar.addDiscoveryAltarRecipe("basic_altar", <astralsorcery:blockaltar:0>, 200, 200, [
+//     <ore:stoneMarble>, <astralsorcery:blockblackmarble>, <ore:stoneMarble>,
+//     <ore:stoneMarble>, <ore:workbench>, <ore:stoneMarble>,
+//     <ore:stoneMarble>, null, <ore:stoneMarble>
+// ]);
+
+# F**k you Astral Sorcery for not allowing to craft the first table inside another altar
+recipes.remove(<astralsorcery:blockaltar>);
+recipes.addShaped(<astralsorcery:blockaltar:0>, [
+    [<ore:stoneMarble>, <astralsorcery:blockblackmarble>, <ore:stoneMarble>],
+    [<ore:stoneMarble>, <ore:workbench>, <ore:stoneMarble>],
+    [<ore:stoneMarble>, null, <ore:stoneMarble>]
+]);
+
+# Now you no longer need to find an Astral Altar with a collector crystal to get started.
+Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_basicwand");
+recipes.remove(<astralsorcery:itemwand>);
+recipes.addShaped(<astralsorcery:itemwand>, [
+    [null,<ore:gemAquamarine>,<ore:enderpearl>],
+    [null,<ore:stoneMarble>,<ore:gemAquamarine>],
+    [<ore:stoneMarble>,null,null]
+]);
+
 Altar.addDiscoveryAltarRecipe("blank_itemconstellationpaper", <astralsorcery:itemconstellationpaper>, 200, 200, [
     <astralsorcery:itemcraftingcomponent:5>,<evilcraft:dark_stick>, <astralsorcery:itemcraftingcomponent:5>,
     <astralsorcery:itemcraftingcomponent:5>, <botania:phantomink>, <astralsorcery:itemcraftingcomponent:5>,
     <astralsorcery:itemcraftingcomponent:5>,  <evilcraft:dark_stick>, <astralsorcery:itemcraftingcomponent:5>
-]);
-
-Altar.addDiscoveryAltarRecipe("basic_altar", <astralsorcery:blockaltar>, 200, 200, [
-    <astralsorcery:blockmarble>, <astralsorcery:blockblackmarble>, <astralsorcery:blockmarble>,
-    <astralsorcery:blockmarble>, <ore:craftingTableWood>, <astralsorcery:blockmarble>,
-    <astralsorcery:blockmarble>,  null, <astralsorcery:blockmarble>
 ]);
 
 Altar.addDiscoveryAltarRecipe("internal/altar/attunementrelay", <astralsorcery:blockattunementrelay>, 200, 200, [

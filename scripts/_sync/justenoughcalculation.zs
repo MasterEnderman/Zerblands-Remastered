@@ -23,5 +23,5 @@ import scripts.functions.calc_basic;
 recipes.remove(<jecalculation:item_calculator>);
 calc_basic(<jecalculation:item_calculator>,<jecalculation:item_calculator:1>,<opencomputers:upgrade:11>);
 
-recipes.remove(<jecalculation:item_calculator:1>);
-calc_basic(<jecalculation:item_calculator:1>,<contenttweaker:calculator_screen>,<contenttweaker:calculator_assembly>);
+<jecalculation:item_calculator>.addTooltip(format.green("SHIFT+RMB -> Crafting Calculator"));
+<jecalculation:item_calculator:1>.addTooltip(format.green("SHIFT+RMB -> Math Calculator"));

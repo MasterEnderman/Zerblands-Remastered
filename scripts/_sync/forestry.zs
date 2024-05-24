@@ -69,7 +69,7 @@ Centrifuge.addRecipe([<forestry:honey_drop:1> % 100], <forestry:bee_combs:12>, 1
 Centrifuge.addRecipe([<forestry:honey_drop:1> % 100, <forestry:honey_drop:1> % 100], <forestry:bee_combs:11>, 100);
 
 Centrifuge.addRecipe([<forestry:honey_drop:2> % 100], <forestry:bee_combs:13>, 100);
-
+/*
 var x as IItemStack = <morebees:grainmetallic>;
 
 // IItemStack output, IIngredient[][] ingredients, int packagingTime, @Optional ILiquidStack fluidInput, @Optional IItemStack box
@@ -126,13 +126,19 @@ Carpenter.addRecipe(<thermalfoundation:material:197>, [
     [null,x,null],
     [x,x,x]
 ], 120, <liquid:water>*500);
-
+*/
 var y as IItemStack = <morebees:graincrystal>;
 
 Carpenter.addRecipe(<thermalfoundation:material:16>, [
     [y,y,y],
     [y,y,y],
     [y,y,y]
+], 120, <liquid:water>*1000);
+
+Carpenter.addRecipe(<minecraft:dye:4>, [
+    [y,null,y],
+    [y,null,y],
+    [y,null,y]
 ], 120, <liquid:water>*1000);
 
 Carpenter.addRecipe(<astralsorcery:itemcraftingcomponent>, [

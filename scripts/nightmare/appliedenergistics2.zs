@@ -39,6 +39,7 @@ import mods.threng.Aggregator;
 import mods.threng.Centrifuge;
 import mods.threng.Etcher;
 
+import scripts.functions.calc_basic;
 import scripts.functions.calc_atomic;
 import scripts.functions.calc_flawless;
 
@@ -111,6 +112,9 @@ for seed, crystal in mapSeed {
 
 recipes.remove(<appliedenergistics2:part:120>);
 Extractor.addRecipe(<appliedenergistics2:part:120>, findFirstItemFromMod("thermalfoundation","ingot","invar"));
+
+Inscriber.removeRecipe(<appliedenergistics2:material:60>);
+calc_basic(<appliedenergistics2:material:60>,<appliedenergistics2:material:25>,<ic2:itemmisc:263>);
 
 recipes.remove(<appliedenergistics2:network_tool>);
 // recipes.addShapeless(<appliedenergistics2:network_tool>, [
@@ -495,7 +499,7 @@ recipes.addShaped(<appliedenergistics2:part:281>, [
 	[<actuallyadditions:item_crystal:1>]
 ]);
 
-for i in 0 .. 15 {
+for i in 0 .. 16 {
 	var me_glass as IItemStack = <appliedenergistics2:part>.definition.makeStack(i);
 	var me_covered as IItemStack = <appliedenergistics2:part>.definition.makeStack(i + 20);
 	var me_smart as IItemStack = <appliedenergistics2:part>.definition.makeStack(i + 40);

@@ -67,7 +67,7 @@ ElectrolyticCrucibleBattery.removeRecipe(<liquid:water>);
 ElectrolyticCrucibleBattery.addRecipe(<liquid:hydrogen>*800,<liquid:oxygen>*400,null,null,<liquid:water>*1200,2048*250,250);
 
 Casting.addTableRecipe(<contenttweaker:sodium_dust>, null, <liquid:moltensodium>, 250, false, 600);
-Mixer.addRecipe(<liquid:sodium_persulfate>*2000, <liquid:oxygen>*1000, [<ore:dustSulfur>,<contenttweaker:sodium_dust>], 512);
+Mixer.addRecipe(<liquid:sodium_persulfate>*1000, <liquid:oxygen>*1000, [<ore:dustSulfur>,<contenttweaker:sodium_dust>], 512);
 
 recipes.addShaped(<contenttweaker:supermassiv>, [
     [<extrautils2:compressedcobblestone:7>,<extrautils2:compressedcobblestone:7>,<extrautils2:compressedcobblestone:7>],

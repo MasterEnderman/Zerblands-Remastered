@@ -271,7 +271,8 @@
   "ic2exprecipe_Bronze Cable_": true,
   "ic2exprecipe_Gold Cable_": true,
   "ic2exprecipe_HV Cable_": true,
-  "ic2exprecipe_Ultra-Low-Current Cable_": true
+  "ic2exprecipe_Ultra-Low-Current Cable_": true,
+  "ic2exprecipe_Red Alloy Wire_": true
  },
  "compressor": {
   "tile.sandStone.default_1494879518": true,

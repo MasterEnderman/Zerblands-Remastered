@@ -56,6 +56,8 @@ SagMill.removeRecipe(<enderio:block_infinity>);
 SagMill.removeRecipe(<enderio:block_infinity:1>);
 SagMill.removeRecipe(<enderio:block_infinity:2>);
 
+SagMill.removeRecipe(<minecraft:clay>);
+
 var capacitorT1 as IIngredient = <enderio:item_basic_capacitor>|<enderio:item_capacitor_silver>;
 var capacitorT2 as IIngredient = <enderio:item_basic_capacitor:1>|<enderio:item_capacitor_energetic_silver>;
 var capacitorT3 as IIngredient = <enderio:item_basic_capacitor:2>|<enderio:item_capacitor_vivid>;
@@ -124,7 +126,7 @@ ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:4>*2, <ore:ingotPinkMetal
 
 // Melodic ALloy Ingot
 AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:2>*2, [<ore:ingotDraconium>,<enderutilities:enderpart:2>,<ore:ingotCrystallinePinkSlime>], 25000);
-ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:2>*2, <ore:ingotEndSteel>, null, 200, 512, [<ore:ingotDraconium>,<ore:ingotCrystallinePinkSlime>]);
+ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:2>*2, <enderutilities:enderpart:2>, null, 200, 512, [<ore:ingotDraconium>,<ore:ingotCrystallinePinkSlime>]);
 
 // Stellar Alloy
 AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:3>*2, [<ore:ingotMelodicAlloy>,<ic2:itemmisc:258>,<contenttweaker:enhanced_ender_ingot>], 50000);
@@ -380,7 +382,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     ],
     <enderio:block_simple_crafter> : [
         [
-            [<ore:ingotCrudeSteel>,<botania:opencrate:1>,<ore:ingotCrudeSteel>],
+            [<ore:ingotCrudeSteel>,<forestry:worktable>,<ore:ingotCrudeSteel>],
             [<immersiveengineering:conveyor>,<enderio:item_material>,<immersiveengineering:conveyor>],
             [<ore:gearIronInfinity>,<thermalfoundation:material:513>,<ore:gearIronInfinity>]
         ]
@@ -456,7 +458,7 @@ recipes.remove(<enderio:item_material:1>);
 InductionSmelter.removeRecipe(<enderio:item_material>,<enderio:item_material:51>);
 Altar.addConstellationAltarRecipe("machine_chassis", <enderio:item_material:1>, 800, 200, [
     <enderio:item_material:51>,
-    <opencomputers:component>,
+    <opencomputers:material:21>,
     <enderio:item_material:51>,
     <actuallyadditions:item_crystal_empowered:3>,
     <enderio:item_material>,
@@ -707,7 +709,7 @@ SliceNSplice.addRecipe(<enderio:item_material>, [
     <ore:gearIronInfinity>,<ore:plateLead>,<ore:gearIronInfinity>
 ], 5000);
 SliceNSplice.addRecipe(<enderio:item_material:1>, [
-    <enderio:item_material>, <opencomputers:component>, <thermalexpansion:frame:146>,
+    <enderio:item_material>, <opencomputers:material:21>, <thermalexpansion:frame:146>,
     <actuallyadditions:item_crystal_empowered:3>,<ore:ingotDarkSteel>,<enderio:item_material:51>
 ], 10000);
 SliceNSplice.addRecipe(<enderio:item_material:53>, [
@@ -728,3 +730,16 @@ recipes.addShapeless(<enderio:item_material:38> * 3,[
 ]);
 
 AlloySmelter.addRecipe(<enderio:item_material:3>, [<botania:managlasspane>,<enderio:item_material:38>,<contenttweaker:electro_silicon>], 15000);
+
+recipes.remove(<enderio:item_me_conduit>);
+recipes.addShaped(<enderio:item_me_conduit> * 2, [
+    [<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],
+    [<appliedenergistics2:material:12>,<appliedenergistics2:part:140>,<appliedenergistics2:material:12>],
+    [<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]
+]);
+recipes.remove(<enderio:item_me_conduit:1>);
+recipes.addShaped(<enderio:item_me_conduit:1>, [
+    [<redstonerepository:material:8>,<enderio:item_me_conduit>,<redstonerepository:material:8>],
+    [<enderio:item_me_conduit>,<enderio:block_industrial_insulation>,<enderio:item_me_conduit>],
+    [<redstonerepository:material:8>,<enderio:item_me_conduit>,<redstonerepository:material:8>]
+]);

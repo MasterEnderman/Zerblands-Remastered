@@ -185,7 +185,7 @@ static mapWorkbench as IIngredient[][IItemStack][string] = {
         <actuallyadditions:block_miner:0> : [
             <actuallyadditions:block_crystal_empowered:3>,
             <thermalexpansion:frame:0>,
-            <actuallyadditions:item_drill:*>,
+            <environmentaltech:laser_lens>,
             <actuallyadditions:item_drill_upgrade_speed_iii:0>
         ],
         <immersivepetroleum:metal_device:0> : [

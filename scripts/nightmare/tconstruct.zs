@@ -72,6 +72,20 @@ Melting.addRecipe(<liquid:stone>*240, <tconstruct:channel>, 500);
 Melting.addRecipe(<liquid:stone>*144*3, <tconstruct:faucet>, 500);
 Melting.addRecipe(<liquid:stone>*144*6, <tconstruct:smeltery_io>, 500);
 
+// Crucible.removeRecipe(<minecraft:dirt>);
+Crucible.addRecipe(<liquid:dirt> * 144, <minecraft:dirt>, 4000);
+// Crucible.removeRecipe(<minecraft:dirt:1>);
+Crucible.addRecipe(<liquid:dirt> * 144, <minecraft:dirt:1>, 4000);
+// Crucible.removeRecipe(<minecraft:dirt:2>);
+Crucible.addRecipe(<liquid:dirt> * 144, <minecraft:dirt:2>, 4000);
+Crucible.addRecipe(<liquid:dirt> * 288, <sonarcore:reinforceddirtblock>, 4000);
+Crucible.addRecipe(<liquid:dirt> * 18, <contenttweaker:soil>, 1000);
+Crucible.addRecipe(<liquid:dirt> * 36, <earthworks:item_dirt>, 1000);
+
+Melting.addRecipe(<liquid:dirt>*288, <sonarcore:reinforceddirtblock>, 500);
+Melting.addRecipe(<liquid:dirt>*18, <contenttweaker:soil>, 500);
+Melting.addRecipe(<liquid:dirt>*36, <earthworks:item_dirt>, 500);
+
 furnace.remove(<tconstruct:materials>);
 CokeOven.addRecipe(<tconstruct:materials>, 0, <tconstruct:soil>, 200);
 

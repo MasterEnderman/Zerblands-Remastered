@@ -290,7 +290,7 @@
  "shapeless_item.itemIceTea_590764970": true,
  "shaped_item.itemBarrel_-1766685136": true,
  "shapeless_item.itemBarrel_1507665920": true,
- "shapeless_item.itemMugEmpty_-1375661975": true,
+ "shapeless_item.itemMugEmpty_-1375661975": false,
  "shaped_item.paper_-1335499250": true,
  "shapeless_item.string_-1161210115": false,
  "shapeless_item.seeds_-1487624892": true,

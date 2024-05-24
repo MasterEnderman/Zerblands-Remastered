@@ -77,9 +77,9 @@ for blueprint_str, blueprint_map in mapWorkbench {
             .name("mbd_" + blueprint_str + "_" + toString(output))
             .duration(20)
             .inputItems(items)
-            //.slotName("output")
+            .slotName("output")
             .outputItems(output * amount)
-            //.slotName("blueprint")
+            .slotName("blueprint")
             .inputItems(0.0, <immersiveengineering:blueprint>.withTag({blueprint: blueprint_str}))
             .buildAndRegister();
     }

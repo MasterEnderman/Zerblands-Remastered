@@ -190,6 +190,12 @@ var removeAndHide as IItemStack[] = [
     <minecraft:stone_pickaxe>,
     <minecraft:stone_axe>,
     <minecraft:stone_hoe>,
+    <minecraft:cod>,
+    <minecraft:cooked_cod>,
+    <minecraft:salmon>,
+    <minecraft:cooked_salmon>,
+    <minecraft:clownfish>,
+    <minecraft:pufferfish>,
     // abyssalcraft
     <abyssalcraft:dpick>,
     <abyssalcraft:daxe>,
@@ -205,6 +211,8 @@ var removeAndHide as IItemStack[] = [
     <immersivepetroleum:material>,
     // baubles
     <baubles:baublesring>,
+    // redstone repository
+    <redstonerepository:util.feeder>,
 ];
 
 for item in removeAndHide {

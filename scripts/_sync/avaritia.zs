@@ -48,6 +48,18 @@ Altar.addTraitAltarRecipe("dire_table",<avaritia:extreme_crafting_table>, 2000, 
     <botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>
 ], "astralsorcery.constellation.horologium");
 
+ExtremeCrafting.addShaped("dire_crafting_table", <avaritia:extreme_crafting_table>, [
+    [<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>],
+    [<avaritia:resource:1>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<avaritia:resource:1>],
+    [<avaritia:resource:1>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<avaritia:resource:1>],
+    [<avaritia:resource:1>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<avaritia:resource:1>],
+    [<avaritia:resource:1>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<avaritia:double_compressed_crafting_table>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<avaritia:resource:1>],
+    [<avaritia:resource:1>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<avaritia:resource:1>],
+    [<avaritia:resource:1>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<avaritia:resource:1>],
+    [<avaritia:resource:1>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<botania:manaresource:11>,<avaritia:resource:1>],
+    [<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>]
+]);
+
 ExtremeCrafting.remove(<avaritia:infinity_pickaxe>);
 ExtremeCrafting.addShaped("infinity_pickaxe",<avaritia:infinity_pickaxe>, [
     [null,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,<avaritia:resource:6>,null],

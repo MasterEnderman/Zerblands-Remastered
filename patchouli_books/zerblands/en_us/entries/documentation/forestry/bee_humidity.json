@@ -10,7 +10,7 @@
             "text": "Queens have different requirements concerning the humidity rating of their biome. This attribute is locked with the species and cannot be changed. If the humidity of the current biome isn't matching their tolerance, the bee won't produce, but it also won't age."
         },
         {
-            "title": "Bee Temperature",
+            "title": "Bee Humidity",
             "type": "default",
             "text": "The following humidities exist:<li>Arid<li>Normal<li>Damp"
         }

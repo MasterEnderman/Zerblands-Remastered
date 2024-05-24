@@ -190,8 +190,10 @@ Mixer.addRecipe(<liquid:concrete> * 2000,<liquid:sodium_hydroxide> * 500,[
 
 recipes.removeByRecipeName("immersiveengineering:treated_wood/treated_wood");
 Casting.addBasinRecipe(<immersiveengineering:treated_wood>, <ore:plankWood>, <liquid:creosote>, 250, true, 100);
-BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, <ore:plankWood>, <liquid:creosote> * 200);
-Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <minecraft:planks>, <liquid:creosote> * 100, 2000);
+for item in <ore:plankWood>.items {
+    BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, item, <liquid:creosote> * 200);
+    Transposer.addFillRecipe(<immersiveengineering:treated_wood>, item, <liquid:creosote> * 100, 2000);
+}
 
 recipes.remove(<immersiveengineering:wooden_decoration:1>);
 Casting.addBasinRecipe(<immersiveengineering:wooden_decoration:1>, <ic2:blockscaffold>, <liquid:creosote>, 500, true, 100);
@@ -525,6 +527,7 @@ Extractor.addRecipe(<immersiveengineering:material:20> * 4, <ore:plateCopper>);
 Extractor.addRecipe(<immersiveengineering:material:21> * 4, <ore:plateElectrum>);
 Extractor.addRecipe(<immersiveengineering:material:22> * 4, <ore:plateAluminum>);
 Extractor.addRecipe(<immersiveengineering:material:23> * 4, <ore:plateSteel>);
+Extractor.addRecipe(findFirstItemFromMod("contenttweaker","wire","redAlloy") * 4, <ore:plateRedAlloy>);
 
 var mapMold as IItemStack[IItemStack] = {
     <contenttweaker:mold_ingot> : <botania:craftpattern>,

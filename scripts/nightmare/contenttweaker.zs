@@ -238,8 +238,8 @@ for output, input in mapPressed {
     Compactor.addPressRecipe(output, input, 2000);
 }
 
-Compactor.addStorageRecipe(<contenttweaker:clay_plate_raw>, <minecraft:clay_ball>, 4000);
-MetalPress.addRecipe(<contenttweaker:clay_plate_raw>, <minecraft:clay_ball>, <immersiveengineering:mold>, 2048);
+Compactor.addStorageRecipe(<contenttweaker:clay_plate_raw>, <contenttweaker:pressed_clay>, 4000);
+MetalPress.addRecipe(<contenttweaker:clay_plate_raw>, <contenttweaker:pressed_clay>, <immersiveengineering:mold>, 2048);
 furnace.addRecipe(<contenttweaker:clay_plate>, <contenttweaker:clay_plate_raw>);
 
 recipes.addShaped(<contenttweaker:energium_dust> * 9, [
@@ -318,11 +318,6 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<contenttweaker:basic_blade>,<contenttweaker:basic_blade>,<contenttweaker:basic_blade>],
             [<contenttweaker:basic_blade>,<ore:gearStone>,<contenttweaker:basic_blade>],
             [<contenttweaker:basic_blade>,<contenttweaker:basic_blade>,<contenttweaker:basic_blade>]
-        ],
-        [
-            [<ic2:itemmisc:303>,<ic2:itemmisc:303>,<ic2:itemmisc:303>],
-            [<ic2:itemmisc:303>,<ore:gearStone>,<ic2:itemmisc:303>],
-            [<ic2:itemmisc:303>,<ic2:itemmisc:303>,<ic2:itemmisc:303>]
         ]
     ],
     <contenttweaker:cutting_head_iron> : [
@@ -616,12 +611,13 @@ var mapStoneboard as int[IIngredient][string] = {
     "top" : {
         <randomthings:ingredient:8> : 3,
         <ic2:itemmisc:260> : 6,
-        <woot:factorybase> : 9
+        <ic2:itemmisc:264> : 8,
+        <quantumflux:craftingpiece:4> : 8
     },
     "mid" : {
         <ore:slimeball> : 1,
         <ore:itemRawRubber> : 2,
-        <ore:slimeballPink> : 3
+        <ore:slimeballPink> : 4
     },
     "bot" : {
         <tconstruct:pattern> : 1,

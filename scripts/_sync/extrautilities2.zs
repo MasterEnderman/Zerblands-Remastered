@@ -42,6 +42,8 @@ JEI.removeAndHide(<extrautils2:ingredients:4>);
 
 <extrautils2:supermobspawner>.addTooltip(format.green("Won't function if you don't have any Gridpower (GP)."));
 
+<extrautils2:teleporter:1>.addTooltip(format.green("Ores are 2x more common then in the Overworld."));
+
 Resonator.remove(<extrautils2:ingredients:4>); // fk XU2
 
 Transposer.addFillRecipe(<extrautils2:ingredients:11>, <minecraft:gold_ingot>, <liquid:lava>*250, 66666);

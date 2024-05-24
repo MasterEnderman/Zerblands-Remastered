@@ -66,6 +66,12 @@ MeltingCrucible.addRecipe(<liquid:ice> * 500, <forestry:crafting_material:5>, 96
 
 Squeezer.addRecipe(null, <liquid:for.honey> * 100, <harvestcraft:honeyitem>, 2048);
 
+// I'm unable to remove the recipes by default, so no idea what is adding them in the first place
+// Squeezer.removeByInput(<harvestcraft:walnutitem>);
+// Squeezer.addRecipe(null, <liquid:seed.oil> * 180, <harvestcraft:walnutitem>, 2048);
+// Squeezer.removeByInput(<harvestcraft:chestnutitem>);
+// Squeezer.addRecipe(null, <liquid:seed.oil> * 220, <harvestcraft:chestnutitem>, 2048);
+
 var mapSeed as int[IIngredient] = {
     <ore:listAllseed> : 5,
     <ore:listAllnut> : 75,
