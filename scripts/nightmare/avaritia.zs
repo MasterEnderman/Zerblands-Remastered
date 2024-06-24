@@ -23,6 +23,7 @@ import scripts.functions.findFirstItemFromMod;
 import mods.avaritia.Compressor;
 import mods.avaritia.ExtremeCrafting;
 import mods.bloodmagic.AlchemyTable;
+import mods.enderio.AlloySmelter;
 import mods.forestry.Carpenter;
 import mods.jei.JEI;
 
@@ -44,11 +45,7 @@ AlchemyTable.addRecipe(<avaritia:endest_pearl>, [
 ], 100000, 10000, 6);
 
 recipes.removeShaped(<avaritia:resource:1>);
-recipes.addShaped(<avaritia:resource:1>, [
-    [<contenttweaker:pearl_lattice>,<contenttweaker:pearl_lattice>,<contenttweaker:pearl_lattice>],
-    [<contenttweaker:pearl_lattice>,<ore:ingotChaoticMetal>,<contenttweaker:pearl_lattice>],
-    [<contenttweaker:pearl_lattice>,<contenttweaker:pearl_lattice>,<contenttweaker:pearl_lattice>]
-]);
+AlloySmelter.addRecipe(<avaritia:resource:1>, [<contenttweaker:pearl_lattice>,<tconevo:material>,<contenttweaker:atomicbinder>], 50000);
 
 ExtremeCrafting.remove(<avaritia:neutronium_compressor>);
 recipes.addShaped(<avaritia:neutronium_compressor>, [
@@ -62,7 +59,12 @@ Carpenter.addRecipe(<avaritia:resource>, [
     [<contenttweaker:end_diamond_block>,<contenttweaker:eternalslate>,<contenttweaker:end_diamond_block>],
     [<contenttweaker:eternalslate>,<contenttweaker:crystal_cluster_core>,<contenttweaker:eternalslate>],
     [<contenttweaker:end_diamond_block>,<contenttweaker:eternalslate>,<contenttweaker:end_diamond_block>]
-], 10, <liquid:mana> * 1000, <forestry:honey_drop:2>);
+], 10, <liquid:mana> * 10000, <contenttweaker:crystal_ender>);
+Carpenter.addRecipe(<avaritia:resource> * 4, [
+    [<contenttweaker:enddiamond>],
+    [<contenttweaker:crystal_cluster_core>],
+    [<contenttweaker:eternalslate>]
+], 10, <liquid:mana> * 100, <forestry:honey_drop:2>);
 
 var mapSingularity as IIngredient[IItemStack] = {
     <avaritia:singularity> : <ore:blockIron>,

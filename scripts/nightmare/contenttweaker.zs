@@ -29,6 +29,7 @@ import mods.bloodmagic.BloodAltar;
 import mods.botania.RuneAltar;
 import mods.botania.PureDaisy;
 import mods.embers.Alchemy;
+import mods.embers.Stamper;
 import mods.enderio.AlloySmelter;
 import mods.enderio.SagMill;
 import mods.enderio.SliceNSplice;
@@ -110,6 +111,8 @@ SagMill.addRecipe([<contenttweaker:small_stone>], [100], <thermalfoundation:mate
 Crusher.addRecipe(<contenttweaker:small_stone>, <thermalfoundation:material:864>, 2048);
 
 Casting.addTableRecipe(<contenttweaker:lithium_dust>, null, <liquid:briny_water>, 200, false, 600);
+// Transposer.addFillRecipe(<contenttweaker:lithium_dust>, null,  <liquid:briny_water> * 200, 500);
+Stamper.add(<contenttweaker:lithium_dust>, <liquid:briny_water> * 100, <embers:stamp_flat>);
 Casting.addTableRecipe(findFirstItemFromMod("contenttweaker","plate","StyreneButadieneRubber"), <tconstruct:cast_custom:3> ,<liquid:styrene_butadiene_rubber>, 200, false, 120);
 
 var cast_pan as IItemStack = <tconstruct:cast>.withTag({PartType: "tconstruct:pan_head"});
@@ -205,9 +208,14 @@ BloodInfuser.addRecipe(<contenttweaker:rune_rare>, <liquid:evilcraftblood> * 640
 
 // mods.immersivetechnology.SolarTower.addRecipe(ILiquidStack outputFluid, ILiquidStack inputFluid, int time);
 SolarTower.removeRecipe(<liquid:water>);
-SolarTower.addRecipe(<liquid:brackish_water> * 100, <liquid:water> * 1000, 60);
-SolarTower.addRecipe(<liquid:saline_water> * 100, <liquid:brackish_water> * 1000, 60);
-SolarTower.addRecipe(<liquid:briny_water> * 100, <liquid:saline_water> * 1000, 60);
+
+SolarTower.addRecipe(<liquid:brackish_water> * 200, <liquid:water> * 1000, 30);
+SolarTower.addRecipe(<liquid:saline_water> * 200, <liquid:brackish_water> * 1000, 30);
+SolarTower.addRecipe(<liquid:briny_water> * 200, <liquid:saline_water> * 1000, 30);
+
+TERefinery.addRecipe(<liquid:brackish_water> * 250, null, <liquid:water> * 1000, 2000);
+TERefinery.addRecipe(<liquid:saline_water> * 250, null, <liquid:brackish_water> * 1000, 2000);
+TERefinery.addRecipe(<liquid:briny_water> * 250, null, <liquid:saline_water> * 1000, 2000);
 
 Altar.addDiscoveryAltarRecipe("grinding_wheel", <contenttweaker:grind_wheel>, 200, 200, [
     <ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>,
@@ -413,18 +421,18 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
             [<ic2:itemreactorplating>,<contenttweaker:plutonium>,<ic2:itemreactorplating>]
         ]
     ],
-    <contenttweaker:pearl_lattice> : [
-        [
-            [<avaritia:resource>,<contenttweaker:wetware_assembly>,<avaritia:resource>],
-            [<contenttweaker:wetware_assembly>,<contenttweaker:big_pearl>,<contenttweaker:wetware_assembly>],
-            [<avaritia:resource>,<contenttweaker:wetware_assembly>,<avaritia:resource>]
-        ]
-    ],
     <contenttweaker:omega_core> : [
         [
             [<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>],
             [<projecte:item.pe_klein_star:5>,<tconevo:metal_block:2>,<projecte:item.pe_klein_star:5>],
             [<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>,<projecte:item.pe_klein_star:5>]
+        ]
+    ],
+    <contenttweaker:artifact_blackpearl> : [
+        [
+            [<botania:manaresource:7>,<botania:manaresource:5>,<botania:manaresource:7>],
+            [<botania:manaresource:15>,<appliedenergistics2:material:9>,<botania:manaresource:15>],
+            [<botania:manaresource:7>,<botania:manaresource:15>,<botania:manaresource:7>]
         ]
     ]
 };
@@ -534,7 +542,7 @@ FusionCrafting.add(<contenttweaker:q3>, <randomthings:redstoneobserver>, FusionC
     <contenttweaker:q1>
 ]);
 
-Empowerer.addRecipe(<contenttweaker:q4>, <contenttweaker:q3>, <contenttweaker:q2>, <contenttweaker:q2>, <contenttweaker:q2>, <contenttweaker:q2>, 10000000, 100, [0.1, 0.9, 0.1]);
+Empowerer.addRecipe(<contenttweaker:q4>, <contenttweaker:q3>, <contenttweaker:q2>, <contenttweaker:q2>, <contenttweaker:q2>, <contenttweaker:q2>, 320000, 100, [0.1, 0.9, 0.1]);
 
 FusionCrafting.add(<contenttweaker:crystal_cluster_core>, <woot:prism>, FusionCrafting.WYVERN, 4294967296, [
     <environmentaltech:litherite_crystal>,
@@ -563,6 +571,16 @@ SliceNSplice.addRecipe(<contenttweaker:engraved_lapotronic_chip> * 4, [
 SliceNSplice.addRecipe(<contenttweaker:engraved_lapotronic_chip>, [
     <ic2:itembatlamacrystal>, <opencomputers:material:9>, <ic2:itembatlamacrystal>,
     <forestry:thermionic_tubes:11>,<actuallyadditions:item_crystal_empowered:1>,<forestry:thermionic_tubes:11>
+], 40000);
+
+SliceNSplice.addRecipe(<contenttweaker:crystal_ender>, [
+    <quantumflux:craftingpiece:3>, <enderio:block_enderman_skull>, <quantumflux:craftingpiece:3>,
+    <contenttweaker:end_stone_dust>, <xreliquary:mob_charm_fragment:8>, <contenttweaker:end_stone_dust>
+], 40000);
+
+SliceNSplice.addRecipe(<contenttweaker:pearl_lattice>, [
+    <avaritia:resource>, <contenttweaker:big_pearl>, <avaritia:resource>,
+    <contenttweaker:wetware_assembly>, <contenttweaker:atomicbinder>, <contenttweaker:wetware_assembly>
 ], 40000);
 
 ThermionicFabricator.addCast(<contenttweaker:data_storage_circuit> * 4, [

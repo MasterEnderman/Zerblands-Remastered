@@ -18,6 +18,8 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
+import mods.thermalexpansion.Transposer;
+
 recipes.remove(<minecraft:elytra>);
 recipes.addShaped(<minecraft:elytra>, [
     [<ic2:itemmisc:202>,<ic2:itemmisc:202>,<ic2:itemmisc:202>],
@@ -28,3 +30,7 @@ recipes.addShaped(<minecraft:elytra>, [
 recipes.addShapeless(<minecraft:beetroot_seeds>,[<minecraft:beetroot>]);
 recipes.addShapeless(<minecraft:wheat_seeds>,[<minecraft:wheat>]);
 recipes.addShapeless(<minecraft:nether_wart>*9, [<minecraft:nether_wart_block>]);
+
+# Stupid Thermal never works
+// Transposer.removeFillRecipe(<minecraft:glass_bottle>, <liquid:water>);
+// Transposer.addFillRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:glass_bottle>, <liquid:water> * 250, 800);

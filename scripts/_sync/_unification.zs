@@ -100,7 +100,14 @@ import mods.tconstruct.Melting;
     <minecraft:ender_chest>
 ]);
 <ore:logWood>.add(<bloodarsenal:blood_infused_wooden_log>);
-<ore:plankWood>.add(<bloodarsenal:blood_infused_wooden_planks>);
+<ore:plankWood>.add([
+    <bloodarsenal:blood_infused_wooden_planks>,
+    <earthworks:block_planks_vert:1>,
+    <earthworks:block_planks_vert:2>,
+    <earthworks:block_planks_vert:3>,
+    <earthworks:block_planks_vert:4>,
+    <earthworks:block_planks_vert:5>
+]);
 <ore:oreAbyssalnite>.add(<abyssalcraft:dreadore>);
 <ore:barsDawnstone>.add(<cathedral:dwemer_bars_normal>);
 <ore:barsDarkSteel>.add(<enderio:block_dark_iron_bars>);

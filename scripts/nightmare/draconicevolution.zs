@@ -318,7 +318,7 @@ FusionCrafting.add(<draconicevolution:chaotic_core>, <tconevo:metal:9>, FusionCr
 ]);
 
 FusionCrafting.remove(<draconicevolution:wyvern_energy_core>);
-FusionCrafting.add(<draconicevolution:draconic_energy_core>, <draconicevolution:awakened_core>, FusionCrafting.DRACONIC, 100000000, [
+FusionCrafting.add(<draconicevolution:draconic_energy_core>, <draconicevolution:awakened_core>, FusionCrafting.WYVERN, 100000000, [
     <draconicevolution:draconic_ingot>,
     <draconicevolution:draconic_ingot>,
     <ic2:itempesd>,

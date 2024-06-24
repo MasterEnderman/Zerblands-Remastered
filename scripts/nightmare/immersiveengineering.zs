@@ -187,13 +187,60 @@ Mixer.addRecipe(<liquid:concrete> * 2000,<liquid:sodium_hydroxide> * 500,[
     <contenttweaker:gravel_dust>,
     <earthworks:item_mud>,
 ], 1024);
-
+# I hate CraftTweaker and Thermal Expansion for this stupid way to add a simple recipe for all kinds of planks to process them into Treated Wooden Planks
 recipes.removeByRecipeName("immersiveengineering:treated_wood/treated_wood");
 Casting.addBasinRecipe(<immersiveengineering:treated_wood>, <ore:plankWood>, <liquid:creosote>, 250, true, 100);
-for item in <ore:plankWood>.items {
-    BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, item, <liquid:creosote> * 200);
-    Transposer.addFillRecipe(<immersiveengineering:treated_wood>, item, <liquid:creosote> * 100, 2000);
+for i in 0 .. 6 {
+	var plank as IItemStack = <minecraft:planks>.definition.makeStack(i);
+    var fire_plank as IItemStack = <forestry:planks.vanilla.fireproof.0>.definition.makeStack(i);
+    var vert_plank as IItemStack = <earthworks:block_planks_vert>.definition.makeStack(i);
+    BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, plank, <liquid:creosote> * 200);
+    BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, fire_plank, <liquid:creosote> * 200);
+    BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, vert_plank, <liquid:creosote> * 200);
+    Transposer.addFillRecipe(<immersiveengineering:treated_wood>, plank, <liquid:creosote> * 100, 2000);
+    Transposer.addFillRecipe(<immersiveengineering:treated_wood>, fire_plank, <liquid:creosote> * 100, 2000);
+    Transposer.addFillRecipe(<immersiveengineering:treated_wood>, vert_plank, <liquid:creosote> * 100, 2000);
 }
+for i in 0 .. 16 {
+	var plank as IItemStack = <forestry:planks.0>.definition.makeStack(i);
+    var fire_plank as IItemStack = <forestry:planks.fireproof.0>.definition.makeStack(i);
+    BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, plank, <liquid:creosote> * 200);
+    BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, fire_plank, <liquid:creosote> * 200);
+    Transposer.addFillRecipe(<immersiveengineering:treated_wood>, plank, <liquid:creosote> * 100, 2000);
+    Transposer.addFillRecipe(<immersiveengineering:treated_wood>, fire_plank, <liquid:creosote> * 100, 2000);
+}
+for i in 0 .. 13 {
+	var plank as IItemStack = <forestry:planks.1>.definition.makeStack(i);
+    var fire_plank as IItemStack = <forestry:planks.fireproof.1>.definition.makeStack(i);
+    BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, plank, <liquid:creosote> * 200);
+    BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, fire_plank, <liquid:creosote> * 200);
+    Transposer.addFillRecipe(<immersiveengineering:treated_wood>, plank, <liquid:creosote> * 100, 2000);
+    Transposer.addFillRecipe(<immersiveengineering:treated_wood>, fire_plank, <liquid:creosote> * 100, 2000);
+}
+
+BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, <abyssalcraft:dltplank:0>, <liquid:creosote> * 200);
+Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <abyssalcraft:dltplank:0>, <liquid:creosote> * 100, 2000);
+
+BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, <abyssalcraft:dreadplanks:0>, <liquid:creosote> * 200);
+Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <abyssalcraft:dreadplanks:0>, <liquid:creosote> * 100, 2000);
+
+BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, <bloodarsenal:blood_infused_wooden_planks:0>, <liquid:creosote> * 200);
+Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <bloodarsenal:blood_infused_wooden_planks:0>, <liquid:creosote> * 100, 2000);
+
+BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, <evilcraft:undead_plank:0>, <liquid:creosote> * 200);
+Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <evilcraft:undead_plank:0>, <liquid:creosote> * 100, 2000);
+
+BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, <extrautils2:ironwood_planks:0>, <liquid:creosote> * 200);
+Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <extrautils2:ironwood_planks:0>, <liquid:creosote> * 100, 2000);
+
+BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, <extrautils2:ironwood_planks:1>, <liquid:creosote> * 200);
+Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <extrautils2:ironwood_planks:1>, <liquid:creosote> * 100, 2000);
+
+BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, <integrateddynamics:menril_planks:0>, <liquid:creosote> * 200);
+Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <integrateddynamics:menril_planks:0>, <liquid:creosote> * 100, 2000);
+
+BottlingMachine.addRecipe(<immersiveengineering:treated_wood>, <randomthings:spectreplank:0>, <liquid:creosote> * 200);
+Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <randomthings:spectreplank:0>, <liquid:creosote> * 100, 2000);
 
 recipes.remove(<immersiveengineering:wooden_decoration:1>);
 Casting.addBasinRecipe(<immersiveengineering:wooden_decoration:1>, <ic2:blockscaffold>, <liquid:creosote>, 500, true, 100);

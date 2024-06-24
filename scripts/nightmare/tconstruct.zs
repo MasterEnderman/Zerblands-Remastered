@@ -86,6 +86,9 @@ Melting.addRecipe(<liquid:dirt>*288, <sonarcore:reinforceddirtblock>, 500);
 Melting.addRecipe(<liquid:dirt>*18, <contenttweaker:soil>, 500);
 Melting.addRecipe(<liquid:dirt>*36, <earthworks:item_dirt>, 500);
 
+Crucible.removeRecipe(<minecraft:slime>);
+Crucible.removeRecipe(<tconstruct:slime_congealed>);
+
 furnace.remove(<tconstruct:materials>);
 CokeOven.addRecipe(<tconstruct:materials>, 0, <tconstruct:soil>, 200);
 

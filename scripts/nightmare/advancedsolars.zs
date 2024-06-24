@@ -33,7 +33,7 @@ recipes.remove(<advancedsolars:sunnarium>);
 StarlightInfusion.addInfusion(<advancedsolars:sunnariumpart>, <advancedsolars:sunnarium>, false, 0.8, 200);
 
 recipes.remove(<advancedsolars:irradianturanium>);
-Empowerer.addRecipe(<advancedsolars:irradianturanium>, <ic2:itemmisc:60>, <advancedsolars:sunnariumpart>, <advancedsolars:sunnariumpart>, <advancedsolars:sunnariumpart>, <advancedsolars:sunnariumpart>, 500000, 100, [0.6, 0.9, 0.6]);
+Empowerer.addRecipe(<advancedsolars:irradianturanium>, <ic2:itemmisc:60>, <advancedsolars:sunnariumpart>, <advancedsolars:sunnariumpart>, <advancedsolars:sunnariumpart>, <advancedsolars:sunnariumpart>, 320000, 100, [0.6, 0.9, 0.6]);
 
 recipes.remove(<advancedsolars:enrichedsunnarium>);
 Aggregator.addRecipe(<advancedsolars:enrichedsunnarium>, <advancedsolars:sunnarium>, <advancedsolars:irradianturanium>, <ic2:itemmisc:181>);

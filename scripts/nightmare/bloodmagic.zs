@@ -190,10 +190,10 @@ Altar.addTraitAltarRecipe("crystal_cluster", <bloodmagic:decorative_brick:2>, 45
     <botania:manaresource:9>,
     <quantumflux:craftingpiece>, 
     <quantumflux:craftingpiece>,
-    <contenttweaker:crystal_cluster_core>,
+    <contenttweaker:crystal_ender>,
     <enderio:item_material:19>,
     <enderio:item_material:19>,
-    <contenttweaker:crystal_cluster_core>,
+    <contenttweaker:crystal_ender>,
 	//Outer Items, indices 25+
     <thermalfoundation:material:1028>,
     <bloodmagic:item_demon_crystal:1>,

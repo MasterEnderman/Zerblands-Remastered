@@ -1,14 +1,14 @@
 {
-	x: 8.0d,
+	x: 14.0d,
 	y: 9.0d,
 	dependencies: [
-		"a25b4d5a"
+		"fd8327a2"
 	],
 	tasks: [{
-		uid: "fefa1c01",
+		uid: "e167816a",
 		type: "item",
 		items: [{
-			item: "projecte:item.pe_matter"
+			item: "projecte:condenser_mk2"
 		}]
 	}]
 }

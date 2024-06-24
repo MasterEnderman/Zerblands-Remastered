@@ -1,14 +1,14 @@
 {
-	x: 6.0d,
+	x: 4.0d,
 	y: 7.0d,
 	dependencies: [
-		"0606fb32"
+		"a86b25bd"
 	],
 	tasks: [{
-		uid: "c39e92ab",
+		uid: "5df4ef41",
 		type: "item",
 		items: [{
-			item: "contenttweaker:eternalslate"
+			item: "projecte:relay_mk1"
 		}]
 	}]
 }

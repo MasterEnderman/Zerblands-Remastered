@@ -171,6 +171,8 @@ var nightmare as string[string] = {
     "big_pearl" : "Primordial Pearl",
     "pearl_lattice" : "Primordial Matrix Lattice",
     "raw_atomicbinder": "Raw Atomic Binder",
+    "artifact_blackpearl": "Miniature Black Hole",
+    "crystal_ender": "Crystalized End Essence"
 };
 
 for item, local in nightmare {

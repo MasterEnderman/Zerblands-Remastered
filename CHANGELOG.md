@@ -2,6 +2,55 @@
 
 A Modpack for Minecraft 1.12.2
 
+## v2.2.13 - Hotfix XIX
+
+LEGACY MODE IS THE DEFAULT PACKMODE AGAIN AS THIS ISN'T v2.3.x yet!
+
+### Added Mods
+
+- ArchitectureCraft - Spoced Version
+- AstralLevelTweak
+- Passive SearchBar
+- YNet
+
+### Updated Mods
+
+- AE2 Fluid Crafting Rework
+- AE2 Unofficial Extended Life
+- Chunk Pregenerator
+- Controlling
+- Dropt
+- Ender Storage continuation
+- Neeve's AE2: Extended Life Additions
+- Red Core
+- RenderLib
+- Tweaked Petroleum
+
+## Removed Mods
+
+- ArchitectureCraft - TridentMC Version
+- Raw Input - Blessed Edition (still causes issues on linux)
+- XNet
+
+### Changes
+
+- added an alternative lithium processing line
+- altered a bunch of late game recipes
+- switched default packmode back to legacy as this isn't v2.3.x
+- tweaked recipe of the Void Module to help with automation
+- tweaked recipe of the Ender Chest to help with automation
+- tweaked Astral Sorcery level curve
+- tweaked ProjectE progression
+- tweaked late game quest progression
+- tweaked energy capacity values of Lazy AE2 machines
+
+### Bugfixes
+
+- fixed another issues with vanilla planks being unable to be processed into treated wood
+- fixed a few Empowerer recipes exceeding its max power capacity
+- fixed melting of other slime colors into purple slime
+- fixed too small capacity of the Crystal Energizer to charge Draconium
+
 ## v2.2.12 - Hotfix XVIII
 
 NIGHTMARE MODE IS NOW THE DEFAULT PACKMODE!

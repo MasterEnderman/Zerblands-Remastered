@@ -1,14 +1,14 @@
 {
-	x: 6.0d,
+	x: 14.0d,
 	y: 7.0d,
 	dependencies: [
-		"0606fb32"
+		"97a5618b"
 	],
 	tasks: [{
-		uid: "c39e92ab",
+		uid: "8e202205",
 		type: "item",
 		items: [{
-			item: "contenttweaker:eternalslate"
+			item: "projecte:condenser_mk1"
 		}]
 	}]
 }

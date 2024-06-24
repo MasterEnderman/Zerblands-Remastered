@@ -98,7 +98,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     ],
     <projecte:collector_mk1> : [
         [
-            [<advancedsolars:sunnariumalloy>,<advancedsolars:irradiantglasspane>,<advancedsolars:sunnariumalloy>],
+            [<advancedsolars:sunnariumalloy>,<projecte:item.pe_philosophers_stone>.reuse(),<advancedsolars:sunnariumalloy>],
             [<advancedsolars:sunnariumalloy>,<contenttweaker:crystal_cluster_core>,<advancedsolars:sunnariumalloy>],
             [<advancedsolars:sunnariumalloy>,<actuallyadditions:block_heat_collector>,<advancedsolars:sunnariumalloy>]
         ]
@@ -119,7 +119,7 @@ var recipeMapShaped as IIngredient[][][][IItemStack] = {
     ],
     <projecte:relay_mk1> : [
         [
-            [<contenttweaker:purifiedobsidian>,<advancedsolars:irradiantglasspane>,<contenttweaker:purifiedobsidian>],
+            [<contenttweaker:purifiedobsidian>,<projecte:item.pe_philosophers_stone>.reuse(),<contenttweaker:purifiedobsidian>],
             [<contenttweaker:purifiedobsidian>,<contenttweaker:crystal_cluster_core>,<contenttweaker:purifiedobsidian>],
             [<contenttweaker:purifiedobsidian>,<actuallyadditions:block_inputter_advanced>,<contenttweaker:purifiedobsidian>]
         ]
@@ -251,13 +251,13 @@ ExtremeCrafting.addShaped("dm_pedestal",<projecte:dm_pedestal>, [
 
 recipes.remove(<projecte:item.pe_transmutation_tablet>);
 ExtremeCrafting.addShaped("pe_transmutation_tablet",<projecte:item.pe_transmutation_tablet>, [
-    [<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>],
+    [<projecte:matter_block:1>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block:1>],
     [<projecte:matter_block>,<projecte:matter_block>,<ic2:blockpersonal:8>,<enderio:block_alloy_endergy:4>,<bloodmagic:decorative_brick:2>,<ic2:blockpersonal:8>,<bloodmagic:decorative_brick:2>,<projecte:matter_block>,<projecte:matter_block>],
     [<projecte:matter_block>,<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>,<ic2:blockpersonal:8>,<ic2:blockpersonal:8>,<enderio:block_alloy_endergy:4>,<bloodmagic:decorative_brick:2>,<ic2:blockpersonal:8>,<projecte:matter_block>],
     [<projecte:matter_block>,<ic2:blockpersonal:8>,<enderio:block_alloy_endergy:4>,<bloodmagic:decorative_brick:2>,<enderio:block_alloy_endergy:4>,<bloodmagic:decorative_brick:2>,<ic2:blockpersonal:8>,<enderio:block_alloy_endergy:4>,<projecte:matter_block>],
-    [<projecte:matter_block>,<bloodmagic:decorative_brick:2>,<ic2:blockpersonal:8>,<enderio:block_alloy_endergy:4>,<bloodmagic:decorative_brick:2>,<enderio:block_alloy_endergy:4>,<ic2:blockpersonal:8>,<bloodmagic:decorative_brick:2>,<projecte:matter_block>],
+    [<projecte:matter_block>,<bloodmagic:decorative_brick:2>,<ic2:blockpersonal:8>,<enderio:block_alloy_endergy:4>,<projecte:item.pe_philosophers_stone>.reuse(),<enderio:block_alloy_endergy:4>,<ic2:blockpersonal:8>,<bloodmagic:decorative_brick:2>,<projecte:matter_block>],
     [<projecte:matter_block>,<enderio:block_alloy_endergy:4>,<ic2:blockpersonal:8>,<bloodmagic:decorative_brick:2>,<enderio:block_alloy_endergy:4>,<bloodmagic:decorative_brick:2>,<enderio:block_alloy_endergy:4>,<ic2:blockpersonal:8>,<projecte:matter_block>],
     [<projecte:matter_block>,<ic2:blockpersonal:8>,<bloodmagic:decorative_brick:2>,<enderio:block_alloy_endergy:4>,<ic2:blockpersonal:8>,<ic2:blockpersonal:8>,<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>,<projecte:matter_block>],
     [<projecte:matter_block>,<projecte:matter_block>,<bloodmagic:decorative_brick:2>,<ic2:blockpersonal:8>,<bloodmagic:decorative_brick:2>,<enderio:block_alloy_endergy:4>,<ic2:blockpersonal:8>,<projecte:matter_block>,<projecte:matter_block>],
-    [<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>]
+    [<projecte:matter_block:1>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block:1>]
 ]);

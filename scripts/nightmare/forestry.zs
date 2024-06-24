@@ -608,5 +608,5 @@ var mapMarker as IItemStack[IItemStack] = {
 };
 
 for hive, biome in mapMarker {
-    Empowerer.addRecipe(hive, <harvestcraft:queenbeeitem>, biome, <harvestcraft:honey>, <forestry:wax_cast>, <forestry:ambrosia>, 500000, 100, [0.1, 0.1, 0.1]);
+    Empowerer.addRecipe(hive, <harvestcraft:queenbeeitem>, biome, <harvestcraft:honey>, <forestry:wax_cast>, <forestry:ambrosia>, 320000, 100, [0.1, 0.1, 0.1]);
 }

@@ -1,14 +1,14 @@
 {
-	x: 8.0d,
+	x: 4.0d,
 	y: 9.0d,
 	dependencies: [
-		"a25b4d5a"
+		"a86b25bd"
 	],
 	tasks: [{
-		uid: "fefa1c01",
+		uid: "5c30ddf5",
 		type: "item",
 		items: [{
-			item: "projecte:item.pe_matter"
+			item: "projecte:collector_mk1"
 		}]
 	}]
 }

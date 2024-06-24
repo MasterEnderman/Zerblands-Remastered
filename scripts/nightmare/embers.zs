@@ -29,6 +29,7 @@ import mods.enderio.SliceNSplice;
 import mods.extrautils2.Resonator;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.MetalPress;
+import mods.immersivetechnology.MeltingCrucible;
 import mods.jei.JEI;
 import mods.thermalexpansion.Crucible;
 
@@ -38,6 +39,7 @@ JEI.removeAndHide(<embers:breaker>);
 JEI.removeAndHide(<embers:vacuum>);
 
 Crucible.addRecipe(<liquid:oil_soul> * 100, <minecraft:soul_sand>, 2000);
+MeltingCrucible.addRecipe(<liquid:oil_soul> * 100, <minecraft:soul_sand>, 2000, 40);
 Crucible.addRecipe(<liquid:dawnstone> * 144, <embers:ingot_dawnstone>, 4000);
 
 recipes.remove(<embers:ember_detector>);

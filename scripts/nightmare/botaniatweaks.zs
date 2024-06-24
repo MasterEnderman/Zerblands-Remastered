@@ -123,7 +123,7 @@ Agglomeration.addRecipe(dragon_star);
 recipes.remove(<minecraft:ender_chest>);
 var ender_chest = AgglomerationRecipe.create()
 	.output(<minecraft:ender_chest>)
-	.inputs([<contenttweaker:purifiedobsidian>,<botania:thirdeye>,<enderutilities:enderpart:16>])
+	.inputs([<contenttweaker:purifiedobsidian>,<contenttweaker:crystal_ender>,<enderutilities:enderpart:16>])
 	.manaCost(10000)
 	.multiblock(rune);
 

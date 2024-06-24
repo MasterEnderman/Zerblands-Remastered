@@ -155,7 +155,7 @@ Carpenter.addRecipe(<contenttweaker:jump_module>, [
 
 Carpenter.addRecipe(<contenttweaker:module_void>, [
     [<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:module_transfer>,<actuallyadditions:item_crystal_empowered:3>],
-    [<xreliquary:void_tear>,<botania:blackholetalisman>,<xreliquary:void_tear>],
+    [<xreliquary:void_tear>,<contenttweaker:artifact_blackpearl>,<xreliquary:void_tear>],
     [<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:module_transfer>,<actuallyadditions:item_crystal_empowered:3>]
 ], 10, <liquid:ender_distillation> * 250, <bloodmagic:component:4>);
 
