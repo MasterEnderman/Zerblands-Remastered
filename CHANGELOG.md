@@ -2,6 +2,43 @@
 
 A Modpack for Minecraft 1.12.2
 
+## v2.2.14 - Hotfix XX
+
+### Added Mods
+
+- MiniEffects-Legacy Extended Life
+- NeverEnoughAnimations
+- StellarCore
+
+### Updated Mods
+
+- AE2 Fluid Crafting Rework
+- Carbon Config
+- Chunk-Pregenerator
+- CraftTweaker
+- Ender Storage continuation
+- Had Enough Items
+- HammerLib
+- IC2 Classic
+- MixinBooter
+- Multiblocked
+- NeverEnoughAnimations
+- Quark: RotN Edition
+- Red Core
+- RLFoliage
+- Storage Drawers
+- Universal Tweaks
+- VintageFix
+- The One Probe Community Edition
+
+### Changes
+
+- removed most nightmare only items when playing legacy mode
+
+### Bugfixes
+
+- fixed server crash with Ender Storage continuation
+
 ## v2.2.13 - Hotfix XIX
 
 LEGACY MODE IS THE DEFAULT PACKMODE AGAIN AS THIS ISN'T v2.3.x yet!
