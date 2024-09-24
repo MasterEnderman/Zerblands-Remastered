@@ -200,7 +200,8 @@
   "ic2exprecipe_Fire Charge_": true,
   "item.contenttweaker.material_part_397086735": true,
   "ic2exprecipe_Nether Quartz Dust_": true,
-  "ic2exprecipe_Ember Grit_": true
+  "ic2exprecipe_Ember Grit_": true,
+  "item.immersiveengineering.material.dust_coke_ct": true
  },
  "extractor": {
   "item.coal_764578481": true,
@@ -272,7 +273,12 @@
   "ic2exprecipe_Gold Cable_": true,
   "ic2exprecipe_HV Cable_": true,
   "ic2exprecipe_Ultra-Low-Current Cable_": true,
-  "ic2exprecipe_Red Alloy Wire_": true
+  "ic2exprecipe_Red Alloy Wire_": true,
+  "item.bigreactors:ingotcyanite_ct": true,
+  "item.appliedenergistics2.material.silicon_ct": true,
+  "item.appliedenergistics2.material.silicon_ct_1": true,
+  "item.contenttweaker.circuit8_dirty_ct": true,
+  "item.itemRubber_ct": true
  },
  "compressor": {
   "tile.sandStone.default_1494879518": true,
@@ -315,7 +321,9 @@
   "ic2exprecipe_Item Collector_": true,
   "ic2exprecipe_Scrap Box_": true,
   "ic2exprecipe_Impossibly Hard Wheat Sticks_": true,
-  "item.potion_441691685": true
+  "item.potion_441691685": true,
+  "item.contenttweaker.circuit8_ct": true,
+  "item.immersiveengineering.material.dust_hop_graphite_ct": true
  },
  "massfabricatorAmplifier": {
   "ScrapAmplifier": true,

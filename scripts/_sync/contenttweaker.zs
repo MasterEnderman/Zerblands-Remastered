@@ -80,3 +80,5 @@ recipes.addShaped(<contenttweaker:glass_bell>, [
     [<minecraft:glass>,<ore:rodStone>,<minecraft:glass>],
     [<minecraft:glass>,<minecraft:stone_button>,<minecraft:glass>]
 ]);
+
+recipes.addShapeless(<contenttweaker:coke_pellet>*16,[<ore:fuelCoke>]);

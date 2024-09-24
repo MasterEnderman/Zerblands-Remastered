@@ -219,6 +219,12 @@ for metal, extra in listAdditionalMelting {
     Melter.add(fluid * 288, ore, ex_fluid * 16);
 }
 
+Melting.removeRecipe(<liquid:gold>, <minecraft:glowstone_dust>);
+Melting.removeRecipe(<liquid:ender>, <minecraft:ender_pearl>);
+Melting.addRecipe(<liquid:ender>*250, <minecraft:ender_pearl>, 0);
+Melting.addRecipe(<liquid:ender>*1000, <actuallyadditions:block_misc:6>, 0);
+
+
 var mapBedrock as IIngredient[IItemStack] = {
     <contenttweaker:bedrockium_nugget> : <extrautils2:compressedcobblestone:7>,
     <contenttweaker:bedrockium_ingot> : <contenttweaker:bedrockium_nugget>,

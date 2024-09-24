@@ -2,6 +2,46 @@
 
 A Modpack for Minecraft 1.12.2
 
+## v2.2.15 - Hotfix XXI
+
+### Added Mods
+
+- JEI Area Fixer
+- Packet Fixer
+- ProjectETeams
+
+### updated Mods
+
+- AE2 Fluid Crafting Rework
+- Alfheim Lighting Engine
+- Chunk Pregenerator
+- Fixeroo
+- Had Enough Items
+- HammerLib
+- IC2 Classic Tweaker
+- Inventory Bogo Sorter
+- Legendary Tooltips
+- MiniEffects-Legacy Extended Life
+- MixinBooter
+- Multi Builder Tool
+- OpenComputers
+- StellarCore
+- The One Probe Community Edition
+- YNet
+
+### Removed Mods
+
+- IC2 Tweaker (superseeded by IC2 Classic Tweaker)
+
+### Changes
+
+- added a few QoL recipes to the legacy mode
+
+### Bugfixes
+
+- fixed End Bee Hives not generating
+- removed glowstone to gold melting recipe
+
 ## v2.2.14 - Hotfix XX
 
 ### Added Mods

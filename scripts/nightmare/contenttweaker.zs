@@ -656,4 +656,4 @@ for a, amount_a in mapStoneboard["top"] {
     }
 }
 
-recipes.addShapeless(<contenttweaker:coke_pellet>*16,[<ore:fuelCoke>]);
+

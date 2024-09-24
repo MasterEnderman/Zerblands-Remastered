@@ -71,6 +71,8 @@ mods/
 
 *.cache
 
+*.class
+
 \.ReAuth\.cfg
 
 crafttweaker_dump/
