@@ -27,8 +27,6 @@ var removeAndHide as string[] = [
     "pattern_ingot",
     "antispider_eye",
     // expert items
-    "cast_wire" ,
-    "cast_stick" ,
     "ender_ingot" ,
     "enhanced_ender_ingot" ,
     "ender_star" ,
@@ -118,7 +116,6 @@ var removeAndHide as string[] = [
     "pink_slime" ,
     "pink_slime_ingot" ,
     "small_plutonium" ,
-    "rtg_pellet" ,
     "plutonium" ,
     "dense_neuron_chip" ,
     "resource_infinity_drop" ,

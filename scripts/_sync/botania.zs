@@ -88,3 +88,4 @@ JEI.addDescription(<botania:sparkupgrade:3>, [
     "The Isolated Augment will prevent the Spark from interacting with any Dominant or Recessive Sparks, but still allow it to interact with nearby blocks that can receive their Mana through the Spark network."
 ]);
 
+<botanicadds:mana_tesseract>.addTooltip(format.green("Hold up to 50,000 Mana"));

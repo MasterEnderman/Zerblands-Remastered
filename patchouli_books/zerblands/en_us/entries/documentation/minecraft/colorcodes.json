@@ -1,0 +1,18 @@
+{
+    "name": "Color Codes",
+    "icon": "minecraft:dye",
+    "category": "documentation/minecraft",
+    "read_by_default": true,
+    "pages": [
+        {
+            "title": "Color Codes",
+            "type": "default",
+            "text": "<li>$(#000)0 - Black<li>$(#00A)1 - Dark Blue<li>$(#0A0)2 - Dark Green<li>$(#0AA)3 - Dark Aqua<li>$(#A00)4 - Dark Red<li>$(#A0A)5 - Dark Purple<li>$(#FA0)6 - Gold<li>$(#AAA)7 - Gray"
+        },
+        {
+            "title": "Color Codes",
+            "type": "default",
+            "text": "<li>$(#555)8 - Dark Gray<li>$(#55F)9 - Blue<li>$(#5F5)a - Green<li>$(#5FF)b - Aqua<li>$(#F55)c - Red<li>$(#F5F)d - Purple<li>$(#FF5)e - Yellow<li>$(#FFF)f - White"
+        }
+    ]
+}

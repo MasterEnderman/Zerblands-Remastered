@@ -22,6 +22,7 @@ import mods.actuallyadditions.Empowerer;
 import mods.forestry.Carpenter;
 import mods.forestry.Centrifuge;
 import mods.jei.JEI;
+import mods.thermalexpansion.Centrifuge as TE_Centrifuge;
 import mods.thermalexpansion.EnervationDynamo;
 
 JEI.removeAndHide(<forestry:bottler>);
@@ -64,11 +65,34 @@ recipes.addShaped(<forestry:ash_stairs> * 4, [
 
 Centrifuge.removeRecipe(<forestry:bee_combs:9>);
 Centrifuge.addRecipe([<ic2:itemmisc:181> % 60, <forestry:honey_drop> % 40], <forestry:bee_combs:9>, 100);
+TE_Centrifuge.addRecipe([<ic2:itemmisc:181> % 60, <forestry:honey_drop> % 40], <forestry:bee_combs:9>, null, 2000);
 
 Centrifuge.addRecipe([<forestry:honey_drop:1> % 100], <forestry:bee_combs:12>, 100);
 Centrifuge.addRecipe([<forestry:honey_drop:1> % 100, <forestry:honey_drop:1> % 100], <forestry:bee_combs:11>, 100);
+TE_Centrifuge.addRecipe([<forestry:honey_drop:1> % 100, <forestry:honey_drop:1> % 100], <forestry:bee_combs:11>, null, 2000);
 
 Centrifuge.addRecipe([<forestry:honey_drop:2> % 100], <forestry:bee_combs:13>, 100);
+TE_Centrifuge.addRecipe([<forestry:honey_drop:2> % 100], <forestry:bee_combs:13>, null, 2000);
+
+TE_Centrifuge.addRecipe([(<forestry:honey_drop:1> * 2) % 100], <forestry:bee_combs:11>, null, 2000);
+
+TE_Centrifuge.addRecipe([<contenttweaker:bedrockium_nugget> % 100], <gendustry:honey_comb:28>, null, 2000);
+TE_Centrifuge.addRecipe([
+    <minecraft:dye:11> % 16,
+    <minecraft:dye:14> % 16,
+    <minecraft:dye:1> % 16,
+    <minecraft:dye:2> % 16,
+    <minecraft:dye:5> % 16,
+    <minecraft:dye:4> % 16
+], <gendustry:honey_comb:27>, null, 2000);
+TE_Centrifuge.addRecipe([
+    <ic2:itemmisc:202> % 100,
+    <contenttweaker:resource_infinity_drop> % 13,
+    <abyssalcraft:gatekeeperessence> % 5
+], <gendustry:honey_comb:26>, null, 2000);
+
+
+
 /*
 var x as IItemStack = <morebees:grainmetallic>;
 

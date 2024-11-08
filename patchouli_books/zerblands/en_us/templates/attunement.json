@@ -1,0 +1,33 @@
+{
+    "components": [
+        {
+            "type": "header",
+            "text": "#title",
+            "x": -1,
+            "y": -1
+        },
+        {
+            "type": "separator",
+            "x": -1,
+            "y": -1
+        },
+        {
+            "type": "text",
+            "text": "      $(l:#link#)Check Constellation$(/l)",
+            "x": -1,
+            "y": 22
+        },
+        {
+            "type": "text",
+            "text": "<b>$(t:What effect has the constellation when put on a tool?)Tool:</><li>#tool#",
+            "x": 0,
+            "y": 42
+        },
+        {
+            "type": "text",
+            "text": "<b>$(t:What effect has the constellation when put on a piece of armor?)Armor:</><li>#armor#",
+            "x": 0,
+            "y": 82
+        }
+    ]
+}

@@ -2,6 +2,57 @@
 
 A Modpack for Minecraft 1.12.2
 
+## v2.2.16 - Legacy Polish
+
+### Added Mods
+
+- AE2 Crafting Tree - Legacy
+- Backpack Display
+- BloodMagic Meteors JEI Support
+- Flare
+- Forgelin-Continuous
+- Notes
+- Patchouli Books
+
+### Updated Mods
+
+- AbyssalCraft
+- AE2 Fluid Crafting Rework
+- Forestry
+- Had Enough Items
+- IC2 Classic
+- MixinBooter
+- Multi Builder Tool
+- Mouse Tweaks Unofficial
+- Packet Fixer
+- ProjectETeams
+- StellarCore
+- Storage Drawers
+- The One Probe Community Edition
+- Tweaked Lib
+- Universal Tweaks
+- VisualOres
+
+### Removed Mods
+
+- Birds On A Wire (dead)
+- Extra Sounds Legacy (console spam)
+- MAtmos
+- Shadowfacts' Forgelin (replaced by Forgelin-Continuous)
+- Spark (replaced by Flare)
+- Sound Filters (replaced by Sound Physics Remixin)
+
+### Changes
+
+- downgraded Ender Storage continuation to prevent console spam
+- implemented the Advanced Elven Gateway from the Nightmare Mode in the Legacy Mode
+- added a new Patchouli book for Pressure Pipes
+- removed custom Patchouli Books as they are a part of Patchouli Books now
+
+### Bugfixes
+
+- added missing Centrifugal Separator recipes for various forestry combs
+
 ## v2.2.15 - Hotfix XXI
 
 ### Added Mods
@@ -10,7 +61,7 @@ A Modpack for Minecraft 1.12.2
 - Packet Fixer
 - ProjectETeams
 
-### updated Mods
+### Updated Mods
 
 - AE2 Fluid Crafting Rework
 - Alfheim Lighting Engine

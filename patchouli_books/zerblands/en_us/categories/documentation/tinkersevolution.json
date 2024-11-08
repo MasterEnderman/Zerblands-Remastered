@@ -1,0 +1,7 @@
+{
+    "name": "Tinkers' Evolution",
+    "description": "This is where Tinkers' Evolution comes in: a brand-new and shiny Tinkers' Construct addon that gives you some real variety in your tool construction! Long past are the days of building a refined glowstone sword and being done with tinker tools for the rest of the game!",
+    "icon": "tconevo:material",
+    "sortnum": 0,
+    "parent":"patchouli:documentation"
+}

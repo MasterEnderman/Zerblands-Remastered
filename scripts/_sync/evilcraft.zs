@@ -1,5 +1,3 @@
-#packmode legacy
-
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidDefinition;
@@ -20,9 +18,8 @@ import scripts.functions.getBucket;
 import scripts.functions.getBucketDefault;
 import scripts.functions.findFirstItemFromMod;
 
-import mods.inworldcrafting.FireCrafting;
+import mods.evilcraft.BloodInfuser;
 import mods.thermalexpansion.Transposer;
 
-Transposer.addFillRecipe(<fluxnetworks:flux>, <projecte:item.pe_covalence_dust:1>, <liquid:lava>*100, 6000);
-
-FireCrafting.addRecipe(<fluxnetworks:flux>, <projecte:item.pe_covalence_dust:1>, 200);
+BloodInfuser.addRecipe(<evilcraft:hardened_blood>, <liquid:evilcraftblood> * 500, 1, <minecraft:sand>, 100, 1);
+Transposer.addFillRecipe(<evilcraft:hardened_blood>, <minecraft:sand>, <liquid:evilcraftblood> * 1000, 2000);

@@ -30,6 +30,9 @@ JEI.removeAndHide(<bloodarsenal:slate:2>);
 JEI.removeAndHide(<bloodarsenal:slate:3>);
 JEI.removeAndHide(<bloodarsenal:slate:4>);
 
+recipes.remove(<bloodarsenal:base_item:1>);
+recipes.addShaped(<bloodarsenal:base_item:1> * 2, [[<bloodarsenal:blood_infused_wooden_planks>],[<bloodarsenal:blood_infused_wooden_planks>],[<bloodarsenal:blood_infused_wooden_planks>]]);
+
 TartaricForge.removeRecipe([<bloodarsenal:soul_pendant:3>, <bloodarsenal:blood_diamond:1>, <bloodarsenal:slate:4>, <minecraft:nether_star>]);
 TartaricForge.addRecipe(<bloodarsenal:soul_pendant:4>, [<bloodarsenal:soul_pendant:3>, <bloodarsenal:blood_diamond:1>, <contenttweaker:slate_ethereal>, <minecraft:nether_star>], 4000, 3000);
 

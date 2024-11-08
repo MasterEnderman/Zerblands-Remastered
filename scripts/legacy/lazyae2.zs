@@ -47,6 +47,8 @@ for output, data in mapSpeculation {
     ]); 
 }
 
+Etcher.addRecipe(<threng:material:2>, <threng:material:1>, <minecraft:iron_ingot>, <appliedenergistics2:material:45>);
+
 Agglomeration.addRecipe(<threng:material:6>, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:5>] as IIngredient[], 500000);
 GaiaPlate.add(<threng:material:6>, 500000, [<appliedenergistics2:material:20>,<minecraft:redstone>,<threng:material:5>]);
 

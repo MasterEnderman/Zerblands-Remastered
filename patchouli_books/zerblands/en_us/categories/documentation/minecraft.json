@@ -1,0 +1,7 @@
+{
+    "name": "Minecraft",
+    "description": "Minecraft is a game made up of blocks, creatures, and community. Blocks can be used to reshape the world or build fantastical creations. Creatures can be battled or befriended, depending on your playstyle. Experience epic adventures solo or with friends, there is no wrong way to play. Unless you are digging straight down.",
+    "icon": "minecraft:diamond",
+    "sortnum": 0,
+    "parent":"patchouli:documentation"
+}

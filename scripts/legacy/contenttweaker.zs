@@ -57,3 +57,21 @@ recipes.addShaped(<contenttweaker:energy_flow_circuit>, [
     [<ic2:itembatlamacrystal>,<ic2:itemmisc:258>,<ic2:itembatlamacrystal>],
     [<ic2:itemmisc:452>,<ic2:itemmisc:257>,<ic2:itemmisc:452>]
 ]);
+
+recipes.addShaped(<contenttweaker:rtg_pellet>, [
+    [<advancedsolars:reinforcediridiumironplate>,<ic2:itemreflectors:2>.noReturn(),<advancedsolars:reinforcediridiumironplate>],
+    [<ic2:itemreflectors:2>.noReturn(),<ic2:itemreactorrods:14>.noReturn(),<ic2:itemreflectors:2>.noReturn()],
+    [<advancedsolars:reinforcediridiumironplate>,<ic2:itemreflectors:2>.noReturn(),<advancedsolars:reinforcediridiumironplate>]
+]);
+
+recipes.addShaped(<contenttweaker:module_transfer>, [
+    [<openmodularturrets:intermediate_regular>,null,<openmodularturrets:intermediate_regular>],
+    [<openmodularturrets:intermediate_regular>,<contenttweaker:circuit8>,<openmodularturrets:intermediate_regular>],
+    [<openmodularturrets:intermediate_regular>,null,<openmodularturrets:intermediate_regular>]
+]);
+
+recipes.addShaped(<contenttweaker:jump_module>, [
+    [<ore:ingotVividAlloy>,<contenttweaker:circuit8>,<ore:ingotVividAlloy>],
+    [<ore:ingotVividAlloy>,<contenttweaker:energy_module>,<ore:ingotVividAlloy>],
+    [null,<ore:ingotVibrantAlloy>,null]
+]);

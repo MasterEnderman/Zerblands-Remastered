@@ -1,0 +1,92 @@
+{
+    "name": "Attunement Perks",
+    "icon": "astralsorcery:itemconstellationpaper",
+    "category": "documentation/tinkersevolution",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "attunement",
+            "title": "Aevitas",
+            "link": "documentation/astralsorcery/constellations#Aevitas",
+            "tool": "grants regen after hitting something",
+            "armor": "grants regen after getting hit"
+        },
+        {
+            "type": "attunement",
+            "title": "Armara",
+            "link": "documentation/astralsorcery/constellations#Armara",
+            "tool": "grants resistance after hitting something",
+            "armor": "has increased protection"
+        },
+        {
+            "type": "attunement",
+            "title": "Discidia",
+            "link": "documentation/astralsorcery/constellations#Discidia",
+            "tool": "deal more damage",
+            "armor": "reflects a portion of incoming damage"
+        },
+        {
+            "type": "attunement",
+            "title": "Evorsio",
+            "link": "documentation/astralsorcery/constellations#Evorsio",
+            "tool": "mine faster",
+            "armor": "grants haste"
+        },
+        {
+            "type": "attunement",
+            "title": "Vicio",
+            "link": "documentation/astralsorcery/constellations#Vicio",
+            "tool": "grants more speed after hitting something",
+            "armor": "grants move speed after getting hit"
+        },
+        {
+            "type": "attunement",
+            "title": "Bootes",
+            "link": "documentation/astralsorcery/constellations#Bootes",
+            "tool": "grants silk touch",
+            "armor": "has a chance of spawning a flare after getting hit"
+        },
+        {
+            "type": "attunement",
+            "title": "Fornax",
+            "link": "documentation/astralsorcery/constellations#Fornax",
+            "tool": "ingnite enemies",
+            "armor": "grants fire resistance"
+        },
+        {
+            "type": "attunement",
+            "title": "Horologium",
+            "link": "documentation/astralsorcery/constellations#Horologium",
+            "tool": "freezes enemies on hit",
+            "armor": "freezes attackers"
+        },
+        {
+            "type": "attunement",
+            "title": "Lucerna",
+            "link": "documentation/astralsorcery/constellations#Lucerna",
+            "tool": "apply glowing on hit",
+            "armor": "grants night vision"
+        },
+        {
+            "type": "attunement",
+            "title": "Mineralis",
+            "link": "documentation/astralsorcery/constellations#Mineralis",
+            "tool": "gains fortune",
+            "armor": "grants the block x-ray effect"
+        },
+        {
+            "type": "attunement",
+            "title": "Octans",
+            "link": "documentation/astralsorcery/constellations#Octans",
+            "tool": "mines faster in water",
+            "armor": "grants water breathing"
+        },
+        {
+            "type": "attunement",
+            "title": "Pelotrio",
+            "link": "documentation/astralsorcery/constellations#Pelotrio",
+            "tool": "repairs itself over time",
+            "armor": "repairs itself over time"
+        }
+    ]
+}

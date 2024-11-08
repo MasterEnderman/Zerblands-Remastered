@@ -155,6 +155,21 @@ tile.draconicevolution:placed_item.name=Placed Item
 
 item.multitool.name=Multitool (useless)
 
+mbtool.jei.category.multiblocks=Multiblocks
+
+research.astraladditions.armor_starmetal.name=Starmetal Armor
+
+tooltip.environmentaltech.modifier_core.info=Can be used without any effect.
+tooltip.environmentaltech.modifier_core.info2=Won't increase Power Usage.
+
+tile.null.name=
+
+name.RING=Bauble (Ring)
+
+entity.Villager.shady_merchant=Shady Merchant
+entity.Villager.alchemist=Alchemist
+entity.Villager.red_mechanic=Red Mechanic
+
 # missing locals
 
 enchantment.extrautils2.xu.boomereaperang.desc=[Description needs to be done]

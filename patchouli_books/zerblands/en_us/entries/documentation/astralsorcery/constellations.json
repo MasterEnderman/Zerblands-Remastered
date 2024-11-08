@@ -6,6 +6,7 @@
     "pages": [
         {
             "title": "Aevitas",
+            "anchor": "Aevitas",
             "type": "image",
             "border": true,
             "images": [
@@ -14,6 +15,7 @@
         },
         {
             "title": "Armara",
+            "anchor": "Armara",
             "type": "image",
             "border": true,
             "images": [
@@ -22,6 +24,7 @@
         },
         {
             "title": "Discidia",
+            "anchor": "Discidia",
             "type": "image",
             "border": true,
             "images": [
@@ -30,6 +33,7 @@
         },
         {
             "title": "Evorsio",
+            "anchor": "Evorsio",
             "type": "image",
             "border": true,
             "images": [
@@ -38,6 +42,7 @@
         },
         {
             "title": "Vicio",
+            "anchor": "Vicio",
             "type": "image",
             "border": true,
             "images": [
@@ -46,6 +51,7 @@
         },
         {
             "title": "Bootes",
+            "anchor": "Bootes",
             "type": "image",
             "border": true,
             "images": [
@@ -54,6 +60,7 @@
         },
         {
             "title": "Fornax",
+            "anchor": "Fornax",
             "type": "image",
             "border": true,
             "images": [
@@ -62,6 +69,7 @@
         },
         {
             "title": "Horologium",
+            "anchor": "Horologium",
             "type": "image",
             "border": true,
             "images": [
@@ -70,6 +78,7 @@
         },
         {
             "title": "Lucerna",
+            "anchor": "Lucerna",
             "type": "image",
             "border": true,
             "images": [
@@ -78,6 +87,7 @@
         },
         {
             "title": "Mineralis",
+            "anchor": "Mineralis",
             "type": "image",
             "border": true,
             "images": [
@@ -86,6 +96,7 @@
         },
         {
             "title": "Octans",
+            "anchor": "Octans",
             "type": "image",
             "border": true,
             "images": [
@@ -94,6 +105,7 @@
         },
         {
             "title": "Pelotrio",
+            "anchor": "Pelotrio",
             "type": "image",
             "border": true,
             "images": [
@@ -102,6 +114,7 @@
         },
         {
             "title": "Alcara",
+            "anchor": "Alcara",
             "type": "image",
             "border": true,
             "images": [
@@ -110,6 +123,7 @@
         },
         {
             "title": "Gelu",
+            "anchor": "Gelu",
             "type": "image",
             "border": true,
             "images": [
@@ -118,6 +132,7 @@
         },
         {
             "title": "Ulteria",
+            "anchor": "Ulteria",
             "type": "image",
             "border": true,
             "images": [
@@ -126,6 +141,7 @@
         },
         {
             "title": "Vorux",
+            "anchor": "Vorux",
             "type": "image",
             "border": true,
             "images": [

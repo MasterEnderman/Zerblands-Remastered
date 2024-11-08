@@ -1,6 +1,6 @@
 {
 	"versionName": "2.2",
-	"versionCode": 15,
+	"versionCode": 16,
 	"versionFormat": "%versionName%.%versionCode%",
 	"sponsors": [{
 			"category": "gold",
@@ -72,12 +72,13 @@
 		}
 	}],
 	"changelogs": {
-		"2.2.15": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v229---hotfix-xxi"],
-		"2.2.14": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v229---hotfix-xx"],
-		"2.2.13": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v229---hotfix-xix"],
-		"2.2.12": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v229---hotfix-xviii"],
-		"2.2.11": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v229---hotfix-xvii"],
-		"2.2.10": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v229---hotfix-xvi"],
+		"2.2.16": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2216---legacy-polish"],
+		"2.2.15": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2215---hotfix-xxi"],
+		"2.2.14": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2214---hotfix-xx"],
+		"2.2.13": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2213---hotfix-xix"],
+		"2.2.12": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2212---hotfix-xviii"],
+		"2.2.11": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2211---hotfix-xvii"],
+		"2.2.10": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v2210---hotfix-xvi"],
 		"2.2.9": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v229---hotfix-xv"],
 		"2.2.8": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v228---hotfix-xiv"],
 		"2.2.7": ["https://github.com/MasterEnderman/Zerblands-Remastered/blob/master/CHANGELOG.md#v227---hotfix-xiii"],
